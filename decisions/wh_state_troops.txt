@@ -9,12 +9,13 @@
 #	dynasty_owned: all titles owned by members of the same dynasty
 #	all: all titles (Avoid if possible. VERY CPU-HEAVY!)
 #
+
 title_decisions = {
 
 	state_troop_swordsmen = {
 		filter = sub_realm_owned
 		ai_target_filter = sub_realm_owned
-		only_rulers = yes
+		only_playable = yes
 		from_potential = {
 			has_dlc = "Horse Lords"
 			OR = {
@@ -152,9 +153,9 @@ title_decisions = {
 	}
 
 	state_troop_crossbowmen = {
+		only_playable = yes
 		filter = sub_realm_owned
 		ai_target_filter = sub_realm_owned
-		only_rulers = yes
 		from_potential = {
 			has_dlc = "Horse Lords"
 			OR = {
@@ -290,9 +291,9 @@ title_decisions = {
 	}
 
 	state_troop_halberdier = {
+		only_playable = yes
 		filter = sub_realm_owned
 		ai_target_filter = sub_realm_owned
-		only_rulers = yes
 		from_potential = {
 			has_dlc = "Horse Lords"
 			OR = {
@@ -412,9 +413,9 @@ title_decisions = {
 	}
 
 	state_troop_greatsword = {
+		only_playable = yes
 		filter = sub_realm_owned
 		ai_target_filter = sub_realm_owned
-		only_rulers = yes
 		from_potential = {
 			has_dlc = "Horse Lords"
 			OR = {
@@ -552,9 +553,9 @@ title_decisions = {
 	}
 
 	state_troop_handgunner = {
+		only_playable = yes
 		filter = sub_realm_owned
 		ai_target_filter = sub_realm_owned
-		only_rulers = yes
 		from_potential = {
 			has_dlc = "Horse Lords"
 			OR = {
@@ -690,9 +691,9 @@ title_decisions = {
 	}
 
 	state_troop_artillery = {
+		only_playable = yes
 		filter = sub_realm_owned
 		ai_target_filter = sub_realm_owned
-		only_rulers = yes
 		from_potential = {
 			has_dlc = "Horse Lords"
 			OR = {
@@ -822,9 +823,9 @@ title_decisions = {
 	}
 
 	state_troop_pistolier = {
+		only_playable = yes
 		filter = sub_realm_owned
 		ai_target_filter = sub_realm_owned
-		only_rulers = yes
 		from_potential = {
 			has_dlc = "Horse Lords"
 			OR = {
