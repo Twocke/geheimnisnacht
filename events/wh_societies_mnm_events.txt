@@ -1,7 +1,6 @@
 namespace = DR_societies
 
 # VERENA
-
 # JOINING
 
 # From on_character_ask_to_join_society
@@ -58,7 +57,6 @@ letter_event = {
 }
 
 # MISSIONS
-
 # Mission tombola
 character_event = {
 	id = DR_societies.1000
@@ -84,7 +82,8 @@ character_event = {
 				prisoner = no
 				is_within_diplo_range = ROOT
 				opinion = {
-					who = ROOT value = 0
+					who = ROOT
+					value = 0
 				}
 			}
 		}
@@ -104,7 +103,8 @@ character_event = {
 							prisoner = no
 							is_within_diplo_range = ROOT
 							opinion = {
-								who = ROOT value = 0
+								who = ROOT
+								value = 0
 							}
 						}
 						save_event_target_as = hermetic_collaborator
@@ -122,7 +122,8 @@ character_event = {
 							prisoner = no
 							is_within_diplo_range = ROOT
 							opinion = {
-								who = ROOT value = 0
+								who = ROOT
+								value = 0
 							}
 							same_realm = ROOT
 						}
@@ -137,7 +138,8 @@ character_event = {
 							prisoner = no
 							is_within_diplo_range = ROOT
 							opinion = {
-								who = ROOT value = 0
+								who = ROOT
+								value = 0
 							}
 							same_realm = ROOT
 						}
@@ -233,10 +235,12 @@ character_event = {
 								character = ROOT
 								character = event_target:hermetic_collaborator
 								reverse_opinion = {
-									who = event_target:hermetic_collaborator value = 20
+									who = event_target:hermetic_collaborator
+									value = 20
 								}
 								reverse_opinion = {
-									who = ROOT value = 20
+									who = ROOT
+									value = 20
 								}
 								has_character_flag = infiltration_rival
 								has_character_flag = infiltration_mutual_dislike
@@ -310,27 +314,21 @@ character_event = {
 }
 
 # Mission: Building a Laboratory
-
 # Flags:
 
 # Temporary:
-
 # building_laboratory (cleared at end)
 
 # decided_on_glass (cleared at end)
-
 # decided_on_crucibles (cleared at end)
 
 # decided_on_tools (cleared at end)
-
 # decided_on_books (cleared at end)
 
 # Not Temporary:
-
 # built_laboratory (not cleared -> set at end, marks this as done for this character)
 
 # hidden_lab (not cleared -> to be used to weight stealing of secrets)
-
 # very_hidden_lab (not cleared -> to be used to weight stealing of secrets)
 character_event = {
 	id = DR_societies.1100
@@ -346,7 +344,8 @@ character_event = {
 				id = DR_societies.1101 days = 7
 			}
 			set_variable = {
-				which = laboratory_level value = 1
+				which = laboratory_level
+				value = 1
 			}
 		}
 	}
@@ -378,7 +377,8 @@ character_event = {
 		}
 		hidden_effect = {
 			change_variable = {
-				which = laboratory_level value = 2
+				which = laboratory_level
+				value = 2
 			}
 			character_event = {
 				id = DR_societies.1102 days = 30
@@ -393,7 +393,8 @@ character_event = {
 		}
 		hidden_effect = {
 			change_variable = {
-				which = laboratory_level value = 5
+				which = laboratory_level
+				value = 5
 			}
 			character_event = {
 				id = DR_societies.1102 days = 30
@@ -418,7 +419,8 @@ character_event = {
 		}
 		hidden_effect = {
 			change_variable = {
-				which = laboratory_level value = 3
+				which = laboratory_level
+				value = 3
 			}
 			character_event = {
 				id = DR_societies.1102 days = 30
@@ -443,7 +445,8 @@ character_event = {
 		}
 		hidden_effect = {
 			change_variable = {
-				which = laboratory_level value = 3
+				which = laboratory_level
+				value = 3
 			}
 			character_event = {
 				id = DR_societies.1102 days = 30
@@ -467,10 +470,12 @@ character_event = {
 		}
 		hidden_effect = {
 			change_variable = {
-				which = laboratory_level value = 1
+				which = laboratory_level
+				value = 1
 			}
 			set_variable = {
-				which = lab_ambition value = 1
+				which = lab_ambition
+				value = 1
 			}
 			random_list = {
 				25 = {
@@ -545,10 +550,12 @@ character_event = {
 		}
 		hidden_effect = {
 			change_variable = {
-				which = laboratory_level value = 3
+				which = laboratory_level
+				value = 3
 			}
 			set_variable = {
-				which = lab_ambition value = 2
+				which = lab_ambition
+				value = 2
 			}
 			random_list = {
 				25 = {
@@ -636,10 +643,12 @@ character_event = {
 		}
 		hidden_effect = {
 			change_variable = {
-				which = laboratory_level value = 5
+				which = laboratory_level
+				value = 5
 			}
 			set_variable = {
-				which = lab_ambition value = 3
+				which = lab_ambition
+				value = 3
 			}
 			random_list = {
 				25 = {
@@ -727,10 +736,12 @@ character_event = {
 		}
 		hidden_effect = {
 			change_variable = {
-				which = laboratory_level value = 8
+				which = laboratory_level
+				value = 8
 			}
 			set_variable = {
-				which = lab_ambition value = 4
+				which = lab_ambition
+				value = 4
 			}
 			random_list = {
 				25 = {
@@ -799,7 +810,6 @@ character_event = {
 }
 
 # What kind of equipment do we need?
-
 # Variant 1 - Flasks, Alembics, test tubes, etc
 character_event = {
 	id = DR_societies.1103
@@ -821,10 +831,12 @@ character_event = {
 		}
 		hidden_effect = {
 			change_variable = {
-				which = laboratory_level value = 1
+				which = laboratory_level
+				value = 1
 			}
 			change_variable = {
-				which = lab_ambition value = -1
+				which = lab_ambition
+				value = -1
 			}
 			if = {
 				limit = {
@@ -900,10 +912,12 @@ character_event = {
 		}
 		hidden_effect = {
 			change_variable = {
-				which = laboratory_level value = 2
+				which = laboratory_level
+				value = 2
 			}
 			change_variable = {
-				which = lab_ambition value = -1
+				which = lab_ambition
+				value = -1
 			}
 			if = {
 				limit = {
@@ -993,10 +1007,12 @@ character_event = {
 		}
 		hidden_effect = {
 			change_variable = {
-				which = laboratory_level value = 1
+				which = laboratory_level
+				value = 1
 			}
 			change_variable = {
-				which = lab_ambition value = -1
+				which = lab_ambition
+				value = -1
 			}
 			if = {
 				limit = {
@@ -1072,10 +1088,12 @@ character_event = {
 		}
 		hidden_effect = {
 			change_variable = {
-				which = laboratory_level value = 2
+				which = laboratory_level
+				value = 2
 			}
 			change_variable = {
-				which = lab_ambition value = -1
+				which = lab_ambition
+				value = -1
 			}
 			if = {
 				limit = {
@@ -1165,10 +1183,12 @@ character_event = {
 		}
 		hidden_effect = {
 			change_variable = {
-				which = laboratory_level value = 1
+				which = laboratory_level
+				value = 1
 			}
 			change_variable = {
-				which = lab_ambition value = -1
+				which = lab_ambition
+				value = -1
 			}
 			if = {
 				limit = {
@@ -1244,10 +1264,12 @@ character_event = {
 		}
 		hidden_effect = {
 			change_variable = {
-				which = laboratory_level value = 2
+				which = laboratory_level
+				value = 2
 			}
 			change_variable = {
-				which = lab_ambition value = -1
+				which = lab_ambition
+				value = -1
 			}
 			if = {
 				limit = {
@@ -1317,7 +1339,6 @@ character_event = {
 }
 
 # Variant 4 - Books
-
 # Herbals, Lapidarii, etc
 character_event = {
 	id = DR_societies.1106
@@ -1339,10 +1360,12 @@ character_event = {
 		}
 		hidden_effect = {
 			change_variable = {
-				which = laboratory_level value = 1
+				which = laboratory_level
+				value = 1
 			}
 			change_variable = {
-				which = lab_ambition value = -1
+				which = lab_ambition
+				value = -1
 			}
 			if = {
 				limit = {
@@ -1418,10 +1441,12 @@ character_event = {
 		}
 		hidden_effect = {
 			change_variable = {
-				which = laboratory_level value = 2
+				which = laboratory_level
+				value = 2
 			}
 			change_variable = {
-				which = lab_ambition value = -1
+				which = lab_ambition
+				value = -1
 			}
 			if = {
 				limit = {
@@ -1721,7 +1746,8 @@ character_event = {
 		name = EVTOPTA_MNM_1113
 		hidden_effect = {
 			change_variable = {
-				which = laboratory_level value = -2
+				which = laboratory_level
+				value = -2
 			}
 		}
 		if = {
@@ -1758,7 +1784,8 @@ character_event = {
 		}
 		hidden_effect = {
 			change_variable = {
-				which = laboratory_level value = -1
+				which = laboratory_level
+				value = -1
 			}
 		}
 		wealth = -10
@@ -1805,7 +1832,8 @@ character_event = {
 		}
 		hidden_effect = {
 			change_variable = {
-				which = laboratory_level value = -2
+				which = laboratory_level
+				value = -2
 			}
 		}
 	}
@@ -1828,7 +1856,8 @@ character_event = {
 		name = EVTOPTA_MNM_1115
 		hidden_effect = {
 			change_variable = {
-				which = laboratory_level value = -1
+				which = laboratory_level
+				value = -1
 			}
 		}
 	}
@@ -1838,7 +1867,8 @@ character_event = {
 		wealth = -25
 		hidden_effect = {
 			change_variable = {
-				which = laboratory_level value = 1
+				which = laboratory_level
+				value = 1
 			}
 		}
 	}
@@ -2405,7 +2435,6 @@ letter_event = {
 							region = world_old_world_border_princes
 
 						}
-
 					}
 
 				}
@@ -2416,7 +2445,6 @@ letter_event = {
 							save_event_target_as = ruin_site_top_liege
 						}
 					}
-
 				}
 
 			}
@@ -2447,7 +2475,7 @@ letter_event = {
 	# }
 	# name = EVTOPTA_MNM_1420
 	# custom_tooltip = { text = EVTOPTA_MNM_1420_TT }
-	# scaled_wealth = { value = -1 min = -200 }
+	# scaled_wealth = {	value = -1 min = -200 }
 	# random_list = {
 	# 20 = {
 	# modifier = { learning = 8 factor = 1.2 }
@@ -2814,7 +2842,6 @@ character_event = {
 						}
 					}
 				}
-
 			}
 		}
 		if = {
@@ -3009,19 +3036,15 @@ character_event = {
 }
 
 # Clearing of flag
-
 # character_event = {
 
 # id = DR_societies.1427
-
 # hide_window = yes
 
 # is_triggered_only = yes
-
 # immediate = { clr_character_flag = do_not_disturb }
 
 # }
-
 # Mission: Infiltrate laboratory
 character_event = {
 	id = DR_societies.1430
@@ -3081,7 +3104,8 @@ society_quest_event = {
 							is_rival = FROM
 							NOT = {
 								reverse_opinion = {
-									who = ROOT value = 20
+									who = ROOT
+									value = 20
 								}
 							}
 						}
@@ -3099,7 +3123,8 @@ society_quest_event = {
 							is_rival = FROM
 							NOT = {
 								reverse_opinion = {
-									who = ROOT value = 20
+									who = ROOT
+									value = 20
 								}
 							}
 						}
@@ -3121,12 +3146,14 @@ society_quest_event = {
 							}
 							NOT = {
 								reverse_opinion = {
-									who = ROOT value = 0
+									who = ROOT
+									value = 0
 								}
 							}
 							NOT = {
 								reverse_opinion = {
-									who = FROM value = 0
+									who = FROM
+									value = 0
 								}
 							}
 						}
@@ -3143,12 +3170,14 @@ society_quest_event = {
 							}
 							NOT = {
 								reverse_opinion = {
-									who = ROOT value = 0
+									who = ROOT
+									value = 0
 								}
 							}
 							NOT = {
 								reverse_opinion = {
-									who = FROM value = 0
+									who = FROM
+									value = 0
 								}
 							}
 						}
@@ -3170,12 +3199,14 @@ society_quest_event = {
 							}
 							NOT = {
 								reverse_opinion = {
-									who = ROOT value = 20
+									who = ROOT
+									value = 20
 								}
 							}
 							NOT = {
 								reverse_opinion = {
-									who = FROM value = 20
+									who = FROM
+									value = 20
 								}
 							}
 							OR = {
@@ -3207,12 +3238,14 @@ society_quest_event = {
 							}
 							NOT = {
 								reverse_opinion = {
-									who = ROOT value = 20
+									who = ROOT
+									value = 20
 								}
 							}
 							NOT = {
 								reverse_opinion = {
-									who = FROM value = 20
+									who = FROM
+									value = 20
 								}
 							}
 							OR = {
@@ -3238,10 +3271,12 @@ society_quest_event = {
 							is_within_diplo_range = ROOT
 							NOR = {
 								reverse_opinion = {
-									who = FROM value = 20
+									who = FROM
+									value = 20
 								}
 								reverse_opinion = {
-									who = ROOT value = 20
+									who = ROOT
+									value = 20
 								}
 								has_character_flag = infiltration_rival
 								has_character_flag = infiltration_mutual_dislike
@@ -3608,11 +3643,9 @@ character_event = {
 								} # Hard fail
 
 							}
-
 						}
 
 					}
-
 				}
 			}
 		}
@@ -3685,11 +3718,9 @@ character_event = {
 								} # Hard fail
 
 							}
-
 						}
 
 					}
-
 				}
 			}
 		}
@@ -4038,7 +4069,6 @@ character_event = {
 				FROM = {
 					has_character_flag = bad_theft
 				}
-
 			}
 		}
 		text = EVTDESC_MNM_1440_B
@@ -4084,7 +4114,6 @@ character_event = {
 					event_target:infiltration_companion = {
 						imprison = PREV
 					}
-
 				}
 			}
 		}
@@ -4487,7 +4516,8 @@ character_event = {
 		}
 		# Money and knowledge
 		transfer_scaled_wealth = {
-			from = event_target:infiltration_target value = 0.5 min = 50
+			from = event_target:infiltration_target
+			value = 0.5 min = 50
 		}
 		add_society_currency_massive_effect = yes
 	}
@@ -4504,7 +4534,8 @@ character_event = {
 		}
 		# Money and knowledge
 		transfer_scaled_wealth = {
-			from = event_target:infiltration_target value = 0.25 min = 25
+			from = event_target:infiltration_target
+			value = 0.25 min = 25
 		}
 		add_society_currency_major_effect = yes
 	}
@@ -4516,7 +4547,8 @@ character_event = {
 		name = EVTOPTC_MNM_1441
 		# Money and knowledge
 		transfer_scaled_wealth = {
-			from = event_target:infiltration_target value = 0.1 min = 10
+			from = event_target:infiltration_target
+			value = 0.1 min = 10
 		}
 		add_society_currency_medium_effect = yes
 	}
@@ -4590,7 +4622,6 @@ character_event = {
 						to = FROM
 
 					}
-
 				}
 
 			}
@@ -4610,7 +4641,6 @@ character_event = {
 						has_artifact_flag = cult_of_verena
 						has_artifact_flag = ingredient
 					}
-
 				}
 				random_artifact = {
 					limit = {
@@ -4627,11 +4657,9 @@ character_event = {
 							to = FROM
 
 						}
-
 					}
 
 				}
-
 			}
 		}
 		# Money
@@ -5269,10 +5297,12 @@ character_event = {
 		if = {
 			limit = {
 				opinion = {
-					who = event_target:infiltration_companion value = 40
+					who = event_target:infiltration_companion
+					value = 40
 				}
 				reverse_opinion = {
-					who = event_target:infiltration_companion value = 40
+					who = event_target:infiltration_companion
+					value = 40
 				}
 				NOT = {
 					is_friend = event_target:infiltration_companion
@@ -5310,7 +5340,6 @@ character_event = {
 }
 
 # POWERS
-
 # Start of Scrying events
 
 # Power: Perform Scrying - what do you want to look for?
@@ -5452,7 +5481,6 @@ character_event = {
 				duration = -1
 
 			}
-
 		}
 		if = {
 			limit = {
@@ -5463,7 +5491,6 @@ character_event = {
 				duration = -1
 
 			}
-
 		}
 		if = {
 			limit = {
@@ -5474,7 +5501,6 @@ character_event = {
 				duration = -1
 
 			}
-
 		}
 		trigger = {
 			has_character_flag = positive_reaction_to_scrying_flag
@@ -5492,7 +5518,6 @@ character_event = {
 				duration = -1
 
 			}
-
 		}
 		if = {
 			limit = {
@@ -5503,7 +5528,6 @@ character_event = {
 				duration = -1
 
 			}
-
 		}
 		if = {
 			limit = {
@@ -5514,7 +5538,6 @@ character_event = {
 				duration = -1
 
 			}
-
 		}
 		trigger = {
 			has_character_flag = negative_reaction_to_scrying_flag
@@ -5574,8 +5597,9 @@ character_event = {
 		}
 		has_battle_omen_modifier_trigger = yes
 	}
+
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2.5
 			has_character_modifier = good_battle_omen
@@ -5704,8 +5728,9 @@ character_event = {
 		is_alive = yes
 		has_battle_omen_modifier_trigger = yes
 	}
+
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			has_character_modifier = bad_battle_omen
@@ -5807,8 +5832,9 @@ character_event = {
 		}
 		has_relationship_omen_modifier_trigger = yes
 	}
+
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 5
 			has_character_modifier = good_relationship_omen
@@ -5899,8 +5925,9 @@ character_event = {
 			has_character_modifier = bad_relationship_omen
 		}
 	}
+
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 5
 			has_character_modifier = bad_relationship_omen
@@ -5971,8 +5998,9 @@ character_event = {
 	id = DR_societies.1206
 	is_triggered_only = yes
 	hide_window = yes
+
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 5
 			OR = {
@@ -7160,7 +7188,6 @@ character_event = {
 				remove_character_modifier = good_battle_omen
 
 			}
-
 		}
 		if = {
 			limit = {
@@ -7221,7 +7248,6 @@ character_event = {
 				remove_character_modifier = bad_battle_omen
 
 			}
-
 		}
 		if = {
 			limit = {
@@ -7484,7 +7510,6 @@ character_event = {
 				remove_character_modifier = bad_power_omen
 
 			}
-
 		}
 		upgrade_seer_modifier_effect = yes
 		trigger = {
@@ -7544,7 +7569,6 @@ character_event = {
 				remove_character_modifier = good_power_omen
 
 			}
-
 		}
 		downgrade_seer_modifier_effect = yes
 		trigger = {
@@ -7630,7 +7654,6 @@ character_event = {
 				remove_character_modifier = good_battle_omen
 
 			}
-
 		}
 		if = {
 			limit = {
@@ -7640,7 +7663,6 @@ character_event = {
 				remove_character_modifier = good_relationship_omen
 
 			}
-
 		}
 		if = {
 			limit = {
@@ -7650,7 +7672,6 @@ character_event = {
 				remove_character_modifier = good_power_omen
 
 			}
-
 		}
 		if = {
 			limit = {
@@ -7660,7 +7681,6 @@ character_event = {
 				remove_character_modifier = bad_battle_omen
 
 			}
-
 		}
 		if = {
 			limit = {
@@ -7670,7 +7690,6 @@ character_event = {
 				remove_character_modifier = bad_relationship_omen
 
 			}
-
 		}
 		if = {
 			limit = {
@@ -7680,7 +7699,6 @@ character_event = {
 				remove_character_modifier = bad_power_omen
 
 			}
-
 		}
 		clr_character_flag = omen_opt_good_battle
 		clr_character_flag = omen_opt_bad_battle
@@ -7692,7 +7710,6 @@ character_event = {
 }
 
 # /end of Scrying events
-
 # POWER: Make Horoscope
 character_event = {
 	# You prepare the horoscope (for horoscope_maker)
@@ -7724,7 +7741,8 @@ character_event = {
 		hidden_effect = {
 			event_target:horoscope_child = {
 				set_variable = {
-					which = horoscope_destiny_points value = 0
+					which = horoscope_destiny_points
+					value = 0
 				} # to track truthfulness of horoscope
 				set_character_flag = horoscope_destiny_revealed # to track and handle horoscope_maker dying
 				character_event = {
@@ -7771,7 +7789,6 @@ character_event = {
 						set_character_flag = destined_scholar
 
 					}
-
 				}
 
 			}
@@ -7830,7 +7847,8 @@ character_event = {
 		hidden_effect = {
 			event_target:horoscope_child = {
 				change_variable = {
-					which = horoscope_destiny_points value = 5
+					which = horoscope_destiny_points
+					value = 5
 				}
 			}
 		} # increase likelyhood of fulfilling horoscope...
@@ -7848,7 +7866,8 @@ character_event = {
 		hidden_effect = {
 			event_target:horoscope_child = {
 				change_variable = {
-					which = horoscope_destiny_points value = -5
+					which = horoscope_destiny_points
+					value = -5
 				}
 			}
 		} # decrease likelyhood of fulfilling horoscope...
@@ -8044,7 +8063,8 @@ character_event = {
 		hidden_effect = {
 			event_target:horoscope_child = {
 				change_variable = {
-					which = horoscope_destiny_points value = 3
+					which = horoscope_destiny_points
+					value = 3
 				}
 			}
 		} # increase likelyhood of fulfilling horoscope...
@@ -8063,7 +8083,8 @@ character_event = {
 		hidden_effect = {
 			event_target:horoscope_child = {
 				change_variable = {
-					which = horoscope_destiny_points value = -7
+					which = horoscope_destiny_points
+					value = -7
 				}
 			}
 		} # decrease likelyhood of fulfilling horoscope...
@@ -8082,7 +8103,8 @@ character_event = {
 		hidden_effect = {
 			event_target:horoscope_child = {
 				change_variable = {
-					which = horoscope_destiny_points value = 3
+					which = horoscope_destiny_points
+					value = 3
 				}
 			}
 		} # increase likelyhood of fulfilling horoscope...
@@ -8101,7 +8123,8 @@ character_event = {
 		hidden_effect = {
 			event_target:horoscope_child = {
 				change_variable = {
-					which = horoscope_destiny_points value = -7
+					which = horoscope_destiny_points
+					value = -7
 				}
 			}
 		} # decrease likelyhood of fulfilling horoscope...
@@ -8180,7 +8203,6 @@ character_event = {
 						save_event_target_as = inspiring_adult
 
 					}
-
 				}
 				destined_fighter = {
 					random_courtier = {
@@ -8211,7 +8233,6 @@ character_event = {
 						save_event_target_as = inspiring_adult
 
 					}
-
 				}
 				destined_diplomat = {
 					random_courtier = {
@@ -8242,7 +8263,6 @@ character_event = {
 						save_event_target_as = inspiring_adult
 
 					}
-
 				}
 				destined_schemer = {
 					random_courtier = {
@@ -8273,7 +8293,6 @@ character_event = {
 						save_event_target_as = inspiring_adult
 
 					}
-
 				}
 				destined_scholar = {
 					random_courtier = {
@@ -8304,11 +8323,9 @@ character_event = {
 						save_event_target_as = inspiring_adult
 
 					}
-
 				}
 
 			}
-
 		}
 		if = {
 			limit = {
@@ -8346,7 +8363,6 @@ character_event = {
 						save_event_target_as = inspiring_adult
 
 					}
-
 				}
 				destined_fighter = {
 					random_courtier = {
@@ -8377,7 +8393,6 @@ character_event = {
 						save_event_target_as = inspiring_adult
 
 					}
-
 				}
 				destined_diplomat = {
 					random_courtier = {
@@ -8408,7 +8423,6 @@ character_event = {
 						save_event_target_as = inspiring_adult
 
 					}
-
 				}
 				destined_schemer = {
 					random_courtier = {
@@ -8439,7 +8453,6 @@ character_event = {
 						save_event_target_as = inspiring_adult
 
 					}
-
 				}
 				destined_scholar = {
 					random_courtier = {
@@ -8470,11 +8483,9 @@ character_event = {
 						save_event_target_as = inspiring_adult
 
 					}
-
 				}
 
 			}
-
 		}
 	}
 	desc = {
@@ -8522,7 +8533,8 @@ character_event = {
 		name = EVTOPTA_MNM_1254 # I feel like this is what I am MEANT to be doing. Just as [parent's] horoscope predicted...
 		hidden_effect = {
 			change_variable = {
-				which = horoscope_destiny_points value = 5
+				which = horoscope_destiny_points
+				value = 5
 			}
 		}
 		set_character_flag = embraced_destiny
@@ -8651,7 +8663,8 @@ character_event = {
 		}
 		hidden_effect = {
 			change_variable = {
-				which = horoscope_destiny_points value = -5
+				which = horoscope_destiny_points
+				value = -5
 			}
 		}
 		set_character_flag = refused_destiny
@@ -8719,7 +8732,8 @@ character_event = {
 		hidden_effect = {
 			event_target:horoscope_child = {
 				change_variable = {
-					which = horoscope_destiny_points value = 2
+					which = horoscope_destiny_points
+					value = 2
 				}
 				character_event = {
 					id = DR_societies.1297 days = 30
@@ -8736,7 +8750,8 @@ character_event = {
 		hidden_effect = {
 			event_target:horoscope_child = {
 				change_variable = {
-					which = horoscope_destiny_points value = -2
+					which = horoscope_destiny_points
+					value = -2
 				}
 				character_event = {
 					id = DR_societies.1297 days = 30
@@ -8990,7 +9005,6 @@ character_event = {
 				character_event = {
 					id = DR_societies.1265
 				}
-
 			}
 			clean_up_horoscope_effect = yes
 		}
@@ -9037,7 +9051,6 @@ character_event = {
 				character_event = {
 					id = DR_societies.1265
 				}
-
 			}
 			clean_up_horoscope_effect = yes
 		}
@@ -9273,11 +9286,13 @@ character_event = {
 				age = 17
 				OR = {
 					check_variable = {
-						which = horoscope_destiny_points value = 10
+						which = horoscope_destiny_points
+						value = 10
 					}
 					NOT = {
 						check_variable = {
-							which = horoscope_destiny_points value = -10
+							which = horoscope_destiny_points
+							value = -10
 						}
 					}
 				}
@@ -9294,11 +9309,13 @@ character_event = {
 					}
 					NOR = {
 						check_variable = {
-							which = horoscope_destiny_points value = 10
+							which = horoscope_destiny_points
+							value = 10
 						}
 						NOT = {
 							check_variable = {
-								which = horoscope_destiny_points value = -10
+								which = horoscope_destiny_points
+								value = -10
 							}
 						}
 					}
@@ -9309,7 +9326,8 @@ character_event = {
 					is_dumb_trigger = no
 				}
 				change_variable = {
-					which = horoscope_destiny_points value = 1
+					which = horoscope_destiny_points
+					value = 1
 				} # slowly ticking upwards
 			}
 			if = {
@@ -9317,7 +9335,8 @@ character_event = {
 					is_dumb_trigger = yes
 				}
 				subtract_variable = {
-					which = horoscope_destiny_points value = 1
+					which = horoscope_destiny_points
+					value = 1
 				} # slowly ticking downwards
 			}
 			character_event = {
@@ -9337,7 +9356,8 @@ character_event = {
 		if = {
 			limit = {
 				check_variable = {
-					which = horoscope_destiny_points value = 10
+					which = horoscope_destiny_points
+					value = 10
 				}
 			}
 			character_event = {
@@ -9348,7 +9368,8 @@ character_event = {
 			limit = {
 				NOT = {
 					check_variable = {
-						which = horoscope_destiny_points value = -10
+						which = horoscope_destiny_points
+						value = -10
 					}
 				}
 			}
@@ -9360,7 +9381,6 @@ character_event = {
 }
 
 # Power: Happiness potion
-
 # Giving the potion to yourself
 character_event = {
 	id = DR_societies.1400
@@ -9547,7 +9567,6 @@ character_event = {
 }
 
 # MAGUS: POWER - Choose Hermetic Art/Lifestyle trait
-
 # No Previous Lifestyle trait - Choose one
 character_event = {
 	id = DR_societies.1900
@@ -10043,7 +10062,6 @@ character_event = {
 }
 
 # INTERACTIONS
-
 # The flags hidden_lab and very_hidden_lab can be used for events about stealing secrets from others/having your secrets stolen.
 
 # Interaction: Gathering of the Great Minds
@@ -10072,10 +10090,12 @@ character_event = {
 		any_society_member = {
 			count = 4
 			opinion = {
-				who = ROOT value = 15
+				who = ROOT
+				value = 15
 			}
 			reverse_opinion = {
-				who = ROOT value = 15
+				who = ROOT
+				value = 15
 			}
 		}
 	}
@@ -10133,7 +10153,6 @@ character_event = {
 							} save_event_target_as = great_minds_guest_1
 						}
 					}
-
 				}
 				50 = {
 					trigger = {
@@ -10147,16 +10166,16 @@ character_event = {
 								}
 								is_within_diplo_range = ROOT
 								opinion = {
-									who = ROOT value = 20
+									who = ROOT
+									value = 20
 								}
 								reverse_opinion = {
-									who = ROOT value = 20
+									who = ROOT
+									value = 20
 								}
-
 							}
 
 						}
-
 					}
 					society = {
 						random_society_member = {
@@ -10169,17 +10188,17 @@ character_event = {
 								}
 								is_within_diplo_range = ROOT
 								opinion = {
-									who = ROOT value = 20
+									who = ROOT
+									value = 20
 								}
 								reverse_opinion = {
-									who = ROOT value = 20
+									who = ROOT
+									value = 20
 								}
-
 							}
 							save_event_target_as = great_minds_guest_1
 
 						}
-
 					}
 
 				}
@@ -10189,21 +10208,20 @@ character_event = {
 							limit = {
 								ai = yes
 								opinion = {
-									who = ROOT value = 15
+									who = ROOT
+									value = 15
 								}
 								reverse_opinion = {
-									who = ROOT value = 15
+									who = ROOT
+									value = 15
 								}
-
 							}
 							save_event_target_as = great_minds_guest_1
 
 						}
-
 					}
 
 				}
-
 			}
 		}
 		# Guest 2
@@ -10215,12 +10233,13 @@ character_event = {
 						character = event_target:great_minds_guest_1
 					}
 					opinion = {
-						who = ROOT value = 15
+						who = ROOT
+						value = 15
 					}
 					reverse_opinion = {
-						who = ROOT value = 15
+						who = ROOT
+						value = 15
 					}
-
 				}
 				save_event_target_as = great_minds_guest_2
 
@@ -10235,7 +10254,8 @@ character_event = {
 						any_society_member = {
 							ai = yes NOT = {
 								reverse_opinion = {
-									who = ROOT value = -30
+									who = ROOT
+									value = -30
 								}
 							}
 						}
@@ -10247,7 +10267,8 @@ character_event = {
 						limit = {
 							ai = yes NOT = {
 								reverse_opinion = {
-									who = ROOT value = -30
+									who = ROOT
+									value = -30
 								}
 							}
 						}
@@ -10257,10 +10278,12 @@ character_event = {
 						limit = {
 							ai = yes
 							opinion = {
-								who = event_target:great_minds_guest_4 value = 20
+								who = event_target:great_minds_guest_4
+								value = 20
 							}
 							reverse_opinion = {
-								who = ROOT value = 15
+								who = ROOT
+								value = 15
 							}
 							NOR = {
 								character = event_target:great_minds_guest_1
@@ -10287,17 +10310,17 @@ character_event = {
 									character = event_target:great_minds_guest_2
 								}
 								opinion = {
-									who = ROOT value = 15
+									who = ROOT
+									value = 15
 								}
 								reverse_opinion = {
-									who = ROOT value = 15
+									who = ROOT
+									value = 15
 								}
-
 							}
 							save_event_target_as = great_minds_guest_3
 
 						}
-
 					}
 				}
 			}
@@ -10312,17 +10335,17 @@ character_event = {
 								character = event_target:great_minds_guest_2
 							}
 							opinion = {
-								who = ROOT value = 15
+								who = ROOT
+								value = 15
 							}
 							reverse_opinion = {
-								who = ROOT value = 15
+								who = ROOT
+								value = 15
 							}
-
 						}
 						save_event_target_as = great_minds_guest_3
 
 					}
-
 				}
 				society = {
 					random_society_member = {
@@ -10334,17 +10357,17 @@ character_event = {
 								character = event_target:great_minds_guest_3
 							}
 							opinion = {
-								who = ROOT value = 15
+								who = ROOT
+								value = 15
 							}
 							reverse_opinion = {
-								who = ROOT value = 15
+								who = ROOT
+								value = 15
 							}
-
 						}
 						save_event_target_as = great_minds_guest_4
 
 					}
-
 				}
 			}
 		}
@@ -10546,7 +10569,8 @@ character_event = {
 							event_target:great_minds_guest_1 = {
 								NOT = {
 									opinion = {
-										who = ROOT value = 10
+										who = ROOT
+										value = 10
 									}
 								}
 							}
@@ -10556,7 +10580,6 @@ character_event = {
 							event_target:great_minds_guest_1 = {
 								trait = ambitious
 							}
-
 						}
 
 					}
@@ -10568,7 +10591,6 @@ character_event = {
 							id = DR_societies.1465 days = 3
 						}
 					}
-
 				}
 				50 = {
 					trigger = {
@@ -10577,7 +10599,8 @@ character_event = {
 							event_target:great_minds_guest_2 = {
 								NOT = {
 									opinion = {
-										who = ROOT value = 10
+										who = ROOT
+										value = 10
 									}
 								}
 							}
@@ -10587,7 +10610,6 @@ character_event = {
 							event_target:great_minds_guest_2 = {
 								trait = ambitious
 							}
-
 						}
 
 					}
@@ -10599,7 +10621,6 @@ character_event = {
 							id = DR_societies.1465 days = 3
 						}
 					}
-
 				}
 				50 = {
 					trigger = {
@@ -10608,7 +10629,8 @@ character_event = {
 							event_target:great_minds_guest_3 = {
 								NOT = {
 									opinion = {
-										who = ROOT value = 10
+										who = ROOT
+										value = 10
 									}
 								}
 							}
@@ -10618,7 +10640,6 @@ character_event = {
 							event_target:great_minds_guest_3 = {
 								trait = ambitious
 							}
-
 						}
 
 					}
@@ -10630,7 +10651,6 @@ character_event = {
 							id = DR_societies.1465 days = 3
 						}
 					}
-
 				}
 				50 = {
 					trigger = {
@@ -10639,7 +10659,8 @@ character_event = {
 							event_target:great_minds_guest_4 = {
 								NOT = {
 									opinion = {
-										who = ROOT value = 10
+										who = ROOT
+										value = 10
 									}
 								}
 							}
@@ -10649,7 +10670,6 @@ character_event = {
 							event_target:great_minds_guest_4 = {
 								trait = ambitious
 							}
-
 						}
 
 					}
@@ -10661,14 +10681,12 @@ character_event = {
 							id = DR_societies.1465 days = 3
 						}
 					}
-
 				}
 				50 = {
 					# They agree
 					character_event = {
 						id = DR_societies.1467 days = 3
 					}
-
 				}
 
 			}
@@ -10757,7 +10775,6 @@ character_event = {
 					set_character_flag = knowledge_invention
 
 				}
-
 			}
 		}
 	}
@@ -11148,7 +11165,8 @@ character_event = {
 										}
 										NOT = {
 											opinion = {
-												who = PREVPREV value = 10
+												who = PREVPREV
+												value = 10
 											}
 										}
 									}
@@ -11176,7 +11194,8 @@ character_event = {
 										}
 										NOT = {
 											opinion = {
-												who = PREVPREV value = 10
+												who = PREVPREV
+												value = 10
 											}
 										}
 									}
@@ -11195,10 +11214,10 @@ character_event = {
 										}
 										NOT = {
 											opinion = {
-												who = PREVPREV value = 10
+												who = PREVPREV
+												value = 10
 											}
 										}
-
 									}
 									save_event_target_as = arguer_1
 
@@ -11215,16 +11234,20 @@ character_event = {
 					trigger = {
 						OR = {
 							opinion = {
-								who = event_target:great_minds_guest_1 value = 20
+								who = event_target:great_minds_guest_1
+								value = 20
 							}
 							opinion = {
-								who = event_target:great_minds_guest_2 value = 20
+								who = event_target:great_minds_guest_2
+								value = 20
 							}
 							opinion = {
-								who = event_target:great_minds_guest_3 value = 20
+								who = event_target:great_minds_guest_3
+								value = 20
 							}
 							opinion = {
-								who = event_target:great_minds_guest_4 value = 20
+								who = event_target:great_minds_guest_4
+								value = 20
 							}
 						}
 					}
@@ -11238,7 +11261,8 @@ character_event = {
 									character = event_target:great_minds_guest_4
 								}
 								reverse_opinion = {
-									who = ROOT value = 20
+									who = ROOT
+									value = 20
 								}
 							}
 							character_event = {
@@ -11300,10 +11324,12 @@ character_event = {
 				}
 				modifier = {
 					reverse_opinion = {
-						who = event_target:arguer_1 value = 25
+						who = event_target:arguer_1
+						value = 25
 					}
 					reverse_opinion = {
-						who = event_target:arguer_2 value = 25
+						who = event_target:arguer_2
+						value = 25
 					}
 					factor = 1.4
 				}
@@ -11568,10 +11594,12 @@ character_event = {
 		if = {
 			limit = {
 				opinion = {
-					who = FROM value = 40
+					who = FROM
+					value = 40
 				}
 				reverse_opinion = {
-					who = FROM value = 40
+					who = FROM
+					value = 40
 				}
 				NOT = {
 					is_friend = FROM
@@ -11640,7 +11668,8 @@ character_event = {
 	immediate = {
 		# Adds up everyone's learning
 		set_variable = {
-			which = collective_learning value = 0
+			which = collective_learning
+			value = 0
 		}
 		if = {
 			limit = {
@@ -11649,7 +11678,8 @@ character_event = {
 				}
 			}
 			export_to_variable = {
-				which = collective_learning_temp value = learning who = event_target:great_minds_guest_1
+				which = collective_learning_temp
+				value = learning who = event_target:great_minds_guest_1
 			}
 			change_variable = {
 				which = collective_learning which = collective_learning_temp
@@ -11662,7 +11692,8 @@ character_event = {
 				}
 			}
 			export_to_variable = {
-				which = collective_learning_temp value = learning who = event_target:great_minds_guest_2
+				which = collective_learning_temp
+				value = learning who = event_target:great_minds_guest_2
 			}
 			change_variable = {
 				which = collective_learning which = collective_learning_temp
@@ -11675,7 +11706,8 @@ character_event = {
 				}
 			}
 			export_to_variable = {
-				which = collective_learning_temp value = learning who = event_target:great_minds_guest_3
+				which = collective_learning_temp
+				value = learning who = event_target:great_minds_guest_3
 			}
 			change_variable = {
 				which = collective_learning which = collective_learning_temp
@@ -11688,7 +11720,8 @@ character_event = {
 				}
 			}
 			export_to_variable = {
-				which = collective_learning_temp value = learning who = event_target:great_minds_guest_4
+				which = collective_learning_temp
+				value = learning who = event_target:great_minds_guest_4
 			}
 			change_variable = {
 				which = collective_learning which = collective_learning_temp
@@ -11724,17 +11757,20 @@ character_event = {
 				}
 				modifier = {
 					check_variable = {
-						which = collective_learning value = 40
+						which = collective_learning
+						value = 40
 					} factor = 1.4
 				}
 				modifier = {
 					check_variable = {
-						which = collective_learning value = 50
+						which = collective_learning
+						value = 50
 					} factor = 1.4
 				}
 				modifier = {
 					check_variable = {
-						which = collective_learning value = 60
+						which = collective_learning
+						value = 60
 					} factor = 1.4
 				}
 				set_character_flag = best_outcome
@@ -11767,17 +11803,20 @@ character_event = {
 				}
 				modifier = {
 					check_variable = {
-						which = collective_learning value = 40
+						which = collective_learning
+						value = 40
 					} factor = 1.3
 				}
 				modifier = {
 					check_variable = {
-						which = collective_learning value = 50
+						which = collective_learning
+						value = 50
 					} factor = 1.3
 				}
 				modifier = {
 					check_variable = {
-						which = collective_learning value = 60
+						which = collective_learning
+						value = 60
 					} factor = 1.3
 				}
 				set_character_flag = good_outcome
@@ -11810,17 +11849,20 @@ character_event = {
 				}
 				modifier = {
 					check_variable = {
-						which = collective_learning value = 40
+						which = collective_learning
+						value = 40
 					} factor = 1.2
 				}
 				modifier = {
 					check_variable = {
-						which = collective_learning value = 50
+						which = collective_learning
+						value = 50
 					} factor = 1.2
 				}
 				modifier = {
 					check_variable = {
-						which = collective_learning value = 60
+						which = collective_learning
+						value = 60
 					} factor = 1.2
 				}
 				set_character_flag = ok_outcome
@@ -12297,7 +12339,6 @@ character_event = {
 					has_character_flag = hermetics_major_scandal
 
 				}
-
 			}
 			set_character_flag = hermetics_minor_scandal
 			break = yes
@@ -12370,7 +12411,6 @@ character_event = {
 }
 
 # Divine Summoning
-
 # Divine Summoning find target ping
 character_event = {
 	id = DR_societies.1620
@@ -12388,6 +12428,7 @@ character_event = {
 			is_inaccessible_trigger = yes
 		}
 	}
+
 	weight_multiplier = {
 		factor = 1
 		modifier = {
@@ -13585,7 +13626,6 @@ character_event = {
 }
 
 # Write a Theorem Paper
-
 # Write a Theory Paper - choose approach
 character_event = {
 	id = DR_societies.1630
@@ -14962,7 +15002,6 @@ character_event = {
 }
 
 # MISC
-
 # Become Society Grand Master (any society)
 character_event = {
 	id = DR_societies.1750
@@ -16171,16 +16210,17 @@ character_event = {
 	immediate = {
 		clr_character_flag = do_not_disturb
 		set_variable = {
-			which = gath_try value = 0
+			which = gath_try
+			value = 0
 		}
 		set_variable = {
-			which = gath_res value = 0
+			which = gath_res
+			value = 0
 		}
 	}
 }
 
 # Misc: apprenticeship
-
 # Ping event for apprenticeship completion
 character_event = {
 	id = DR_societies.1413
@@ -16293,7 +16333,6 @@ character_event = {
 }
 
 # Invite Hermetic member to Stargazing
-
 # Invitation events
 letter_event = {
 	id = DR_societies.1920
@@ -16307,7 +16346,8 @@ letter_event = {
 		save_event_target_as = stargazing_guest
 		hidden_tooltip = {
 			set_variable = {
-				which = stargazing_satisfaction value = 0
+				which = stargazing_satisfaction
+				value = 0
 			}
 		}
 		FROMFROM = {
@@ -16347,13 +16387,15 @@ letter_event = {
 			modifier = {
 				factor = 2
 				opinion = {
-					who = FROM value = 30
+					who = FROM
+					value = 30
 				}
 			}
 			modifier = {
 				factor = 3
 				opinion = {
-					who = FROM value = 60
+					who = FROM
+					value = 60
 				}
 			}
 			modifier = {
@@ -16408,7 +16450,8 @@ letter_event = {
 				factor = 3
 				NOT = {
 					opinion = {
-						who = FROM value = -25
+						who = FROM
+						value = -25
 					}
 				}
 			}
@@ -16416,7 +16459,8 @@ letter_event = {
 				factor = 3
 				NOT = {
 					opinion = {
-						who = FROM value = -50
+						who = FROM
+						value = -50
 					}
 				}
 			}
@@ -16717,7 +16761,8 @@ character_event = {
 					}
 				}
 				change_variable = {
-					which = stargazing_satisfaction value = 4
+					which = stargazing_satisfaction
+					value = 4
 				}
 			}
 			if = {
@@ -16730,7 +16775,8 @@ character_event = {
 					}
 				}
 				change_variable = {
-					which = stargazing_satisfaction value = 3
+					which = stargazing_satisfaction
+					value = 3
 				}
 			}
 			event_target:stargazing_host = {
@@ -16850,7 +16896,8 @@ character_event = {
 					}
 				}
 				change_variable = {
-					which = stargazing_satisfaction value = 3
+					which = stargazing_satisfaction
+					value = 3
 				}
 			}
 			if = {
@@ -16863,7 +16910,8 @@ character_event = {
 					}
 				}
 				change_variable = {
-					which = stargazing_satisfaction value = 2
+					which = stargazing_satisfaction
+					value = 2
 				}
 			}
 			event_target:stargazing_host = {
@@ -16982,7 +17030,8 @@ character_event = {
 					}
 				}
 				change_variable = {
-					which = stargazing_satisfaction value = 2
+					which = stargazing_satisfaction
+					value = 2
 				}
 			}
 			if = {
@@ -16994,7 +17043,8 @@ character_event = {
 					}
 				}
 				change_variable = {
-					which = stargazing_satisfaction value = 1
+					which = stargazing_satisfaction
+					value = 1
 				}
 			}
 			event_target:stargazing_host = {
@@ -17110,7 +17160,8 @@ character_event = {
 					}
 				}
 				change_variable = {
-					which = stargazing_satisfaction value = 2
+					which = stargazing_satisfaction
+					value = 2
 				}
 			}
 			if = {
@@ -17124,7 +17175,8 @@ character_event = {
 					}
 				}
 				change_variable = {
-					which = stargazing_satisfaction value = 1
+					which = stargazing_satisfaction
+					value = 1
 				}
 			}
 			event_target:stargazing_host = {
@@ -17255,7 +17307,8 @@ character_event = {
 					}
 				}
 				change_variable = {
-					which = stargazing_satisfaction value = 2
+					which = stargazing_satisfaction
+					value = 2
 				}
 			}
 			if = {
@@ -17268,7 +17321,8 @@ character_event = {
 					}
 				}
 				change_variable = {
-					which = stargazing_satisfaction value = 1
+					which = stargazing_satisfaction
+					value = 1
 				}
 			}
 			event_target:stargazing_host = {
@@ -17699,7 +17753,8 @@ character_event = {
 		name = EVTOPTA_MNM_1958
 		hidden_tooltip = {
 			change_variable = {
-				which = stargazing_satisfaction value = -1
+				which = stargazing_satisfaction
+				value = -1
 			}
 		}
 	}
@@ -17744,7 +17799,8 @@ character_event = {
 		name = EVTOPTA_MNM_1959 # Reused text
 		hidden_tooltip = {
 			change_variable = {
-				which = stargazing_satisfaction value = -1
+				which = stargazing_satisfaction
+				value = -1
 			}
 		}
 	}
@@ -17764,7 +17820,8 @@ character_event = {
 						factor = 2
 						event_target:stargazing_guest = {
 							check_variable = {
-								which = stargazing_satisfaction value = 3
+								which = stargazing_satisfaction
+								value = 3
 							}
 						}
 					}
@@ -17772,7 +17829,8 @@ character_event = {
 						factor = 2
 						event_target:stargazing_guest = {
 							check_variable = {
-								which = stargazing_satisfaction value = 2
+								which = stargazing_satisfaction
+								value = 2
 							}
 						}
 					}
@@ -17780,7 +17838,8 @@ character_event = {
 						factor = 1.5
 						event_target:stargazing_guest = {
 							check_variable = {
-								which = stargazing_satisfaction value = 1
+								which = stargazing_satisfaction
+								value = 1
 							}
 						}
 					}
@@ -17789,7 +17848,8 @@ character_event = {
 						event_target:stargazing_guest = {
 							NOT = {
 								check_variable = {
-									which = stargazing_satisfaction value = 0
+									which = stargazing_satisfaction
+									value = 0
 								}
 							}
 						}
@@ -17798,7 +17858,8 @@ character_event = {
 						factor = 2
 						event_target:stargazing_guest = {
 							opinion = {
-								who = ROOT value = 50
+								who = ROOT
+								value = 50
 							}
 						}
 					}
@@ -17819,7 +17880,8 @@ character_event = {
 						event_target:stargazing_guest = {
 							NOT = {
 								check_variable = {
-									which = stargazing_satisfaction value = 0
+									which = stargazing_satisfaction
+									value = 0
 								}
 							}
 						}
@@ -17829,7 +17891,8 @@ character_event = {
 						event_target:stargazing_guest = {
 							NOT = {
 								opinion = {
-									who = ROOT value = -25
+									who = ROOT
+									value = -25
 								}
 							}
 						}
@@ -17838,7 +17901,8 @@ character_event = {
 						factor = 0
 						event_target:stargazing_guest = {
 							check_variable = {
-								which = stargazing_satisfaction value = 1
+								which = stargazing_satisfaction
+								value = 1
 							}
 						}
 					}
@@ -18049,7 +18113,6 @@ character_event = {
 }
 
 # Magus Power: Write a Magnum Opus
-
 # Write a Magnum Opus - Start Writing
 character_event = {
 	id = DR_societies.1610
@@ -19768,737 +19831,737 @@ long_character_event = {
 
 # Shallyan Lay on Hands
 character_event = {
-	id = DR_societies.7118
-	picture = GFX_evt_magic_ritual
-	border = GFX_event_normal_frame_religion
-	is_triggered_only = yes
-	desc = EVTDESC_DR_SOCIETIES_7118
-	immediate = {
-		if = {
-			limit = {
-				has_disease_trigger = yes
-			}
-			set_character_flag = shallya_healing_disease_flag
+id = DR_societies.7118
+picture = GFX_evt_magic_ritual
+border = GFX_event_normal_frame_religion
+is_triggered_only = yes
+desc = EVTDESC_DR_SOCIETIES_7118
+immediate = {
+	if = {
+		limit = {
+			has_disease_trigger = yes
 		}
-		if = {
-			limit = {
-				is_maimed_trigger = yes
-			}
-			set_character_flag = shallya_healing_maimed_flag
+		set_character_flag = shallya_healing_disease_flag
+	}
+	if = {
+		limit = {
+			is_maimed_trigger = yes
 		}
-		if = {
-			limit = {
-				OR = {
-					trait = wounded
-					AND = {
-						has_dlc = "Reapers"
-						OR = {
-							trait = severely_injured
-							trait = infection
-						}
+		set_character_flag = shallya_healing_maimed_flag
+	}
+	if = {
+		limit = {
+			OR = {
+				trait = wounded
+				AND = {
+					has_dlc = "Reapers"
+					OR = {
+						trait = severely_injured
+						trait = infection
 					}
 				}
 			}
-			set_character_flag = shallya_healing_injured
 		}
+		set_character_flag = shallya_healing_injured
 	}
-	option = {
-		name = EVTOPTA_DR_SOCIETIES_7118
-		custom_tooltip = {
-			text = EVTOPTA_DR_SOCIETIES_7118_TOOLTIP
-		}
-		character_event = {
-			id = DR_societies.7119 days = 2
-		}
+}
+option = {
+	name = EVTOPTA_DR_SOCIETIES_7118
+	custom_tooltip = {
+		text = EVTOPTA_DR_SOCIETIES_7118_TOOLTIP
 	}
+	character_event = {
+		id = DR_societies.7119 days = 2
+	}
+}
 }
 
 # Healing result
 character_event = {
-	id = DR_societies.7119
-	picture = GFX_evt_magic_ritual
-	border = GFX_event_normal_frame_religion
-	is_triggered_only = yes
-	immediate = {
-		if = {
-			limit = {
-				NOT = {
-					has_dlc = "Reapers"
-				}
-			}
-			random_list = {
-				3 = {
-					set_character_flag = shallya_healing_nothing_happened
-				}
-				7 = {
-					random_list = {
-						10 = {
-							modifier = {
-								NOT = {
-									trait = maimed
-								}
-								factor = 0
-							}
-							set_character_flag = shallya_healing_maimed_healed
-						}
-						10 = {
-							modifier = {
-								NOT = {
-									trait = infirm
-								}
-								factor = 0
-							}
-							set_character_flag = shallya_healing_infirm
-						}
-						5 = {
-							modifier = {
-								NOT = {
-									trait = incapable
-								}
-								factor = 0
-							}
-							set_character_flag = shallya_healing_incapable
-						}
-						5 = {
-							modifier = {
-								NOT = {
-									trait = eunuch
-								}
-								factor = 0
-							}
-							set_character_flag = shallya_healing_eunuch
-						}
-						5 = {
-							modifier = {
-								NOT = {
-									trait = blinded
-								}
-								factor = 0
-							}
-							set_character_flag = shallya_healing_blinded
-						}
-					}
-				}
-			}
-		}
-		if = {
-			limit = {
+id = DR_societies.7119
+picture = GFX_evt_magic_ritual
+border = GFX_event_normal_frame_religion
+is_triggered_only = yes
+immediate = {
+	if = {
+		limit = {
+			NOT = {
 				has_dlc = "Reapers"
 			}
-			random_list = {
-				3 = {
-					set_character_flag = shallya_healing_nothing_happened
-				}
-				7 = {
-					random_list = {
-						10 = {
-							modifier = {
-								OR = {
-									trait = flu
-									trait = food_poisoning
-								}
-								factor = 2
+		}
+		random_list = {
+			3 = {
+				set_character_flag = shallya_healing_nothing_happened
+			}
+			7 = {
+				random_list = {
+					10 = {
+						modifier = {
+							NOT = {
+								trait = maimed
 							}
-							modifier = {
-								trait = cancer
-								NOT = {
-									trait = has_measles
-								}
-								NOT = {
-									trait = flu
-								}
-								NOT = {
-									trait = food_poisoning
-								}
-								NOT = {
-									trait = gout
-								}
-								NOT = {
-									trait = scurvy
-								}
-								NOT = {
-									trait = lovers_pox
-								}
-								NOT = {
-									trait = pneumonic
-								}
-								NOT = {
-									trait = syphilitic
-								}
-								NOT = {
-									trait = leper
-								}
-								factor = 0.5
-							}
-							remove_random_disease_effect = yes # sets a flag to remove random "regular" disease
-							set_character_flag = shallya_healing_disease_removed
+							factor = 0
 						}
-						10 = {
-							modifier = {
-								NOT = {
-									has_epidemic_disease_trigger = yes
-								}
-								factor = 0
+						set_character_flag = shallya_healing_maimed_healed
+					}
+					10 = {
+						modifier = {
+							NOT = {
+								trait = infirm
 							}
-							remove_random_epidemic_disease_effect = yes # sets a flag to remove random epidemic disease
-							set_character_flag = shallya_healing_disease_removed
+							factor = 0
 						}
-						10 = {
-							modifier = {
-								is_maimed_trigger = no
-								factor = 0
+						set_character_flag = shallya_healing_infirm
+					}
+					5 = {
+						modifier = {
+							NOT = {
+								trait = incapable
 							}
-							modifier = {
-								trait = mangled
-								factor = 2
-							}
-							remove_random_maimed_effect = yes
-							set_character_flag = shallya_healing_maimed_healed
+							factor = 0
 						}
-						10 = {
-							modifier = {
-								NOT = {
-									trait = infirm
-								}
-								factor = 0
+						set_character_flag = shallya_healing_incapable
+					}
+					5 = {
+						modifier = {
+							NOT = {
+								trait = eunuch
 							}
-							set_character_flag = shallya_healing_infirm
+							factor = 0
 						}
-						10 = {
-							modifier = {
-								NOT = {
-									trait = incapable
-								}
-								factor = 0
+						set_character_flag = shallya_healing_eunuch
+					}
+					5 = {
+						modifier = {
+							NOT = {
+								trait = blinded
 							}
-							set_character_flag = shallya_healing_incapable
+							factor = 0
 						}
-						10 = {
-							modifier = {
-								NOT = {
-									trait = eunuch
-								}
-								factor = 0
-							}
-							set_character_flag = shallya_healing_eunuch
-						}
-						10 = {
-							modifier = {
-								NOT = {
-									trait = blinded
-								}
-								factor = 0
-							}
-							set_character_flag = shallya_healing_blinded
-						}
+						set_character_flag = shallya_healing_blinded
 					}
 				}
 			}
 		}
 	}
-	desc = {
-
-		trigger = {
-			OR = {
-				has_character_flag = shallya_healing_incapable
-				has_character_flag = shallya_healing_infirm
+	if = {
+		limit = {
+			has_dlc = "Reapers"
+		}
+		random_list = {
+			3 = {
+				set_character_flag = shallya_healing_nothing_happened
+			}
+			7 = {
+				random_list = {
+					10 = {
+						modifier = {
+							OR = {
+								trait = flu
+								trait = food_poisoning
+							}
+							factor = 2
+						}
+						modifier = {
+							trait = cancer
+							NOT = {
+								trait = has_measles
+							}
+							NOT = {
+								trait = flu
+							}
+							NOT = {
+								trait = food_poisoning
+							}
+							NOT = {
+								trait = gout
+							}
+							NOT = {
+								trait = scurvy
+							}
+							NOT = {
+								trait = lovers_pox
+							}
+							NOT = {
+								trait = pneumonic
+							}
+							NOT = {
+								trait = syphilitic
+							}
+							NOT = {
+								trait = leper
+							}
+							factor = 0.5
+						}
+						remove_random_disease_effect = yes # sets a flag to remove random "regular" disease
+						set_character_flag = shallya_healing_disease_removed
+					}
+					10 = {
+						modifier = {
+							NOT = {
+								has_epidemic_disease_trigger = yes
+							}
+							factor = 0
+						}
+						remove_random_epidemic_disease_effect = yes # sets a flag to remove random epidemic disease
+						set_character_flag = shallya_healing_disease_removed
+					}
+					10 = {
+						modifier = {
+							is_maimed_trigger = no
+							factor = 0
+						}
+						modifier = {
+							trait = mangled
+							factor = 2
+						}
+						remove_random_maimed_effect = yes
+						set_character_flag = shallya_healing_maimed_healed
+					}
+					10 = {
+						modifier = {
+							NOT = {
+								trait = infirm
+							}
+							factor = 0
+						}
+						set_character_flag = shallya_healing_infirm
+					}
+					10 = {
+						modifier = {
+							NOT = {
+								trait = incapable
+							}
+							factor = 0
+						}
+						set_character_flag = shallya_healing_incapable
+					}
+					10 = {
+						modifier = {
+							NOT = {
+								trait = eunuch
+							}
+							factor = 0
+						}
+						set_character_flag = shallya_healing_eunuch
+					}
+					10 = {
+						modifier = {
+							NOT = {
+								trait = blinded
+							}
+							factor = 0
+						}
+						set_character_flag = shallya_healing_blinded
+					}
+				}
 			}
 		}
-		text = EVTDESC_DR_SOCIETIES_7119_INCAPABLE_INFIRM
 	}
-	desc = {
+}
+desc = {
 
-		trigger = {
-			has_character_flag = shallya_healing_blinded
+	trigger = {
+		OR = {
+			has_character_flag = shallya_healing_incapable
+			has_character_flag = shallya_healing_infirm
 		}
-		text = EVTDESC_DR_SOCIETIES_7119_BLINDED
 	}
-	desc = {
+	text = EVTDESC_DR_SOCIETIES_7119_INCAPABLE_INFIRM
+}
+desc = {
 
-		trigger = {
+	trigger = {
+		has_character_flag = shallya_healing_blinded
+	}
+	text = EVTDESC_DR_SOCIETIES_7119_BLINDED
+}
+desc = {
+
+	trigger = {
+		has_character_flag = shallya_healing_eunuch
+	}
+	text = EVTDESC_DR_SOCIETIES_7119_EUNUCH
+}
+desc = {
+
+	trigger = {
+		has_character_flag = shallya_healing_maimed_healed
+	}
+	text = EVTDESC_DR_SOCIETIES_7119_MAIMED
+}
+desc = {
+
+	trigger = {
+		NOT = {
+			has_character_flag = shallya_healing_incapable
 			has_character_flag = shallya_healing_eunuch
-		}
-		text = EVTDESC_DR_SOCIETIES_7119_EUNUCH
-	}
-	desc = {
-
-		trigger = {
+			has_character_flag = shallya_healing_blinded
 			has_character_flag = shallya_healing_maimed_healed
+			has_character_flag = shallya_healing_infirm
 		}
-		text = EVTDESC_DR_SOCIETIES_7119_MAIMED
+		has_character_flag = shallya_healing_disease_flag
+		has_character_flag = shallya_healing_disease_removed
 	}
-	desc = {
+	text = EVTDESC_DR_SOCIETIES_7119_DISEASE
+}
+desc = {
 
-		trigger = {
-			NOT = {
-				has_character_flag = shallya_healing_incapable
-				has_character_flag = shallya_healing_eunuch
-				has_character_flag = shallya_healing_blinded
-				has_character_flag = shallya_healing_maimed_healed
-				has_character_flag = shallya_healing_infirm
-			}
+	trigger = {
+		NAND = {
 			has_character_flag = shallya_healing_disease_flag
 			has_character_flag = shallya_healing_disease_removed
 		}
-		text = EVTDESC_DR_SOCIETIES_7119_DISEASE
-	}
-	desc = {
-
-		trigger = {
-			NAND = {
-				has_character_flag = shallya_healing_disease_flag
-				has_character_flag = shallya_healing_disease_removed
-			}
-			has_character_flag = shallya_healing_nothing_happened
-			OR = {
-				has_character_flag = shallya_healing_disease_flag
-				has_character_flag = shallya_healing_maimed_flag
-			}
+		has_character_flag = shallya_healing_nothing_happened
+		OR = {
+			has_character_flag = shallya_healing_disease_flag
+			has_character_flag = shallya_healing_maimed_flag
 		}
-		text = EVTDESC_DR_SOCIETIES_7119_NOTHING_HAPPENED
 	}
-	desc = {
+	text = EVTDESC_DR_SOCIETIES_7119_NOTHING_HAPPENED
+}
+desc = {
 
-		trigger = {
-			NAND = {
-				has_character_flag = shallya_healing_disease_flag
-				has_character_flag = shallya_healing_disease_removed
-			}
+	trigger = {
+		NAND = {
+			has_character_flag = shallya_healing_disease_flag
+			has_character_flag = shallya_healing_disease_removed
+		}
+		has_character_flag = shallya_healing_injured
+		has_character_flag = shallya_healing_nothing_happened
+		NOR = {
+			has_character_flag = shallya_healing_disease_flag
+			has_character_flag = shallya_healing_maimed_flag
+		}
+	}
+	text = EVTDESC_DR_SOCIETIES_7119_NORMAL
+}
+desc = {
+
+	trigger = {
+		NAND = {
 			has_character_flag = shallya_healing_injured
-			has_character_flag = shallya_healing_nothing_happened
-			NOR = {
-				has_character_flag = shallya_healing_disease_flag
-				has_character_flag = shallya_healing_maimed_flag
-			}
+			has_character_flag = shallya_healing_disease_removed
 		}
-		text = EVTDESC_DR_SOCIETIES_7119_NORMAL
+		has_character_flag = shallya_healing_nothing_happened
 	}
-	desc = {
-
-		trigger = {
-			NAND = {
-				has_character_flag = shallya_healing_injured
-				has_character_flag = shallya_healing_disease_removed
-			}
-			has_character_flag = shallya_healing_nothing_happened
+	text = EVTDESC_DR_SOCIETIES_7119_TOO_WEAK
+}
+option = {
+	name = EVTOPT_DR_SOCIETIES_7119
+	if = {
+		limit = {
+			has_character_flag = shallya_healing_disease_removed
 		}
-		text = EVTDESC_DR_SOCIETIES_7119_TOO_WEAK
+		# general disease clearing effects:
+		remove_symptoms_effect = yes
+		clear_disease_level_effect = yes
+		remove_disease_flags_effect = yes
+		hidden_effect = {
+			remove_treatment_modifiers_effect = yes
+		}
 	}
-	option = {
-		name = EVTOPT_DR_SOCIETIES_7119
+	if = {
+		limit = {
+			trait = infection
+		} remove_trait = infection
+	}
+	if = {
+		limit = {
+			trait = severely_injured
+		} remove_trait = severely_injured
+	}
+	if = {
+		limit = {
+			trait = ill
+		} remove_trait = ill
+	}
+	if = {
+		limit = {
+			trait = wounded
+		} remove_trait = wounded
+	}
+	if = {
+		limit = {
+			has_character_flag = shallya_healing_infirm
+		}
+		remove_trait = infirm
+	}
+	if = {
+		limit = {
+			has_character_flag = shallya_healing_blinded
+		}
+		remove_trait = blinded
+	}
+	if = {
+		limit = {
+			has_character_flag = shallya_healing_incapable
+		}
+		remove_trait = incapable
+	}
+	if = {
+		limit = {
+			has_character_flag = shallya_healing_eunuch
+		}
+		remove_trait = eunuch
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_dlc = "Reapers"
+			} has_character_flag = shallya_healing_maimed_healed
+		}
+		remove_trait = maimed
+	}
+	if = {
+		limit = {
+			has_character_flag = removed_maimed
+		}
+		remove_trait = maimed
+	}
+	if = {
+		limit = {
+			has_character_flag = removed_mangled
+		}
+		remove_trait = mangled
+	}
+	if = {
+		limit = {
+			has_character_flag = removed_one_eyed
+		}
+		remove_trait = one_eyed
 		if = {
 			limit = {
-				has_character_flag = shallya_healing_disease_removed
+				has_character_modifier = glass_eye
 			}
-			# general disease clearing effects:
-			remove_symptoms_effect = yes
-			clear_disease_level_effect = yes
-			remove_disease_flags_effect = yes
-			hidden_effect = {
-				remove_treatment_modifiers_effect = yes
-			}
+			remove_character_modifier = glass_eye
 		}
 		if = {
 			limit = {
-				trait = infection
-			} remove_trait = infection
-		}
-		if = {
-			limit = {
-				trait = severely_injured
-			} remove_trait = severely_injured
-		}
-		if = {
-			limit = {
-				trait = ill
-			} remove_trait = ill
-		}
-		if = {
-			limit = {
-				trait = wounded
-			} remove_trait = wounded
-		}
-		if = {
-			limit = {
-				has_character_flag = shallya_healing_infirm
-			}
-			remove_trait = infirm
-		}
-		if = {
-			limit = {
-				has_character_flag = shallya_healing_blinded
-			}
-			remove_trait = blinded
-		}
-		if = {
-			limit = {
-				has_character_flag = shallya_healing_incapable
-			}
-			remove_trait = incapable
-		}
-		if = {
-			limit = {
-				has_character_flag = shallya_healing_eunuch
-			}
-			remove_trait = eunuch
-		}
-		if = {
-			limit = {
+				has_character_modifier = phantom_pain
 				NOT = {
-					has_dlc = "Reapers"
-				} has_character_flag = shallya_healing_maimed_healed
-			}
-			remove_trait = maimed
-		}
-		if = {
-			limit = {
-				has_character_flag = removed_maimed
-			}
-			remove_trait = maimed
-		}
-		if = {
-			limit = {
-				has_character_flag = removed_mangled
-			}
-			remove_trait = mangled
-		}
-		if = {
-			limit = {
-				has_character_flag = removed_one_eyed
-			}
-			remove_trait = one_eyed
-			if = {
-				limit = {
-					has_character_modifier = glass_eye
+					trait = one_handed
 				}
-				remove_character_modifier = glass_eye
-			}
-			if = {
-				limit = {
-					has_character_modifier = phantom_pain
-					NOT = {
-						trait = one_handed
-					}
-					NOT = {
-						trait = one_legged
-					}
-					NOT = {
-						trait = disfigured
-					}
+				NOT = {
+					trait = one_legged
 				}
-				remove_character_modifier = phantom_pain
-			}
-		}
-		if = {
-			limit = {
-				has_character_flag = removed_one_handed
-			}
-			remove_trait = one_handed
-			if = {
-				limit = {
-					has_character_modifier = golden_hand
+				NOT = {
+					trait = disfigured
 				}
-				remove_character_modifier = golden_hand
-				wealth = 10
 			}
-			if = {
-				limit = {
-					has_character_modifier = iron_hand
-				}
-				remove_character_modifier = iron_hand
-			}
-			if = {
-				limit = {
-					has_character_modifier = phantom_pain
-					NOT = {
-						trait = one_eyed
-					}
-					NOT = {
-						trait = one_legged
-					}
-					NOT = {
-						trait = disfigured
-					}
-				}
-				remove_character_modifier = phantom_pain
-			}
+			remove_character_modifier = phantom_pain
 		}
-		if = {
-			limit = {
-				has_character_flag = removed_one_legged
-			}
-			remove_trait = one_legged
-			if = {
-				limit = {
-					has_character_modifier = peg_leg
-				}
-				remove_character_modifier = peg_leg
-			}
-			if = {
-				limit = {
-					has_character_modifier = prosthetic_leg
-				}
-				remove_character_modifier = prosthetic_leg
-			}
-			if = {
-				limit = {
-					has_character_modifier = phantom_pain
-					NOT = {
-						trait = one_handed
-					}
-					NOT = {
-						trait = one_eyed
-					}
-					NOT = {
-						trait = disfigured
-					}
-				}
-				remove_character_modifier = phantom_pain
-			}
-		}
-		if = {
-			limit = {
-				has_character_flag = removed_disfigured
-			}
-			remove_trait = disfigured
-			if = {
-				limit = {
-					has_character_modifier = golden_mask
-				}
-				remove_character_modifier = golden_mask
-				wealth = 10
-			}
-			if = {
-				limit = {
-					has_character_modifier = phantom_pain
-					NOT = {
-						trait = one_handed
-					}
-					NOT = {
-						trait = one_legged
-					}
-					NOT = {
-						trait = one_eyed
-					}
-				}
-				remove_character_modifier = phantom_pain
-			}
-		}
-		if = {
-			limit = {
-				has_character_flag = removing_flu
-			}
-			remove_trait = flu
-		}
-		if = {
-			limit = {
-				has_character_flag = removing_measles
-			}
-			remove_trait = has_measles
-			set_character_flag = immune_measles
-		}
-		if = {
-			limit = {
-				has_character_flag = removing_food_poisoning
-			}
-			remove_trait = food_poisoning
-		}
-		if = {
-			limit = {
-				has_character_flag = removing_gout
-			}
-			remove_trait = gout
-		}
-		if = {
-			limit = {
-				has_character_flag = removing_scurvy
-			}
-			remove_trait = scurvy
-		}
-		if = {
-			limit = {
-				has_character_flag = removing_lovers_pox
-			}
-			remove_trait = lovers_pox
-		}
-		if = {
-			limit = {
-				has_character_flag = removing_cancer
-			}
-			remove_trait = cancer
-		}
-		if = {
-			limit = {
-				has_character_flag = removing_pneumonic
-			}
-			remove_trait = pneumonic
-		}
-		if = {
-			limit = {
-				has_character_flag = removing_syphilitic
-			}
-			remove_trait = syphilitic
-			set_character_flag = immune_syphilis
-		}
-		if = {
-			limit = {
-				has_character_flag = removing_leper
-			}
-			remove_trait = leper
-		}
-		if = {
-			limit = {
-				has_character_flag = removing_has_tuberculosis
-			}
-			remove_trait = has_tuberculosis
-			set_character_flag = immune_tuberculosis
-		}
-		if = {
-			limit = {
-				has_character_flag = removing_has_aztec_disease
-			}
-			remove_trait = has_aztec_disease
-			set_character_flag = immune_aztec_disease
-		}
-		if = {
-			limit = {
-				has_character_flag = removing_has_small_pox
-			}
-			remove_trait = has_small_pox
-			set_character_flag = immune_smallpox
-		}
-		if = {
-			limit = {
-				has_character_flag = removing_has_bubonic_plague
-			}
-			remove_trait = has_bubonic_plague
-			set_character_flag = immune_bubonic_plague
-		}
-		if = {
-			limit = {
-				has_character_flag = removing_has_typhus
-			}
-			remove_trait = has_typhus
-			set_character_flag = immune_typhus
-		}
-		if = {
-			limit = {
-				has_character_flag = removing_has_typhoid_fever
-			}
-			remove_trait = has_typhoid_fever
-			set_character_flag = immune_typhoid_fever
-		}
-		add_character_modifier = {
-			modifier = shallya_healing_recent
-			years = 1
-		}
-		# demonic healing specific clearing:
-		clr_character_flag = shallya_healing_in_effect
-		clr_character_flag = shallya_healing_nothing_happened
-		clr_character_flag = shallya_healing_maimed_flag
-		clr_character_flag = shallya_healing_disease_flag
-		clr_character_flag = shallya_healing_disease_removed
-		clr_character_flag = shallya_healing_maimed_healed
-		clr_character_flag = shallya_healing_incapable
-		clr_character_flag = shallya_healing_infirm
-		clr_character_flag = shallya_healing_blinded
-		clr_character_flag = shallya_healing_eunuch
-		clr_character_flag = shallya_healing_injured
-		clr_character_flag = removed_maimed
-		clr_character_flag = removed_mangled
-		clr_character_flag = removed_one_eyed
-		clr_character_flag = removed_one_handed
-		clr_character_flag = removed_one_legged
-		clr_character_flag = removed_disfigured
-		clr_character_flag = removing_flu
-		clr_character_flag = removing_measles
-		clr_character_flag = removing_food_poisoning
-		clr_character_flag = removing_gout
-		clr_character_flag = removing_scurvy
-		clr_character_flag = removing_lovers_pox
-		clr_character_flag = removing_cancer
-		clr_character_flag = removing_leper
-		clr_character_flag = removing_has_tuberculosis
-		clr_character_flag = removing_has_aztec_disease
-		clr_character_flag = removing_has_small_pox
-		clr_character_flag = removing_has_bubonic_plague
-		clr_character_flag = removing_has_typhus
-		clr_character_flag = removing_has_typhoid_fever
 	}
+	if = {
+		limit = {
+			has_character_flag = removed_one_handed
+		}
+		remove_trait = one_handed
+		if = {
+			limit = {
+				has_character_modifier = golden_hand
+			}
+			remove_character_modifier = golden_hand
+			wealth = 10
+		}
+		if = {
+			limit = {
+				has_character_modifier = iron_hand
+			}
+			remove_character_modifier = iron_hand
+		}
+		if = {
+			limit = {
+				has_character_modifier = phantom_pain
+				NOT = {
+					trait = one_eyed
+				}
+				NOT = {
+					trait = one_legged
+				}
+				NOT = {
+					trait = disfigured
+				}
+			}
+			remove_character_modifier = phantom_pain
+		}
+	}
+	if = {
+		limit = {
+			has_character_flag = removed_one_legged
+		}
+		remove_trait = one_legged
+		if = {
+			limit = {
+				has_character_modifier = peg_leg
+			}
+			remove_character_modifier = peg_leg
+		}
+		if = {
+			limit = {
+				has_character_modifier = prosthetic_leg
+			}
+			remove_character_modifier = prosthetic_leg
+		}
+		if = {
+			limit = {
+				has_character_modifier = phantom_pain
+				NOT = {
+					trait = one_handed
+				}
+				NOT = {
+					trait = one_eyed
+				}
+				NOT = {
+					trait = disfigured
+				}
+			}
+			remove_character_modifier = phantom_pain
+		}
+	}
+	if = {
+		limit = {
+			has_character_flag = removed_disfigured
+		}
+		remove_trait = disfigured
+		if = {
+			limit = {
+				has_character_modifier = golden_mask
+			}
+			remove_character_modifier = golden_mask
+			wealth = 10
+		}
+		if = {
+			limit = {
+				has_character_modifier = phantom_pain
+				NOT = {
+					trait = one_handed
+				}
+				NOT = {
+					trait = one_legged
+				}
+				NOT = {
+					trait = one_eyed
+				}
+			}
+			remove_character_modifier = phantom_pain
+		}
+	}
+	if = {
+		limit = {
+			has_character_flag = removing_flu
+		}
+		remove_trait = flu
+	}
+	if = {
+		limit = {
+			has_character_flag = removing_measles
+		}
+		remove_trait = has_measles
+		set_character_flag = immune_measles
+	}
+	if = {
+		limit = {
+			has_character_flag = removing_food_poisoning
+		}
+		remove_trait = food_poisoning
+	}
+	if = {
+		limit = {
+			has_character_flag = removing_gout
+		}
+		remove_trait = gout
+	}
+	if = {
+		limit = {
+			has_character_flag = removing_scurvy
+		}
+		remove_trait = scurvy
+	}
+	if = {
+		limit = {
+			has_character_flag = removing_lovers_pox
+		}
+		remove_trait = lovers_pox
+	}
+	if = {
+		limit = {
+			has_character_flag = removing_cancer
+		}
+		remove_trait = cancer
+	}
+	if = {
+		limit = {
+			has_character_flag = removing_pneumonic
+		}
+		remove_trait = pneumonic
+	}
+	if = {
+		limit = {
+			has_character_flag = removing_syphilitic
+		}
+		remove_trait = syphilitic
+		set_character_flag = immune_syphilis
+	}
+	if = {
+		limit = {
+			has_character_flag = removing_leper
+		}
+		remove_trait = leper
+	}
+	if = {
+		limit = {
+			has_character_flag = removing_has_tuberculosis
+		}
+		remove_trait = has_tuberculosis
+		set_character_flag = immune_tuberculosis
+	}
+	if = {
+		limit = {
+			has_character_flag = removing_has_aztec_disease
+		}
+		remove_trait = has_aztec_disease
+		set_character_flag = immune_aztec_disease
+	}
+	if = {
+		limit = {
+			has_character_flag = removing_has_small_pox
+		}
+		remove_trait = has_small_pox
+		set_character_flag = immune_smallpox
+	}
+	if = {
+		limit = {
+			has_character_flag = removing_has_bubonic_plague
+		}
+		remove_trait = has_bubonic_plague
+		set_character_flag = immune_bubonic_plague
+	}
+	if = {
+		limit = {
+			has_character_flag = removing_has_typhus
+		}
+		remove_trait = has_typhus
+		set_character_flag = immune_typhus
+	}
+	if = {
+		limit = {
+			has_character_flag = removing_has_typhoid_fever
+		}
+		remove_trait = has_typhoid_fever
+		set_character_flag = immune_typhoid_fever
+	}
+	add_character_modifier = {
+		modifier = shallya_healing_recent
+		years = 1
+	}
+	# demonic healing specific clearing:
+	clr_character_flag = shallya_healing_in_effect
+	clr_character_flag = shallya_healing_nothing_happened
+	clr_character_flag = shallya_healing_maimed_flag
+	clr_character_flag = shallya_healing_disease_flag
+	clr_character_flag = shallya_healing_disease_removed
+	clr_character_flag = shallya_healing_maimed_healed
+	clr_character_flag = shallya_healing_incapable
+	clr_character_flag = shallya_healing_infirm
+	clr_character_flag = shallya_healing_blinded
+	clr_character_flag = shallya_healing_eunuch
+	clr_character_flag = shallya_healing_injured
+	clr_character_flag = removed_maimed
+	clr_character_flag = removed_mangled
+	clr_character_flag = removed_one_eyed
+	clr_character_flag = removed_one_handed
+	clr_character_flag = removed_one_legged
+	clr_character_flag = removed_disfigured
+	clr_character_flag = removing_flu
+	clr_character_flag = removing_measles
+	clr_character_flag = removing_food_poisoning
+	clr_character_flag = removing_gout
+	clr_character_flag = removing_scurvy
+	clr_character_flag = removing_lovers_pox
+	clr_character_flag = removing_cancer
+	clr_character_flag = removing_leper
+	clr_character_flag = removing_has_tuberculosis
+	clr_character_flag = removing_has_aztec_disease
+	clr_character_flag = removing_has_small_pox
+	clr_character_flag = removing_has_bubonic_plague
+	clr_character_flag = removing_has_typhus
+	clr_character_flag = removing_has_typhoid_fever
+}
 }
 
 # MISSION: Build a Temple
 society_quest_event = {
-	id = DR_societies.4023
-	desc = EVTDESC_DR_SOCIETIES_4023
-	border = GFX_event_letter_frame_religion
-	is_triggered_only = yes
-	option = {
-		name = ACCEPT
-		set_quest = shallya_build_hospital_construction
+id = DR_societies.4023
+desc = EVTDESC_DR_SOCIETIES_4023
+border = GFX_event_letter_frame_religion
+is_triggered_only = yes
+option = {
+	name = ACCEPT
+	set_quest = shallya_build_hospital_construction
+}
+option = {
+	name = DECLINE
+	custom_tooltip = {
+		text = decline_quest_tooltip
 	}
-	option = {
-		name = DECLINE
-		custom_tooltip = {
-			text = decline_quest_tooltip
-		}
-		add_character_modifier = {
-			name = quest_cooldown_timer
-			hidden = yes
-			days = 1000
-		}
-		ai_chance = {
-			factor = 0
-		}
+	add_character_modifier = {
+		name = quest_cooldown_timer
+		hidden = yes
+		days = 1000
 	}
+	ai_chance = {
+		factor = 0
+	}
+}
 }
 
 # send to grandmaster for Ping
 character_event = {
-	id = DR_societies.4024
-	is_triggered_only = yes
-	hide_window = yes
-	trigger = {
-		has_quest = shallya_build_hospital_construction
-	}
-	immediate = {
-		random_society_member = {
-			limit = {
-				same_society_as = ROOT
-				is_society_grandmaster = yes
-			}
-			character_event = {
-				id = DR_societies.4025
-			}
+id = DR_societies.4024
+is_triggered_only = yes
+hide_window = yes
+trigger = {
+	has_quest = shallya_build_hospital_construction
+}
+immediate = {
+	random_society_member = {
+		limit = {
+			same_society_as = ROOT
+			is_society_grandmaster = yes
+		}
+		character_event = {
+			id = DR_societies.4025
 		}
 	}
+}
 }
 
 # Ping
 character_event = {
-	id = DR_societies.4025
-	is_triggered_only = yes
-	hide_window = yes
-	immediate = {
-		FROM = {
-			character_event = {
-				id = DR_societies.4026
-			}
+id = DR_societies.4025
+is_triggered_only = yes
+hide_window = yes
+immediate = {
+	FROM = {
+		character_event = {
+			id = DR_societies.4026
 		}
 	}
 }
+}
 letter_event = {
-	id = DR_societies.4026
-	desc = EVTDESC_DR_SOCIETIES_4026
-	border = GFX_event_letter_frame_religion
-	is_triggered_only = yes
-	option = {
-		name = EVTOPT_DR_SOCIETIES_4026
-		clr_quest = shallya_build_hospital_construction
-		sound_effect = monastic_orders_build_temple_holding
-		hidden_effect = {
-			monastic_order_purity_effect = yes
-		}
-		add_society_currency_major_effect = yes
+id = DR_societies.4026
+desc = EVTDESC_DR_SOCIETIES_4026
+border = GFX_event_letter_frame_religion
+is_triggered_only = yes
+option = {
+	name = EVTOPT_DR_SOCIETIES_4026
+	clr_quest = shallya_build_hospital_construction
+	sound_effect = monastic_orders_build_temple_holding
+	hidden_effect = {
+		monastic_order_purity_effect = yes
 	}
+	add_society_currency_major_effect = yes
+}
 }

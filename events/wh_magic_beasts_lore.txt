@@ -21,10 +21,12 @@ character_event = {
 		}
 		event_target:magic_caster = {
 			set_variable = {
-				which = zdmg value = 9
+				which = zdmg
+				value = 9
 			}
 			set_variable = {
-				which = zmoraledmg value = 9
+				which = zmoraledmg
+				value = 9
 			}
 			change_variable = {
 				which = zdmg which = caster_level
@@ -62,10 +64,12 @@ character_event = {
 					event_target:magic_caster = {
 						clr_character_flag = resisted
 						divide_variable = {
-							which = zdmg value = 2
+							which = zdmg
+							value = 2
 						}
 						divide_variable = {
-							which = zmoraledmg value = 2
+							which = zmoraledmg
+							value = 2
 						}
 					}
 				}
@@ -148,7 +152,6 @@ character_event = {
 				war_elephants = {
 					100 100
 				}
-
 			}
 			attrition = 0.0
 			reinforces = yes
@@ -182,10 +185,12 @@ character_event = {
 		}
 		event_target:magic_caster = {
 			set_variable = {
-				which = zdmg value = 16
+				which = zdmg
+				value = 16
 			}
 			set_variable = {
-				which = zmoraledmg value = 16
+				which = zmoraledmg
+				value = 16
 			}
 			change_variable = {
 				which = zdmg which = caster_level
@@ -223,10 +228,12 @@ character_event = {
 					event_target:magic_caster = {
 						clr_character_flag = resisted
 						divide_variable = {
-							which = zdmg value = 2
+							which = zdmg
+							value = 2
 						}
 						divide_variable = {
-							which = zmoraledmg value = 2
+							which = zmoraledmg
+							value = 2
 						}
 					}
 				}
@@ -251,11 +258,9 @@ character_event = {
 }
 
 # Spells
-
 # bestial_fury Martial boost.
 
 # Spell 2, Army of the Wood, Blessing/Curse, spawns either a dinosaur rampage at capital of target, Or spawns an event troop 1200 strong under command of Target.
-
 # Spell 3,Summon Mount.
 
 # Spell 4, Warriors of the wild, modifier that summons event troops when enemies are in nearby provinces
@@ -352,8 +357,8 @@ character_event = {
 					opinion = {
 						modifier = opinion_barbaric who = FROM
 					}
-				} # closes anyvassal
-			} # closes from
+				}
+			}
 			any_dynasty_member = {
 				limit = {
 					religion_group = cytharai_group
@@ -361,7 +366,7 @@ character_event = {
 				opinion = {
 					modifier = opinion_polymorphed_family_druchii who = FROM
 				}
-			} # closes anydynastyme
+			}
 			any_dynasty_member = {
 				limit = {
 					NOT = {
@@ -371,7 +376,7 @@ character_event = {
 				opinion = {
 					modifier = opinion_polymorphed_family who = FROM
 				}
-			} # closes anydynastyme
+			}
 		}
 		FROM = {
 			character_event = {
@@ -425,8 +430,8 @@ character_event = {
 					opinion = {
 						modifier = opinion_barbaric who = FROM
 					}
-				} # closes anyvassal
-			} # closes from
+				}
+			}
 			any_dynasty_member = {
 				limit = {
 					religion_group = cytharai_group
@@ -434,7 +439,7 @@ character_event = {
 				opinion = {
 					modifier = opinion_polymorphed_family_druchii who = FROM
 				}
-			} # closes anydynastyme
+			}
 			any_dynasty_member = {
 				limit = {
 					NOT = {
@@ -444,7 +449,7 @@ character_event = {
 				opinion = {
 					modifier = opinion_polymorphed_family who = FROM
 				}
-			} # closes anydynastyme
+			}
 		}
 		FROM = {
 			character_event = {
@@ -508,7 +513,6 @@ character_event = {
 			opinion = {
 				modifier = opinion_scared_into_submission who = ROOT
 			}
-
 		}
 		any_courtier = {
 			limit = {
@@ -597,8 +601,8 @@ character_event = {
 					opinion = {
 						modifier = opinion_barbaric who = FROM
 					}
-				} # closes anyvassal
-			} # closes from
+				}
+			}
 			any_dynasty_member = {
 				limit = {
 					religion_group = cytharai_group
@@ -606,7 +610,7 @@ character_event = {
 				opinion = {
 					modifier = opinion_polymorphed_family_druchii who = FROM
 				}
-			} # closes anydynastyme
+			}
 			any_dynasty_member = {
 				limit = {
 					NOT = {
@@ -616,7 +620,7 @@ character_event = {
 				opinion = {
 					modifier = opinion_polymorphed_family who = FROM
 				}
-			} # closes anydynastyme
+			}
 		}
 		FROM = {
 			character_event = {
@@ -943,7 +947,9 @@ character_event = {
 							random_neighbor_province = {
 								save_event_target_as = provscope
 								add_province_modifier = {
-									name = z_beast_army duration = 30 stacking = yes
+									name = z_beast_army
+									duration = 30
+									stacking = yes
 								}
 							}
 						}
@@ -952,13 +958,48 @@ character_event = {
 						capital_scope = {
 							save_event_target_as = provscope
 							add_province_modifier = {
-								name = z_beast_army duration = 30 stacking = yes
+								name = z_beast_army
+								duration = 30
+								stacking = yes
 							}
 						}
 					}
 				}
 				character_event = {
 					id = beasts_lore_non_battle.402 days = 30
+				}
+			}
+		}
+		random = {
+			chance = 45
+			event_target:spelltarget = {
+				random_list = {
+					50 = {
+						capital_scope = {
+							random_neighbor_province = {
+								save_event_target_as = provscope
+								add_province_modifier = {
+									name = z_beast_army
+									duration = 30
+									stacking = yes
+								}
+							}
+						}
+					}
+					50 = {
+						capital_scope = {
+							save_event_target_as = provscope
+							add_province_modifier = {
+								name = z_beast_army
+								duration = 30
+								stacking = yes
+							}
+						}
+					}
+				}
+				character_event = {
+					id = beasts_lore_non_battle.402
+					days = 30
 				}
 			}
 		}
@@ -999,7 +1040,9 @@ character_event = {
 							random_neighbor_province = {
 								save_event_target_as = provscope
 								add_province_modifier = {
-									name = z_beast_army duration = 30 stacking = yes
+									name = z_beast_army
+									duration = 30
+									stacking = yes
 								}
 							}
 						}
@@ -1008,35 +1051,9 @@ character_event = {
 						capital_scope = {
 							save_event_target_as = provscope
 							add_province_modifier = {
-								name = z_beast_army duration = 30 stacking = yes
-							}
-						}
-					}
-				}
-				character_event = {
-					id = beasts_lore_non_battle.402 days = 30
-				}
-			}
-		}
-		random = {
-			chance = 45
-			event_target:spelltarget = {
-				random_list = {
-					50 = {
-						capital_scope = {
-							random_neighbor_province = {
-								save_event_target_as = provscope
-								add_province_modifier = {
-									name = z_beast_army duration = 30 stacking = yes
-								}
-							}
-						}
-					}
-					50 = {
-						capital_scope = {
-							save_event_target_as = provscope
-							add_province_modifier = {
-								name = z_beast_army duration = 30 stacking = yes
+								name = z_beast_army
+								duration = 30
+								stacking = yes
 							}
 						}
 					}

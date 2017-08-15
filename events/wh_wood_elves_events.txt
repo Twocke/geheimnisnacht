@@ -1,11 +1,9 @@
 namespace = asrai
 
 # INDEX
-
 # The inheritance of Athel Loren
 
 # asrai.1 becoming an avatar
-
 # asrai.2 the avatars go into hibernation along with all spirits in the winter.
 
 # becoming an avatar
@@ -18,14 +16,12 @@ long_character_event = {
 		trigger = {
 			is_female = yes
 		}
-
 	}
 	desc = {
 		text = EVTDESCBasrai1
 		trigger = {
 			is_female = no
 		}
-
 	}
 	is_triggered_only = yes
 
@@ -183,7 +179,6 @@ long_character_event = {
 				} # Influence of Kurnous
 
 			}
-
 		}
 	}
 }
@@ -197,14 +192,12 @@ character_event = {
 		trigger = {
 			trait = avatar_isha
 		}
-
 	}
 	desc = {
 		text = EVTDESCBasrai2
 		trigger = {
 			trait = avatar_kurnous
 		}
-
 	}
 	desc = {
 		text = EVTDESCCasrai2
@@ -214,7 +207,6 @@ character_event = {
 				trait = creature_forestspirit
 			}
 		}
-
 	}
 
 	trigger = {
@@ -292,10 +284,9 @@ character_event = {
 							} # anyvassal (counts)
 						} # anyvassal (dukes)
 					} # anyvassal (kings)
-				} # closesholderscope
-			} # closestitle
-
-		} # closesif
+				}
+			}
+		}
 	}
 
 	option = {
@@ -430,7 +421,7 @@ character_event = {
 							}
 							set_character_flag = kurnous_frenzy
 							add_trait = lunatic_3
-						} # closesanycourtier(kings)
+						}
 						any_vassal = {
 							limit = {
 								OR = {
@@ -449,7 +440,7 @@ character_event = {
 								}
 								set_character_flag = kurnous_frenzy
 								add_trait = lunatic_3
-							} # closesanycourtier(dukes)
+							}
 							any_vassal = {
 								limit = {
 									OR = {
@@ -468,7 +459,7 @@ character_event = {
 									}
 									set_character_flag = kurnous_frenzy
 									add_trait = lunatic_3
-								} # closesanycourtier(counts)
+								}
 								any_vassal = {
 									limit = {
 										OR = {
@@ -487,11 +478,11 @@ character_event = {
 										}
 										set_character_flag = kurnous_frenzy
 										add_trait = lunatic_3
-									} # closesanycourtier(barons)
-								} # closesanyvassals(barons)
-							} # closesanyvassals(counts)
-						} # closesanyvassals(dukes)
-					} # closesanyvassals(kings)
+									}
+								}
+							}
+						}
+					}
 					any_courtier = {
 						limit = {
 							OR = {
@@ -501,10 +492,10 @@ character_event = {
 						}
 						set_character_flag = kurnous_frenzy
 						add_trait = lunatic_3
-					} # closesanycourtier(emperor)
-				} # closesholderscope
-			} # closeseathelloren
-		} # closeshiddentooltip
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -569,6 +560,7 @@ character_event = {
 			}
 		}
 	}
+
 	weight_multiplier = {
 		factor = 1
 		modifier = {
@@ -594,23 +586,18 @@ character_event = {
 }
 
 # umbrella event for restless spirits (by yearly)
-
 # spirits destroy building
 
 # spirits kill spouse
-
 # spirits kill child
 
 # spirits wound ruler
-
 # spirits disfigure ruler
 
 # spirits maim ruler
-
 # spirits kill ruler
 
 # spirits kill lover
-
 # spirits kill courtier (not dynasty)
 
 # spirits disfigure spouse
@@ -906,8 +893,8 @@ character_event = {
 					id = asrai.23
 				} # driven mad
 			}
-		} # closesrandomlist
-	} # closesimmediate
+		}
+	}
 }
 
 # spirits destroy random building
@@ -1232,7 +1219,8 @@ character_event = {
 		prestige = -100
 		hidden_tooltip = {
 			change_variable = {
-				which = "lunatic_counter" value = 5
+				which = "lunatic_counter"
+				value = 5
 			}
 			character_event = {
 				id = mutation.1005
@@ -1628,7 +1616,8 @@ character_event = {
 			chance = 75
 			hidden_tooltip = {
 				change_variable = {
-					which = "lunatic_counter" value = 8
+					which = "lunatic_counter"
+					value = 8
 				}
 				character_event = {
 					id = mutation.1005
@@ -1698,7 +1687,6 @@ character_event = {
 			trait = creature_dwarf
 			trait = creature_chaos_dwarf
 		}
-
 	}
 	is_triggered_only = yes
 
@@ -1741,7 +1729,6 @@ character_event = {
 					religion = asrai_cadai
 				}
 			}
-
 		}
 		FROM = {
 			character_event = {
@@ -1773,13 +1760,11 @@ character_event = {
 			ROOT = {
 				move_character = PREV
 			}
-
 		}
 	}
 }
 
 # The Asrai scourge enemy province during a Wild Hunt
-
 # ROOT is attacker, FROM is province sieged
 character_event = {
 	id = asrai.36
@@ -1886,8 +1871,8 @@ character_event = {
 				FROM = {
 					convert_to = TRIBAL
 				}
-			} # closesrandom
-		} # closesif
+			}
+		}
 		if = {
 			limit = {
 				FROM = {
@@ -1906,8 +1891,7 @@ character_event = {
 					}
 				}
 			}
-
-		} # closesif
+		}
 		wealth = 125
 		prestige = 50
 		piety = 50
@@ -2511,7 +2495,7 @@ character_event = {
 					}
 				}
 			}
-		} # closes hiddentooltip
+		}
 	}
 }
 
@@ -2554,6 +2538,7 @@ character_event = {
 			}
 		}
 	}
+
 	weight_multiplier = {
 		factor = 1
 		modifier = {
@@ -3307,8 +3292,8 @@ character_event = {
 					disband_on_peace = yes
 					attrition = 0.75
 				}
-			} # endroot
-		} # endlocation
+			}
+		}
 	}
 }
 
@@ -3343,8 +3328,8 @@ character_event = {
 					disband_on_peace = yes
 					attrition = 0.75
 				}
-			} # endroot
-		} # endlocation
+			}
+		}
 	}
 }
 
@@ -3461,12 +3446,6 @@ character_event = {
 			is_attacker = yes
 		}
 	}
-	weight_multiplier = {
-		months = 1
- 		modifier = {
-			factor = 2
-		}
-	}
 
 	immediate = {
 		siege = {
@@ -3482,7 +3461,6 @@ character_event = {
 				morale = -0.1
 				troops = -0.25
 			}
-
 		}
 	}
 }

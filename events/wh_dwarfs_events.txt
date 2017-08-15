@@ -86,7 +86,6 @@ character_event = {
 }
 
 # Dwarf Ruler loses war, start a Grudge
-
 # on_war_ended_defeat, here ROOT is defender and FROM attacker
 character_event = {
 	id = DR_dwarfs.2
@@ -347,7 +346,6 @@ character_event = {
 }
 
 # Grudge CB victory
-
 # Take compensation
 character_event = {
 	id = DR_dwarfs.6
@@ -574,7 +572,6 @@ character_event = {
 }
 
 # Fall into negative honour
-
 # Become slayer or live as oathbreaker
 character_event = {
 	id = DR_dwarfs.7
@@ -679,7 +676,8 @@ character_event = {
 			current_heir = {
 				ROOT = {
 					transfer_scaled_wealth = {
-						to = PREV value = all
+						to = PREV
+						value = all
 					}
 				}
 				character_event = {
@@ -1018,7 +1016,6 @@ character_event = {
 					grant_title = FROM
 
 				}
-
 			}
 
 		}
@@ -1066,7 +1063,6 @@ character_event = {
 					grant_title = FROM
 
 				}
-
 			}
 
 		}
@@ -1133,7 +1129,6 @@ character_event = {
 					grant_title = FROM
 
 				}
-
 			}
 
 		}
@@ -1222,7 +1217,6 @@ character_event = {
 					grant_title = FROM
 
 				}
-
 			}
 
 		}
@@ -1244,7 +1238,6 @@ character_event = {
 				grant_title = FROM
 
 			}
-
 		}
 		if = {
 			limit = {
@@ -1274,7 +1267,6 @@ character_event = {
 					grant_title = FROM
 
 				}
-
 			}
 
 		}
@@ -1322,7 +1314,6 @@ character_event = {
 					grant_title = FROM
 
 				}
-
 			}
 
 		}
@@ -1389,7 +1380,6 @@ character_event = {
 					grant_title = FROM
 
 				}
-
 			}
 
 		}
@@ -1478,7 +1468,6 @@ character_event = {
 					grant_title = FROM
 
 				}
-
 			}
 
 		}
@@ -1500,7 +1489,6 @@ character_event = {
 				grant_title = FROM
 
 			}
-
 		}
 		if = {
 			limit = {
@@ -1530,7 +1518,6 @@ character_event = {
 					grant_title = FROM
 
 				}
-
 			}
 
 		}
@@ -1578,7 +1565,6 @@ character_event = {
 					grant_title = FROM
 
 				}
-
 			}
 
 		}
@@ -1645,7 +1631,6 @@ character_event = {
 					grant_title = FROM
 
 				}
-
 			}
 
 		}
@@ -1734,7 +1719,6 @@ character_event = {
 					grant_title = FROM
 
 				}
-
 			}
 
 		}
@@ -1910,7 +1894,7 @@ character_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "OK"
+		name = OK
 	}
 }
 
@@ -1945,7 +1929,6 @@ character_event = {
 				chance = 50
 				remove_lover = FROM
 			}
-
 		}
 		if = {
 			limit = {
@@ -1955,7 +1938,6 @@ character_event = {
 				chance = 25
 				remove_friend = FROM
 			}
-
 		}
 		if = {
 			limit = {
@@ -1973,7 +1955,6 @@ character_event = {
 				chance = 15
 				add_rival = FROM
 			}
-
 		}
 		ai_chance = {
 			factor = 50
@@ -2021,7 +2002,6 @@ character_event = {
 					tier = EMPEROR
 					wealth = 1000
 				}
-
 			}
 
 		}
@@ -2149,7 +2129,6 @@ character_event = {
 						who = FROM
 						value = 20
 					}
-
 				}
 			}
 			modifier = {
@@ -2159,7 +2138,6 @@ character_event = {
 						who = FROM
 						value = 40
 					}
-
 				}
 			}
 			modifier = {
@@ -2169,7 +2147,6 @@ character_event = {
 						who = FROM
 						value = 60
 					}
-
 				}
 			}
 			modifier = {
@@ -2179,7 +2156,6 @@ character_event = {
 						who = FROM
 						value = 80
 					}
-
 				}
 			}
 			modifier = {
@@ -2189,7 +2165,6 @@ character_event = {
 						who = FROM
 						value = 100
 					}
-
 				}
 			}
 		}
@@ -2854,7 +2829,6 @@ character_event = {
 }
 
 # Grudge CB victory agaist vassal
-
 # Take compensation
 character_event = {
 	id = DR_dwarfs.59
@@ -3131,7 +3105,6 @@ character_event = {
 }
 
 # Slayer stuff
-
 # Adapted from the Witcher code of the Witcher mod
 
 # Slayer leaves
@@ -3192,7 +3165,8 @@ character_event = {
 			liege = {
 				NOT = {
 					reverse_opinion = {
-						who = ROOT value = -25
+						who = ROOT
+						value = -25
 					}
 				}
 			}
@@ -3202,7 +3176,8 @@ character_event = {
 			liege = {
 				NOT = {
 					reverse_opinion = {
-						who = ROOT value = -50
+						who = ROOT
+						value = -50
 					}
 				}
 			}
@@ -3212,7 +3187,8 @@ character_event = {
 			liege = {
 				NOT = {
 					reverse_opinion = {
-						who = ROOT value = -75
+						who = ROOT
+						value = -75
 					}
 				}
 			}
@@ -3221,7 +3197,8 @@ character_event = {
 			factor = 1.4
 			liege = {
 				reverse_opinion = {
-					who = ROOT value = 25
+					who = ROOT
+					value = 25
 				}
 			}
 		}
@@ -3229,7 +3206,8 @@ character_event = {
 			factor = 1.4
 			liege = {
 				reverse_opinion = {
-					who = ROOT value = 50
+					who = ROOT
+					value = 50
 				}
 			}
 		}
@@ -3237,7 +3215,8 @@ character_event = {
 			factor = 1.4
 			liege = {
 				reverse_opinion = {
-					who = ROOT value = 75
+					who = ROOT
+					value = 75
 				}
 			}
 		}
@@ -3861,7 +3840,6 @@ character_event = {
 }
 
 # Slayer generic monster hunting
-
 # Slayer - Selecting province
 character_event = {
 	id = DR_dwarfs.105
@@ -3994,11 +3972,15 @@ province_event = {
 			}
 		}
 		add_province_modifier = {
-			name = monster_purge duration = 365 hidden = yes
+			name = monster_purge
+			duration = 365
+			hidden = yes
 		}
 		FROM = {
 			add_character_modifier = {
-				name = recent_slayer_work duration = 180 hidden = yes
+				name = recent_slayer_work
+				duration = 180
+				hidden = yes
 			}
 		}
 	}

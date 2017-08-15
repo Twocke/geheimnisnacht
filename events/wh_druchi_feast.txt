@@ -1,6 +1,5 @@
 
 # New Druchii Feast events
-
 # Re-flavour of the vanilla Kali Puja feast
 namespace = druchii_feast
 
@@ -198,12 +197,14 @@ character_event = {
 				}
 				NOT = {
 					reverse_opinion = {
-						who = ROOT value = -50
+						who = ROOT
+						value = -50
 					}
 				}
 				NOT = {
 					opinion = {
-						who = ROOT value = -50
+						who = ROOT
+						value = -50
 					}
 				}
 				NOT = {
@@ -302,12 +303,14 @@ character_event = {
 					}
 					NOT = {
 						reverse_opinion = {
-							who = ROOT value = -50
+							who = ROOT
+							value = -50
 						}
 					}
 					NOT = {
 						opinion = {
-							who = ROOT value = -50
+							who = ROOT
+							value = -50
 						}
 					}
 					NOT = {
@@ -686,7 +689,8 @@ character_event = {
 					age = 30
 				}
 				opinion = {
-					who = ROOT value = 20
+					who = ROOT
+					value = 20
 				}
 				NOT = {
 					is_close_relative = root
@@ -821,7 +825,8 @@ character_event = {
 						age = 30
 					}
 					opinion = {
-						who = ROOT value = 20
+						who = ROOT
+						value = 20
 					}
 					NOT = {
 						is_close_relative = root
@@ -1500,19 +1505,22 @@ letter_event = {
 			modifier = {
 				factor = 2
 				opinion = {
-					who = from value = -30
+					who = from
+					value = -30
 				}
 			}
 			modifier = {
 				factor = 5
 				opinion = {
-					who = from value = -15
+					who = from
+					value = -15
 				}
 			}
 			modifier = {
 				factor = 5
 				opinion = {
-					who = from value = 0
+					who = from
+					value = 0
 				}
 			}
 		}
@@ -1573,7 +1581,8 @@ letter_event = {
 			modifier = {
 				factor = 0
 				opinion = {
-					who = from value = 25
+					who = from
+					value = 25
 				}
 			}
 		}
@@ -2165,9 +2174,7 @@ character_event = {
 }
 
 # Feast beginning and ending
-
 # ID druchifeast.1020, druchifeast.1095-druchifeast.1099
-
 # Feast begins
 character_event = {
 	id = druchii_feast.1020
@@ -2370,11 +2377,8 @@ character_event = {
 }
 
 # Random events at feast
-
 # ID druchifeast.1050-druchifeast.
-
 # Snake charmer
-
 # Snake charmer
 character_event = {
 	id = druchii_feast.1050
@@ -2614,7 +2618,6 @@ character_event = {
 }
 
 # Magician
-
 # Magician performs at feast
 character_event = {
 	id = druchii_feast.1150
@@ -2807,7 +2810,6 @@ narrative_event = {
 }
 
 # Monkeys
-
 # Monkeys
 character_event = {
 	id = druchii_feast.1160
@@ -2981,7 +2983,6 @@ character_event = {
 }
 
 # Religious ceremony
-
 # Religious ceremony - liege
 character_event = {
 	id = druchii_feast.1170
@@ -3268,7 +3269,6 @@ character_event = {
 }
 
 # Flag management
-
 # Clear all character flags and modifiers
 character_event = {
 	id = druchii_feast.1990

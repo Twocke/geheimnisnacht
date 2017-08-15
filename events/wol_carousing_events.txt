@@ -1,7 +1,6 @@
 
 
 # Way of Life carousing events
-
 # ID WoL.4000-WoL.4999
 
 # Written by Tobias Bodlund
@@ -52,7 +51,8 @@ letter_event = {
 				factor = 0.1
 				NOT = {
 					opinion = {
-						who = FROMFROM value = -25
+						who = FROMFROM
+						value = -25
 					}
 				}
 			}
@@ -199,7 +199,8 @@ letter_event = {
 				OR = {
 					trait = brave
 					opinion = {
-						who = ROOT value = -50
+						who = ROOT
+						value = -50
 					}
 				}
 			}

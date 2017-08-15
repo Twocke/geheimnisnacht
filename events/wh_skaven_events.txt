@@ -1,7 +1,6 @@
 namespace = skavens
 
 # A Spellsinger wanders to court (five yearly event)
-
 # Skaven do not have children the usual way
 character_event = {
 	id = skavens.1
@@ -555,7 +554,6 @@ character_event = {
 					hidden = yes
 				}
 			}
-
 		}
 		random_list = {
 			90 = {
@@ -593,7 +591,7 @@ character_event = {
 			character_event = {
 				id = sins.1189
 			}
-			
+
 			character_event = {
 				id = wh_inheritance.0
 			}
@@ -659,7 +657,6 @@ character_event = {
 							}
 						}
 					}
-
 				}
 				5 = {
 					modifier = {
@@ -688,7 +685,6 @@ character_event = {
 							id = skavens.1003 days = 1
 						}
 					}
-
 				}
 
 			}
@@ -761,7 +757,6 @@ character_event = {
 					}
 					add_trait = wroth
 				}
-
 			}
 			random_list = {
 				75 = {
@@ -780,7 +775,6 @@ character_event = {
 							trait = deceitful
 						}
 					}
-
 				}
 
 			}
@@ -801,7 +795,6 @@ character_event = {
 							trait = paranoid
 						}
 					}
-
 				}
 
 			}
@@ -1125,8 +1118,7 @@ character_event = {
 				}
 				change_learning = 4
 			}
-
-		} # closesnewcharacter
+		}
 	}
 }
 
@@ -1342,7 +1334,6 @@ character_event = {
 					}
 				} # deadly failure
 			}
-
 		}
 		ai_chance = {
 			factor = 1
@@ -1358,7 +1349,6 @@ character_event = {
 					prestige = 100
 				}
 			}
-
 		}
 	}
 
@@ -1483,7 +1473,6 @@ character_event = {
 					}
 				} # deadly failure
 			}
-
 		}
 		ai_chance = {
 			factor = 100
@@ -1499,7 +1488,6 @@ character_event = {
 					prestige = 150
 				}
 			}
-
 		}
 	}
 
@@ -1570,7 +1558,6 @@ character_event = {
 					}
 				} # deadly failure
 			}
-
 		}
 		ai_chance = {
 			factor = 20
@@ -1586,7 +1573,6 @@ character_event = {
 					prestige = 100
 				}
 			}
-
 		}
 	}
 
@@ -1689,7 +1675,6 @@ character_event = {
 					}
 				} # deadly failure
 			}
-
 		}
 		ai_chance = {
 			factor = 100
@@ -1705,7 +1690,6 @@ character_event = {
 					prestige = 200
 				}
 			}
-
 		}
 	}
 
@@ -1830,7 +1814,6 @@ character_event = {
 					}
 				} # deadly failure
 			}
-
 		}
 		ai_chance = {
 			factor = 100
@@ -1846,7 +1829,6 @@ character_event = {
 					wealth = 250
 				}
 			}
-
 		}
 	}
 
@@ -1862,7 +1844,6 @@ character_event = {
 					}
 				}
 			}
-
 		}
 	}
 }
@@ -2209,7 +2190,8 @@ character_event = {
 			remove_character_modifier = warpstone_5
 		}
 		add_character_modifier = {
-			name = warpstone_frenzy duration = 365
+			name = warpstone_frenzy
+			duration = 365
 		}
 		if = {
 			limit = {
@@ -2220,7 +2202,8 @@ character_event = {
 				}
 			}
 			add_character_modifier = {
-				name = warp_stone_5 duration = 365
+				name = warp_stone_5
+				duration = 365
 			}
 		}
 	}
@@ -2524,7 +2507,7 @@ character_event = {
 				id = skavens.50002 days = 1
 			}
 		}
-	} # closesoption
+	}
 }
 
 # Inheritance
@@ -2624,7 +2607,6 @@ character_event = {
 					any_courtier = {
 						trait = grey_seer
 					}
-
 				}
 
 			}
@@ -2646,7 +2628,7 @@ character_event = {
 				}
 				break = yes
 			}
-		} # closesif
+		}
 		# If none available, create one
 		create_random_priest = {
 			random_traits = yes
@@ -2669,13 +2651,12 @@ character_event = {
 				10 = {
 					add_trait = zealous
 				}
-
 			}
 			character_event = {
 				id = skavens.50001
 			}
 		}
-	} # closesoption
+	}
 }
 
 # on death to pass an amazon barony to a randomly generated female
@@ -2755,14 +2736,13 @@ character_event = {
 					10 = {
 						add_trait = zealous
 					}
-
 				}
 				character_event = {
 					id = skavens.60001
 				}
 			}
 			break = yes
-		}# closesif
+		}
 		new_character = {
 			add_trait = creature_skaven
 			add_trait = plaguelord
@@ -2775,13 +2755,11 @@ character_event = {
 				20 = {
 					add_trait = zealous
 				}
-
 			}
 			character_event = {
 				id = skavens.60001
 			}
 		}
-
 	}
 }
 
@@ -2994,8 +2972,9 @@ character_event = {
 			trait = incapable
 		}
 	}
+
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 10
 			trait = ambitious
@@ -3141,19 +3120,22 @@ character_event = {
 			modifier = {
 				factor = 1.5
 				opinion = {
-					who = from value = 25
+					who = from
+					value = 25
 				}
 			}
 			modifier = {
 				factor = 2
 				opinion = {
-					who = from value = 50
+					who = from
+					value = 50
 				}
 			}
 			modifier = {
 				factor = 3
 				opinion = {
-					who = from value = 75
+					who = from
+					value = 75
 				}
 			}
 		}
@@ -3196,7 +3178,8 @@ character_event = {
 			modifier = {
 				factor = 0
 				opinion = {
-					who = from value = 80
+					who = from
+					value = 80
 				}
 			}
 		}
@@ -3273,8 +3256,9 @@ character_event = {
 			trait = incapable
 		}
 	}
+
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 10
 			trait = ambitious
@@ -3446,19 +3430,22 @@ character_event = {
 			modifier = {
 				factor = 1.5
 				opinion = {
-					who = from value = 25
+					who = from
+					value = 25
 				}
 			}
 			modifier = {
 				factor = 2
 				opinion = {
-					who = from value = 50
+					who = from
+					value = 50
 				}
 			}
 			modifier = {
 				factor = 3
 				opinion = {
-					who = from value = 75
+					who = from
+					value = 75
 				}
 			}
 		}
@@ -3494,7 +3481,8 @@ character_event = {
 			modifier = {
 				factor = 0
 				opinion = {
-					who = from value = 80
+					who = from
+					value = 80
 				}
 			}
 		}

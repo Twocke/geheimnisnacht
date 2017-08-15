@@ -567,7 +567,7 @@ narrative_event = {
 				remove_spouse = ROOT
 			}
 			break = yes
-		} # closesif
+		}
 		if = {
 			limit = {
 				is_female = no
@@ -595,14 +595,13 @@ narrative_event = {
 						is_landed = no
 						trait = mastermind_theologian
 					}
-
 				}
 			}
 			add_trait = khemri_liche_priest
 			set_government_type = theocracy_government
 			z_magic_power_sequential_addition = yes
 			z_magic_power_sequential_addition = yes
-		} # closesif
+		}
 		if = {
 			# Skink Lizardmen
 			limit = {
@@ -1115,7 +1114,8 @@ narrative_event = {
 				}
 			}
 			add_province_modifier = {
-				name = skaven_surface_tunnels duration = -1
+				name = skaven_surface_tunnels
+				duration = -1
 			}
 		}
 		trigger_switch = {
@@ -2978,75 +2978,3 @@ character_event = {
 		}
 	}
 }
-
-# # Generate Children
-
-# character_event = {
-
-# id = DR_startup.7
-
-# is_triggered_only = yes
-
-# hide_window = yes
-
-# only_playable = yes
-
-# min_age = 16
-
-# immediate = {
-
-# if = {
-
-# limit = {
-
-# NOT = { is_vampire_trigger = yes }
-
-# NOT = { cannot_marry_trigger = yes }
-
-# NOT = { trait = immortal }
-
-# }
-
-# set_character_flag = DR_child_generated
-
-# random_list = {
-
-# 50 = { DR_generate_male_child_effect = yes }
-
-# 50 = { DR_generate_female_child_effect = yes }
-
-# }
-
-# random = {
-
-# chance = 50
-
-# random_list = {
-
-# 50 = { DR_generate_male_child_effect = yes }
-
-# 50 = { DR_generate_female_child_effect = yes }
-
-# }
-
-# }
-
-# random_playable_ruler = {
-
-# limit = {
-
-# NOT = { has_character_flag = DR_child_generated }
-
-# age = 16
-
-# }
-
-# character_event = { id = DR_startup.7 }
-
-# }
-
-# }
-
-# }
-
-# }

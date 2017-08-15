@@ -73,7 +73,6 @@ character_event = {
 }
 
 # Graverobbers
-
 # ROOT is attacker, FROM is province sieged
 character_event = {
 	id = snehekharan.3
@@ -122,8 +121,7 @@ character_event = {
 					}
 				}
 			}
-
-		} # closesif
+		}
 		FROM = {
 			owner = {
 				character_event = {
@@ -193,7 +191,6 @@ character_event = {
 }
 
 # Graverobbers - great treasure
-
 # ROOT is attacker, FROM is province sieged
 character_event = {
 	id = snehekharan.6
@@ -236,8 +233,7 @@ character_event = {
 					}
 				}
 			}
-
-		} # closesif
+		}
 		FROM = {
 			owner = {
 				character_event = {
@@ -316,7 +312,6 @@ character_event = {
 				}
 			}
 		}
-
 	}
 
 	immediate = {
@@ -516,7 +511,6 @@ character_event = {
 				trait = has_tomb_rot
 			}
 		}
-
 	}
 
 	option = {
@@ -558,7 +552,6 @@ character_event = {
 		host = {
 			trait = creature_nehekharan
 		}
-
 	}
 
 	option = {
@@ -587,7 +580,6 @@ character_event = {
 }
 
 # Nehekka tribe rises up (temporary rebel title created, with a leader and a war)
-
 # Triggered from "on_rebel_revolt"
 province_event = {
 	id = snehekharan.16
@@ -1339,7 +1331,6 @@ province_event = {
 					duration = 1250
 				}
 			}
-
 		}
 	}
 
@@ -1360,7 +1351,6 @@ province_event = {
 					duration = 1250
 				}
 			}
-
 		}
 	}
 }
@@ -1474,8 +1464,8 @@ province_event = {
 						}
 					}
 				}
-			} # closesrandomlist
-		} # closeshiddentooltip
+			}
+		}
 		ai_chance = {
 			factor = 80
 		}
@@ -1512,7 +1502,6 @@ province_event = {
 					}
 				}
 			}
-
 		}
 	}
 }
@@ -1539,7 +1528,6 @@ character_event = {
 }
 
 # THE LIVING VASSALS
-
 # The Living Vassals - peasants scared of nehekharan soldiers standing in the fields
 character_event = {
 	id = snehekharan.21
@@ -1566,6 +1554,7 @@ character_event = {
 			prisoner = no
 		}
 	}
+
 	weight_multiplier = {
  		factor = 1
 		modifier = {
@@ -1612,7 +1601,6 @@ character_event = {
 			factor = 1.25
 			trait = greedy
 		}
-
 	}
 
 	option = {
@@ -1653,7 +1641,6 @@ character_event = {
 				factor = 2
 				trait = shy
 			}
-
 		}
 	}
 }
@@ -1937,6 +1924,7 @@ character_event = {
 			prisoner = no
 		}
 	}
+
 	weight_multiplier = {
  		factor = 1
 		modifier = {
@@ -1983,7 +1971,6 @@ character_event = {
 			factor = 1.25
 			trait = gregarious
 		}
-
 	}
 
 	option = {
@@ -2021,7 +2008,6 @@ character_event = {
 				factor = 0.75
 				trait = gregarious
 			}
-
 		}
 	}
 }
@@ -2099,7 +2085,6 @@ character_event = {
 				factor = 1.75
 				trait = gregarious
 			}
-
 		}
 	}
 
@@ -2131,7 +2116,6 @@ character_event = {
 				factor = 1.25
 				trait = cruel
 			}
-
 		}
 	}
 
@@ -2159,7 +2143,6 @@ character_event = {
 					}
 				}
 			}
-
 		}
 	}
 }
@@ -2324,6 +2307,7 @@ character_event = {
 			prisoner = no
 		}
 	}
+
 	weight_multiplier = {
  		factor = 1
 		modifier = {
@@ -2370,7 +2354,6 @@ character_event = {
 			factor = 1.25
 			trait = gregarious
 		}
-
 	}
 
 	option = {
@@ -2496,7 +2479,6 @@ character_event = {
 }
 
 # UNDEAD LIFE
-
 # Why does the food taste like ashes?
 character_event = {
 	id = snehekharan.37
@@ -2524,6 +2506,7 @@ character_event = {
 			trait = addict
 		}
 	}
+
 	weight_multiplier = {
  		factor = 1
 		modifier = {
@@ -2552,7 +2535,6 @@ character_event = {
 			factor = 1.25
 			trait = gregarious
 		}
-
 	}
 
 	option = {
@@ -2633,6 +2615,7 @@ character_event = {
 		} # Right...
 
 	}
+
 	weight_multiplier = {
  		factor = 1
 		modifier = {
@@ -2661,7 +2644,6 @@ character_event = {
 			factor = 1.25
 			trait = gregarious
 		}
-
 	}
 
 	option = {
@@ -2685,13 +2667,11 @@ character_event = {
 				factor = 0
 				trait = lustful
 			}
-
 		}
 	}
 }
 
 # Missing 39 - It never existed
-
 # Your spouse wants to revive the living's ways
 character_event = {
 	id = snehekharan.40
@@ -2750,7 +2730,6 @@ character_event = {
 				factor = 1.5
 				trait = shy
 			}
-
 		}
 	}
 }
@@ -2844,7 +2823,6 @@ character_event = {
 						}
 					}
 				}
-
 			}
 		}
 		ai_chance = {

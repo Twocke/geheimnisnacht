@@ -1,7 +1,6 @@
 
 
 # Landless Character Adventures for The Old Gods DLC
-
 # ( TOG.1200 to TOG.1499)
 
 # Written by Henrik Fåhraeus
@@ -666,11 +665,10 @@ character_event = {
 		}
 		# Create a fleet, just to be sure
 		spawn_fleet = {
-			province = closest # closest sea zone
+			province = closest 
 			owner = ROOT
 			disband_on_peace = yes
-			troops =
-			{
+			troops = {
 				galleys = {
 					150 150
 				}
@@ -1118,7 +1116,6 @@ character_event = {
 }
 
 # An ambitious character with no inheritance starts an adventure for a foreign title
-
 # (Temporary title created and a war declared)
 character_event = {
 	id = TOG.1212
@@ -1347,11 +1344,10 @@ character_event = {
 			}
 			# Create a fleet, just to be sure
 			spawn_fleet = {
-				province = closest # closest sea zone
+				province = closest 
 				owner = ROOT
 				disband_on_peace = yes
-				troops =
-				{
+				troops = {
 					galleys = {
 						200 200
 					}

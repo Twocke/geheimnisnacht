@@ -1,19 +1,15 @@
 
 
 # Events for Rumours
-
 # Id 69000 - 69999 is reserved
 
 # Designed by Johan Andersson
-
 # Written by Sara Wendel-Örtqvist
 
 # TODO occultism -> magic
-
 # and accordingly
 
 # great template for warhammer flavour events
-
 # Homosexual #
 
 # Suspected Sodomite: Any Courtier
@@ -61,7 +57,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			trait = deceitful
@@ -328,7 +324,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			trait = deceitful
@@ -638,7 +634,6 @@ character_event = {
 }
 
 # Incest #
-
 # Suspected of Incest: Any courtier
 character_event = {
 	id = 69010
@@ -698,7 +693,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 	}
 
 	immediate = {
@@ -1392,7 +1387,6 @@ character_event = {
 }
 
 # IMPOTENCE
-
 # Impotence: Any Courtier
 character_event = {
 	id = 69020
@@ -1437,7 +1431,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			trait = deceitful
@@ -1826,7 +1820,6 @@ character_event = {
 }
 
 # ADULTERY
-
 # Adultery: Any Courtier
 character_event = {
 	id = 69030
@@ -1885,7 +1878,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			trait = deceitful
@@ -2547,7 +2540,6 @@ character_event = {
 }
 
 # OCCULTISM
-
 # Occultism: Any Courtier
 character_event = {
 	id = 69040
@@ -2587,7 +2579,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			trait = deceitful
@@ -3179,7 +3171,6 @@ character_event = {
 }
 
 # INCOMPETENCE AT WORK
-
 # Incompetence at work: Chancellor
 character_event = {
 	id = 69050
@@ -3212,7 +3203,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			trait = deceitful
@@ -3439,7 +3430,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			trait = deceitful
@@ -3671,7 +3662,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			trait = deceitful
@@ -3757,7 +3748,6 @@ character_event = {
 }
 
 # LACK OF PIETY
-
 # Lack of Piety: Any Courtier
 character_event = {
 	id = 69060
@@ -3828,7 +3818,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			trait = deceitful
@@ -4009,7 +3999,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			trait = deceitful
@@ -4273,7 +4263,6 @@ character_event = {
 }
 
 # COWARDLINESS
-
 # Cowardliness: Any Courtier
 character_event = {
 	id = 69070
@@ -4323,7 +4312,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			trait = deceitful
@@ -4615,7 +4604,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			trait = deceitful
@@ -5123,7 +5112,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			trait = deceitful
@@ -5261,7 +5250,7 @@ character_event = {
 		set_character_flag = rumour_spreader
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			trait = deceitful

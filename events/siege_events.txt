@@ -20,7 +20,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		months = 1
+		factor = 1
 		modifier = {
 			factor = 0.75
 			NOT = {
@@ -150,7 +150,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		months = 1
+		factor = 1
 		modifier = {
 			factor = 2.5
 			trait = wroth
@@ -284,7 +284,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		months = 1
+		factor = 1
 		modifier = {
 			factor = 2.5
 			trait = patient
@@ -418,7 +418,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		months = 1
+		factor = 1
 		modifier = {
 			factor = 0.75
 			trait = cruel
@@ -521,7 +521,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		months = 1
+		factor = 1
 		modifier = {
 			factor = 0.75
 			trait = elusive_shadow
@@ -624,7 +624,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		months = 1
+		factor = 1
 		modifier = {
 			factor = 0.75
 			NOT = {
@@ -729,7 +729,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		months = 1
+		factor = 1
 		modifier = {
 			factor = 0.75
 			NOT = {
@@ -834,7 +834,7 @@ character_event = {
 	}
 	notification = yes
 	weight_multiplier = {
-		months = 1
+		factor = 1
 		modifier = {
 			factor = 0.75
 			diplomacy = 6
@@ -946,7 +946,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		months = 1
+		factor = 1
 		modifier = {
 			factor = 0.75
 			NOT = {
@@ -1057,7 +1057,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		months = 1
+		factor = 1
 		modifier = {
 			factor = 0.75
 			NOT = {
@@ -1165,7 +1165,7 @@ narrative_event = {
 		}
 	}
 	weight_multiplier = {
-		months = 1
+		factor = 1
 		modifier = {
 			factor = 0.75
 			trait = zealous
@@ -1271,7 +1271,7 @@ narrative_event = {
 		}
 	}
 	weight_multiplier = {
-		months = 1
+		factor = 1
 		modifier = {
 			factor = 0.75
 			trait = zealous
@@ -1381,7 +1381,7 @@ narrative_event = {
 		}
 	}
 	weight_multiplier = {
-		months = 1
+		factor = 1
 		modifier = {
 			factor = 0.75
 			trait = zealous
@@ -1501,7 +1501,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		months = 1
+		factor = 1
 		modifier = {
 			factor = 2.0
 			trait = zealous
@@ -1618,7 +1618,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 	}
 
 	option = {
@@ -1763,7 +1763,6 @@ character_event = {
 }
 
 # Imprisoned by the winner. Fired from 'on_siege_over_loc_chars'.
-
 # Siege winner unit owner in the 'new_character' scope, lost holding title in FROM, local character in ROOT.
 character_event = {
 	id = 62100
@@ -1832,7 +1831,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			is_female = yes

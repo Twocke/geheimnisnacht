@@ -1,7 +1,6 @@
 namespace = doomengine
 
 # Doom counter events
-
 # reserved 0-19
 province_event = {
 	id = doomengine.0
@@ -18,12 +17,14 @@ province_event = {
 			limit = {
 				NOT = {
 					check_variable = {
-						which = "doom_counter" value = 3
+						which = "doom_counter"
+						value = 3
 					}
 				}
 			}
 			set_variable = {
-				which = "doom_counter" value = 3
+				which = "doom_counter"
+				value = 3
 			}
 		}
 		if = {
@@ -44,7 +45,6 @@ province_event = {
 	 						trait = everqueen
 
 						}
-
 					}
 				}
 			}
@@ -56,18 +56,21 @@ province_event = {
 				# FIXME create vortex first
 				has_global_flag = vortex_exists
 				check_variable = {
-					which = "doom_counter" value = 3
+					which = "doom_counter"
+					value = 3
 				}
 			}
 			random_list = {
 				60 = {
 					change_variable = {
-						which = "doom_counter" value = -1
+						which = "doom_counter"
+						value = -1
 					}
 				}
 				20 = {
 					change_variable = {
-						which = "doom_counter" value = -3
+						which = "doom_counter"
+						value = -3
 					}
 				}
 			}
@@ -76,7 +79,8 @@ province_event = {
 			limit = {
 				NOT = {
 					check_variable = {
-						which = "doom_counter" value = 30
+						which = "doom_counter"
+						value = 30
 					}
 				}
 			}
@@ -90,11 +94,13 @@ province_event = {
 		if = {
 			limit = {
 				check_variable = {
-					which = "doom_counter" value = 30
+					which = "doom_counter"
+					value = 30
 				}
 				NOT = {
 					check_variable = {
-						which = "doom_counter" value = 60
+						which = "doom_counter"
+						value = 60
 					}
 				}
 			}
@@ -108,11 +114,13 @@ province_event = {
 		if = {
 			limit = {
 				check_variable = {
-					which = "doom_counter" value = 60
+					which = "doom_counter"
+					value = 60
 				}
 				NOT = {
 					check_variable = {
-						which = "doom_counter" value = 90
+						which = "doom_counter"
+						value = 90
 					}
 				}
 			}
@@ -126,7 +134,8 @@ province_event = {
 		if = {
 			limit = {
 				check_variable = {
-					which = "doom_counter" value = 90
+					which = "doom_counter"
+					value = 90
 				}
 			}
 			set_global_flag = doom_very_high
@@ -140,7 +149,6 @@ province_event = {
 }
 
 # DOOM COUNTER RAISING EVENTS
-
 # works
 character_event = {
 	id = doomengine.1
@@ -157,7 +165,8 @@ character_event = {
 	immediate = {
 		1 = {
 			change_variable = {
-				which = "doom_counter" value = 1
+				which = "doom_counter"
+				value = 1
 			}
 		}
 	}
@@ -184,7 +193,8 @@ province_event = {
 		random_list = {
 			30 = {
 				change_variable = {
-					which = "endtimes_counter" value = 1
+					which = "endtimes_counter"
+					value = 1
 				}
 			}
 			70 = {
@@ -208,13 +218,13 @@ province_event = {
 					has_global_flag = all_slann_dead
 
 				}
-
 			}
 		}
 		if = {
 			limit = {
 				check_variable = {
-					which = "endtimes_counter" value = 50
+					which = "endtimes_counter"
+					value = 50
 				}
 			}
 			narrative_event = {
@@ -268,18 +278,21 @@ province_event = {
 				limit = {
 					# FIXME create vortex first
 					check_variable = {
-						which = "doom_counter" value = 3
+						which = "doom_counter"
+						value = 3
 					}
 				}
 				random_list = {
 					60 = {
 						change_variable = {
-							which = "doom_counter" value = -1
+							which = "doom_counter"
+							value = -1
 						}
 					}
 					20 = {
 						change_variable = {
-							which = "doom_counter" value = -3
+							which = "doom_counter"
+							value = -3
 						}
 					}
 				}

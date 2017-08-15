@@ -51,11 +51,13 @@ character_event = {
 			if = {
 				limit = {
 					check_variable = {
-						which = "asurmage_studies" value = 15
+						which = "asurmage_studies"
+						value = 15
 					}
 				}
 				set_variable = {
-					which = "asurmage_studies" value = 0
+					which = "asurmage_studies"
+					value = 0
 				}
 				character_event = {
 					id = highelfmagic.5
@@ -63,7 +65,8 @@ character_event = {
 				break = yes
 			}
 			change_variable = {
-				which = "asurmage_studies" value = 1
+				which = "asurmage_studies"
+				value = 1
 			}
 			character_event = {
 				id = highelfmagic.3 days = 365
@@ -208,7 +211,6 @@ character_event = {
 						trait = lustful
 
 					}
-
 				}
 				10 = {
 					add_trait = slothful
@@ -327,7 +329,6 @@ character_event = {
 						trait = lustful
 
 					}
-
 				}
 				10 = {
 					add_trait = content
@@ -446,7 +447,6 @@ character_event = {
 						trait = lustful
 
 					}
-
 				}
 				10 = {
 					add_trait = cynical
@@ -565,7 +565,6 @@ character_event = {
 						trait = lustful
 
 					}
-
 				}
 				10 = {
 					add_trait = drunkard
@@ -684,11 +683,10 @@ character_event = {
 						trait = lustful
 
 					}
-
-				} # closes10
-			} # closesrandomlist
-		} # closeshiddentooltip
-	} # closesoption
+				}
+			}
+		}
+	}
 }
 
 # Notification - Ruler of Hoeth
@@ -726,7 +724,6 @@ character_event = {
 				has_character_flag = magic_potential_flag_3
 				has_character_flag = magic_potential_flag_4
 			}
-
 		}
 
 	}
@@ -764,11 +761,9 @@ character_event = {
 						has_character_flag = magic_potential_flag_4
 					}
 				}
-
 			}
 
 		}
-
 	}
 	picture = "GFX_evt_elf_city"
 	is_triggered_only = yes
@@ -790,7 +785,6 @@ character_event = {
 				has_character_flag = magic_potential_flag_3
 				has_character_flag = magic_potential_flag_4
 			}
-
 		}
 		clr_character_flag = young_asur_apprentice
 		remove_trait = mage_apprentice
@@ -897,7 +891,6 @@ character_event = {
 						has_character_flag = magic_potential_flag_4
 					}
 				}
-
 			}
 
 		}

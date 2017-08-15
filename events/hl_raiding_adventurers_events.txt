@@ -1,7 +1,6 @@
 
 
 # Horse Lords Raiding Adventurers
-
 # ID HL.100-HL.199
 
 # Written by Joel Hansson
@@ -256,11 +255,10 @@ character_event = {
 						}
 						# Create a fleet, just to be sure
 						spawn_fleet = {
-							province = closest # closest sea zone
+							province = closest 
 							owner = ROOT
 							disband_on_peace = yes
-							troops =
-							{
+							troops = {
 								galleys = {
 									110 110
 								}

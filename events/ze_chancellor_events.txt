@@ -1,7 +1,6 @@
 
 
 # Zeus | Chancellor flavor events
-
 # ID ZE.2000-2049
 
 # Written by Joel Hansson
@@ -39,7 +38,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			NOT = {
@@ -460,7 +459,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			job_chancellor = {

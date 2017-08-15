@@ -1,11 +1,9 @@
 
 
 # Hedge Knights Event Series
-
 # Event ID 71000-71999 is reserved
 
 # Written by Johan Andersson
-
 # Group of Hedge Knights visiting
 character_event = {
 	id = 71000
@@ -38,7 +36,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 1.5
 			trait = gregarious

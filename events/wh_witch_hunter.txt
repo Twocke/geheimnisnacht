@@ -1,10 +1,8 @@
 
 # OUTLINE OF BASIC WITCH HUNTER VS CULTIST SYSTEM
-
 # Learning determines how good a witch hunter is, they gain learning when they complete a mission
 
 # Intrigue determines how good a hidden cultist is; when it comes to exposure, the result is based on their intrigue vs the witch hunter's learning
-
 # Beware: Paranoid witch hunters will consider even a good explanation proof of guilt as well, as clearly a good cultist would be a good liar!
 namespace = witchhunter
 
@@ -53,7 +51,6 @@ character_event = {
 }
 
 # Now, individual witch hunters can go on missions to try and root out chaos
-
 # First they are invited to investigate provinces where cultists are active with the province flag events
 character_event = {
 	id = witchhunter.1
@@ -266,7 +263,8 @@ character_event = {
 				}
 			}
 			add_province_modifier = {
-				name = witch_hunter_purge_in_progress duration = 730
+				name = witch_hunter_purge_in_progress
+				duration = 730
 			}
 		}
 	}
@@ -399,35 +397,30 @@ character_event = {
 						FROM = {
 							trait = paranoid
 						}
-
 					}
 					modifier = {
 						factor = 1.25
 						FROM = {
 							learning = 5
 						}
-
 					}
 					modifier = {
 						factor = 1.25
 						FROM = {
 							learning = 10
 						}
-
 					}
 					modifier = {
 						factor = 1.5
 						FROM = {
 							learning = 15
 						}
-
 					}
 					modifier = {
 						factor = 1.5
 						FROM = {
 							learning = 20
 						}
-
 					}
 					modifier = {
 						factor = 0.5
@@ -436,7 +429,6 @@ character_event = {
 								learning = 5
 							}
 						}
-
 					}
 					modifier = {
 						factor = 0.65
@@ -445,7 +437,6 @@ character_event = {
 								learning = 10
 							}
 						}
-
 					}
 					modifier = {
 						factor = 0.75
@@ -454,7 +445,6 @@ character_event = {
 								learning = 15
 							}
 						}
-
 					}
 					modifier = {
 						factor = 0.85
@@ -463,35 +453,30 @@ character_event = {
 								learning = 20
 							}
 						}
-
 					}
 					modifier = {
 						factor = 1.25
 						FROM = {
 							intrigue = 5
 						}
-
 					}
 					modifier = {
 						factor = 1.25
 						FROM = {
 							intrigue = 10
 						}
-
 					}
 					modifier = {
 						factor = 1.5
 						FROM = {
 							intrigue = 15
 						}
-
 					}
 					modifier = {
 						factor = 1.5
 						FROM = {
 							intrigue = 20
 						}
-
 					}
 					modifier = {
 						factor = 0.5
@@ -500,7 +485,6 @@ character_event = {
 								intrigue = 5
 							}
 						}
-
 					}
 					modifier = {
 						factor = 0.65
@@ -509,7 +493,6 @@ character_event = {
 								intrigue = 10
 							}
 						}
-
 					}
 					modifier = {
 						factor = 0.75
@@ -518,7 +501,6 @@ character_event = {
 								intrigue = 15
 							}
 						}
-
 					}
 					modifier = {
 						factor = 0.85
@@ -527,7 +509,6 @@ character_event = {
 								intrigue = 20
 							}
 						}
-
 					}
 					modifier = {
 						factor = 1.25
@@ -554,28 +535,24 @@ character_event = {
 						NOT = {
 							intrigue = 5
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						NOT = {
 							intrigue = 10
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						NOT = {
 							intrigue = 15
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						NOT = {
 							intrigue = 20
 						}
-
 					}
 					modifier = {
 						factor = 1.25
@@ -602,28 +579,24 @@ character_event = {
 						NOT = {
 							learning = 5
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						NOT = {
 							learning = 10
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						NOT = {
 							learning = 15
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						NOT = {
 							learning = 20
 						}
-
 					}
 					modifier = {
 						factor = 0.5
@@ -637,7 +610,6 @@ character_event = {
 							trait = mutation_major
 							trait = mutation_massive
 						}
-
 					}
 					modifier = {
 						factor = 2
@@ -651,7 +623,6 @@ character_event = {
 							has_character_modifier = magic_power_3
 							has_character_modifier = magic_power_4
 						}
-
 					}
 					modifier = {
 						factor = 0.5 # If you are not a cultist, there's actually a lower chance of getting framed...
@@ -669,7 +640,6 @@ character_event = {
 							society_member_of = cult_of_tzeentch2
 							society_member_of = cult_of_tzeentch3
 						}
-
 					}
 					FROM = {
 						character_event = {
@@ -684,7 +654,6 @@ character_event = {
 						}
 					}
 				}
-
 			}
 		}
 	}
@@ -815,11 +784,11 @@ character_event = {
 				NOT = {
 					ROOT = {
 						opinion = {
-							who = FROM value = 1
+							who = FROM
+							value = 1
 						}
 					}
 				}
-
 			}
 		}
 		decrease_visibility_effect = yes
@@ -837,7 +806,8 @@ character_event = {
 				ai = no
 				ROOT = {
 					opinion = {
-						who = FROM value = 25
+						who = FROM
+						value = 25
 					}
 				}
 			}
@@ -1167,35 +1137,30 @@ character_event = {
 						FROM = {
 							trait = paranoid
 						}
-
 					}
 					modifier = {
 						factor = 1.25
 						FROM = {
 							learning = 5
 						}
-
 					}
 					modifier = {
 						factor = 1.25
 						FROM = {
 							learning = 10
 						}
-
 					}
 					modifier = {
 						factor = 1.5
 						FROM = {
 							learning = 15
 						}
-
 					}
 					modifier = {
 						factor = 1.5
 						FROM = {
 							learning = 20
 						}
-
 					}
 					modifier = {
 						factor = 0.5
@@ -1204,7 +1169,6 @@ character_event = {
 								learning = 5
 							}
 						}
-
 					}
 					modifier = {
 						factor = 0.65
@@ -1213,7 +1177,6 @@ character_event = {
 								learning = 10
 							}
 						}
-
 					}
 					modifier = {
 						factor = 0.75
@@ -1222,7 +1185,6 @@ character_event = {
 								learning = 15
 							}
 						}
-
 					}
 					modifier = {
 						factor = 0.85
@@ -1231,35 +1193,30 @@ character_event = {
 								learning = 20
 							}
 						}
-
 					}
 					modifier = {
 						factor = 1.25
 						FROM = {
 							intrigue = 5
 						}
-
 					}
 					modifier = {
 						factor = 1.25
 						FROM = {
 							intrigue = 10
 						}
-
 					}
 					modifier = {
 						factor = 1.5
 						FROM = {
 							intrigue = 15
 						}
-
 					}
 					modifier = {
 						factor = 1.5
 						FROM = {
 							intrigue = 20
 						}
-
 					}
 					modifier = {
 						factor = 0.5
@@ -1268,7 +1225,6 @@ character_event = {
 								intrigue = 5
 							}
 						}
-
 					}
 					modifier = {
 						factor = 0.65
@@ -1277,7 +1233,6 @@ character_event = {
 								intrigue = 10
 							}
 						}
-
 					}
 					modifier = {
 						factor = 0.75
@@ -1286,7 +1241,6 @@ character_event = {
 								intrigue = 15
 							}
 						}
-
 					}
 					modifier = {
 						factor = 0.85
@@ -1295,7 +1249,6 @@ character_event = {
 								intrigue = 20
 							}
 						}
-
 					}
 					modifier = {
 						factor = 1.25
@@ -1322,28 +1275,24 @@ character_event = {
 						NOT = {
 							intrigue = 5
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						NOT = {
 							intrigue = 10
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						NOT = {
 							intrigue = 15
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						NOT = {
 							intrigue = 20
 						}
-
 					}
 					modifier = {
 						factor = 1.25
@@ -1370,28 +1319,24 @@ character_event = {
 						NOT = {
 							learning = 5
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						NOT = {
 							learning = 10
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						NOT = {
 							learning = 15
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						NOT = {
 							learning = 20
 						}
-
 					}
 					modifier = {
 						factor = 0.5
@@ -1405,7 +1350,6 @@ character_event = {
 							trait = mutation_major
 							trait = mutation_massive
 						}
-
 					}
 					modifier = {
 						factor = 2
@@ -1419,7 +1363,6 @@ character_event = {
 							has_character_modifier = magic_power_3
 							has_character_modifier = magic_power_4
 						}
-
 					}
 					modifier = {
 						factor = 0.5 # If you are not a cultist, there's actually a lower chance of getting framed...
@@ -1437,7 +1380,6 @@ character_event = {
 							society_member_of = cult_of_tzeentch2
 							society_member_of = cult_of_tzeentch3
 						}
-
 					}
 					FROM = {
 						character_event = {
@@ -1452,7 +1394,6 @@ character_event = {
 						}
 					}
 				}
-
 			}
 		}
 	}
@@ -1583,7 +1524,8 @@ character_event = {
 				NOT = {
 					ROOT = {
 						opinion = {
-							who = FROM value = 1
+							who = FROM
+							value = 1
 						}
 					}
 				}
@@ -1604,7 +1546,8 @@ character_event = {
 				ai = no
 				ROOT = {
 					opinion = {
-						who = FROM value = 50
+						who = FROM
+						value = 50
 					}
 				}
 			}
@@ -1785,7 +1728,6 @@ character_event = {
 }
 
 # Now for vampire hunting - this time just for open vampires
-
 # first a witch hunter who is not on a witch hunt tells the liege that there are open vampires in his realm
 character_event = {
 	id = witchhunter.30
@@ -2175,7 +2117,6 @@ character_event = {
 }
 
 # Now for open chaos religion hunting
-
 # first a witch hunter who is not on a witch hunt tells the liege that there are open vampires in his realm
 character_event = {
 	id = witchhunter.35
@@ -2494,39 +2435,30 @@ character_event = {
 }
 
 # MAINTENANCE EVENT TO CLEAR THE EXONERATE FLAG EVERY 2 YEARS, HIDDEN EVENT CALLED FROM BI ANNUAL PULSE ON ACTIONS
-
 # character_event = {
 
 # id = witchhunter.39
-
 # title = VAMPIRE_HUNTERS # Vampire Hunters
 
 # desc = witchhunter39desc # HIDDEN
-
 # picture = "GFX_evt_witch_hunters"
 
 # hide_window = yes
-
 # 	is_triggered_only = yes
 
 # 	trigger = {
-
 # 		has_character_modifier = wh_accused
 
 # 		age = 1
-
 # 	}
 
 # 	option = {
-
 # 		name = EVTOPT_WITCHHUNTER_34A # HIDDEN
 
 # 		remove_character_flag = wh_accused
-
 # 	}
 
 # }
-
 # EVENT TO MAKE UNLANDED CHAOS/VAMPS DISAPPEAR VOLUNTARILY, triggered on yearly pulse
 character_event = {
 	id = witchhunter.40

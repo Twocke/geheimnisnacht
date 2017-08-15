@@ -1,11 +1,9 @@
 
 
 # Events for Family Members
-
 # Event ID 37000-37999 is reserved
 
 # Relative demands a title
-
 # Relative demands inheritance due to ambition
 character_event = {
 	id = 37000
@@ -918,11 +916,10 @@ character_event = {
 		}
 		# Create a fleet, just to be sure
 		spawn_fleet = {
-			province = closest # closest sea zone
+			province = closest 
 			owner = ROOT
 			disband_on_peace = yes
-			troops =
-			{
+			troops = {
 				galleys = {
 					150 150
 				}
@@ -997,7 +994,7 @@ character_event = {
 
 # IDs to 37048 reserved for more events concerning this ambition
 
-# Close relative asks to get married due to obj_get_married
+
 
 # First event of the series
 character_event = {
@@ -1417,7 +1414,6 @@ character_event = {
 }
 
 # IDs to 37149 reserved for more events concerning this ambition
-
 # Common interest with spouse
 character_event = {
 	id = 37250
@@ -1439,7 +1435,7 @@ character_event = {
 	}
 	is_triggered_only = yes
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			has_focus = focus_family

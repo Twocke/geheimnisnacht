@@ -67,7 +67,6 @@ character_event = {
 		NOT = {
 			trait = vampire_mahtmasi_hidden
 		}
-
 	}
 	is_triggered_only = yes
 
@@ -1056,7 +1055,6 @@ character_event = {
 			factor = 0.5
 			trait = gluttonous
 		}
-
 	}
 
 	option = {
@@ -1262,8 +1260,9 @@ character_event = {
 		}
 		is_alive = yes
 	}
+
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 0.25
 			has_character_modifier = proving_bravery
@@ -1621,7 +1620,8 @@ character_event = {
 		wealth = -150
 		hidden_tooltip = {
 			change_variable = {
-				which = "lunatic_counter" value = -1
+				which = "lunatic_counter"
+				value = -1
 			}
 		} # lunatic counter
 	}
@@ -1630,7 +1630,8 @@ character_event = {
 		name = EVTOPTBsinsa1206
 		hidden_tooltip = {
 			change_variable = {
-				which = "lunatic_counter" value = -1
+				which = "lunatic_counter"
+				value = -1
 			}
 			character_event = {
 				id = mutation.1005
@@ -1735,7 +1736,6 @@ character_event = {
 						factor = 0.5
 						trait = diligent
 					}
-
 				}
 			}
 			character_event = {

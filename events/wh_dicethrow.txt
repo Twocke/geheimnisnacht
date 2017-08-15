@@ -1,11 +1,8 @@
 
 
 # Here is the set of events resonsible
-
 # for making different random test against some values
-
 # 0-9: setting additional parameters
-
 # 1019: rolls kN
 namespace = dicethrow
 
@@ -18,7 +15,8 @@ character_event = {
 
 	immediate = {
 		set_variable = {
-			which = "SW" value = 0
+			which = "SW"
+			value = 0
 		}
 		if = {
 			limit = {
@@ -27,7 +25,8 @@ character_event = {
 				martial = 1
 			}
 			change_variable = {
-				which = "SW" value = 1
+				which = "SW"
+				value = 1
 			}
 		}
 		if = {
@@ -37,7 +36,8 @@ character_event = {
 				martial = 4
 			}
 			change_variable = {
-				which = "SW" value = 1
+				which = "SW"
+				value = 1
 			}
 		}
 		if = {
@@ -47,7 +47,8 @@ character_event = {
 				martial = 7
 			}
 			change_variable = {
-				which = "SW" value = 1
+				which = "SW"
+				value = 1
 			}
 		}
 		if = {
@@ -57,7 +58,8 @@ character_event = {
 				martial = 10
 			}
 			change_variable = {
-				which = "SW" value = 1
+				which = "SW"
+				value = 1
 			}
 		}
 		if = {
@@ -67,7 +69,8 @@ character_event = {
 				martial = 13
 			}
 			change_variable = {
-				which = "SW" value = 1
+				which = "SW"
+				value = 1
 			}
 		}
 		if = {
@@ -77,7 +80,8 @@ character_event = {
 				martial = 16
 			}
 			change_variable = {
-				which = "SW" value = 1
+				which = "SW"
+				value = 1
 			}
 		}
 		if = {
@@ -87,7 +91,8 @@ character_event = {
 				martial = 19
 			}
 			change_variable = {
-				which = "SW" value = 1
+				which = "SW"
+				value = 1
 			}
 		}
 		if = {
@@ -97,7 +102,8 @@ character_event = {
 				martial = 22
 			}
 			change_variable = {
-				which = "SW" value = 1
+				which = "SW"
+				value = 1
 			}
 		}
 		if = {
@@ -109,7 +115,8 @@ character_event = {
 				}
 			}
 			change_variable = {
-				which = "SW" value = 1
+				which = "SW"
+				value = 1
 			}
 		}
 		if = {
@@ -123,7 +130,8 @@ character_event = {
 				}
 			}
 			change_variable = {
-				which = "SW" value = 1
+				which = "SW"
+				value = 1
 			}
 		}
 	}
@@ -137,14 +145,16 @@ character_event = {
 
 	immediate = {
 		set_variable = {
-			which = "Int" value = 0
+			which = "Int"
+			value = 0
 		}
 		if = {
 			limit = {
 				learning = 1
 			}
 			change_variable = {
-				which = "Int" value = 1
+				which = "Int"
+				value = 1
 			}
 		}
 		if = {
@@ -152,7 +162,8 @@ character_event = {
 				learning = 4
 			}
 			change_variable = {
-				which = "Int" value = 1
+				which = "Int"
+				value = 1
 			}
 		}
 		if = {
@@ -160,7 +171,8 @@ character_event = {
 				learning = 7
 			}
 			change_variable = {
-				which = "Int" value = 1
+				which = "Int"
+				value = 1
 			}
 		}
 		if = {
@@ -168,7 +180,8 @@ character_event = {
 				learning = 10
 			}
 			change_variable = {
-				which = "Int" value = 1
+				which = "Int"
+				value = 1
 			}
 		}
 		if = {
@@ -176,7 +189,8 @@ character_event = {
 				learning = 13
 			}
 			change_variable = {
-				which = "Int" value = 1
+				which = "Int"
+				value = 1
 			}
 		}
 		if = {
@@ -184,7 +198,8 @@ character_event = {
 				learning = 16
 			}
 			change_variable = {
-				which = "Int" value = 1
+				which = "Int"
+				value = 1
 			}
 		}
 		if = {
@@ -192,7 +207,8 @@ character_event = {
 				learning = 19
 			}
 			change_variable = {
-				which = "Int" value = 1
+				which = "Int"
+				value = 1
 			}
 		}
 		if = {
@@ -200,7 +216,8 @@ character_event = {
 				learning = 22
 			}
 			change_variable = {
-				which = "Int" value = 1
+				which = "Int"
+				value = 1
 			}
 		}
 		if = {
@@ -208,7 +225,8 @@ character_event = {
 				learning = 25
 			}
 			change_variable = {
-				which = "Int" value = 1
+				which = "Int"
+				value = 1
 			}
 		}
 		if = {
@@ -216,26 +234,20 @@ character_event = {
 				learning = 28
 			}
 			change_variable = {
-				which = "Int" value = 1
+				which = "Int"
+				value = 1
 			}
 		}
 	}
 }
 
 # ROLLS
-
 # USAGE
-
 # Thats how should look proper code involing usage of rolls
-
 # character_event = { id = <roll_event_id> }
-
 # ...code...
-
 # set_variable = { which = "kN_roll" value = 0 }
-
 # this event defines character variable named k10_roll
-
 # with random value 1-10
 character_event = {
 	id = dicethrow.10
@@ -246,52 +258,62 @@ character_event = {
 		random_list = {
 			10 = {
 				set_variable = {
-					which = "k10_roll" value = 1
+					which = "k10_roll"
+					value = 1
 				}
 			}
 			10 = {
 				set_variable = {
-					which = "k10_roll" value = 2
+					which = "k10_roll"
+					value = 2
 				}
 			}
 			10 = {
 				set_variable = {
-					which = "k10_roll" value = 3
+					which = "k10_roll"
+					value = 3
 				}
 			}
 			10 = {
 				set_variable = {
-					which = "k10_roll" value = 4
+					which = "k10_roll"
+					value = 4
 				}
 			}
 			10 = {
 				set_variable = {
-					which = "k10_roll" value = 5
+					which = "k10_roll"
+					value = 5
 				}
 			}
 			10 = {
 				set_variable = {
-					which = "k10_roll" value = 6
+					which = "k10_roll"
+					value = 6
 				}
 			}
 			10 = {
 				set_variable = {
-					which = "k10_roll" value = 7
+					which = "k10_roll"
+					value = 7
 				}
 			}
 			10 = {
 				set_variable = {
-					which = "k10_roll" value = 8
+					which = "k10_roll"
+					value = 8
 				}
 			}
 			10 = {
 				set_variable = {
-					which = "k10_roll" value = 9
+					which = "k10_roll"
+					value = 9
 				}
 			}
 			10 = {
 				set_variable = {
-					which = "k10_roll" value = 10
+					which = "k10_roll"
+					value = 10
 				}
 			}
 		}
@@ -299,11 +321,8 @@ character_event = {
 }
 
 # dicethrow.11
-
 # K4 roll
-
 # this event defines character variable named k4_roll
-
 # with random value 1-4
 character_event = {
 	id = dicethrow.11
@@ -314,22 +333,26 @@ character_event = {
 		random_list = {
 			25 = {
 				set_variable = {
-					which = "k4_roll" value = 1
+					which = "k4_roll"
+					value = 1
 				}
 			}
 			25 = {
 				set_variable = {
-					which = "k4_roll" value = 2
+					which = "k4_roll"
+					value = 2
 				}
 			}
 			25 = {
 				set_variable = {
-					which = "k4_roll" value = 3
+					which = "k4_roll"
+					value = 3
 				}
 			}
 			25 = {
 				set_variable = {
-					which = "k4_roll" value = 4
+					which = "k4_roll"
+					value = 4
 				}
 			}
 		}
@@ -337,7 +360,6 @@ character_event = {
 }
 
 # dicethrow.12
-
 # K6 roll
 character_event = {
 	id = dicethrow.12
@@ -348,32 +370,38 @@ character_event = {
 		random_list = {
 			16 = {
 				set_variable = {
-					which = "k4_roll" value = 1
+					which = "k4_roll"
+					value = 1
 				}
 			}
 			17 = {
 				set_variable = {
-					which = "k4_roll" value = 2
+					which = "k4_roll"
+					value = 2
 				}
 			}
 			17 = {
 				set_variable = {
-					which = "k4_roll" value = 3
+					which = "k4_roll"
+					value = 3
 				}
 			}
 			17 = {
 				set_variable = {
-					which = "k4_roll" value = 4
+					which = "k4_roll"
+					value = 4
 				}
 			}
 			17 = {
 				set_variable = {
-					which = "k4_roll" value = 5
+					which = "k4_roll"
+					value = 5
 				}
 			}
 			16 = {
 				set_variable = {
-					which = "k4_roll" value = 6
+					which = "k4_roll"
+					value = 6
 				}
 			}
 		}

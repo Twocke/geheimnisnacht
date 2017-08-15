@@ -292,7 +292,7 @@ character_event = {
 				}
 				z_magic_power_random = yes
 			}
-		} # closes hiddentooltip
+		}
 		ai_chance = {
 			factor = 50
 		}
@@ -321,7 +321,7 @@ character_event = {
 				id = slizardmen.20003 days = 1
 			}
 		}
-	} # closesoption
+	}
 }
 
 # Ping to province while the randomly selected heir is chosen automatically by Open Elective
@@ -336,7 +336,7 @@ province_event = {
 				id = slizardmen.20002
 			}
 		}
-	} # closesoption
+	}
 }
 
 # Inheritance
@@ -422,7 +422,6 @@ character_event = {
 								}
 							}
 						}
-
 					}
 					any_vassal = {
 						has_minor_title = title_skink_heir
@@ -456,7 +455,6 @@ character_event = {
 								}
 							}
 						}
-
 					}
 				}
 			}
@@ -508,7 +506,6 @@ character_event = {
 							has_minor_title = title_skink_heir
 						}
 					}
-
 				}
 				OR = {
 					any_vassal = {
@@ -529,7 +526,6 @@ character_event = {
 							has_character_modifier = magic_power_4
 						}
 					}
-
 				}
 
 			}
@@ -563,12 +559,11 @@ character_event = {
 				}
 				break = yes
 			}
-		} # closesif
-	} # closesoption
+		}
+	}
 }
 
 # Faction to remove misaligned Skink
-
 # Skink Chief receives ultimatum letter
 letter_event = {
 	id = slizardmen.3
@@ -906,7 +901,6 @@ character_event = {
 }
 
 # SKINK JOB ACTION EVENTS: EXPLORE JUNGLE
-
 # slizardmen.8: Chancellor attacked by Naggaronts
 character_event = {
 	id = 122000 # USED TO BE slizardmen.8
@@ -1153,7 +1147,6 @@ letter_event = {
 }
 
 # The Lizardmen scourges enemy province to take sacrifical prisoners
-
 # ROOT is attacker, FROM is province sieged
 character_event = {
 	id = slizardmen.13
@@ -1268,8 +1261,8 @@ character_event = {
 				FROM = {
 					convert_to = TRIBAL
 				}
-			} # closesrandom
-		} # closesif
+			}
+		}
 		if = {
 			limit = {
 				FROM = {
@@ -1288,21 +1281,22 @@ character_event = {
 					}
 				}
 			}
-
-		} # closesif
+		}
 		wealth = 150
 		prestige = 150
 		piety = 250
 		decadence = 1
 		change_variable = {
-			which = "sacrifical_victims" value = 2
+			which = "sacrifical_victims"
+			value = 2
 		}
 		if = {
 			limit = {
 				ai = yes
 			}
 			change_variable = {
-				which = "sacrifical_victims" value = 2
+				which = "sacrifical_victims"
+				value = 2
 			}
 		}
 		ai_chance = {
@@ -1366,8 +1360,7 @@ character_event = {
 					}
 				}
 			}
-
-		} # closesif
+		}
 		FROM = {
 			owner = {
 				character_event = {
@@ -1379,14 +1372,16 @@ character_event = {
 		prestige = 10
 		piety = 10
 		change_variable = {
-			which = "sacrifical_victims" value = 6
+			which = "sacrifical_victims"
+			value = 6
 		}
 		if = {
 			limit = {
 				ai = yes
 			}
 			change_variable = {
-				which = "sacrifical_victims" value = 5
+				which = "sacrifical_victims"
+				value = 5
 			}
 		}
 		ai_chance = {
@@ -1511,7 +1506,6 @@ character_event = {
 				}
 			}
 		}
-
 	}
 	desc = {
 		text = EVTDESCBslizardmen17
@@ -1520,7 +1514,6 @@ character_event = {
 				which = "sacrifical_victims" which = "sacrifices_needed"
 			}
 		}
-
 	}
 	picture = GFX_evt_lizardmen_temples
 	is_triggered_only = yes
@@ -1552,7 +1545,8 @@ character_event = {
 		}
 		hidden_tooltip = {
 			set_variable = {
-				which = "sacrifical_victims" value = 0
+				which = "sacrifical_victims"
+				value = 0
 			}
 		}
 		decadence = -4
@@ -1576,7 +1570,8 @@ character_event = {
 		}
 		hidden_tooltip = {
 			set_variable = {
-				which = "sacrifical_victims" value = 0
+				which = "sacrifical_victims"
+				value = 0
 			}
 		}
 		decadence = -4
@@ -1600,7 +1595,8 @@ character_event = {
 		}
 		hidden_tooltip = {
 			set_variable = {
-				which = "sacrifical_victims" value = 0
+				which = "sacrifical_victims"
+				value = 0
 			}
 		}
 		decadence = -6
@@ -1624,7 +1620,8 @@ character_event = {
 		}
 		hidden_tooltip = {
 			set_variable = {
-				which = "sacrifical_victims" value = 0
+				which = "sacrifical_victims"
+				value = 0
 			}
 		}
 		decadence = 7
@@ -1643,12 +1640,14 @@ character_event = {
 		trigger = {
 			religion = amazon
 			check_variable = {
-				which = "sacrifical_victims" value = 30
+				which = "sacrifical_victims"
+				value = 30
 			}
 		}
 		hidden_tooltip = {
 			change_variable = {
-				which = "sacrifical_victims" value = -30
+				which = "sacrifical_victims"
+				value = -30
 			}
 		}
 		decadence = -5
@@ -1667,12 +1666,14 @@ character_event = {
 		trigger = {
 			religion = amazon
 			check_variable = {
-				which = "sacrifical_victims" value = 30
+				which = "sacrifical_victims"
+				value = 30
 			}
 		}
 		hidden_tooltip = {
 			change_variable = {
-				which = "sacrifical_victims" value = -30
+				which = "sacrifical_victims"
+				value = -30
 			}
 		}
 		decadence = -5
@@ -1694,12 +1695,14 @@ character_event = {
 				religion = kukaili
 			}
 			check_variable = {
-				which = "sacrifical_victims" value = 25
+				which = "sacrifical_victims"
+				value = 25
 			}
 		}
 		hidden_tooltip = {
 			change_variable = {
-				which = "sacrifical_victims" value = -25
+				which = "sacrifical_victims"
+				value = -25
 			}
 		}
 		decadence = -5
@@ -1720,12 +1723,14 @@ character_event = {
 			religion = amazon
 			is_female = yes
 			check_variable = {
-				which = "sacrifical_victims" value = 15
+				which = "sacrifical_victims"
+				value = 15
 			}
 		}
 		hidden_tooltip = {
 			change_variable = {
-				which = "sacrifical_victims" value = -15
+				which = "sacrifical_victims"
+				value = -15
 			}
 		}
 		decadence = 15
@@ -1801,12 +1806,14 @@ character_event = {
 		trigger = {
 			religion = kukaili
 			check_variable = {
-				which = "sacrifical_victims" value = 30
+				which = "sacrifical_victims"
+				value = 30
 			}
 		}
 		hidden_tooltip = {
 			change_variable = {
-				which = "sacrifical_victims" value = -30
+				which = "sacrifical_victims"
+				value = -30
 			}
 		}
 		decadence = -5
@@ -1822,7 +1829,6 @@ character_event = {
 }
 
 # MISALIGNMENT - DECADENCE EVENTS
-
 # A Slann dies (ping)
 character_event = {
 	id = slizardmen.18
@@ -1836,7 +1842,8 @@ character_event = {
 	immediate = {
 		1 = {
 			change_variable = {
-				which = "doom_counter" value = 2
+				which = "doom_counter"
+				value = 2
 			}
 		}
 		any_playable_ruler = {
@@ -1879,7 +1886,6 @@ character_event = {
 					id = slizardmen.20
 				}
 			}
-
 		}
 	}
 }
@@ -1928,7 +1934,8 @@ character_event = {
 		piety = -150
 		1 = {
 			change_variable = {
-				which = "doom_counter" value = 10
+				which = "doom_counter"
+				value = 10
 			}
 		}
 		ai_chance = {
@@ -2416,7 +2423,6 @@ character_event = {
 }
 
 # The Sleeping Slann
-
 # Umbrella event
 character_event = {
 	id = slizardmen.23
@@ -2780,7 +2786,6 @@ character_event = {
 					trait = content
 				}
 			}
-
 		}
 	}
 
@@ -2912,7 +2917,6 @@ character_event = {
 					trait = ambitious
 				}
 			}
-
 		}
 	}
 
@@ -3050,7 +3054,6 @@ character_event = {
 					trait = patient
 				}
 			}
-
 		}
 	}
 
@@ -3188,7 +3191,6 @@ character_event = {
 					trait = patient
 				}
 			}
-
 		}
 	}
 
@@ -3480,7 +3482,6 @@ character_event = {
 					trait = shy
 				}
 			}
-
 		}
 	}
 
@@ -3636,7 +3637,6 @@ character_event = {
 					trait = content
 				}
 			}
-
 		}
 	}
 
@@ -3774,7 +3774,6 @@ character_event = {
 					trait = greedy
 				}
 			}
-
 		}
 	}
 
@@ -3912,7 +3911,6 @@ character_event = {
 					trait = gregarious
 				}
 			}
-
 		}
 	}
 
@@ -4192,7 +4190,6 @@ character_event = {
 					trait = wroth
 				}
 			}
-
 		}
 	}
 
@@ -4368,7 +4365,6 @@ character_event = {
 					trait = honest
 				}
 			}
-
 		}
 	}
 
@@ -4514,7 +4510,6 @@ character_event = {
 					trait = gregarious
 				}
 			}
-
 		}
 	}
 
@@ -4656,7 +4651,6 @@ character_event = {
 					trait = humble
 				}
 			}
-
 		}
 	}
 
@@ -4964,7 +4958,6 @@ character_event = {
 					trait = gregarious
 				}
 			}
-
 		}
 	}
 
@@ -5110,7 +5103,6 @@ character_event = {
 					trait = humble
 				}
 			}
-
 		}
 	}
 
@@ -5256,7 +5248,6 @@ character_event = {
 					trait = shy
 				}
 			}
-
 		}
 	}
 
@@ -5398,7 +5389,6 @@ character_event = {
 					trait = shy
 				}
 			}
-
 		}
 	}
 
@@ -5488,63 +5478,48 @@ character_event = {
 }
 
 # On first start, to set the stage
-
 # character_event = {
 
 # 	id = slizardmen.28001
-
 # 	hide_window = yes
 
 # 	only_men = yes
-
 # 	min_age = 2000
 
 # 	religion = old_ones
-
 # 	ai = yes
 
 # 	trigger = {
-
 # 			religion_authority = 0.05
 
 # 		top_liege = { ai = no }
-
 # 		NOT = { has_global_flag = startup_liz_expedition }
 
 # 		NOT = { creature_slann = { has_character_modifier = tablet_cooldown } }
-
 # 		any_independent_ruler = { NOT = { religion_group = old_ones_group }
 
 # 					NOT = { character = ROOT }
-
 # 						is_landed = yes
 
 # 						is_nomadic = no
-
 # 						any_demesne_title = { tier = KING }
 
 # 					higher_tier_than = DUKE }
-
 # 		trait = lizardman_sleepingslann
 
 # 		independent = no
-
 # 		}
 
 # 	is_triggered_only = yes
-
 # 	immediate = { set_global_flag = startup_liz_expedition
 
 # 			 add_character_modifier = { name = tablet_cooldown
-
 # 						hidden = yes
 
 # 						duration = 10950 }
-
 # 			top_liege = { long_character_event = { id = slizardmen.29 days = 200 random = 150 } }
 
 # 	}
-
 # }
 
 # The Slann calls for a great mission.
@@ -5603,7 +5578,6 @@ long_character_event = {
 					}
 				}
 			}
-
 		}
 		hidden_tooltip = {
 			any_independent_ruler = {
@@ -5658,7 +5632,6 @@ long_character_event = {
 					}
 				}
 			}
-
 		}
 		ai_chance = {
 			factor = 1
@@ -5698,7 +5671,6 @@ long_character_event = {
 				factor = 1.75
 				trait = zealous
 			}
-
 		}
 	}
 
@@ -5717,7 +5689,6 @@ long_character_event = {
 }
 
 # THE SLANN AWAKENING EVENTS
-
 # On each declared war (on_action), check if there's a Slann vassal and see if he awakes or frowns on the war.
 character_event = {
 	id = slizardmen.30
@@ -5779,7 +5750,6 @@ character_event = {
 							factor = 1.25
 							trait = slothful
 						}
-
 					}
 					4 = {
 						# Restless Slann, abort the war?
@@ -5797,7 +5767,6 @@ character_event = {
 								using_cb = tablet_search
 							}
 						}
-
 					}
 					1 = {
 						# Slann awakens to fight
@@ -5815,11 +5784,9 @@ character_event = {
 								using_cb = tablet_search
 							}
 						}
-
 					}
 
 				}
-
 			}
 
 		}
@@ -5844,7 +5811,6 @@ character_event = {
 							factor = 1.25
 							trait = slothful
 						}
-
 					}
 					4 = {
 						# Restless Slann, abort the war?
@@ -5862,7 +5828,6 @@ character_event = {
 								using_cb = tablet_search
 							}
 						}
-
 					}
 					1 = {
 						# Slann awakens to fight
@@ -5880,11 +5845,9 @@ character_event = {
 								using_cb = tablet_search
 							}
 						}
-
 					}
 
 				}
-
 			}
 
 		}
@@ -5934,7 +5897,6 @@ character_event = {
 				factor = 1.75
 				trait = zealous
 			}
-
 		}
 	}
 
@@ -6003,7 +5965,6 @@ character_event = {
 				}
 				set_government_type = lizardmen_government
 			}
-
 		}
 	}
 }
@@ -6038,7 +5999,6 @@ character_event = {
 					id = slizardmen.33005 days = 2 random = 4
 				}
 			}
-
 		}
 		if = {
 			limit = {
@@ -6051,7 +6011,6 @@ character_event = {
 					id = slizardmen.33005 days = 2 random = 4
 				}
 			}
-
 		}
 	}
 }
@@ -6270,7 +6229,6 @@ character_event = {
 								}
 							}
 						}
-
 					}
 
 				}
@@ -6285,7 +6243,6 @@ character_event = {
 								}
 							}
 						}
-
 					}
 
 				}
@@ -6300,7 +6257,6 @@ character_event = {
 								}
 							}
 						}
-
 					}
 
 				}
@@ -6315,7 +6271,6 @@ character_event = {
 								}
 							}
 						}
-
 					}
 
 				}
@@ -6330,7 +6285,6 @@ character_event = {
 								}
 							}
 						}
-
 					}
 
 				}
@@ -6345,7 +6299,6 @@ character_event = {
 								}
 							}
 						}
-
 					}
 
 				}
@@ -6357,7 +6310,6 @@ character_event = {
 								character = ROOT
 							}
 						}
-
 					}
 
 				}
@@ -6393,7 +6345,6 @@ character_event = {
 }
 
 # Investigate Alignment Plot events
-
 # A plot backer sees an opportunity - The Skink is a drunkard
 character_event = {
 	id = slizardmen.35
@@ -8283,7 +8234,6 @@ long_character_event = {
 }
 
 # AMAZON DECADENCE EVENTS
-
 # You're complacent! And therefore banished!
 character_event = {
 	id = slizardmen.44101
@@ -8593,7 +8543,6 @@ character_event = {
 }
 
 # Faction to remove Complacent Amazon
-
 # Amazon Queen receives ultimatum letter
 letter_event = {
 	id = slizardmen.45
@@ -9601,7 +9550,6 @@ character_event = {
 }
 
 # Flavor events for the Amazonian Festival
-
 # Umbrella event for amazonian feast
 character_event = {
 	id = slizardmen.53
@@ -9639,18 +9587,18 @@ character_event = {
 				modifier = {
 					factor = 1.5
 					check_variable = {
-						which = "drinking_count" value = 4
+						which = "drinking_count"
+						value = 4
 					}
-
 				}
 				modifier = {
 					factor = 0.2
 					NOT = {
 						check_variable = {
-							which = "drinking_count" value = 1
+							which = "drinking_count"
+							value = 1
 						}
 					}
-
 				}
 				character_event = {
 					id = slizardmen.53001
@@ -9660,18 +9608,18 @@ character_event = {
 				modifier = {
 					factor = 1.5
 					check_variable = {
-						which = "eating_count" value = 4
+						which = "eating_count"
+						value = 4
 					}
-
 				}
 				modifier = {
 					factor = 0.2
 					NOT = {
 						check_variable = {
-							which = "eating_count" value = 1
+							which = "eating_count"
+							value = 1
 						}
 					}
-
 				}
 				character_event = {
 					id = slizardmen.53002
@@ -9702,15 +9650,16 @@ character_event = {
 					factor = 0
 					NOT = {
 						check_variable = {
-							which = "drinking_count" value = 1
+							which = "drinking_count"
+							value = 1
 						}
 					}
 					NOT = {
 						check_variable = {
-							which = "eating_count" value = 1
+							which = "eating_count"
+							value = 1
 						}
 					}
-
 				}
 				long_character_event = {
 					id = slizardmen.53007
@@ -10060,72 +10009,72 @@ character_event = {
 					modifier = {
 						factor = 0.85
 						check_variable = {
-							which = "drinking_count" value = 5
+							which = "drinking_count"
+							value = 5
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						check_variable = {
-							which = "drinking_count" value = 7
+							which = "drinking_count"
+							value = 7
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						check_variable = {
-							which = "drinking_count" value = 10
+							which = "drinking_count"
+							value = 10
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						check_variable = {
-							which = "drinking_count" value = 13
+							which = "drinking_count"
+							value = 13
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						check_variable = {
-							which = "drinking_count" value = 15
+							which = "drinking_count"
+							value = 15
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						check_variable = {
-							which = "drinking_count" value = 17
+							which = "drinking_count"
+							value = 17
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						check_variable = {
-							which = "drinking_count" value = 20
+							which = "drinking_count"
+							value = 20
 						}
-
 					}
 					modifier = {
 						factor = 0.25
 						check_variable = {
-							which = "drinking_count" value = 23
+							which = "drinking_count"
+							value = 23
 						}
-
 					}
 					modifier = {
 						factor = 0.15
 						check_variable = {
-							which = "drinking_count" value = 25
+							which = "drinking_count"
+							value = 25
 						}
-
 					}
 					modifier = {
 						factor = 0
 						check_variable = {
-							which = "drinking_count" value = 30
+							which = "drinking_count"
+							value = 30
 						}
-
 					}
 					if = {
 						limit = {
@@ -10151,8 +10100,7 @@ character_event = {
 							}
 						}
 					}
-
-				} # closes50
+				}
 				10 = {
 					# Collapsed, declared victor
 					if = {
@@ -10190,13 +10138,13 @@ character_event = {
 						}
 					} # Notify Loser
 
-				} # closes50
+				}
 			}
-
 		}
 		hidden_tooltip = {
 			change_variable = {
-				which = "drinking_count" value = 1
+				which = "drinking_count"
+				value = 1
 			}
 		}
 		ai_chance = {
@@ -10249,7 +10197,8 @@ character_event = {
 		if = {
 			limit = {
 				check_variable = {
-					which = "drinking_count" value = 5
+					which = "drinking_count"
+					value = 5
 				}
 			}
 			prestige = 50
@@ -10257,7 +10206,8 @@ character_event = {
 		if = {
 			limit = {
 				check_variable = {
-					which = "drinking_count" value = 10
+					which = "drinking_count"
+					value = 10
 				}
 			}
 			prestige = 50
@@ -10265,7 +10215,8 @@ character_event = {
 		if = {
 			limit = {
 				check_variable = {
-					which = "drinking_count" value = 15
+					which = "drinking_count"
+					value = 15
 				}
 			}
 			prestige = 100
@@ -10273,7 +10224,8 @@ character_event = {
 		if = {
 			limit = {
 				check_variable = {
-					which = "drinking_count" value = 20
+					which = "drinking_count"
+					value = 20
 				}
 			}
 			decadence = -1
@@ -10306,7 +10258,8 @@ character_event = {
 		trigger = {
 			NOT = {
 				check_variable = {
-					which = "drinking_count" value = 5
+					which = "drinking_count"
+					value = 5
 				}
 			}
 		}
@@ -10315,11 +10268,13 @@ character_event = {
 		text = EVTDESCBslizardmen54006
 		trigger = {
 			check_variable = {
-				which = "drinking_count" value = 5
+				which = "drinking_count"
+				value = 5
 			}
 			NOT = {
 				check_variable = {
-					which = "drinking_count" value = 10
+					which = "drinking_count"
+					value = 10
 				}
 			}
 		}
@@ -10328,11 +10283,13 @@ character_event = {
 		text = EVTDESCCslizardmen54006
 		trigger = {
 			check_variable = {
-				which = "drinking_count" value = 10
+				which = "drinking_count"
+				value = 10
 			}
 			NOT = {
 				check_variable = {
-					which = "drinking_count" value = 15
+					which = "drinking_count"
+					value = 15
 				}
 			}
 		}
@@ -10341,11 +10298,13 @@ character_event = {
 		text = EVTDESCDslizardmen54006
 		trigger = {
 			check_variable = {
-				which = "drinking_count" value = 15
+				which = "drinking_count"
+				value = 15
 			}
 			NOT = {
 				check_variable = {
-					which = "drinking_count" value = 20
+					which = "drinking_count"
+					value = 20
 				}
 			}
 		}
@@ -10442,72 +10401,72 @@ character_event = {
 					modifier = {
 						factor = 0.85
 						check_variable = {
-							which = "drinking_count" value = 5
+							which = "drinking_count"
+							value = 5
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						check_variable = {
-							which = "drinking_count" value = 7
+							which = "drinking_count"
+							value = 7
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						check_variable = {
-							which = "drinking_count" value = 10
+							which = "drinking_count"
+							value = 10
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						check_variable = {
-							which = "drinking_count" value = 13
+							which = "drinking_count"
+							value = 13
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						check_variable = {
-							which = "drinking_count" value = 15
+							which = "drinking_count"
+							value = 15
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						check_variable = {
-							which = "drinking_count" value = 17
+							which = "drinking_count"
+							value = 17
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						check_variable = {
-							which = "drinking_count" value = 20
+							which = "drinking_count"
+							value = 20
 						}
-
 					}
 					modifier = {
 						factor = 0.25
 						check_variable = {
-							which = "drinking_count" value = 23
+							which = "drinking_count"
+							value = 23
 						}
-
 					}
 					modifier = {
 						factor = 0.15
 						check_variable = {
-							which = "drinking_count" value = 25
+							which = "drinking_count"
+							value = 25
 						}
-
 					}
 					modifier = {
 						factor = 0
 						check_variable = {
-							which = "drinking_count" value = 30
+							which = "drinking_count"
+							value = 30
 						}
-
 					}
 					if = {
 						limit = {
@@ -10533,8 +10492,7 @@ character_event = {
 							}
 						}
 					}
-
-				} # closes50
+				}
 				15 = {
 					# Collapsed, declared victor
 					if = {
@@ -10572,13 +10530,13 @@ character_event = {
 						}
 					} # Notify Loser
 
-				} # closes50
+				}
 			}
-
 		}
 		hidden_tooltip = {
 			change_variable = {
-				which = "drinking_count" value = 1
+				which = "drinking_count"
+				value = 1
 			}
 		}
 		ai_chance = {
@@ -10623,13 +10581,15 @@ character_event = {
 			modifier = {
 				factor = 2
 				check_variable = {
-					which = "drinking_count" value = 10
+					which = "drinking_count"
+					value = 10
 				}
 			}
 			modifier = {
 				factor = 4
 				check_variable = {
-					which = "drinking_count" value = 20
+					which = "drinking_count"
+					value = 20
 				}
 			}
 		}
@@ -10652,7 +10612,8 @@ character_event = {
 		if = {
 			limit = {
 				check_variable = {
-					which = "drinking_count" value = 5
+					which = "drinking_count"
+					value = 5
 				}
 			}
 			prestige = 50
@@ -10660,7 +10621,8 @@ character_event = {
 		if = {
 			limit = {
 				check_variable = {
-					which = "drinking_count" value = 10
+					which = "drinking_count"
+					value = 10
 				}
 			}
 			prestige = 50
@@ -10668,7 +10630,8 @@ character_event = {
 		if = {
 			limit = {
 				check_variable = {
-					which = "drinking_count" value = 15
+					which = "drinking_count"
+					value = 15
 				}
 			}
 			prestige = 100
@@ -10676,7 +10639,8 @@ character_event = {
 		if = {
 			limit = {
 				check_variable = {
-					which = "drinking_count" value = 20
+					which = "drinking_count"
+					value = 20
 				}
 			}
 			decadence = -1
@@ -10897,72 +10861,72 @@ character_event = {
 					modifier = {
 						factor = 0.85
 						check_variable = {
-							which = "eating_count" value = 1
+							which = "eating_count"
+							value = 1
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						check_variable = {
-							which = "eating_count" value = 2
+							which = "eating_count"
+							value = 2
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						check_variable = {
-							which = "eating_count" value = 3
+							which = "eating_count"
+							value = 3
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						check_variable = {
-							which = "eating_count" value = 4
+							which = "eating_count"
+							value = 4
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						check_variable = {
-							which = "eating_count" value = 5
+							which = "eating_count"
+							value = 5
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						check_variable = {
-							which = "eating_count" value = 6
+							which = "eating_count"
+							value = 6
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						check_variable = {
-							which = "eating_count" value = 7
+							which = "eating_count"
+							value = 7
 						}
-
 					}
 					modifier = {
 						factor = 0.25
 						check_variable = {
-							which = "eating_count" value = 8
+							which = "eating_count"
+							value = 8
 						}
-
 					}
 					modifier = {
 						factor = 0.15
 						check_variable = {
-							which = "eating_count" value = 9
+							which = "eating_count"
+							value = 9
 						}
-
 					}
 					modifier = {
 						factor = 0
 						check_variable = {
-							which = "eating_count" value = 10
+							which = "eating_count"
+							value = 10
 						}
-
 					}
 					if = {
 						limit = {
@@ -10988,8 +10952,7 @@ character_event = {
 							}
 						}
 					}
-
-				} # closes50
+				}
 				5 = {
 					# Collapsed, declared victor
 					if = {
@@ -11027,13 +10990,13 @@ character_event = {
 						}
 					} # Notify Loser
 
-				} # closes50
+				}
 			}
-
 		}
 		hidden_tooltip = {
 			change_variable = {
-				which = "eating_count" value = 1
+				which = "eating_count"
+				value = 1
 			}
 		}
 		ai_chance = {
@@ -11086,7 +11049,8 @@ character_event = {
 		if = {
 			limit = {
 				check_variable = {
-					which = "eating_count" value = 2
+					which = "eating_count"
+					value = 2
 				}
 			}
 			prestige = 50
@@ -11094,7 +11058,8 @@ character_event = {
 		if = {
 			limit = {
 				check_variable = {
-					which = "eating_count" value = 4
+					which = "eating_count"
+					value = 4
 				}
 			}
 			prestige = 50
@@ -11102,7 +11067,8 @@ character_event = {
 		if = {
 			limit = {
 				check_variable = {
-					which = "eating_count" value = 7
+					which = "eating_count"
+					value = 7
 				}
 			}
 			prestige = 100
@@ -11110,7 +11076,8 @@ character_event = {
 		if = {
 			limit = {
 				check_variable = {
-					which = "eating_count" value = 10
+					which = "eating_count"
+					value = 10
 				}
 			}
 			decadence = -1
@@ -11143,7 +11110,8 @@ character_event = {
 		trigger = {
 			NOT = {
 				check_variable = {
-					which = "eating_count" value = 2
+					which = "eating_count"
+					value = 2
 				}
 			}
 		}
@@ -11152,11 +11120,13 @@ character_event = {
 		text = EVTDESCBslizardmen55006
 		trigger = {
 			check_variable = {
-				which = "eating_count" value = 2
+				which = "eating_count"
+				value = 2
 			}
 			NOT = {
 				check_variable = {
-					which = "eating_count" value = 3
+					which = "eating_count"
+					value = 3
 				}
 			}
 		}
@@ -11165,11 +11135,13 @@ character_event = {
 		text = EVTDESCCslizardmen55006
 		trigger = {
 			check_variable = {
-				which = "eating_count" value = 3
+				which = "eating_count"
+				value = 3
 			}
 			NOT = {
 				check_variable = {
-					which = "eating_count" value = 5
+					which = "eating_count"
+					value = 5
 				}
 			}
 		}
@@ -11178,11 +11150,13 @@ character_event = {
 		text = EVTDESCDslizardmen55006
 		trigger = {
 			check_variable = {
-				which = "eating_count" value = 5
+				which = "eating_count"
+				value = 5
 			}
 			NOT = {
 				check_variable = {
-					which = "eating_count" value = 10
+					which = "eating_count"
+					value = 10
 				}
 			}
 		}
@@ -11279,72 +11253,72 @@ character_event = {
 					modifier = {
 						factor = 0.85
 						check_variable = {
-							which = "eating_count" value = 1
+							which = "eating_count"
+							value = 1
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						check_variable = {
-							which = "eating_count" value = 2
+							which = "eating_count"
+							value = 2
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						check_variable = {
-							which = "eating_count" value = 3
+							which = "eating_count"
+							value = 3
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						check_variable = {
-							which = "eating_count" value = 4
+							which = "eating_count"
+							value = 4
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						check_variable = {
-							which = "eating_count" value = 5
+							which = "eating_count"
+							value = 5
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						check_variable = {
-							which = "eating_count" value = 6
+							which = "eating_count"
+							value = 6
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						check_variable = {
-							which = "eating_count" value = 7
+							which = "eating_count"
+							value = 7
 						}
-
 					}
 					modifier = {
 						factor = 0.25
 						check_variable = {
-							which = "eating_count" value = 8
+							which = "eating_count"
+							value = 8
 						}
-
 					}
 					modifier = {
 						factor = 0.15
 						check_variable = {
-							which = "eating_count" value = 9
+							which = "eating_count"
+							value = 9
 						}
-
 					}
 					modifier = {
 						factor = 0
 						check_variable = {
-							which = "eating_count" value = 10
+							which = "eating_count"
+							value = 10
 						}
-
 					}
 					if = {
 						limit = {
@@ -11370,8 +11344,7 @@ character_event = {
 							}
 						}
 					}
-
-				} # closes50
+				}
 				15 = {
 					# Collapsed, declared victor
 					if = {
@@ -11409,13 +11382,13 @@ character_event = {
 						}
 					} # Notify Loser
 
-				} # closes50
+				}
 			}
-
 		}
 		hidden_tooltip = {
 			change_variable = {
-				which = "eating_count" value = 1
+				which = "eating_count"
+				value = 1
 			}
 		}
 		ai_chance = {
@@ -11460,13 +11433,15 @@ character_event = {
 			modifier = {
 				factor = 2
 				check_variable = {
-					which = "eating_count" value = 5
+					which = "eating_count"
+					value = 5
 				}
 			}
 			modifier = {
 				factor = 4
 				check_variable = {
-					which = "eating_count" value = 10
+					which = "eating_count"
+					value = 10
 				}
 			}
 		}
@@ -11489,7 +11464,8 @@ character_event = {
 		if = {
 			limit = {
 				check_variable = {
-					which = "eating_count" value = 2
+					which = "eating_count"
+					value = 2
 				}
 			}
 			prestige = 50
@@ -11497,7 +11473,8 @@ character_event = {
 		if = {
 			limit = {
 				check_variable = {
-					which = "eating_count" value = 4
+					which = "eating_count"
+					value = 4
 				}
 			}
 			prestige = 50
@@ -11505,7 +11482,8 @@ character_event = {
 		if = {
 			limit = {
 				check_variable = {
-					which = "eating_count" value = 7
+					which = "eating_count"
+					value = 7
 				}
 			}
 			prestige = 100
@@ -11513,7 +11491,8 @@ character_event = {
 		if = {
 			limit = {
 				check_variable = {
-					which = "eating_count" value = 10
+					which = "eating_count"
+					value = 10
 				}
 			}
 			decadence = -1
@@ -11682,148 +11661,127 @@ character_event = {
 						event_target:am_mud_1 = {
 							trait = fragile
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						event_target:am_mud_1 = {
 							trait = weak
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_mud_1 = {
 							trait = soft
 						}
-
 					}
 					modifier = {
 						factor = 1.25
 						event_target:am_mud_1 = {
 							trait = hardy
 						}
-
 					}
 					modifier = {
 						factor = 1.5
 						event_target:am_mud_1 = {
 							trait = tough
 						}
-
 					}
 					modifier = {
 						factor = 1.75
 						event_target:am_mud_1 = {
 							trait = strong
 						}
-
 					}
 					modifier = {
 						factor = 0.5
 						event_target:am_mud_1 = {
 							trait = craven
 						}
-
 					}
 					modifier = {
 						factor = 1.15
 						event_target:am_mud_1 = {
 							trait = diligent
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_mud_1 = {
 							trait = drunkard
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_mud_1 = {
 							trait = addict
 						}
-
 					}
 					modifier = {
 						factor = 1.75
 						event_target:am_mud_1 = {
 							trait = brave
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_mud_1 = {
 							trait = fat
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_mud_1 = {
 							trait = undernourished
 						}
-
 					}
 					modifier = {
 						factor = 1.5
 						event_target:am_mud_1 = {
 							trait = ambitious
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_mud_1 = {
 							trait = content
 						}
-
 					}
 					modifier = {
 						factor = 1.85
 						event_target:am_mud_1 = {
 							trait = duelist
 						}
-
 					}
 					modifier = {
 						factor = 1.5
 						event_target:am_mud_1 = {
 							trait = hunter
 						}
-
 					}
 					modifier = {
 						factor = 0.5
 						event_target:am_mud_1 = {
 							trait = wounded
 						}
-
 					}
 					modifier = {
 						factor = 0.25
 						event_target:am_mud_1 = {
 							trait = maimed
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						event_target:am_mud_1 = {
 							trait = infirm
 						}
-
 					}
 					event_target:am_mud_1 = {
 						long_character_event = {
 							id = slizardmen.56004
 						}
 					}
-
-				} # closes50
+				}
 				50 = {
 					# Second contestant wins
 					modifier = {
@@ -11831,150 +11789,128 @@ character_event = {
 						event_target:am_mud_2 = {
 							trait = fragile
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						event_target:am_mud_2 = {
 							trait = weak
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_mud_2 = {
 							trait = soft
 						}
-
 					}
 					modifier = {
 						factor = 1.25
 						event_target:am_mud_2 = {
 							trait = hardy
 						}
-
 					}
 					modifier = {
 						factor = 1.5
 						event_target:am_mud_2 = {
 							trait = tough
 						}
-
 					}
 					modifier = {
 						factor = 1.75
 						event_target:am_mud_2 = {
 							trait = strong
 						}
-
 					}
 					modifier = {
 						factor = 0.5
 						event_target:am_mud_2 = {
 							trait = craven
 						}
-
 					}
 					modifier = {
 						factor = 1.15
 						event_target:am_mud_2 = {
 							trait = diligent
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_mud_2 = {
 							trait = drunkard
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_mud_2 = {
 							trait = addict
 						}
-
 					}
 					modifier = {
 						factor = 1.75
 						event_target:am_mud_2 = {
 							trait = brave
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_mud_2 = {
 							trait = fat
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_mud_2 = {
 							trait = undernourished
 						}
-
 					}
 					modifier = {
 						factor = 1.5
 						event_target:am_mud_2 = {
 							trait = ambitious
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_mud_2 = {
 							trait = content
 						}
-
 					}
 					modifier = {
 						factor = 1.85
 						event_target:am_mud_2 = {
 							trait = duelist
 						}
-
 					}
 					modifier = {
 						factor = 1.5
 						event_target:am_mud_2 = {
 							trait = hunter
 						}
-
 					}
 					modifier = {
 						factor = 0.5
 						event_target:am_mud_2 = {
 							trait = wounded
 						}
-
 					}
 					modifier = {
 						factor = 0.25
 						event_target:am_mud_2 = {
 							trait = maimed
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						event_target:am_mud_2 = {
 							trait = infirm
 						}
-
 					}
 					event_target:am_mud_2 = {
 						long_character_event = {
 							id = slizardmen.56004
 						}
 					}
-
-				} # closes50
+				}
 			}
-
 		}
 	}
 }
@@ -12231,7 +12167,6 @@ character_event = {
 }
 
 # The Amazons capture a good speciment
-
 # ROOT is attacker, FROM is province sieged
 character_event = {
 	id = slizardmen.60
@@ -12318,7 +12253,6 @@ character_event = {
 					add_trait = in_stock
 				}
 			}
-
 		}
 		prestige = 25
 		decadence = 1
@@ -12345,7 +12279,8 @@ character_event = {
 		# Just keep him in store for sacrifice
 		name = EVTOPTBslizardmen60
 		change_variable = {
-			which = "sacrifical_victims" value = 1
+			which = "sacrifical_victims"
+			value = 1
 		}
 		piety = 25
 		decadence = -1
@@ -12379,7 +12314,6 @@ character_event = {
 }
 
 # Amazon Brawling Events
-
 # Notify Host the event will soon be prepared
 character_event = {
 	id = slizardmen.61
@@ -12416,7 +12350,8 @@ character_event = {
 		remove_trait = questing
 		hidden_tooltip = {
 			set_variable = {
-				which = "brawl_player" value = 0
+				which = "brawl_player"
+				value = 0
 			}
 			diplomatic_immunity = no
 			clr_character_flag = do_not_disturb
@@ -12513,11 +12448,11 @@ letter_event = {
 				NOT = {
 					FROM = {
 						check_variable = {
-							which = "brawl_player" value = 3
+							which = "brawl_player"
+							value = 3
 						}
 					}
 				}
-
 			}
 
 		}
@@ -12534,7 +12469,8 @@ letter_event = {
 		name = EVTOPTAslizardmen61002
 		hidden_tooltip = {
 			change_variable = {
-				which = "brawl_player" value = 1
+				which = "brawl_player"
+				value = 1
 			}
 		}
 		ai_chance = {
@@ -12564,7 +12500,8 @@ long_character_event = {
 		text = EVTDESCAslizardmen62
 		trigger = {
 			check_variable = {
-				which = "brawl_player" value = 3
+				which = "brawl_player"
+				value = 3
 			}
 		} # Make sure there's a bare minimum of challengers to start
 
@@ -12574,7 +12511,8 @@ long_character_event = {
 		trigger = {
 			NOT = {
 				check_variable = {
-					which = "brawl_player" value = 3
+					which = "brawl_player"
+					value = 3
 				}
 			}
 		} # Make sure there's a bare minimum of challengers to start
@@ -12591,13 +12529,15 @@ long_character_event = {
 		name = EVTOPTAslizardmen62
 		trigger = {
 			check_variable = {
-				which = "brawl_player" value = 3
+				which = "brawl_player"
+				value = 3
 			}
 		}
 		add_trait = questing
 		hidden_tooltip = {
 			set_variable = {
-				which = "brawl_player" value = 0
+				which = "brawl_player"
+				value = 0
 			}
 			any_realm_character = {
 				limit = {
@@ -12613,7 +12553,6 @@ long_character_event = {
 			character_event = {
 				id = slizardmen.62002
 			}
-
 		}
 		ai_chance = {
 			factor = 1
@@ -12625,7 +12564,8 @@ long_character_event = {
 		trigger = {
 			NOT = {
 				check_variable = {
-					which = "brawl_player" value = 3
+					which = "brawl_player"
+					value = 3
 				}
 			}
 		}
@@ -12637,7 +12577,8 @@ long_character_event = {
 		}
 		hidden_tooltip = {
 			set_variable = {
-				which = "brawl_player" value = 0
+				which = "brawl_player"
+				value = 0
 			}
 			any_realm_character = {
 				limit = {
@@ -12650,7 +12591,6 @@ long_character_event = {
 					id = slizardmen.62005 days = 7 random = 10
 				}
 			}
-
 		}
 		ai_chance = {
 			factor = 1
@@ -12703,7 +12643,6 @@ character_event = {
 					id = slizardmen.62003
 				}
 			}
-
 		}
 		ai_chance = {
 			factor = 1
@@ -12872,7 +12811,6 @@ character_event = {
 						set_character_flag = am_fight_11
 					}
 				}
-
 			}
 			random_list = {
 				50 = {
@@ -12882,175 +12820,150 @@ character_event = {
 						event_target:am_brawler_1 = {
 							trait = fragile
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						event_target:am_brawler_1 = {
 							trait = weak
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_brawler_1 = {
 							trait = soft
 						}
-
 					}
 					modifier = {
 						factor = 1.25
 						event_target:am_brawler_1 = {
 							trait = hardy
 						}
-
 					}
 					modifier = {
 						factor = 1.5
 						event_target:am_brawler_1 = {
 							trait = tough
 						}
-
 					}
 					modifier = {
 						factor = 1.75
 						event_target:am_brawler_1 = {
 							trait = strong
 						}
-
 					}
 					modifier = {
 						factor = 0.5
 						event_target:am_brawler_1 = {
 							trait = craven
 						}
-
 					}
 					modifier = {
 						factor = 1.15
 						event_target:am_brawler_1 = {
 							trait = diligent
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_brawler_1 = {
 							trait = drunkard
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_brawler_1 = {
 							trait = addict
 						}
-
 					}
 					modifier = {
 						factor = 1.75
 						event_target:am_brawler_1 = {
 							trait = brave
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_brawler_1 = {
 							trait = fat
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_brawler_1 = {
 							trait = undernourished
 						}
-
 					}
 					modifier = {
 						factor = 1.5
 						event_target:am_brawler_1 = {
 							trait = ambitious
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_brawler_1 = {
 							trait = content
 						}
-
 					}
 					modifier = {
 						factor = 1.85
 						event_target:am_brawler_1 = {
 							trait = duelist
 						}
-
 					}
 					modifier = {
 						factor = 1.5
 						event_target:am_brawler_1 = {
 							trait = hunter
 						}
-
 					}
 					modifier = {
 						factor = 0.5
 						event_target:am_brawler_1 = {
 							trait = wounded
 						}
-
 					}
 					modifier = {
 						factor = 0.25
 						event_target:am_brawler_1 = {
 							trait = maimed
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						event_target:am_brawler_1 = {
 							trait = infirm
 						}
-
 					}
 					modifier = {
 						factor = 0.25
 						event_target:am_brawler_1 = {
 							trait = blinded
 						}
-
 					}
 					modifier = {
 						factor = 1.25
 						event_target:am_brawler_1 = {
 							trait = tall
 						}
-
 					}
 					modifier = {
 						factor = 0.5
 						event_target:am_brawler_1 = {
 							trait = dwarf
 						}
-
 					}
 					modifier = {
 						factor = 0.5
 						event_target:am_brawler_1 = {
 							trait = hunchback
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						event_target:am_brawler_1 = {
 							trait = clubfooted
 						}
-
 					}
 					modifier = {
 						factor = 0.9
@@ -13059,182 +12972,156 @@ character_event = {
 								age = 18
 							}
 						}
-
 					}
 					modifier = {
 						factor = 1.25
 						event_target:am_brawler_1 = {
 							martial = 15
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_brawler_1 = {
 							trait = stressed
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						event_target:am_brawler_1 = {
 							trait = depressed
 						}
-
 					}
 					modifier = {
 						factor = 0.95
 						event_target:am_brawler_1 = {
 							trait = dim
 						}
-
 					}
 					modifier = {
 						factor = 0.9
 						event_target:am_brawler_1 = {
 							trait = dumb
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_brawler_1 = {
 							trait = slow
 						}
-
 					}
 					modifier = {
 						factor = 0.8
 						event_target:am_brawler_1 = {
 							trait = idiot
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						event_target:am_brawler_1 = {
 							trait = imbecile
 						}
-
 					}
 					modifier = {
 						factor = 1.15
 						event_target:am_brawler_1 = {
 							trait = bright
 						}
-
 					}
 					modifier = {
 						factor = 1.2
 						event_target:am_brawler_1 = {
 							trait = smart
 						}
-
 					}
 					modifier = {
 						factor = 1.25
 						event_target:am_brawler_1 = {
 							trait = quick
 						}
-
 					}
 					modifier = {
 						factor = 1.3
 						event_target:am_brawler_1 = {
 							trait = brilliant
 						}
-
 					}
 					modifier = {
 						factor = 1.35
 						event_target:am_brawler_1 = {
 							trait = genius
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_brawler_1 = {
 							trait = slothful
 						}
-
 					}
 					modifier = {
 						factor = 0.9
 						event_target:am_brawler_1 = {
 							trait = kind
 						}
-
 					}
 					modifier = {
 						factor = 0.9
 						event_target:am_brawler_1 = {
 							trait = humble
 						}
-
 					}
 					modifier = {
 						factor = 0.9
 						event_target:am_brawler_1 = {
 							trait = shy
 						}
-
 					}
 					modifier = {
 						factor = 1.1
 						event_target:am_brawler_1 = {
 							trait = misguided_warrior
 						}
-
 					}
 					modifier = {
 						factor = 1.35
 						event_target:am_brawler_1 = {
 							trait = tough_soldier
 						}
-
 					}
 					modifier = {
 						factor = 1.5
 						event_target:am_brawler_1 = {
 							trait = skilled_tactician
 						}
-
 					}
 					modifier = {
 						factor = 1.75
 						event_target:am_brawler_1 = {
 							trait = brilliant_strategist
 						}
-
 					}
 					modifier = {
 						factor = 1.35
 						event_target:am_brawler_1 = {
 							trait = zealous
 						}
-
 					}
 					modifier = {
 						factor = 1.15
 						event_target:am_brawler_1 = {
 							trait = cruel
 						}
-
 					}
 					modifier = {
 						factor = 0.95
 						event_target:am_brawler_1 = {
 							trait = just
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_brawler_1 = {
 							trait = complacent
 						}
-
 					}
 					modifier = {
 						factor = 0.9
@@ -13243,7 +13130,6 @@ character_event = {
 								count = 3
 							}
 						}
-
 					}
 					modifier = {
 						factor = 0.9
@@ -13252,98 +13138,84 @@ character_event = {
 								count = 5
 							}
 						}
-
 					}
 					modifier = {
 						factor = 1.15
 						event_target:am_brawler_1 = {
 							trait = deceitful
 						}
-
 					}
 					modifier = {
 						factor = 0.95
 						event_target:am_brawler_1 = {
 							trait = honest
 						}
-
 					}
 					modifier = {
 						factor = 1.15
 						event_target:am_brawler_1 = {
 							trait = paranoid
 						}
-
 					}
 					modifier = {
 						factor = 0.95
 						event_target:am_brawler_1 = {
 							trait = trusting
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_brawler_1 = {
 							trait = ill
 						}
-
 					}
 					modifier = {
 						factor = 0.5
 						event_target:am_brawler_1 = {
 							trait = has_nurgles_rot
 						}
-
 					}
 					modifier = {
 						factor = 1.25
 						event_target:am_brawler_1 = {
 							trait = aggressive_leader
 						}
-
 					}
 					modifier = {
 						factor = 1.15
 						event_target:am_brawler_1 = {
 							trait = experimenter
 						}
-
 					}
 					modifier = {
 						factor = 1.35
 						event_target:am_brawler_1 = {
 							trait = trickster
 						}
-
 					}
 					modifier = {
 						factor = 1.15
 						event_target:am_brawler_1 = {
 							trait = lunatic_1
 						}
-
 					}
 					modifier = {
 						factor = 0.95
 						event_target:am_brawler_1 = {
 							trait = lunatic_2
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_brawler_1 = {
 							trait = lunatic_3
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						event_target:am_brawler_1 = {
 							trait = disfigured
 						}
-
 					}
 					modifier = {
 						factor = 1.65
@@ -13351,7 +13223,6 @@ character_event = {
 							age = 150
 							is_immortal_trigger = yes
 						}
-
 					}
 					modifier = {
 						factor = 0.5
@@ -13361,28 +13232,24 @@ character_event = {
 								is_immortal_trigger = yes
 							}
 						}
-
 					}
 					modifier = {
 						factor = 0.95
 						event_target:am_brawler_1 = {
 							trait = wroth
 						}
-
 					}
 					modifier = {
 						factor = 1.15
 						event_target:am_brawler_1 = {
 							trait = patient
 						}
-
 					}
 					modifier = {
 						factor = 1.15
 						event_target:am_brawler_1 = {
 							trait = strategist
 						}
-
 					}
 					modifier = {
 						factor = 1.15
@@ -13394,7 +13261,6 @@ character_event = {
 								trait = elusive_shadow
 							}
 						}
-
 					}
 					modifier = {
 						factor = 0.8
@@ -13406,7 +13272,6 @@ character_event = {
 								trait = grey_eminence
 							}
 						}
-
 					}
 					modifier = {
 						factor = 0.9
@@ -13418,15 +13283,13 @@ character_event = {
 								trait = midas_touched
 							}
 						}
-
 					}
 					event_target:am_brawler_1 = {
 						long_character_event = {
 							id = slizardmen.63001
 						}
 					}
-
-				} # closes50
+				}
 				50 = {
 					# Second contestant wins
 					modifier = {
@@ -13434,175 +13297,150 @@ character_event = {
 						event_target:am_brawler_2 = {
 							trait = fragile
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						event_target:am_brawler_2 = {
 							trait = weak
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_brawler_2 = {
 							trait = soft
 						}
-
 					}
 					modifier = {
 						factor = 1.25
 						event_target:am_brawler_2 = {
 							trait = hardy
 						}
-
 					}
 					modifier = {
 						factor = 1.5
 						event_target:am_brawler_2 = {
 							trait = tough
 						}
-
 					}
 					modifier = {
 						factor = 1.75
 						event_target:am_brawler_2 = {
 							trait = strong
 						}
-
 					}
 					modifier = {
 						factor = 0.5
 						event_target:am_brawler_2 = {
 							trait = craven
 						}
-
 					}
 					modifier = {
 						factor = 1.15
 						event_target:am_brawler_2 = {
 							trait = diligent
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_brawler_2 = {
 							trait = drunkard
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_brawler_2 = {
 							trait = addict
 						}
-
 					}
 					modifier = {
 						factor = 1.75
 						event_target:am_brawler_2 = {
 							trait = brave
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_brawler_2 = {
 							trait = fat
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_brawler_2 = {
 							trait = undernourished
 						}
-
 					}
 					modifier = {
 						factor = 1.5
 						event_target:am_brawler_2 = {
 							trait = ambitious
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_brawler_2 = {
 							trait = content
 						}
-
 					}
 					modifier = {
 						factor = 1.85
 						event_target:am_brawler_2 = {
 							trait = duelist
 						}
-
 					}
 					modifier = {
 						factor = 1.5
 						event_target:am_brawler_2 = {
 							trait = hunter
 						}
-
 					}
 					modifier = {
 						factor = 0.5
 						event_target:am_brawler_2 = {
 							trait = wounded
 						}
-
 					}
 					modifier = {
 						factor = 0.25
 						event_target:am_brawler_2 = {
 							trait = maimed
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						event_target:am_brawler_2 = {
 							trait = infirm
 						}
-
 					}
 					modifier = {
 						factor = 0.25
 						event_target:am_brawler_2 = {
 							trait = blinded
 						}
-
 					}
 					modifier = {
 						factor = 1.25
 						event_target:am_brawler_2 = {
 							trait = tall
 						}
-
 					}
 					modifier = {
 						factor = 0.5
 						event_target:am_brawler_2 = {
 							trait = dwarf
 						}
-
 					}
 					modifier = {
 						factor = 0.5
 						event_target:am_brawler_2 = {
 							trait = hunchback
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						event_target:am_brawler_2 = {
 							trait = clubfooted
 						}
-
 					}
 					modifier = {
 						factor = 0.9
@@ -13611,182 +13449,156 @@ character_event = {
 								age = 18
 							}
 						}
-
 					}
 					modifier = {
 						factor = 1.25
 						event_target:am_brawler_2 = {
 							martial = 15
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_brawler_2 = {
 							trait = stressed
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						event_target:am_brawler_2 = {
 							trait = depressed
 						}
-
 					}
 					modifier = {
 						factor = 0.95
 						event_target:am_brawler_2 = {
 							trait = dim
 						}
-
 					}
 					modifier = {
 						factor = 0.9
 						event_target:am_brawler_2 = {
 							trait = dumb
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_brawler_2 = {
 							trait = slow
 						}
-
 					}
 					modifier = {
 						factor = 0.8
 						event_target:am_brawler_2 = {
 							trait = idiot
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						event_target:am_brawler_2 = {
 							trait = imbecile
 						}
-
 					}
 					modifier = {
 						factor = 1.15
 						event_target:am_brawler_2 = {
 							trait = bright
 						}
-
 					}
 					modifier = {
 						factor = 1.2
 						event_target:am_brawler_2 = {
 							trait = smart
 						}
-
 					}
 					modifier = {
 						factor = 1.25
 						event_target:am_brawler_2 = {
 							trait = quick
 						}
-
 					}
 					modifier = {
 						factor = 1.3
 						event_target:am_brawler_2 = {
 							trait = brilliant
 						}
-
 					}
 					modifier = {
 						factor = 1.35
 						event_target:am_brawler_2 = {
 							trait = genius
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_brawler_2 = {
 							trait = slothful
 						}
-
 					}
 					modifier = {
 						factor = 0.9
 						event_target:am_brawler_2 = {
 							trait = kind
 						}
-
 					}
 					modifier = {
 						factor = 0.9
 						event_target:am_brawler_2 = {
 							trait = humble
 						}
-
 					}
 					modifier = {
 						factor = 0.9
 						event_target:am_brawler_2 = {
 							trait = shy
 						}
-
 					}
 					modifier = {
 						factor = 1.1
 						event_target:am_brawler_2 = {
 							trait = misguided_warrior
 						}
-
 					}
 					modifier = {
 						factor = 1.35
 						event_target:am_brawler_2 = {
 							trait = tough_soldier
 						}
-
 					}
 					modifier = {
 						factor = 1.5
 						event_target:am_brawler_2 = {
 							trait = skilled_tactician
 						}
-
 					}
 					modifier = {
 						factor = 1.75
 						event_target:am_brawler_2 = {
 							trait = brilliant_strategist
 						}
-
 					}
 					modifier = {
 						factor = 1.35
 						event_target:am_brawler_2 = {
 							trait = zealous
 						}
-
 					}
 					modifier = {
 						factor = 1.15
 						event_target:am_brawler_2 = {
 							trait = cruel
 						}
-
 					}
 					modifier = {
 						factor = 0.95
 						event_target:am_brawler_2 = {
 							trait = just
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_brawler_2 = {
 							trait = complacent
 						}
-
 					}
 					modifier = {
 						factor = 0.9
@@ -13795,7 +13607,6 @@ character_event = {
 								count = 3
 							}
 						}
-
 					}
 					modifier = {
 						factor = 0.9
@@ -13804,98 +13615,84 @@ character_event = {
 								count = 5
 							}
 						}
-
 					}
 					modifier = {
 						factor = 1.15
 						event_target:am_brawler_2 = {
 							trait = deceitful
 						}
-
 					}
 					modifier = {
 						factor = 0.95
 						event_target:am_brawler_2 = {
 							trait = honest
 						}
-
 					}
 					modifier = {
 						factor = 1.15
 						event_target:am_brawler_2 = {
 							trait = paranoid
 						}
-
 					}
 					modifier = {
 						factor = 0.95
 						event_target:am_brawler_2 = {
 							trait = trusting
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_brawler_2 = {
 							trait = ill
 						}
-
 					}
 					modifier = {
 						factor = 0.5
 						event_target:am_brawler_2 = {
 							trait = has_nurgles_rot
 						}
-
 					}
 					modifier = {
 						factor = 1.25
 						event_target:am_brawler_2 = {
 							trait = aggressive_leader
 						}
-
 					}
 					modifier = {
 						factor = 1.15
 						event_target:am_brawler_2 = {
 							trait = experimenter
 						}
-
 					}
 					modifier = {
 						factor = 1.35
 						event_target:am_brawler_2 = {
 							trait = trickster
 						}
-
 					}
 					modifier = {
 						factor = 1.15
 						event_target:am_brawler_2 = {
 							trait = lunatic_1
 						}
-
 					}
 					modifier = {
 						factor = 0.95
 						event_target:am_brawler_2 = {
 							trait = lunatic_2
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_brawler_2 = {
 							trait = lunatic_3
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						event_target:am_brawler_2 = {
 							trait = disfigured
 						}
-
 					}
 					modifier = {
 						factor = 1.65
@@ -13903,7 +13700,6 @@ character_event = {
 							age = 150
 							is_immortal_trigger = yes
 						}
-
 					}
 					modifier = {
 						factor = 0.5
@@ -13913,28 +13709,24 @@ character_event = {
 								is_immortal_trigger = yes
 							}
 						}
-
 					}
 					modifier = {
 						factor = 0.95
 						event_target:am_brawler_2 = {
 							trait = wroth
 						}
-
 					}
 					modifier = {
 						factor = 1.15
 						event_target:am_brawler_2 = {
 							trait = patient
 						}
-
 					}
 					modifier = {
 						factor = 1.15
 						event_target:am_brawler_2 = {
 							trait = strategist
 						}
-
 					}
 					modifier = {
 						factor = 1.15
@@ -13946,7 +13738,6 @@ character_event = {
 								trait = elusive_shadow
 							}
 						}
-
 					}
 					modifier = {
 						factor = 0.8
@@ -13958,7 +13749,6 @@ character_event = {
 								trait = grey_eminence
 							}
 						}
-
 					}
 					modifier = {
 						factor = 0.9
@@ -13970,17 +13760,14 @@ character_event = {
 								trait = midas_touched
 							}
 						}
-
 					}
 					event_target:am_brawler_2 = {
 						long_character_event = {
 							id = slizardmen.63001
 						}
 					}
-
-				} # closes50
+				}
 			}
-
 		}
 	}
 }
@@ -14237,7 +14024,6 @@ long_character_event = {
 						id = slizardmen.63002
 					}
 				}
-
 			}
  			if = {
 				limit = {
@@ -14250,7 +14036,6 @@ long_character_event = {
 						id = slizardmen.63002
 					}
 				}
-
 			}
 
 		}
@@ -14270,7 +14055,6 @@ long_character_event = {
 				has_character_flag = am_fight_1
 			}
 		}
-
 	}
 	desc = {
 		text = EVTDESCBslizardmen63002
@@ -14279,7 +14063,6 @@ long_character_event = {
 				has_character_flag = am_fight_2
 			}
 		}
-
 	}
 	desc = {
 		text = EVTDESCCslizardmen63002
@@ -14288,7 +14071,6 @@ long_character_event = {
 				has_character_flag = am_fight_3
 			}
 		}
-
 	}
 	desc = {
 		text = EVTDESCDslizardmen63002
@@ -14297,7 +14079,6 @@ long_character_event = {
 				has_character_flag = am_fight_4
 			}
 		}
-
 	}
 	desc = {
 		text = EVTDESCEslizardmen63002
@@ -14306,7 +14087,6 @@ long_character_event = {
 				has_character_flag = am_fight_5
 			}
 		}
-
 	}
 	desc = {
 		text = EVTDESCFslizardmen63002
@@ -14315,7 +14095,6 @@ long_character_event = {
 				has_character_flag = am_fight_6
 			}
 		}
-
 	}
 	desc = {
 		text = EVTDESCGslizardmen63002
@@ -14324,7 +14103,6 @@ long_character_event = {
 				has_character_flag = am_fight_7
 			}
 		}
-
 	}
 	desc = {
 		text = EVTDESCHslizardmen63002
@@ -14333,7 +14111,6 @@ long_character_event = {
 				has_character_flag = am_fight_8
 			}
 		}
-
 	}
 	desc = {
 		text = EVTDESCIslizardmen63002
@@ -14342,7 +14119,6 @@ long_character_event = {
 				has_character_flag = am_fight_9
 			}
 		}
-
 	}
 	desc = {
 		text = EVTDESCLslizardmen63002
@@ -14351,7 +14127,6 @@ long_character_event = {
 				has_character_flag = am_fight_10
 			}
 		}
-
 	}
 	desc = {
 		text = EVTDESCMslizardmen63002
@@ -14360,7 +14135,6 @@ long_character_event = {
 				has_character_flag = am_fight_11
 			}
 		}
-
 	}
 	picture = GFX_evt_amazon_fight
 
@@ -14396,7 +14170,6 @@ long_character_event = {
 				FROM = {
 					clear_event_target = am_brawler_1
 				}
-
 			}
  			if = {
 				limit = {
@@ -14408,7 +14181,6 @@ long_character_event = {
 				FROM = {
 					clear_event_target = am_brawler_2
 				}
-
 			}
 			FROM = {
 				clr_character_flag = am_fight_1
@@ -14450,7 +14222,6 @@ long_character_event = {
 								character = ROOT
 							}
 						}
-
 					}
 				}
 				FROM = {
@@ -14466,7 +14237,6 @@ long_character_event = {
 					id = slizardmen.64
 				}
 			}
-
 		}
 		ai_chance = {
 			factor = 1
@@ -14556,7 +14326,6 @@ long_character_event = {
 							character = ROOT
 						}
 					}
-
 				}
 				random_realm_character = {
 					limit = {
@@ -14860,7 +14629,6 @@ character_event = {
 }
 
 # SEARCHING THE LOST FOUNTAIN OF YOUTH
-
 # You wish to embark in a great journey for the recovery of the ancient fountain of youth.
 character_event = {
 	id = slizardmen.70
@@ -14869,21 +14637,18 @@ character_event = {
 		trigger = {
 			trait = creature_skink
 		}
-
 	}
 	desc = {
 		text = EVTDESCBslizardmen70
 		trigger = {
 			trait = creature_amazon
 		}
-
 	}
 	desc = {
 		text = EVTDESCCslizardmen70
 		trigger = {
 			trait = creature_human
 		}
-
 	}
 	picture = GFX_evt_questing_lustria
 	is_triggered_only = yes
@@ -14903,7 +14668,6 @@ character_event = {
 						id = slizardmen.72 days = 1500 random = 750
 					}
 				}
-
 			}
 
 		}
@@ -14921,21 +14685,18 @@ character_event = {
 		trigger = {
 			trait = creature_skink
 		}
-
 	}
 	desc = {
 		text = EVTDESCBslizardmen71
 		trigger = {
 			trait = creature_amazon
 		}
-
 	}
 	desc = {
 		text = EVTDESCCslizardmen71
 		trigger = {
 			trait = creature_human
 		}
-
 	}
 	picture = GFX_evt_lustria_jungle
 	is_triggered_only = yes
@@ -14986,7 +14747,6 @@ character_event = {
 				} # Forced to fight
 
 			}
-
 		}
 		ai_chance = {
 			factor = 1
@@ -15039,7 +14799,6 @@ character_event = {
 				} # Defeated and killed
 
 			}
-
 		}
 		ai_chance = {
 			factor = 1
@@ -15055,21 +14814,18 @@ character_event = {
 		trigger = {
 			trait = creature_skink
 		}
-
 	}
 	desc = {
 		text = EVTDESCBslizardmen71001
 		trigger = {
 			trait = creature_amazon
 		}
-
 	}
 	desc = {
 		text = EVTDESCCslizardmen71001
 		trigger = {
 			trait = creature_human
 		}
-
 	}
 	picture = GFX_evt_lustria_jungle
 	is_triggered_only = yes
@@ -15096,7 +14852,6 @@ character_event = {
 				} # Quest over
 
 			}
-
 		}
 		ai_chance = {
 			factor = 70
@@ -15121,21 +14876,18 @@ character_event = {
 		trigger = {
 			trait = creature_skink
 		}
-
 	}
 	desc = {
 		text = EVTDESCBslizardmen71002
 		trigger = {
 			trait = creature_amazon
 		}
-
 	}
 	desc = {
 		text = EVTDESCCslizardmen71002
 		trigger = {
 			trait = creature_human
 		}
-
 	}
 	picture = GFX_evt_lustria_jungle
 	is_triggered_only = yes
@@ -15167,7 +14919,6 @@ character_event = {
 				} # Quest over
 
 			}
-
 		}
 		ai_chance = {
 			factor = 70
@@ -15197,21 +14948,18 @@ character_event = {
 		trigger = {
 			trait = creature_skink
 		}
-
 	}
 	desc = {
 		text = EVTDESCBslizardmen71003
 		trigger = {
 			trait = creature_amazon
 		}
-
 	}
 	desc = {
 		text = EVTDESCCslizardmen71003
 		trigger = {
 			trait = creature_human
 		}
-
 	}
 	picture = GFX_evt_lustria_jungle
 	is_triggered_only = yes
@@ -15263,7 +15011,6 @@ character_event = {
 				} # Quest over
 
 			}
-
 		}
 		ai_chance = {
 			factor = 1
@@ -15320,7 +15067,6 @@ character_event = {
 				} # Defeated and killed
 
 			}
-
 		}
 		ai_chance = {
 			factor = 1
@@ -15336,21 +15082,18 @@ character_event = {
 		trigger = {
 			trait = creature_skink
 		}
-
 	}
 	desc = {
 		text = EVTDESCBslizardmen72
 		trigger = {
 			trait = creature_amazon
 		}
-
 	}
 	desc = {
 		text = EVTDESCCslizardmen72
 		trigger = {
 			trait = creature_human
 		}
-
 	}
 	picture = GFX_evt_questing_lustria
 	is_triggered_only = yes
@@ -15401,7 +15144,6 @@ character_event = {
 				} # Defeated and killed
 
 			}
-
 		}
 		ai_chance = {
 			factor = 1
@@ -15417,21 +15159,18 @@ character_event = {
 		trigger = {
 			trait = creature_skink
 		}
-
 	}
 	desc = {
 		text = EVTDESCBslizardmen72001
 		trigger = {
 			trait = creature_amazon
 		}
-
 	}
 	desc = {
 		text = EVTDESCCslizardmen72001
 		trigger = {
 			trait = creature_human
 		}
-
 	}
 	picture = GFX_evt_lustria_dinosaur
 	is_triggered_only = yes
@@ -15458,7 +15197,6 @@ character_event = {
 				} # Quest over
 
 			}
-
 		}
 		ai_chance = {
 			factor = 70
@@ -15484,7 +15222,6 @@ character_event = {
 		trigger = {
 			trait = creature_skink
 		}
-
 	}
 	desc = {
 		text = EVTDESCBslizardmen72002
@@ -15492,7 +15229,6 @@ character_event = {
 		trigger = {
 			trait = creature_amazon
 		}
-
 	}
 	desc = {
 		text = EVTDESCCslizardmen72002
@@ -15500,7 +15236,6 @@ character_event = {
 		trigger = {
 			trait = creature_human
 		}
-
 	}
 	picture = GFX_evt_lustria_dinosaur
 	is_triggered_only = yes
@@ -15531,7 +15266,6 @@ character_event = {
 				} # Quest over
 
 			}
-
 		}
 		ai_chance = {
 			factor = 70
@@ -15561,7 +15295,6 @@ character_event = {
 		trigger = {
 			trait = creature_skink
 		}
-
 	}
 	desc = {
 		text = EVTDESCBslizardmen72003
@@ -15569,7 +15302,6 @@ character_event = {
 		trigger = {
 			trait = creature_amazon
 		}
-
 	}
 	desc = {
 		text = EVTDESCCslizardmen72003
@@ -15577,7 +15309,6 @@ character_event = {
 		trigger = {
 			trait = creature_human
 		}
-
 	}
 	picture = GFX_evt_lustria_dinosaur
 	is_triggered_only = yes
@@ -15608,7 +15339,6 @@ character_event = {
 		trigger = {
 			trait = creature_skink
 		}
-
 	}
 	desc = {
 		text = EVTDESCBslizardmen73
@@ -15616,7 +15346,6 @@ character_event = {
 		trigger = {
 			trait = creature_amazon
 		}
-
 	}
 	desc = {
 		text = EVTDESCCslizardmen73
@@ -15624,7 +15353,6 @@ character_event = {
 		trigger = {
 			trait = creature_human
 		}
-
 	}
 	picture = GFX_evt_lizardmen_saurus
 	is_triggered_only = yes
@@ -15675,7 +15403,6 @@ character_event = {
 				} # Forced to fight
 
 			}
-
 		}
 		ai_chance = {
 			factor = 1
@@ -15727,7 +15454,6 @@ character_event = {
 				} # Defeated and killed
 
 			}
-
 		}
 		ai_chance = {
 			factor = 1
@@ -15744,7 +15470,6 @@ character_event = {
 		trigger = {
 			trait = creature_skink
 		}
-
 	}
 	desc = {
 		text = EVTDESCBslizardmen73001
@@ -15752,7 +15477,6 @@ character_event = {
 		trigger = {
 			trait = creature_amazon
 		}
-
 	}
 	desc = {
 		text = EVTDESCCslizardmen73001
@@ -15760,7 +15484,6 @@ character_event = {
 		trigger = {
 			trait = creature_human
 		}
-
 	}
 	picture = GFX_evt_lizardmen_saurus
 	is_triggered_only = yes
@@ -15792,7 +15515,6 @@ character_event = {
 				} # Quest over
 
 			}
-
 		}
 		ai_chance = {
 			factor = 70
@@ -15823,7 +15545,6 @@ character_event = {
 		trigger = {
 			trait = creature_skink
 		}
-
 	}
 	desc = {
 		text = EVTDESCBslizardmen73002
@@ -15831,7 +15552,6 @@ character_event = {
 		trigger = {
 			trait = creature_amazon
 		}
-
 	}
 	desc = {
 		text = EVTDESCCslizardmen73002
@@ -15839,7 +15559,6 @@ character_event = {
 		trigger = {
 			trait = creature_human
 		}
-
 	}
 	picture = GFX_evt_lizardmen_saurus
 	is_triggered_only = yes
@@ -15876,7 +15595,6 @@ character_event = {
 				} # Quest over
 
 			}
-
 		}
 		ai_chance = {
 			factor = 70
@@ -15912,7 +15630,6 @@ character_event = {
 		trigger = {
 			trait = creature_skink
 		}
-
 	}
 	desc = {
 		text = EVTDESCBslizardmen73003
@@ -15920,7 +15637,6 @@ character_event = {
 		trigger = {
 			trait = creature_amazon
 		}
-
 	}
 	desc = {
 		text = EVTDESCCslizardmen73003
@@ -15928,7 +15644,6 @@ character_event = {
 		trigger = {
 			trait = creature_human
 		}
-
 	}
 	picture = GFX_evt_lizardmen_saurus
 	is_triggered_only = yes
@@ -15978,7 +15693,6 @@ character_event = {
 				} # Quest over
 
 			}
-
 		}
 		ai_chance = {
 			factor = 1
@@ -16034,7 +15748,6 @@ character_event = {
 				} # Defeated and killed
 
 			}
-
 		}
 		ai_chance = {
 			factor = 1
@@ -16079,7 +15792,6 @@ character_event = {
 				} # Lizardmen
 
 			}
-
 		}
 		ai_chance = {
 			factor = 30
@@ -16140,7 +15852,6 @@ character_event = {
 				} # Killed by trap
 
 			}
-
 		}
 		ai_chance = {
 			factor = 10
@@ -16240,7 +15951,6 @@ long_character_event = {
 		trigger = {
 			trait = creature_skink
 		}
-
 	}
 	desc = {
 		text = EVTDESCBslizardmen76
@@ -16248,7 +15958,6 @@ long_character_event = {
 		trigger = {
 			trait = creature_amazon
 		}
-
 	}
 	desc = {
 		text = EVTDESCCslizardmen76
@@ -16256,7 +15965,6 @@ long_character_event = {
 		trigger = {
 			trait = creature_human
 		}
-
 	}
 	picture = GFX_evt_lizardmen_coatl
 	is_triggered_only = yes
@@ -16322,7 +16030,6 @@ long_character_event = {
 				factor = 0
 				trait = creature_skink
 			}
-
 		}
 	}
 }
@@ -16336,7 +16043,6 @@ long_character_event = {
 		trigger = {
 			trait = skink_priest
 		}
-
 	}
 	desc = {
 		text = EVTDESCBslizardmen77
@@ -16346,7 +16052,6 @@ long_character_event = {
 				trait = skink_priest
 			}
 		}
-
 	}
 	picture = GFX_evt_lizardmen_coatl
 	is_triggered_only = yes
@@ -16543,7 +16248,6 @@ long_character_event = {
 				} # Killed the coatl
 
 			}
-
 		}
 		ai_chance = {
 			factor = 1
@@ -16773,7 +16477,6 @@ long_character_event = {
 				} # Killed the coatl
 
 			}
-
 		}
 		ai_chance = {
 			factor = 1
@@ -16879,7 +16582,6 @@ character_event = {
 }
 
 # AMAZON COURTIERS Bothering the Player
-
 # Fire for the Player, check if courtier Amazons available
 character_event = {
 	id = slizardmen.82
@@ -17337,7 +17039,6 @@ character_event = {
 				add_trait = drunkard
 				decadence = 8
 			}
-
 		}
 		if = {
 			limit = {
@@ -17348,7 +17049,6 @@ character_event = {
 				add_trait = drunkard
 				decadence = 3
 			}
-
 		}
 		ai_chance = {
 			factor = 1
@@ -17391,7 +17091,6 @@ character_event = {
 				add_trait = gluttonous
 				decadence = 2
 			}
-
 		}
 		if = {
 			limit = {
@@ -17402,7 +17101,6 @@ character_event = {
 				add_trait = fat
 				decadence = 10
 			}
-
 		}
 		ai_chance = {
 			factor = 1
@@ -17445,7 +17143,6 @@ character_event = {
 				add_trait = undernourished
 				decadence = 10
 			}
-
 		}
 		if = {
 			limit = {
@@ -17456,7 +17153,6 @@ character_event = {
 				add_trait = undernourished
 				decadence = 10
 			}
-
 		}
 		ai_chance = {
 			factor = 1
@@ -17499,7 +17195,6 @@ character_event = {
 				add_trait = hedonist
 				decadence = 7
 			}
-
 		}
 		if = {
 			limit = {
@@ -17510,7 +17205,6 @@ character_event = {
 				add_trait = hedonist
 				decadence = 7
 			}
-
 		}
 		ai_chance = {
 			factor = 1
@@ -17714,7 +17408,6 @@ character_event = {
 						set_character_flag = am_hunt_11
 					}
 				}
-
 			}
 			random_list = {
 				50 = {
@@ -17724,175 +17417,150 @@ character_event = {
 						event_target:am_huntress_1 = {
 							trait = fragile
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						event_target:am_huntress_1 = {
 							trait = weak
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_huntress_1 = {
 							trait = soft
 						}
-
 					}
 					modifier = {
 						factor = 1.25
 						event_target:am_huntress_1 = {
 							trait = hardy
 						}
-
 					}
 					modifier = {
 						factor = 1.5
 						event_target:am_huntress_1 = {
 							trait = tough
 						}
-
 					}
 					modifier = {
 						factor = 1.75
 						event_target:am_huntress_1 = {
 							trait = strong
 						}
-
 					}
 					modifier = {
 						factor = 0.5
 						event_target:am_huntress_1 = {
 							trait = craven
 						}
-
 					}
 					modifier = {
 						factor = 1.15
 						event_target:am_huntress_1 = {
 							trait = diligent
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_huntress_1 = {
 							trait = drunkard
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_huntress_1 = {
 							trait = addict
 						}
-
 					}
 					modifier = {
 						factor = 1.75
 						event_target:am_huntress_1 = {
 							trait = brave
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_huntress_1 = {
 							trait = fat
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_huntress_1 = {
 							trait = undernourished
 						}
-
 					}
 					modifier = {
 						factor = 1.5
 						event_target:am_huntress_1 = {
 							trait = ambitious
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_huntress_1 = {
 							trait = content
 						}
-
 					}
 					modifier = {
 						factor = 1.5
 						event_target:am_huntress_1 = {
 							trait = duelist
 						}
-
 					}
 					modifier = {
 						factor = 1.85
 						event_target:am_huntress_1 = {
 							trait = hunter
 						}
-
 					}
 					modifier = {
 						factor = 0.5
 						event_target:am_huntress_1 = {
 							trait = wounded
 						}
-
 					}
 					modifier = {
 						factor = 0.25
 						event_target:am_huntress_1 = {
 							trait = maimed
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						event_target:am_huntress_1 = {
 							trait = infirm
 						}
-
 					}
 					modifier = {
 						factor = 0.25
 						event_target:am_huntress_1 = {
 							trait = blinded
 						}
-
 					}
 					modifier = {
 						factor = 1.25
 						event_target:am_huntress_1 = {
 							trait = tall
 						}
-
 					}
 					modifier = {
 						factor = 0.5
 						event_target:am_huntress_1 = {
 							trait = dwarf
 						}
-
 					}
 					modifier = {
 						factor = 0.5
 						event_target:am_huntress_1 = {
 							trait = hunchback
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						event_target:am_huntress_1 = {
 							trait = clubfooted
 						}
-
 					}
 					modifier = {
 						factor = 0.9
@@ -17901,182 +17569,156 @@ character_event = {
 								age = 18
 							}
 						}
-
 					}
 					modifier = {
 						factor = 1.25
 						event_target:am_huntress_1 = {
 							martial = 15
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_huntress_1 = {
 							trait = stressed
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						event_target:am_huntress_1 = {
 							trait = depressed
 						}
-
 					}
 					modifier = {
 						factor = 0.95
 						event_target:am_huntress_1 = {
 							trait = dim
 						}
-
 					}
 					modifier = {
 						factor = 0.9
 						event_target:am_huntress_1 = {
 							trait = dumb
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_huntress_1 = {
 							trait = slow
 						}
-
 					}
 					modifier = {
 						factor = 0.8
 						event_target:am_huntress_1 = {
 							trait = idiot
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						event_target:am_huntress_1 = {
 							trait = imbecile
 						}
-
 					}
 					modifier = {
 						factor = 1.15
 						event_target:am_huntress_1 = {
 							trait = bright
 						}
-
 					}
 					modifier = {
 						factor = 1.2
 						event_target:am_huntress_1 = {
 							trait = smart
 						}
-
 					}
 					modifier = {
 						factor = 1.25
 						event_target:am_huntress_1 = {
 							trait = quick
 						}
-
 					}
 					modifier = {
 						factor = 1.3
 						event_target:am_huntress_1 = {
 							trait = brilliant
 						}
-
 					}
 					modifier = {
 						factor = 1.35
 						event_target:am_huntress_1 = {
 							trait = genius
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_huntress_1 = {
 							trait = slothful
 						}
-
 					}
 					modifier = {
 						factor = 0.9
 						event_target:am_huntress_1 = {
 							trait = kind
 						}
-
 					}
 					modifier = {
 						factor = 0.9
 						event_target:am_huntress_1 = {
 							trait = humble
 						}
-
 					}
 					modifier = {
 						factor = 0.9
 						event_target:am_huntress_1 = {
 							trait = shy
 						}
-
 					}
 					modifier = {
 						factor = 1.1
 						event_target:am_huntress_1 = {
 							trait = misguided_warrior
 						}
-
 					}
 					modifier = {
 						factor = 1.35
 						event_target:am_huntress_1 = {
 							trait = tough_soldier
 						}
-
 					}
 					modifier = {
 						factor = 1.5
 						event_target:am_huntress_1 = {
 							trait = skilled_tactician
 						}
-
 					}
 					modifier = {
 						factor = 1.75
 						event_target:am_huntress_1 = {
 							trait = brilliant_strategist
 						}
-
 					}
 					modifier = {
 						factor = 1.35
 						event_target:am_huntress_1 = {
 							trait = zealous
 						}
-
 					}
 					modifier = {
 						factor = 1.15
 						event_target:am_huntress_1 = {
 							trait = cruel
 						}
-
 					}
 					modifier = {
 						factor = 0.95
 						event_target:am_huntress_1 = {
 							trait = just
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_huntress_1 = {
 							trait = complacent
 						}
-
 					}
 					modifier = {
 						factor = 0.9
@@ -18085,7 +17727,6 @@ character_event = {
 								count = 3
 							}
 						}
-
 					}
 					modifier = {
 						factor = 0.9
@@ -18094,98 +17735,84 @@ character_event = {
 								count = 5
 							}
 						}
-
 					}
 					modifier = {
 						factor = 1.15
 						event_target:am_huntress_1 = {
 							trait = deceitful
 						}
-
 					}
 					modifier = {
 						factor = 0.95
 						event_target:am_huntress_1 = {
 							trait = honest
 						}
-
 					}
 					modifier = {
 						factor = 1.15
 						event_target:am_huntress_1 = {
 							trait = paranoid
 						}
-
 					}
 					modifier = {
 						factor = 0.95
 						event_target:am_huntress_1 = {
 							trait = trusting
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_huntress_1 = {
 							trait = ill
 						}
-
 					}
 					modifier = {
 						factor = 0.5
 						event_target:am_huntress_1 = {
 							trait = has_nurgles_rot
 						}
-
 					}
 					modifier = {
 						factor = 1.25
 						event_target:am_huntress_1 = {
 							trait = aggressive_leader
 						}
-
 					}
 					modifier = {
 						factor = 1.15
 						event_target:am_huntress_1 = {
 							trait = experimenter
 						}
-
 					}
 					modifier = {
 						factor = 1.35
 						event_target:am_huntress_1 = {
 							trait = trickster
 						}
-
 					}
 					modifier = {
 						factor = 1.15
 						event_target:am_huntress_1 = {
 							trait = lunatic_1
 						}
-
 					}
 					modifier = {
 						factor = 0.95
 						event_target:am_huntress_1 = {
 							trait = lunatic_2
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_huntress_1 = {
 							trait = lunatic_3
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						event_target:am_huntress_1 = {
 							trait = disfigured
 						}
-
 					}
 					modifier = {
 						factor = 1.65
@@ -18193,7 +17820,6 @@ character_event = {
 							age = 150
 							is_immortal_trigger = yes
 						}
-
 					}
 					modifier = {
 						factor = 0.5
@@ -18203,28 +17829,24 @@ character_event = {
 								is_immortal_trigger = yes
 							}
 						}
-
 					}
 					modifier = {
 						factor = 0.95
 						event_target:am_huntress_1 = {
 							trait = wroth
 						}
-
 					}
 					modifier = {
 						factor = 1.15
 						event_target:am_huntress_1 = {
 							trait = patient
 						}
-
 					}
 					modifier = {
 						factor = 1.15
 						event_target:am_huntress_1 = {
 							trait = strategist
 						}
-
 					}
 					modifier = {
 						factor = 1.15
@@ -18236,7 +17858,6 @@ character_event = {
 								trait = elusive_shadow
 							}
 						}
-
 					}
 					modifier = {
 						factor = 0.8
@@ -18248,7 +17869,6 @@ character_event = {
 								trait = grey_eminence
 							}
 						}
-
 					}
 					modifier = {
 						factor = 0.9
@@ -18260,15 +17880,13 @@ character_event = {
 								trait = midas_touched
 							}
 						}
-
 					}
 					event_target:am_huntress_1 = {
 						long_character_event = {
 							id = slizardmen.88001
 						}
 					}
-
-				} # closes50
+				}
 				50 = {
 					# Second contestant wins
 					modifier = {
@@ -18276,175 +17894,150 @@ character_event = {
 						event_target:am_huntress_2 = {
 							trait = fragile
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						event_target:am_huntress_2 = {
 							trait = weak
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_huntress_2 = {
 							trait = soft
 						}
-
 					}
 					modifier = {
 						factor = 1.25
 						event_target:am_huntress_2 = {
 							trait = hardy
 						}
-
 					}
 					modifier = {
 						factor = 1.5
 						event_target:am_huntress_2 = {
 							trait = tough
 						}
-
 					}
 					modifier = {
 						factor = 1.75
 						event_target:am_huntress_2 = {
 							trait = strong
 						}
-
 					}
 					modifier = {
 						factor = 0.5
 						event_target:am_huntress_2 = {
 							trait = craven
 						}
-
 					}
 					modifier = {
 						factor = 1.15
 						event_target:am_huntress_2 = {
 							trait = diligent
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_huntress_2 = {
 							trait = drunkard
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_huntress_2 = {
 							trait = addict
 						}
-
 					}
 					modifier = {
 						factor = 1.75
 						event_target:am_huntress_2 = {
 							trait = brave
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_huntress_2 = {
 							trait = fat
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_huntress_2 = {
 							trait = undernourished
 						}
-
 					}
 					modifier = {
 						factor = 1.5
 						event_target:am_huntress_2 = {
 							trait = ambitious
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_huntress_2 = {
 							trait = content
 						}
-
 					}
 					modifier = {
 						factor = 1.5
 						event_target:am_huntress_2 = {
 							trait = duelist
 						}
-
 					}
 					modifier = {
 						factor = 1.95
 						event_target:am_huntress_2 = {
 							trait = hunter
 						}
-
 					}
 					modifier = {
 						factor = 0.5
 						event_target:am_huntress_2 = {
 							trait = wounded
 						}
-
 					}
 					modifier = {
 						factor = 0.25
 						event_target:am_huntress_2 = {
 							trait = maimed
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						event_target:am_huntress_2 = {
 							trait = infirm
 						}
-
 					}
 					modifier = {
 						factor = 0.25
 						event_target:am_huntress_2 = {
 							trait = blinded
 						}
-
 					}
 					modifier = {
 						factor = 1.25
 						event_target:am_huntress_2 = {
 							trait = tall
 						}
-
 					}
 					modifier = {
 						factor = 0.5
 						event_target:am_huntress_2 = {
 							trait = dwarf
 						}
-
 					}
 					modifier = {
 						factor = 0.5
 						event_target:am_huntress_2 = {
 							trait = hunchback
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						event_target:am_huntress_2 = {
 							trait = clubfooted
 						}
-
 					}
 					modifier = {
 						factor = 0.9
@@ -18453,182 +18046,156 @@ character_event = {
 								age = 18
 							}
 						}
-
 					}
 					modifier = {
 						factor = 1.25
 						event_target:am_huntress_2 = {
 							martial = 15
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_huntress_2 = {
 							trait = stressed
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						event_target:am_huntress_2 = {
 							trait = depressed
 						}
-
 					}
 					modifier = {
 						factor = 0.95
 						event_target:am_huntress_2 = {
 							trait = dim
 						}
-
 					}
 					modifier = {
 						factor = 0.9
 						event_target:am_huntress_2 = {
 							trait = dumb
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_huntress_2 = {
 							trait = slow
 						}
-
 					}
 					modifier = {
 						factor = 0.8
 						event_target:am_huntress_2 = {
 							trait = idiot
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						event_target:am_huntress_2 = {
 							trait = imbecile
 						}
-
 					}
 					modifier = {
 						factor = 1.15
 						event_target:am_huntress_2 = {
 							trait = bright
 						}
-
 					}
 					modifier = {
 						factor = 1.2
 						event_target:am_huntress_2 = {
 							trait = smart
 						}
-
 					}
 					modifier = {
 						factor = 1.25
 						event_target:am_huntress_2 = {
 							trait = quick
 						}
-
 					}
 					modifier = {
 						factor = 1.3
 						event_target:am_huntress_2 = {
 							trait = brilliant
 						}
-
 					}
 					modifier = {
 						factor = 1.35
 						event_target:am_huntress_2 = {
 							trait = genius
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_huntress_2 = {
 							trait = slothful
 						}
-
 					}
 					modifier = {
 						factor = 0.9
 						event_target:am_huntress_2 = {
 							trait = kind
 						}
-
 					}
 					modifier = {
 						factor = 0.9
 						event_target:am_huntress_2 = {
 							trait = humble
 						}
-
 					}
 					modifier = {
 						factor = 0.9
 						event_target:am_huntress_2 = {
 							trait = shy
 						}
-
 					}
 					modifier = {
 						factor = 1.1
 						event_target:am_huntress_2 = {
 							trait = misguided_warrior
 						}
-
 					}
 					modifier = {
 						factor = 1.35
 						event_target:am_huntress_2 = {
 							trait = tough_soldier
 						}
-
 					}
 					modifier = {
 						factor = 1.5
 						event_target:am_huntress_2 = {
 							trait = skilled_tactician
 						}
-
 					}
 					modifier = {
 						factor = 1.75
 						event_target:am_huntress_2 = {
 							trait = brilliant_strategist
 						}
-
 					}
 					modifier = {
 						factor = 1.35
 						event_target:am_huntress_2 = {
 							trait = zealous
 						}
-
 					}
 					modifier = {
 						factor = 1.15
 						event_target:am_huntress_2 = {
 							trait = cruel
 						}
-
 					}
 					modifier = {
 						factor = 0.95
 						event_target:am_huntress_2 = {
 							trait = just
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_huntress_2 = {
 							trait = complacent
 						}
-
 					}
 					modifier = {
 						factor = 0.9
@@ -18637,7 +18204,6 @@ character_event = {
 								count = 3
 							}
 						}
-
 					}
 					modifier = {
 						factor = 0.9
@@ -18646,98 +18212,84 @@ character_event = {
 								count = 5
 							}
 						}
-
 					}
 					modifier = {
 						factor = 1.15
 						event_target:am_huntress_2 = {
 							trait = deceitful
 						}
-
 					}
 					modifier = {
 						factor = 0.95
 						event_target:am_huntress_2 = {
 							trait = honest
 						}
-
 					}
 					modifier = {
 						factor = 1.15
 						event_target:am_huntress_2 = {
 							trait = paranoid
 						}
-
 					}
 					modifier = {
 						factor = 0.95
 						event_target:am_huntress_2 = {
 							trait = trusting
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_huntress_2 = {
 							trait = ill
 						}
-
 					}
 					modifier = {
 						factor = 0.5
 						event_target:am_huntress_2 = {
 							trait = has_nurgles_rot
 						}
-
 					}
 					modifier = {
 						factor = 1.25
 						event_target:am_huntress_2 = {
 							trait = aggressive_leader
 						}
-
 					}
 					modifier = {
 						factor = 1.15
 						event_target:am_huntress_2 = {
 							trait = experimenter
 						}
-
 					}
 					modifier = {
 						factor = 1.35
 						event_target:am_huntress_2 = {
 							trait = trickster
 						}
-
 					}
 					modifier = {
 						factor = 1.15
 						event_target:am_huntress_2 = {
 							trait = lunatic_1
 						}
-
 					}
 					modifier = {
 						factor = 0.95
 						event_target:am_huntress_2 = {
 							trait = lunatic_2
 						}
-
 					}
 					modifier = {
 						factor = 0.85
 						event_target:am_huntress_2 = {
 							trait = lunatic_3
 						}
-
 					}
 					modifier = {
 						factor = 0.75
 						event_target:am_huntress_2 = {
 							trait = disfigured
 						}
-
 					}
 					modifier = {
 						factor = 1.65
@@ -18745,7 +18297,6 @@ character_event = {
 							age = 150
 							is_immortal_trigger = yes
 						}
-
 					}
 					modifier = {
 						factor = 0.5
@@ -18755,28 +18306,24 @@ character_event = {
 								is_immortal_trigger = yes
 							}
 						}
-
 					}
 					modifier = {
 						factor = 0.95
 						event_target:am_huntress_2 = {
 							trait = wroth
 						}
-
 					}
 					modifier = {
 						factor = 1.15
 						event_target:am_huntress_2 = {
 							trait = patient
 						}
-
 					}
 					modifier = {
 						factor = 1.15
 						event_target:am_huntress_2 = {
 							trait = strategist
 						}
-
 					}
 					modifier = {
 						factor = 1.15
@@ -18788,7 +18335,6 @@ character_event = {
 								trait = elusive_shadow
 							}
 						}
-
 					}
 					modifier = {
 						factor = 0.8
@@ -18800,7 +18346,6 @@ character_event = {
 								trait = grey_eminence
 							}
 						}
-
 					}
 					modifier = {
 						factor = 0.9
@@ -18812,18 +18357,15 @@ character_event = {
 								trait = midas_touched
 							}
 						}
-
 					}
 					event_target:am_huntress_2 = {
 						long_character_event = {
 							id = slizardmen.88001
 						}
 					}
-
-				} # closes50
-			} # closesrandomlist
-
-		} # closeshiddentooltip
+				}
+			}
+		}
 	}
 }
 
@@ -19105,7 +18647,6 @@ long_character_event = {
 						id = slizardmen.88002
 					}
 				}
-
 			}
  			if = {
 				limit = {
@@ -19118,7 +18659,6 @@ long_character_event = {
 						id = slizardmen.88002
 					}
 				}
-
 			}
 
 		}
@@ -19139,7 +18679,6 @@ long_character_event = {
 				has_character_flag = am_hunt_1
 			}
 		}
-
 	}
 	desc = {
 		text = EVTDESCBslizardmen88002
@@ -19149,7 +18688,6 @@ long_character_event = {
 				has_character_flag = am_hunt_2
 			}
 		}
-
 	}
 	desc = {
 		text = EVTDESCCslizardmen88002
@@ -19159,7 +18697,6 @@ long_character_event = {
 				has_character_flag = am_hunt_3
 			}
 		}
-
 	}
 	desc = {
 		text = EVTDESCDslizardmen88002
@@ -19169,7 +18706,6 @@ long_character_event = {
 				has_character_flag = am_hunt_4
 			}
 		}
-
 	}
 	desc = {
 		text = EVTDESCEslizardmen88002
@@ -19179,7 +18715,6 @@ long_character_event = {
 				has_character_flag = am_hunt_5
 			}
 		}
-
 	}
 	desc = {
 		text = EVTDESCFslizardmen88002
@@ -19189,7 +18724,6 @@ long_character_event = {
 				has_character_flag = am_hunt_6
 			}
 		}
-
 	}
 	desc = {
 		text = EVTDESCGslizardmen88002
@@ -19199,7 +18733,6 @@ long_character_event = {
 				has_character_flag = am_hunt_7
 			}
 		}
-
 	}
 	desc = {
 		text = EVTDESCHslizardmen88002
@@ -19209,7 +18742,6 @@ long_character_event = {
 				has_character_flag = am_hunt_8
 			}
 		}
-
 	}
 	desc = {
 		text = EVTDESCIslizardmen88002
@@ -19219,7 +18751,6 @@ long_character_event = {
 				has_character_flag = am_hunt_9
 			}
 		}
-
 	}
 	desc = {
 		text = EVTDESCLslizardmen88002
@@ -19229,7 +18760,6 @@ long_character_event = {
 				has_character_flag = am_hunt_10
 			}
 		}
-
 	}
 	desc = {
 		text = EVTDESCMslizardmen88002
@@ -19239,7 +18769,6 @@ long_character_event = {
 				has_character_flag = am_hunt_11
 			}
 		}
-
 	}
 	picture = GFX_evt_amazon_huntress
 	trigger = {
@@ -19273,7 +18802,6 @@ long_character_event = {
 				FROM = {
 					clear_event_target = am_huntress_1
 				}
-
 			}
  			if = {
 				limit = {
@@ -19285,7 +18813,6 @@ long_character_event = {
 				FROM = {
 					clear_event_target = am_huntress_2
 				}
-
 			}
 			FROM = {
 				clr_character_flag = am_hunt_1
@@ -19342,9 +18869,7 @@ character_event = {
 	}
 }
 
-
 # 101-200: Events related to Slann being awake or sleeping
-
 # lizardman.101: Get negative traits for not being contemplating enough, or remove them for being in deep slumber
 character_event = {
 	id = lizardman.101
@@ -19373,31 +18898,36 @@ character_event = {
 				modifier = {
 					factor = 0.8
 					check_variable = {
-						which = "sleep_level" value = 100
+						which = "sleep_level"
+						value = 100
 					}
 				}
 				modifier = {
 					factor = 0.8
 					check_variable = {
-						which = "sleep_level" value = 200
+						which = "sleep_level"
+						value = 200
 					}
 				}
 				modifier = {
 					factor = 0.8
 					check_variable = {
-						which = "sleep_level" value = 300
+						which = "sleep_level"
+						value = 300
 					}
 				}
 				modifier = {
 					factor = 0.8
 					check_variable = {
-						which = "sleep_level" value = 400
+						which = "sleep_level"
+						value = 400
 					}
 				}
 				modifier = {
 					factor = 0.8
 					check_variable = {
-						which = "sleep_level" value = 500
+						which = "sleep_level"
+						value = 500
 					}
 				}
 				character_event = {
@@ -19410,7 +18940,8 @@ character_event = {
 					factor = 0.8
 					NOT = {
 						check_variable = {
-							which = "sleep_level" value = 100
+							which = "sleep_level"
+							value = 100
 						}
 					}
 				}
@@ -19418,7 +18949,8 @@ character_event = {
 					factor = 0.8
 					NOT = {
 						check_variable = {
-							which = "sleep_level" value = 200
+							which = "sleep_level"
+							value = 200
 						}
 					}
 				}
@@ -19426,7 +18958,8 @@ character_event = {
 					factor = 0.8
 					NOT = {
 						check_variable = {
-							which = "sleep_level" value = 300
+							which = "sleep_level"
+							value = 300
 						}
 					}
 				}
@@ -19434,7 +18967,8 @@ character_event = {
 					factor = 0.8
 					NOT = {
 						check_variable = {
-							which = "sleep_level" value = 400
+							which = "sleep_level"
+							value = 400
 						}
 					}
 				}
@@ -19442,7 +18976,8 @@ character_event = {
 					factor = 0.8
 					NOT = {
 						check_variable = {
-							which = "sleep_level" value = 500
+							which = "sleep_level"
+							value = 500
 						}
 					}
 				}
@@ -19503,7 +19038,8 @@ character_event = {
 						}
 					}
 					change_variable = {
-						which = "lunatic_counter" value = 5
+						which = "lunatic_counter"
+						value = 5
 					}
 					hidden_tooltip = {
 						character_event = {
@@ -19662,7 +19198,8 @@ character_event = {
 						trait = lunatic_3
 					}
 					change_variable = {
-						which = "lunatic_counter" value = -5
+						which = "lunatic_counter"
+						value = -5
 					}
 				}
 			}
@@ -19728,7 +19265,6 @@ character_event = {
 }
 
 # 201-300: Events dealing with the Lustrian jungle
-
 # 201: The Lustrian jungle is growing
 province_event = {
 	id = lizardman.201
@@ -20137,10 +19673,10 @@ character_event = {
 		location = {
 			has_province_modifier = lustria_jungle
 		}
-
 	}
+
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 1.5
 			location = {
@@ -20307,7 +19843,6 @@ character_event = {
 						ROOT = {
 							add_trait = ill
 						}
-
 					}
 				}
 				5 = {
@@ -20427,8 +19962,9 @@ character_event = {
 			has_province_modifier = lustria_jungle
 		}
 	}
+
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 0.25
 			culture_group = lizardman_group
@@ -20564,7 +20100,6 @@ character_event = {
 }
 
 # 20X: Village disappears in jungle
-
 # 250: Manually add the modifier on startup because the game is stupid
 province_event = {
 	id = lizardman.250
@@ -20718,23 +20253,18 @@ character_event = {
 }
 
 # 260: Clear recent cutback flag - OBSOLETE
-
 # character_event = {
 
 # 	id = lizardman.260
-
 # 	picture = "GFX_evt_lustria_jungle"
 
 # 	hide_window = yes
-
 # 	is_triggered_only = yes
 
 # 	option = {
-
 # 		name = OK
 
 # 	}
-
 # }
 
 # 261: Choose whom you want to cut back your jungle
@@ -20857,336 +20387,335 @@ letter_event = {
 
 # 266: Event to resolve cutting back for the steward
 character_event = {
-	id = lizardman.266
-	desc = lizardman266desc
-	picture = "GFX_evt_lustria_jungle"
-	is_triggered_only = yes
-	hide_window = yes
+id = lizardman.266
+desc = lizardman266desc
+picture = "GFX_evt_lustria_jungle"
+is_triggered_only = yes
+hide_window = yes
 
-	option = {
-		name = OK
-		hidden_tooltip = {
-			random_list = {
-				50 = {
-					modifier = {
-						factor = 1.1
-						stewardship = 2
-					}
-					modifier = {
-						factor = 1.1
-						stewardship = 3
-					}
-					modifier = {
-						factor = 1.1
-						stewardship = 4
-					}
-					modifier = {
-						factor = 1.1
-						stewardship = 5
-					}
-					modifier = {
-						factor = 1.1
-						stewardship = 6
-					}
-					modifier = {
-						factor = 1.1
-						stewardship = 7
-					}
-					modifier = {
-						factor = 1.1
-						stewardship = 8
-					}
-					modifier = {
-						factor = 1.1
-						stewardship = 9
-					}
-					modifier = {
-						factor = 1.1
-						stewardship = 10
-					}
-					modifier = {
-						factor = 1.1
-						stewardship = 12
-					}
-					modifier = {
-						factor = 1.1
-						stewardship = 14
-					}
-					modifier = {
-						factor = 1.1
-						stewardship = 16
-					}
-					modifier = {
-						factor = 1.1
-						stewardship = 18
-					}
-					modifier = {
-						factor = 1.1
-						stewardship = 20
-					}
-					modifier = {
-						factor = 1.1
-						stewardship = 25
-					}
-					modifier = {
-						factor = 1.1
-						stewardship = 30
-					}
-					modifier = {
-						factor = 1.5
-						trait = creature_skink
-					}
-					modifier = {
-						factor = 1.45
-						trait = creature_amazon
-					}
-					modifier = {
-						factor = 1.45
-						culture_group = halfling_lustrian
-					}
-					if = {
-						limit = {
-							FROMFROMFROM = {
-								location = {
-									has_province_modifier = lustria_medium_jungle
-								}
-							}
-						}
-						FROMFROMFROM = {
-							location = {
-								remove_province_modifier = lustria_medium_jungle
-								add_province_modifier = {
-									name = lustria_light_jungle duration = -1
-								}
-							}
-						}
-					}
-					if = {
-						limit = {
-							FROMFROMFROM = {
-								location = {
-									has_province_modifier = lustria_dense_jungle
-								}
-							}
-						}
-						FROMFROMFROM = {
-							location = {
-								remove_province_modifier = lustria_dense_jungle
-								add_province_modifier = {
-									name = lustria_medium_jungle duration = -1
-								}
-							}
-						}
-					}
-					if = {
-						limit = {
-							FROMFROMFROM = {
-								location = {
-									has_province_modifier = lustria_oppressive_jungle
-								}
-							}
-						}
-						FROMFROMFROM = {
-							location = {
-								remove_province_modifier = lustria_oppressive_jungle
-								add_province_modifier = {
-									name = lustria_dense_jungle duration = -1
-								}
-							}
-						}
-					}
-					FROMFROM = {
-						letter_event = {
-							id = lizardman.268
-						}
-					}
-					ROOT = {
-						character_event = {
-							id = lizardman.270
-						}
-					}
+option = {
+	name = OK
+	hidden_tooltip = {
+		random_list = {
+			50 = {
+				modifier = {
+					factor = 1.1
+					stewardship = 2
 				}
-				50 = {
-					FROMFROM = {
-						letter_event = {
-							id = lizardman.269
-						}
-					}
-					ROOT = {
-						character_event = {
-							id = lizardman.271
-						}
-					}
+				modifier = {
+					factor = 1.1
+					stewardship = 3
 				}
-			}
-			random_list = {
-				95 = {
+				modifier = {
+					factor = 1.1
+					stewardship = 4
 				}
-				5 = {
-					modifier = {
-						factor = 1.5
+				modifier = {
+					factor = 1.1
+					stewardship = 5
+				}
+				modifier = {
+					factor = 1.1
+					stewardship = 6
+				}
+				modifier = {
+					factor = 1.1
+					stewardship = 7
+				}
+				modifier = {
+					factor = 1.1
+					stewardship = 8
+				}
+				modifier = {
+					factor = 1.1
+					stewardship = 9
+				}
+				modifier = {
+					factor = 1.1
+					stewardship = 10
+				}
+				modifier = {
+					factor = 1.1
+					stewardship = 12
+				}
+				modifier = {
+					factor = 1.1
+					stewardship = 14
+				}
+				modifier = {
+					factor = 1.1
+					stewardship = 16
+				}
+				modifier = {
+					factor = 1.1
+					stewardship = 18
+				}
+				modifier = {
+					factor = 1.1
+					stewardship = 20
+				}
+				modifier = {
+					factor = 1.1
+					stewardship = 25
+				}
+				modifier = {
+					factor = 1.1
+					stewardship = 30
+				}
+				modifier = {
+					factor = 1.5
+					trait = creature_skink
+				}
+				modifier = {
+					factor = 1.45
+					trait = creature_amazon
+				}
+				modifier = {
+					factor = 1.45
+					culture_group = halfling_lustrian
+				}
+				if = {
+					limit = {
 						FROMFROMFROM = {
 							location = {
 								has_province_modifier = lustria_medium_jungle
 							}
 						}
 					}
-					modifier = {
-						factor = 2
+					FROMFROMFROM = {
+						location = {
+							remove_province_modifier = lustria_medium_jungle
+							add_province_modifier = {
+								name = lustria_light_jungle duration = -1
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
 						FROMFROMFROM = {
 							location = {
 								has_province_modifier = lustria_dense_jungle
 							}
 						}
 					}
-					modifier = {
-						factor = 3
+					FROMFROMFROM = {
+						location = {
+							remove_province_modifier = lustria_dense_jungle
+							add_province_modifier = {
+								name = lustria_medium_jungle duration = -1
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
 						FROMFROMFROM = {
 							location = {
 								has_province_modifier = lustria_oppressive_jungle
 							}
 						}
 					}
-					modifier = {
-						factor = 0.9
-						health = 2
-					}
-					modifier = {
-						factor = 0.9
-						health = 3
-					}
-					modifier = {
-						factor = 0.9
-						health = 4
-					}
-					modifier = {
-						factor = 0.9
-						health = 5
-					}
-					modifier = {
-						factor = 0.9
-						health = 6
-					}
-					modifier = {
-						factor = 0.9
-						health = 7
-					}
-					modifier = {
-						factor = 0.9
-						health = 8
-					}
-					modifier = {
-						factor = 0.9
-						health = 9
-					}
-					modifier = {
-						factor = 0.9
-						health = 10
-					}
-					modifier = {
-						factor = 3
-						ROOT = {
-							trait = ill
+					FROMFROMFROM = {
+						location = {
+							remove_province_modifier = lustria_oppressive_jungle
+							add_province_modifier = {
+								name = lustria_dense_jungle duration = -1
+							}
 						}
 					}
-					modifier = {
-						factor = 5
+				}
+				FROMFROM = {
+					letter_event = {
+						id = lizardman.268
+					}
+				}
+				ROOT = {
+					character_event = {
+						id = lizardman.270
+					}
+				}
+			}
+			50 = {
+				FROMFROM = {
+					letter_event = {
+						id = lizardman.269
+					}
+				}
+				ROOT = {
+					character_event = {
+						id = lizardman.271
+					}
+				}
+			}
+		}
+		random_list = {
+			95 = {
+			}
+			5 = {
+				modifier = {
+					factor = 1.5
+					FROMFROMFROM = {
+						location = {
+							has_province_modifier = lustria_medium_jungle
+						}
+					}
+				}
+				modifier = {
+					factor = 2
+					FROMFROMFROM = {
+						location = {
+							has_province_modifier = lustria_dense_jungle
+						}
+					}
+				}
+				modifier = {
+					factor = 3
+					FROMFROMFROM = {
+						location = {
+							has_province_modifier = lustria_oppressive_jungle
+						}
+					}
+				}
+				modifier = {
+					factor = 0.9
+					health = 2
+				}
+				modifier = {
+					factor = 0.9
+					health = 3
+				}
+				modifier = {
+					factor = 0.9
+					health = 4
+				}
+				modifier = {
+					factor = 0.9
+					health = 5
+				}
+				modifier = {
+					factor = 0.9
+					health = 6
+				}
+				modifier = {
+					factor = 0.9
+					health = 7
+				}
+				modifier = {
+					factor = 0.9
+					health = 8
+				}
+				modifier = {
+					factor = 0.9
+					health = 9
+				}
+				modifier = {
+					factor = 0.9
+					health = 10
+				}
+				modifier = {
+					factor = 3
+					ROOT = {
+						trait = ill
+					}
+				}
+				modifier = {
+					factor = 5
+					OR = {
+						ROOT = {
+							trait = has_measles
+						}
+						ROOT = {
+							trait = has_typhus
+						}
+						ROOT = {
+							trait = has_tomb_rot
+						}
+						ROOT = {
+							trait = has_bone_auge
+						}
+						ROOT = {
+							trait = pneumonic
+						}
+						ROOT = {
+							trait = leper
+						}
+						ROOT = {
+							trait = syphilitic
+						}
+						ROOT = {
+							trait = pneumonic
+						}
+					}
+				}
+				modifier = {
+					factor = 0.5
+					ROOT = {
 						OR = {
-							ROOT = {
-								trait = has_measles
-							}
-							ROOT = {
-								trait = has_typhus
-							}
-							ROOT = {
-								trait = has_tomb_rot
-							}
-							ROOT = {
-								trait = has_bone_auge
-							}
-							ROOT = {
-								trait = pneumonic
-							}
-							ROOT = {
-								trait = leper
-							}
-							ROOT = {
-								trait = syphilitic
-							}
-							ROOT = {
-								trait = pneumonic
-							}
+							trait = creature_skink
+							trait = creature_saurus
 						}
 					}
-					modifier = {
-						factor = 0.5
-						ROOT = {
-							OR = {
-								trait = creature_skink
-								trait = creature_saurus
-							}
-						}
+				}
+				modifier = {
+					factor = 0.1
+					ROOT = {
+						trait = creature_slann
 					}
-					modifier = {
-						factor = 0.1
-						ROOT = {
-							trait = creature_slann
-						}
-					}
-					if = {
-						limit = {
-							NOT = {
-								ROOT = {
-									trait = ill
-								}
-							}
-						}
-						ROOT = {
-							add_trait = ill
-						}
-					}
-					if = {
-						limit = {
+				}
+				if = {
+					limit = {
+						NOT = {
 							ROOT = {
 								trait = ill
 							}
 						}
-						random_list = {
-							10 = {
-								ROOT = {
-									add_trait = has_measles
-								}
-							}
-							10 = {
-								ROOT = {
-									add_trait = has_typhus
-								}
-							}
-							10 = {
-								ROOT = {
-									add_trait = has_tomb_rot
-								}
-							}
-							10 = {
-								ROOT = {
-									add_trait = has_bone_auge
-								}
-							}
-							10 = {
-								ROOT = {
-									add_trait = pneumonic
-								}
+					}
+					ROOT = {
+						add_trait = ill
+					}
+				}
+				if = {
+					limit = {
+						ROOT = {
+							trait = ill
+						}
+					}
+					random_list = {
+						10 = {
+							ROOT = {
+								add_trait = has_measles
 							}
 						}
-						if = {
-							# Notify liege and family
-							limit = {
-								independent = no
+						10 = {
+							ROOT = {
+								add_trait = has_typhus
 							}
-							liege = {
-								character_event = {
-									id = lizardman.203
-								}
+						}
+						10 = {
+							ROOT = {
+								add_trait = has_tomb_rot
+							}
+						}
+						10 = {
+							ROOT = {
+								add_trait = has_bone_auge
+							}
+						}
+						10 = {
+							ROOT = {
+								add_trait = pneumonic
+							}
+						}
+					}
+					if = {
+						# Notify liege and family
+						limit = {
+							independent = no
+						}
+						liege = {
+							character_event = {
+								id = lizardman.203
 							}
 						}
 					}
@@ -21195,633 +20724,678 @@ character_event = {
 		}
 	}
 }
+}
 
 # 267: Event to resolve cutting back for the liege doing it himself
 character_event = {
-	id = lizardman.267
-	desc = lizardman266desc
-	picture = "GFX_evt_lustria_jungle"
-	is_triggered_only = yes
+id = lizardman.267
+desc = lizardman266desc
+picture = "GFX_evt_lustria_jungle"
+is_triggered_only = yes
 
-	option = {
-		name = OK
-		hidden_tooltip = {
-			random_list = {
-				50 = {
-					modifier = {
-						factor = 1.1
-						ROOT = {
-							stewardship = 2
-						}
-					}
-					modifier = {
-						factor = 1.1
-						ROOT = {
-							stewardship = 3
-						}
-					}
-					modifier = {
-						factor = 1.1
-						ROOT = {
-							stewardship = 4
-						}
-					}
-					modifier = {
-						factor = 1.1
-						stewardship = 5
-					}
-					modifier = {
-						factor = 1.1
-						stewardship = 6
-					}
-					modifier = {
-						factor = 1.1
-						stewardship = 7
-					}
-					modifier = {
-						factor = 1.1
-						stewardship = 8
-					}
-					modifier = {
-						factor = 1.1
-						stewardship = 9
-					}
-					modifier = {
-						factor = 1.1
-						stewardship = 10
-					}
-					modifier = {
-						factor = 1.1
-						stewardship = 12
-					}
-					modifier = {
-						factor = 1.1
-						stewardship = 14
-					}
-					modifier = {
-						factor = 1.1
-						stewardship = 16
-					}
-					modifier = {
-						factor = 1.1
-						stewardship = 18
-					}
-					modifier = {
-						factor = 1.1
-						stewardship = 20
-					}
-					modifier = {
-						factor = 1.1
-						stewardship = 25
-					}
-					modifier = {
-						factor = 1.1
-						stewardship = 30
-					}
-					modifier = {
-						factor = 1.5
-						trait = creature_skink
-					}
-					modifier = {
-						factor = 1.45
-						trait = creature_amazon
-					}
-					modifier = {
-						factor = 1.45
-						culture_group = halfling_lustrian
-					}
-					if = {
-						limit = {
-							FROMFROM = {
-								location = {
-									has_province_modifier = lustria_medium_jungle
-								}
-							}
-						}
-						FROMFROM = {
-							location = {
-								remove_province_modifier = lustria_medium_jungle
-								add_province_modifier = {
-									name = lustria_light_jungle duration = -1
-								}
-							}
-						}
-					}
-					if = {
-						limit = {
-							FROMFROM = {
-								location = {
-									has_province_modifier = lustria_dense_jungle
-								}
-							}
-						}
-						FROMFROM = {
-							location = {
-								remove_province_modifier = lustria_dense_jungle
-								add_province_modifier = {
-									name = lustria_medium_jungle duration = -1
-								}
-							}
-						}
-					}
-					if = {
-						limit = {
-							FROMFROM = {
-								location = {
-									has_province_modifier = lustria_oppressive_jungle
-								}
-							}
-						}
-						FROMFROM = {
-							location = {
-								remove_province_modifier = lustria_oppressive_jungle
-								add_province_modifier = {
-									name = lustria_dense_jungle duration = -1
-								}
-							}
-						}
-					}
+option = {
+	name = OK
+	hidden_tooltip = {
+		random_list = {
+			50 = {
+				modifier = {
+					factor = 1.1
 					ROOT = {
-						character_event = {
-							id = lizardman.270
-						}
+						stewardship = 2
 					}
 				}
-				50 = {
+				modifier = {
+					factor = 1.1
 					ROOT = {
-						character_event = {
-							id = lizardman.271
-						}
+						stewardship = 3
 					}
 				}
-			}
-			random_list = {
-				95 = {
+				modifier = {
+					factor = 1.1
+					ROOT = {
+						stewardship = 4
+					}
 				}
-				5 = {
-					modifier = {
-						factor = 1.5
+				modifier = {
+					factor = 1.1
+					stewardship = 5
+				}
+				modifier = {
+					factor = 1.1
+					stewardship = 6
+				}
+				modifier = {
+					factor = 1.1
+					stewardship = 7
+				}
+				modifier = {
+					factor = 1.1
+					stewardship = 8
+				}
+				modifier = {
+					factor = 1.1
+					stewardship = 9
+				}
+				modifier = {
+					factor = 1.1
+					stewardship = 10
+				}
+				modifier = {
+					factor = 1.1
+					stewardship = 12
+				}
+				modifier = {
+					factor = 1.1
+					stewardship = 14
+				}
+				modifier = {
+					factor = 1.1
+					stewardship = 16
+				}
+				modifier = {
+					factor = 1.1
+					stewardship = 18
+				}
+				modifier = {
+					factor = 1.1
+					stewardship = 20
+				}
+				modifier = {
+					factor = 1.1
+					stewardship = 25
+				}
+				modifier = {
+					factor = 1.1
+					stewardship = 30
+				}
+				modifier = {
+					factor = 1.5
+					trait = creature_skink
+				}
+				modifier = {
+					factor = 1.45
+					trait = creature_amazon
+				}
+				modifier = {
+					factor = 1.45
+					culture_group = halfling_lustrian
+				}
+				if = {
+					limit = {
 						FROMFROM = {
 							location = {
 								has_province_modifier = lustria_medium_jungle
 							}
 						}
 					}
-					modifier = {
-						factor = 2
+					FROMFROM = {
+						location = {
+							remove_province_modifier = lustria_medium_jungle
+							add_province_modifier = {
+								name = lustria_light_jungle duration = -1
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
 						FROMFROM = {
 							location = {
 								has_province_modifier = lustria_dense_jungle
 							}
 						}
 					}
-					modifier = {
-						factor = 3
+					FROMFROM = {
+						location = {
+							remove_province_modifier = lustria_dense_jungle
+							add_province_modifier = {
+								name = lustria_medium_jungle duration = -1
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
 						FROMFROM = {
 							location = {
 								has_province_modifier = lustria_oppressive_jungle
 							}
 						}
 					}
-					modifier = {
-						factor = 0.9
-						health = 2
-					}
-					modifier = {
-						factor = 0.9
-						health = 3
-					}
-					modifier = {
-						factor = 0.9
-						health = 4
-					}
-					modifier = {
-						factor = 0.9
-						health = 5
-					}
-					modifier = {
-						factor = 0.9
-						health = 6
-					}
-					modifier = {
-						factor = 0.9
-						health = 7
-					}
-					modifier = {
-						factor = 0.9
-						health = 8
-					}
-					modifier = {
-						factor = 0.9
-						health = 9
-					}
-					modifier = {
-						factor = 0.9
-						health = 10
-					}
-					modifier = {
-						factor = 3
-						ROOT = {
-							is_ill = yes
-						}
-					}
-					modifier = {
-						factor = 0.5
-						ROOT = {
-							OR = {
-								trait = creature_skink
-								trait = creature_saurus
+					FROMFROM = {
+						location = {
+							remove_province_modifier = lustria_oppressive_jungle
+							add_province_modifier = {
+								name = lustria_dense_jungle duration = -1
 							}
 						}
 					}
-					modifier = {
-						factor = 0.1
-						ROOT = {
-							trait = creature_slann
-						}
-					}
+				}
+				ROOT = {
 					character_event = {
-						id = lizardman.273
-					}	# Illness due to cutting back the jungle
+						id = lizardman.270
+					}
+				}
+			}
+			50 = {
+				ROOT = {
+					character_event = {
+						id = lizardman.271
+					}
 				}
 			}
 		}
+		random_list = {
+			95 = {
+			}
+			5 = {
+				modifier = {
+					factor = 1.5
+					FROMFROM = {
+						location = {
+							has_province_modifier = lustria_medium_jungle
+						}
+					}
+				}
+				modifier = {
+					factor = 2
+					FROMFROM = {
+						location = {
+							has_province_modifier = lustria_dense_jungle
+						}
+					}
+				}
+				modifier = {
+					factor = 3
+					FROMFROM = {
+						location = {
+							has_province_modifier = lustria_oppressive_jungle
+						}
+					}
+				}
+				modifier = {
+					factor = 0.9
+					health = 2
+				}
+				modifier = {
+					factor = 0.9
+					health = 3
+				}
+				modifier = {
+					factor = 0.9
+					health = 4
+				}
+				modifier = {
+					factor = 0.9
+					health = 5
+				}
+				modifier = {
+					factor = 0.9
+					health = 6
+				}
+				modifier = {
+					factor = 0.9
+					health = 7
+				}
+				modifier = {
+					factor = 0.9
+					health = 8
+				}
+				modifier = {
+					factor = 0.9
+					health = 9
+				}
+				modifier = {
+					factor = 0.9
+					health = 10
+				}
+				modifier = {
+					factor = 3
+					ROOT = {
+						is_ill = yes
+					}
+				}
+				modifier = {
+					factor = 0.5
+					ROOT = {
+						OR = {
+							trait = creature_skink
+							trait = creature_saurus
+						}
+					}
+				}
+				modifier = {
+					factor = 0.1
+					ROOT = {
+						trait = creature_slann
+					}
+				}
+				character_event = {
+					id = lizardman.273
+				}	# Illness due to cutting back the jungle
+			}
+		}
 	}
+}
 }
 
 # 268: Liege is notified of success
 letter_event = {
-	id = lizardman.268
-	desc = lizardman268desc
-	is_triggered_only = yes
+id = lizardman.268
+desc = lizardman268desc
+is_triggered_only = yes
 
-	option = {
-		name = OK
-	}
+option = {
+	name = OK
+}
 }
 
 # 269: Liege is notified of failure
 letter_event = {
-	id = lizardman.269
-	desc = lizardman269desc
-	is_triggered_only = yes
+id = lizardman.269
+desc = lizardman269desc
+is_triggered_only = yes
 
-	option = {
-		name = OK
-	}
+option = {
+	name = OK
+}
 }
 
 # 270: Character learns of his own success
 character_event = {
-	id = lizardman.270
-	desc = lizardman270desc
-	picture = "GFX_evt_lustria_jungle"
-	is_triggered_only = yes
+id = lizardman.270
+desc = lizardman270desc
+picture = "GFX_evt_lustria_jungle"
+is_triggered_only = yes
 
-	option = {
-		name = OK
-	}
+option = {
+	name = OK
+}
 }
 
 # 271: Character learns of his own failure
 character_event = {
-	id = lizardman.271
-	desc = lizardman271desc
-	picture = "GFX_evt_lustria_jungle"
-	is_triggered_only = yes
+id = lizardman.271
+desc = lizardman271desc
+picture = "GFX_evt_lustria_jungle"
+is_triggered_only = yes
 
-	option = {
-		name = OK
-	}
+option = {
+	name = OK
+}
 }
 
 # 272: Clear recent_cutback flag
-
 # province_event = {
 
 # 	id = lizardman.272
-
 # 	desc = lizardman271desc
 
 # 	picture = "GFX_evt_lustria_jungle"
-
 # 	hide_window = yes
 
 # 	is_triggered_only = yes
-
 # 	immediate = {
 
 # 		clr_province_flag = recent_cutback_jungle
-
 # 	}
 
 # 	option = {
-
 # 		name = OK
 
 # 	}
-
 # }
 
 # 273: Tell character he has become sick due to cutting back the jungle
 character_event = {
-	id = lizardman.273
-	desc = lizardman273desc
-	picture = "GFX_evt_lustria_jungle"
-	is_triggered_only = yes
+id = lizardman.273
+desc = lizardman273desc
+picture = "GFX_evt_lustria_jungle"
+is_triggered_only = yes
 
-	option = {
-		name = OK
-		if = {
-			limit = {
-				NOT = {
-					has_dlc = "Reapers"
-				}
-			}
-			random_list = {
-				10 = {
-					ROOT = {
-						add_trait = has_measles
-					}
-				}
-				10 = {
-					ROOT = {
-						add_trait = has_typhus
-					}
-				}
-				10 = {
-					ROOT = {
-						add_trait = has_tomb_rot
-					}
-				}
-				10 = {
-					ROOT = {
-						add_trait = has_bone_auge
-					}
-				}
-				10 = {
-					ROOT = {
-						add_trait = pneumonic
-					}
-				}
-			}
-		}
-		if = {
-			limit = {
+option = {
+	name = OK
+	if = {
+		limit = {
+			NOT = {
 				has_dlc = "Reapers"
 			}
-			add_symptom_effect = yes
 		}
-		if = {
-			# Notify liege
-			limit = {
-				independent = no
+		random_list = {
+			10 = {
+				ROOT = {
+					add_trait = has_measles
+				}
 			}
-			liege = {
-				character_event = {
-					id = lizardman.203
+			10 = {
+				ROOT = {
+					add_trait = has_typhus
+				}
+			}
+			10 = {
+				ROOT = {
+					add_trait = has_tomb_rot
+				}
+			}
+			10 = {
+				ROOT = {
+					add_trait = has_bone_auge
+				}
+			}
+			10 = {
+				ROOT = {
+					add_trait = pneumonic
 				}
 			}
 		}
 	}
+	if = {
+		limit = {
+			has_dlc = "Reapers"
+		}
+		add_symptom_effect = yes
+	}
+	if = {
+		# Notify liege
+		limit = {
+			independent = no
+		}
+		liege = {
+			character_event = {
+				id = lizardman.203
+			}
+		}
+	}
+}
 }
 
 # 280: Spoils of the Lustrian jungle (lizardman only)
 character_event = {
-	id = lizardman.280
-	hide_window = yes
-	is_triggered_only = yes
+id = lizardman.280
+hide_window = yes
+is_triggered_only = yes
 
-	trigger = {
-		culture = lizardman
+trigger = {
+	culture = lizardman
+	any_demesne_province = {
+		has_province_modifier = lustria_jungle
+		OR = {
+			has_province_modifier = lustria_medium_jungle
+			has_province_modifier = lustria_dense_jungle
+			has_province_modifier = lustria_oppressive_jungle
+		}
+	}
+}
+
+weight_multiplier = {
+	days = 1
+	modifier = {
+		factor = 1.5
 		any_demesne_province = {
-			has_province_modifier = lustria_jungle
-			OR = {
-				has_province_modifier = lustria_medium_jungle
-				has_province_modifier = lustria_dense_jungle
-				has_province_modifier = lustria_oppressive_jungle
-			}
+			has_province_modifier = lustria_dense_jungle
 		}
 	}
-	weight_multiplier = {
-		days = 1
-		modifier = {
-			factor = 1.5
-			any_demesne_province = {
-				has_province_modifier = lustria_dense_jungle
-			}
-		}
-		modifier = {
-			factor = 2
-			any_demesne_province = {
-				has_province_modifier = lustria_oppressive_jungle
-			}
-		}
-		modifier = {
-			factor = 1.5
-			realm_stewardship = 30
+	modifier = {
+		factor = 2
+		any_demesne_province = {
+			has_province_modifier = lustria_oppressive_jungle
 		}
 	}
+	modifier = {
+		factor = 1.5
+		realm_stewardship = 30
+	}
+}
 
-	option = {
-		name = OK
-		random_list = {
-			25 = {
-				# Plaques found
-				character_event = {
-					id = lizardman.281
-				}
+option = {
+	name = OK
+	random_list = {
+		25 = {
+			# Plaques found
+			character_event = {
+				id = lizardman.281
 			}
-			25 = {
-				# Wild beasts tamed
-				character_event = {
-					id = lizardman.282
-				}
+		}
+		25 = {
+			# Wild beasts tamed
+			character_event = {
+				id = lizardman.282
 			}
-			25 = {
-				# Valuable resources found
-				character_event = {
-					id = lizardman.283
-				}
+		}
+		25 = {
+			# Valuable resources found
+			character_event = {
+				id = lizardman.283
 			}
 		}
 	}
+}
 }
 
 # Holy plaques found
 character_event = {
-	id = lizardman.281
-	desc = lizardman281desc
-	picture = "GFX_evt_lustria_jungle"
-	is_triggered_only = yes
+id = lizardman.281
+desc = lizardman281desc
+picture = "GFX_evt_lustria_jungle"
+is_triggered_only = yes
 
-	option = {
-		name = GodsBePraised
-		piety = 250
-	}
+option = {
+	name = GodsBePraised
+	piety = 250
+}
 }
 
 # Wild beasts tamed
 character_event = {
-	id = lizardman.282
-	desc = lizardman282desc
-	picture = "GFX_evt_lustria_jungle"
-	is_triggered_only = yes
+id = lizardman.282
+desc = lizardman282desc
+picture = "GFX_evt_lustria_jungle"
+is_triggered_only = yes
 
-	option = {
-		name = GodsBePraised
-		location = {
-			ROOT = {
-				spawn_unit = {
-					owner = ROOT
-					province = PREV
-					home = ROOT
-					troops = {
-						light_cavalry = {
-							150 150
-						}
+option = {
+	name = GodsBePraised
+	location = {
+		ROOT = {
+			spawn_unit = {
+				owner = ROOT
+				province = PREV
+				home = ROOT
+				troops = {
+					light_cavalry = {
+						150 150
 					}
-					attrition = 1.0
-					maintenance_multiplier = 0.075
 				}
+				attrition = 1.0
+				maintenance_multiplier = 0.075
 			}
 		}
 	}
+}
 }
 
 # Valuable resources found
 character_event = {
-	id = lizardman.283
-	desc = lizardman283desc
-	picture = "GFX_evt_lustria_jungle"
-	is_triggered_only = yes
+id = lizardman.283
+desc = lizardman283desc
+picture = "GFX_evt_lustria_jungle"
+is_triggered_only = yes
 
-	option = {
-		name = GodsBePraised
-		wealth = 150
-	}
+option = {
+	name = GodsBePraised
+	wealth = 150
+}
 }
 
 # 300: Events about rampaging beasts
-
 # 300: Rampaging beasts rise up (temporary rebel title created, with a leader and a war)
 
 # Triggered from "on_rebel_revolt"
 province_event = {
-	id = lizardman.300
-	desc = lizardman300desc
-	picture = "GFX_evt_lustria_dinosaur"
-	border = GFX_event_normal_frame_war
-	is_triggered_only = yes
+id = lizardman.300
+desc = lizardman300desc
+picture = "GFX_evt_lustria_dinosaur"
+border = GFX_event_normal_frame_war
+is_triggered_only = yes
 
-	trigger = {
-		has_dlc = "The Old Gods"
-		# has_province_modifier = lustria_jungle
-		has_province_modifier = lustria_oppressive_jungle
-		NOT = {
-			# Not if there is already an ongoing dinosaur rampage for this province
-			owner = {
-				top_liege = {
-					war = yes
-					any_war = {
-						defender = {
-							character = PREV
-						}
-						using_cb = lustrian_rampage
-						war_title = ROOT # The county
+trigger = {
+	has_dlc = "The Old Gods"
+	# has_province_modifier = lustria_jungle
+	has_province_modifier = lustria_oppressive_jungle
+	NOT = {
+		# Not if there is already an ongoing dinosaur rampage for this province
+		owner = {
+			top_liege = {
+				war = yes
+				any_war = {
+					defender = {
+						character = PREV
 					}
+					using_cb = lustrian_rampage
+					war_title = ROOT # The county
 				}
 			}
 		}
-		# NOT = { # Not if there is already an ongoing revolt
-		# owner = {
-		# top_liege = {
-		# war = yes
-		# any_war = {
-		# defender = { character = PREV }
-		# OR = {
-		# AND = {
-		# using_cb = peasant_revolt
-		# war_title = ROOT # The county
-		# }
-		# AND = {
-		# using_cb = heretic_revolt
-		# attacker = { religion = ROOT }
-		# }
-		# AND = {
-		# using_cb = religious_revolt
-		# attacker = { religion = ROOT }
-		# }
-		# }
-		# }
-		# }
-		# }
-		# }
 	}
+	# NOT = { # Not if there is already an ongoing revolt
+	# owner = {
+	# top_liege = {
+	# war = yes
+	# any_war = {
+	# defender = { character = PREV }
+	# OR = {
+	# AND = {
+	# using_cb = peasant_revolt
+	# war_title = ROOT # The county
+	# }
+	# AND = {
+	# using_cb = heretic_revolt
+	# attacker = { religion = ROOT }
+	# }
+	# AND = {
+	# using_cb = religious_revolt
+	# attacker = { religion = ROOT }
+	# }
+	# }
+	# }
+	# }
+	# }
+	# }
+}
 
-	immediate = {
-		create_random_soldier = {
-			random_traits = no
-			dynasty = none
-			religion = old_ones
-			culture = lizardman # GFX MUST be westerngfx for the static portrait to show
-			# Creature gets native name # Creatures: Razorbacks, Cold Ones, Terradons, Stegadon, Sauropod, Thunder Lizards, Carnosaur
-			female = no
-			age = 30
-			name = " "
-			attributes = {
-				martial = 5
-				diplomacy = 0
-				stewardship = 0
-				learning = 0
-				intrigue = 0
+immediate = {
+	create_random_soldier = {
+		random_traits = no
+		dynasty = none
+		religion = old_ones
+		culture = lizardman # GFX MUST be westerngfx for the static portrait to show
+		# Creature gets native name # Creatures: Razorbacks, Cold Ones, Terradons, Stegadon, Sauropod, Thunder Lizards, Carnosaur
+		female = no
+		age = 30
+		name = " "
+		attributes = {
+			martial = 5
+			diplomacy = 0
+			stewardship = 0
+			learning = 0
+			intrigue = 0
+		}
+	}
+	new_character = {
+		set_graphical_culture = generic_monster
+		add_trait = creature_monster
+		add_trait = wroth
+		random_list = {
+			10 = {
+				give_nickname = nick_the_razorback change_martial = 5
+			}
+			10 = {
+				give_nickname = nick_the_cold_one change_martial = 6
+			}
+			10 = {
+				give_nickname = nick_the_terradon change_martial = 7
+			}
+			10 = {
+				give_nickname = nick_the_stegadon change_martial = 8
+			}
+			10 = {
+				give_nickname = nick_the_sauropod change_martial = 9
+			}
+			10 = {
+				give_nickname = nick_the_thunder_lizard change_martial = 10
+			}
+			10 = {
+				give_nickname = nick_the_carnosaur change_martial = 15
 			}
 		}
-		new_character = {
-			set_graphical_culture = generic_monster
-			add_trait = creature_monster
-			add_trait = wroth
-			random_list = {
-				10 = {
-					give_nickname = nick_the_razorback change_martial = 5
+		set_character_flag = rampage_revolter
+		create_title = {
+			tier = DUKE
+			landless = yes
+			temporary = yes
+			rebel = yes
+			culture = THIS
+			name = "LUSTRIA_BEAST_RAMPAGE"
+			holder = THIS
+		}
+		set_government_type = feudal_government
+		random_list = {
+			34 = {
+				spawn_unit = {
+					province = ROOT
+					home = ROOT
+					owner = THIS
+					leader = THIS
+					scaled_by_biggest_garrison = 0.8
+					troops = {
+						war_elephants = {
+							1 1
+						}
+						light_cavalry = {
+							2 2
+						}
+						light_infantry = {
+							3 3
+						}
+					}
+					attrition = 1.0
 				}
-				10 = {
-					give_nickname = nick_the_cold_one change_martial = 6
+				create_character = {
+					random_traits = yes
+					dynasty = none
+					religion = THIS
+					culture = THIS
+					female = no
+					age = 30
+					trait = tough_soldier
 				}
-				10 = {
-					give_nickname = nick_the_terradon change_martial = 7
-				}
-				10 = {
-					give_nickname = nick_the_stegadon change_martial = 8
-				}
-				10 = {
-					give_nickname = nick_the_sauropod change_martial = 9
-				}
-				10 = {
-					give_nickname = nick_the_thunder_lizard change_martial = 10
-				}
-				10 = {
-					give_nickname = nick_the_carnosaur change_martial = 15
-				}
-			}
-			set_character_flag = rampage_revolter
-			create_title = {
-				tier = DUKE
-				landless = yes
-				temporary = yes
-				rebel = yes
-				culture = THIS
-				name = "LUSTRIA_BEAST_RAMPAGE"
-				holder = THIS
-			}
-			set_government_type = feudal_government
-			random_list = {
-				34 = {
+				new_character = {
+					random_list = {
+						10 = {
+							give_nickname = nick_the_razorback change_martial = 5
+						}
+						10 = {
+							give_nickname = nick_the_cold_one change_martial = 6
+						}
+						10 = {
+							give_nickname = nick_the_terradon change_martial = 7
+						}
+						10 = {
+							give_nickname = nick_the_stegadon change_martial = 8
+						}
+						10 = {
+							give_nickname = nick_the_sauropod change_martial = 9
+						}
+						10 = {
+							give_nickname = nick_the_thunder_lizard change_martial = 10
+						}
+						10 = {
+							give_nickname = nick_the_carnosaur change_martial = 15
+						}
+					}
 					spawn_unit = {
 						province = ROOT
 						home = ROOT
-						owner = THIS
-						leader = THIS
+						owner = PREV
 						scaled_by_biggest_garrison = 0.8
 						troops = {
 							war_elephants = {
@@ -21831,124 +21405,121 @@ province_event = {
 								2 2
 							}
 							light_infantry = {
-								3 3
+								7 7
 							}
 						}
 						attrition = 1.0
-					}
-					create_character = {
-						random_traits = yes
-						dynasty = none
-						religion = THIS
-						culture = THIS
-						female = no
-						age = 30
-						trait = tough_soldier
-					}
-					new_character = {
-						random_list = {
-							10 = {
-								give_nickname = nick_the_razorback change_martial = 5
-							}
-							10 = {
-								give_nickname = nick_the_cold_one change_martial = 6
-							}
-							10 = {
-								give_nickname = nick_the_terradon change_martial = 7
-							}
-							10 = {
-								give_nickname = nick_the_stegadon change_martial = 8
-							}
-							10 = {
-								give_nickname = nick_the_sauropod change_martial = 9
-							}
-							10 = {
-								give_nickname = nick_the_thunder_lizard change_martial = 10
-							}
-							10 = {
-								give_nickname = nick_the_carnosaur change_martial = 15
-							}
-						}
-						spawn_unit = {
-							province = ROOT
-							home = ROOT
-							owner = PREV
-							scaled_by_biggest_garrison = 0.8
-							troops = {
-								war_elephants = {
-									1 1
-								}
-								light_cavalry = {
-									2 2
-								}
-								light_infantry = {
-									7 7
-								}
-							}
-							attrition = 1.0
-							disband_on_peace = yes
-						}
-					}
-					create_character = {
-						random_traits = yes
-						dynasty = none
-						religion = THIS
-						culture = THIS
-						female = no
-						age = 23
-						trait = tough_soldier
-					}
-					new_character = {
-						random_list = {
-							10 = {
-								give_nickname = nick_the_razorback change_martial = 5
-							}
-							10 = {
-								give_nickname = nick_the_cold_one change_martial = 6
-							}
-							10 = {
-								give_nickname = nick_the_terradon change_martial = 7
-							}
-							10 = {
-								give_nickname = nick_the_stegadon change_martial = 8
-							}
-							10 = {
-								give_nickname = nick_the_sauropod change_martial = 9
-							}
-							10 = {
-								give_nickname = nick_the_thunder_lizard change_martial = 10
-							}
-							10 = {
-								give_nickname = nick_the_carnosaur change_martial = 15
-							}
-						}
-						spawn_unit = {
-							province = ROOT
-							home = ROOT
-							owner = PREV
-							scaled_by_biggest_garrison = 0.8
-							troops = {
-								war_elephants = {
-									1 1
-								}
-								light_cavalry = {
-									2 2
-								}
-								light_infantry = {
-									7 7
-								}
-							}
-							attrition = 1.0
-							disband_on_peace = yes
-						}
+						disband_on_peace = yes
 					}
 				}
-				33 = {
+				create_character = {
+					random_traits = yes
+					dynasty = none
+					religion = THIS
+					culture = THIS
+					female = no
+					age = 23
+					trait = tough_soldier
+				}
+				new_character = {
+					random_list = {
+						10 = {
+							give_nickname = nick_the_razorback change_martial = 5
+						}
+						10 = {
+							give_nickname = nick_the_cold_one change_martial = 6
+						}
+						10 = {
+							give_nickname = nick_the_terradon change_martial = 7
+						}
+						10 = {
+							give_nickname = nick_the_stegadon change_martial = 8
+						}
+						10 = {
+							give_nickname = nick_the_sauropod change_martial = 9
+						}
+						10 = {
+							give_nickname = nick_the_thunder_lizard change_martial = 10
+						}
+						10 = {
+							give_nickname = nick_the_carnosaur change_martial = 15
+						}
+					}
 					spawn_unit = {
 						province = ROOT
 						home = ROOT
-						owner = THIS
-						leader = THIS
+						owner = PREV
+						scaled_by_biggest_garrison = 0.8
+						troops = {
+							war_elephants = {
+								1 1
+							}
+							light_cavalry = {
+								2 2
+							}
+							light_infantry = {
+								7 7
+							}
+						}
+						attrition = 1.0
+						disband_on_peace = yes
+					}
+				}
+			}
+			33 = {
+				spawn_unit = {
+					province = ROOT
+					home = ROOT
+					owner = THIS
+					leader = THIS
+					scaled_by_biggest_garrison = 0.8
+					troops = {
+						light_cavalry = {
+							1 1
+						}
+						light_infantry = {
+							9 9
+						}
+					}
+					attrition = 1.0
+				}
+				create_character = {
+					random_traits = yes
+					dynasty = none
+					religion = THIS
+					culture = THIS
+					female = no
+					age = 30
+					trait = tough_soldier
+				}
+				new_character = {
+					random_list = {
+						10 = {
+							give_nickname = nick_the_razorback change_martial = 5
+						}
+						10 = {
+							give_nickname = nick_the_cold_one change_martial = 6
+						}
+						10 = {
+							give_nickname = nick_the_terradon change_martial = 7
+						}
+						10 = {
+							give_nickname = nick_the_stegadon change_martial = 8
+						}
+						10 = {
+							give_nickname = nick_the_sauropod change_martial = 9
+						}
+						10 = {
+							give_nickname = nick_the_thunder_lizard change_martial = 10
+						}
+						10 = {
+							give_nickname = nick_the_carnosaur change_martial = 15
+						}
+					}
+					spawn_unit = {
+						province = ROOT
+						home = ROOT
+						owner = PREV
 						scaled_by_biggest_garrison = 0.8
 						troops = {
 							light_cavalry = {
@@ -21959,516 +21530,468 @@ province_event = {
 							}
 						}
 						attrition = 1.0
-					}
-					create_character = {
-						random_traits = yes
-						dynasty = none
-						religion = THIS
-						culture = THIS
-						female = no
-						age = 30
-						trait = tough_soldier
-					}
-					new_character = {
-						random_list = {
-							10 = {
-								give_nickname = nick_the_razorback change_martial = 5
-							}
-							10 = {
-								give_nickname = nick_the_cold_one change_martial = 6
-							}
-							10 = {
-								give_nickname = nick_the_terradon change_martial = 7
-							}
-							10 = {
-								give_nickname = nick_the_stegadon change_martial = 8
-							}
-							10 = {
-								give_nickname = nick_the_sauropod change_martial = 9
-							}
-							10 = {
-								give_nickname = nick_the_thunder_lizard change_martial = 10
-							}
-							10 = {
-								give_nickname = nick_the_carnosaur change_martial = 15
-							}
-						}
-						spawn_unit = {
-							province = ROOT
-							home = ROOT
-							owner = PREV
-							scaled_by_biggest_garrison = 0.8
-							troops = {
-								light_cavalry = {
-									1 1
-								}
-								light_infantry = {
-									9 9
-								}
-							}
-							attrition = 1.0
-							disband_on_peace = yes
-						}
-					}
-					create_character = {
-						random_traits = yes
-						dynasty = none
-						religion = THIS
-						culture = THIS
-						female = no
-						age = 23
-						trait = tough_soldier
-					}
-					new_character = {
-						random_list = {
-							10 = {
-								give_nickname = nick_the_razorback change_martial = 5
-							}
-							10 = {
-								give_nickname = nick_the_cold_one change_martial = 6
-							}
-							10 = {
-								give_nickname = nick_the_terradon change_martial = 7
-							}
-							10 = {
-								give_nickname = nick_the_stegadon change_martial = 8
-							}
-							10 = {
-								give_nickname = nick_the_sauropod change_martial = 9
-							}
-							10 = {
-								give_nickname = nick_the_thunder_lizard change_martial = 10
-							}
-							10 = {
-								give_nickname = nick_the_carnosaur change_martial = 15
-							}
-						}
-						spawn_unit = {
-							province = ROOT
-							home = ROOT
-							owner = PREV
-							scaled_by_biggest_garrison = 0.8
-							troops = {
-								war_elephants = {
-									1 1
-								}
-								light_cavalry = {
-									1 1
-								}
-								light_infantry = {
-									9 9
-								}
-							}
-							attrition = 1.0
-							disband_on_peace = yes
-						}
+						disband_on_peace = yes
 					}
 				}
-				33 = {
+				create_character = {
+					random_traits = yes
+					dynasty = none
+					religion = THIS
+					culture = THIS
+					female = no
+					age = 23
+					trait = tough_soldier
+				}
+				new_character = {
+					random_list = {
+						10 = {
+							give_nickname = nick_the_razorback change_martial = 5
+						}
+						10 = {
+							give_nickname = nick_the_cold_one change_martial = 6
+						}
+						10 = {
+							give_nickname = nick_the_terradon change_martial = 7
+						}
+						10 = {
+							give_nickname = nick_the_stegadon change_martial = 8
+						}
+						10 = {
+							give_nickname = nick_the_sauropod change_martial = 9
+						}
+						10 = {
+							give_nickname = nick_the_thunder_lizard change_martial = 10
+						}
+						10 = {
+							give_nickname = nick_the_carnosaur change_martial = 15
+						}
+					}
 					spawn_unit = {
 						province = ROOT
 						home = ROOT
-						owner = THIS
-						leader = THIS
+						owner = PREV
 						scaled_by_biggest_garrison = 0.8
 						troops = {
 							war_elephants = {
 								1 1
 							}
+							light_cavalry = {
+								1 1
+							}
+							light_infantry = {
+								9 9
+							}
+						}
+						attrition = 1.0
+						disband_on_peace = yes
+					}
+				}
+			}
+			33 = {
+				spawn_unit = {
+					province = ROOT
+					home = ROOT
+					owner = THIS
+					leader = THIS
+					scaled_by_biggest_garrison = 0.8
+					troops = {
+						war_elephants = {
+							1 1
+						}
+						light_infantry = {
+							10 10
+						}
+					}
+					attrition = 1.0
+				}
+				create_character = {
+					random_traits = yes
+					dynasty = none
+					religion = THIS
+					culture = THIS
+					female = no
+					age = 30
+					trait = peasant_leader
+				}
+				new_character = {
+					random_list = {
+						10 = {
+							give_nickname = nick_the_razorback change_martial = 5
+						}
+						10 = {
+							give_nickname = nick_the_cold_one change_martial = 6
+						}
+						10 = {
+							give_nickname = nick_the_terradon change_martial = 7
+						}
+						10 = {
+							give_nickname = nick_the_stegadon change_martial = 8
+						}
+						10 = {
+							give_nickname = nick_the_sauropod change_martial = 9
+						}
+						10 = {
+							give_nickname = nick_the_thunder_lizard change_martial = 10
+						}
+						10 = {
+							give_nickname = nick_the_carnosaur change_martial = 15
+						}
+					}
+					spawn_unit = {
+						province = ROOT
+						home = ROOT
+						owner = PREV
+						scaled_by_biggest_garrison = 0.8
+						troops = {
 							light_infantry = {
 								10 10
 							}
 						}
 						attrition = 1.0
-					}
-					create_character = {
-						random_traits = yes
-						dynasty = none
-						religion = THIS
-						culture = THIS
-						female = no
-						age = 30
-						trait = peasant_leader
-					}
-					new_character = {
-						random_list = {
-							10 = {
-								give_nickname = nick_the_razorback change_martial = 5
-							}
-							10 = {
-								give_nickname = nick_the_cold_one change_martial = 6
-							}
-							10 = {
-								give_nickname = nick_the_terradon change_martial = 7
-							}
-							10 = {
-								give_nickname = nick_the_stegadon change_martial = 8
-							}
-							10 = {
-								give_nickname = nick_the_sauropod change_martial = 9
-							}
-							10 = {
-								give_nickname = nick_the_thunder_lizard change_martial = 10
-							}
-							10 = {
-								give_nickname = nick_the_carnosaur change_martial = 15
-							}
-						}
-						spawn_unit = {
-							province = ROOT
-							home = ROOT
-							owner = PREV
-							scaled_by_biggest_garrison = 0.8
-							troops = {
-								light_infantry = {
-									10 10
-								}
-							}
-							attrition = 1.0
-							disband_on_peace = yes
-						}
-					}
-					create_character = {
-						random_traits = yes
-						dynasty = none
-						religion = THIS
-						culture = THIS
-						female = no
-						age = 23
-						trait = tough_soldier
-					}
-					new_character = {
-						random_list = {
-							10 = {
-								give_nickname = nick_the_razorback change_martial = 5
-							}
-							10 = {
-								give_nickname = nick_the_cold_one change_martial = 6
-							}
-							10 = {
-								give_nickname = nick_the_terradon change_martial = 7
-							}
-							10 = {
-								give_nickname = nick_the_stegadon change_martial = 8
-							}
-							10 = {
-								give_nickname = nick_the_sauropod change_martial = 9
-							}
-							10 = {
-								give_nickname = nick_the_thunder_lizard change_martial = 10
-							}
-							10 = {
-								give_nickname = nick_the_carnosaur change_martial = 15
-							}
-						}
-						spawn_unit = {
-							province = ROOT
-							home = ROOT
-							owner = PREV
-							scaled_by_biggest_garrison = 0.8
-							troops = {
-								light_infantry = {
-									8 8
-								}
-							}
-							attrition = 1.0
-							disband_on_peace = yes
-						}
+						disband_on_peace = yes
 					}
 				}
-			}
-			# DoW on the province top liege
-			ROOT = {
-				owner = {
-					top_liege = {
-						reverse_war = {
-							target = PREVPREVPREV
-							casus_belli = lustrian_rampage
-							thirdparty_title = ROOT # The county
+				create_character = {
+					random_traits = yes
+					dynasty = none
+					religion = THIS
+					culture = THIS
+					female = no
+					age = 23
+					trait = tough_soldier
+				}
+				new_character = {
+					random_list = {
+						10 = {
+							give_nickname = nick_the_razorback change_martial = 5
 						}
+						10 = {
+							give_nickname = nick_the_cold_one change_martial = 6
+						}
+						10 = {
+							give_nickname = nick_the_terradon change_martial = 7
+						}
+						10 = {
+							give_nickname = nick_the_stegadon change_martial = 8
+						}
+						10 = {
+							give_nickname = nick_the_sauropod change_martial = 9
+						}
+						10 = {
+							give_nickname = nick_the_thunder_lizard change_martial = 10
+						}
+						10 = {
+							give_nickname = nick_the_carnosaur change_martial = 15
+						}
+					}
+					spawn_unit = {
+						province = ROOT
+						home = ROOT
+						owner = PREV
+						scaled_by_biggest_garrison = 0.8
+						troops = {
+							light_infantry = {
+								8 8
+							}
+						}
+						attrition = 1.0
+						disband_on_peace = yes
 					}
 				}
 			}
 		}
-		owner = {
-			any_liege = {
-				# Inform the lieges
-				character_event = {
-					id = lizardman.301
+		# DoW on the province top liege
+		ROOT = {
+			owner = {
+				top_liege = {
+					reverse_war = {
+						target = PREVPREVPREV
+						casus_belli = lustrian_rampage
+						thirdparty_title = ROOT # The county
+					}
 				}
 			}
 		}
 	}
+	owner = {
+		any_liege = {
+			# Inform the lieges
+			character_event = {
+				id = lizardman.301
+			}
+		}
+	}
+}
 
-	option = {
-		name = EVTOPTA_TOG_1060
-		trigger = {
-			owner = {
+option = {
+	name = EVTOPTA_TOG_1060
+	trigger = {
+		owner = {
+			religion_group = ROOT
+		}
+	}
+}
+
+option = {
+	name = EVTOPTB_TOG_1060
+	trigger = {
+		owner = {
+			NOT = {
 				religion_group = ROOT
 			}
 		}
 	}
-
-	option = {
-		name = EVTOPTB_TOG_1060
-		trigger = {
-			owner = {
-				NOT = {
-					religion_group = ROOT
-				}
-			}
-		}
-	}
+}
 }
 
 character_event = {
-	id = lizardman.301
-	desc = lizardman301desc
-	picture = "GFX_evt_lustria_dinosaur"
-	border = GFX_event_normal_frame_war
-	is_triggered_only = yes
+id = lizardman.301
+desc = lizardman301desc
+picture = "GFX_evt_lustria_dinosaur"
+border = GFX_event_normal_frame_war
+is_triggered_only = yes
 
-	option = {
-		name = EVTOPTA_TOG_1060
-	}
+option = {
+	name = EVTOPTA_TOG_1060
+}
 }
 
 # Religious Rebels seize a holding. Fired from 'on_siege_over_winner'. Owner of the winning unit is ROOT. The taken Holding title is in FROM.
 character_event = {
-	id = lizardman.302 # TOG.1065
-	picture = "GFX_evt_lustria_dinosaur"
-	hide_window = yes
-	is_triggered_only = yes
-	desc = OK
+id = lizardman.302 # TOG.1065
+picture = "GFX_evt_lustria_dinosaur"
+hide_window = yes
+is_triggered_only = yes
+desc = OK
 
-	trigger = {
-		has_character_flag = rampage_revolter
-		rebel = yes
-	}
+trigger = {
+	has_character_flag = rampage_revolter
+	rebel = yes
+}
 
-	option = {
-		name = OK
-		FROM = {
+option = {
+	name = OK
+	FROM = {
+		if = {
+			limit = {
+				OR = {
+					NOT = {
+						location = {
+							has_province_modifier = lustria_jungle
+						}
+					}
+					location = {
+						has_province_modifier = lustria_oppressive_jungle
+					}
+				}
+			}
+			destroy_random_building = yes
+		}
+		location = {
 			if = {
 				limit = {
-					OR = {
-						NOT = {
-							location = {
-								has_province_modifier = lustria_jungle
-							}
-						}
-						location = {
-							has_province_modifier = lustria_oppressive_jungle
-						}
+					FROM = {
+						is_capital = yes # The capital holding
 					}
+					has_province_modifier = lustria_jungle
+					has_province_modifier = lustria_dense_jungle
 				}
-				destroy_random_building = yes
+				add_province_modifier = {
+					name = lustria_oppressive_jungle
+					duration = -1
+				}
+				remove_province_modifier = lustria_dense_jungle
 			}
-			location = {
-				if = {
-					limit = {
-						FROM = {
-							is_capital = yes # The capital holding
-						}
-						has_province_modifier = lustria_jungle
-						has_province_modifier = lustria_dense_jungle
+			if = {
+				limit = {
+					FROM = {
+						is_capital = yes # The capital holding
 					}
-					add_province_modifier = {
-						name = lustria_oppressive_jungle
-						duration = -1
-					}
-					remove_province_modifier = lustria_dense_jungle
+					has_province_modifier = lustria_medium_jungle
+					has_province_modifier = lustria_jungle
 				}
-				if = {
-					limit = {
-						FROM = {
-							is_capital = yes # The capital holding
-						}
-						has_province_modifier = lustria_medium_jungle
-						has_province_modifier = lustria_jungle
-					}
-					add_province_modifier = {
-						name = lustria_dense_jungle
-						duration = -1
-					}
-					remove_province_modifier = lustria_medium_jungle
+				add_province_modifier = {
+					name = lustria_dense_jungle
+					duration = -1
 				}
-				if = {
-					limit = {
-						FROM = {
-							is_capital = yes # The capital holding
-						}
-						has_province_modifier = lustria_light_jungle
-						has_province_modifier = lustria_jungle
+				remove_province_modifier = lustria_medium_jungle
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_capital = yes # The capital holding
 					}
-					add_province_modifier = {
-						name = lustria_medium_jungle
-						duration = -1
-					}
-					remove_province_modifier = lustria_light_jungle
+					has_province_modifier = lustria_light_jungle
+					has_province_modifier = lustria_jungle
 				}
-				holder_scope = {
-					character_event = {
-						id = lizardman.303
-					}
+				add_province_modifier = {
+					name = lustria_medium_jungle
+					duration = -1
+				}
+				remove_province_modifier = lustria_light_jungle
+			}
+			holder_scope = {
+				character_event = {
+					id = lizardman.303
 				}
 			}
 		}
 	}
 }
+}
 
 character_event = {
-	id = lizardman.303# TOG.1071
-	desc = lizardman303desc
-	picture = "GFX_evt_lustria_dinosaur"
-	border = GFX_event_normal_frame_war
-	is_triggered_only = yes
+id = lizardman.303# TOG.1071
+desc = lizardman303desc
+picture = "GFX_evt_lustria_dinosaur"
+border = GFX_event_normal_frame_war
+is_triggered_only = yes
 
-	option = {
-		name = "EVTOPTA_TOG_1070"
-	}
+option = {
+	name = "EVTOPTA_TOG_1070"
+}
 }
 
 # Rebels kill a local character. Fired from 'on_siege_over_loc_chars'.
-
 # Siege winner unit owner in the 'new_character' scope, lost holding title in FROM, local character in ROOT.
 character_event = {
-	id = lizardman.304 # TOG.1190
-	desc = lizardman304desc
-	border = GFX_event_normal_frame_war
-	picture = "GFX_evt_lustria_dinosaur"
-	is_triggered_only = yes
+id = lizardman.304 # TOG.1190
+desc = lizardman304desc
+border = GFX_event_normal_frame_war
+picture = "GFX_evt_lustria_dinosaur"
+is_triggered_only = yes
 
-	trigger = {
-		new_character = {
-			rebel = yes
-			has_character_flag = rampage_revolter
+trigger = {
+	new_character = {
+		rebel = yes
+		has_character_flag = rampage_revolter
+	}
+}
+
+weight_multiplier = {
+	days = 1
+	modifier = {
+		factor = 0.5
+		is_female = yes
+	}
+	modifier = {
+		factor = 0.5
+		is_adult = no
+	}
+}
+
+immediate = {
+	any_liege = {
+		# Inform the victim's lieges
+		character_event = {
+			id = lizardman.305
 		}
 	}
-	weight_multiplier = {
-		days = 1
-		modifier = {
-			factor = 0.5
-			is_female = yes
-		}
-		modifier = {
-			factor = 0.5
-			is_adult = no
-		}
-	}
-
-	immediate = {
-		any_liege = {
-			# Inform the victim's lieges
-			character_event = {
-				id = lizardman.305
+	new_character = {
+		ROOT = {
+			if = {
+				limit = {
+					is_invincible_trigger = yes
+				}
+				antideath_effect = yes
+				break = yes
+			}
+			death = {
+				death_reason = death_rabble
+				killer = PREV
 			}
 		}
-		new_character = {
-			ROOT = {
-				if = {
-					limit = {
-						is_invincible_trigger = yes
-					}
-					antideath_effect = yes
-					break = yes
-				}
-				death = {
-					death_reason = death_rabble
-					killer = PREV
-				}
-			}
-		}
 	}
+}
 
-	option = {
-		name = EVTOPTA_TOG_1190
-	}
+option = {
+	name = EVTOPTA_TOG_1190
+}
 }
 
 # Lieges informed
 character_event = {
-	id = lizardman.305 # TOG.1191
-	picture = "GFX_evt_lustria_dinosaur"
-	desc = lizardman305desc
-	border = GFX_event_normal_frame_war
-	is_triggered_only = yes
-	notification = yes
-	ai = no
+id = lizardman.305 # TOG.1191
+picture = "GFX_evt_lustria_dinosaur"
+desc = lizardman305desc
+border = GFX_event_normal_frame_war
+is_triggered_only = yes
+notification = yes
+ai = no
 
-	option = {
-		name = EVTOPTA_TOG_1191
-	}
+option = {
+	name = EVTOPTA_TOG_1191
+}
 }
 
 # 400-499: Events dealing with Chameleon Skinks and other holy war stuff
-
 # 400: Return of the Chameleon Skinks
 narrative_event = {
-	id = lizardman.400
-	title = "lizardman400title"
-	desc = "lizardman400desc"
-	picture = "GFX_evt_crusaders"
-	border = "GFX_event_narrative_frame_religion"
-	major = yes
-	only_playable = yes
-	only_men = yes
+id = lizardman.400
+title = "lizardman400title"
+desc = "lizardman400desc"
+picture = "GFX_evt_crusaders"
+border = "GFX_event_narrative_frame_religion"
+major = yes
+only_playable = yes
+only_men = yes
 
+trigger = {
+	religion = old_ones
+	is_heretic = no
+	year = 2040
+	NOT = {
+		is_title_active = d_chameleon_skinks
+	}
+	1 = {
+		check_variable = {
+			which = "doom_counter"
+			value = 60 # The winds of chaos are strong
+		}
+	}
+}
+
+mean_time_to_happen = {
+	months = 4
+}
+
+immediate = {
+	activate_title = {
+		title = d_chameleon_skinks status = yes
+	}
+	create_random_soldier = {
+		dynasty = none
+		random_traits = yes
+		religion = ROOT
+		name = "Oxyotl"
+	}
+	new_character = {
+		add_trait = creature_skink
+		d_chameleon_skinks = {
+			grant_title = PREV
+		}
+		set_defacto_liege = THIS
+		wealth = 600
+	}
+	religion_authority = {
+		modifier = religious_order_formed
+		years = 10
+	}
+}
+
+option = {
+	name = "GodsBePraised"
 	trigger = {
-		religion = old_ones
-		is_heretic = no
-		year = 2040
+		religion = ROOT
+	}
+}
+
+option = {
+	name = OK
+	trigger = {
 		NOT = {
-			is_title_active = d_chameleon_skinks
-		}
-		1 = {
-			check_variable = {
-				which = "doom_counter" value = 60 # The winds of chaos are strong
-			}
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 4
-	}
-
-	immediate = {
-		activate_title = {
-			title = d_chameleon_skinks status = yes
-		}
-		create_random_soldier = {
-			dynasty = none
-			random_traits = yes
-			religion = ROOT
-			name = "Oxyotl"
-		}
-		new_character = {
-			add_trait = creature_skink
-			d_chameleon_skinks = {
-				grant_title = PREV
-			}
-			set_defacto_liege = THIS
-			wealth = 600
-		}
-		religion_authority = {
-			modifier = religious_order_formed
-			years = 10
-		}
-	}
-
-	option = {
-		name = "GodsBePraised"
-		trigger = {
 			religion = ROOT
 		}
 	}
-
-	option = {
-		name = "OK"
-		trigger = {
-			NOT = {
-				religion = ROOT
-			}
-		}
-	}
+}
 }

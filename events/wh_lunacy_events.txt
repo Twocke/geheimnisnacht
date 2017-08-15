@@ -27,6 +27,7 @@ character_event = {
 			trait = lunatic_3
 		}
 	}
+
 	weight_multiplier = {
 		factor = 1
 		# Cosmic modifers not geography or trait dependent
@@ -549,7 +550,6 @@ character_event = {
 						id = slunacy.8
 					}
 				}
-
 			}
 
 		}
@@ -592,7 +592,8 @@ character_event = {
 	option = {
 		name = EVTOPTAslunacy7
 		change_variable = {
-			which = "lunatic_counter" value = 1
+			which = "lunatic_counter"
+			value = 1
 		}
 		hidden_tooltip = {
 			character_event = {
@@ -640,7 +641,8 @@ character_event = {
 			add_trait = disfigured
 		}
 		change_variable = {
-			which = "lunatic_counter" value = 1
+			which = "lunatic_counter"
+			value = 1
 		}
 		hidden_tooltip = {
 			character_event = {
@@ -732,7 +734,6 @@ character_event = {
 						}
 					}
 				}
-
 			}
 			piety = -400
 		}
@@ -753,7 +754,6 @@ character_event = {
 							}
 						}
 					}
-
 				}
 				opinion = {
 					modifier = opinion_lunatic_w
@@ -778,7 +778,6 @@ character_event = {
 							}
 						}
 					}
-
 				}
 				opinion = {
 					modifier = opinion_lunatic_w
@@ -788,10 +787,12 @@ character_event = {
 			}
 		}
 		change_variable = {
-			which = "lunatic_counter" value = 3
+			which = "lunatic_counter"
+			value = 3
 		}
 		add_character_modifier = {
-			name = blind_virtue duration = -1
+			name = blind_virtue
+			duration = -1
 		}
 		hidden_tooltip = {
 			character_event = {
@@ -872,7 +873,6 @@ character_event = {
 						}
 					}
 				}
-
 			}
 			piety = -800
 		}
@@ -893,7 +893,6 @@ character_event = {
 							}
 						}
 					}
-
 				}
 				opinion = {
 					modifier = opinion_lunatic_w
@@ -918,7 +917,6 @@ character_event = {
 							}
 						}
 					}
-
 				}
 				opinion = {
 					modifier = opinion_lunatic_w
@@ -928,10 +926,12 @@ character_event = {
 			}
 		}
 		change_variable = {
-			which = "lunatic_counter" value = 3
+			which = "lunatic_counter"
+			value = 3
 		}
 		add_character_modifier = {
-			name = fake_mage duration = -1
+			name = fake_mage
+			duration = -1
 		}
 		hidden_tooltip = {
 			character_event = {
@@ -995,7 +995,6 @@ character_event = {
 				NOT = {
 					religion_group = horned_rat_god_group
 				}
-
 			}
 			piety = -400
 		}
@@ -1016,7 +1015,6 @@ character_event = {
 							}
 						}
 					}
-
 				}
 				opinion = {
 					modifier = opinion_lunatic_w
@@ -1041,7 +1039,6 @@ character_event = {
 							}
 						}
 					}
-
 				}
 				opinion = {
 					modifier = opinion_lunatic_w
@@ -1051,10 +1048,12 @@ character_event = {
 			}
 		}
 		change_variable = {
-			which = "lunatic_counter" value = 3
+			which = "lunatic_counter"
+			value = 3
 		}
 		add_character_modifier = {
-			name = despairing_laughter duration = -1
+			name = despairing_laughter
+			duration = -1
 		}
 		hidden_tooltip = {
 			character_event = {
@@ -1123,7 +1122,6 @@ character_event = {
 						}
 					}
 				}
-
 			}
 			piety = -800
 		}
@@ -1144,7 +1142,6 @@ character_event = {
 							}
 						}
 					}
-
 				}
 				opinion = {
 					modifier = opinion_lunatic_w
@@ -1169,7 +1166,6 @@ character_event = {
 							}
 						}
 					}
-
 				}
 				opinion = {
 					modifier = opinion_lunatic_w
@@ -1179,10 +1175,12 @@ character_event = {
 			}
 		}
 		change_variable = {
-			which = "lunatic_counter" value = 3
+			which = "lunatic_counter"
+			value = 3
 		}
 		add_character_modifier = {
-			name = unfeeling duration = -1
+			name = unfeeling
+			duration = -1
 		}
 		hidden_tooltip = {
 			character_event = {
@@ -1254,7 +1252,6 @@ character_event = {
 						}
 					}
 				}
-
 			}
 			piety = -400
 		}
@@ -1275,7 +1272,6 @@ character_event = {
 							}
 						}
 					}
-
 				}
 				opinion = {
 					modifier = opinion_lunatic_w
@@ -1300,7 +1296,6 @@ character_event = {
 							}
 						}
 					}
-
 				}
 				opinion = {
 					modifier = opinion_lunatic_w
@@ -1310,10 +1305,12 @@ character_event = {
 			}
 		}
 		change_variable = {
-			which = "lunatic_counter" value = 4
+			which = "lunatic_counter"
+			value = 4
 		}
 		add_character_modifier = {
-			name = bloodthirsty duration = -1
+			name = bloodthirsty
+			duration = -1
 		}
 		hidden_tooltip = {
 			character_event = {
@@ -1381,7 +1378,6 @@ character_event = {
 				NOT = {
 					religion_group = horned_rat_god_group
 				}
-
 			}
 			piety = -400
 		}
@@ -1402,7 +1398,6 @@ character_event = {
 							}
 						}
 					}
-
 				}
 				opinion = {
 					modifier = opinion_lunatic_w
@@ -1427,7 +1422,6 @@ character_event = {
 							}
 						}
 					}
-
 				}
 				opinion = {
 					modifier = opinion_lunatic_w
@@ -1437,10 +1431,12 @@ character_event = {
 			}
 		}
 		change_variable = {
-			which = "lunatic_counter" value = 4
+			which = "lunatic_counter"
+			value = 4
 		}
 		add_character_modifier = {
-			name = god_delusion duration = -1
+			name = god_delusion
+			duration = -1
 		}
 		hidden_tooltip = {
 			character_event = {
@@ -1451,7 +1447,6 @@ character_event = {
 }
 
 # Random Lunacy Events
-
 # Lunatic - Bloodthirsty kills somebody
 character_event = {
 	id = slunacy.16
@@ -1474,9 +1469,6 @@ character_event = {
 		}
 		NOT = {
 			trait = studying_magic
-		}
-		NOT = {
-			trait = crafting_magic_item
 		}
 		liege = {
 			any_courtier = {
@@ -1729,7 +1721,6 @@ character_event = {
 	}
 }
 
-# Close people informed of murder
 character_event = {
 	id = slunacy.18
 	desc = EVTDESCslunacy18
@@ -1770,9 +1761,6 @@ character_event = {
 		}
 		NOT = {
 			trait = studying_magic
-		}
-		NOT = {
-			trait = crafting_magic_item
 		}
 		any_demesne_province = {
 			NOT = {
@@ -1829,9 +1817,6 @@ character_event = {
 		}
 		NOT = {
 			trait = studying_magic
-		}
-		NOT = {
-			trait = crafting_magic_item
 		}
 		OR = {
 			has_character_modifier = magic_power_1
@@ -2044,7 +2029,8 @@ character_event = {
 		name = EVTOPTAslunacy25
 		remove_character_modifier = fake_mage
 		change_variable = {
-			which = "lunatic_counter" value = -3
+			which = "lunatic_counter"
+			value = -3
 		}
 	}
 }
@@ -2156,7 +2142,6 @@ character_event = {
 				}
 			}
 		}
-
 	}
 
 	mean_time_to_happen = {
@@ -2227,7 +2212,6 @@ character_event = {
 		trigger = {
 			trait = infirm
 		}
-
 	}
 	desc = {
 		text = EVTDESCBslunacy28
@@ -2237,7 +2221,6 @@ character_event = {
 				trait = wounded
 			}
 		}
-
 	}
 	desc = {
 		text = EVTDESCCslunacy28
@@ -2247,21 +2230,18 @@ character_event = {
 				trait = burnt_by_asuryan
 			}
 		}
-
 	}
 	desc = {
 		text = EVTDESCDslunacy28
 		trigger = {
 			trait = fat
 		}
-
 	}
 	desc = {
 		text = EVTDESCEslunacy28
 		trigger = {
 			trait = undernourished
 		}
-
 	}
 	desc = {
 		text = EVTDESCFslunacy28
@@ -2273,7 +2253,6 @@ character_event = {
 				trait = syphilitic
 			}
 		}
-
 	}
 	desc = {
 		text = EVTDESCGslunacy28
@@ -2283,7 +2262,6 @@ character_event = {
 				trait = troubled_pregnancy
 			}
 		}
-
 	}
 	desc = {
 		text = EVTDESCHslunacy28
@@ -2294,14 +2272,12 @@ character_event = {
 				trait = mutation_massive
 			}
 		}
-
 	}
 	desc = {
 		text = EVTDESCIslunacy28
 		trigger = {
 			trait = lunatic_3
 		}
-
 	}
 	picture = GFX_evt_lunatic
 	is_triggered_only = yes
@@ -2337,7 +2313,6 @@ character_event = {
 				trait = infirm
 			}
 		}
-
 	}
 	desc = {
 		text = EVTDESCBslunacy29
@@ -2349,7 +2324,6 @@ character_event = {
 				}
 			}
 		}
-
 	}
 	desc = {
 		text = EVTDESCCslunacy29
@@ -2361,7 +2335,6 @@ character_event = {
 				}
 			}
 		}
-
 	}
 	desc = {
 		text = EVTDESCDslunacy29
@@ -2370,7 +2343,6 @@ character_event = {
 				trait = fat
 			}
 		}
-
 	}
 	desc = {
 		text = EVTDESCEslunacy29
@@ -2379,7 +2351,6 @@ character_event = {
 				trait = undernourished
 			}
 		}
-
 	}
 	desc = {
 		text = EVTDESCFslunacy29
@@ -2393,7 +2364,6 @@ character_event = {
 				}
 			}
 		}
-
 	}
 	desc = {
 		text = EVTDESCGslunacy29
@@ -2405,7 +2375,6 @@ character_event = {
 				}
 			}
 		}
-
 	}
 	desc = {
 		text = EVTDESCHslunacy29
@@ -2418,7 +2387,6 @@ character_event = {
 				}
 			}
 		}
-
 	}
 	desc = {
 		text = EVTDESCIslunacy29
@@ -2427,7 +2395,6 @@ character_event = {
 				trait = lunatic_3
 			}
 		}
-
 	}
 	picture = GFX_evt_lunatic
 	is_triggered_only = yes
@@ -2603,14 +2570,12 @@ character_event = {
 		trigger = {
 			is_female = no
 		}
-
 	}
 	desc = {
 		text = EVTDESCBslunacy33
 		trigger = {
 			is_female = yes
 		}
-
 	}
 	picture = GFX_evt_lunatic
 
@@ -2631,9 +2596,6 @@ character_event = {
 		}
 		NOT = {
 			trait = studying_magic
-		}
-		NOT = {
-			trait = crafting_magic_item
 		}
 	}
 
@@ -2669,7 +2631,6 @@ character_event = {
 		trigger = {
 			religion = sigmarite
 		}
-
 	}
 	desc = {
 		text = EVTDESCBslunacy34
@@ -2678,7 +2639,6 @@ character_event = {
 				religion = sigmarite
 			}
 		}
-
 	}
 	picture = GFX_evt_lunatic
 
@@ -2931,7 +2891,6 @@ character_event = {
 }
 
 # VAMPIRE LUNACY
-
 # As they age, Vampires naturally gain lunacy
 character_event = {
 	id = slunacy.38
@@ -2984,7 +2943,6 @@ character_event = {
 				trait = vampire_strigoi_visible
 				trait = vampire_strigoi_hidden
 			}
-
 		}
  		modifier = {
 			factor = 0.8
@@ -2992,7 +2950,6 @@ character_event = {
 				trait = vampire_necrarch_visible
 				trait = vampire_necrarch_hidden
 			}
-
 		}
  		modifier = {
 			factor = 0.9
@@ -3000,7 +2957,6 @@ character_event = {
 				graphical_culture = lahmianeverkidgfx
 				graphical_culture = carsteineverkidgfx
 			}
-
 		}
 	}
 
@@ -3015,7 +2971,6 @@ character_event = {
  					NOT = {
 						trait = creature_amazon
 					}
-
 				}
 				modifier = {
  					factor = 0.7
@@ -3119,7 +3074,6 @@ character_event = {
 						trait = vampire_strigoi_visible
 						trait = vampire_strigoi_hidden
 					}
-
 				}
  				modifier = {
 					factor = 0.9
@@ -3127,7 +3081,6 @@ character_event = {
 						trait = vampire_necrarch_visible
 						trait = vampire_necrarch_hidden
 					}
-
 				}
  				modifier = {
 					factor = 0.4
@@ -3135,13 +3088,13 @@ character_event = {
 						graphical_culture = lahmianeverkidgfx
 						graphical_culture = carsteineverkidgfx
 					}
-
 				}
 
 			}
 			70 = {
 				change_variable = {
-					which = "lunatic_counter" value = 1
+					which = "lunatic_counter"
+					value = 1
 				}
 				if = {
 					limit = {
@@ -3151,9 +3104,9 @@ character_event = {
 						}
 					}
 					change_variable = {
-						which = "lunatic_counter" value = 1
+						which = "lunatic_counter"
+						value = 1
 					}
-
 				}
 				if = {
 					limit = {
@@ -3161,7 +3114,8 @@ character_event = {
 							trait = lunatic_3
 						}
 						check_variable = {
-							which = "lunatic_counter" value = 20
+							which = "lunatic_counter"
+							value = 20
 						}
 					}
 					remove_trait = lunatic_1
@@ -3178,7 +3132,8 @@ character_event = {
 							trait = lunatic_2
 						}
 						check_variable = {
-							which = "lunatic_counter" value = 10
+							which = "lunatic_counter"
+							value = 10
 						}
 					}
 					remove_trait = lunatic_1
@@ -3195,7 +3150,8 @@ character_event = {
 							trait = lunatic_1
 						}
 						check_variable = {
-							which = "lunatic_counter" value = 5
+							which = "lunatic_counter"
+							value = 5
 						}
 					}
 					remove_trait = lunatic_3
@@ -3678,7 +3634,6 @@ character_event = {
 						graphical_culture = lahmianeverkidgfx
 						graphical_culture = carsteineverkidgfx
 					}
-
 				}
 				modifier = {
 					factor = 1.25
@@ -3749,10 +3704,9 @@ character_event = {
 						has_province_modifier = warpdust_traces
 					}
 				}
-
-			} # closes30
-		} # closesrandomlist
-	} # closesimmediate
+			}
+		}
+	}
 }
 
 # Maniac - Gets Everchild Syndrome
@@ -3806,7 +3760,6 @@ character_event = {
 				NOT = {
 					religion_group = horned_rat_god_group
 				}
-
 			}
 			piety = -400
 		}
@@ -3827,7 +3780,6 @@ character_event = {
 							}
 						}
 					}
-
 				}
 				opinion = {
 					modifier = opinion_lunatic_w
@@ -3852,7 +3804,6 @@ character_event = {
 							}
 						}
 					}
-
 				}
 				opinion = {
 					modifier = opinion_lunatic_w
@@ -3862,10 +3813,12 @@ character_event = {
 			}
 		}
 		change_variable = {
-			which = "lunatic_counter" value = 2
+			which = "lunatic_counter"
+			value = 2
 		}
 		add_character_modifier = {
-			name = everchild_syndrome duration = -1
+			name = everchild_syndrome
+			duration = -1
 		}
 		hidden_tooltip = {
 			character_event = {
@@ -3926,7 +3879,6 @@ character_event = {
 				NOT = {
 					religion_group = horned_rat_god_group
 				}
-
 			}
 			piety = -400
 		}
@@ -3947,7 +3899,6 @@ character_event = {
 							}
 						}
 					}
-
 				}
 				opinion = {
 					modifier = opinion_lunatic_w
@@ -3972,7 +3923,6 @@ character_event = {
 							}
 						}
 					}
-
 				}
 				opinion = {
 					modifier = opinion_lunatic_w
@@ -3982,10 +3932,12 @@ character_event = {
 			}
 		}
 		change_variable = {
-			which = "lunatic_counter" value = 3
+			which = "lunatic_counter"
+			value = 3
 		}
 		add_character_modifier = {
-			name = exquisite_agonies duration = -1
+			name = exquisite_agonies
+			duration = -1
 		}
 		hidden_tooltip = {
 			character_event = {
@@ -4046,7 +3998,6 @@ character_event = {
 				NOT = {
 					religion_group = horned_rat_god_group
 				}
-
 			}
 			piety = -400
 		}
@@ -4067,14 +4018,12 @@ character_event = {
 							}
 						}
 					}
-
 				}
 				opinion = {
 					modifier = opinion_lunatic_w
 					who = ROOT
 					years = 10
 				}
-
 			}
 			any_courtier = {
 				limit = {
@@ -4093,7 +4042,6 @@ character_event = {
 							}
 						}
 					}
-
 				}
 				opinion = {
 					modifier = opinion_lunatic_w
@@ -4103,10 +4051,12 @@ character_event = {
 			}
 		}
 		change_variable = {
-			which = "lunatic_counter" value = 3
+			which = "lunatic_counter"
+			value = 3
 		}
 		add_character_modifier = {
-			name = heart_of_melancholy duration = -1
+			name = heart_of_melancholy
+			duration = -1
 		}
 		hidden_tooltip = {
 			character_event = {
@@ -4313,29 +4263,21 @@ character_event = {
 		}
 		hidden_tooltip = {
 			FROM = {
- 				set_variable = {
-					which = khornefavor value = 0
+				set_variable = {
+					which = "khorne_favor"
+					value = 0
 				}
 				set_variable = {
-					which = nurglefavor value = 0
+					which = "nurgle_favor"
+					value = 0
 				}
 				set_variable = {
-					which = slaaneshfavor value = 0
+					which = "slaanesh_favor"
+					value = 0
 				}
 				set_variable = {
-					which = tzeentchfavor value = 0
-				}
-				set_variable = {
-					which = "khorne_favor" value = 0
-				}
-				set_variable = {
-					which = "nurgle_favor" value = 0
-				}
-				set_variable = {
-					which = "slaanesh_favor" value = 0
-				}
-				set_variable = {
-					which = "tzeentch_favor" value = 0
+					which = "tzeentch_favor"
+					value = 0
 				}
 				clr_character_flag = hidden_tzeentch_cultist3
 				clr_character_flag = hidden_tzeentch_cultist2
@@ -4410,8 +4352,6 @@ character_event = {
 			FROM = {
 				add_trait = vampire_jade_visible
 				set_graphical_culture = generic_vampire
-			}
-			FROM = {
 				religion = vampiric
 			}
 		}
@@ -4422,8 +4362,6 @@ character_event = {
 			FROM = {
 				add_trait = vampire_mahtmasi_visible
 				set_graphical_culture = generic_vampire
-			}
-			FROM = {
 				religion = vampiric
 			}
 		}
@@ -4875,7 +4813,6 @@ character_event = {
 						id = slunacy.46003 days = 2 random = 2
 					}
 				}
-
 			}
 
 		}
@@ -4906,7 +4843,6 @@ character_event = {
 						id = slunacy.46007 days = 2 random = 2
 					}
 				}
-
 			}
 
 		}
@@ -4937,7 +4873,6 @@ character_event = {
 						id = slunacy.46011 days = 2 random = 2
 					}
 				}
-
 			}
 
 		}
@@ -5125,7 +5060,8 @@ character_event = {
 			random_list = {
 				70 = {
 					change_variable = {
-						which = "lunatic_counter" value = 2
+						which = "lunatic_counter"
+						value = 2
 					}
 				}
 				30 = {
@@ -5137,7 +5073,6 @@ character_event = {
 						}
 					}
 				}
-
 			}
 
 		}

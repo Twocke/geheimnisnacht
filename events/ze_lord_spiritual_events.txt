@@ -1,7 +1,6 @@
 
 
 # ZE Lord Spiritual Events
-
 # ID ZE.5000-ZE.5999
 
 # Written by Tobias Bodlund
@@ -64,7 +63,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			job_spiritual = {
@@ -189,7 +188,7 @@ letter_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			wealth = 1000
@@ -273,7 +272,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			job_spiritual = {
@@ -547,7 +546,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 1.5
 			trait = deceitful
@@ -636,7 +635,7 @@ letter_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 4
 			job_spiritual = {

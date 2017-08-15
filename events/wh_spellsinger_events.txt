@@ -1,23 +1,18 @@
 namespace = spellsinger
 
 # spellsinger.1 Spellsinger wanders in court
-
 # spellsinger.2 - Ward, wants to become a apprentice.
 
 # spellsinger.3 - Guardian, Child wants to be a spellsinger.
-
 # spellsinger.4 - Too slow, won't become spellsinger.
 
 # spellsinger.7 - Child notification, refused to be an apprentice.
-
 # spellsinger.8 - Apprentice Studying Events.
 
 # spellsinger.16 - Accepted Apprenticeship (Ward Notification)
-
 # spellsinger.17 - Becoming Spellsinger.
 
 # spellsinger.18 - Guardian decides if apprentice ready
-
 # spellsinger.100 - Darkweaver (no Avatar) falls prey to the corruption
 
 # A Spellsinger wanders to court (five yearly event)
@@ -164,7 +159,7 @@ character_event = {
 					}
 				}
 			}
-		} # closes hiddentooltip
+		}
 	}
 
 	option = {
@@ -422,8 +417,9 @@ character_event = {
 			}
 		}
 	}
+
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 10
 			OR = {
@@ -970,13 +966,15 @@ character_event = {
 			modifier = {
 				factor = 1.2
 				opinion = {
-					who = FROM value = 15
+					who = FROM
+					value = 15
 				}
 			}
 			modifier = {
 				factor = 1.2
 				opinion = {
-					who = FROM value = 5
+					who = FROM
+					value = 5
 				}
 			}
 			modifier = {
@@ -1141,14 +1139,16 @@ character_event = {
 			modifier = {
 				factor = 0.1
 				opinion = {
-					who = FROM value = 25
+					who = FROM
+					value = 25
 				}
 			}
 			modifier = {
 				factor = 1.3
 				NOT = {
 					opinion = {
-						who = FROM value = -20
+						who = FROM
+						value = -20
 					}
 				}
 			}
@@ -1156,7 +1156,8 @@ character_event = {
 				factor = 1.3
 				NOT = {
 					opinion = {
-						who = FROM value = -40
+						who = FROM
+						value = -40
 					}
 				}
 			}
@@ -1164,7 +1165,8 @@ character_event = {
 				factor = 1.3
 				NOT = {
 					opinion = {
-						who = FROM value = -60
+						who = FROM
+						value = -60
 					}
 				}
 			}
@@ -1172,7 +1174,8 @@ character_event = {
 				factor = 1.3
 				NOT = {
 					opinion = {
-						who = FROM value = -80
+						who = FROM
+						value = -80
 					}
 				}
 			}
@@ -1180,7 +1183,8 @@ character_event = {
 				factor = 1.5
 				NOT = {
 					opinion = {
-						who = FROM value = -99
+						who = FROM
+						value = -99
 					}
 				}
 			}
@@ -1507,7 +1511,6 @@ character_event = {
 		NOT = {
 			trait = avatar_kurnous
 		}
-
 	}
 
 	option = {
@@ -1544,7 +1547,8 @@ character_event = {
 		random = {
 			chance = 30
 			change_variable = {
-				which = "lunatic_counter" value = 2
+				which = "lunatic_counter"
+				value = 2
 			}
 			hidden_tooltip = {
 				character_event = {
@@ -1676,7 +1680,8 @@ character_event = {
 		random = {
 			chance = 50
 			change_variable = {
-				which = "lunatic_counter" value = 2
+				which = "lunatic_counter"
+				value = 2
 			}
 			hidden_tooltip = {
 				character_event = {

@@ -121,7 +121,6 @@ character_event = {
 						factor = 2
 						has_character_modifier = magic_power_4
 					}
-
 				}
 				50 = {
 					character_event = {
@@ -157,191 +156,144 @@ character_event = {
 }
 
 # INDEX
-
 # 1110 pregnancy does not look easy
 
 # 1111 woman becomes drunkard
-
 # 1112 pregnancy still not looking easy
 
 # 1113 woman becomes gluttonous
-
 # 1114 woman becomes wroth
 
 # 1115 woman becomes stressed
-
 # 1116 woman becomes depressed
 
 # 1117 aftermath: recover from drunkedness?
-
 # 1118 aftermath: recover from gluttony?
 
 # 1119 aftermath: recover from wroth?
-
 # 1120 aftermath: recover from depression?
 
 # 1121 spouse complains about gluttony
-
 # 1122 wife receives complaint about gluttony
 
 # 1123 spouse complains about drunkedness
-
 # 1124 wife receives complaint about drunkedness
 
 # 1125 spouse complains about wroth
-
 # 1126 wife receives complaint about wroth
 
 # 1127 spouse complains about depression
-
 # 1128 wife receives complaint about depression
 
 # 1129 spouse notified wife abandoned gluttony
-
 # 1130 spouse notified wife remained glutton
 
 # 1131 spouse notified wife sober
-
 # 1132 spouse notified wife abandoned wroth
 
 # 1133 spouse wounded by wroth wife
-
 # 1134 spouse notified wife abandoned depression
 
 # 1135 spouse notified wife remained depressed
-
 # 1136 troubled pregnancy begins
 
 # 1137 Umbrella1
-
 # 1138 dream - Nurgle
 
 # 1139 dream - Slaanesh
-
 # 1140 dream - Tzeentch
 
 # 1141 dream - Khorne
-
 # 1145 pregnant calls for help
 
 # 1146 good doctor
-
 # 1147 bad doctor
 
 # 1148 witchdoctor
-
 # 1149 priest
 
 # 1150 midwives
-
 # 1151 witches
 
 # 1152 little alchemist
-
 # 1153 naughty regent, what do you do?
 
 # 1154 umbrella2
-
 # 1155 regent poisons
 
 # 1156 regent is notified of poisoning
-
 # 1157 regent fails to poison
 
 # 1158 regent is imprisoned
-
 # 1159 regent is killed
 
 # 1160 regent smothers
-
 # 1161 regent is notified of smothering
 
 # 1162 regent fails to smother
-
 # 1163 regent is imprisoned
 
 # 1164 regent is killed
-
 # 1165 regent stabs
 
 # 1166 regent is notified of stabbing
-
 # 1167 regent fails to stab
 
 # 1168 regent is imprisoned
-
 # 1169 regent is killed
 
 # 1170 asthma
-
 # 1171 vomiting
 
 # 1172 hair and rashes
-
 # 1173 metalmouth
 
 # 1174 fever and sweath
-
 # 1175 amnesia
 
 # 1176 panic attack
-
 # 1177 death
 
 # 1178 undernourishment
-
 # 1179 epilectic episode
 
 # 1180 blood and cramps
-
 # 1181 teeth hurting
 
 # 1182 insomnia
-
 # 1183 hallucinations
 
 # 1184 walking off
-
 # 1185 healing before pregnancy
 
 # 1186 recovery on pregnancy
-
 # 1187 baby vision event
 
 # 1188 mother/father notified of miracolous birth
-
 # 1189 mother/father notified of ominous birth - incorporate into previous
 
 # 1190 fever after pregnancy
-
 # 1191 hair loss after pregnancy
 
 # 1192 blood loss after pregnancy
-
 # 1193 complete recovery after pregnancy
 
 # 1194 partial recovery after pregnancy
-
 # 1195 infirmity after pregnancy
 
 # 1196 death after pregnancy
-
 # 1197 spouse notified of full recovery
 
 # 1198 spouse notified of partial recovery
-
 # 1199 spouse notified of infirmity
 
 # 1200 spouse notified of death
-
 # 1201 spouse notified of troubled pregnancy (start)
 
 # 1202
-
 # 1203
 
 # 1204
-
 # Pregnant EVENTS
 
 # Pregnant character: becomes stressed
@@ -576,7 +528,6 @@ character_event = {
 							factor = 1.25
 							trait = tall
 						}
-
 					}
 					30 = {
 						modifier = {
@@ -758,7 +709,6 @@ character_event = {
 							factor = 1.25
 							trait = tall
 						}
-
 					}
 					37 = {
 						modifier = {
@@ -847,7 +797,6 @@ character_event = {
 							factor = 1.25
 							trait = tall
 						}
-
 					}
 					28 = {
 						modifier = {
@@ -936,7 +885,6 @@ character_event = {
 							factor = 1.25
 							trait = tall
 						}
-
 					}
 					30 = {
 						modifier = {
@@ -1022,7 +970,6 @@ character_event = {
 							factor = 1.25
 							trait = tall
 						}
-
 					}
 					20 = {
 						modifier = {
@@ -1401,7 +1348,6 @@ character_event = {
 }
 
 # Spouse responses (triggered)
-
 # Spouse complains about fat wife
 character_event = {
 	id = sins.1121
@@ -1725,7 +1671,6 @@ character_event = {
 					id = sins.1131 days = 12
 				}
 			}
-
 		}
 		ai_chance = {
 			factor = 50
@@ -1915,7 +1860,6 @@ character_event = {
 					id = sins.1132 days = 12
 				}
 			}
-
 		}
 		ai_chance = {
 			factor = 50
@@ -2282,7 +2226,6 @@ character_event = {
 }
 
 # Troubled Pregnancy chain
-
 # Event comes 3 months after impregnation
 character_event = {
 	# The pregnancy isn't going well
@@ -2453,7 +2396,7 @@ character_event = {
 						trait = creature_elf
 					}
 				}
-			}	# closes visions
+			}
 			25 = {
 				# call for help
 				FROM = {
@@ -2523,7 +2466,8 @@ character_event = {
 							has_minor_title = title_regent
 							NOT = {
 								opinion = {
-									who = liege value = -15
+									who = liege
+									value = -15
 								}
 							}
 						}
@@ -2536,7 +2480,8 @@ character_event = {
 							has_minor_title = title_regent
 							NOT = {
 								opinion = {
-									who = liege value = -20
+									who = liege
+									value = -20
 								}
 							}
 						}
@@ -2549,7 +2494,8 @@ character_event = {
 							has_minor_title = title_regent
 							NOT = {
 								opinion = {
-									who = liege value = -30
+									who = liege
+									value = -30
 								}
 							}
 						}
@@ -2562,7 +2508,8 @@ character_event = {
 							has_minor_title = title_regent
 							NOT = {
 								opinion = {
-									who = liege value = -40
+									who = liege
+									value = -40
 								}
 							}
 						}
@@ -2575,7 +2522,8 @@ character_event = {
 							has_minor_title = title_regent
 							NOT = {
 								opinion = {
-									who = liege value = -50
+									who = liege
+									value = -50
 								}
 							}
 						}
@@ -2588,7 +2536,8 @@ character_event = {
 							has_minor_title = title_regent
 							NOT = {
 								opinion = {
-									who = liege value = -60
+									who = liege
+									value = -60
 								}
 							}
 						}
@@ -2601,7 +2550,8 @@ character_event = {
 							has_minor_title = title_regent
 							NOT = {
 								opinion = {
-									who = liege value = -70
+									who = liege
+									value = -70
 								}
 							}
 						}
@@ -2614,7 +2564,8 @@ character_event = {
 							has_minor_title = title_regent
 							NOT = {
 								opinion = {
-									who = liege value = -80
+									who = liege
+									value = -80
 								}
 							}
 						}
@@ -2627,7 +2578,8 @@ character_event = {
 							has_minor_title = title_regent
 							NOT = {
 								opinion = {
-									who = liege value = -90
+									who = liege
+									value = -90
 								}
 							}
 						}
@@ -2640,7 +2592,8 @@ character_event = {
 							has_minor_title = title_regent
 							NOT = {
 								opinion = {
-									who = liege value = -99
+									who = liege
+									value = -99
 								}
 							}
 						}
@@ -2736,7 +2689,7 @@ character_event = {
 						}
 					}
 				}
-			}	# closes regent
+			}
 			25 = {
 				# the pain
 				random_list = {
@@ -2839,13 +2792,12 @@ character_event = {
 						trait = weak
 					}
 				}
-			} # closes the pain
-		} # closes big one
-	}	# closes immediate
+			}
+		}
+	}
 }
 
 # FIRST ROW: VISIONS# VISIONS
-
 # Seeing Nurgle
 character_event = {
 	id = sins.1138
@@ -3690,7 +3642,6 @@ character_event = {
 }
 
 # FIRST ROW: NAUGHTY REGENT# NAUGHTY REGENT
-
 # So, how do we do it?
 character_event = {
 	id = sins.1153
@@ -3879,7 +3830,7 @@ character_event = {
 						trait = diligent
 					}
 				}
-			}	# closespoison success
+			}
 			40 = {
 				# poison failure
 				FROM = {
@@ -3944,7 +3895,7 @@ character_event = {
 						trait = content
 					}
 				}
-			}	# closespoison failure
+			}
 			50 = {
 				# pillow success
 				FROM = {
@@ -4003,7 +3954,7 @@ character_event = {
 						trait = master_warrior
 					}
 				}
-			}	# closespillowsuccess
+			}
 			50 = {
 				# pillow failure
 				FROM = {
@@ -4050,7 +4001,7 @@ character_event = {
 						trait = maimed
 					}
 				}
-			}	# closespillowfailure
+			}
 			40 = {
 				# direct success
 				FROM = {
@@ -4109,7 +4060,7 @@ character_event = {
 						trait = master_warrior
 					}
 				}
-			}	# closesstabsuccess
+			}
 			60 = {
 				# direct failure
 				FROM = {
@@ -4156,9 +4107,9 @@ character_event = {
 						trait = maimed
 					}
 				}
-			}	# closesstabfailure
-		}	# closes random list
-	} # closes immediate
+			}
+		}
+	}
 }
 
 # woman is poisoned
@@ -4813,7 +4764,6 @@ character_event = {
 }
 
 # FIRST ROW: FLAVOUR INJURY# FLAVOUR INJURY
-
 # asthma
 character_event = {
 	id = sins.1170
@@ -5365,7 +5315,6 @@ character_event = {
 }
 
 # SECOND ROW: FLAVOUR INJURY# FLAVOUR INJURY
-
 # undernourishment
 character_event = {
 	id = sins.1178
@@ -5514,7 +5463,6 @@ character_event = {
 }
 
 # ON BIRTH ROW# ON BIRTH
-
 # mother recovers after successful pregnancy
 character_event = {
 	id = sins.1186
@@ -5776,7 +5724,6 @@ character_event = {
 }
 
 # POST BIRTH TROUBLED PREGNANCY OUTCOMES
-
 # post-fever
 character_event = {
 	id = sins.1190
@@ -6083,7 +6030,6 @@ character_event = {
 }
 
 # MISSING REGENT WARNING
-
 # pregnant ruler notified she hasn't appointed a regent
 character_event = {
 	id = sins.1202
@@ -6167,7 +6113,8 @@ character_event = {
 			modifier = {
 				factor = 2
 				opinion = {
-					who = spouse value = 60
+					who = spouse
+					value = 60
 				}
 			}
 		}
@@ -6229,7 +6176,8 @@ character_event = {
 			modifier = {
 				factor = 2
 				opinion = {
-					who = spouse value = 60
+					who = spouse
+					value = 60
 				}
 			}
 		}
@@ -6305,7 +6253,8 @@ character_event = {
 			modifier = {
 				factor = 2
 				opinion = {
-					who = spouse value = 60
+					who = spouse
+					value = 60
 				}
 			}
 		}
@@ -6362,7 +6311,8 @@ character_event = {
 				factor = 2
 				NOT = {
 					opinion = {
-						who = spouse value = 20
+						who = spouse
+						value = 20
 					}
 				}
 			}
@@ -6669,7 +6619,8 @@ character_event = {
 			modifier = {
 				factor = 2
 				opinion = {
-					who = liege value = 75
+					who = liege
+					value = 75
 				}
 			}
 		}
@@ -6731,7 +6682,8 @@ character_event = {
 			modifier = {
 				factor = 2
 				opinion = {
-					who = liege value = 75
+					who = liege
+					value = 75
 				}
 			}
 		}
@@ -6807,7 +6759,8 @@ character_event = {
 			modifier = {
 				factor = 2
 				opinion = {
-					who = liege value = 75
+					who = liege
+					value = 75
 				}
 			}
 		}
@@ -6851,7 +6804,8 @@ character_event = {
 				factor = 2
 				NOT = {
 					opinion = {
-						who = liege value = 35
+						who = liege
+						value = 35
 					}
 				}
 			}

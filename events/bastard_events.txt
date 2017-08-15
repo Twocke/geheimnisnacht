@@ -1,19 +1,15 @@
 
 
 # Events for Bastards
-
 # ID 76000 - 76999 is reserved
 
 # Written by Sara Wendel-Örtqvist
-
 # @modified_by: Pietrko
 
 # @version: 0.1.1
-
 # @modifed_on: 0.1.2
 
 # @description Events for bastards do not require much warhammer changes
-
 # Irresistable young wench
 character_event = {
 	id = 76000
@@ -39,7 +35,7 @@ character_event = {
 		fertility = 0.6
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			trait = lustful
@@ -160,7 +156,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 	}
 
 	option = {
@@ -412,7 +408,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 	}
 
 	option = {
@@ -483,7 +479,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 	}
 
 	option = {
@@ -585,7 +581,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 	}
 
 	option = {
@@ -723,7 +719,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 	}
 
 	option = {
@@ -914,7 +910,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 	}
 
 	option = {
@@ -951,7 +947,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 	}
 
 	option = {
@@ -1099,7 +1095,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 	}
 
 	option = {

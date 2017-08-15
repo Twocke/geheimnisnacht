@@ -3,7 +3,6 @@
 namespace = DR_misc
 
 # Estalia & Tilea
-
 # Eternal Empire restored
 narrative_event = {
 	id = DR_misc.1
@@ -69,7 +68,6 @@ character_event = {
 }
 
 # MYRMIDIAN HIGH TEMPLE GRANTING
-
 # Magritta
 
 # Magritta Re-Established on_yearly_pulse
@@ -176,7 +174,6 @@ character_event = {
 }
 
 # Remas
-
 # Remas Re-Established on_yearly_pulse
 character_event = {
 	id = DR_misc.202
@@ -284,7 +281,6 @@ character_event = {
 }
 
 # Miyan Eat People
-
 # Miyan cannibalize prisoner ( Jailor )
 character_event = {
 	id = DR_misc.500
@@ -408,7 +404,6 @@ character_event = {
 }
 
 # Other Stuff
-
 # Win a war ( Ambiton )
 character_event = {
 	id = DR_misc.1000
@@ -958,7 +953,7 @@ character_event = {
 	}
 
 	option = {
-		name = "OK"
+		name = OK
 	}
 }
 
@@ -1040,7 +1035,7 @@ character_event = {
 	desc = EVTDESC_DR_misc_albion_mists_sink_ship
 	ai = no
 	is_triggered_only = yes
-	
+
 	trigger = {
 		NOT = {
 			has_character_flag = wh_misc.1002_block
@@ -1118,11 +1113,9 @@ narrative_event = {
 }
 
 # ADAPTED FROM "Elective Leagues" BY JRUDERMAN http://steamcommunity.com/sharedfiles/filedetails/?id = 637603578&searchtext =
-
 # ALL CREDIT TO HIM
 
 # Border Princes Leagues 1030-
-
 # AI ruler tries to create a new league
 character_event = {
 	id = DR_misc.1030
@@ -1171,7 +1164,8 @@ character_event = {
 		# }
 		# }
 		set_variable = {
-			which = num_cofounders value = 0
+			which = num_cofounders
+			value = 0
 		}
 		character_event = {
 			id = DR_misc.1032
@@ -1209,7 +1203,8 @@ character_event = {
 			}
 			ROOT = {
 				change_variable = {
-					which = num_cofounders value = 1
+					which = num_cofounders
+					value = 1
 				}
 			}
 			reverse_opinion = {
@@ -1225,27 +1220,21 @@ character_event = {
 }
 
 # Bounce event
-
 # character_event = {
 
 # id = DR_misc.1033
-
 # is_triggered_only = yes
 
 # hide_window = yes
-
 # immediate = {
 
 # FROM = {
-
 # character_event = { id = DR_misc.1032 }
 
 # }
-
 # }
 
 # }
-
 # ROOT has counted their cofounders and may be able to create a new elective realm
 character_event = {
 	id = DR_misc.1035
@@ -1257,7 +1246,8 @@ character_event = {
 		trigger = {
 			tier = COUNT
 			check_variable = {
-				which = num_cofounders value = 1
+				which = num_cofounders
+				value = 1
 			}
 		}
 		name = ElectiveLeagues_event_35_DUCHY
@@ -1284,7 +1274,8 @@ character_event = {
 		trigger = {
 			tier = DUKE
 			check_variable = {
-				which = num_cofounders value = 1
+				which = num_cofounders
+				value = 1
 			}
 		}
 		name = ElectiveLeagues_event_35_KINGDOM
@@ -1311,7 +1302,8 @@ character_event = {
 		trigger = {
 			tier = KING
 			check_variable = {
-				which = num_cofounders value = 1
+				which = num_cofounders
+				value = 1
 			}
 		}
 		name = ElectiveLeagues_event_35_EMPIRE
@@ -1401,11 +1393,9 @@ character_event = {
 }
 
 # ROOT is asked by FROM to join an existing elective league
-
 # Triggered by AI event DR_misc.1040
 
 # Player decision vassalize_new_elector does NOT use this event because FROMFROM and interaction description
-
 # Todo: add option to players to decline, a persistent opinion modifier for having declined, and a way to undo it...
 character_event = {
 	id = DR_misc.1046
@@ -1420,23 +1410,18 @@ character_event = {
 }
 
 # For testing |wipe_council_effect|
-
 # character_event = {
 
 # id = DR_misc.1060
-
 # is_triggered_only = yes
 
 # hide_window = yes
-
 # immediate = {
 
 # wipe_council_effect = yes
-
 # }
 
 # }
-
 # Liege: fund expedition?
 character_event = {
 	id = DR_misc.1100
@@ -1527,7 +1512,6 @@ character_event = {
 						location = {
 							culture_group = skaven_group
 						}
-
 					}
 				}
 				FROMFROM = {
@@ -1536,7 +1520,6 @@ character_event = {
 						culture = ROOT
 					}
 				}
-
 			}
 		}
 		hidden_tooltip = {
@@ -1555,10 +1538,8 @@ character_event = {
 						religion = atruhayid
 
 					}
-
 				}
 			}
-
 		}
 		hidden_tooltip = {
 			if = {
@@ -1576,10 +1557,8 @@ character_event = {
 						religion = vampiric
 
 					}
-
 				}
 			}
-
 		}
 		hidden_tooltip = {
 			if = {
@@ -2341,10 +2320,8 @@ character_event = {
 						religion = atruhayid
 
 					}
-
 				}
 			}
-
 		}
 		ai_chance = {
 			factor = 1
@@ -2620,7 +2597,6 @@ character_event = {
 }
 
 # Atruhayid festival - Parade of the Idol
-
 # Invite vassals to festival
 character_event = {
 	id = DR_misc.1500
@@ -2677,19 +2653,22 @@ letter_event = {
 			modifier = {
 				factor = 2
 				opinion = {
-					who = from value = -30
+					who = from
+					value = -30
 				}
 			}
 			modifier = {
 				factor = 5
 				opinion = {
-					who = from value = -15
+					who = from
+					value = -15
 				}
 			}
 			modifier = {
 				factor = 5
 				opinion = {
-					who = from value = 0
+					who = from
+					value = 0
 				}
 			}
 		}
@@ -2729,7 +2708,8 @@ letter_event = {
 			modifier = {
 				factor = 0
 				opinion = {
-					who = FROM value = 25
+					who = FROM
+					value = 25
 				}
 				NOT = {
 					trait = in_hiding

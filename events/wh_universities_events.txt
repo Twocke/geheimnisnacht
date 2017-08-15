@@ -1,7 +1,6 @@
 namespace = DR_universities
 
 # Standard Universities
-
 # ( Humans only )
 
 # Child - Wants to study in university
@@ -385,7 +384,6 @@ character_event = {
 					region = world_old_world_border_princes
 				}
 			}
-
 		}
 		liege = {
 			character_event = {
@@ -2207,7 +2205,6 @@ character_event = {
 }
 
 # Arabyan scholarship addition
-
 # Child - Child returns better educated
 character_event = {
 	id = DR_universities.33
@@ -2286,7 +2283,6 @@ character_event = {
 			10 = {
 				add_trait = lore_heavens
 			}
-
 		}
 		clr_character_flag = studying_educ_university
 	}
@@ -2423,7 +2419,6 @@ character_event = {
 }
 
 # Engineers and Engineering Schools
-
 # Engineer title gained for the Master Engineer ( on_actions )
 character_event = {
 	id = DR_universities.131

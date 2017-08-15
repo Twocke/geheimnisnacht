@@ -2,27 +2,21 @@
 namespace = asurdebate
 
 # asurdebate.11000 is challenged
-
 # asurdebate.11001 debate starts
 
 # asurdebate.11002 debate rejected
-
 # asurdebate.11003 hidden event determining scopes
 
 # asurdebate.11004 hidden ping to opponent
-
 # asurdebate.11005 magic debate event (hidden)
 
 # asurdebate.11006 winner event
-
 # asurdebate.11007 loser event
 
 # asurdebate.110075 remove isolationist
-
 # asurdebate.11008 remove interventionist
 
 # asurdebate.11009 no consensus reached - a new rivalry is born
-
 # Debates
 
 # Get challenged
@@ -536,10 +530,10 @@ character_event = {
 					long_character_event = {
 						id = asurdebate.11006
 					}
-				}	# closesFROM
-			}	# closes200
-		}	# closesrandomlist
-	}	# closeseffect
+				}
+			}
+		}
+	}
 }
 
 # Winner event
@@ -894,15 +888,12 @@ character_event = {
 }
 
 # Private Meeting (by Isolationists and between rulers only; possibly spending prestige to replay on loss)
-
 # Options:
 
 # Discuss possibility of marriage/divorce (even with already married rulers)
-
 # Woo for Favor
 
 # Woo for Gift (gold)
-
 # Character receives invitation
 letter_event = {
 	id = asurdebate.13
@@ -1063,7 +1054,6 @@ letter_event = {
 					}
 				}
 			}
-
 		}
 		if = {
 			limit = {
@@ -1252,7 +1242,7 @@ long_character_event = {
 					wealth = -500
 				}
 			}
-		} # closesAichance
+		}
 	}
 
 	option = {
@@ -1289,7 +1279,7 @@ long_character_event = {
 				}
 				trait = isolationist_elf
 			}
-		} # closesAichance
+		}
 	}
 
 	option = {
@@ -1322,7 +1312,7 @@ long_character_event = {
 				}
 				trait = isolationist_elf
 			}
-		} # closesAichance
+		}
 	}
 
 	option = {
@@ -1371,7 +1361,7 @@ long_character_event = {
 				factor = 1.5
 				trait = cruel
 			}
-		} # closesAichance
+		}
 	}
 
 	option = {
@@ -1497,7 +1487,7 @@ long_character_event = {
 				lower_tier_than = FROM
 				trait = ambitious
 			}
-		} # closesAichance
+		}
 	}
 
 	option = {
@@ -1659,7 +1649,7 @@ long_character_event = {
 					}
 				}
 			}
-		} # closesAichance
+		}
 	}
 }
 
@@ -1811,7 +1801,6 @@ long_character_event = {
 				has_character_flag = asking_500gold_flag
 			}
 		}
-
 	}
 	desc = {
 		text = EVTDESCBasurdebate14002
@@ -1820,7 +1809,6 @@ long_character_event = {
 				has_character_flag = asking_250gold_flag
 			}
 		}
-
 	}
 	desc = {
 		text = EVTDESCCasurdebate14002
@@ -1829,7 +1817,6 @@ long_character_event = {
 				has_character_flag = asking_100gold_flag
 			}
 		}
-
 	}
 	picture = GFX_evt_asur_arguing
 	border = GFX_event_long_frame_religion
@@ -2399,7 +2386,6 @@ long_character_event = {
 					has_character_flag = asking_500gold_flag
 				}
 			}
-
 		}
 	}
 
@@ -2661,7 +2647,6 @@ long_character_event = {
 				owes_favor_to = ROOT
 			}
 		}
-
 	}
 	desc = {
 		text = EVTDESCAasurdebate14004
@@ -2672,7 +2657,6 @@ long_character_event = {
 				}
 			}
 		}
-
 	}
 	picture = GFX_evt_asur_arguing
 	border = GFX_event_long_frame_religion
@@ -3338,7 +3322,6 @@ long_character_event = {
 				owes_favor_to = ROOT
 			}
 		}
-
 	}
 	desc = {
 		text = EVTDESCBasurdebate15
@@ -3349,7 +3332,6 @@ long_character_event = {
 				}
 			}
 		}
-
 	}
 	picture = GFX_evt_asur_arguing
 	border = GFX_event_long_frame_religion
@@ -3828,7 +3810,6 @@ long_character_event = {
 					wealth = 1
 				}
 			}
-
 		}
 	}
 
@@ -5542,7 +5523,6 @@ long_character_event = {
 					}
 				}
 			}
-
 		}
 	}
 
@@ -5946,7 +5926,6 @@ long_character_event = {
 				owes_favor_to = ROOT
 			}
 		}
-
 	}
 	desc = {
 		text = EVTDESCBasurdebate16003
@@ -5957,7 +5936,6 @@ long_character_event = {
 				}
 			}
 		}
-
 	}
 	picture = GFX_evt_asur_arguing
 	border = GFX_event_long_frame_religion
@@ -6966,7 +6944,6 @@ long_character_event = {
 					}
 				}
 			}
-
 		}
 	}
 
@@ -7337,7 +7314,6 @@ long_character_event = {
 				owes_favor_to = ROOT
 			}
 		}
-
 	}
 	desc = {
 		text = EVTDESCBasurdebate17003
@@ -7348,7 +7324,6 @@ long_character_event = {
 				}
 			}
 		}
-
 	}
 	picture = GFX_evt_asur_arguing
 	border = GFX_event_long_frame_religion
@@ -7958,7 +7933,7 @@ character_event = {
 					factor = 1.75
 					piety = 1000
 				}
-			} # closes45
+			}
 			55 = {
 				# opponent win
 				FROM = {
@@ -8335,9 +8310,9 @@ character_event = {
 						piety = 1000
 					}
 				}
-			}	# closes200
-		}	# closesrandomlist
-	}	# closeseffect
+			}
+		}
+	}
 }
 
 # Winner event

@@ -1,14 +1,12 @@
 
 
 # THE OLD GODS
-
 # - Various Events
 
 # Written by Henrik Eklund
 namespace = TOG
 
 # Berserker Events
-
 # Character becomes a Berserker in battle
 character_event = {
 	id = TOG.3000
@@ -42,7 +40,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 1.5
 			trait = brave
@@ -133,7 +131,7 @@ character_event = {
 		is_alive = yes
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 5
 			has_character_modifier = proving_bravery
@@ -329,7 +327,7 @@ character_event = {
 		is_alive = yes
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 5
 			has_character_modifier = proving_bravery
@@ -493,7 +491,7 @@ character_event = {
 		trait = berserker
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 1.5
 			trait = brave
@@ -737,7 +735,7 @@ character_event = {
 		trait = berserker
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 1.5
 			trait = brave
@@ -1003,7 +1001,6 @@ character_event = {
 }
 
 # Sejdr Events
-
 # Völva Appears
 character_event = {
 	id = TOG.3200
@@ -2314,7 +2311,6 @@ character_event = {
 }
 
 # Looting Events
-
 # 2 Axe
 character_event = {
 	id = TOG.3300

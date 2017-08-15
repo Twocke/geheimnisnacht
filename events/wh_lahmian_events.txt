@@ -334,7 +334,8 @@ character_event = {
 		clr_character_flag = return_home_lahmia
 		clr_character_flag = killed_wife_failure
 		set_variable = {
-			which = "seduction_progress" value = 0
+			which = "seduction_progress"
+			value = 0
 		}
 		if = {
 			limit = {
@@ -355,27 +356,21 @@ character_event = {
 }
 
 # mother is told that the daughter has arrived safely at her destination
-
 # character_event = {
 
 # id = lahmia.9
-
 # title = LAHMIA
 
 # desc = lahmia9desc # Your daughter sends word - she has reached her destination safely, and will begin infiltrating the court as ordered and bend its ruler to your will.
-
 # picture = "GFX_evt_shadow"
 
 # is_triggered_only = yes
-
 # option = {
 
 # name = lahmia9A # Mmm... good.
-
 # }
 
 # }
-
 # damsel in distress, our lahmian is being attacked by ruffians - the target gets the event
 character_event = {
 	id = lahmia.10
@@ -455,7 +450,8 @@ long_character_event = {
 			}
 		}
 		change_variable = {
-			which = "seduction_progress" value = 1
+			which = "seduction_progress"
+			value = 1
 		}
 	}
 
@@ -475,7 +471,8 @@ long_character_event = {
 		clr_character_flag = lahmia12failed
 		clr_character_flag = return_home_lahmia
 		set_variable = {
-			which = "seduction_progress" value = 0
+			which = "seduction_progress"
+			value = 0
 		}
 		if = {
 			limit = {
@@ -515,7 +512,8 @@ long_character_event = {
 		}
 		set_character_flag = lahmia12failed
 		change_variable = {
-			which = "seduction_progress" value = -1
+			which = "seduction_progress"
+			value = -1
 		}
 	}
 
@@ -535,7 +533,8 @@ long_character_event = {
 		clr_character_flag = lahmia12failed
 		clr_character_flag = return_home_lahmia
 		set_variable = {
-			which = "seduction_progress" value = 0
+			which = "seduction_progress"
+			value = 0
 		}
 		if = {
 			limit = {
@@ -639,7 +638,8 @@ character_event = {
 		clr_character_flag = lahmia12failed
 		clr_character_flag = return_home_lahmia
 		set_variable = {
-			which = "seduction_progress" value = 0
+			which = "seduction_progress"
+			value = 0
 		}
 		if = {
 			limit = {
@@ -924,7 +924,8 @@ long_character_event = {
 		clr_character_flag = lahmia12failed
 		clr_character_flag = return_home_lahmia
 		set_variable = {
-			which = "seduction_progress" value = 0
+			which = "seduction_progress"
+			value = 0
 		}
 		if = {
 			limit = {
@@ -1115,7 +1116,8 @@ long_character_event = {
 			}
 		} # lahmia.50 is the yearly maintenance event where you can ask for favors from your lovers
 		change_variable = {
-			which = "seduction_progress" value = 5
+			which = "seduction_progress"
+			value = 5
 		}
 		if = {
 			limit = {
@@ -1148,7 +1150,8 @@ long_character_event = {
 		clr_character_flag = lahmia12failed
 		clr_character_flag = return_home_lahmia
 		set_variable = {
-			which = "seduction_progress" value = 0
+			which = "seduction_progress"
+			value = 0
 		}
 		if = {
 			limit = {
@@ -1401,7 +1404,8 @@ character_event = {
 		clr_character_flag = lahmia12failed
 		clr_character_flag = return_home_lahmia
 		set_variable = {
-			which = "seduction_progress" value = 0
+			which = "seduction_progress"
+			value = 0
 		}
 		if = {
 			limit = {
@@ -1468,7 +1472,8 @@ character_event = {
 		clr_character_flag = lahmia12failed
 		clr_character_flag = return_home_lahmia
 		set_variable = {
-			which = "seduction_progress" value = 0
+			which = "seduction_progress"
+			value = 0
 		}
 		any_playable_ruler = {
 			limit = {
@@ -1493,7 +1498,8 @@ character_event = {
 		clr_character_flag = lahmia12failed
 		clr_character_flag = return_home_lahmia
 		set_variable = {
-			which = "seduction_progress" value = 0
+			which = "seduction_progress"
+			value = 0
 		}
 	}
 }
@@ -1717,7 +1723,8 @@ character_event = {
 		clr_character_flag = lahmia12failed
 		clr_character_flag = return_home_lahmia
 		set_variable = {
-			which = "seduction_progress" value = 0
+			which = "seduction_progress"
+			value = 0
 		}
 		if = {
 			limit = {
@@ -1785,7 +1792,8 @@ character_event = {
 		clr_character_flag = lahmia12failed
 		clr_character_flag = return_home_lahmia
 		set_variable = {
-			which = "seduction_progress" value = 0
+			which = "seduction_progress"
+			value = 0
 		}
 		any_playable_ruler = {
 			limit = {
@@ -1812,13 +1820,13 @@ character_event = {
 		clr_character_flag = lahmia12failed
 		clr_character_flag = return_home_lahmia
 		set_variable = {
-			which = "seduction_progress" value = 0
+			which = "seduction_progress"
+			value = 0
 		}
 	}
 }
 
 # NOW THE SEDUCTION EVENT AFTER THE WIFE HAS BEEN KILLED
-
 # lahmia seduces man after loss of his wife, target point of view
 character_event = {
 	id = lahmia.30
@@ -1990,7 +1998,8 @@ character_event = {
 		clr_character_flag = lahmia12failed
 		clr_character_flag = return_home_lahmia
 		set_variable = {
-			which = "seduction_progress" value = 0
+			which = "seduction_progress"
+			value = 0
 		}
 		if = {
 			limit = {
@@ -2011,7 +2020,6 @@ character_event = {
 }
 
 # NOW THE BREAK CHAIN FAILURE EVENTS
-
 # lahmia seduces man after loss of his wife, failure, lahmian point of view
 character_event = {
 	id = lahmia.32
@@ -2032,7 +2040,8 @@ character_event = {
 		clr_character_flag = lahmia12failed
 		clr_character_flag = return_home_lahmia
 		set_variable = {
-			which = "seduction_progress" value = 0
+			which = "seduction_progress"
+			value = 0
 		}
 		if = {
 			limit = {
@@ -2072,7 +2081,8 @@ character_event = {
 		clr_character_flag = lahmia12failed
 		clr_character_flag = return_home_lahmia
 		set_variable = {
-			which = "seduction_progress" value = 0
+			which = "seduction_progress"
+			value = 0
 		}
 		if = {
 			limit = {
@@ -2112,7 +2122,8 @@ character_event = {
 		clr_character_flag = lahmia12failed
 		clr_character_flag = return_home_lahmia
 		set_variable = {
-			which = "seduction_progress" value = 0
+			which = "seduction_progress"
+			value = 0
 		}
 		if = {
 			limit = {
@@ -2159,7 +2170,8 @@ long_character_event = {
 		clr_character_flag = lahmia12failed
 		clr_character_flag = return_home_lahmia
 		set_variable = {
-			which = "seduction_progress" value = 0
+			which = "seduction_progress"
+			value = 0
 		}
 	}
 
@@ -2179,7 +2191,8 @@ long_character_event = {
 				trait = beautiful
 			}
 			change_variable = {
-				which = "seduction_progress" value = 5
+				which = "seduction_progress"
+				value = 5
 			}
 		}
 		if = {
@@ -2190,7 +2203,8 @@ long_character_event = {
 				}
 			}
 			change_variable = {
-				which = "seduction_progress" value = 4
+				which = "seduction_progress"
+				value = 4
 			}
 		}
 		if = {
@@ -2201,7 +2215,8 @@ long_character_event = {
 				}
 			}
 			change_variable = {
-				which = "seduction_progress" value = 3
+				which = "seduction_progress"
+				value = 3
 			}
 		}
 		if = {
@@ -2212,7 +2227,8 @@ long_character_event = {
 				}
 			}
 			change_variable = {
-				which = "seduction_progress" value = 2
+				which = "seduction_progress"
+				value = 2
 			}
 		}
 		if = {
@@ -2223,7 +2239,8 @@ long_character_event = {
 				}
 			}
 			change_variable = {
-				which = "seduction_progress" value = 0.5
+				which = "seduction_progress"
+				value = 0.5
 			}
 		}
 		if = {
@@ -2268,7 +2285,8 @@ long_character_event = {
 				trait = beautiful
 			}
 			change_variable = {
-				which = "seduction_progress" value = 5
+				which = "seduction_progress"
+				value = 5
 			}
 		}
 		if = {
@@ -2279,7 +2297,8 @@ long_character_event = {
 				}
 			}
 			change_variable = {
-				which = "seduction_progress" value = 4
+				which = "seduction_progress"
+				value = 4
 			}
 		}
 		if = {
@@ -2290,7 +2309,8 @@ long_character_event = {
 				}
 			}
 			change_variable = {
-				which = "seduction_progress" value = 3
+				which = "seduction_progress"
+				value = 3
 			}
 		}
 		if = {
@@ -2301,7 +2321,8 @@ long_character_event = {
 				}
 			}
 			change_variable = {
-				which = "seduction_progress" value = 2
+				which = "seduction_progress"
+				value = 2
 			}
 		}
 		if = {
@@ -2312,7 +2333,8 @@ long_character_event = {
 				}
 			}
 			change_variable = {
-				which = "seduction_progress" value = 0.5
+				which = "seduction_progress"
+				value = 0.5
 			}
 		}
 		if = {
@@ -2360,7 +2382,8 @@ long_character_event = {
 		clr_character_flag = lahmia12failed
 		clr_character_flag = return_home_lahmia
 		set_variable = {
-			which = "seduction_progress" value = 0
+			which = "seduction_progress"
+			value = 0
 		}
 		if = {
 			limit = {
@@ -2465,9 +2488,9 @@ long_character_event = {
 				tier = EMPEROR
 				FROM = {
 					check_variable = {
-						which = "seduction_progress" value = 50
+						which = "seduction_progress"
+						value = 50
 					}
-
 				}
 				wealth = -200
 			}
@@ -2477,13 +2500,15 @@ long_character_event = {
 				tier = EMPEROR
 				FROM = {
 					check_variable = {
-						which = "seduction_progress" value = 25
+						which = "seduction_progress"
+						value = 25
 					}
 				}
 				NOT = {
 					FROM = {
 						check_variable = {
-							which = "seduction_progress" value = 50
+							which = "seduction_progress"
+							value = 50
 						}
 					}
 				}
@@ -2495,13 +2520,15 @@ long_character_event = {
 				tier = EMPEROR
 				FROM = {
 					check_variable = {
-						which = "seduction_progress" value = 10
+						which = "seduction_progress"
+						value = 10
 					}
 				}
 				NOT = {
 					FROM = {
 						check_variable = {
-							which = "seduction_progress" value = 25
+							which = "seduction_progress"
+							value = 25
 						}
 					}
 				}
@@ -2513,13 +2540,15 @@ long_character_event = {
 				tier = EMPEROR
 				FROM = {
 					check_variable = {
-						which = "seduction_progress" value = 1
+						which = "seduction_progress"
+						value = 1
 					}
 				}
 				NOT = {
 					FROM = {
 						check_variable = {
-							which = "seduction_progress" value = 10
+							which = "seduction_progress"
+							value = 10
 						}
 					}
 				}
@@ -2531,9 +2560,9 @@ long_character_event = {
 				tier = KING
 				FROM = {
 					check_variable = {
-						which = "seduction_progress" value = 50
+						which = "seduction_progress"
+						value = 50
 					}
-
 				}
 				wealth = -150
 			}
@@ -2543,13 +2572,15 @@ long_character_event = {
 				tier = KING
 				FROM = {
 					check_variable = {
-						which = "seduction_progress" value = 25
+						which = "seduction_progress"
+						value = 25
 					}
 				}
 				NOT = {
 					FROM = {
 						check_variable = {
-							which = "seduction_progress" value = 50
+							which = "seduction_progress"
+							value = 50
 						}
 					}
 				}
@@ -2561,13 +2592,15 @@ long_character_event = {
 				tier = KING
 				FROM = {
 					check_variable = {
-						which = "seduction_progress" value = 10
+						which = "seduction_progress"
+						value = 10
 					}
 				}
 				NOT = {
 					FROM = {
 						check_variable = {
-							which = "seduction_progress" value = 25
+							which = "seduction_progress"
+							value = 25
 						}
 					}
 				}
@@ -2579,13 +2612,15 @@ long_character_event = {
 				tier = KING
 				FROM = {
 					check_variable = {
-						which = "seduction_progress" value = 1
+						which = "seduction_progress"
+						value = 1
 					}
 				}
 				NOT = {
 					FROM = {
 						check_variable = {
-							which = "seduction_progress" value = 10
+							which = "seduction_progress"
+							value = 10
 						}
 					}
 				}
@@ -2597,9 +2632,9 @@ long_character_event = {
 				tier = DUKE
 				FROM = {
 					check_variable = {
-						which = "seduction_progress" value = 50
+						which = "seduction_progress"
+						value = 50
 					}
-
 				}
 				wealth = -125
 			}
@@ -2609,13 +2644,15 @@ long_character_event = {
 				tier = DUKE
 				FROM = {
 					check_variable = {
-						which = "seduction_progress" value = 25
+						which = "seduction_progress"
+						value = 25
 					}
 				}
 				NOT = {
 					FROM = {
 						check_variable = {
-							which = "seduction_progress" value = 50
+							which = "seduction_progress"
+							value = 50
 						}
 					}
 				}
@@ -2627,13 +2664,15 @@ long_character_event = {
 				tier = DUKE
 				FROM = {
 					check_variable = {
-						which = "seduction_progress" value = 10
+						which = "seduction_progress"
+						value = 10
 					}
 				}
 				NOT = {
 					FROM = {
 						check_variable = {
-							which = "seduction_progress" value = 25
+							which = "seduction_progress"
+							value = 25
 						}
 					}
 				}
@@ -2645,13 +2684,15 @@ long_character_event = {
 				tier = DUKE
 				FROM = {
 					check_variable = {
-						which = "seduction_progress" value = 1
+						which = "seduction_progress"
+						value = 1
 					}
 				}
 				NOT = {
 					FROM = {
 						check_variable = {
-							which = "seduction_progress" value = 10
+							which = "seduction_progress"
+							value = 10
 						}
 					}
 				}
@@ -2663,9 +2704,9 @@ long_character_event = {
 				lower_tier_than = DUKE
 				FROM = {
 					check_variable = {
-						which = "seduction_progress" value = 50
+						which = "seduction_progress"
+						value = 50
 					}
-
 				}
 				wealth = -50
 			}
@@ -2675,13 +2716,15 @@ long_character_event = {
 				lower_tier_than = DUKE
 				FROM = {
 					check_variable = {
-						which = "seduction_progress" value = 25
+						which = "seduction_progress"
+						value = 25
 					}
 				}
 				NOT = {
 					FROM = {
 						check_variable = {
-							which = "seduction_progress" value = 50
+							which = "seduction_progress"
+							value = 50
 						}
 					}
 				}
@@ -2693,13 +2736,15 @@ long_character_event = {
 				lower_tier_than = DUKE
 				FROM = {
 					check_variable = {
-						which = "seduction_progress" value = 10
+						which = "seduction_progress"
+						value = 10
 					}
 				}
 				NOT = {
 					FROM = {
 						check_variable = {
-							which = "seduction_progress" value = 25
+							which = "seduction_progress"
+							value = 25
 						}
 					}
 				}
@@ -2711,13 +2756,15 @@ long_character_event = {
 				lower_tier_than = DUKE
 				FROM = {
 					check_variable = {
-						which = "seduction_progress" value = 1
+						which = "seduction_progress"
+						value = 1
 					}
 				}
 				NOT = {
 					FROM = {
 						check_variable = {
-							which = "seduction_progress" value = 10
+							which = "seduction_progress"
+							value = 10
 						}
 					}
 				}
@@ -2811,7 +2858,8 @@ character_event = {
 					tier = EMPEROR
 				}
 				check_variable = {
-					which = "seduction_progress" value = 50
+					which = "seduction_progress"
+					value = 50
 				}
 			}
 			any_playable_ruler = {
@@ -2830,11 +2878,13 @@ character_event = {
 					tier = EMPEROR
 				}
 				check_variable = {
-					which = "seduction_progress" value = 25
+					which = "seduction_progress"
+					value = 25
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 50
+						which = "seduction_progress"
+						value = 50
 					}
 				}
 			}
@@ -2854,11 +2904,13 @@ character_event = {
 					tier = EMPEROR
 				}
 				check_variable = {
-					which = "seduction_progress" value = 10
+					which = "seduction_progress"
+					value = 10
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 25
+						which = "seduction_progress"
+						value = 25
 					}
 				}
 			}
@@ -2878,11 +2930,13 @@ character_event = {
 					tier = EMPEROR
 				}
 				check_variable = {
-					which = "seduction_progress" value = 1
+					which = "seduction_progress"
+					value = 1
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 10
+						which = "seduction_progress"
+						value = 10
 					}
 				}
 			}
@@ -2902,7 +2956,8 @@ character_event = {
 					tier = KING
 				}
 				check_variable = {
-					which = "seduction_progress" value = 50
+					which = "seduction_progress"
+					value = 50
 				}
 			}
 			any_playable_ruler = {
@@ -2921,11 +2976,13 @@ character_event = {
 					tier = KING
 				}
 				check_variable = {
-					which = "seduction_progress" value = 25
+					which = "seduction_progress"
+					value = 25
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 50
+						which = "seduction_progress"
+						value = 50
 					}
 				}
 			}
@@ -2945,11 +3002,13 @@ character_event = {
 					tier = KING
 				}
 				check_variable = {
-					which = "seduction_progress" value = 10
+					which = "seduction_progress"
+					value = 10
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 25
+						which = "seduction_progress"
+						value = 25
 					}
 				}
 			}
@@ -2969,11 +3028,13 @@ character_event = {
 					tier = KING
 				}
 				check_variable = {
-					which = "seduction_progress" value = 1
+					which = "seduction_progress"
+					value = 1
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 10
+						which = "seduction_progress"
+						value = 10
 					}
 				}
 			}
@@ -2993,7 +3054,8 @@ character_event = {
 					tier = DUKE
 				}
 				check_variable = {
-					which = "seduction_progress" value = 50
+					which = "seduction_progress"
+					value = 50
 				}
 			}
 			any_playable_ruler = {
@@ -3012,11 +3074,13 @@ character_event = {
 					tier = DUKE
 				}
  				check_variable = {
-					which = "seduction_progress" value = 25
+					which = "seduction_progress"
+					value = 25
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 50
+						which = "seduction_progress"
+						value = 50
 					}
 				}
 			}
@@ -3036,11 +3100,13 @@ character_event = {
 					tier = DUKE
 				}
 				check_variable = {
-					which = "seduction_progress" value = 10
+					which = "seduction_progress"
+					value = 10
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 25
+						which = "seduction_progress"
+						value = 25
 					}
 				}
 			}
@@ -3060,11 +3126,13 @@ character_event = {
 					tier = DUKE
 				}
 				check_variable = {
-					which = "seduction_progress" value = 1
+					which = "seduction_progress"
+					value = 1
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 10
+						which = "seduction_progress"
+						value = 10
 					}
 				}
 			}
@@ -3084,7 +3152,8 @@ character_event = {
 					lower_tier_than = DUKE
 				}
 				check_variable = {
-					which = "seduction_progress" value = 50
+					which = "seduction_progress"
+					value = 50
 				}
 			}
 			any_playable_ruler = {
@@ -3103,11 +3172,13 @@ character_event = {
 					lower_tier_than = DUKE
 				}
  				check_variable = {
-					which = "seduction_progress" value = 25
+					which = "seduction_progress"
+					value = 25
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 50
+						which = "seduction_progress"
+						value = 50
 					}
 				}
 			}
@@ -3127,11 +3198,13 @@ character_event = {
 					lower_tier_than = DUKE
 				}
 				check_variable = {
-					which = "seduction_progress" value = 10
+					which = "seduction_progress"
+					value = 10
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 25
+						which = "seduction_progress"
+						value = 25
 					}
 				}
 			}
@@ -3151,11 +3224,13 @@ character_event = {
 					lower_tier_than = DUKE
 				}
 				check_variable = {
-					which = "seduction_progress" value = 1
+					which = "seduction_progress"
+					value = 1
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 10
+						which = "seduction_progress"
+						value = 10
 					}
 				}
 			}
@@ -3187,7 +3262,8 @@ character_event = {
 					tier = EMPEROR
 				}
 				check_variable = {
-					which = "seduction_progress" value = 50
+					which = "seduction_progress"
+					value = 50
 				}
 			}
 			wealth = 200
@@ -3198,11 +3274,13 @@ character_event = {
 					tier = EMPEROR
 				}
 				check_variable = {
-					which = "seduction_progress" value = 25
+					which = "seduction_progress"
+					value = 25
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 50
+						which = "seduction_progress"
+						value = 50
 					}
 				}
 			}
@@ -3214,11 +3292,13 @@ character_event = {
 					tier = EMPEROR
 				}
 				check_variable = {
-					which = "seduction_progress" value = 10
+					which = "seduction_progress"
+					value = 10
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 25
+						which = "seduction_progress"
+						value = 25
 					}
 				}
 			}
@@ -3230,11 +3310,13 @@ character_event = {
 					tier = EMPEROR
 				}
 				check_variable = {
-					which = "seduction_progress" value = 1
+					which = "seduction_progress"
+					value = 1
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 10
+						which = "seduction_progress"
+						value = 10
 					}
 				}
 			}
@@ -3246,7 +3328,8 @@ character_event = {
 					tier = KING
 				}
 				check_variable = {
-					which = "seduction_progress" value = 50
+					which = "seduction_progress"
+					value = 50
 				}
 			}
 			wealth = 150
@@ -3257,11 +3340,13 @@ character_event = {
 					tier = KING
 				}
 				check_variable = {
-					which = "seduction_progress" value = 25
+					which = "seduction_progress"
+					value = 25
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 50
+						which = "seduction_progress"
+						value = 50
 					}
 				}
 			}
@@ -3273,11 +3358,13 @@ character_event = {
 					tier = KING
 				}
 				check_variable = {
-					which = "seduction_progress" value = 10
+					which = "seduction_progress"
+					value = 10
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 25
+						which = "seduction_progress"
+						value = 25
 					}
 				}
 			}
@@ -3289,11 +3376,13 @@ character_event = {
 					tier = KING
 				}
 				check_variable = {
-					which = "seduction_progress" value = 1
+					which = "seduction_progress"
+					value = 1
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 10
+						which = "seduction_progress"
+						value = 10
 					}
 				}
 			}
@@ -3305,7 +3394,8 @@ character_event = {
 					tier = DUKE
 				}
 				check_variable = {
-					which = "seduction_progress" value = 50
+					which = "seduction_progress"
+					value = 50
 				}
 			}
 			wealth = 125
@@ -3316,11 +3406,13 @@ character_event = {
 					tier = DUKE
 				}
  				check_variable = {
-					which = "seduction_progress" value = 25
+					which = "seduction_progress"
+					value = 25
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 50
+						which = "seduction_progress"
+						value = 50
 					}
 				}
 			}
@@ -3332,11 +3424,13 @@ character_event = {
 					tier = DUKE
 				}
 				check_variable = {
-					which = "seduction_progress" value = 10
+					which = "seduction_progress"
+					value = 10
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 25
+						which = "seduction_progress"
+						value = 25
 					}
 				}
 			}
@@ -3348,11 +3442,13 @@ character_event = {
 					tier = DUKE
 				}
 				check_variable = {
-					which = "seduction_progress" value = 1
+					which = "seduction_progress"
+					value = 1
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 10
+						which = "seduction_progress"
+						value = 10
 					}
 				}
 			}
@@ -3364,7 +3460,8 @@ character_event = {
 					lower_tier_than = DUKE
 				}
 				check_variable = {
-					which = "seduction_progress" value = 50
+					which = "seduction_progress"
+					value = 50
 				}
 			}
 			wealth = 50
@@ -3375,11 +3472,13 @@ character_event = {
 					lower_tier_than = DUKE
 				}
  				check_variable = {
-					which = "seduction_progress" value = 25
+					which = "seduction_progress"
+					value = 25
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 50
+						which = "seduction_progress"
+						value = 50
 					}
 				}
 			}
@@ -3391,11 +3490,13 @@ character_event = {
 					lower_tier_than = DUKE
 				}
 				check_variable = {
-					which = "seduction_progress" value = 10
+					which = "seduction_progress"
+					value = 10
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 25
+						which = "seduction_progress"
+						value = 25
 					}
 				}
 			}
@@ -3407,11 +3508,13 @@ character_event = {
 					lower_tier_than = DUKE
 				}
 				check_variable = {
-					which = "seduction_progress" value = 1
+					which = "seduction_progress"
+					value = 1
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 10
+						which = "seduction_progress"
+						value = 10
 					}
 				}
 			}
@@ -3454,7 +3557,8 @@ character_event = {
 		clr_character_flag = lahmia12failed
 		clr_character_flag = return_home_lahmia
 		set_variable = {
-			which = "seduction_progress" value = 0
+			which = "seduction_progress"
+			value = 0
 		}
 		if = {
 			limit = {
@@ -3572,9 +3676,9 @@ long_character_event = {
 				tier = EMPEROR
 				FROM = {
 					check_variable = {
-						which = "seduction_progress" value = 50
+						which = "seduction_progress"
+						value = 50
 					}
-
 				}
 				wealth = -100
 			}
@@ -3584,13 +3688,15 @@ long_character_event = {
 				tier = EMPEROR
 				FROM = {
 					check_variable = {
-						which = "seduction_progress" value = 25
+						which = "seduction_progress"
+						value = 25
 					}
 				}
 				NOT = {
 					FROM = {
 						check_variable = {
-							which = "seduction_progress" value = 50
+							which = "seduction_progress"
+							value = 50
 						}
 					}
 				}
@@ -3602,13 +3708,15 @@ long_character_event = {
 				tier = EMPEROR
 				FROM = {
 					check_variable = {
-						which = "seduction_progress" value = 10
+						which = "seduction_progress"
+						value = 10
 					}
 				}
 				NOT = {
 					FROM = {
 						check_variable = {
-							which = "seduction_progress" value = 25
+							which = "seduction_progress"
+							value = 25
 						}
 					}
 				}
@@ -3620,13 +3728,15 @@ long_character_event = {
 				tier = EMPEROR
 				FROM = {
 					check_variable = {
-						which = "seduction_progress" value = 1
+						which = "seduction_progress"
+						value = 1
 					}
 				}
 				NOT = {
 					FROM = {
 						check_variable = {
-							which = "seduction_progress" value = 10
+							which = "seduction_progress"
+							value = 10
 						}
 					}
 				}
@@ -3638,9 +3748,9 @@ long_character_event = {
 				tier = KING
 				FROM = {
 					check_variable = {
-						which = "seduction_progress" value = 50
+						which = "seduction_progress"
+						value = 50
 					}
-
 				}
 				wealth = -75
 			}
@@ -3650,13 +3760,15 @@ long_character_event = {
 				tier = KING
 				FROM = {
 					check_variable = {
-						which = "seduction_progress" value = 25
+						which = "seduction_progress"
+						value = 25
 					}
 				}
 				NOT = {
 					FROM = {
 						check_variable = {
-							which = "seduction_progress" value = 50
+							which = "seduction_progress"
+							value = 50
 						}
 					}
 				}
@@ -3668,13 +3780,15 @@ long_character_event = {
 				tier = KING
 				FROM = {
 					check_variable = {
-						which = "seduction_progress" value = 10
+						which = "seduction_progress"
+						value = 10
 					}
 				}
 				NOT = {
 					FROM = {
 						check_variable = {
-							which = "seduction_progress" value = 25
+							which = "seduction_progress"
+							value = 25
 						}
 					}
 				}
@@ -3686,13 +3800,15 @@ long_character_event = {
 				tier = KING
 				FROM = {
 					check_variable = {
-						which = "seduction_progress" value = 1
+						which = "seduction_progress"
+						value = 1
 					}
 				}
 				NOT = {
 					FROM = {
 						check_variable = {
-							which = "seduction_progress" value = 10
+							which = "seduction_progress"
+							value = 10
 						}
 					}
 				}
@@ -3704,9 +3820,9 @@ long_character_event = {
 				tier = DUKE
 				FROM = {
 					check_variable = {
-						which = "seduction_progress" value = 50
+						which = "seduction_progress"
+						value = 50
 					}
-
 				}
 				wealth = -70
 			}
@@ -3716,13 +3832,15 @@ long_character_event = {
 				tier = DUKE
 				FROM = {
 					check_variable = {
-						which = "seduction_progress" value = 25
+						which = "seduction_progress"
+						value = 25
 					}
 				}
 				NOT = {
 					FROM = {
 						check_variable = {
-							which = "seduction_progress" value = 50
+							which = "seduction_progress"
+							value = 50
 						}
 					}
 				}
@@ -3734,13 +3852,15 @@ long_character_event = {
 				tier = DUKE
 				FROM = {
 					check_variable = {
-						which = "seduction_progress" value = 10
+						which = "seduction_progress"
+						value = 10
 					}
 				}
 				NOT = {
 					FROM = {
 						check_variable = {
-							which = "seduction_progress" value = 25
+							which = "seduction_progress"
+							value = 25
 						}
 					}
 				}
@@ -3752,13 +3872,15 @@ long_character_event = {
 				tier = DUKE
 				FROM = {
 					check_variable = {
-						which = "seduction_progress" value = 1
+						which = "seduction_progress"
+						value = 1
 					}
 				}
 				NOT = {
 					FROM = {
 						check_variable = {
-							which = "seduction_progress" value = 10
+							which = "seduction_progress"
+							value = 10
 						}
 					}
 				}
@@ -3770,9 +3892,9 @@ long_character_event = {
 				lower_tier_than = DUKE
 				FROM = {
 					check_variable = {
-						which = "seduction_progress" value = 50
+						which = "seduction_progress"
+						value = 50
 					}
-
 				}
 				wealth = -25
 			}
@@ -3782,13 +3904,15 @@ long_character_event = {
 				lower_tier_than = DUKE
 				FROM = {
 					check_variable = {
-						which = "seduction_progress" value = 25
+						which = "seduction_progress"
+						value = 25
 					}
 				}
 				NOT = {
 					FROM = {
 						check_variable = {
-							which = "seduction_progress" value = 50
+							which = "seduction_progress"
+							value = 50
 						}
 					}
 				}
@@ -3800,13 +3924,15 @@ long_character_event = {
 				lower_tier_than = DUKE
 				FROM = {
 					check_variable = {
-						which = "seduction_progress" value = 10
+						which = "seduction_progress"
+						value = 10
 					}
 				}
 				NOT = {
 					FROM = {
 						check_variable = {
-							which = "seduction_progress" value = 25
+							which = "seduction_progress"
+							value = 25
 						}
 					}
 				}
@@ -3818,13 +3944,15 @@ long_character_event = {
 				lower_tier_than = DUKE
 				FROM = {
 					check_variable = {
-						which = "seduction_progress" value = 1
+						which = "seduction_progress"
+						value = 1
 					}
 				}
 				NOT = {
 					FROM = {
 						check_variable = {
-							which = "seduction_progress" value = 10
+							which = "seduction_progress"
+							value = 10
 						}
 					}
 				}
@@ -3910,7 +4038,8 @@ character_event = {
 					tier = EMPEROR
 				}
 				check_variable = {
-					which = "seduction_progress" value = 50
+					which = "seduction_progress"
+					value = 50
 				}
 			}
 			any_playable_ruler = {
@@ -3946,11 +4075,13 @@ character_event = {
 					tier = EMPEROR
 				}
 				check_variable = {
-					which = "seduction_progress" value = 25
+					which = "seduction_progress"
+					value = 25
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 50
+						which = "seduction_progress"
+						value = 50
 					}
 				}
 			}
@@ -3987,11 +4118,13 @@ character_event = {
 					tier = EMPEROR
 				}
 				check_variable = {
-					which = "seduction_progress" value = 10
+					which = "seduction_progress"
+					value = 10
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 25
+						which = "seduction_progress"
+						value = 25
 					}
 				}
 			}
@@ -4031,11 +4164,13 @@ character_event = {
 					tier = EMPEROR
 				}
 				check_variable = {
-					which = "seduction_progress" value = 1
+					which = "seduction_progress"
+					value = 1
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 10
+						which = "seduction_progress"
+						value = 10
 					}
 				}
 			}
@@ -4069,7 +4204,8 @@ character_event = {
 					tier = KING
 				}
 				check_variable = {
-					which = "seduction_progress" value = 50
+					which = "seduction_progress"
+					value = 50
 				}
 			}
 			any_playable_ruler = {
@@ -4105,11 +4241,13 @@ character_event = {
 					tier = KING
 				}
 				check_variable = {
-					which = "seduction_progress" value = 25
+					which = "seduction_progress"
+					value = 25
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 50
+						which = "seduction_progress"
+						value = 50
 					}
 				}
 			}
@@ -4146,11 +4284,13 @@ character_event = {
 					tier = KING
 				}
 				check_variable = {
-					which = "seduction_progress" value = 10
+					which = "seduction_progress"
+					value = 10
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 25
+						which = "seduction_progress"
+						value = 25
 					}
 				}
 			}
@@ -4184,11 +4324,13 @@ character_event = {
 					tier = KING
 				}
 				check_variable = {
-					which = "seduction_progress" value = 1
+					which = "seduction_progress"
+					value = 1
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 10
+						which = "seduction_progress"
+						value = 10
 					}
 				}
 			}
@@ -4222,7 +4364,8 @@ character_event = {
 					tier = DUKE
 				}
 				check_variable = {
-					which = "seduction_progress" value = 50
+					which = "seduction_progress"
+					value = 50
 				}
 			}
 			any_playable_ruler = {
@@ -4255,11 +4398,13 @@ character_event = {
 					tier = DUKE
 				}
  				check_variable = {
-					which = "seduction_progress" value = 25
+					which = "seduction_progress"
+					value = 25
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 50
+						which = "seduction_progress"
+						value = 50
 					}
 				}
 			}
@@ -4296,11 +4441,13 @@ character_event = {
 					tier = DUKE
 				}
 				check_variable = {
-					which = "seduction_progress" value = 10
+					which = "seduction_progress"
+					value = 10
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 25
+						which = "seduction_progress"
+						value = 25
 					}
 				}
 			}
@@ -4334,11 +4481,13 @@ character_event = {
 					tier = DUKE
 				}
 				check_variable = {
-					which = "seduction_progress" value = 1
+					which = "seduction_progress"
+					value = 1
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 10
+						which = "seduction_progress"
+						value = 10
 					}
 				}
 			}
@@ -4372,7 +4521,8 @@ character_event = {
 					lower_tier_than = DUKE
 				}
 				check_variable = {
-					which = "seduction_progress" value = 50
+					which = "seduction_progress"
+					value = 50
 				}
 			}
 			any_playable_ruler = {
@@ -4405,11 +4555,13 @@ character_event = {
 					lower_tier_than = DUKE
 				}
  				check_variable = {
-					which = "seduction_progress" value = 25
+					which = "seduction_progress"
+					value = 25
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 50
+						which = "seduction_progress"
+						value = 50
 					}
 				}
 			}
@@ -4443,11 +4595,13 @@ character_event = {
 					lower_tier_than = DUKE
 				}
 				check_variable = {
-					which = "seduction_progress" value = 10
+					which = "seduction_progress"
+					value = 10
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 25
+						which = "seduction_progress"
+						value = 25
 					}
 				}
 			}
@@ -4481,11 +4635,13 @@ character_event = {
 					lower_tier_than = DUKE
 				}
 				check_variable = {
-					which = "seduction_progress" value = 1
+					which = "seduction_progress"
+					value = 1
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 10
+						which = "seduction_progress"
+						value = 10
 					}
 				}
 			}
@@ -4528,7 +4684,8 @@ character_event = {
 					tier = EMPEROR
 				}
 				check_variable = {
-					which = "seduction_progress" value = 50
+					which = "seduction_progress"
+					value = 50
 				}
 			}
 			location = {
@@ -4556,11 +4713,13 @@ character_event = {
 					tier = EMPEROR
 				}
 				check_variable = {
-					which = "seduction_progress" value = 25
+					which = "seduction_progress"
+					value = 25
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 50
+						which = "seduction_progress"
+						value = 50
 					}
 				}
 			}
@@ -4589,11 +4748,13 @@ character_event = {
 					tier = EMPEROR
 				}
 				check_variable = {
-					which = "seduction_progress" value = 10
+					which = "seduction_progress"
+					value = 10
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 25
+						which = "seduction_progress"
+						value = 25
 					}
 				}
 			}
@@ -4625,11 +4786,13 @@ character_event = {
 					tier = EMPEROR
 				}
 				check_variable = {
-					which = "seduction_progress" value = 1
+					which = "seduction_progress"
+					value = 1
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 10
+						which = "seduction_progress"
+						value = 10
 					}
 				}
 			}
@@ -4655,7 +4818,8 @@ character_event = {
 					tier = KING
 				}
 				check_variable = {
-					which = "seduction_progress" value = 50
+					which = "seduction_progress"
+					value = 50
 				}
 			}
 			location = {
@@ -4683,11 +4847,13 @@ character_event = {
 					tier = KING
 				}
 				check_variable = {
-					which = "seduction_progress" value = 25
+					which = "seduction_progress"
+					value = 25
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 50
+						which = "seduction_progress"
+						value = 50
 					}
 				}
 			}
@@ -4716,11 +4882,13 @@ character_event = {
 					tier = KING
 				}
 				check_variable = {
-					which = "seduction_progress" value = 10
+					which = "seduction_progress"
+					value = 10
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 25
+						which = "seduction_progress"
+						value = 25
 					}
 				}
 			}
@@ -4746,11 +4914,13 @@ character_event = {
 					tier = KING
 				}
 				check_variable = {
-					which = "seduction_progress" value = 1
+					which = "seduction_progress"
+					value = 1
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 10
+						which = "seduction_progress"
+						value = 10
 					}
 				}
 			}
@@ -4776,7 +4946,8 @@ character_event = {
 					tier = DUKE
 				}
 				check_variable = {
-					which = "seduction_progress" value = 50
+					which = "seduction_progress"
+					value = 50
 				}
 			}
 			location = {
@@ -4801,11 +4972,13 @@ character_event = {
 					tier = DUKE
 				}
  				check_variable = {
-					which = "seduction_progress" value = 25
+					which = "seduction_progress"
+					value = 25
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 50
+						which = "seduction_progress"
+						value = 50
 					}
 				}
 			}
@@ -4834,11 +5007,13 @@ character_event = {
 					tier = DUKE
 				}
 				check_variable = {
-					which = "seduction_progress" value = 10
+					which = "seduction_progress"
+					value = 10
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 25
+						which = "seduction_progress"
+						value = 25
 					}
 				}
 			}
@@ -4864,11 +5039,13 @@ character_event = {
 					tier = DUKE
 				}
 				check_variable = {
-					which = "seduction_progress" value = 1
+					which = "seduction_progress"
+					value = 1
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 10
+						which = "seduction_progress"
+						value = 10
 					}
 				}
 			}
@@ -4894,7 +5071,8 @@ character_event = {
 					lower_tier_than = DUKE
 				}
 				check_variable = {
-					which = "seduction_progress" value = 50
+					which = "seduction_progress"
+					value = 50
 				}
 			}
 			location = {
@@ -4919,11 +5097,13 @@ character_event = {
 					lower_tier_than = DUKE
 				}
  				check_variable = {
-					which = "seduction_progress" value = 25
+					which = "seduction_progress"
+					value = 25
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 50
+						which = "seduction_progress"
+						value = 50
 					}
 				}
 			}
@@ -4949,11 +5129,13 @@ character_event = {
 					lower_tier_than = DUKE
 				}
 				check_variable = {
-					which = "seduction_progress" value = 10
+					which = "seduction_progress"
+					value = 10
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 25
+						which = "seduction_progress"
+						value = 25
 					}
 				}
 			}
@@ -4979,11 +5161,13 @@ character_event = {
 					lower_tier_than = DUKE
 				}
 				check_variable = {
-					which = "seduction_progress" value = 1
+					which = "seduction_progress"
+					value = 1
 				}
 				NOT = {
 					check_variable = {
-						which = "seduction_progress" value = 10
+						which = "seduction_progress"
+						value = 10
 					}
 				}
 			}
@@ -5037,7 +5221,8 @@ character_event = {
 		clr_character_flag = lahmia12failed
 		clr_character_flag = return_home_lahmia
 		set_variable = {
-			which = "seduction_progress" value = 0
+			which = "seduction_progress"
+			value = 0
 		}
 		if = {
 			limit = {
@@ -5071,7 +5256,6 @@ character_event = {
 }
 
 # THE MAINTENANCE EVENTS
-
 # mission failure event, goes to the queen
 character_event = {
 	id = lahmia.100
@@ -5175,7 +5359,6 @@ character_event = {
 }
 
 # LAHMIA 104-106 USED ABOVE
-
 # Events to bring an unlanded lover to your court, very useful if they have a claim
 
 # Targets get the offer to join Lahmian Queens Court
@@ -5740,28 +5923,20 @@ character_event = {
 			add_trait = vampire_lahmian_visible
 			set_graphical_culture = lahmian_vampire
 			set_variable = {
-				which = khornefavor value = 0
+				which = "khorne_favor"
+				value = 0
 			}
 			set_variable = {
-				which = nurglefavor value = 0
+				which = "nurgle_favor"
+				value = 0
 			}
 			set_variable = {
-				which = slaaneshfavor value = 0
+				which = "slaanesh_favor"
+				value = 0
 			}
 			set_variable = {
-				which = tzeentchfavor value = 0
-			}
-			set_variable = {
-				which = "khorne_favor" value = 0
-			}
-			set_variable = {
-				which = "nurgle_favor" value = 0
-			}
-			set_variable = {
-				which = "slaanesh_favor" value = 0
-			}
-			set_variable = {
-				which = "tzeentch_favor" value = 0
+				which = "tzeentch_favor"
+				value = 0
 			}
 			clr_character_flag = hidden_tzeentch_cultist3
 			clr_character_flag = hidden_tzeentch_cultist2
@@ -5839,7 +6014,7 @@ character_event = {
 	}
 }
 
-# close family is informed she has run off
+
 character_event = {
 	id = lahmia.208
 	desc = lahmia208desc # Your [GetFromRelation] has run off it seems, leaving her home and family. Why would she do something like this, what could have possibly enticed her to give up everything she had?
@@ -5896,7 +6071,6 @@ character_event = {
 }
 
 # Now for the events to make a "Lahmian Presence" province modifer which interacts with the witch hunter system and lahmian defenders
-
 # mark gets hidden event setting up the province modifier lahmian_presence
 character_event = {
 	id = lahmia.300
@@ -5909,7 +6083,8 @@ character_event = {
 		name = lahmia210A # hidden
 		random_demesne_province = {
 			add_province_modifier = {
-				name = lahmian_presence duration = -1
+				name = lahmian_presence
+				duration = -1
 			}
 		}
 	}
@@ -6116,9 +6291,7 @@ character_event = {
 }
 
 # owner of province sometimes gets informed about activities related to the lahmian presence
-
 # Reserve IDs 320-350
 
 # LAHMIAN FEAR FACTOR SYSTEM
-
 # Lahmian Blood Feast events, opinion bonus from vassals, increases revolt risk in province greatly

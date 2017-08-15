@@ -38,7 +38,7 @@ character_event = {
 				}
 			}
 		}
-	} # closesoption
+	}
 }
 
 # Incapable Master removed - Notify the accuser.
@@ -52,7 +52,7 @@ character_event = {
 		name = EVTOPTAswhunters10001
 		piety = 50
 		clr_character_flag = witch_hunter_accusation
-	} # closesoption
+	}
 }
 
 # Master accused of bad conduct.
@@ -164,9 +164,8 @@ character_event = {
 					}
 				}
 			}
-
 		}
-	} # closesoption
+	}
 }
 
 # Council-Knights receive notification and vote.
@@ -189,13 +188,14 @@ character_event = {
 		name = EVTOPTAswhunters20001
 		FROM = {
 			change_variable = {
-				which = "accused_hunter" value = 1
+				which = "accused_hunter"
+				value = 1
 			}
 		}
 		ai_chance = {
 			factor = 50
 		}
-	} # closesoption
+	}
 
 	option = {
 		name = EVTOPTBswhunters20001
@@ -204,50 +204,58 @@ character_event = {
 			modifier = {
 				factor = 0.5
 				opinion = {
-					who = FROM value = 75
+					who = FROM
+					value = 75
 				}
 			}
 			modifier = {
 				factor = 0.65
 				opinion = {
-					who = FROM value = 60
+					who = FROM
+					value = 60
 				}
 			}
 			modifier = {
 				factor = 0.75
 				opinion = {
-					who = FROM value = 50
+					who = FROM
+					value = 50
 				}
 			}
 			modifier = {
 				factor = 0.85
 				opinion = {
-					who = FROM value = 40
+					who = FROM
+					value = 40
 				}
 			}
 			modifier = {
 				factor = 0.85
 				opinion = {
-					who = FROM value = 30
+					who = FROM
+					value = 30
 				}
 			}
 			modifier = {
 				factor = 0.95
 				opinion = {
-					who = FROM value = 20
+					who = FROM
+					value = 20
 				}
 			}
 			modifier = {
 				factor = 0.95
 				opinion = {
-					who = FROM value = 10
+					who = FROM
+					value = 10
 				}
 			}
 			modifier = {
 				factor = 1.25
 				NOT = {
 					opinion = {
-						who = FROM value = -10
+						who = FROM
+						value = -10
 					}
 				}
 			}
@@ -255,7 +263,8 @@ character_event = {
 				factor = 1.25
 				NOT = {
 					opinion = {
-						who = FROM value = -20
+						who = FROM
+						value = -20
 					}
 				}
 			}
@@ -263,7 +272,8 @@ character_event = {
 				factor = 1.25
 				NOT = {
 					opinion = {
-						who = FROM value = -30
+						who = FROM
+						value = -30
 					}
 				}
 			}
@@ -271,7 +281,8 @@ character_event = {
 				factor = 1.25
 				NOT = {
 					opinion = {
-						who = FROM value = -40
+						who = FROM
+						value = -40
 					}
 				}
 			}
@@ -279,7 +290,8 @@ character_event = {
 				factor = 1.25
 				NOT = {
 					opinion = {
-						who = FROM value = -50
+						who = FROM
+						value = -50
 					}
 				}
 			}
@@ -287,7 +299,8 @@ character_event = {
 				factor = 1.5
 				NOT = {
 					opinion = {
-						who = FROM value = -60
+						who = FROM
+						value = -60
 					}
 				}
 			}
@@ -295,7 +308,8 @@ character_event = {
 				factor = 1.75
 				NOT = {
 					opinion = {
-						who = FROM value = -75
+						who = FROM
+						value = -75
 					}
 				}
 			}
@@ -761,9 +775,8 @@ character_event = {
 					trait = cruel
 				}
 			}
-
-		} # closesaichance
-	} # closesoption
+		}
+	}
 }
 
 # Verdict given to the Grand Master
@@ -774,11 +787,11 @@ character_event = {
 		trigger = {
 			FROM = {
 				check_variable = {
-					which = "accused_hunter" value = 6
+					which = "accused_hunter"
+					value = 6
 				}
 			}
 		}
-
 	}
 	desc = {
 		text = EVTDESCBswhunters3
@@ -786,12 +799,12 @@ character_event = {
 			NOT = {
 				FROM = {
 					check_variable = {
-						which = "accused_hunter" value = 6
+						which = "accused_hunter"
+						value = 6
 					}
 				}
 			}
 		}
-
 	}
 	picture = GFX_evt_witch_hunters
 	is_triggered_only = yes
@@ -802,7 +815,8 @@ character_event = {
 		trigger = {
 			FROM = {
 				check_variable = {
-					which = "accused_hunter" value = 6
+					which = "accused_hunter"
+					value = 6
 				}
 			}
 			NOT = {
@@ -822,7 +836,7 @@ character_event = {
 		ai_chance = {
 			factor = 50
 		}
-	} # closesoption
+	}
 
 	option = {
 		name = EVTOPTBswhunters3
@@ -830,7 +844,8 @@ character_event = {
 		trigger = {
 			FROM = {
 				check_variable = {
-					which = "accused_hunter" value = 6
+					which = "accused_hunter"
+					value = 6
 				}
 			}
 		}
@@ -873,9 +888,8 @@ character_event = {
 				factor = 0.5
 				trait = zealous
 			}
-
 		}
-	} # closesoption
+	}
 
 	option = {
 		name = EVTOPTCswhunters3
@@ -884,7 +898,8 @@ character_event = {
 			NOT = {
 				FROM = {
 					check_variable = {
-						which = "accused_hunter" value = 6
+						which = "accused_hunter"
+						value = 6
 					}
 				}
 			}
@@ -899,7 +914,7 @@ character_event = {
 				id = swhunters.30006
 			}
 		}
-	} # closesoption
+	}
 }
 
 # Burned for bad conduct
@@ -925,7 +940,7 @@ character_event = {
 			death_reason = death_execution_burning
 			killer = FROM
 		}
-	} # closesoption
+	}
 }
 
 # Exiled for bad conduct
@@ -939,7 +954,8 @@ character_event = {
 		name = EVTOPTAswhunters30002
 		piety = -250
 		set_variable = {
-			which = "accused_hunter" value = 0
+			which = "accused_hunter"
+			value = 0
 		}
 		clr_character_flag = witch_hunter_accusation
 		if = {
@@ -979,7 +995,7 @@ character_event = {
 				culture = PREV
 			}
 		}
-	} # closesoption
+	}
 }
 
 # Burned for bad conduct - Notify Accuser
@@ -993,7 +1009,7 @@ character_event = {
 		name = EVTOPTAswhunters30003
 		piety = 250
 		clr_character_flag = witch_hunter_accusation
-	} # closesoption
+	}
 }
 
 # Exiled for bad conduct - Notify Accuser
@@ -1007,7 +1023,7 @@ character_event = {
 		name = EVTOPTAswhunters30004
 		piety = 150
 		clr_character_flag = witch_hunter_accusation
-	} # closesoption
+	}
 }
 
 # Found innocent of charges
@@ -1022,7 +1038,8 @@ character_event = {
 		piety = 50
 		clr_character_flag = witch_hunter_accusation
 		set_variable = {
-			which = "accused_hunter" value = 0
+			which = "accused_hunter"
+			value = 0
 		}
 		opinion = {
 			who = FROMFROMFROMFROM
@@ -1034,7 +1051,7 @@ character_event = {
 			duration = 900
 			hidden = yes
 		}
-	} # closesoption
+	}
 }
 
 # Found innocent of charges - Notify Accuser
@@ -1048,7 +1065,7 @@ character_event = {
 		name = EVTOPTAswhunters30006
 		piety = -150
 		clr_character_flag = witch_hunter_accusation
-	} # closesoption
+	}
 }
 
 # The son of a ruler volunteers to join the Witch Hunters
@@ -1220,7 +1237,8 @@ character_event = {
 			factor = 2
 			any_spouse = {
 				reverse_opinion = {
-					who = ROOT value = 100
+					who = ROOT
+					value = 100
 				}
 			}
 		}
@@ -2140,7 +2158,6 @@ province_event = {
 }
 
 # Requesting recruits and fortresses as a player
-
 # Ping to possible recruit by player's decision
 character_event = {
 	id = swhunters.20
@@ -2253,7 +2270,8 @@ letter_event = {
 				factor = 0.25
 				NOT = {
 					opinion = {
-						who = FROMFROMFROM value = -95
+						who = FROMFROMFROM
+						value = -95
 					}
 				}
 			}
@@ -2261,7 +2279,8 @@ letter_event = {
 				factor = 0.5
 				NOT = {
 					opinion = {
-						who = FROMFROMFROM value = -75
+						who = FROMFROMFROM
+						value = -75
 					}
 				}
 			}
@@ -2269,7 +2288,8 @@ letter_event = {
 				factor = 0.5
 				NOT = {
 					opinion = {
-						who = FROMFROMFROM value = -50
+						who = FROMFROMFROM
+						value = -50
 					}
 				}
 			}
@@ -2277,32 +2297,37 @@ letter_event = {
 				factor = 0.75
 				NOT = {
 					opinion = {
-						who = FROMFROMFROM value = -25
+						who = FROMFROMFROM
+						value = -25
 					}
 				}
 			}
 			modifier = {
 				factor = 1.25
 				opinion = {
-					who = FROMFROMFROM value = 25
+					who = FROMFROMFROM
+					value = 25
 				}
 			}
 			modifier = {
 				factor = 1.25
 				opinion = {
-					who = FROMFROMFROM value = 50
+					who = FROMFROMFROM
+					value = 50
 				}
 			}
 			modifier = {
 				factor = 1.5
 				opinion = {
-					who = FROMFROMFROM value = 75
+					who = FROMFROMFROM
+					value = 75
 				}
 			}
 			modifier = {
 				factor = 1.75
 				opinion = {
-					who = FROMFROMFROM value = 100
+					who = FROMFROMFROM
+					value = 100
 				}
 			}
 		}
@@ -2331,7 +2356,8 @@ letter_event = {
 				factor = 0.25
 				NOT = {
 					opinion = {
-						who = FROMFROMFROM value = -95
+						who = FROMFROMFROM
+						value = -95
 					}
 				}
 			}
@@ -2339,7 +2365,8 @@ letter_event = {
 				factor = 0.5
 				NOT = {
 					opinion = {
-						who = FROMFROMFROM value = -75
+						who = FROMFROMFROM
+						value = -75
 					}
 				}
 			}
@@ -2347,7 +2374,8 @@ letter_event = {
 				factor = 0.5
 				NOT = {
 					opinion = {
-						who = FROMFROMFROM value = -50
+						who = FROMFROMFROM
+						value = -50
 					}
 				}
 			}
@@ -2355,32 +2383,37 @@ letter_event = {
 				factor = 0.75
 				NOT = {
 					opinion = {
-						who = FROMFROMFROM value = -25
+						who = FROMFROMFROM
+						value = -25
 					}
 				}
 			}
 			modifier = {
 				factor = 1.25
 				opinion = {
-					who = FROMFROMFROM value = 25
+					who = FROMFROMFROM
+					value = 25
 				}
 			}
 			modifier = {
 				factor = 1.25
 				opinion = {
-					who = FROMFROMFROM value = 50
+					who = FROMFROMFROM
+					value = 50
 				}
 			}
 			modifier = {
 				factor = 1.5
 				opinion = {
-					who = FROMFROMFROM value = 75
+					who = FROMFROMFROM
+					value = 75
 				}
 			}
 			modifier = {
 				factor = 1.75
 				opinion = {
-					who = FROMFROMFROM value = 100
+					who = FROMFROMFROM
+					value = 100
 				}
 			}
 		}
@@ -2608,7 +2641,8 @@ letter_event = {
 				factor = 0.25
 				NOT = {
 					opinion = {
-						who = FROMFROMFROM value = -95
+						who = FROMFROMFROM
+						value = -95
 					}
 				}
 			}
@@ -2616,7 +2650,8 @@ letter_event = {
 				factor = 0.5
 				NOT = {
 					opinion = {
-						who = FROMFROMFROM value = -75
+						who = FROMFROMFROM
+						value = -75
 					}
 				}
 			}
@@ -2624,7 +2659,8 @@ letter_event = {
 				factor = 0.5
 				NOT = {
 					opinion = {
-						who = FROMFROMFROM value = -50
+						who = FROMFROMFROM
+						value = -50
 					}
 				}
 			}
@@ -2632,32 +2668,37 @@ letter_event = {
 				factor = 0.75
 				NOT = {
 					opinion = {
-						who = FROMFROMFROM value = -25
+						who = FROMFROMFROM
+						value = -25
 					}
 				}
 			}
 			modifier = {
 				factor = 1.25
 				opinion = {
-					who = FROMFROMFROM value = 25
+					who = FROMFROMFROM
+					value = 25
 				}
 			}
 			modifier = {
 				factor = 1.25
 				opinion = {
-					who = FROMFROMFROM value = 50
+					who = FROMFROMFROM
+					value = 50
 				}
 			}
 			modifier = {
 				factor = 1.5
 				opinion = {
-					who = FROMFROMFROM value = 75
+					who = FROMFROMFROM
+					value = 75
 				}
 			}
 			modifier = {
 				factor = 1.75
 				opinion = {
-					who = FROMFROMFROM value = 100
+					who = FROMFROMFROM
+					value = 100
 				}
 			}
 		}
@@ -2686,7 +2727,8 @@ letter_event = {
 				factor = 0.25
 				NOT = {
 					opinion = {
-						who = FROMFROMFROM value = -95
+						who = FROMFROMFROM
+						value = -95
 					}
 				}
 			}
@@ -2694,7 +2736,8 @@ letter_event = {
 				factor = 0.5
 				NOT = {
 					opinion = {
-						who = FROMFROMFROM value = -75
+						who = FROMFROMFROM
+						value = -75
 					}
 				}
 			}
@@ -2702,7 +2745,8 @@ letter_event = {
 				factor = 0.5
 				NOT = {
 					opinion = {
-						who = FROMFROMFROM value = -50
+						who = FROMFROMFROM
+						value = -50
 					}
 				}
 			}
@@ -2710,32 +2754,37 @@ letter_event = {
 				factor = 0.75
 				NOT = {
 					opinion = {
-						who = FROMFROMFROM value = -25
+						who = FROMFROMFROM
+						value = -25
 					}
 				}
 			}
 			modifier = {
 				factor = 1.25
 				opinion = {
-					who = FROMFROMFROM value = 25
+					who = FROMFROMFROM
+					value = 25
 				}
 			}
 			modifier = {
 				factor = 1.25
 				opinion = {
-					who = FROMFROMFROM value = 50
+					who = FROMFROMFROM
+					value = 50
 				}
 			}
 			modifier = {
 				factor = 1.5
 				opinion = {
-					who = FROMFROMFROM value = 75
+					who = FROMFROMFROM
+					value = 75
 				}
 			}
 			modifier = {
 				factor = 1.75
 				opinion = {
-					who = FROMFROMFROM value = 100
+					who = FROMFROMFROM
+					value = 100
 				}
 			}
 		}
@@ -2973,7 +3022,8 @@ letter_event = {
 				factor = 0.75
 				NOT = {
 					opinion = {
-						who = FROM value = 0
+						who = FROM
+						value = 0
 					}
 				}
 			}
@@ -2997,7 +3047,6 @@ letter_event = {
 				}
 			}
 		}
-
 	}
 
 	option = {
@@ -3059,38 +3108,44 @@ letter_event = {
 			modifier = {
 				factor = 0.95
 				opinion = {
-					who = FROM value = 20
+					who = FROM
+					value = 20
 				}
 			}
 			modifier = {
 				factor = 0.85
 				opinion = {
-					who = FROM value = 40
+					who = FROM
+					value = 40
 				}
 			}
 			modifier = {
 				factor = 0.85
 				opinion = {
-					who = FROM value = 60
+					who = FROM
+					value = 60
 				}
 			}
 			modifier = {
 				factor = 0.85
 				opinion = {
-					who = FROM value = 80
+					who = FROM
+					value = 80
 				}
 			}
 			modifier = {
 				factor = 0.85
 				opinion = {
-					who = FROM value = 100
+					who = FROM
+					value = 100
 				}
 			}
 			modifier = {
 				factor = 1.25
 				NOT = {
 					opinion = {
-						who = FROM value = 0
+						who = FROM
+						value = 0
 					}
 				}
 			}
@@ -3098,7 +3153,8 @@ letter_event = {
 				factor = 1.25
 				NOT = {
 					opinion = {
-						who = FROM value = -20
+						who = FROM
+						value = -20
 					}
 				}
 			}
@@ -3106,7 +3162,8 @@ letter_event = {
 				factor = 1.25
 				NOT = {
 					opinion = {
-						who = FROM value = -40
+						who = FROM
+						value = -40
 					}
 				}
 			}
@@ -3114,7 +3171,8 @@ letter_event = {
 				factor = 1.5
 				NOT = {
 					opinion = {
-						who = FROM value = -60
+						who = FROM
+						value = -60
 					}
 				}
 			}
@@ -3122,7 +3180,8 @@ letter_event = {
 				factor = 1.5
 				NOT = {
 					opinion = {
-						who = FROM value = -80
+						who = FROM
+						value = -80
 					}
 				}
 			}
@@ -3130,17 +3189,16 @@ letter_event = {
 				factor = 1.5
 				NOT = {
 					opinion = {
-						who = FROM value = -100
+						who = FROM
+						value = -100
 					}
 				}
 			}
 		}
-
 	}
 }
 
 # Asking to investigate in a province
-
 # Ping to possible castle province by player's decision
 province_event = {
 	id = swhunters.26
@@ -3230,7 +3288,8 @@ letter_event = {
 				factor = 0.25
 				NOT = {
 					opinion = {
-						who = FROMFROMFROM value = -95
+						who = FROMFROMFROM
+						value = -95
 					}
 				}
 			}
@@ -3238,7 +3297,8 @@ letter_event = {
 				factor = 0.5
 				NOT = {
 					opinion = {
-						who = FROMFROMFROM value = -75
+						who = FROMFROMFROM
+						value = -75
 					}
 				}
 			}
@@ -3246,7 +3306,8 @@ letter_event = {
 				factor = 0.5
 				NOT = {
 					opinion = {
-						who = FROMFROMFROM value = -50
+						who = FROMFROMFROM
+						value = -50
 					}
 				}
 			}
@@ -3254,32 +3315,37 @@ letter_event = {
 				factor = 0.75
 				NOT = {
 					opinion = {
-						who = FROMFROMFROM value = -25
+						who = FROMFROMFROM
+						value = -25
 					}
 				}
 			}
 			modifier = {
 				factor = 1.25
 				opinion = {
-					who = FROMFROMFROM value = 25
+					who = FROMFROMFROM
+					value = 25
 				}
 			}
 			modifier = {
 				factor = 1.25
 				opinion = {
-					who = FROMFROMFROM value = 50
+					who = FROMFROMFROM
+					value = 50
 				}
 			}
 			modifier = {
 				factor = 1.5
 				opinion = {
-					who = FROMFROMFROM value = 75
+					who = FROMFROMFROM
+					value = 75
 				}
 			}
 			modifier = {
 				factor = 1.75
 				opinion = {
-					who = FROMFROMFROM value = 100
+					who = FROMFROMFROM
+					value = 100
 				}
 			}
 		}
@@ -3308,7 +3374,8 @@ letter_event = {
 				factor = 0.25
 				NOT = {
 					opinion = {
-						who = FROMFROMFROM value = -95
+						who = FROMFROMFROM
+						value = -95
 					}
 				}
 			}
@@ -3316,7 +3383,8 @@ letter_event = {
 				factor = 0.5
 				NOT = {
 					opinion = {
-						who = FROMFROMFROM value = -75
+						who = FROMFROMFROM
+						value = -75
 					}
 				}
 			}
@@ -3324,7 +3392,8 @@ letter_event = {
 				factor = 0.5
 				NOT = {
 					opinion = {
-						who = FROMFROMFROM value = -50
+						who = FROMFROMFROM
+						value = -50
 					}
 				}
 			}
@@ -3332,32 +3401,37 @@ letter_event = {
 				factor = 0.75
 				NOT = {
 					opinion = {
-						who = FROMFROMFROM value = -25
+						who = FROMFROMFROM
+						value = -25
 					}
 				}
 			}
 			modifier = {
 				factor = 1.25
 				opinion = {
-					who = FROMFROMFROM value = 25
+					who = FROMFROMFROM
+					value = 25
 				}
 			}
 			modifier = {
 				factor = 1.25
 				opinion = {
-					who = FROMFROMFROM value = 50
+					who = FROMFROMFROM
+					value = 50
 				}
 			}
 			modifier = {
 				factor = 1.5
 				opinion = {
-					who = FROMFROMFROM value = 75
+					who = FROMFROMFROM
+					value = 75
 				}
 			}
 			modifier = {
 				factor = 1.75
 				opinion = {
-					who = FROMFROMFROM value = 100
+					who = FROMFROMFROM
+					value = 100
 				}
 			}
 		}
@@ -3619,7 +3693,6 @@ letter_event = {
 						id = swhunters.28002 days = 150
 					}
 				}
-
 			}
 			40 = {
 				modifier = {
@@ -3652,7 +3725,6 @@ letter_event = {
 							}
 						}
 					}
-
 				}
 				if = {
 					limit = {
@@ -3702,7 +3774,6 @@ province_event = {
 			remove_province_modifier = warpstone_meteor
 			remove_province_modifier = lahmian_presence
 		}
-
 	}
 }
 
@@ -3737,7 +3808,6 @@ letter_event = {
 						}
 					}
 				}
-
 			}
 
 		}
@@ -3761,7 +3831,6 @@ letter_event = {
 						}
 					}
 				}
-
 			}
 
 		}

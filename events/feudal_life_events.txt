@@ -1,15 +1,12 @@
 
 
 # Events for Feudal Life
-
 # Id 4000-4499 is reserved
 
 # Fired from on actions
-
 # Written by Sara Wendel-Örtqvist
 
 # Events just for lowly counts. (some for dukes)
-
 # Who Owns The Pig?
 character_event = {
 	id = 4000
@@ -35,7 +32,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 5
 			prestige = 15
@@ -112,7 +109,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 3
 			trait = just
@@ -193,7 +190,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 3
 			trait = just
@@ -295,7 +292,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 3
 			trait = brave
@@ -431,7 +428,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 5
 			prestige = 15
@@ -534,7 +531,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 5
 			prestige = 150
@@ -633,7 +630,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 3
 			trait = just
@@ -803,7 +800,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 0.66
 			trait = arbitrary
@@ -954,7 +951,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 5
 			trait = diligent
@@ -1091,7 +1088,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 3
 			trait = brave
@@ -1151,7 +1148,6 @@ character_event = {
 }
 
 # Event Chain: Poachers
-
 # Poachers! Start
 character_event = {
 	id = 4020
@@ -1194,7 +1190,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 5
 			prestige = 150
@@ -1541,7 +1537,6 @@ character_event = {
 }
 
 # Event Chain: Courtier gets robbed
-
 # I have been robbed!
 character_event = {
 	id = 4005
@@ -1580,7 +1575,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2.5
 			trait = trusting
@@ -1874,7 +1869,6 @@ character_event = {
 }
 
 # Event Chain: Unfaithful Husband
-
 # Unfaithful Husband: Start
 character_event = {
 	id = 4015
@@ -1960,7 +1954,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2.5
 			trait = lustful
@@ -2197,7 +2191,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 3
 			trait = brave
@@ -2267,7 +2261,6 @@ character_event = {
 }
 
 # Deer Park ID 4075 - moved to hunting_events.txt
-
 # Satirical Puppet Show ID 4105 - moved to summer_fair_events.txt
 
 # Banquette: Start
@@ -2304,7 +2297,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 5
 			trait = cynical
@@ -2597,7 +2590,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2.5
 			trait = gregarious
@@ -2749,7 +2742,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2.5
 			trait = arbitrary
@@ -2878,7 +2871,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 5
 			trait = cynical
@@ -2990,7 +2983,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 5
 			trait = cynical
@@ -3085,7 +3078,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 5
 			trait = cynical
@@ -3142,7 +3135,6 @@ character_event = {
 }
 
 # Funeral Procession ID 4140 - moved to mourning_events.txt
-
 # Bard
 character_event = {
 	id = 4145
@@ -3177,7 +3169,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 5
 			trait = paranoid
@@ -3381,7 +3373,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 5
 			trait = trusting
@@ -3495,7 +3487,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 5
 			trait = cynical
@@ -3593,11 +3585,9 @@ character_event = {
 }
 
 # Travelling Acrobats ID 4160 - moved to feast_events.txt
-
 # Travelling Dancer - moved to feast_events.txt
 
 # Performing Bear ID 4170 - moved to summer_fair_events.txt
-
 # Bal des Ardents
 character_event = {
 	id = 4175
@@ -3631,7 +3621,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 3
+		factor = 3
 		modifier = {
 			factor = 2
 			trait = infirm

@@ -1,10 +1,8 @@
 
 # v1.10: Old Gods Events: 62300 - 62999
-
 # Written by Henrik Fåhraeus
 
 # Called from on_action: on_prepared_invasion_aborts
-
 # The target character is in FROM
 character_event = {
 	id = 62300
@@ -33,7 +31,6 @@ character_event = {
 }
 
 # Called from on_action: on_prepared_invasion_expires
-
 # The target character is in FROM
 character_event = {
 	id = 62310
@@ -95,7 +92,6 @@ character_event = {
 }
 
 # Troops flock to your banner
-
 # Called from on_action: on_prepared_invasion_monthly
 
 # The target character is in FROM
@@ -107,7 +103,7 @@ character_event = {
 	is_triggered_only = yes
 	# On_action, so BIG is MORE OFTEN!
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 1.25
 			martial = 15
@@ -211,7 +207,6 @@ character_event = {
 }
 
 # A hero and his retinue appear in your court
-
 # Called from on_action: on_prepared_invasion_monthly
 
 # The target character is in FROM
@@ -224,7 +219,7 @@ character_event = {
 	is_triggered_only = yes
 	# On_action, so BIG is MORE OFTEN
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 1.25
 			martial = 15
@@ -343,7 +338,6 @@ character_event = {
 }
 
 # A smaller force arrives for the invasion
-
 # Called from on_action: on_prepared_invasion_monthly
 
 # The target character is in FROM
@@ -355,7 +349,7 @@ character_event = {
 	is_triggered_only = yes
 	# On_action, so BIG is MORE OFTEN
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 1.25
 			martial = 15

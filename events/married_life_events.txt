@@ -1,11 +1,9 @@
 
 
 # Events for Married Life
-
 # Event ID 30000-30999 is reserved
 
 # Written by Sara Wendel-Örtqvist
-
 # Unhappy marriage, separate bedchambers
 character_event = {
 	id = 30000
@@ -37,7 +35,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 1.25
 			trait = stressed
@@ -206,7 +204,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 	}
 
 	option = {
@@ -327,7 +325,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			trait = wroth
@@ -937,7 +935,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			trait = paranoid
@@ -1038,7 +1036,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			trait = cynical
@@ -1146,7 +1144,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			trait = charismatic_negotiator
@@ -1368,7 +1366,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 20
+		factor = 20
 	}
 
 	immediate = {
@@ -1753,7 +1751,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			trait = wroth
@@ -1986,7 +1984,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			trait = shy
@@ -2194,7 +2192,7 @@ character_event = {
 		treasury = 50
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			trait = kind
@@ -2295,7 +2293,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			trait = lustful
@@ -2398,7 +2396,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			trait = charitable
@@ -2490,7 +2488,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			spouse = {
@@ -2589,7 +2587,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			spouse = {
@@ -2688,7 +2686,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			spouse = {
@@ -2785,7 +2783,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 1.5
 			spouse = {
@@ -2891,7 +2889,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			spouse = {
@@ -2941,7 +2939,6 @@ character_event = {
 }
 
 # Wife suggests new councillors
-
 # Wife suggests new Chancellor: Start
 character_event = {
 	id = 30060
@@ -3009,7 +3006,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 0.5
 			spouse = {
@@ -3211,7 +3208,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 0.5
 			spouse = {
@@ -3413,7 +3410,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 0.5
 			spouse = {
@@ -3613,7 +3610,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 0.5
 			spouse = {
@@ -3830,7 +3827,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 0.5
 			spouse = {
@@ -4021,7 +4018,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			trait = lustful
@@ -4452,7 +4449,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 1.5
 			spouse = {
@@ -5101,7 +5098,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 4
 			NOT = {
@@ -5628,7 +5625,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 3
 			has_ambition = obj_have_a_daughter
@@ -5727,7 +5724,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			spouse = {

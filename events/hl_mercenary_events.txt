@@ -1,23 +1,18 @@
 
 
 # Horse Lords Mercenaries Events
-
 # ID HL.10000-HL.10999
 
 # 10100 - 10199 Military Education
-
 # 10200 - 10299 Trait development
 
 # 10300 - 10399 Prestigious events
-
 # 10400 - 10499 Religious Events
 
 # 10500 - 10599 Relationship events
-
 # 10600 - 10699 Education events
 
 # 10700 - 10799 External notification events
-
 # Written by Henrik "Groogy" Hansson
 namespace = HL
 
@@ -32,7 +27,7 @@ character_event = {
 	ai = yes
 	only_rulers = yes
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			mercenary_employer = {
@@ -148,7 +143,7 @@ character_event = {
 	ai = yes
 	only_rulers = yes
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			mercenary_employer = {
@@ -213,7 +208,7 @@ character_event = {
 	ai = yes
 	only_rulers = yes
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			mercenary_employer = {
@@ -283,7 +278,7 @@ character_event = {
 	ai = yes
 	only_rulers = yes
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			mercenary_employer = {
@@ -353,7 +348,7 @@ character_event = {
 	ai = yes
 	only_rulers = yes
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			mercenary_employer = {
@@ -418,7 +413,7 @@ character_event = {
 	ai = yes
 	only_rulers = yes
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			mercenary_employer = {
@@ -483,7 +478,7 @@ character_event = {
 	ai = yes
 	only_rulers = yes
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			mercenary_employer = {
@@ -556,7 +551,7 @@ character_event = {
 	ai = yes
 	only_rulers = yes
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			mercenary_employer = {
@@ -629,7 +624,7 @@ character_event = {
 	ai = yes
 	only_rulers = yes
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			mercenary_employer = {
@@ -807,7 +802,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 0
 			primary_title = {
@@ -969,7 +964,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 0
 			primary_title = {
@@ -1297,7 +1292,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			trait = lustful
@@ -1544,7 +1539,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 0.25
 		}
@@ -1976,7 +1971,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 	}
 
 	option = {
@@ -2157,7 +2152,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			mercenary_employer = {

@@ -38,13 +38,12 @@ character_event = {
 	}
 
 	option = {
-		name = "OK."
+		name = OK
 		add_trait = infertile
 	}
 }
 
 # Both following events are activated on_post_birth
-
 # elven infertility - each time they get pregnant, there is a chance it is their last child they can have
 character_event = {
 	id = health.1
@@ -61,7 +60,7 @@ character_event = {
 	}
 
 	option = {
-		name = "OK"
+		name = OK
 		if = {
 			limit = {
 				culture_group = asur_group
@@ -111,7 +110,7 @@ character_event = {
 	}
 
 	option = {
-		name = "OK"
+		name = OK
 		random = {
 			chance = 45
 			add_trait = infertile
@@ -144,9 +143,7 @@ character_event = {
 				NOT = {
 					trait = infertile
 				}
-
 			}
-
 		}
 	}
 
@@ -159,7 +156,8 @@ character_event = {
 			}
 			mother = {
 				character_event = {
-					id = health.1 days = 2
+					id = health.1
+					days = 2
 				}
 			}
 		}
@@ -172,7 +170,8 @@ character_event = {
 			}
 			father = {
 				character_event = {
-					id = health.4 days = 2
+					id = health.4
+					days = 2
 				}
 			}
 		}
@@ -188,7 +187,8 @@ character_event = {
 			}
 			father = {
 				character_event = {
-					id = health.5 days = 2
+					id = health.5
+					days = 2
 				}
 			}
 		}
@@ -203,7 +203,8 @@ character_event = {
 			}
 			mother = {
 				character_event = {
-					id = health.2 days = 2
+					id = health.2
+					days = 2
 				}
 			}
 		}
@@ -271,7 +272,6 @@ character_event = {
 				50 = {
 					add_trait = infertile
 				}
-
 			}
 		}
 		if = {
@@ -324,7 +324,6 @@ character_event = {
 				40 = {
 					add_trait = infertile
 				}
-
 			}
 		}
 		if = {
@@ -377,7 +376,6 @@ character_event = {
 				30 = {
 					add_trait = infertile
 				}
-
 			}
 		}
 	}
@@ -439,7 +437,6 @@ character_event = {
 			40 = {
 				add_trait = infertile
 			}
-
 		}
 	}
 }

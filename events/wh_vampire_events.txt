@@ -1,75 +1,57 @@
 namespace = svampires
 
 # on death, give titles to heir.
-
 # character_event = {
 
 # 	id = svampires.0
-
 # 	hide_window = yes
 
 # 	is_triggered_only = yes
-
 # 	trigger = {
 
 # 			OR = {
-
 # 			trait = vampire_lahmian_visible
 
 # 			trait = vampire_carstein_visible
-
 # 			trait = vampire_blood_visible
 
 # 			trait = vampire_strigoi_visible
-
 # 			trait = vampire_necrarch_visible
 
 # 			trait = vampire_jade_visible
-
 # 			trait = vampire_mahtmasi_visible
 
 # 			trait = vampire_lahmian_hidden
-
 # 			trait = vampire_carstein_hidden
 
 # 			trait = vampire_blood_hidden
-
 # 			trait = vampire_strigoi_hidden
 
 # 			trait = vampire_necrarch_hidden
-
 # 			trait = vampire_jade_hidden
 
 # 			trait = vampire_mahtmasi_hidden }
-
 # 						vampire_heir = {
 
 # 							has_opinion_modifier = {
-
 # 								modifier = opinion_chosen_fledgling
 
 # 								who = ROOT
-
 # 							}
 
 # 						}
-
 # 	}
 
 # 	immediate = { vampire_heir = { limit = { has_opinion_modifier = {
-
 # 								modifier = opinion_chosen_fledgling
 
 # 								who = ROOT
-
 # 								}
 
 # 						}
-
 # 				remove_trait = vampire_heir
 
 # 				ROOT = { any_demesne_title = { grant_title = PREVPREV } } } }
-
 # }
 
 # On death of a Vampire ruler, any thralls he made who are not legitimized gain claims on his title
@@ -91,7 +73,6 @@ character_event = {
 				dynasty = ROOT
 			}
 		}
-
 	}
 
 	immediate = {
@@ -159,8 +140,9 @@ character_event = {
 			trait = incapable
 		}
 	}
+
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 10
 			trait = ambitious
@@ -320,19 +302,22 @@ character_event = {
 			modifier = {
 				factor = 1.5
 				opinion = {
-					who = from value = 25
+					who = from
+					value = 25
 				}
 			}
 			modifier = {
 				factor = 2
 				opinion = {
-					who = from value = 50
+					who = from
+					value = 50
 				}
 			}
 			modifier = {
 				factor = 3
 				opinion = {
-					who = from value = 75
+					who = from
+					value = 75
 				}
 			}
 		}
@@ -365,7 +350,8 @@ character_event = {
 			modifier = {
 				factor = 0
 				opinion = {
-					who = from value = 80
+					who = from
+					value = 80
 				}
 			}
 		}
@@ -432,8 +418,9 @@ character_event = {
 			trait = incapable
 		}
 	}
+
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 10
 			trait = ambitious
@@ -593,19 +580,22 @@ character_event = {
 			modifier = {
 				factor = 1.5
 				opinion = {
-					who = from value = 25
+					who = from
+					value = 25
 				}
 			}
 			modifier = {
 				factor = 2
 				opinion = {
-					who = from value = 50
+					who = from
+					value = 50
 				}
 			}
 			modifier = {
 				factor = 3
 				opinion = {
-					who = from value = 75
+					who = from
+					value = 75
 				}
 			}
 		}
@@ -638,7 +628,8 @@ character_event = {
 			modifier = {
 				factor = 0
 				opinion = {
-					who = from value = 80
+					who = from
+					value = 80
 				}
 			}
 		}
@@ -694,7 +685,6 @@ character_event = {
 }
 
 # NECROMANCY STUFF
-
 # A prisoner is turned into part of a necromantic ritual
 character_event = {
 	id = svampires.10
@@ -710,7 +700,8 @@ character_event = {
 			}
 			remove_character_modifier = necromantic_power_4
 			add_character_modifier = {
-				name = necromantic_power_5 duration = 30
+				name = necromantic_power_5
+				duration = 30
 			}
 		}
 		if = {
@@ -719,7 +710,8 @@ character_event = {
 			}
 			remove_character_modifier = necromantic_power_3
 			add_character_modifier = {
-				name = necromantic_power_4 duration = 30
+				name = necromantic_power_4
+				duration = 30
 			}
 		}
 		if = {
@@ -728,7 +720,8 @@ character_event = {
 			}
 			remove_character_modifier = necromantic_power_2
 			add_character_modifier = {
-				name = necromantic_power_3 duration = 30
+				name = necromantic_power_3
+				duration = 30
 			}
 		}
 		if = {
@@ -737,7 +730,8 @@ character_event = {
 			}
 			remove_character_modifier = necromantic_power_1
 			add_character_modifier = {
-				name = necromantic_power_2 duration = 30
+				name = necromantic_power_2
+				duration = 30
 			}
 		}
 		if = {
@@ -759,7 +753,8 @@ character_event = {
 				}
 			}
 			add_character_modifier = {
-				name = necromantic_power_1 duration = 30
+				name = necromantic_power_1
+				duration = 30
 			}
 		}
 	}
@@ -1100,7 +1095,8 @@ character_event = {
 			}
 			remove_character_modifier = necromantic_power_4
 			add_character_modifier = {
-				name = necromantic_power_3 duration = 10
+				name = necromantic_power_3
+				duration = 10
 			}
 		}
 		if = {
@@ -1109,7 +1105,8 @@ character_event = {
 			}
 			remove_character_modifier = necromantic_power_3
 			add_character_modifier = {
-				name = necromantic_power_2 duration = 10
+				name = necromantic_power_2
+				duration = 10
 			}
 		}
 		if = {
@@ -1118,7 +1115,8 @@ character_event = {
 			}
 			remove_character_modifier = necromantic_power_2
 			add_character_modifier = {
-				name = necromantic_power_1 duration = 10
+				name = necromantic_power_1
+				duration = 10
 			}
 		}
 		if = {
@@ -1211,8 +1209,8 @@ character_event = {
 					cannot_inherit = yes
 					attrition = 0
 				}
-			} # endroot
-		} # endlocation
+			}
+		}
 	}
 }
 
@@ -1268,8 +1266,8 @@ character_event = {
 					cannot_inherit = yes
 					attrition = 0
 				}
-			} # endroot
-		} # endlocation
+			}
+		}
 	}
 }
 
@@ -1349,8 +1347,8 @@ character_event = {
 					cannot_inherit = yes
 					attrition = 0
 				}
-			} # endroot
-		} # endlocation
+			}
+		}
 	}
 }
 
@@ -1431,8 +1429,8 @@ character_event = {
 					cannot_inherit = yes
 					attrition = 0
 				}
-			} # endroot
-		} # endlocation
+			}
+		}
 	}
 }
 
@@ -1525,8 +1523,8 @@ character_event = {
 					cannot_inherit = yes
 					attrition = 0
 				}
-			} # endroot
-		} # endlocation
+			}
+		}
 	}
 }
 
@@ -1643,8 +1641,8 @@ character_event = {
 					cannot_inherit = yes
 					attrition = 0
 				}
-			} # endroot
-		} # endlocation
+			}
+		}
 	}
 }
 
@@ -1773,8 +1771,8 @@ character_event = {
 					cannot_inherit = yes
 					attrition = 0
 				}
-			} # endroot
-		} # endlocation
+			}
+		}
 	}
 }
 
@@ -1927,8 +1925,8 @@ character_event = {
 					cannot_inherit = yes
 					attrition = 0
 				}
-			} # endroot
-		} # endlocation
+			}
+		}
 	}
 }
 
@@ -2083,8 +2081,8 @@ character_event = {
 					cannot_inherit = yes
 					attrition = 0
 				}
-			} # endroot
-		} # endlocation
+			}
+		}
 	}
 }
 
@@ -2263,8 +2261,8 @@ character_event = {
 					cannot_inherit = yes
 					attrition = 0
 				}
-			} # endroot
-		} # endlocation
+			}
+		}
 	}
 }
 
@@ -2335,7 +2333,6 @@ character_event = {
 					}
 				}
 			}
-
 		}
 		ai_chance = {
 			factor = 100
@@ -2395,7 +2392,6 @@ character_event = {
 				factor = 0
 				is_vampire_trigger = yes
 			}
-
 		}
 		hidden_tooltip = {
 			FROM = {
@@ -2471,7 +2467,6 @@ character_event = {
 }
 
 # PLOT TO STEAL THE RING
-
 # The plotter sees an opportunity
 character_event = {
 	id = svampires.14
@@ -2509,7 +2504,8 @@ character_event = {
 			factor = 0.7
 			plot_target_char = {
 				check_variable = {
-					which = carstein_death_count value = 3
+					which = carstein_death_count
+					value = 3
 				}
 			}
 		}
@@ -2517,7 +2513,8 @@ character_event = {
 			factor = 0.6
 			plot_target_char = {
 				check_variable = {
-					which = carstein_death_count value = 5
+					which = carstein_death_count
+					value = 5
 				}
 			}
 		}
@@ -2525,7 +2522,8 @@ character_event = {
 			factor = 0.6
 			plot_target_char = {
 				check_variable = {
-					which = carstein_death_count value = 8
+					which = carstein_death_count
+					value = 8
 				}
 			}
 		}
@@ -2533,7 +2531,8 @@ character_event = {
 			factor = 0.6
 			plot_target_char = {
 				check_variable = {
-					which = carstein_death_count value = 10
+					which = carstein_death_count
+					value = 10
 				}
 			}
 		}
@@ -2816,7 +2815,8 @@ character_event = {
 			factor = 0.7
 			plot_target_char = {
 				check_variable = {
-					which = carstein_death_count value = 3
+					which = carstein_death_count
+					value = 3
 				}
 			}
 		}
@@ -2824,7 +2824,8 @@ character_event = {
 			factor = 0.6
 			plot_target_char = {
 				check_variable = {
-					which = carstein_death_count value = 5
+					which = carstein_death_count
+					value = 5
 				}
 			}
 		}
@@ -2832,7 +2833,8 @@ character_event = {
 			factor = 0.6
 			plot_target_char = {
 				check_variable = {
-					which = carstein_death_count value = 8
+					which = carstein_death_count
+					value = 8
 				}
 			}
 		}
@@ -2840,7 +2842,8 @@ character_event = {
 			factor = 0.6
 			plot_target_char = {
 				check_variable = {
-					which = carstein_death_count value = 10
+					which = carstein_death_count
+					value = 10
 				}
 			}
 		}
@@ -3453,7 +3456,7 @@ character_event = {
 					}
 				}
 			}
-		} # closehiddentooltip
+		}
 	}
 }
 
@@ -3522,7 +3525,7 @@ character_event = {
 					}
 				}
 			}
-		} # closehiddentooltip
+		}
 	}
 }
 
@@ -3735,111 +3738,84 @@ character_event = {
 }
 
 # Group of Ghouls arrives in a province
-
 # province_event = {
 
 # 	id = svampires.15
-
 # 	desc = EVTDESCsvampires15
 
 # 	picture = GFX_evt_ghoul
-
 # 	trigger = {
 
 # 		owner = { OR = { trait = vampire_carstein_visible
-
 # 				 trait = vampire_strigoi_visible
 
 # 				 trait = vampire_carstein_hidden
-
 # 				 trait = vampire_strigoi_hidden } }
 
 # 		NOT = { has_building = ca_ghoul_colony_1 }
-
 # 		NOT = { has_building = ct_ghoul_colony_1 }
 
 # 		NOT = { has_building = tp_ghoul_colony_1 }
-
 # 		NOT = { has_building = tb_ghoul_colony_1 }
 
 # 		}
-
 # 	mean_time_to_happen = {
 
 # 		months = 3900
-
 # 		modifier = {
 
 # 			factor = 15
-
 # 			owner = { liege = { any_realm_province = { OR = { has_building = ca_ghoul_colony_1
 
 # 									has_building = ct_ghoul_colony_1
-
 # 									has_building = tp_ghoul_colony_1
 
 # 									has_building = tb_ghoul_colony_1 } } } }
-
 # 			}
 
 # 		modifier = {
-
 # 			factor = 0.5
 
 # 			culture = sylvanian
-
 # 			}
 
 # 		modifier = {
-
 # 			factor = 0.25
 
 # 			owner = { OR = { trait = vampire_strigoi_visible
-
 # 				 trait = vampire_strigoi_hidden } }
 
 # 			}
-
 # 		}
 
 # 	option = {
-
 # 		name = EVTOPTAsvampires15
 
 # 			if = { limit = { is_feudal = yes }
-
 # 				add_building = ca_ghoul_colony_1 }
 
 # 			if = { limit = { is_republic = yes }
-
 # 				add_building = ct_ghoul_colony_1 }
 
 # 			if = { limit = { is_theocracy = yes }
-
 # 				add_building = tp_ghoul_colony_1 }
 
 # 			if = { limit = { is_tribal = yes }
-
 # 				add_building = tb_ghoul_colony_1 }
 
 # 	}
-
 # 	option = {
 
 # 		name = EVTOPTBsvampires15
-
 # 		hidden_tooltip = { random = { chance = 10
 
 # 						add_province_modifier = { name = ghoul_unrest
-
 # 									duration = 1250 } }
 
 # 			 }
-
 # 	}
 
 # }
-
 # The Red Duke starts his invasion
 character_event = {
 	id = svampires.16
@@ -3985,7 +3961,6 @@ character_event = {
 			trait = content
 
 		}
-
 	}
 
 	option = {
@@ -4004,7 +3979,6 @@ character_event = {
 					id = svampires.18005
 				}
 			}
-
 		}
 	}
 }
@@ -4091,8 +4065,9 @@ character_event = {
 			}
 		}
 	}
+
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2
 			trait = cruel
@@ -4208,28 +4183,20 @@ character_event = {
 							remove_friend = ROOT
 						}
 						set_variable = {
-							which = khornefavor value = 0
+							which = "khorne_favor"
+							value = 0
 						}
 						set_variable = {
-							which = nurglefavor value = 0
+							which = "nurgle_favor"
+							value = 0
 						}
 						set_variable = {
-							which = slaaneshfavor value = 0
+							which = "slaanesh_favor"
+							value = 0
 						}
 						set_variable = {
-							which = tzeentchfavor value = 0
-						}
-						set_variable = {
-							which = "khorne_favor" value = 0
-						}
-						set_variable = {
-							which = "nurgle_favor" value = 0
-						}
-						set_variable = {
-							which = "slaanesh_favor" value = 0
-						}
-						set_variable = {
-							which = "tzeentch_favor" value = 0
+							which = "tzeentch_favor"
+							value = 0
 						}
 						clr_character_flag = hidden_cultist_tzeentch3
 						clr_character_flag = hidden_cultist_tzeentch2
@@ -4357,7 +4324,6 @@ province_event = {
 					character = FROMFROM
 				}
 			}
-
 		}
 	}
 
@@ -4371,7 +4337,6 @@ province_event = {
 }
 
 # STRIGOI
-
 # Check the province modifier for sleeping Strigoi
 province_event = {
 	id = svampires.22
@@ -4451,42 +4416,36 @@ character_event = {
 			NOT = {
 				piety = 1000
 			}
-
 		}
 		modifier = {
 			factor = 1.5
 			NOT = {
 				piety = 1500
 			}
-
 		}
 		modifier = {
 			factor = 1.5
 			NOT = {
 				piety = 750
 			}
-
 		}
 		modifier = {
 			factor = 1.5
 			NOT = {
 				piety = 500
 			}
-
 		}
 		modifier = {
 			factor = 1.5
 			NOT = {
 				piety = 250
 			}
-
 		}
 		modifier = {
 			factor = 1.5
 			NOT = {
 				piety = 100
 			}
-
 		}
 
 	}
@@ -4527,7 +4486,6 @@ character_event = {
 							}
 						}
 					}
-
 				}
 				50 = {
 					location = {
@@ -4562,11 +4520,9 @@ character_event = {
 							trait = vampire_strigoi_visible
 						}
 					}
-
 				}
 
 			}
-
 		}
 		if = {
 			limit = {
@@ -4641,13 +4597,11 @@ character_event = {
 				factor = 0
 				trait = vampire_strigoi_visible
 			}
-
 		}
 	}
 }
 
 # PREPARING INVASIONS FOR STRIGOI
-
 # Umbrella event when started the preparation for an invasion
 character_event = {
 	id = svampires.24
@@ -4832,7 +4786,6 @@ character_event = {
 }
 
 # Troops flock to your banner
-
 # The target character is in FROM
 character_event = {
 	id = svampires.27
@@ -5014,7 +4967,6 @@ character_event = {
 }
 
 # A Strigoi and his retinue appear in your court
-
 # The target character is in FROM
 character_event = {
 	id = svampires.28
@@ -5223,7 +5175,6 @@ character_event = {
 }
 
 # A smaller force arrives for the invasion
-
 # The target character is in FROM
 character_event = {
 	id = svampires.29
@@ -5645,7 +5596,6 @@ character_event = {
 					}
 				}
 			}
-
 		}
 	}
 
@@ -5659,7 +5609,6 @@ character_event = {
 }
 
 # STRIGANY NOMADISM
-
 # A Strigany caravan comes in your province
 character_event = {
 	id = svampires.32
@@ -5708,7 +5657,6 @@ character_event = {
 				NOT = {
 					religion_group = necromantic_group
 				}
-
 			}
 			modifier = {
 				factor = 1.5
@@ -5725,7 +5673,6 @@ character_event = {
 				trait = paranoid
 
 			}
-
 		}
 	}
 
@@ -5780,42 +5727,36 @@ letter_event = {
 							FROMFROM = {
 								stewardship = 10
 							}
-
 						}
 						modifier = {
 							factor = 1.25
 							FROMFROM = {
 								stewardship = 15
 							}
-
 						}
 						modifier = {
 							factor = 1.5
 							FROMFROM = {
 								stewardship = 20
 							}
-
 						}
 						modifier = {
 							factor = 1.5
 							FROMFROM = {
 								stewardship = 25
 							}
-
 						}
 						modifier = {
 							factor = 1.25
 							FROMFROM = {
 								diplomacy = 10
 							}
-
 						}
 						modifier = {
 							factor = 1.5
 							FROMFROM = {
 								trait = midas_touched
 							}
-
 						}
 						character_event = {
 							id = svampires.32003 days = 170 random = 140
@@ -5841,7 +5782,6 @@ letter_event = {
 									}
 								}
 							}
-
 						}
 						character_event = {
 							id = svampires.32006 days = 170 random = 140
@@ -5855,46 +5795,41 @@ letter_event = {
 									has_empty_holding = no
 								}
 							}
-
 						}
 						modifier = {
 							factor = 0
 							NOT = {
 								FROMFROM = {
 									check_variable = {
-										which = "strigany_presence_v" value = 15
+										which = "strigany_presence_v"
+										value = 15
 									}
 								}
 							}
-
 						}
 						modifier = {
 							factor = 1.75
 							FROMFROM = {
 								stewardship = 20
 							}
-
 						}
 						modifier = {
 							factor = 2
 							FROMFROM = {
 								trait = ambitious
 							}
-
 						}
 						modifier = {
 							factor = 1.25
 							FROMFROM = {
 								trait = deceitful
 							}
-
 						}
 						modifier = {
 							factor = 1.5
 							FROMFROM = {
 								trait = midas_touched
 							}
-
 						}
 						character_event = {
 							id = svampires.32007 days = 170 random = 140
@@ -5936,7 +5871,8 @@ character_event = {
 		name = EVTOPTAsvampires32003
 		wealth = 75
 		change_variable = {
-			which = "strigany_presence_v" value = 1
+			which = "strigany_presence_v"
+			value = 1
 		}
 		FROM = {
 			letter_event = {
@@ -5968,42 +5904,36 @@ letter_event = {
 							FROM = {
 								stewardship = 10
 							}
-
 						}
 						modifier = {
 							factor = 1.25
 							FROM = {
 								stewardship = 15
 							}
-
 						}
 						modifier = {
 							factor = 1.5
 							FROM = {
 								stewardship = 20
 							}
-
 						}
 						modifier = {
 							factor = 1.5
 							FROM = {
 								stewardship = 25
 							}
-
 						}
 						modifier = {
 							factor = 1.25
 							FROM = {
 								diplomacy = 10
 							}
-
 						}
 						modifier = {
 							factor = 1.5
 							FROM = {
 								trait = midas_touched
 							}
-
 						}
 						character_event = {
 							id = svampires.32003 days = 170 random = 140
@@ -6031,7 +5961,6 @@ letter_event = {
 									}
 								}
 							}
-
 						}
 						character_event = {
 							id = svampires.32006 days = 170 random = 140
@@ -6045,18 +5974,17 @@ letter_event = {
 									has_empty_holding = no
 								}
 							}
-
 						}
 						modifier = {
 							factor = 0
 							NOT = {
 								FROM = {
 									check_variable = {
-										which = "strigany_presence_v" value = 15
+										which = "strigany_presence_v"
+										value = 15
 									}
 								}
 							}
-
 						}
 						modifier = {
 							factor = 0
@@ -6067,35 +5995,30 @@ letter_event = {
 									}
 								}
 							}
-
 						}
 						modifier = {
 							factor = 1.75
 							FROM = {
 								stewardship = 20
 							}
-
 						}
 						modifier = {
 							factor = 2
 							FROM = {
 								trait = ambitious
 							}
-
 						}
 						modifier = {
 							factor = 1.25
 							FROM = {
 								trait = deceitful
 							}
-
 						}
 						modifier = {
 							factor = 1.5
 							FROM = {
 								trait = midas_touched
 							}
-
 						}
 						character_event = {
 							id = svampires.32007 days = 170 random = 140
@@ -6149,7 +6072,8 @@ character_event = {
 		name = EVTOPTAsvampires33
 		FROMFROM = {
 			set_variable = {
-				which = "strigany_presence_v" value = 0
+				which = "strigany_presence_v"
+				value = 0
 			}
 		}
 		ai_chance = {
@@ -6185,7 +6109,8 @@ character_event = {
 		name = EVTOPTAsvampires32004
 		wealth = 50
 		change_variable = {
-			which = "strigany_presence_v" value = 1
+			which = "strigany_presence_v"
+			value = 1
 		}
 		FROM = {
 			letter_event = {
@@ -6217,42 +6142,36 @@ letter_event = {
 							FROM = {
 								stewardship = 10
 							}
-
 						}
 						modifier = {
 							factor = 1.25
 							FROM = {
 								stewardship = 15
 							}
-
 						}
 						modifier = {
 							factor = 1.5
 							FROM = {
 								stewardship = 20
 							}
-
 						}
 						modifier = {
 							factor = 1.5
 							FROM = {
 								stewardship = 25
 							}
-
 						}
 						modifier = {
 							factor = 1.25
 							FROM = {
 								diplomacy = 10
 							}
-
 						}
 						modifier = {
 							factor = 1.5
 							FROM = {
 								trait = midas_touched
 							}
-
 						}
 						character_event = {
 							id = svampires.32003 days = 170 random = 140
@@ -6280,7 +6199,6 @@ letter_event = {
 									}
 								}
 							}
-
 						}
 						character_event = {
 							id = svampires.32006 days = 170 random = 140
@@ -6294,18 +6212,17 @@ letter_event = {
 									has_empty_holding = no
 								}
 							}
-
 						}
 						modifier = {
 							factor = 0
 							NOT = {
 								FROM = {
 									check_variable = {
-										which = "strigany_presence_v" value = 15
+										which = "strigany_presence_v"
+										value = 15
 									}
 								}
 							}
-
 						}
 						modifier = {
 							factor = 0
@@ -6316,35 +6233,30 @@ letter_event = {
 									}
 								}
 							}
-
 						}
 						modifier = {
 							factor = 1.75
 							FROM = {
 								stewardship = 20
 							}
-
 						}
 						modifier = {
 							factor = 2
 							FROM = {
 								trait = ambitious
 							}
-
 						}
 						modifier = {
 							factor = 1.25
 							FROM = {
 								trait = deceitful
 							}
-
 						}
 						modifier = {
 							factor = 1.5
 							FROM = {
 								trait = midas_touched
 							}
-
 						}
 						character_event = {
 							id = svampires.32007 days = 170 random = 140
@@ -6420,7 +6332,8 @@ character_event = {
 			}
 		}
 		change_variable = {
-			which = "strigany_presence_v" value = -1
+			which = "strigany_presence_v"
+			value = -1
 		}
 		FROM = {
 			letter_event = {
@@ -6476,42 +6389,36 @@ letter_event = {
 							FROM = {
 								stewardship = 10
 							}
-
 						}
 						modifier = {
 							factor = 1.25
 							FROM = {
 								stewardship = 15
 							}
-
 						}
 						modifier = {
 							factor = 1.5
 							FROM = {
 								stewardship = 20
 							}
-
 						}
 						modifier = {
 							factor = 1.5
 							FROM = {
 								stewardship = 25
 							}
-
 						}
 						modifier = {
 							factor = 1.25
 							FROM = {
 								diplomacy = 10
 							}
-
 						}
 						modifier = {
 							factor = 1.5
 							FROM = {
 								trait = midas_touched
 							}
-
 						}
 						character_event = {
 							id = svampires.32003 days = 170 random = 140
@@ -6539,7 +6446,6 @@ letter_event = {
 									}
 								}
 							}
-
 						}
 						character_event = {
 							id = svampires.32006 days = 170 random = 140
@@ -6553,18 +6459,17 @@ letter_event = {
 									has_empty_holding = no
 								}
 							}
-
 						}
 						modifier = {
 							factor = 0
 							NOT = {
 								FROM = {
 									check_variable = {
-										which = "strigany_presence_v" value = 15
+										which = "strigany_presence_v"
+										value = 15
 									}
 								}
 							}
-
 						}
 						modifier = {
 							factor = 0
@@ -6575,35 +6480,30 @@ letter_event = {
 									}
 								}
 							}
-
 						}
 						modifier = {
 							factor = 1.75
 							FROM = {
 								stewardship = 20
 							}
-
 						}
 						modifier = {
 							factor = 2
 							FROM = {
 								trait = ambitious
 							}
-
 						}
 						modifier = {
 							factor = 1.25
 							FROM = {
 								trait = deceitful
 							}
-
 						}
 						modifier = {
 							factor = 1.5
 							FROM = {
 								trait = midas_touched
 							}
-
 						}
 						character_event = {
 							id = svampires.32007 days = 170 random = 140
@@ -6680,7 +6580,8 @@ character_event = {
 			}
 		}
 		set_variable = {
-			which = "strigany_presence_v" value = 0
+			which = "strigany_presence_v"
+			value = 0
 		}
 		FROM = {
 			letter_event = {
@@ -6777,7 +6678,8 @@ character_event = {
 			}
 		}
 		set_variable = {
-			which = "strigany_presence_v" value = 0
+			which = "strigany_presence_v"
+			value = 0
 		}
 		ROOT = {
 			set_defacto_liege = FROM
@@ -6852,7 +6754,6 @@ character_event = {
 					trait = vampire_strigoi_visible
 				}
 			}
-
 		}
 	}
 
@@ -6981,7 +6882,6 @@ character_event = {
 						months = 10000
 					}
 				}
-
 			}
 
 		}
@@ -6989,31 +6889,24 @@ character_event = {
 }
 
 # Cleanup the province modifier
-
 # character_event = {
 
 # 	id = svampires.42
-
 # 	hide_window = yes
 
 # 	only_rulers = yes
-
 # 	max_age = 100
 
 # 	trigger = { 	NOT = { has_any_opinion_modifier = opinion_strigany_caravan_beacon2 }
-
 # 				capital_scope = { has_province_modifier = strigany_caravan }
 
 # 		}
-
 # 	mean_time_to_happen = { months = 5 }
 
 # 	immediate = { capital_scope = { remove_province_modifier = strigany_caravan } }
-
 # }
 
 # The Necrarch scourges enemy province to take sample subjects
-
 # ROOT is attacker, FROM is province sieged
 character_event = {
 	id = svampires.43
@@ -7113,8 +7006,8 @@ character_event = {
 				FROM = {
 					convert_to = TRIBAL
 				}
-			} # closesrandom
-		} # closesif
+			}
+		}
 		if = {
 			limit = {
 				FROM = {
@@ -7133,13 +7026,13 @@ character_event = {
 					}
 				}
 			}
-
-		} # closesif
+		}
 		wealth = 125
 		prestige = 50
 		piety = 250
 		change_variable = {
-			which = "sample_counter" value = 1
+			which = "sample_counter"
+			value = 1
 		}
 		ai_chance = {
 			factor = 25
@@ -7212,10 +7105,10 @@ character_event = {
 					}
 				}
 			}
-
-		} # closesif
+		}
 		change_variable = {
-			which = "sample_counter" value = 3
+			which = "sample_counter"
+			value = 3
 		}
 		ai_chance = {
 			factor = 75
@@ -7340,7 +7233,8 @@ character_event = {
 		name = EVTOPTAsvampires47
 		clr_character_flag = experimenting_necromancy
 		change_variable = {
-			which = "sample_counter" value = -5
+			which = "sample_counter"
+			value = -5
 		}
 		hidden_tooltip = {
 			random_list = {
@@ -7364,7 +7258,6 @@ character_event = {
 						id = svampires.47004
 					}
 				}
-
 			}
 
 		}
@@ -7378,7 +7271,8 @@ character_event = {
 		name = EVTOPTBsvampires47
 		clr_character_flag = experimenting_necromancy
 		change_variable = {
-			which = "sample_counter" value = -4
+			which = "sample_counter"
+			value = -4
 		}
 		hidden_tooltip = {
 			random_list = {
@@ -7402,7 +7296,6 @@ character_event = {
 						id = svampires.47008
 					}
 				}
-
 			}
 
 		}
@@ -7509,7 +7402,6 @@ character_event = {
  						war_elephants = {
 							150 150
 						}
-
 					}
 					attrition = 1.0
 					cannot_inherit = yes
@@ -7543,7 +7435,6 @@ character_event = {
  						war_elephants = {
 							50 50
 						}
-
 					}
 					attrition = 1.0
 					cannot_inherit = yes
@@ -7577,7 +7468,6 @@ character_event = {
  						light_infantry = {
 							750 750
 						}
-
 					}
 					attrition = 0.5
 					cannot_inherit = yes
@@ -7611,7 +7501,6 @@ character_event = {
  						undead_horde = {
 							1250 1250
 						}
-
 					}
 					attrition = 0.5
 					cannot_inherit = yes
@@ -7626,7 +7515,6 @@ character_event = {
 }
 
 # A vampire wants to commission an item from you
-
 # ping commissioner
 character_event = {
 	id = svampires.48
@@ -7668,7 +7556,6 @@ character_event = {
 				factor = 0.1
 				trait = paranoid
 			}
-
 		}
 	}
 
@@ -7703,7 +7590,6 @@ character_event = {
 }
 
 # Jade Vampires
-
 # On five years clock, a Jade naturally decays.
 character_event = {
 	id = svampires.60
@@ -7745,7 +7631,6 @@ character_event = {
 				factor = 0.85
 				trait = proud
 			}
-
 		}
 	}
 
@@ -7784,7 +7669,8 @@ character_event = {
 				has_character_modifier = jade_degradation_4
 			}
 			change_variable = {
-				which = "lunatic_counter" value = 3
+				which = "lunatic_counter"
+				value = 3
 			}
 			random = {
 				chance = 20
@@ -7797,7 +7683,8 @@ character_event = {
 				has_character_modifier = jade_degradation_3
 			}
 			change_variable = {
-				which = "lunatic_counter" value = 1
+				which = "lunatic_counter"
+				value = 1
 			}
 			remove_character_modifier = jade_degradation_3
 			add_character_modifier = {
@@ -7809,7 +7696,8 @@ character_event = {
 				has_character_modifier = jade_degradation_2
 			}
 			change_variable = {
-				which = "lunatic_counter" value = 1
+				which = "lunatic_counter"
+				value = 1
 			}
 			remove_character_modifier = jade_degradation_2
 			add_character_modifier = {
@@ -7870,7 +7758,6 @@ character_event = {
 			add_character_modifier = {
 				name = magic_power_2 duration = -1
 			}
-
 		}
 		if = {
 			limit = {
@@ -7889,7 +7776,8 @@ character_event = {
 				has_character_modifier = jade_degradation_3
 			}
 			change_variable = {
-				which = "lunatic_counter" value = -1
+				which = "lunatic_counter"
+				value = -1
 			}
 			remove_character_modifier = jade_degradation_3
 			add_character_modifier = {
@@ -7901,7 +7789,8 @@ character_event = {
 				has_character_modifier = jade_degradation_4
 			}
 			change_variable = {
-				which = "lunatic_counter" value = -2
+				which = "lunatic_counter"
+				value = -2
 			}
 			remove_character_modifier = jade_degradation_4
 			add_character_modifier = {
@@ -8207,63 +8096,48 @@ character_event = {
 }
 
 # The Heavenly Dragon forces the Jade to mobilize
-
 # character_event = {
 
 # 	id = svampires.60009
-
 # 	desc = EVTDESCsvampires60009
 
 # 	picture = GFX_evt_heavenly_dragon
-
 # 	is_triggered_only = yes
 
 # 	option = {
-
 # 		name = EVTOPTAsvampires60009
 
 # 		set_character_flag = mysterious_mission_flag
-
 # 			random_independent_ruler = { limit = { NOT = { religion_group = old_ones_group }
 
 # 								NOT = { character = ROOT }
-
 # 										is_landed = yes
 
 # 										is_nomadic = no
-
 # 										any_demesne_title = { tier = KING }
 
 # 										higher_tier_than = DUKE }
-
 # 						hidden_tooltip = { long_character_event = { id = slizardmen.29001 } }
 
 # 						random_realm_province = {
-
 # 									ROOT = {
 
 # 										war = {
-
 # 											casus_belli = mysdragon_mission
 
 # 											target = PREVPREVPREV # The top liege of the owner
-
 # 											thirdparty_title = PREVPREV # The de jure kingdom
 
 # 											tier = KING
-
 # 											}
 
 # 										}
-
 # 									}
 
 # 								 }
-
 # 		ai_chance = { factor = 1 }
 
 # 	}
-
 # }
 
 # Glimpsed at the Heavens - magic
@@ -8431,7 +8305,8 @@ character_event = {
 	option = {
 		name = EVTOPTAsvampires60015
 		change_variable = {
-			which = "lunatic_counter" value = 20
+			which = "lunatic_counter"
+			value = 20
 		}
 		add_trait = lunatic_3
 		ai_chance = {
@@ -8612,7 +8487,8 @@ character_event = {
 
 	immediate = {
 		change_variable = {
-			which = "lunatic_counter" value = -10
+			which = "lunatic_counter"
+			value = -10
 		}
 	}
 
@@ -8622,7 +8498,8 @@ character_event = {
 			limit = {
 				NOT = {
 					check_variable = {
-						which = "lunatic_counter" value = 1
+						which = "lunatic_counter"
+						value = 1
 					}
 				}
 			}
@@ -8634,13 +8511,14 @@ character_event = {
 			limit = {
 				NOT = {
 					check_variable = {
-						which = "lunatic_counter" value = 10
+						which = "lunatic_counter"
+						value = 10
 					}
 				}
 				check_variable = {
-					which = "lunatic_counter" value = 5
+					which = "lunatic_counter"
+					value = 5
 				}
-
 			}
 			remove_trait = lunatic_2
 			remove_trait = lunatic_3
@@ -8650,13 +8528,14 @@ character_event = {
 			limit = {
 				NOT = {
 					check_variable = {
-						which = "lunatic_counter" value = 20
+						which = "lunatic_counter"
+						value = 20
 					}
 				}
 				check_variable = {
-					which = "lunatic_counter" value = 10
+					which = "lunatic_counter"
+					value = 10
 				}
-
 			}
 			remove_trait = lunatic_1
 			remove_trait = lunatic_3
@@ -8677,7 +8556,8 @@ character_event = {
 
 	immediate = {
 		change_variable = {
-			which = "mutation_counter" value = -10
+			which = "mutation_counter"
+			value = -10
 		}
 	}
 
@@ -8688,7 +8568,8 @@ character_event = {
 			limit = {
 				NOT = {
 					check_variable = {
-						which = "mutation_counter" value = 1
+						which = "mutation_counter"
+						value = 1
 					}
 				}
 			}
@@ -8711,13 +8592,14 @@ character_event = {
 			limit = {
 				NOT = {
 					check_variable = {
-						which = "mutation_counter" value = 10
+						which = "mutation_counter"
+						value = 10
 					}
 				}
 				check_variable = {
-					which = "mutation_counter" value = 5
+					which = "mutation_counter"
+					value = 5
 				}
-
 			}
 			remove_trait = mutation_major
 			remove_trait = mutation_massive
@@ -8727,13 +8609,14 @@ character_event = {
 			limit = {
 				NOT = {
 					check_variable = {
-						which = "mutation_counter" value = 20
+						which = "mutation_counter"
+						value = 20
 					}
 				}
 				check_variable = {
-					which = "mutation_counter" value = 10
+					which = "mutation_counter"
+					value = 10
 				}
-
 			}
 			remove_trait = mutation_minor
 			remove_trait = mutation_massive
@@ -8822,7 +8705,6 @@ character_event = {
 						}
 						add_friend = FROMFROM
 					}
-
 				}
 				25 = {
 					modifier = {
@@ -8928,7 +8810,6 @@ character_event = {
 						}
 					}
 				}
-
 			}
 
 		}
@@ -9067,7 +8948,6 @@ province_event = {
 				}
 			}
 		}
-
 	}
 
 	option = {
@@ -9178,7 +9058,6 @@ province_event = {
 				}
 			}
 		}
-
 	}
 
 	option = {
@@ -9509,7 +9388,6 @@ character_event = {
 }
 
 # The Jade grab people while raiding an enemy province
-
 # ROOT is attacker, FROM is province sieged
 character_event = {
 	id = svampires.73
@@ -9647,8 +9525,7 @@ character_event = {
 					}
 				}
 			}
-
-		} # closesif
+		}
 		wealth = 125
 		prestige = 50
 		piety = 50
@@ -9929,7 +9806,6 @@ character_event = {
 					has_global_flag = mutiris_crystal_found
 				}
 			}
-
 		}
 	}
 
@@ -10217,7 +10093,6 @@ character_event = {
 				death_reason = death_murder_unknown
 			}
 		}
-
 	}
 
 	option = {
@@ -10261,7 +10136,6 @@ character_event = {
 					move_character = PREV
 				}
 			}
-
 		}
 	}
 
@@ -10384,7 +10258,6 @@ character_event = {
 }
 
 # Mahtmasi Kiss
-
 # Success - Victim
 character_event = {
 	id = svampires.79
@@ -10504,7 +10377,6 @@ character_event = {
 					id = svampires.81001 days = 5 random = 15
 				}
 			}
-
 		}
 		ai_chance = {
 			factor = 1
@@ -10641,11 +10513,9 @@ character_event = {
 							factor = 0.75
 							trait = lunatic_3
 						}
-
 					}
 
 				}
-
 			}
 
 		}
@@ -10687,11 +10557,9 @@ character_event = {
 							factor = 0.75
 							trait = lunatic_3
 						}
-
 					}
 
 				}
-
 			}
 
 		}
@@ -10715,12 +10583,9 @@ character_event = {
 	}
 }
 
-# à
-
-# VOODOO plot
+#  VOODOO plot
 
 # STEALING PERSONAL BELONGING
-
 # The plotter sees an opportunity
 character_event = {
 	id = svampires.83
@@ -11870,7 +11735,6 @@ character_event = {
 }
 
 # VOODOO CURSES
-
 # pinging to target
 character_event = {
 	id = svampires.83017
@@ -11921,7 +11785,6 @@ character_event = {
 }
 
 # First choice menu
-
 # FROM is the target
 character_event = {
 	id = svampires.84002
@@ -12109,12 +11972,10 @@ character_event = {
 						factor = 1.5
 						trait = hedge_wizard
 					}
-
 				}
 
-			} # closerandomlist
-
-		} # closehiddentooltip
+			}
+		}
 	}
 
 	option = {
@@ -12224,7 +12085,6 @@ character_event = {
 			}
 			70 = {
 			}
-
 		}
 		any_realm_province = {
 			limit = {
@@ -12279,7 +12139,6 @@ character_event = {
 					religion = shadowmen
 				}
 			}
-
 		}
 	}
 }
@@ -12311,7 +12170,6 @@ character_event = {
 			}
 			70 = {
 			}
-
 		}
 		any_courtier = {
 			opinion = {
@@ -12411,7 +12269,6 @@ character_event = {
 			}
 			70 = {
 			}
-
 		}
 		if = {
 			limit = {
@@ -12435,7 +12292,6 @@ character_event = {
 					death_reason = death_murder_unknown
 				}
 			}
-
 		}
 		if = {
 			limit = {
@@ -12455,7 +12311,6 @@ character_event = {
 					death_reason = death_murder_unknown
 				}
 			}
-
 		}
 		any_vassal = {
 			opinion = {
@@ -12512,7 +12367,6 @@ character_event = {
 			}
 			70 = {
 			}
-
 		}
 		any_realm_province = {
 			limit = {
@@ -12598,7 +12452,6 @@ character_event = {
 			}
 			70 = {
 			}
-
 		}
 		any_realm_province = {
 			limit = {
@@ -12698,7 +12551,6 @@ character_event = {
 			}
 			70 = {
 			}
-
 		}
 		if = {
 			limit = {
@@ -12722,7 +12574,6 @@ character_event = {
 					death_reason = death_murder_unknown
 				}
 			}
-
 		}
 		if = {
 			limit = {
@@ -12742,7 +12593,6 @@ character_event = {
 					death_reason = death_murder_unknown
 				}
 			}
-
 		}
 		any_vassal = {
 			opinion = {
@@ -12868,12 +12718,10 @@ character_event = {
 						factor = 1.5
 						trait = hedge_wizard
 					}
-
 				}
 
-			} # closerandomlist
-
-		} # closehiddentooltip
+			}
+		}
 	}
 	option = {
 		name = EVTOPTBsvampires86
@@ -12939,7 +12787,6 @@ character_event = {
 			}
 			70 = {
 			}
-
 		}
 		any_realm_province = {
 			limit = {
@@ -13134,7 +12981,6 @@ character_event = {
 			}
 			70 = {
 			}
-
 		}
 		add_trait = pneumonic
 		any_realm_province = {
@@ -13425,12 +13271,10 @@ character_event = {
 						factor = 1.5
 						trait = hedge_wizard
 					}
-
 				}
 
-			} # closerandomlist
-
-		} # closehiddentooltip
+			}
+		}
 	}
 	option = {
 		name = EVTOPTBsvampires87
@@ -13928,7 +13772,8 @@ character_event = {
 			change_learning = -1
 		}
 		change_variable = {
-			which = "lunatic_counter" value = 7
+			which = "lunatic_counter"
+			value = 7
 		}
 		hidden_tooltip = {
 			character_event = {
@@ -14105,7 +13950,6 @@ character_event = {
 				break = yes
 
 			}
-
 		}
 		ai_chance = {
 			factor = 50
@@ -14123,7 +13967,6 @@ character_event = {
 	}
 }
 
-# Close relative turned to Shadowmen, do you do the same?
 character_event = {
 	id = svampires.89
 	desc = EVTDESCsvampires89
@@ -14171,7 +14014,6 @@ character_event = {
 					character = FROM
 				}
 			}
-
 		}
 	}
 	option = {

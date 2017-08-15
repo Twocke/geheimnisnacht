@@ -227,7 +227,6 @@ character_event = {
 }
 
 # Troops flock to your banner
-
 # The target character is in FROM
 character_event = {
 	id = druchiiinv.4
@@ -401,7 +400,6 @@ character_event = {
 }
 
 # A hero and his retinue appear in your court
-
 # The target character is in FROM
 character_event = {
 	id = druchiiinv.5
@@ -590,7 +588,6 @@ character_event = {
 }
 
 # A smaller force arrives for the invasion
-
 # The target character is in FROM
 character_event = {
 	id = druchiiinv.6
@@ -810,7 +807,6 @@ character_event = {
 				modifier = opinion_scared_into_submission
 				who = ROOT
 			}
-
 		}
 		any_courtier = {
 			limit = {
@@ -829,7 +825,6 @@ character_event = {
 				modifier = opinion_scared_into_submission
 				who = ROOT
 			}
-
 		}
 	}
 }
@@ -873,7 +868,6 @@ character_event = {
 				modifier = opinion_scared_into_submission
 				who = ROOT
 			}
-
 		}
 		any_courtier = {
 			limit = {
@@ -891,7 +885,6 @@ character_event = {
 				modifier = opinion_scared_into_submission
 				who = ROOT
 			}
-
 		}
 	}
 }
@@ -935,7 +928,6 @@ character_event = {
 				modifier = opinion_scared_into_submission
 				who = ROOT
 			}
-
 		}
 		any_courtier = {
 			limit = {
@@ -953,7 +945,6 @@ character_event = {
 				modifier = opinion_scared_into_submission
 				who = ROOT
 			}
-
 		}
 	}
 }
@@ -997,7 +988,6 @@ character_event = {
 				modifier = opinion_scared_into_submission
 				who = ROOT
 			}
-
 		}
 		any_courtier = {
 			limit = {
@@ -1015,7 +1005,6 @@ character_event = {
 				modifier = opinion_scared_into_submission
 				who = ROOT
 			}
-
 		}
 	}
 }
@@ -1185,7 +1174,6 @@ character_event = {
 			factor = 0.25
 			has_character_modifier = magic_power_4
 		}
-
 	}
 
 	immediate = {
@@ -1295,7 +1283,6 @@ character_event = {
 }
 
 # Malekith loses the title - Naggaroth dissolves into infighting
-
 # ROOT is the new holder, FROM is the title, FROMFROM is the old holder
 character_event = {
 	id = druchiiinv.21
@@ -1694,7 +1681,6 @@ character_event = {
 						id = druchiiinv.22006 days = 2150 random = 1500
 					}
 				}
-
 			}
 
 		}
@@ -1797,7 +1783,8 @@ character_event = {
 		random = {
 			chance = 5
 			change_variable = {
-				which = "lunatic_counter" value = 4
+				which = "lunatic_counter"
+				value = 4
 			}
 			hidden_tooltip = {
 				character_event = {
@@ -1806,7 +1793,6 @@ character_event = {
 			} # lunacy counter
 
 		}
-
 	}
 
 	option = {
@@ -1824,7 +1810,6 @@ character_event = {
 						id = druchiiinv.22005 days = 15 random = 7
 					}
 				}
-
 			}
 
 		}
@@ -1845,7 +1830,6 @@ character_event = {
 				trait = deceitful
 
 			}
-
 		}
 	}
 
@@ -1871,7 +1855,6 @@ character_event = {
 				trait = shy
 
 			}
-
 		}
 	}
 }
@@ -2325,7 +2308,6 @@ character_event = {
 						id = druchiiinv.23002 days = 2150 random = 1500
 					}
 				}
-
 			}
 
 		}
@@ -2527,21 +2509,22 @@ character_event = {
 		name = EVTOPTAdruchiiinv23012
 		hidden_tooltip = {
 			change_variable = {
-				which = "lunatic_counter" value = 2
+				which = "lunatic_counter"
+				value = 2
 			}
 			random = {
 				chance = 10
 				change_variable = {
-					which = "lunatic_counter" value = 4
+					which = "lunatic_counter"
+					value = 4
 				}
-
 			}
 			random = {
 				chance = 5
 				change_variable = {
-					which = "lunatic_counter" value = 6
+					which = "lunatic_counter"
+					value = 6
 				}
-
 			}
 			character_event = {
 				id = mutation.1005
@@ -2964,7 +2947,6 @@ character_event = {
 						id = druchiiinv.23002 days = 7500 random = 1500
 					}
 				}
-
 			}
 
 		}

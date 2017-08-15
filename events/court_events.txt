@@ -1,11 +1,9 @@
 
 
 # Court Event Series
-
 # Event ID 73000-73999 is reserved
 
 # Written by Johan Andersson
-
 # A famous writer proposes to compose your family chronicles
 character_event = {
 	id = 73000
@@ -25,7 +23,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2.0
 			trait = ambitious
@@ -217,7 +215,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 4.0
 			spouse = {
@@ -337,7 +335,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 0.1
 			trait = cynical
@@ -383,7 +381,7 @@ character_event = {
 		wealth = 50
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 1.5
 			trait = kind
@@ -431,7 +429,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2.0
 			trait = ambitious
@@ -481,7 +479,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 2.0
 			trait = proud
@@ -833,7 +831,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 1.25
 			spouse = {
@@ -936,7 +934,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 0.05
 			trait = shy
@@ -980,7 +978,7 @@ character_event = {
 		}
 	}
 	weight_multiplier = {
-		days = 1
+		factor = 1
 		modifier = {
 			factor = 1.5
 			trait = kind
@@ -1141,11 +1139,9 @@ character_event = {
 }
 
 # I've been readin 'Ars Moriendi', and it claims that death is not something to be afraid of.
-
 # id = 73010
 
 # Ask for a job if I am good!
-
 # MARSHAL
 character_event = {
 	id = 73200
