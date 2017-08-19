@@ -12,14 +12,12 @@ character_event = {
 	title = WITCH_HUNTERS # Witch Hunters
 	desc = EVTDESC_WITCHHUNTER_0 # "Witch Hunters are a necessary evil - though their methods can be cruel, they are the first line of defense against the spread of Chaos. As a major religious site, you have several witch hunters in your court."
 	picture = "GFX_evt_witch_hunters"
-	only_rulers = yes
+	only_playable = yes
 	min_age = 16
 	religion_group = old_world_group
 
 	trigger = {
 		is_theocracy = yes
-		is_landed = yes
-		higher_tier_than = BARON
 		top_liege = {
 			religion_group = old_world_group
 			NOT = {
@@ -109,16 +107,9 @@ character_event = {
 			OR = {
 				ai = no
 				society_member_of = cult_of_slaanesh
-				society_member_of = cult_of_slaanesh2
-				society_member_of = cult_of_slaanesh3
 				society_member_of = cult_of_tzeentch
-				society_member_of = cult_of_tzeentch2
-				society_member_of = cult_of_tzeentch3
 				society_member_of = cult_of_khorne
-				society_member_of = cult_of_khorne2
-				society_member_of = cult_of_khorne3
 				society_member_of = cult_of_nurgle
-				society_member_of = cult_of_nurgle3
 			}
 		}
 		increase_visibility_minor_effect = yes
@@ -628,17 +619,9 @@ character_event = {
 						factor = 0.5 # If you are not a cultist, there's actually a lower chance of getting framed...
 						NOR = {
 							society_member_of = cult_of_khorne
-							society_member_of = cult_of_khorne2
-							society_member_of = cult_of_khorne3
 							society_member_of = cult_of_nurgle
-							society_member_of = cult_of_nurgle2
-							society_member_of = cult_of_nurgle3
 							society_member_of = cult_of_slaanesh
-							society_member_of = cult_of_slaanesh2
-							society_member_of = cult_of_slaanesh3
 							society_member_of = cult_of_tzeentch
-							society_member_of = cult_of_tzeentch2
-							society_member_of = cult_of_tzeentch3
 						}
 					}
 					FROM = {
@@ -1368,17 +1351,9 @@ character_event = {
 						factor = 0.5 # If you are not a cultist, there's actually a lower chance of getting framed...
 						NOR = {
 							society_member_of = cult_of_khorne
-							society_member_of = cult_of_khorne2
-							society_member_of = cult_of_khorne3
 							society_member_of = cult_of_nurgle
-							society_member_of = cult_of_nurgle2
-							society_member_of = cult_of_nurgle3
 							society_member_of = cult_of_slaanesh
-							society_member_of = cult_of_slaanesh2
-							society_member_of = cult_of_slaanesh3
 							society_member_of = cult_of_tzeentch
-							society_member_of = cult_of_tzeentch2
-							society_member_of = cult_of_tzeentch3
 						}
 					}
 					FROM = {
@@ -2051,11 +2026,10 @@ character_event = {
 	title = WITCH_HUNTERS # Witch Hunters
 	desc = EVTDESC_WITCHHUNTER_35 # "Witch Hunters are a necessary evil - though their methods can be cruel, they are the first line of defense against the spread of Chaos. Since there are no witch hunters in your realm, do you want to invite some?"
 	picture = "GFX_evt_witch_hunters"
-	only_rulers = yes
+	only_playable = yes
 	religion_group = old_world_group
 
 	trigger = {
-		is_landed = yes
 		higher_tier_than = COUNT
 		religion_group = old_world_group
 		top_liege = {

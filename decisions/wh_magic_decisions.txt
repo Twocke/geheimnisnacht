@@ -433,7 +433,9 @@ decisions = {
 				random = {
 					chance = 20
 					character_event = {
-						id = mutation.1 days = 100 random = 100
+						id = mutation.1
+						days = 100
+						random = 100
 					}
 				}
 				add_character_modifier = {
@@ -442,9 +444,9 @@ decisions = {
 					hidden = yes
 				}
 				character_event = {
-					id = schaos.27
+					id = wh_chaos.27
 				}
-			} #receive event and decide what to do
+			}
 			piety = -450
 		}
 		revoke_allowed = {
@@ -596,7 +598,7 @@ decisions = {
 					}
 					# mage decides if he wants to do it
 					character_event = {
-						id = schaos.84
+						id = wh_chaos.84
 					}
 				}
 			}
@@ -1090,20 +1092,18 @@ decisions = {
 	}
 
 	hunt_demon_down = {
+		only_playable = yes
 		potential = {
-			is_ruler = yes
 			age = 16
-			higher_tier_than = BARON
 			nor = {
 				religion_group = chaos_gods_group
 				any_friend = {
 					is_demon_trigger = yes
 				}
 			}
-			#has_any_opinion_modifier = opinion_demon_havoc
+			is_cultist_trigger = no
 			any_courtier = {
 				is_demon_trigger = yes
-				is_ruler = no
 			}
 		}
 		allow = {
@@ -1121,7 +1121,7 @@ decisions = {
 						is_demon_trigger = yes
 					}
 					character_event = {
-						id = wh_demons.4
+						id = wh_chaos_demons.4
 						days = 4
 					}
 				}
@@ -1648,7 +1648,7 @@ targetted_decisions = {
 				random_list = {
 					40 = {
 						character_event = {
-							id = schaos.79
+							id = wh_chaos.79
 						} #success
 						modifier = {
 							factor = 0.75
@@ -1767,12 +1767,12 @@ targetted_decisions = {
 					}
 					40 = {
 						character_event = {
-							id = schaos.80
+							id = wh_chaos.80
 						} #failure
 					}
 					20 = {
 						character_event = {
-							id = schaos.81
+							id = wh_chaos.81
 						} #deadly failure
 					}
 				}
@@ -1827,7 +1827,6 @@ targetted_decisions = {
 			}
 		}
 	}
-	#the version for objects is a normal decision activated by having the proper traits
 
 	vassal_possess_ritual = {
 		only_playable = yes
@@ -1881,7 +1880,6 @@ targetted_decisions = {
 				custom_tooltip = {
 					text = IS_NOT_INCAPACITATED
 					is_incapacitated_trigger = no
-
 				}
 			}
 		}
@@ -1902,7 +1900,7 @@ targetted_decisions = {
 						hidden = yes
 					}
 					character_event = {
-						id = schaos.17
+						id = wh_chaos.17
 					}
 				}
 			} #receive event and decide what to do

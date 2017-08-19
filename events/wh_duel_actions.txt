@@ -737,19 +737,13 @@ character_event = {
 		# FIXME
 		if = {
 			limit = {
-				root = {
-					character = event_target:charA
-				}
+				character = event_target:charA
 			}
 			log = "this is A"
 		}
 		if = {
 			limit = {
-				NOT = {
-					root = {
-						character = event_target:charA
-					}
-				}
+				character = event_target:charB
 			}
 			log = "this is B"
 		}
@@ -767,10 +761,51 @@ character_event = {
 					}
 				}
 			}
-			# we have been slain
-			event_target:charA = {
-				character_event = {
-					id = duelaction.201
+			random_list = {
+				80 = {
+					# B have been slain
+					event_target:charA = {
+						character_event = {
+							id = duelaction.201
+						}
+					}
+				}
+				20 = {
+					# dont take prisoners
+					modifier = {
+						factor = 0
+						or = {
+							event_target:charB = {
+								or = {
+									religion_group = greenskin_gods_group
+									religion_group = horned_rat_god_group
+									is_demon_trigger = yes
+									is_invincible_trigger = yes
+									has_character_modifier = z_foresight_blessing_battle
+									has_character_flag = duel_no_death
+								}
+							}
+							event_target:charA = {
+								religion_group = greenskin_gods_group
+							}
+						}
+					}
+					# human likes humans
+					modifier = {
+						factor = 2
+						event_target:charA = {
+							is_living_human_trigger = yes
+						}
+						event_target:charB = {
+							is_living_human_trigger = yes
+						}
+					}
+					# B have been imprisoned
+					event_target:charA = {
+						character_event = {
+							id = duelaction.205
+						}
+					}
 				}
 			}
 			break = yes
@@ -786,10 +821,51 @@ character_event = {
 					}
 				}
 			}
-			# enemy was slain
-			event_target:charA = {
-				character_event = {
-					id = duelaction.200
+			random_list = {
+				80 = {
+					# A have been slain
+					event_target:charB = {
+						character_event = {
+							id = duelaction.201
+						}
+					}
+				}
+				20 = {
+					# dont take prisoners
+					modifier = {
+						factor = 0
+						or = {
+							event_target:charA = {
+								or = {
+									religion_group = greenskin_gods_group
+									religion_group = horned_rat_god_group
+									is_demon_trigger = yes
+									is_invincible_trigger = yes
+									has_character_modifier = z_foresight_blessing_battle
+									has_character_flag = duel_no_death
+								}
+							}
+							event_target:charB = {
+								religion_group = greenskin_gods_group
+							}
+						}
+					}
+					# human likes humans
+					modifier = {
+						factor = 2
+						event_target:charA = {
+							is_living_human_trigger = yes
+						}
+						event_target:charB = {
+							is_living_human_trigger = yes
+						}
+					}
+					# A have been imprisoned
+					event_target:charB = {
+						character_event = {
+							id = duelaction.205
+						}
+					}
 				}
 			}
 			break = yes
@@ -1064,9 +1140,7 @@ character_event = {
 	option = {
 		name = OK
 		trigger = {
-			NOT = {
-				character = event_target:charA
-			}
+			character = event_target:charB
 		}
 		log = "Reports were shown to both."
 		event_target:charA = {
@@ -1103,11 +1177,7 @@ character_event = {
 	option = {
 		name = OK
 		trigger = {
-			NOT = {
-				root = {
-					character = event_target:charA
-				}
-			}
+			character = event_target:charB
 		}
 		log = "Reports were shown to both."
 		# charA got this event
@@ -1121,9 +1191,7 @@ character_event = {
 	option = {
 		name = OK
 		trigger = {
-			root = {
-				character = event_target:charA
-			}
+			character = event_target:charA
 		}
 		# symmetric response
 		event_target:charB = {
@@ -1148,9 +1216,7 @@ character_event = {
 	option = {
 		name = OK
 		trigger = {
-			NOT = {
-				character = event_target:charA
-			}
+			character = event_target:charB
 		}
 		log = "Reports were shown to both."
 		# next round
@@ -1187,9 +1253,7 @@ character_event = {
 	option = {
 		name = OK
 		trigger = {
-			NOT = {
-				character = event_target:charA
-			}
+			character = event_target:charB
 		}
 		log = "Reports were shown to both."
 		# next round
@@ -1204,9 +1268,7 @@ character_event = {
 	option = {
 		name = OK
 		trigger = {
-			root = {
-				character = event_target:charA
-			}
+			character = event_target:charA
 		}
 		event_target:charB = {
 			character_event = {
@@ -1223,6 +1285,7 @@ character_event = {
 # You can set them in duelaction.4 event exactly the same way u set triggering of report events.
 # in last the option that is last exectued please trigger duelengine.6 event to clear all duel variables and flags
 # OUTCOME: DEATH OF ONE PERSON
+
 # 1st event (for loser)
 character_event = {
 	id = duelaction.200
@@ -1235,11 +1298,9 @@ character_event = {
 	option = {
 		name = OK
 		trigger = {
-			NOT = {
-				character = event_target:charA
-			}
+			character = event_target:charB
 		}
-		log = "Outcome report was shown to both."
+		log = "Outcome report was shown to both. 200"
 		if = {
 			limit = {
 				or = {
@@ -1262,7 +1323,6 @@ character_event = {
 					days = 1
 				}
 			}
-			clr_character_flag = duel
 			if = {
 				limit = {
 					has_character_modifier = z_foresight_blessing_battle
@@ -1275,23 +1335,15 @@ character_event = {
 			death_reason = death_duel
 			killer = event_target:charA
 		}
-		# clean
-		event_target:charA = {
-			character_event = {
-				id = duelengine.6 days = 1
-			}
-		}
-		event_target:charB = {
-			character_event = {
-				id = duelengine.6 days = 1
-			}
-		}
-		clr_character_flag = duel
+		wh_duel_clean_effect = yes
 	}
 
 	# charA got this event
 	option = {
 		name = OK
+		trigger = {
+			character = event_target:charA
+		}
 	 	if = {
 			limit = {
 				or = {
@@ -1314,7 +1366,6 @@ character_event = {
 					days = 1
 				}
 			}
-			clr_character_flag = duel
 			if = {
 				limit = {
 					has_character_modifier = z_foresight_blessing_battle
@@ -1327,25 +1378,7 @@ character_event = {
 			death_reason = death_duel
 			killer = event_target:charB
 		}
-		trigger = {
-			character = event_target:charA
-		}
-		event_target:charB = {
-			character_event = {
-				id = duelaction.201
-			}
-		}
-		event_target:charA = {
-			character_event = {
-				id = duelengine.6 days = 1
-			}
-		} # clearing event
-		event_target:charB = {
-			character_event = {
-				id = duelengine.6 days = 1
-			}
-		} # clearing event
-		clr_character_flag = duel
+		wh_duel_clean_effect = yes
 	}
 }
 
@@ -1356,30 +1389,14 @@ character_event = {
 	picture = "GFX_evt_duel4"
 	border = GFX_event_normal_frame_war
 	is_triggered_only = yes
-	# charB got this event
 
+	# charB got this event
 	option = {
 		name = OK
 		trigger = {
-			NOT = {
-				root = {
-					character = event_target:charA
-				}
-			}
+			character = event_target:charB
 		}
-		log = "Outcome report was shown to both."
-		clr_character_flag = duel
-		# clearing event
-		event_target:charA = {
-			character_event = {
-				id = duelengine.6 days = 1
-			}
-		}
-		event_target:charB = {
-			character_event = {
-				id = duelengine.6 days = 1
-			}
-		}
+		log = "Outcome report was shown to both. 201"
 		if = {
 			limit = {
 				has_character_flag = greenksin_bash_head_duel
@@ -1388,14 +1405,54 @@ character_event = {
 			clr_character_flag = greenksin_bash_head_duel
 			set_character_flag = weak_warboss_bashed_heads
 		}
-		# khorne tournament
+		# khorne tournament for winner
 		if = {
 			limit = {
 				has_character_flag = duel_wh_chaos_khorne.120
 			}
-			# for winner
 			long_character_event = {
 				id = wh_chaos_khorne.122
+			}
+		}
+		# hunt demon for winner
+		if = {
+			limit = {
+				has_character_flag = duel_wh_chaos_demons.4
+				has_character_flag = duel_wh_chaos_demons.4_hunter
+			}
+			character_event = {
+				id = wh_chaos_demons.40001
+			}
+		}
+		# witch hunter tries to kill the demon
+		if = {
+			limit = {
+				has_character_flag = duel_wh_chaos.43
+			}
+			# if witch hunter win
+			if = {
+				limit = {
+					has_character_flag = duel_wh_chaos.43_hunter
+				}
+				piety = 150
+				event_target:wh_demon_master = {
+					character_event = {
+						id = wh_chaos.47
+					}
+				}
+			}
+			# witch hunter died
+			if = {
+				limit = {
+					not = {
+						has_character_flag = duel_wh_chaos.43_hunter
+					}
+				}
+				event_target:wh_demon_master = {
+					character_event = {
+						id = wh_chaos.45
+					}
+				}
 			}
 		}
 		if = {
@@ -1419,9 +1476,15 @@ character_event = {
 				id = DR_dwarfs.113
 			}
 		}
+		# send event to looser
+		event_target:charA = {
+			character_event = {
+				id = duelaction.200
+			}
+		}
 	}
-	# charA got this event
 
+	# charA got this event
 	option = {
 		name = OK
 		trigger = {
@@ -1433,18 +1496,6 @@ character_event = {
 				id = duelaction.200
 			}
 		}
-		# clearing event
-		event_target:charA = {
-			character_event = {
-				id = duelengine.6 days = 1
-			}
-		}
-		event_target:charB = {
-			character_event = {
-				id = duelengine.6 days = 1
-			}
-		}
-		clr_character_flag = duel
 		if = {
 			limit = {
 				has_character_flag = greenksin_bash_head_duel
@@ -1452,6 +1503,56 @@ character_event = {
 			remove_character_modifier = weak_warboss
 			clr_character_flag = greenksin_bash_head_duel
 			set_character_flag = weak_warboss_bashed_heads
+		}
+		# khorne tournament for winner
+		if = {
+			limit = {
+				has_character_flag = duel_wh_chaos_khorne.120
+			}
+			long_character_event = {
+				id = wh_chaos_khorne.122
+			}
+		}
+		# hunt demon for winner
+		if = {
+			limit = {
+				has_character_flag = duel_wh_chaos_demons.4
+				has_character_flag = duel_wh_chaos_demons.4_hunter
+			}
+			character_event = {
+				id = wh_chaos_demons.40001
+			}
+		}
+		# witch hunter tries to kill the demon
+		if = {
+			limit = {
+				has_character_flag = duel_wh_chaos.43
+			}
+			# if witch hunter win
+			if = {
+				limit = {
+					has_character_flag = duel_wh_chaos.43_hunter
+				}
+				piety = 150
+				event_target:wh_demon_master = {
+					character_event = {
+						id = wh_chaos.47
+					}
+				}
+			}
+			# witch hunter died
+			if = {
+				limit = {
+					not = {
+						has_character_flag = duel_wh_chaos.43_hunter
+					}
+				}
+				event_target:wh_demon_master = {
+					character_event = {
+						id = wh_chaos.45
+					}
+				}
+			}
 		}
 		if = {
 			# Slayer level progression
@@ -1472,6 +1573,12 @@ character_event = {
 			}
 			character_event = {
 				id = DR_dwarfs.113
+			}
+		}
+		# send event to looser
+		event_target:charB = {
+			character_event = {
+				id = duelaction.200
 			}
 		}
 	}
@@ -1485,55 +1592,29 @@ character_event = {
 	picture = "GFX_evt_battle"
 	border = "GFX_event_normal_frame_war"
 	is_triggered_only = yes
+
 	# charB got this event
-
 	option = {
 		name = OK
 		trigger = {
-			NOT = {
-				root = {
-					character = event_target:charA
-				}
-			}
+			character = event_target:charB
 		}
-		log = "Outcome report was shown to both."
-		event_target:charA = {
-			character_event = {
-				id = duelengine.6 days = 1
-			}
-		} # clearing event
-		event_target:charB = {
-			character_event = {
-				id = duelengine.6 days = 1
-			}
-		} # clearing event
-		clr_character_flag = duel
+		log = "Outcome report was shown to both. 202"
+		wh_duel_clean_effect = yes
 	}
-	# charA got this event
 
+	# charA got this event
 	option = {
 		name = OK
 		trigger = {
-			root = {
-				character = event_target:charA
-			}
+			character = event_target:charA
 		}
 		event_target:charB = {
 			character_event = {
 				id = duelaction.203
 			}
 		}
-		event_target:charA = {
-			character_event = {
-				id = duelengine.6 days = 1
-			}
-		} # clearing event
-		event_target:charB = {
-			character_event = {
-				id = duelengine.6 days = 1
-			}
-		} # clearing event
-		clr_character_flag = duel
+		wh_duel_clean_effect = yes
 	}
 }
 
@@ -1544,30 +1625,20 @@ character_event = {
 	picture = "GFX_evt_battle"
 	border = GFX_event_normal_frame_war
 	is_triggered_only = yes
-	# charB got this event
 
+	# charB got this event
 	option = {
 		name = OK
 		trigger = {
-			character = event_target:charA			
+			character = event_target:charA
 		}
-		log = "Outcome report was shown to both."
+		log = "Outcome report was shown to both. 203"
+		# symmetric response
 		event_target:charB = {
 			character_event = {
 				id = duelaction.202
 			}
-		} # symmetric response
-		event_target:charA = {
-			character_event = {
-				id = duelengine.6 days = 1
-			}
-		} # clearing event
-		event_target:charB = {
-			character_event = {
-				id = duelengine.6 days = 1
-			}
-		} # clearing event
-		clr_character_flag = duel
+		}
 		if = {
 			limit = {
 				has_character_flag = greenksin_bash_head_duel
@@ -1597,27 +1668,15 @@ character_event = {
 				id = DR_dwarfs.113
 			}
 		}
+		wh_duel_clean_effect = yes
 	}
-	# charA got this event
 
+	# charA got this event
 	option = {
 		name = OK
 		trigger = {
-			NOT = {
-				character = event_target:charA				
-			}
+			character = event_target:charB
 		}
-		event_target:charA = {
-			character_event = {
-				id = duelengine.6 days = 1
-			}
-		} # clearing event
-		event_target:charB = {
-			character_event = {
-				id = duelengine.6 days = 1
-			}
-		} # clearing event
-		clr_character_flag = duel
 		if = {
 			limit = {
 				has_character_flag = greenksin_bash_head_duel
@@ -1645,9 +1704,81 @@ character_event = {
 			}
 			character_event = {
 				id = DR_dwarfs.113
+			}
+		}
+		wh_duel_clean_effect = yes
+	}
+}
+
+# OUTCOME : imprisoned
+# 1st event (for loser)
+character_event = {
+	id = duelaction.204
+	desc = "EVTDESC_DUELACTION_204"
+	picture = "GFX_evt_duel4"
+	border = GFX_event_normal_frame_war
+	is_triggered_only = yes
+
+	# charB got this event
+	option = {
+		name = OK
+		trigger = {
+			character = event_target:charB
+		}
+		log = "Outcome report was shown to both."
+		event_target:charA = {
+			imprison = root
+		}
+		wh_duel_clean_effect = yes
+	}
+
+	# charA got this event
+	option = {
+		name = OK
+		trigger = {
+			character = event_target:charA
+		}
+		event_target:charB = {
+			imprison = root
+		}
+		wh_duel_clean_effect = yes
+	}
+}
+
+# 2nd char (for winner)
+character_event = {
+	id = duelaction.205
+	desc = "EVTDESC_DUELACTION_205"
+	picture = "GFX_evt_duel4"
+	border = GFX_event_normal_frame_war
+	is_triggered_only = yes
+
+	# charB got this event
+	option = {
+		name = OK
+		trigger = {
+			character = event_target:charB
+		}
+		log = "Outcome report was shown to both."
+		# symmetric response
+		event_target:charA = {
+			character_event = {
+				id = duelaction.204
+			}
+		}
+	}
+
+	# charA got this event
+	option = {
+		name = OK
+		trigger = {
+			character = event_target:charA
+		}
+		# symmetric response
+		event_target:charB = {
+			character_event = {
+				id = duelaction.204
 			}
 		}
 	}
 }
-
-# need to ADD INPRISON

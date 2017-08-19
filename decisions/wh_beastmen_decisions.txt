@@ -15,7 +15,7 @@ decisions = {
 	#		effect = {
 	#			prestige = 750
 	#			piety = 25
-	#			morghur = { character_event = { id = wh_beastmen.44 } }
+	#			morghur = { character_event = { id = wh_chaos_beastmen.44 } }
 	#			}
 	#
 	#		revoke_allowed = { always = no }
@@ -113,7 +113,7 @@ decisions = {
 			set_character_flag = duel
 			liege = {
 				character_event = {
-					id = wh_beastmen.23
+					id = wh_chaos_beastmen.23
 				}
 				save_event_target_as = duelist_b
 				set_character_flag = duel
@@ -685,7 +685,7 @@ decisions = {
 		}
 		effect = {
 			character_event = {
-				id = wh_beastmen.43
+				id = wh_chaos_beastmen.43
 			}
 		}
 		ai_will_do = {
@@ -718,22 +718,22 @@ decisions = {
 				random_list = {
 					60 = {
 						character_event = {
-							id = wh_beastmen.49
+							id = wh_chaos_beastmen.49
 						}
 					} #small contingent of troops
 					10 = {
 						character_event = {
-							id = wh_beastmen.50
+							id = wh_chaos_beastmen.50
 						}
 					} # large contingent of troops
 					5 = {
 						character_event = {
-							id = wh_beastmen.51
+							id = wh_chaos_beastmen.51
 						}
 					} # giants
 					25 = {
 						character_event = {
-							id = wh_beastmen.52
+							id = wh_chaos_beastmen.52
 						}
 					} # raiders
 				}
@@ -743,34 +743,6 @@ decisions = {
 			factor = 1
 		}
 	}
-
-	# think about it
-	# beastman_baron_cleaning = {
-	# 	#AI cleaning
-	# 	potential = {
-	# 		trait = creature_beastman
-	# 		tier = BARON
-	# 		lower_tier_than = COUNT
-	# 	}
-	# 	allow = {
-	# 		trait = creature_beastman
-	# 		tier = BARON
-	# 		lower_tier_than = COUNT
-	# 	}
-	# 	effect = {
-	# 		capital_scope = {
-	# 			any_province_holding = {
-	# 				owner = {
-	# 					character = ROOT
-	# 				}
-	# 				destroy_settlement = THIS
-	# 			}
-	# 		}
-	# 	}
-	# 	ai_will_do = {
-	# 		factor = 100
-	# 	}
-	# }
 }
 
 targetted_decisions = {
@@ -780,9 +752,6 @@ targetted_decisions = {
 		filter = court
 		ai_target_filter = court
 		from_potential = {
-			primary_title = {
-				higher_tier_than = BARON
-			}
 			age = 16
 			trait = creature_beastman
 		}
@@ -806,8 +775,9 @@ targetted_decisions = {
 		effect = {
 			hidden_tooltip = {
 				FROM = {
+					piety = 20
 					character_event = {
-						id = wh_beastmen.48
+						id = wh_chaos_beastmen.48
 					}
 				}
 			}
@@ -976,7 +946,7 @@ settlement_decisions = {
 			hidden_tooltip = {
 				FROM = {
 					character_event = {
-						id = wh_beastmen.38
+						id = wh_chaos_beastmen.38
 					}
 				}
 				location = {
