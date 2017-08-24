@@ -29,6 +29,7 @@ character_event = {
 	}
 
 	immediate = {
+		log = "work event WoL.5000"
 		set_character_flag = epic_hunt
 		if = {
 			limit = {
@@ -156,6 +157,10 @@ narrative_event = {
 		text = EVTDESC_WoL_5001_lion
 	}
 
+	immediate = {
+		log = "work event WoL.5001"
+	}
+
 	option = {
 		name = EVTOPTA_WoL_5001
 		hidden_tooltip = {
@@ -187,6 +192,7 @@ character_event = {
 	}
 
 	immediate = {
+		log = "work event WoL.5002"
 		if = {
 			limit = {
 				OR = {
@@ -226,6 +232,7 @@ province_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		log = "work event WoL.5003"
 		FROM = {
 			character_event = {
 				id = WoL.5004
@@ -266,6 +273,10 @@ character_event = {
 			has_character_flag = white_lion
 		}
 		text = EVTDESC_WoL_5004_lion
+	}
+
+	immediate = {
+		log = "work event WoL.5004"
 	}
 
 	option = {
@@ -364,6 +375,7 @@ character_event = {
 	}
 
 	immediate = {
+		log = "work event WoL.5006"
 		set_character_flag = hunt_event_happened
 		set_character_flag = epic_hunt
 		if = {
@@ -497,6 +509,7 @@ narrative_event = {
 	}
 
 	immediate = {
+		log = "work event WoL.5007"
 		set_character_flag = epic_hunt
 		if = {
 			limit = {
@@ -616,6 +629,10 @@ character_event = {
 		text = EVTDESC_WoL_5010_lion
 	}
 
+	immediate = {
+		log = "work event WoL.5010"
+	}
+
 	option = {
 		name = EVTOPTA_WoL_5010
 		trigger = {
@@ -654,6 +671,7 @@ character_event = {
 	}
 
 	immediate = {
+		log = "work event WoL.5011"
 		random_list = {
 			1 = {
 				character_event = {
@@ -747,6 +765,10 @@ character_event = {
 			has_character_flag = white_lion
 		}
 		text = EVTDESC_WoL_5030_lion
+	}
+
+	immediate = {
+		log = "work event WoL.5030"
 	}
 
 	option = {
@@ -879,6 +901,10 @@ character_event = {
 			has_character_flag = white_lion
 		}
 		text = EVTDESC_WoL_5035_lion
+	}
+
+	immediate = {
+		log = "work event WoL.5035"
 	}
 
 	option = {
@@ -1017,6 +1043,10 @@ character_event = {
 	border = GFX_event_normal_frame_war
 	is_triggered_only = yes
 	desc = EVTDESC_WoL_5040
+
+	immediate = {
+		log = "work event WoL.5040"
+	}
 
 	option = {
 		name = EVTOPTA_WoL_5040 # Invite him to your court
@@ -1264,6 +1294,10 @@ character_event = {
 	border = GFX_event_normal_frame_war
 	is_triggered_only = yes
 
+	immediate = {
+		log = "work event WoL.5045"
+	}
+
 	option = {
 		name = EVTOPTA_WoL_5045
 		if = {
@@ -1408,6 +1442,10 @@ character_event = {
 	is_triggered_only = yes
 	desc = EVTDESC_WoL_5050
 
+	immediate = {
+		log = "work event WoL.5050"
+	}
+
 	option = {
 		name = EVTOPTA_WoL_5050
 		if = {
@@ -1504,6 +1542,10 @@ character_event = {
 	border = GFX_event_normal_frame_war
 	is_triggered_only = yes
 	desc = EVTDESC_WoL_5055
+
+	immediate = {
+		log = "work event WoL.5055"
+	}
 
 	option = {
 		# Blame self
@@ -1658,6 +1700,10 @@ character_event = {
 	is_triggered_only = yes
 	desc = EVTDESC_WoL_5060
 
+	immediate = {
+		log = "work event WoL.5060"
+	}
+
 	option = {
 		# Drink potion
 		name = EVTOPTA_WoL_5060
@@ -1722,6 +1768,7 @@ character_event = {
 	}
 
 	immediate = {
+		log = "work event WoL.5061"
 		random_list = {
 			10 = {
 				set_character_flag = potion_ill
@@ -1875,6 +1922,10 @@ character_event = {
 	border = GFX_event_normal_frame_war
 	is_triggered_only = yes
 
+	immediate = {
+		log = "work event WoL.5062"
+	}
+
 	option = {
 		# No catch this time
 		name = EVTOPTA_WoL_5062
@@ -1950,6 +2001,7 @@ character_event = {
 	}
 
 	immediate = {
+		log = "work event WoL.5065"
 		if = {
 			limit = {
 				OR = {
@@ -2101,6 +2153,10 @@ character_event = {
 	border = GFX_event_normal_frame_war
 	is_triggered_only = yes
 
+	immediate = {
+		log = "work event WoL.5066"
+	}
+
 	option = {
 		# It was nice but I've got to go
 		name = EVTOPTA_WoL_5066
@@ -2205,6 +2261,7 @@ character_event = {
 	}
 
 	immediate = {
+		log = "work event WoL.5200"
 		if = {
 			limit = {
 				num_of_friends = 1
@@ -2379,6 +2436,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		log = "work event WoL.5201"
 		FROM = {
 			character_event = {
 				id = WoL.5202
@@ -2394,6 +2452,10 @@ character_event = {
 	picture = GFX_evt_hunting_scene
 	border = GFX_event_normal_frame_war
 	is_triggered_only = yes
+
+	immediate = {
+		log = "work event WoL.5202"
+	}
 
 	option = {
 		# Accept
@@ -2458,6 +2520,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		log = "work event WoL.5203"
 		random_list = {
 			90 = {
 				set_character_flag = good_dog
@@ -2500,225 +2563,6 @@ character_event = {
 			}
 		}
 	}
-	# option = { # Lucifer
-	# name = EVTOPTD_WoL_5203
-	# trigger = {
-	# OR = {
-	# trait = cynical
-	# trait = possessed
-	# is_devil_worshiper_trigger = yes
-	# }
-	# religion_group = christian
-	# }
-	# set_character_flag = dog_name_lucifer
-	# hidden_tooltip = { character_event = { id = WoL.5204 days = 150 } }
-	# }
-	# option = { # Shaytan
-	# name = EVTOPTE_WoL_5203
-	# trigger = {
-	# OR = {
-	# trait = cynical
-	# trait = possessed
-	# is_devil_worshiper_trigger = yes
-	# }
-	# religion_group = muslim
-	# }
-	# set_character_flag = dog_name_shaytan
-	# hidden_tooltip = { character_event = { id = WoL.5204 days = 150 } }
-	# }
-	# option = { # Fenrir
-	# name = EVTOPTF_WoL_5203
-	# trigger = {
-	# OR = {
-	# trait = cynical
-	# trait = possessed
-	# is_devil_worshiper_trigger = yes
-	# }
-	# OR = {
-	# religion = norse_pagan
-	# religion = norse_pagan_reformed
-	# }
-	# }
-	# set_character_flag = dog_name_fenrir
-	# hidden_tooltip = { character_event = { id = WoL.5204 days = 150 } }
-	# }
-	# option = { # Erlik
-	# name = EVTOPTG_WoL_5203
-	# trigger = {
-	# OR = {
-	# trait = cynical
-	# trait = possessed
-	# is_devil_worshiper_trigger = yes
-	# }
-	# OR = {
-	# religion = tengri_pagan
-	# religion = tengri_pagan_reformed
-	# }
-	# }
-	# set_character_flag = dog_name_erlik
-	# hidden_tooltip = { character_event = { id = WoL.5204 days = 150 } }
-	# }
-	# option = { # Velnias
-	# name = EVTOPTH_WoL_5203
-	# trigger = {
-	# OR = {
-	# trait = cynical
-	# trait = possessed
-	# is_devil_worshiper_trigger = yes
-	# }
-	# OR = {
-	# religion = baltic_pagan
-	# religion = baltic_pagan_reformed
-	# }
-	# }
-	# set_character_flag = dog_name_velnias
-	# hidden_tooltip = { character_event = { id = WoL.5204 days = 150 } }
-	# }
-	# option = { # Tuoni
-	# name = EVTOPTI_WoL_5203
-	# trigger = {
-	# OR = {
-	# trait = cynical
-	# trait = possessed
-	# is_devil_worshiper_trigger = yes
-	# }
-	# OR = {
-	# religion = finnish_pagan
-	# religion = finnish_pagan_reformed
-	# }
-	# }
-	# set_character_flag = dog_name_tuoni
-	# hidden_tooltip = { character_event = { id = WoL.5204 days = 150 } }
-	# }
-	# option = { # Xolotl
-	# name = EVTOPTJ_WoL_5203
-	# trigger = {
-	# OR = {
-	# trait = cynical
-	# trait = possessed
-	# is_devil_worshiper_trigger = yes
-	# }
-	# OR = {
-	# religion = aztec
-	# religion = aztec_reformed
-	# }
-	# }
-	# set_character_flag = dog_name_xolotl
-	# hidden_tooltip = { character_event = { id = WoL.5204 days = 150 } }
-	# }
-	# option = { # Veles
-	# name = EVTOPTK_WoL_5203
-	# trigger = {
-	# OR = {
-	# trait = cynical
-	# trait = possessed
-	# is_devil_worshiper_trigger = yes
-	# }
-	# OR = {
-	# religion = slavic_pagan
-	# religion = slavic_pagan_reformed
-	# }
-	# }
-	# set_character_flag = dog_name_veles
-	# hidden_tooltip = { character_event = { id = WoL.5204 days = 150 } }
-	# }
-	# option = { # Guruhi
-	# name = EVTOPTL_WoL_5203
-	# trigger = {
-	# OR = {
-	# trait = cynical
-	# trait = possessed
-	# is_devil_worshiper_trigger = yes
-	# }
-	# OR = {
-	# religion = west_african_pagan
-	# religion = west_african_pagan_reformed
-	# }
-	# }
-	# set_character_flag = dog_name_guruhi
-	# hidden_tooltip = { character_event = { id = WoL.5204 days = 150 } }
-	# }
-	# option = { # Darkness
-	# name = EVTOPTM_WoL_5203
-	# trigger = {
-	# OR = {
-	# trait = cynical
-	# trait = possessed
-	# is_devil_worshiper_trigger = yes
-	# }
-	# OR = {
-	# religion = zun_pagan
-	# religion = zun_pagan_reformed
-	# }
-	# }
-	# set_character_flag = dog_name_darkness
-	# hidden_tooltip = { character_event = { id = WoL.5204 days = 150 } }
-	# }
-	# option = { # Ahriman
-	# name = EVTOPTN_WoL_5203
-	# trigger = {
-	# OR = {
-	# trait = cynical
-	# trait = possessed
-	# is_devil_worshiper_trigger = yes
-	# }
-	# religion_group = zoroastrian_group
-	# }
-	# set_character_flag = dog_name_ahriman
-	# hidden_tooltip = { character_event = { id = WoL.5204 days = 150 } }
-	# }
-	# option = { # Satan
-	# name = EVTOPTO_WoL_5203
-	# trigger = {
-	# OR = {
-	# trait = cynical
-	# trait = possessed
-	# is_devil_worshiper_trigger = yes
-	# }
-	# religion_group = jewish_group
-	# }
-	# set_character_flag = dog_name_satan
-	# hidden_tooltip = { character_event = { id = WoL.5204 days = 150 } }
-	# }
-	# option = { # Vinayaka
-	# name = EVTOPTP_WoL_5203
-	# trigger = {
-	# OR = {
-	# trait = cynical
-	# trait = possessed
-	# is_devil_worshiper_trigger = yes
-	# }
-	# religion = hindu
-	# }
-	# set_character_flag = dog_name_vinayaka
-	# hidden_tooltip = { character_event = { id = WoL.5204 days = 150 } }
-	# }
-	# option = { # Mara
-	# name = EVTOPTQ_WoL_5203
-	# trigger = {
-	# OR = {
-	# trait = cynical
-	# trait = possessed
-	# is_devil_worshiper_trigger = yes
-	# }
-	# religion = buddhist
-	# }
-	# set_character_flag = dog_name_mara
-	# hidden_tooltip = { character_event = { id = WoL.5204 days = 150 } }
-	# }
-	# option = { # Punisher
-	# name = EVTOPTR_WoL_5203
-	# trigger = {
-	# OR = {
-	# trait = cynical
-	# trait = possessed
-	# is_devil_worshiper_trigger = yes
-	# }
-	# religion = jain
-	# }
-	# set_character_flag = dog_name_punisher
-	# hidden_tooltip = { character_event = { id = WoL.5204 days = 150 } }
-	# }
 }
 
 # Puppy is growing and starts showing personality
@@ -2738,6 +2582,10 @@ character_event = {
 			has_character_flag = bad_dog
 		}
 		text = EVTDESC_WoL_5204_bad
+	}
+
+	immediate = {
+		log = "work event WoL.5204"
 	}
 
 	option = {
@@ -2777,6 +2625,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event WoL.5210"
+	}
+
 	option = {
 		name = EVTOPTA_WoL_5210
 		if = {
@@ -2812,6 +2664,10 @@ character_event = {
 			trait = stressed
 			trait = depressed
 		}
+	}
+
+	immediate = {
+		log = "work event WoL.5211"
 	}
 
 	option = {
@@ -2860,6 +2716,7 @@ character_event = {
 	}
 
 	immediate = {
+		log = "work event WoL.5220"
 		set_character_flag = training_dog
 	}
 
@@ -2893,6 +2750,10 @@ character_event = {
 
 	trigger = {
 		has_character_modifier = pet_hunting_dog
+	}
+
+	immediate = {
+		log = "work event WoL.5221"
 	}
 
 	option = {
@@ -3470,6 +3331,10 @@ character_event = {
 		has_character_flag = bad_dog
 	}
 
+	immediate = {
+		log = "work event WoL.5230"
+	}
+
 	option = {
 		name = EVTOPTA_RoI_161
 		random_courtier = {
@@ -3499,6 +3364,10 @@ character_event = {
 	trigger = {
 		has_character_modifier = pet_hunting_dog
 		has_character_flag = bad_dog
+	}
+
+	immediate = {
+		log = "work event WoL.5231"
 	}
 
 	option = {
@@ -3625,6 +3494,7 @@ character_event = {
 	}
 
 	immediate = {
+		log = "work event WoL.5290"
 		remove_character_modifier = pet_best_friends
 	}
 
@@ -4191,6 +4061,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		log = "work event WoL.5291"
 		remove_character_modifier = pet_hunting_dog
 		clear_delayed_event = {
 			id = WoL.5290

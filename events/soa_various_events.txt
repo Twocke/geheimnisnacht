@@ -12,6 +12,10 @@ diploresponse_event = {
 		always = yes
 	}
 
+	immediate = {
+		log = "work event SoA.3100"
+	}
+
 	option = {
 		name = OK
 	}
@@ -28,6 +32,10 @@ diploresponse_event = {
 
 	trigger = {
 		always = yes
+	}
+
+	immediate = {
+		log = "work event SoA.3101"
 	}
 
 	option = {
@@ -48,6 +56,10 @@ diploresponse_event = {
 		always = yes
 	}
 
+	immediate = {
+		log = "work event SoA.3102"
+	}
+
 	option = {
 		name = OK
 	}
@@ -64,6 +76,10 @@ diploresponse_event = {
 
 	trigger = {
 		always = yes
+	}
+
+	immediate = {
+		log = "work event SoA.3103"
 	}
 
 	option = {
@@ -84,6 +100,10 @@ diploresponse_event = {
 		always = yes
 	}
 
+	immediate = {
+		log = "work event SoA.3104"
+	}
+
 	option = {
 		name = OK
 	}
@@ -102,13 +122,17 @@ diploresponse_event = {
 		always = yes
 	}
 
+	immediate = {
+		log = "work event SoA.3105"
+	}
+
 	option = {
 		name = OK
 	}
 }
 
 # # Demon Child Narrative Event Chain
-# # by Henrik Fåhraeus
+# # by Henrik Fï¿½hraeus
 
 # # Apart from these events, other events have been modified to make sure the Demon character is very likely to start adventures and is hard to kill
 # # Event triggers for a player
@@ -147,9 +171,9 @@ diploresponse_event = {
 # }
 
 # OR = {
-# religion_group = christian
+# religion_group = old_world_group
 
-# religion_group = muslim
+# religion_group = ormazd_gods_group
 # religion_group = zoroastrian_group
 
 # religion_group = jewish_group
@@ -1175,7 +1199,7 @@ diploresponse_event = {
 # if = {
 # limit = {
 
-# religion_group = christian
+# religion_group = old_world_group
 # }
 
 # add_trait = nun
@@ -2496,7 +2520,7 @@ diploresponse_event = {
 # create_character = {
 
 # dynasty = none
-# religion = norse_pagan
+# religion = norscan_gods
 
 # culture = welsh
 # female = yes
@@ -2696,7 +2720,7 @@ diploresponse_event = {
 # if = {
 # limit = {
 
-# religion_group = christian
+# religion_group = old_world_group
 # }
 
 # add_trait = nun
@@ -2787,7 +2811,7 @@ diploresponse_event = {
 # if = {
 
 # limit = {
-# religion_group = christian
+# religion_group = old_world_group
 
 # }
 # add_trait = nun
@@ -2829,7 +2853,7 @@ diploresponse_event = {
 # is_ruler = no
 
 # is_consort = no
-# NOT = { religion_group = pagan_group }
+# NOT = { religion_group = old_gods_group }
 
 # NOT = {
 # any_courtier = {
@@ -2924,7 +2948,7 @@ diploresponse_event = {
 # trigger = {
 # has_dlc = "Sons of Abraham"
 
-# NOT = { religion_group = pagan_group }
+# NOT = { religion_group = old_gods_group }
 # OR = {
 
 # ai = no
@@ -3261,7 +3285,7 @@ diploresponse_event = {
 # text = EVTOPTA_SOA_3082_MUSLIM
 
 # trigger = {
-# religion_group = muslim
+# religion_group = ormazd_gods_group
 
 # }
 # }
@@ -3270,7 +3294,7 @@ diploresponse_event = {
 # text = EVTOPTA_SOA_3082
 
 # trigger = {
-# NOT = { religion_group = muslim }
+# NOT = { religion_group = ormazd_gods_group }
 
 # }
 # }
@@ -3339,7 +3363,7 @@ diploresponse_event = {
 # text = EVTOPTA_SOA_3082_MUSLIM
 
 # trigger = {
-# religion_group = muslim
+# religion_group = ormazd_gods_group
 
 # NOT = { FROM = { is_child_of = ROOT } }
 # }
@@ -3350,7 +3374,7 @@ diploresponse_event = {
 # text = EVTOPTA_SOA_3082
 # trigger = {
 
-# NOT = { religion_group = muslim }
+# NOT = { religion_group = ormazd_gods_group }
 # NOT = { FROM = { is_child_of = ROOT } }
 
 # }

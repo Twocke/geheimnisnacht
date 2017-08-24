@@ -14,7 +14,7 @@ character_event = {
 
 	trigger = {
 		is_disease_immune_race = no
-		not = {
+		nor = {
 			religion = nehekharan_gods
 			trait = has_tomb_rot
 		}
@@ -36,6 +36,10 @@ character_event = {
 				society_member_of = cult_of_nurgle
 			}
 		}
+	}
+
+	immediate = {
+		log = "work event disease.1"
 	}
 
 	option = {
@@ -114,9 +118,14 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event disease.2"
+	}
+
 	option = {
 		name = EVTOPT_DISEASE_1A
 		remove_trait = has_creeping_buboes
+		clear_disease_level_effect = yes
 	}
 }
 
@@ -168,9 +177,14 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event disease.3"
+	}
+
 	option = {
 		name = EVTOPT_DISEASE_3A
 		remove_trait = has_typhus
+		clear_disease_level_effect = yes
 	}
 }
 
@@ -220,6 +234,10 @@ character_event = {
 			factor = 5.0
 			trait = incapable
 		}
+	}
+
+	immediate = {
+		log = "work event disease.4"
 	}
 
 	option = {
@@ -276,14 +294,17 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event disease.5"
+	}
+
 	option = {
 		name = EVTOPT_DISEASE_5A
 		remove_trait = pneumonic
+		clear_disease_level_effect = yes
 	}
 }
 
-# Recovery from Nurgle's Rot
-# No one ever recovered from nurgle's rot :D - Yes, they do.
 # Remove Tomb Rot
 character_event = {
 	id = disease.0
@@ -330,8 +351,13 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event disease.0"
+	}
+
 	option = {
 		name = EVTOPT_DISEASE_0A
 		remove_trait = has_tomb_rot
+		clear_disease_level_effect = yes
 	}
 }

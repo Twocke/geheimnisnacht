@@ -79,19 +79,9 @@ targetted_decisions = {
 				}
 			}
 			opinion = {
-				who = FROM value = 50
+				who = FROM
+				value = 50
 			}
-			# FROM = {
-			# custom_tooltip = {
-			# text = TT_NOT_UNREFORMED_PAGAN
-			# hidden_tooltip = {
-			# OR = {
-			# NOT = { religion_group = pagan_group }
-			# is_reformed_religion = yes
-			# }
-			# }
-			# }
-			# }
 			NOT = {
 				controls_religion = yes
 			}
@@ -201,7 +191,7 @@ targetted_decisions = {
 			# text = TT_NOT_UNREFORMED_PAGAN
 			# hidden_tooltip = {
 			# OR = {
-			# NOT = { religion_group = pagan_group }
+			# NOT = { religion_group = old_gods_group }
 			# is_reformed_religion = yes
 			# }
 			# }
@@ -300,7 +290,7 @@ targetted_decisions = {
 			# text = TT_NOT_UNREFORMED_PAGAN
 			# hidden_tooltip = {
 			# OR = {
-			# NOT = { religion_group = pagan_group }
+			# NOT = { religion_group = old_gods_group }
 			# is_reformed_religion = yes
 			# }
 			# }
@@ -398,7 +388,7 @@ targetted_decisions = {
 			# text = TT_NOT_UNREFORMED_PAGAN
 			# hidden_tooltip = {
 			# OR = {
-			# NOT = { religion_group = pagan_group }
+			# NOT = { religion_group = old_gods_group }
 			# is_reformed_religion = yes
 			# }
 			# }

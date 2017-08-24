@@ -7,7 +7,6 @@ on_startup = {
 		carstein.14
 		lizardman.251 #Set Lustrian jungle province modifiers
 		# DR_imperial.6 #it doesn't exist anymore
-		DR_startup.4
 		# aicleanup.017 #All Feudal Asur use Highborn Government on start
 		# aicleanup.018 #All Tribal Asrai use Evernal Court Government on start
 		# aicleanup.019 #All Beastmen use Beastman Government on start
@@ -20,13 +19,13 @@ on_startup = {
 		srandoms.2 #Anneliese's investigation
 		# all Bretonnian rulers that do not have trait at start should get it
 		wh_bretonnia.0
+		DR_startup.9
 	}
 }
 
 #character
 on_yearly_pulse = {
 	events = {
-		63106 # (Safety flag clearance check event)
 		# vampire.2
 		# vampire.6
 		# vampire.10
@@ -130,6 +129,12 @@ on_yearly_pulse = {
 		witchhunter.0
 		# Son wants to become a Knight Errant
 		wh_bretonnia.102
+		# vassal under lunatic
+		mutation.1015
+		# vassal no longer under lunatic
+		mutation.1016
+		# Remove any unfulfilled grudges modifier
+		DR_dwarfs.55
 	}
 
 	random_events = {
@@ -175,14 +180,6 @@ on_bi_yearly_pulse = {
 		100 = darkelf.7
 		# 50 = disease.1
 		50 = spleasure.1	#slaanesh umbrella event
-		#100 = sinsa.1142		#red-earrings events
-		#100 = sinsa.1144		#red-earrings events
-		#100 = sinsa.1146		#red-earrings events
-		#100 = sinsa.1147		#red-earrings events
-		#100 = sinsa.1149		#red-earrings events
-		#100 = sinsa.1154		#red-earrings events
-		#100 = sinsa.1155		#red-earrings events
-		#100 = sinsa.1182		#red-earrings events
 		25 = norscan.1
 		200 = asrai.6			#forest spirits going insane because of missing avatar(s)
 		100 = asrai.42			#forest spirit choosing a possible victim
@@ -383,10 +380,10 @@ on_siege_over_loc_chars = {
 # character
 on_birth = {
 	events = {
-		sins.1189	#End hard pregnancy
-
 		# check parents race, kill if tigger return 1 on_birth
 		wh_inheritance.0
+		sins.1189	#End hard pregnancy
+
 		# event to set intelligence, strength, beauty and magic
 		wh_inheritance.1
 		# Beastmen interbreeding

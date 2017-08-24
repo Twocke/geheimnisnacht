@@ -838,11 +838,11 @@ defined_text = {
 	}	
 	text = {	
 		localisation_key = String_HighGodDuDelaDes_GOD_ODIN
-		trigger = { religion = norse_pagan }
+		trigger = { religion = norscan_gods }
 	}	
 	text = {	
 		localisation_key = String_HighGodDuDelaDes_GOD_ODIN
-		trigger = { religion = norse_pagan_reformed }
+		trigger = { religion = norscan_gods }
 	}	
 	text = {	
 		localisation_key = String_HighGodDuDelaDes_GOD_GOD
@@ -922,7 +922,7 @@ defined_text = {
 	name = GetReligiousGroupMascFem
 	text = {
 		localisation_key = String_ReligionGroups_christian_male
-		trigger = { religion_group = christian is_female = no }
+		trigger = { religion_group = old_world_group is_female = no }
 	}
 	text = {
 		localisation_key = String_ReligionGroups_indian_group_male
@@ -934,11 +934,11 @@ defined_text = {
 	}
 	text = {
 		localisation_key = String_ReligionGroups_muslim_male
-		trigger = { religion_group = muslim is_female = no }
+		trigger = { religion_group = ormazd_gods_group is_female = no }
 	}
 	text = {
 		localisation_key = String_ReligionGroups_pagan_group_male
-		trigger = { religion_group = pagan_group is_female = no }
+		trigger = { religion_group = old_gods_group is_female = no }
 	}
 	text = {
 		localisation_key = String_ReligionGroups_zoroastrian_group_male
@@ -946,7 +946,7 @@ defined_text = {
 	}
 	text = {
 		localisation_key = String_ReligionGroups_christian_female
-		trigger = { religion_group = christian is_female = yes }
+		trigger = { religion_group = old_world_group is_female = yes }
 	}
 	text = {
 		localisation_key = String_ReligionGroups_indian_group_female
@@ -958,11 +958,11 @@ defined_text = {
 	}
 	text = {
 		localisation_key = String_ReligionGroups_muslim_female
-		trigger = { religion_group = muslim is_female = yes }
+		trigger = { religion_group = ormazd_gods_group is_female = yes }
 	}
 	text = {
 		localisation_key = String_ReligionGroups_pagan_group_female
-		trigger = { religion_group = pagan_group is_female = yes }
+		trigger = { religion_group = old_gods_group is_female = yes }
 	}
 	text = {
 		localisation_key = String_ReligionGroups_zoroastrian_group_female
@@ -1091,11 +1091,11 @@ defined_text = {
 	}	
 	text = {	
 		localisation_key = String_Religion_norse_pagan_male
-		trigger = { is_female = no religion = norse_pagan }
+		trigger = { is_female = no religion = norscan_gods }
 	}	
 	text = {	
 		localisation_key = String_Religion_norse_pagan_reformed_male
-		trigger = { is_female = no religion = norse_pagan_reformed }
+		trigger = { is_female = no religion = norscan_gods }
 	}	
 	text = {	
 		localisation_key = String_Religion_orthodox_male
@@ -1287,11 +1287,11 @@ defined_text = {
 	}	
 	text = {	
 		localisation_key = String_Religion_norse_pagan_female
-		trigger = { is_female = yes religion = norse_pagan }
+		trigger = { is_female = yes religion = norscan_gods }
 	}	
 	text = {	
 		localisation_key = String_Religion_norse_pagan_reformed_female
-		trigger = { is_female = yes religion = norse_pagan_reformed }
+		trigger = { is_female = yes religion = norscan_gods }
 	}	
 	text = {	
 		localisation_key = String_Religion_orthodox_female
@@ -1488,11 +1488,11 @@ defined_text = {
 	}	
 	text = {	
 		localisation_key = String_Religion_norse_pagan_male
-		trigger = { religion = norse_pagan }
+		trigger = { religion = norscan_gods }
 	}	
 	text = {	
 		localisation_key = String_Religion_norse_pagan_reformed_male
-		trigger = { religion = norse_pagan_reformed }
+		trigger = { religion = norscan_gods }
 	}	
 	text = {	
 		localisation_key = String_Religion_orthodox_male
@@ -1689,11 +1689,11 @@ defined_text = {
 	}	
 	text = {	
 		localisation_key = String_Religion_norse_pagan_male
-		trigger = { religion = norse_pagan }
+		trigger = { religion = norscan_gods }
 	}	
 	text = {	
 		localisation_key = String_Religion_norse_pagan_reformed_male
-		trigger = { religion = norse_pagan_reformed }
+		trigger = { religion = norscan_gods }
 	}	
 	text = {	
 		localisation_key = String_Religion_orthodox_male
@@ -1890,11 +1890,11 @@ defined_text = {
 	}	
 	text = {	
 		localisation_key = String_ScriptureDuDelaDes_Sagas
-		trigger = { religion = norse_pagan }
+		trigger = { religion = norscan_gods }
 	}	
 	text = {	
 		localisation_key = String_ScriptureDuDelaDes_Sagas
-		trigger = { religion = norse_pagan_reformed }
+		trigger = { religion = norscan_gods }
 	}	
 	text = {	
 		localisation_key = String_ScriptureDuDelaDes_Bible
@@ -2091,11 +2091,11 @@ defined_text = {
 	}	
 	text = {	
 		localisation_key = String_GetEvilGodDuDelaDes_LOKI
-		trigger = { religion = norse_pagan }
+		trigger = { religion = norscan_gods }
 	}	
 	text = {	
 		localisation_key = String_GetEvilGodDuDelaDes_LOKI
-		trigger = { religion = norse_pagan_reformed }
+		trigger = { religion = norscan_gods }
 	}	
 	text = {	
 		localisation_key = String_GetEvilGodDuDelaDes_THE_DEVIL
@@ -4050,15 +4050,15 @@ defined_text = {
 
 	text = {
 		localisation_key = GetHouseOfWorshipDuDela_Christian
-		trigger = { religion_group = christian }
+		trigger = { religion_group = old_world_group }
 	}
 	text = {
 		localisation_key = GetHouseOfWorshipDuDela_Muslim
-		trigger = { religion_group = muslim }
+		trigger = { religion_group = ormazd_gods_group }
 	}
 	text = {
 		localisation_key = GetHouseOfWorshipDuDela_Pagan
-		trigger = { religion_group = pagan_group }
+		trigger = { religion_group = old_gods_group }
 	}
 	text = {
 		localisation_key = GetHouseOfWorshipDuDela_Zoroastrian
@@ -4087,15 +4087,15 @@ defined_text = {
 
 	text = {
 		localisation_key = GetHouseOfWorshipUnUne_Christian
-		trigger = { religion_group = christian }
+		trigger = { religion_group = old_world_group }
 	}
 	text = {
 		localisation_key = GetHouseOfWorshipUnUne_Muslim
-		trigger = { religion_group = muslim }
+		trigger = { religion_group = ormazd_gods_group }
 	}
 	text = {
 		localisation_key = GetHouseOfWorshipUnUne_Pagan
-		trigger = { religion_group = pagan_group }
+		trigger = { religion_group = old_gods_group }
 	}
 	text = {
 		localisation_key = GetHouseOfWorshipUnUne_Zoroastrian
@@ -4128,14 +4128,14 @@ defined_text = {
 	text = { 
 		localisation_key = String_ReligionGroups_christian_male
 		trigger = { 
-			religion_group = christian
+			religion_group = old_world_group
 			is_female = no
 			NOT = { religion = catholic }
 		}
 	}
 	text = {
 		localisation_key = String_ReligionGroups_muslim_male
-		trigger = { religion_group = muslim is_female = no }
+		trigger = { religion_group = ormazd_gods_group is_female = no }
 	}
 	text = {
 		localisation_key = String_ReligionGroups_jewish_group_male
@@ -4162,8 +4162,8 @@ defined_text = {
 		trigger = { 
 			is_female = no
 			OR = {
-				religion = norse_pagan
-				religion = norse_pagan_reformed
+				religion = norscan_gods
+				religion = norscan_gods
 			}
 		}
 	}
@@ -4234,14 +4234,14 @@ defined_text = {
 	text = { 
 		localisation_key = String_ReligionGroups_christian_female
 		trigger = { 
-			religion_group = christian
+			religion_group = old_world_group
 			is_female = yes
 			NOT = { religion = catholic }
 		}
 	}
 	text = {
 		localisation_key = String_ReligionGroups_muslim_female
-		trigger = { religion_group = muslim is_female = yes }
+		trigger = { religion_group = ormazd_gods_group is_female = yes }
 	}
 	text = {
 		localisation_key = String_ReligionGroups_jewish_group_female
@@ -4268,8 +4268,8 @@ defined_text = {
 		trigger = { 
 			is_female = yes
 			OR = {
-				religion = norse_pagan
-				religion = norse_pagan_reformed
+				religion = norscan_gods
+				religion = norscan_gods
 			}
 		}
 	}
@@ -4469,7 +4469,7 @@ defined_text = {
 		trigger = {
 			society_member_of = the_satanists
 			OR = {
-				religion_group = christian
+				religion_group = old_world_group
 				religion_group = jewish_group
 			}
 		}
@@ -4478,7 +4478,7 @@ defined_text = {
 		localisation_key = String_DevilGodDuDela_Iblis
 		trigger = {
 			society_member_of = the_satanists
-			religion_group = muslim
+			religion_group = ormazd_gods_group
 		}
 	}
 	text = {

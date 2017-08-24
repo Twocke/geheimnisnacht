@@ -140,7 +140,8 @@ character_event = {
 	}
 
 	immediate = {
-		log = "DUEL TRIGGERED for [Root.GetFullName]"
+		log = "work event duelengine.0"
+		# log = "DUEL TRIGGERED for [Root.GetFullName]"
 		add_character_modifier = {
 			name = battlefield_fight
 			duration = 10
@@ -193,7 +194,8 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "CharB go asked for duel"
+		log = "work event duelengine.1"
+		# log = "CharB go asked for duel"
 		# VERY IMPORTANT SETTING EVENT TARGETS
 		save_event_target_as = defender
 		save_event_target_as = charB
@@ -216,7 +218,7 @@ character_event = {
 
 	option = {
 		name = "EVTOPT_DUELENGINE_1A"
-		log = "CharB go wants duel."
+		# log = "CharB go wants duel."
 		event_target:attacker = {
 			character_event = {
 				id = duelengine.2
@@ -381,9 +383,13 @@ character_event = {
 	border = "GFX_event_normal_frame_war"
 	is_triggered_only = yes
 
+	immediate = {
+		log = "work event duelengine.2"
+	}
+
 	option = {
 		name = "EVTOPT_DUELENGINE_1A"
-		log = "Begin duel both dudes agreed! (from duelengine.2)"
+		# log = "Begin duel both dudes agreed! (from duelengine.2)"
 		hidden_tooltip = {
 			event_target:charA = {
 				character_event = {
@@ -527,7 +533,8 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "Initing the next round...."
+		log = "work event duelengine.3"
+		# log = "Initing the next round...."
 		clear_event_target = attacker
 		clear_event_target = defender
 		event_target:charA = {
@@ -568,12 +575,13 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		log = "work event duelengine.4"
 		if = {
 			limit = {
 				character = event_target:charA
 			}
 			# Decision time for character B
-			log = "Action pick phase finished for charA, starting for B"
+			# log = "Action pick phase finished for charA, starting for B"
 			# triger action pick menu
 			event_target:charB = {
 				character_event = {
@@ -584,7 +592,7 @@ character_event = {
 		}
 		# Time to calculate outcome and go to next round
 		# we assume that all stat setting has been made and chars decided their actions
-		log = "Action pick phase finished for charB, resolving actions..."
+		# log = "Action pick phase finished for charB, resolving actions..."
 		# resolve actions
 		event_target:charA = {
 			character_event = {
@@ -604,6 +612,7 @@ character_event = {
 	hide_window = yes
 
 	immediate = {
+		log = "work event duelengine.5"
 		# Remember that: ROOT = event_target:attacker !!!!
 		# set basic damage
 		event_target:defender = {
@@ -992,7 +1001,7 @@ character_event = {
 			limit = {
 				character = event_target:charA
 			}
-			log = "Round resolved for char A (id = duelengine.5), starting for char B"
+			# log = "Round resolved for char A (id = duelengine.5), starting for char B"
 			event_target:charA = {
 				save_event_target_as = defender
 			}
@@ -1012,7 +1021,7 @@ character_event = {
 					character = event_target:charA
 				}
 			}
-			log = "Round resolved for char B (id = duelengine.5), B received [Root.duel_dmg.GetValue] dmg, A received [From.duel_dmg.GetValue]."
+			# log = "Round resolved for char B (id = duelengine.5), B received [Root.duel_dmg.GetValue] dmg, A received [From.duel_dmg.GetValue]."
 			# if calculations are done now is the time for reports
 			event_target:charB = {
 				character_event = {
@@ -1034,6 +1043,7 @@ character_event = {
 	}
 
 	immediate = {
+		log = "work event duelengine.6"
 		# clear action list
 		character_event = {
 			id = duelaction.1

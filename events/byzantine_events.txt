@@ -21,18 +21,20 @@ character_event = {
 		has_dlc = "Legacy of Rome"
 		culture = myken
 		higher_tier_than = KING
-		NOT = {
+		is_inaccessible_trigger = no
+		NOR = {
 			any_courtier = {
 				has_minor_title = title_imperial_eunuch
 			}
-		}
-		NOT = {
-			is_inaccessible_trigger = yes
 		}
 	}
 
 	mean_time_to_happen = {
 		months = 300
+	}
+
+	immediate = {
+		log = "work event LoR.800"
 	}
 
 	option = {
@@ -58,7 +60,7 @@ character_event = {
 					}
 					20 = {
 						character_event = {
-							id = LoR.804
+							id = LoR.804 
 						}
 					}
 					20 = {
@@ -86,6 +88,10 @@ character_event = {
 	picture = GFX_evt_emissary_byzantine
 	hide_from = yes
 	is_triggered_only = yes
+
+	immediate = {
+		log = "work event LoR.801"
+	}
 
 	option = {
 		name = EVTOPTALoR.801
@@ -119,6 +125,10 @@ character_event = {
 	hide_from = yes
 	is_triggered_only = yes
 
+	immediate = {
+		log = "work event LoR.802"
+	}
+
 	option = {
 		name = EVTOPTALoR.801
 		create_character = {
@@ -150,6 +160,10 @@ character_event = {
 	picture = GFX_evt_emissary_byzantine
 	hide_from = yes
 	is_triggered_only = yes
+
+	immediate = {
+		log = "work event LoR.803"
+	}
 
 	option = {
 		name = EVTOPTALoR.801
@@ -183,6 +197,10 @@ character_event = {
 	hide_from = yes
 	is_triggered_only = yes
 
+	immediate = {
+		log = "work event LoR.804"
+	}
+
 	option = {
 		name = EVTOPTALoR.801
 		create_character = {
@@ -214,6 +232,10 @@ character_event = {
 	picture = GFX_evt_emissary_byzantine
 	hide_from = yes
 	is_triggered_only = yes
+
+	immediate = {
+		log = "work event LoR.805"
+	}
 
 	option = {
 		name = EVTOPTALoR.801
@@ -247,6 +269,10 @@ character_event = {
 	picture = GFX_evt_torture
 	is_triggered_only = yes
 
+	immediate = {
+		log = "work event LoR.830"
+	}
+
 	option = {
 		name = EVTOPTALoR.830
 	}
@@ -260,6 +286,10 @@ character_event = {
 	hide_from = yes
 	is_triggered_only = yes
 
+	immediate = {
+		log = "work event LoR.831"
+	}
+
 	option = {
 		name = EVTOPTALoR.831
 	}
@@ -271,6 +301,10 @@ character_event = {
 	desc = EVTDESCLoR.832
 	picture = GFX_evt_torture
 	is_triggered_only = yes
+
+	immediate = {
+		log = "work event LoR.832"
+	}
 
 	option = {
 		name = EVTOPTALoR.832
@@ -285,6 +319,10 @@ character_event = {
 	hide_from = yes
 	is_triggered_only = yes
 
+	immediate = {
+		log = "work event LoR.833"
+	}
+
 	option = {
 		name = EVTOPTALoR.833
 	}
@@ -297,6 +335,10 @@ character_event = {
 	picture = GFX_evt_torture
 	hide_from = yes
 	is_triggered_only = yes
+
+	immediate = {
+		log = "work event LoR.834"
+	}
 
 	option = {
 		name = EVTOPTALoR.834
@@ -420,13 +462,9 @@ character_event = {
 			prisoner = no
 		}
 		is_married = no
-		NOT = {
+		NOR = {
 			trait = celibate
-		}
-		NOT = {
 			trait = chaste
-		}
-		NOT = {
 			trait = homosexual
 		}
 	}
@@ -436,22 +474,17 @@ character_event = {
 	}
 
 	immediate = {
+		log = "work event LoR.844"
 		random_child = {
 			limit = {
 				ai = yes
 				is_female = yes
 				is_marriage_adult = yes
 				is_married = no
-				NOT = {
+				is_ascetic_trigger = no
+				NOR = {
 					trait = celibate
-				}
-				NOT = {
-					is_ascetic_trigger = yes
-				}
-				NOT = {
 					trait = chaste
-				}
-				NOT = {
 					trait = homosexual
 				}
 			}
@@ -469,6 +502,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		log = "work event LoR.845"
 		hidden_tooltip = {
 			father = {
 				character_event = {
@@ -485,6 +519,10 @@ character_event = {
 	desc = EVTDESCLoR.846
 	picture = GFX_evt_princess_byzantine
 	is_triggered_only = yes
+
+	immediate = {
+		log = "work event LoR.846"
+	}
 
 	option = {
 		name = EVTOPTALoR.846
@@ -567,6 +605,7 @@ character_event = {
 	}
 
 	immediate = {
+		log = "work event LoR.850"
 		liege = {
 			character_event = {
 				id = LoR.851
@@ -585,6 +624,10 @@ character_event = {
 	desc = EVTDESCLoR.851
 	picture = GFX_evt_riots_byzantine
 	is_triggered_only = yes
+
+	immediate = {
+		log = "work event LoR.851"
+	}
 
 	option = {
 		name = EVTOPTALoR.851
@@ -654,20 +697,22 @@ narrative_event = {
 		has_dlc = "Legacy of Rome"
 		culture = myken
 		higher_tier_than = KING
+		is_inaccessible_trigger = no
+		in_command = no
 		NOT = {
 			has_global_flag = greek_fire
 		}
-		in_command = no
 		capital_scope = {
 			province_id = 496
-		}
-		NOT = {
-			is_inaccessible_trigger = yes
 		}
 	}
 
 	mean_time_to_happen = {
 		months = 780
+	}
+
+	immediate = {
+		log = "work event LoR.860"
 	}
 
 	option = {
@@ -696,6 +741,10 @@ narrative_event = {
 	is_triggered_only = yes
 	hide_from = yes
 
+	immediate = {
+		log = "work event LoR.861"
+	}
+
 	option = {
 		name = EVTOPTALoR.861
 		narrative_event = {
@@ -712,6 +761,10 @@ narrative_event = {
 	picture = GFX_evt_emissary_byzantine
 	is_triggered_only = yes
 	hide_from = yes
+
+	immediate = {
+		log = "work event LoR.862"
+	}
 
 	option = {
 		# Naval fleet
@@ -777,6 +830,10 @@ narrative_event = {
 	is_triggered_only = yes
 	hide_from = yes
 
+	immediate = {
+		log = "work event LoR.863"
+	}
+
 	option = {
 		name = EVTOPTALoR.863
 		change_martial = 1
@@ -794,6 +851,10 @@ narrative_event = {
 	picture = GFX_evt_kraken
 	is_triggered_only = yes
 	hide_from = yes
+
+	immediate = {
+		log = "work event LoR.864"
+	}
 
 	option = {
 		name = EVTOPTALoR.863
@@ -813,6 +874,10 @@ narrative_event = {
 	is_triggered_only = yes
 	hide_from = yes
 
+	immediate = {
+		log = "work event LoR.865"
+	}
+
 	option = {
 		name = EVTOPTALoR.865
 		prestige = -25
@@ -830,6 +895,10 @@ narrative_event = {
 	picture = GFX_evt_shadow
 	is_triggered_only = yes
 	hide_from = yes
+
+	immediate = {
+		log = "work event LoR.866"
+	}
 
 	option = {
 		name = EVTOPTALoR.863
@@ -849,6 +918,10 @@ narrative_event = {
 	is_triggered_only = yes
 	hide_from = yes
 
+	immediate = {
+		log = "work event LoR.867"
+	}
+
 	option = {
 		name = EVTOPTALoR.863
 		change_intrigue = 1
@@ -867,6 +940,10 @@ narrative_event = {
 	is_triggered_only = yes
 	hide_from = yes
 
+	immediate = {
+		log = "work event LoR.868"
+	}
+
 	option = {
 		name = EVTOPTALoR.865
 		prestige = -25
@@ -884,6 +961,10 @@ narrative_event = {
 	picture = GFX_evt_recieve_letter
 	is_triggered_only = yes
 	hide_from = yes
+
+	immediate = {
+		log = "work event LoR.869"
+	}
 
 	option = {
 		name = EVTOPTALoR.869
@@ -909,6 +990,10 @@ narrative_event = {
 	is_triggered_only = yes
 	hide_from = yes
 
+	immediate = {
+		log = "work event LoR.870"
+	}
+
 	option = {
 		name = EVTOPTALoR.869
 		narrative_event = {
@@ -933,6 +1018,10 @@ narrative_event = {
 	is_triggered_only = yes
 	hide_from = yes
 
+	immediate = {
+		log = "work event LoR.871"
+	}
+
 	option = {
 		name = EVTOPTALoR.869
 		narrative_event = {
@@ -956,6 +1045,10 @@ narrative_event = {
 	picture = GFX_evt_shadowy_cabal
 	is_triggered_only = yes
 	hide_from = yes
+
+	immediate = {
+		log = "work event LoR.872"
+	}
 
 	option = {
 		name = EVTOPTALoR.872
@@ -988,6 +1081,10 @@ narrative_event = {
 	is_triggered_only = yes
 	hide_from = yes
 
+	immediate = {
+		log = "work event LoR.873"
+	}
+
 	option = {
 		name = EVTOPTALoR.872
 		narrative_event = {
@@ -1004,6 +1101,10 @@ narrative_event = {
 	picture = GFX_evt_shadowy_cabal
 	is_triggered_only = yes
 	hide_from = yes
+
+	immediate = {
+		log = "work event LoR.874"
+	}
 
 	option = {
 		name = EVTOPTALoR.872
@@ -1037,6 +1138,10 @@ narrative_event = {
 	is_triggered_only = yes
 	hide_from = yes
 
+	immediate = {
+		log = "work event LoR.875"
+	}
+
 	option = {
 		name = EVTOPTALoR.872
 		scaled_wealth = -0.25
@@ -1054,6 +1159,10 @@ narrative_event = {
 	picture = GFX_evt_shadowy_cabal
 	is_triggered_only = yes
 	hide_from = yes
+
+	immediate = {
+		log = "work event LoR.876"
+	}
 
 	option = {
 		name = EVTOPTALoR.872
@@ -1087,6 +1196,10 @@ narrative_event = {
 	is_triggered_only = yes
 	hide_from = yes
 
+	immediate = {
+		log = "work event LoR.877"
+	}
+
 	option = {
 		name = EVTOPTALoR.872
 		scaled_wealth = -0.35
@@ -1104,6 +1217,10 @@ narrative_event = {
 	picture = GFX_evt_victory_arch_byzantine
 	is_triggered_only = yes
 	hide_from = yes
+
+	immediate = {
+		log = "work event LoR.878"
+	}
 
 	option = {
 		name = EVTOPTALoR.878
@@ -1178,6 +1295,10 @@ narrative_event = {
 	is_triggered_only = yes
 	hide_from = yes
 
+	immediate = {
+		log = "work event LoR.879"
+	}
+
 	option = {
 		name = EVTOPTALoR.878
 		create_character = {
@@ -1224,6 +1345,10 @@ narrative_event = {
 	is_triggered_only = yes
 	hide_from = yes
 
+	immediate = {
+		log = "work event LoR.880"
+	}
+
 	option = {
 		name = EVTOPTALoR.878
 		prestige = -50
@@ -1241,6 +1366,10 @@ narrative_event = {
 	picture = GFX_evt_hagia_sofia
 	is_triggered_only = yes
 	hide_from = yes
+
+	immediate = {
+		log = "work event LoR.881"
+	}
 
 	option = {
 		name = EVTOPTALoR.878
@@ -1266,17 +1395,19 @@ character_event = {
 	trigger = {
 		has_dlc = "Legacy of Rome"
 		in_command = no
+		is_inaccessible_trigger = no
 		NOR = {
 			religion_group = chaos_gods_group
 			religion_group = oriental_gods_group
-		}
-		NOT = {
-			is_inaccessible_trigger = yes
 		}
 	}
 
 	mean_time_to_happen = {
 		months = 780
+	}
+
+	immediate = {
+		log = "work event LoR.885"
 	}
 
 	option = {
@@ -1301,6 +1432,10 @@ character_event = {
 	picture = GFX_evt_feast
 	hide_from = yes
 	is_triggered_only = yes
+
+	immediate = {
+		log = "work event LoR.886"
+	}
 
 	option = {
 		name = EVTOPTALoR.886
@@ -1343,6 +1478,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		log = "work event LoR.887"
 		create_random_steward = {
 			random_traits = no
 			dynasty = NONE
@@ -1423,6 +1559,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		log = "work event LoR.888"
 		create_random_diplomat = {
 			random_traits = no
 			dynasty = NONE
@@ -1506,6 +1643,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		log = "work event LoR.889"
 		create_random_intriguer = {
 			random_traits = no
 			dynasty = NONE
@@ -1583,6 +1721,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		log = "work event LoR.890"
 		create_random_soldier = {
 			random_traits = no
 			dynasty = NONE
@@ -1690,7 +1829,7 @@ character_event = {
 		OR = {
 			liege = {
 				has_dlc = "Legacy of Rome"
-				has_landed_title = e_byzantium
+				#has_landed_title = e_byzantium
 				higher_tier_than = KING
 				NOT = {
 					has_character_flag = no_more_tzykanion
@@ -1700,18 +1839,12 @@ character_event = {
 				is_female = no
 				prisoner = no
 				age = 16
-				NOT = {
+				NOR = {
 					age = 50
-				}
-				NOT = {
 					trait = infirm
-				}
-				NOT = {
 					trait = incapable
 				}
-				NOT = {
-					is_inaccessible_trigger = yes
-				}
+				is_inaccessible_trigger = no
 			}
 			liege = {
 				higher_tier_than = KING
@@ -1726,18 +1859,12 @@ character_event = {
 					is_female = no
 					prisoner = no
 					age = 16
-					NOT = {
+					NOR = {
 						age = 50
-					}
-					NOT = {
 						trait = infirm
-					}
-					NOT = {
 						trait = incapable
 					}
-					NOT = {
-						is_inaccessible_trigger = yes
-					}
+					is_inaccessible_trigger = no
 				}
 			}
 		}
@@ -1748,6 +1875,7 @@ character_event = {
 	}
 
 	immediate = {
+		log = "work event LoR.900"
 		if = {
 			limit = {
 				liege = {
@@ -1756,18 +1884,12 @@ character_event = {
 					culture = myken
 					prisoner = no
 					age = 16
-					NOT = {
+					NOR = {
 						age = 50
-					}
-					NOT = {
 						trait = infirm
-					}
-					NOT = {
 						trait = incapable
 					}
-					NOT = {
-						is_inaccessible_trigger = yes
-					}
+					is_inaccessible_trigger = no
 				}
 			}
 			liege = {
@@ -1796,18 +1918,12 @@ character_event = {
 						culture = myken
 						prisoner = no
 						age = 16
-						NOT = {
+						NOR = {
 							age = 50
-						}
-						NOT = {
 							trait = infirm
-						}
-						NOT = {
 							trait = incapable
 						}
-						NOT = {
-							is_inaccessible_trigger = yes
-						}
+						is_inaccessible_trigger = no
 					}
 					save_event_target_as = tzykanion
 					character_event = {
@@ -1825,6 +1941,10 @@ character_event = {
 	desc = EVTDESCLoR.901
 	picture = GFX_evt_hippodrome_byzantine
 	is_triggered_only = yes
+
+	immediate = {
+		log = "work event LoR.901"
+	}
 
 	option = {
 		name = EVTOPTALoR.901
@@ -1877,6 +1997,10 @@ character_event = {
 	picture = GFX_evt_hippodrome_byzantine
 	is_triggered_only = yes
 
+	immediate = {
+		log = "work event LoR.902"
+	}
+
 	option = {
 		name = EVTOPTALoR.902
 		prestige = 25
@@ -1896,6 +2020,10 @@ character_event = {
 	picture = GFX_evt_hippodrome_byzantine
 	is_triggered_only = yes
 
+	immediate = {
+		log = "work event LoR.903"
+	}
+
 	option = {
 		name = EVTOPTALoR.903
 		event_target:tzykanion = {
@@ -1913,6 +2041,10 @@ character_event = {
 	desc = EVTDESCLoR.904
 	picture = GFX_evt_hippodrome_byzantine
 	is_triggered_only = yes
+
+	immediate = {
+		log = "work event LoR.904"
+	}
 
 	option = {
 		name = EVTOPTALoR.904

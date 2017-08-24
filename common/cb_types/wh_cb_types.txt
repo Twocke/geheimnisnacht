@@ -8200,7 +8200,7 @@ crusade = {
 			# has_landed_title = e_byzantium
 			# has_landed_title = e_roman_empire
 			# }
-			# religion_group = christian
+			# religion_group = old_world_group
 			# }
 			# hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
 			# }
@@ -12623,10 +12623,10 @@ cathayan_subjugation = {
 				}
 			}
 			NOT = {
-				same_realm = FROM
+				trait = vampire_necrarch_visible
 			}
 			NOT = {
-				trait = vampire_necrarch_visible
+				same_realm = FROM
 			}
 			NOT = {
 				is_liege_or_above = FROM

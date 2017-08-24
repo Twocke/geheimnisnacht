@@ -3534,7 +3534,7 @@ castle = {
 			FROM = {
 				culture_group = asur_group
 			}
-				region = world_ulthuan
+			region = world_ulthuan
 
 		}
 		trigger = {
@@ -3563,7 +3563,7 @@ castle = {
 			FROM = {
 				culture_group = asur_group
 			}
-				region = world_ulthuan
+			region = world_ulthuan
 
 		}
 		trigger = {
@@ -3587,7 +3587,7 @@ castle = {
 			FROM = {
 				culture_group = asur_group
 			}
-				region = world_ulthuan
+			region = world_ulthuan
 
 		}
 		trigger = {
@@ -3612,7 +3612,7 @@ castle = {
 			FROM = {
 				culture_group = asur_group
 			}
-				region = world_ulthuan
+			region = world_ulthuan
 
 		}
 		trigger = {
@@ -3725,19 +3725,17 @@ castle = {
 		extra_tech_building_start = 0.8
 	}
 
-	#Asur Colonial buildings, only avaliable to Asur outside of the Ulthuan Region#
+	# Asur Colonial buildings, only avaliable to Asur outside of the Ulthuan Region
 	# Colony Military Wharfs
 	ca_colonial_wharf_1 = {
 		desc = ca_colonial_wharf_1_desc
 		port = yes
 		potential = {
-			FROM = {
+			from = {
 				culture_group = asur_group
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -3757,13 +3755,11 @@ castle = {
 		desc = ca_colonial_wharf_1_desc
 		port = yes
 		potential = {
-			FROM = {
+			from = {
 				culture_group = asur_group
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -3787,13 +3783,11 @@ castle = {
 		desc = ca_colonial_wharf_1_desc
 		port = yes
 		potential = {
-			FROM = {
+			from = {
 				culture_group = asur_group
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -3814,13 +3808,11 @@ castle = {
 		desc = ca_colonial_wharf_1_desc
 		port = yes
 		potential = {
-			FROM = {
+			from = {
 				culture_group = asur_group
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -3841,13 +3833,11 @@ castle = {
 		desc = ca_colonial_wharf_1_desc
 		port = yes
 		potential = {
-			FROM = {
+			from = {
 				culture_group = asur_group
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -3869,13 +3859,11 @@ castle = {
 		desc = ca_colonial_port_1_desc
 		port = yes
 		potential = {
-			FROM = {
+			from = {
 				culture_group = asur_group
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -3894,13 +3882,11 @@ castle = {
 		desc = ca_colonial_port_1_desc
 		port = yes
 		potential = {
-			FROM = {
+			from = {
 				culture_group = asur_group
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -3923,13 +3909,11 @@ castle = {
 		desc = ca_colonial_port_1_desc
 		port = yes
 		potential = {
-			FROM = {
+			from = {
 				culture_group = asur_group
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -3949,13 +3933,11 @@ castle = {
 		desc = ca_colonial_port_1_desc
 		port = yes
 		potential = {
-			FROM = {
+			from = {
 				culture_group = asur_group
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -3975,13 +3957,11 @@ castle = {
 		desc = ca_colonial_port_1_desc
 		port = yes
 		potential = {
-			FROM = {
+			from = {
 				culture_group = asur_group
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -4001,13 +3981,11 @@ castle = {
 	ca_colonial_plantation_1 = {
 		desc = ca_colonial_plantation_1_desc
 		potential = {
-			FROM = {
+			from = {
 				culture_group = asur_group
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -4025,13 +4003,11 @@ castle = {
 	ca_colonial_plantation_2 = {
 		desc = ca_colonial_plantation_1_desc
 		potential = {
-			FROM = {
+			from = {
 				culture_group = asur_group
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -4053,13 +4029,11 @@ castle = {
 	ca_colonial_plantation_3 = {
 		desc = ca_colonial_plantation_1_desc
 		potential = {
-			FROM = {
+			from = {
 				culture_group = asur_group
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -4084,11 +4058,9 @@ castle = {
 					title = FROMFROM
 				}
 				culture_group = asur_group
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -4112,13 +4084,11 @@ castle = {
 	ca_colony_cavalry_1 = {
 		desc = ca_colony_cavalry_1_desc
 		potential = {
-			FROM = {
+			from = {
 				culture_group = asur_group
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -4136,13 +4106,11 @@ castle = {
 	ca_colony_cavalry_2 = {
 		desc = ca_colony_cavalry_1_desc
 		potential = {
-			FROM = {
+			from = {
 				culture_group = asur_group
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -4161,13 +4129,11 @@ castle = {
 	ca_colony_cavalry_3 = {
 		desc = ca_colony_cavalry_1_desc
 		potential = {
-			FROM = {
+			from = {
 				culture_group = asur_group
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -4186,13 +4152,11 @@ castle = {
 	ca_colony_cavalry_4 = {
 		desc = ca_colony_cavalry_1_desc
 		potential = {
-			FROM = {
+			from = {
 				culture_group = asur_group
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -4211,13 +4175,11 @@ castle = {
 	ca_colony_cavalry_5 = {
 		desc = ca_colony_cavalry_1_desc
 		potential = {
-			FROM = {
+			from = {
 				culture_group = asur_group
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -4236,13 +4198,11 @@ castle = {
 	ca_colony_cavalry_6 = {
 		desc = ca_colony_cavalry_1_desc
 		potential = {
-			FROM = {
+			from = {
 				culture_group = asur_group
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -4262,13 +4222,11 @@ castle = {
 	ca_colony_citizen_1 = {
 		desc = ca_colony_citizen_1_desc
 		potential = {
-			FROM = {
+			from = {
 				culture_group = asur_group
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -4285,13 +4243,11 @@ castle = {
 	ca_colony_citizen_2 = {
 		desc = ca_colony_citizen_1_desc
 		potential = {
-			FROM = {
+			from = {
 				culture_group = asur_group
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -4309,13 +4265,11 @@ castle = {
 	ca_colony_citizen_3 = {
 		desc = ca_colony_citizen_1_desc
 		potential = {
-			FROM = {
+			from = {
 				culture_group = asur_group
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -4333,13 +4287,11 @@ castle = {
 	ca_colony_citizen_4 = {
 		desc = ca_colony_citizen_1_desc
 		potential = {
-			FROM = {
+			from = {
 				culture_group = asur_group
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -4357,13 +4309,11 @@ castle = {
 	ca_colony_citizen_5 = {
 		desc = ca_colony_citizen_1_desc
 		potential = {
-			FROM = {
+			from = {
 				culture_group = asur_group
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -4381,13 +4331,11 @@ castle = {
 	ca_colony_citizen_6 = {
 		desc = ca_colony_citizen_1_desc
 		potential = {
-			FROM = {
+			from = {
 				culture_group = asur_group
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -4453,11 +4401,9 @@ castle = {
 		potential = {
 			FROM = {
 				culture = eatainian
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -4479,11 +4425,9 @@ castle = {
 		potential = {
 			FROM = {
 				culture = eatainian
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -4503,11 +4447,9 @@ castle = {
 		potential = {
 			FROM = {
 				culture = eatainian
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -4527,11 +4469,9 @@ castle = {
 		potential = {
 			FROM = {
 				culture = eatainian
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -4552,11 +4492,9 @@ castle = {
 		potential = {
 			FROM = {
 				culture = caledori
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -4579,11 +4517,9 @@ castle = {
 		potential = {
 			FROM = {
 				culture = caledori
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -4604,11 +4540,9 @@ castle = {
 		potential = {
 			FROM = {
 				culture = caledori
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -4629,11 +4563,9 @@ castle = {
 		potential = {
 			FROM = {
 				culture = caledori
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -4655,11 +4587,9 @@ castle = {
 		potential = {
 			FROM = {
 				culture = tiranoci
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -4681,11 +4611,9 @@ castle = {
 		potential = {
 			FROM = {
 				culture = tiranoci
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -4705,11 +4633,9 @@ castle = {
 		potential = {
 			FROM = {
 				culture = tiranoci
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -4729,11 +4655,9 @@ castle = {
 		potential = {
 			FROM = {
 				culture = tiranoci
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -4754,11 +4678,9 @@ castle = {
 		potential = {
 			FROM = {
 				culture = ellyrian
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -4782,11 +4704,9 @@ castle = {
 		potential = {
 			FROM = {
 				culture = ellyrian
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -4808,11 +4728,9 @@ castle = {
 		potential = {
 			FROM = {
 				culture = ellyrian
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -4834,11 +4752,9 @@ castle = {
 		potential = {
 			FROM = {
 				culture = ellyrian
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -4864,11 +4780,9 @@ castle = {
 					culture = chracian
 					culture = sapherian
 				}
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -4894,11 +4808,9 @@ castle = {
 					culture = chracian
 					culture = sapherian
 				}
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -4922,11 +4834,9 @@ castle = {
 					culture = chracian
 					culture = sapherian
 				}
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -4950,11 +4860,9 @@ castle = {
 					culture = chracian
 					culture = sapherian
 				}
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -4976,11 +4884,9 @@ castle = {
 		potential = {
 			FROM = {
 				culture = yvressi
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -5008,11 +4914,9 @@ castle = {
 		potential = {
 			FROM = {
 				culture = yvressi
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -5038,11 +4942,9 @@ castle = {
 		potential = {
 			FROM = {
 				culture = yvressi
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -5068,11 +4970,9 @@ castle = {
 		potential = {
 			FROM = {
 				culture = yvressi
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -5099,11 +4999,9 @@ castle = {
 		potential = {
 			FROM = {
 				culture = cothiq
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -5127,11 +5025,9 @@ castle = {
 		potential = {
 			FROM = {
 				culture = cothiq
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -5153,11 +5049,9 @@ castle = {
 		potential = {
 			FROM = {
 				culture = cothiq
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -5179,11 +5073,9 @@ castle = {
 		potential = {
 			FROM = {
 				culture = cothiq
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -5206,11 +5098,9 @@ castle = {
 		potential = {
 			FROM = {
 				culture = nagarythi
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -5234,11 +5124,9 @@ castle = {
 		potential = {
 			FROM = {
 				culture = nagarythi
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -5260,11 +5148,9 @@ castle = {
 		potential = {
 			FROM = {
 				culture = nagarythi
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -5286,11 +5172,9 @@ castle = {
 		potential = {
 			FROM = {
 				culture = nagarythi
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -5313,11 +5197,9 @@ castle = {
 		potential = {
 			FROM = {
 				culture = avelorni
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -5340,11 +5222,9 @@ castle = {
 		potential = {
 			FROM = {
 				culture = avelorni
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -5365,11 +5245,9 @@ castle = {
 		potential = {
 			FROM = {
 				culture = avelorni
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {
@@ -5390,11 +5268,9 @@ castle = {
 		potential = {
 			FROM = {
 				culture = avelorni
-				NOT = {
-					location = {
-						region = world_ulthuan
-					}
-				}
+			}
+			NOT = {
+				region = world_ulthuan
 			}
 		}
 		trigger = {

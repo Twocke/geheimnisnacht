@@ -4,7 +4,7 @@
 # ID 1500-1999 is reserved
 
 # The basic events are triggered by on actions
-# Written by Sara Wendel-Örtqvist, Johan Andersson & Henrik Fåhraeus
+# Written by Sara Wendel-ï¿½rtqvist, Johan Andersson & Henrik Fï¿½hraeus
 
 # Event ID 1500-1509 is reserved for Gluttonous events
 # Gain Gluttony
@@ -20,17 +20,13 @@ character_event = {
 	lacks_dlc = "Conclave"
 
 	trigger = {
-		NOT = {
+		has_guardian = yes
+		prisoner = no
+		NOR = {
 			personality_traits = 5
-		}
-		NOT = {
 			trait = temperate
-		}
-		NOT = {
 			trait = gluttonous
 		}
-		prisoner = no
-		has_guardian = yes
 	}
 	weight_multiplier = {
 		factor = 1
@@ -106,6 +102,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event 1500"
+	}
+
 	option = {
 		name = "EVTOPTA1500"
 		add_trait = gluttonous
@@ -128,6 +128,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		log = "work event 1501"
 		hidden_tooltip = {
 			add_trait = gluttonous
 		}
@@ -151,16 +152,12 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		has_guardian = yes
+		NOR = {
 			personality_traits = 5
-		}
-		NOT = {
 			trait = temperate
-		}
-		NOT = {
 			trait = gluttonous
 		}
-		has_guardian = yes
 	}
 	weight_multiplier = {
 		factor = 1
@@ -236,6 +233,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event 1510"
+	}
+
 	option = {
 		name = "EVTOPTA1510"
 		add_trait = temperate
@@ -258,6 +259,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		log = "work event 1511"
 		hidden_tooltip = {
 			add_trait = temperate
 		}
@@ -281,16 +283,12 @@ character_event = {
 	lacks_dlc = "Conclave"
 
 	trigger = {
-		NOT = {
+		has_guardian = yes
+		NOR = {
 			personality_traits = 5
-		}
-		NOT = {
 			trait = charitable
-		}
-		NOT = {
 			trait = greedy
 		}
-		has_guardian = yes
 	}
 	weight_multiplier = {
 		factor = 1
@@ -370,6 +368,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event 1520"
+	}
+
 	option = {
 		name = "EVTOPTA1520"
 		add_trait = greedy
@@ -392,6 +394,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		log = "work event 1521"
 		hidden_tooltip = {
 			add_trait = greedy
 		}
@@ -415,16 +418,12 @@ character_event = {
 	lacks_dlc = "Conclave"
 
 	trigger = {
-		NOT = {
+		has_guardian = yes
+		NOR = {
 			personality_traits = 5
-		}
-		NOT = {
 			trait = charitable
-		}
-		NOT = {
 			trait = greedy
 		}
-		has_guardian = yes
 	}
 	weight_multiplier = {
 		factor = 1
@@ -504,6 +503,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event 1530"
+	}
+
 	option = {
 		name = "EVTOPTA1530"
 		add_trait = charitable
@@ -526,6 +529,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		log = "work event 1531"
 		hidden_tooltip = {
 			add_trait = charitable
 		}
@@ -550,16 +554,12 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		has_guardian = yes
+		NOR = {
 			personality_traits = 5
-		}
-		NOT = {
 			trait = diligent
-		}
-		NOT = {
 			trait = slothful
 		}
-		has_guardian = yes
 	}
 	weight_multiplier = {
 		factor = 1
@@ -639,6 +639,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event 1540"
+	}
+
 	option = {
 		name = "EVTOPTA1540"
 		add_trait = slothful
@@ -661,6 +665,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		log = "work event 1541"
 		hidden_tooltip = {
 			add_trait = slothful
 		}
@@ -684,16 +689,12 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		has_guardian = yes
+		NOR = {
 			personality_traits = 5
-		}
-		NOT = {
 			trait = diligent
-		}
-		NOT = {
 			trait = slothful
 		}
-		has_guardian = yes
 	}
 	weight_multiplier = {
 		factor = 1
@@ -773,6 +774,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event 1550"
+	}
+
 	option = {
 		name = "EVTOPTA1550"
 		add_trait = diligent
@@ -795,6 +800,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		log = "work event 1551"
 		hidden_tooltip = {
 			add_trait = diligent
 		}
@@ -818,16 +824,12 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		has_guardian = yes
+		NOR = {
 			personality_traits = 5
-		}
-		NOT = {
 			trait = kind
-		}
-		NOT = {
 			trait = envious
 		}
-		has_guardian = yes
 	}
 	weight_multiplier = {
 		factor = 1
@@ -915,6 +917,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event 1560"
+	}
+
 	option = {
 		name = "EVTOPTA1560"
 		add_trait = envious
@@ -937,6 +943,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		log = "work event 1561"
 		hidden_tooltip = {
 			add_trait = envious
 		}
@@ -971,16 +978,12 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		has_guardian = yes
+		NOR = {
 			personality_traits = 5
-		}
-		NOT = {
 			trait = kind
-		}
-		NOT = {
 			trait = envious
 		}
-		has_guardian = yes
 	}
 	weight_multiplier = {
 		factor = 1
@@ -1068,6 +1071,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event 1570"
+	}
+
 	option = {
 		name = "EVTOPTA1570"
 		add_trait = kind
@@ -1090,6 +1097,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		log = "work event 1571"
 		hidden_tooltip = {
 			add_trait = kind
 		}
@@ -1113,16 +1121,12 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		has_guardian = yes
+		NOR = {
 			personality_traits = 5
-		}
-		NOT = {
 			trait = wroth
-		}
-		NOT = {
 			trait = patient
 		}
-		has_guardian = yes
 	}
 	weight_multiplier = {
 		factor = 1
@@ -1194,6 +1198,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event 1580"
+	}
+
 	option = {
 		name = "EVTOPTA1580"
 		add_trait = wroth
@@ -1216,6 +1224,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		log = "work event 1581"
 		hidden_tooltip = {
 			add_trait = wroth
 		}
@@ -1239,16 +1248,12 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		has_guardian = yes
+		NOR = {
 			personality_traits = 5
-		}
-		NOT = {
 			trait = wroth
-		}
-		NOT = {
 			trait = patient
 		}
-		has_guardian = yes
 	}
 	weight_multiplier = {
 		factor = 1
@@ -1320,6 +1325,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event 1590"
+	}
+
 	option = {
 		name = "EVTOPTA1590"
 		add_trait = patient
@@ -1342,6 +1351,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		log = "work event 1591"
 		hidden_tooltip = {
 			add_trait = patient
 		}
@@ -1365,16 +1375,12 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		has_guardian = yes
+		NOR = {
 			personality_traits = 5
-		}
-		NOT = {
 			trait = proud
-		}
-		NOT = {
 			trait = humble
 		}
-		has_guardian = yes
 	}
 	weight_multiplier = {
 		factor = 1
@@ -1446,6 +1452,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event 1600"
+	}
+
 	option = {
 		name = "EVTOPTA1600"
 		add_trait = proud
@@ -1468,6 +1478,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		log = "work event 1601"
 		hidden_tooltip = {
 			add_trait = proud
 		}
@@ -1491,16 +1502,12 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		has_guardian = yes
+		NOR = {
 			personality_traits = 5
-		}
-		NOT = {
 			trait = proud
-		}
-		NOT = {
 			trait = humble
 		}
-		has_guardian = yes
 	}
 	weight_multiplier = {
 		factor = 1
@@ -1572,6 +1579,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event 1610"
+	}
+
 	option = {
 		name = "EVTOPTA1610"
 		add_trait = humble
@@ -1594,6 +1605,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		log = "work event 1611"
 		hidden_tooltip = {
 			add_trait = humble
 		}
@@ -1619,16 +1631,12 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		has_guardian = yes
+		NOR = {
 			personality_traits = 5
-		}
-		NOT = {
 			trait = honest
-		}
-		NOT = {
 			trait = deceitful
 		}
-		has_guardian = yes
 	}
 	weight_multiplier = {
 		factor = 1
@@ -1698,6 +1706,10 @@ character_event = {
 			is_weak_trigger = yes
 			factor = 2.0
 		}
+	}
+
+	immediate = {
+		log = "work event 1620"
 	}
 
 	option = {
@@ -1722,6 +1734,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		log = "work event 1621"
 		hidden_tooltip = {
 			add_trait = deceitful
 		}
@@ -1745,20 +1758,14 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		has_guardian = yes
 		NOR = {
 			religion = ormazd
 			religion = kitabid
-		}
-		NOT = {
 			personality_traits = 5
-		}
-		NOT = {
 			trait = zealous
-		}
-		NOT = {
 			trait = cynical
 		}
-		has_guardian = yes
 	}
 	weight_multiplier = {
 		factor = 1
@@ -1828,6 +1835,10 @@ character_event = {
 			is_weak_trigger = yes
 			factor = 2.0
 		}
+	}
+
+	immediate = {
+		log = "work event 1630"
 	}
 
 	option = {
@@ -1852,6 +1863,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		log = "work event 1631"
 		hidden_tooltip = {
 			add_trait = zealous
 		}
@@ -1875,20 +1887,16 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		has_guardian = yes
 		OR = {
 			religion = ormazd
 			religion = kitabid
 		}
-		NOT = {
+		NOR = {
 			personality_traits = 5
-		}
-		NOT = {
 			trait = zealous
-		}
-		NOT = {
 			trait = cynical
 		}
-		has_guardian = yes
 	}
 	weight_multiplier = {
 		factor = 1
@@ -1958,6 +1966,10 @@ character_event = {
 			is_weak_trigger = yes
 			factor = 2.0
 		}
+	}
+
+	immediate = {
+		log = "work event 1632"
 	}
 
 	option = {
@@ -1986,16 +1998,12 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		has_guardian = yes
+		NOR = {
 			personality_traits = 5
-		}
-		NOT = {
 			trait = honest
-		}
-		NOT = {
 			trait = deceitful
 		}
-		has_guardian = yes
 	}
 	weight_multiplier = {
 		factor = 1
@@ -2067,6 +2075,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event 1640"
+	}
+
 	option = {
 		name = "EVTOPTA1640"
 		add_trait = honest
@@ -2089,6 +2101,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		log = "work event 1641"
 		hidden_tooltip = {
 			add_trait = honest
 		}
@@ -2112,16 +2125,12 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		has_guardian = yes
+		NOR = {
 			personality_traits = 5
-		}
-		NOT = {
 			trait = craven
-		}
-		NOT = {
 			trait = brave
 		}
-		has_guardian = yes
 	}
 	weight_multiplier = {
 		factor = 1
@@ -2193,6 +2202,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event 1650"
+	}
+
 	option = {
 		name = "EVTOPTA1650"
 		add_trait = craven
@@ -2215,6 +2228,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		log = "work event 1651"
 		hidden_tooltip = {
 			add_trait = craven
 		}
@@ -2238,16 +2252,12 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		has_guardian = yes
+		NOR = {
 			personality_traits = 5
-		}
-		NOT = {
 			trait = craven
-		}
-		NOT = {
 			trait = brave
 		}
-		has_guardian = yes
 	}
 	weight_multiplier = {
 		factor = 1
@@ -2319,6 +2329,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event 1660"
+	}
+
 	option = {
 		name = "EVTOPTA1660"
 		add_trait = brave
@@ -2341,6 +2355,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		log = "work event 1661"
 		hidden_tooltip = {
 			add_trait = brave
 		}
@@ -2364,16 +2379,12 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		has_guardian = yes
+		NOR = {
 			personality_traits = 5
-		}
-		NOT = {
 			trait = shy
-		}
-		NOT = {
 			trait = gregarious
 		}
-		has_guardian = yes
 	}
 	weight_multiplier = {
 		factor = 1
@@ -2445,6 +2456,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event 1670"
+	}
+
 	option = {
 		name = "EVTOPTA1670"
 		add_trait = shy
@@ -2467,6 +2482,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		log = "work event 1671"
 		hidden_tooltip = {
 			add_trait = shy
 		}
@@ -2490,16 +2506,12 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		has_guardian = yes
+		NOR = {
 			personality_traits = 5
-		}
-		NOT = {
 			trait = shy
-		}
-		NOT = {
 			trait = gregarious
 		}
-		has_guardian = yes
 	}
 	weight_multiplier = {
 		factor = 1
@@ -2571,6 +2583,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event 1680"
+	}
+
 	option = {
 		name = "EVTOPTA1680"
 		add_trait = gregarious
@@ -2593,6 +2609,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		log = "work event 1681"
 		hidden_tooltip = {
 			add_trait = gregarious
 		}
@@ -2616,16 +2633,12 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		has_guardian = yes
+		NOR = {
 			personality_traits = 5
-		}
-		NOT = {
 			trait = content
-		}
-		NOT = {
 			trait = ambitious
 		}
-		has_guardian = yes
 	}
 	weight_multiplier = {
 		factor = 1
@@ -2645,6 +2658,10 @@ character_event = {
 			is_weak_trigger = yes
 			factor = 0.05
 		}
+	}
+
+	immediate = {
+		log = "work event 1690"
 	}
 
 	option = {
@@ -2669,6 +2686,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		log = "work event 1691"
 		hidden_tooltip = {
 			add_trait = ambitious
 		}
@@ -2692,16 +2710,12 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		has_guardian = yes
+		NOR = {
 			personality_traits = 5
-		}
-		NOT = {
 			trait = content
-		}
-		NOT = {
 			trait = ambitious
 		}
-		has_guardian = yes
 	}
 	weight_multiplier = {
 		factor = 1
@@ -2721,6 +2735,10 @@ character_event = {
 			is_weak_trigger = yes
 			factor = 5.0
 		}
+	}
+
+	immediate = {
+		log = "work event 1700"
 	}
 
 	option = {
@@ -2745,6 +2763,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		log = "work event 1701"
 		hidden_tooltip = {
 			add_trait = content
 		}
@@ -2768,16 +2787,12 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		has_guardian = yes
+		NOR = {
 			personality_traits = 5
-		}
-		NOT = {
 			trait = just
-		}
-		NOT = {
 			trait = arbitrary
 		}
-		has_guardian = yes
 	}
 	weight_multiplier = {
 		factor = 1
@@ -2849,6 +2864,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event 1710"
+	}
+
 	option = {
 		name = "EVTOPTA1710"
 		add_trait = arbitrary
@@ -2871,6 +2890,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		log = "work event 1711"
 		hidden_tooltip = {
 			add_trait = arbitrary
 		}
@@ -2894,16 +2914,12 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		has_guardian = yes
+		NOR = {
 			personality_traits = 5
-		}
-		NOT = {
 			trait = just
-		}
-		NOT = {
 			trait = arbitrary
 		}
-		has_guardian = yes
 	}
 	weight_multiplier = {
 		factor = 1
@@ -2973,6 +2989,10 @@ character_event = {
 			is_weak_trigger = yes
 			factor = 2.0
 		}
+	}
+
+	immediate = {
+		log = "work event 1720"
 	}
 
 	option = {
@@ -2997,6 +3017,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		log = "work event 1721"
 		hidden_tooltip = {
 			add_trait = just
 		}
@@ -3020,20 +3041,14 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		has_guardian = yes
 		NOR = {
 			religion = ormazd
 			religion = kitabid
-		}
-		NOT = {
 			personality_traits = 5
-		}
-		NOT = {
 			trait = zealous
-		}
-		NOT = {
 			trait = cynical
 		}
-		has_guardian = yes
 	}
 	weight_multiplier = {
 		factor = 1
@@ -3103,6 +3118,10 @@ character_event = {
 			is_weak_trigger = yes
 			factor = 2.0
 		}
+	}
+
+	immediate = {
+		log = "work event 1730"
 	}
 
 	option = {
@@ -3127,6 +3146,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		log = "work event 1731"
 		hidden_tooltip = {
 			add_trait = cynical
 		}
@@ -3150,20 +3170,16 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		has_guardian = yes
 		OR = {
 			religion = ormazd
 			religion = kitabid
 		}
-		NOT = {
+		NOR = {
 			personality_traits = 5
-		}
-		NOT = {
 			trait = zealous
-		}
-		NOT = {
 			trait = cynical
 		}
-		has_guardian = yes
 	}
 	weight_multiplier = {
 		factor = 1
@@ -3235,6 +3251,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event 1732"
+	}
+
 	option = {
 		name = "EVTOPTA1730"
 		add_trait = cynical
@@ -3257,6 +3277,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		log = "work event 1733"
 		hidden_tooltip = {
 			add_trait = cynical
 		}
@@ -3280,16 +3301,12 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		has_guardian = yes
+		NOR = {
 			personality_traits = 5
-		}
-		NOT = {
 			trait = kind
-		}
-		NOT = {
 			trait = cruel
 		}
-		has_guardian = yes
 	}
 	weight_multiplier = {
 		factor = 1
@@ -3361,6 +3378,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event 1965"
+	}
+
 	option = {
 		name = "EVTOPTA1965"
 		add_trait = cruel
@@ -3392,6 +3413,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		log = "work event 1966"
 		hidden_tooltip = {
 			add_trait = cruel
 		}
@@ -3416,16 +3438,10 @@ character_event = {
 
 	trigger = {
 		has_guardian = yes
-		NOT = {
+		NOR = {
 			trait = zealous
-		}
-		NOT = {
 			trait = homosexual
-		}
-		NOT = {
 			trait = chaste
-		}
-		NOT = {
 			trait = celibate
 		}
 	}
@@ -3469,6 +3485,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event 1980"
+	}
+
 	option = {
 		name = "EVTOPTA1980"
 		add_trait = homosexual
@@ -3502,6 +3522,10 @@ character_event = {
 			factor = 0.1
 			trait = zealous
 		}
+	}
+
+	immediate = {
+		log = "work event 1985"
 	}
 
 	option = {
@@ -3543,6 +3567,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event 1986"
+	}
+
 	option = {
 		name = "EVTOPTA1986"
 		piety = -50
@@ -3567,16 +3595,10 @@ character_event = {
 
 	trigger = {
 		has_guardian = yes
-		NOT = {
+		NOR = {
 			trait = zealous
-		}
-		NOT = {
 			trait = homosexual
-		}
-		NOT = {
 			trait = chaste
-		}
-		NOT = {
 			trait = celibate
 		}
 	}
@@ -3591,6 +3613,10 @@ character_event = {
 			factor = 0.5
 			trait = lustful
 		}
+	}
+
+	immediate = {
+		log = "work event 1990"
 	}
 
 	option = {
@@ -3626,6 +3652,10 @@ character_event = {
 			factor = 0.1
 			trait = zealous
 		}
+	}
+
+	immediate = {
+		log = "work event 1995"
 	}
 
 	option = {
@@ -3773,6 +3803,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event 1900"
+	}
+
 	option = {
 		name = "EVTOPTA1900"
 		hidden_tooltip = {
@@ -3882,6 +3916,10 @@ character_event = {
 			is_weak_trigger = yes
 			factor = 2.0
 		}
+	}
+
+	immediate = {
+		log = "work event 1901"
 	}
 
 	option = {
@@ -3995,6 +4033,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event 1902"
+	}
+
 	option = {
 		name = "EVTOPTA1902"
 		hidden_tooltip = {
@@ -4104,6 +4146,10 @@ character_event = {
 			is_weak_trigger = yes
 			factor = 0.05
 		}
+	}
+
+	immediate = {
+		log = "work event 1903"
 	}
 
 	option = {
@@ -4217,6 +4263,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event 1904"
+	}
+
 	option = {
 		name = "EVTOPTA1904"
 		hidden_tooltip = {
@@ -4242,9 +4292,7 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
-			is_abroad = yes
-		}
+		NOT = { is_abroad = yes }
 		father = {
 			is_alive = yes
 			employer = {
@@ -4258,10 +4306,8 @@ character_event = {
 		mother_even_if_dead = {
 			is_alive = no
 		}
-		NOT = {
+		NOR = {
 			trait = bastard
-		}
-		NOT = {
 			personality_traits = 5
 		}
 	}
@@ -4335,6 +4381,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event 1905"
+	}
+
 	option = {
 		name = "EVTOPTA1905"
 		hidden_tooltip = {
@@ -4359,11 +4409,9 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
-			trait = gregarious
-		}
 		has_guardian = yes
-		NOT = {
+		NOR = {
+			trait = gregarious
 			personality_traits = 5
 		}
 	}
@@ -4437,6 +4485,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event 1906"
+	}
+
 	option = {
 		name = "EVTOPTA1906"
 		hidden_tooltip = {
@@ -4462,12 +4514,10 @@ character_event = {
 
 	trigger = {
 		has_guardian = yes
-		NOT = {
-			personality_traits = 5
-		}
 		NOR = {
 			religion = ormazd
 			religion = kitabid
+			personality_traits = 5
 		}
 	}
 	weight_multiplier = {
@@ -4538,6 +4588,10 @@ character_event = {
 			is_weak_trigger = yes
 			factor = 0.05
 		}
+	}
+
+	immediate = {
+		log = "work event 1907"
 	}
 
 	option = {
@@ -4566,18 +4620,18 @@ character_event = {
 
 	trigger = {
 		has_guardian = yes
-		NOT = {
-			trait = zealous
-		}
-		NOT = {
-			trait = cynical
-		}
-		NOT = {
+		NOR = {
 			personality_traits = 5
+			trait = zealous
+			trait = cynical
 		}
 	}
 	weight_multiplier = {
 		factor = 1
+	}
+
+	immediate = {
+		log = "work event 1908"
 	}
 
 	option = {
@@ -4605,10 +4659,8 @@ character_event = {
 
 	trigger = {
 		has_guardian = yes
-		NOT = {
+		NOR = {
 			trait = craven
-		}
-		NOT = {
 			personality_traits = 5
 		}
 	}
@@ -4682,6 +4734,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event 1909"
+	}
+
 	option = {
 		name = "EVTOPTA1909"
 		hidden_tooltip = {
@@ -4708,14 +4764,10 @@ character_event = {
 	trigger = {
 		has_guardian = yes
 		# religion_group = old_world_group
-		NOT = {
-			trait = zealous
-		}
-		NOT = {
-			trait = cynical
-		}
-		NOT = {
+		NOR = {
 			personality_traits = 5
+			trait = zealous
+			trait = cynical
 		}
 	}
 	weight_multiplier = {
@@ -4786,6 +4838,10 @@ character_event = {
 			is_weak_trigger = yes
 			factor = 2.0
 		}
+	}
+
+	immediate = {
+		log = "work event 1910"
 	}
 
 	option = {
@@ -4812,10 +4868,8 @@ character_event = {
 
 	trigger = {
 		has_guardian = yes
-		NOT = {
+		NOR = {
 			is_ruler = yes
-		}
-		NOT = {
 			personality_traits = 5
 		}
 	}
@@ -4887,6 +4941,10 @@ character_event = {
 			is_weak_trigger = yes
 			factor = 2.0
 		}
+	}
+
+	immediate = {
+		log = "work event 1911"
 	}
 
 	option = {
@@ -4914,10 +4972,8 @@ character_event = {
 
 	trigger = {
 		has_guardian = yes
-		NOT = {
+		NOR = {
 			is_ruler = yes
-		}
-		NOT = {
 			personality_traits = 5
 		}
 	}
@@ -4991,6 +5047,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event 1912"
+	}
+
 	option = {
 		name = "EVTOPTA1912"
 		hidden_tooltip = {
@@ -5016,14 +5076,10 @@ character_event = {
 
 	trigger = {
 		has_guardian = yes
-		NOT = {
-			trait = lustful
-		}
-		NOT = {
-			trait = chaste
-		}
-		NOT = {
+		NOR = {
 			personality_traits = 5
+			trait = lustful
+			trait = chaste
 		}
 	}
 	weight_multiplier = {
@@ -5032,6 +5088,10 @@ character_event = {
 			factor = 2
 			trait = gregarious
 		}
+	}
+
+	immediate = {
+		log = "work event 1913"
 	}
 
 	option = {
@@ -5150,6 +5210,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event 1914"
+	}
+
 	option = {
 		name = "EVTOPTA1914"
 		hidden_tooltip = {
@@ -5176,16 +5240,10 @@ character_event = {
 
 	trigger = {
 		has_guardian = yes
-		NOT = {
+		NOR = {
 			trait = zealous
-		}
-		NOT = {
 			trait = cynical
-		}
-		NOT = {
 			trait = charitable
-		}
-		NOT = {
 			trait = greedy
 		}
 	}
@@ -5259,6 +5317,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event 1915"
+	}
+
 	option = {
 		name = "EVTOPTA1915"
 		hidden_tooltip = {
@@ -5284,13 +5346,9 @@ character_event = {
 
 	trigger = {
 		has_guardian = yes
-		NOT = {
-			guardian = {
+		guardian = {
+			NOR = {
 				trait = cruel
-			}
-		}
-		NOT = {
-			guardian = {
 				trait = arbitrary
 			}
 		}
@@ -5363,6 +5421,10 @@ character_event = {
 			is_weak_trigger = yes
 			factor = 2.0
 		}
+	}
+
+	immediate = {
+		log = "work event 1916"
 	}
 
 	option = {
@@ -5462,6 +5524,10 @@ character_event = {
 			is_weak_trigger = yes
 			factor = 1.25
 		}
+	}
+
+	immediate = {
+		log = "work event 1917"
 	}
 
 	option = {
@@ -5564,6 +5630,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event 1918"
+	}
+
 	option = {
 		name = "EVTOPTA1918"
 		hidden_tooltip = {
@@ -5589,19 +5659,10 @@ character_event = {
 
 	trigger = {
 		has_guardian = yes
-		NOT = {
-			religion_group = indian_group
-		}
-		NOT = {
+		NOR = {
 			trait = lustful
-		}
-		NOT = {
 			trait = chaste
-		}
-		NOT = {
 			trait = temperate
-		}
-		NOT = {
 			trait = gluttonous
 		}
 	}
@@ -5675,6 +5736,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event 1919"
+	}
+
 	option = {
 		name = "EVTOPTA1919"
 		hidden_tooltip = {
@@ -5705,19 +5770,11 @@ character_event = {
 			religion = ormazd
 			religion = kitabid
 		}
-		NOT = {
+		NOR = {
 			trait = cynical
-		}
-		NOT = {
 			trait = craven
-		}
-		NOT = {
 			trait = brave
-		}
-		NOT = {
 			trait = just
-		}
-		NOT = {
 			trait = arbitrary
 		}
 	}
@@ -5791,6 +5848,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event 1920"
+	}
+
 	option = {
 		name = "EVTOPTA1920"
 		hidden_tooltip = {
@@ -5817,16 +5878,10 @@ character_event = {
 
 	trigger = {
 		has_guardian = yes
-		NOT = {
+		NOR = {
 			trait = brave
-		}
-		NOT = {
 			trait = humble
-		}
-		NOT = {
 			trait = just
-		}
-		NOT = {
 			trait = wounded
 		}
 	}
@@ -5898,6 +5953,10 @@ character_event = {
 			is_weak_trigger = yes
 			factor = 0.05
 		}
+	}
+
+	immediate = {
+		log = "work event 1921"
 	}
 
 	option = {
@@ -5999,6 +6058,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event 1922"
+	}
+
 	option = {
 		name = "EVTOPTA1922"
 		guardian = {
@@ -6023,16 +6086,10 @@ character_event = {
 
 	trigger = {
 		has_guardian = yes
-		NOT = {
+		NOR = {
 			trait = craven
-		}
-		NOT = {
 			trait = deceitful
-		}
-		NOT = {
 			trait = cruel
-		}
-		NOT = {
 			trait = wroth
 		}
 	}
@@ -6106,6 +6163,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event 1923"
+	}
+
 	option = {
 		name = "EVTOPTA1923"
 		guardian = {
@@ -6131,19 +6192,11 @@ character_event = {
 	trigger = {
 		has_guardian = yes
 		learning = 6
-		NOT = {
+		NOR = {
 			martial = 5
-		}
-		NOT = {
 			trait = shy
-		}
-		NOT = {
 			trait = gregarious
-		}
-		NOT = {
 			trait = humble
-		}
-		NOT = {
 			trait = proud
 		}
 	}
@@ -6217,6 +6270,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event 1924"
+	}
+
 	option = {
 		name = "EVTOPTA1924"
 		guardian = {
@@ -6247,21 +6304,19 @@ character_event = {
 				trait = fair
 			}
 		}
-		NOT = {
+		NOR = {
 			trait = envious
-		}
-		NOT = {
 			trait = ambitious
-		}
-		NOT = {
 			trait = arbitrary
-		}
-		NOT = {
 			trait = content
 		}
 	}
 	weight_multiplier = {
 		factor = 1
+	}
+
+	immediate = {
+		log = "work event 1925"
 	}
 
 	option = {
@@ -6287,18 +6342,18 @@ character_event = {
 
 	trigger = {
 		has_guardian = yes
-		NOT = {
+		NOR = {
 			trait = proud
-		}
-		NOT = {
 			trait = gregarious
-		}
-		NOT = {
 			trait = shy
 		}
 	}
 	weight_multiplier = {
 		factor = 1
+	}
+
+	immediate = {
+		log = "work event 1926"
 	}
 
 	option = {
@@ -6329,22 +6384,16 @@ character_event = {
 			AND = {
 				stewardship = 3
 				age = 6
-				NOT = {
-					age = 11
-				}
+				NOT = { age = 11 }
 			}
 			AND = {
 				stewardship = 6
 				age = 11
 			}
 		}
-		NOT = {
+		NOR = {
 			trait = greedy
-		}
-		NOT = {
 			trait = charitable
-		}
-		NOT = {
 			trait = zealous
 		}
 	}
@@ -6418,6 +6467,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event 1927"
+	}
+
 	option = {
 		name = "EVTOPTA1927"
 		guardian = {
@@ -6452,10 +6505,8 @@ character_event = {
 				age = 11
 			}
 		}
-		NOT = {
+		NOR = {
 			trait = honest
-		}
-		NOT = {
 			trait = deceitful
 		}
 	}
@@ -6529,6 +6580,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event 1928"
+	}
+
 	option = {
 		name = "EVTOPTA1928"
 		guardian = {
@@ -6564,13 +6619,9 @@ character_event = {
 				age = 11
 			}
 		}
-		NOT = {
+		NOR = {
 			trait = craven
-		}
-		NOT = {
 			trait = proud
-		}
-		NOT = {
 			trait = diligent
 		}
 	}
@@ -6644,6 +6695,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event 1929"
+	}
+
 	option = {
 		name = "EVTOPTA1929"
 		guardian = {
@@ -6673,19 +6728,11 @@ character_event = {
 			trait = gregarious
 			trait = trusting
 		}
-		NOT = {
+		NOR = {
 			trait = chaste
-		}
-		NOT = {
 			trait = lustful
-		}
-		NOT = {
 			trait = deceitful
-		}
-		NOT = {
 			trait = zealous
-		}
-		NOT = {
 			trait = paranoid
 		}
 	}
@@ -6759,6 +6806,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event 1930"
+	}
+
 	option = {
 		name = "EVTOPTA1930"
 		guardian = {
@@ -6784,16 +6835,10 @@ character_event = {
 
 	trigger = {
 		has_guardian = yes
-		NOT = {
+		NOR = {
 			trait = brave
-		}
-		NOT = {
 			trait = craven
-		}
-		NOT = {
 			trait = gluttonous
-		}
-		NOT = {
 			trait = temperate
 		}
 	}
@@ -6867,6 +6912,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event 1931"
+	}
+
 	option = {
 		name = "EVTOPTA1931"
 		guardian = {
@@ -6891,16 +6940,10 @@ character_event = {
 
 	trigger = {
 		has_guardian = yes
-		NOT = {
+		NOR = {
 			trait = brave
-		}
-		NOT = {
 			trait = honest
-		}
-		NOT = {
 			trait = deceitful
-		}
-		NOT = {
 			trait = craven
 		}
 		can_be_maimed_trigger = yes
@@ -6978,6 +7021,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event 1932"
+	}
+
 	option = {
 		name = "EVTOPTA1932"
 		guardian = {
@@ -7010,6 +7057,10 @@ character_event = {
 		factor = 1
 	}
 
+	immediate = {
+		log = "work event 1933"
+	}
+
 	option = {
 		name = "EVTOPTA1933"
 		guardian = {
@@ -7037,6 +7088,10 @@ character_event = {
 	}
 	weight_multiplier = {
 		factor = 1
+	}
+
+	immediate = {
+		log = "work event 1934"
 	}
 
 	option = {
@@ -7073,10 +7128,8 @@ character_event = {
 				intrigue = 6
 			}
 		}
-		NOT = {
+		NOR = {
 			trait = honest
-		}
-		NOT = {
 			trait = deceitful
 		}
 	}
@@ -7150,6 +7203,10 @@ character_event = {
 		}
 	}
 
+	immediate = {
+		log = "work event 1935"
+	}
+
 	option = {
 		name = "EVTOPTA1935"
 		guardian = {
@@ -7188,6 +7245,10 @@ character_event = {
 
 	mean_time_to_happen = {
 		months = 16
+	}
+
+	immediate = {
+		log = "work event 1991"
 	}
 
 	option = {
