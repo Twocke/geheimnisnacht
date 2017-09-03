@@ -226,14 +226,8 @@ targetted_decisions = {
 					trait = mage_apprentice
 					trait = monstrous
 					trait = immortal
-					has_character_modifier = magic_power_1
-					has_character_modifier = magic_power_2
-					has_character_modifier = magic_power_3
-					has_character_modifier = magic_power_4
-					trait = magic_potential_1
-					trait = magic_potential_2
-					trait = magic_potential_3
-					trait = magic_potential_4
+					wh_is_mage_trigger = yes
+					wh_has_any_magic_potential_reveal_trigger = yes
 				}
 			}
 			modifier = {
@@ -250,14 +244,8 @@ targetted_decisions = {
 					trait = mage_apprentice
 					trait = monstrous
 					trait = immortal
-					has_character_modifier = magic_power_1
-					has_character_modifier = magic_power_2
-					has_character_modifier = magic_power_3
-					has_character_modifier = magic_power_4
-					trait = magic_potential_1
-					trait = magic_potential_2
-					trait = magic_potential_3
-					trait = magic_potential_4
+					wh_is_mage_trigger = yes
+					wh_has_any_magic_potential_reveal_trigger = yes
 				}
 			}
 			modifier = {
@@ -272,20 +260,12 @@ targetted_decisions = {
 			}
 			modifier = {
 				factor = 10
-				OR = {
-					has_character_modifier = magic_power_1
-					has_character_modifier = magic_power_2
-					has_character_modifier = magic_power_3
-					has_character_modifier = magic_power_4
-				}
+				wh_is_mage_trigger = yes
 			}
 			modifier = {
 				factor = 5
 				OR = {
-					trait = magic_potential_1
-					trait = magic_potential_2
-					trait = magic_potential_3
-					trait = magic_potential_4
+					wh_has_any_magic_potential_reveal_trigger = yes
 				}
 			}
 			modifier = {
@@ -605,14 +585,8 @@ targetted_decisions = {
 				trait = mutation_minor
 				trait = mutation_major
 				trait = mutation_massive
-				has_character_modifier = magic_power_1
-				has_character_modifier = magic_power_2
-				has_character_modifier = magic_power_3
-				has_character_modifier = magic_power_4
-				trait = magic_potential_1
-				trait = magic_potential_2
-				trait = magic_potential_3
-				trait = magic_potential_4
+				wh_is_mage_trigger = yes
+				wh_has_any_magic_potential_reveal_trigger = yes
 			}
 			NOT = {
 				trait = witch_hunter
@@ -1026,14 +1000,8 @@ targetted_decisions = {
 				trait = mutation_minor
 				trait = mutation_major
 				trait = mutation_massive
-				has_character_modifier = magic_power_1
-				has_character_modifier = magic_power_2
-				has_character_modifier = magic_power_3
-				has_character_modifier = magic_power_4
-				trait = magic_potential_1
-				trait = magic_potential_2
-				trait = magic_potential_3
-				trait = magic_potential_4
+				wh_is_mage_trigger = yes
+				wh_has_any_magic_potential_reveal_trigger = yes
 			}
 			trait = witch_hunter
 			piety = 0
@@ -1266,14 +1234,8 @@ targetted_decisions = {
 				trait = mutation_minor
 				trait = mutation_major
 				trait = mutation_massive
-				has_character_modifier = magic_power_1
-				has_character_modifier = magic_power_2
-				has_character_modifier = magic_power_3
-				has_character_modifier = magic_power_4
-				trait = magic_potential_1
-				trait = magic_potential_2
-				trait = magic_potential_3
-				trait = magic_potential_4
+				wh_is_mage_trigger = yes
+				wh_has_any_magic_potential_reveal_trigger = yes
 			}
 			NOT = {
 				trait = witch_hunter
@@ -2564,10 +2526,7 @@ decisions = {
 			modifier = {
 				factor = 10
 				OR =  {
-					trait = magic_potential_1
-					trait = magic_potential_2
-					trait = magic_potential_3
-					trait = magic_potential_4
+					wh_has_any_magic_potential_reveal_trigger = yes
 				}
 			}
 			modifier = {
@@ -2577,12 +2536,7 @@ decisions = {
 					is_female = yes
 					religion = ursun
 				}
-				OR =  {
-					has_character_modifier = magic_power_1
-					has_character_modifier = magic_power_2
-					has_character_modifier = magic_power_3
-					has_character_modifier = magic_power_4
-				}
+				wh_is_mage_trigger = yes
 			}
 		}
 	}
@@ -2697,10 +2651,7 @@ decisions = {
 			modifier = {
 				factor = 0.01
 				OR =  {
-					trait = magic_potential_1
-					trait = magic_potential_2
-					trait = magic_potential_3
-					trait = magic_potential_4
+					wh_has_any_magic_potential_reveal_trigger = yes
 				}
 			}
 			modifier = {
@@ -2710,12 +2661,7 @@ decisions = {
 					is_female = yes
 					religion = ursun
 				}
-				OR =  {
-					has_character_modifier = magic_power_1
-					has_character_modifier = magic_power_2
-					has_character_modifier = magic_power_3
-					has_character_modifier = magic_power_4
-				}
+				wh_is_mage_trigger = yes
 			}
 		}
 	}

@@ -26,11 +26,10 @@ namespace = spleasure
 character_event = {
 	id = spleasure.1
 	hide_window = yes
-	only_rulers = yes
+	only_playable = yes
 	is_triggered_only = yes
 
 	trigger = {
-		higher_tier_than = BARON
 		age = 40		# elves
 		NOT = {
 			society_member_of = cult_of_pleasure
@@ -201,7 +200,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event spleasure.1"
+		log = "work event id = spleasure.1"
 		random_list = {
 			# Spiritual call
 			20 = {
@@ -384,7 +383,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.2"
+		log = "work event id = spleasure.2"
 	}
 
 	option = {
@@ -435,7 +434,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.3"
+		log = "work event id = spleasure.3"
 	}
 
 	option = {
@@ -488,7 +487,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.4"
+		log = "work event id = spleasure.4"
 	}
 
 	option = {
@@ -510,7 +509,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.5"
+		log = "work event id = spleasure.5"
 	}
 
 	option = {
@@ -538,7 +537,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.6"
+		log = "work event id = spleasure.6"
 	}
 
 	option = {
@@ -566,7 +565,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.7"
+		log = "work event id = spleasure.7"
 	}
 
 	option = {
@@ -594,7 +593,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.8"
+		log = "work event id = spleasure.8"
 	}
 
 	option = {
@@ -661,7 +660,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.9"
+		log = "work event id = spleasure.9"
 	}
 
 	option = {
@@ -709,7 +708,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.10"
+		log = "work event id = spleasure.10"
 	}
 
 	option = {
@@ -736,7 +735,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.11"
+		log = "work event id = spleasure.11"
 	}
 
 	option = {
@@ -763,7 +762,7 @@ long_character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.12"
+		log = "work event id = spleasure.12"
 	}
 
 	option = {
@@ -804,7 +803,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.13"
+		log = "work event id = spleasure.13"
 	}
 
 	option = {
@@ -832,7 +831,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.14"
+		log = "work event id = spleasure.14"
 	}
 
 	option = {
@@ -860,7 +859,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.15"
+		log = "work event id = spleasure.15"
 	}
 
 	option = {
@@ -904,7 +903,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.16"
+		log = "work event id = spleasure.16"
 	}
 
 	option = {
@@ -925,7 +924,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.17"
+		log = "work event id = spleasure.17"
 	}
 
 	option = {
@@ -957,7 +956,7 @@ long_character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.18"
+		log = "work event id = spleasure.18"
 	}
 
 	option = {
@@ -1016,7 +1015,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.19"
+		log = "work event id = spleasure.19"
 	}
 
 	option = {
@@ -1055,7 +1054,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.20"
+		log = "work event id = spleasure.20"
 	}
 
 	option = {
@@ -1075,7 +1074,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.21"
+		log = "work event id = spleasure.21"
 	}
 
 	option = {
@@ -1102,7 +1101,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.22"
+		log = "work event id = spleasure.22"
 	}
 
 	option = {
@@ -1142,7 +1141,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.23"
+		log = "work event id = spleasure.23"
 	}
 
 	option = {
@@ -1170,7 +1169,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.24"
+		log = "work event id = spleasure.24"
 	}
 
 	option = {
@@ -1191,7 +1190,7 @@ long_character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.25"
+		log = "work event id = spleasure.25"
 	}
 
 	option = {
@@ -1232,7 +1231,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.25005"
+		log = "work event id = spleasure.25005"
 	}
 
 	option = {
@@ -1256,7 +1255,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.26"
+		log = "work event id = spleasure.26"
 	}
 
 	option = {
@@ -1280,7 +1279,7 @@ long_character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.27"
+		log = "work event id = spleasure.27"
 	}
 
 	option = {
@@ -1327,7 +1326,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.28"
+		log = "work event id = spleasure.28"
 	}
 
 	option = {
@@ -1355,7 +1354,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.29"
+		log = "work event id = spleasure.29"
 	}
 
 	option = {
@@ -1383,7 +1382,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.30"
+		log = "work event id = spleasure.30"
 	}
 
 	option = {
@@ -1414,7 +1413,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.31"
+		log = "work event id = spleasure.31"
 	}
 
 	option = {
@@ -1476,7 +1475,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.32"
+		log = "work event id = spleasure.32"
 	}
 
 	option = {
@@ -1587,7 +1586,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.33"
+		log = "work event id = spleasure.33"
 	}
 
 	option = {
@@ -1607,7 +1606,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.34"
+		log = "work event id = spleasure.34"
 	}
 
 	option = {
@@ -1638,7 +1637,7 @@ long_character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.35"
+		log = "work event id = spleasure.35"
 	}
 
 	option = {
@@ -1670,7 +1669,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.36"
+		log = "work event id = spleasure.36"
 	}
 
 	option = {
@@ -1696,7 +1695,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.37"
+		log = "work event id = spleasure.37"
 	}
 
 	option = {
@@ -1742,7 +1741,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.38"
+		log = "work event id = spleasure.38"
 	}
 
 	option = {
@@ -1799,7 +1798,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.39"
+		log = "work event id = spleasure.39"
 	}
 
 	option = {
@@ -1910,7 +1909,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.40"
+		log = "work event id = spleasure.40"
 	}
 
 	option = {
@@ -1931,7 +1930,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.41"
+		log = "work event id = spleasure.41"
 	}
 
 	option = {
@@ -1962,7 +1961,7 @@ long_character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.42"
+		log = "work event id = spleasure.42"
 	}
 
 	option = {
@@ -1994,7 +1993,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.43"
+		log = "work event id = spleasure.43"
 	}
 
 	option = {
@@ -2020,7 +2019,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.44"
+		log = "work event id = spleasure.44"
 	}
 
 	option = {
@@ -2052,7 +2051,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.45"
+		log = "work event id = spleasure.45"
 	}
 
 	option = {
@@ -2143,7 +2142,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.46"
+		log = "work event id = spleasure.46"
 	}
 
 	option = {
@@ -2238,7 +2237,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.47"
+		log = "work event id = spleasure.47"
 	}
 
 	option = {
@@ -2263,7 +2262,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.48"
+		log = "work event id = spleasure.48"
 	}
 
 	option = {
@@ -2293,7 +2292,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.49"
+		log = "work event id = spleasure.49"
 	}
 
 	option = {
@@ -2318,7 +2317,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.50"
+		log = "work event id = spleasure.50"
 	}
 
 	option = {
@@ -2377,7 +2376,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.51"
+		log = "work event id = spleasure.51"
 	}
 
 	option = {
@@ -2475,7 +2474,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.52"
+		log = "work event id = spleasure.52"
 	}
 
 	option = {
@@ -2500,7 +2499,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.53"
+		log = "work event id = spleasure.53"
 	}
 
 	option = {
@@ -2530,7 +2529,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.54"
+		log = "work event id = spleasure.54"
 	}
 
 	option = {
@@ -2555,7 +2554,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.55"
+		log = "work event id = spleasure.55"
 	}
 
 	option = {
@@ -2581,7 +2580,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.56"
+		log = "work event id = spleasure.56"
 	}
 
 	option = {
@@ -2600,7 +2599,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.57"
+		log = "work event id = spleasure.57"
 		random_list = {
 			# Tongue
 			# Horns
@@ -2690,18 +2689,13 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.5705"
+		log = "work event id = spleasure.5705"
 	}
 
 	option = {
 		name = EVTOPTAspleasure57	# hide it with magic
 		trigger = {
-			OR = {
-				has_character_modifier = magic_power_1
-				has_character_modifier = magic_power_2
-				has_character_modifier = magic_power_3
-				has_character_modifier = magic_power_4
-			}
+			wh_is_mage_trigger = yes
 		}
 		random_list = {
 			50 = {
@@ -2810,18 +2804,13 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.58"
+		log = "work event id = spleasure.58"
 	}
 
 	option = {
 		name = EVTOPTAspleasure58	# hide it with magic
 		trigger = {
-			OR = {
-				has_character_modifier = magic_power_1
-				has_character_modifier = magic_power_2
-				has_character_modifier = magic_power_3
-				has_character_modifier = magic_power_4
-			}
+			wh_is_mage_trigger = yes
 		}
 		random_list = {
 			50 = {
@@ -2932,7 +2921,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.59"
+		log = "work event id = spleasure.59"
 	}
 
 	option = {
@@ -2991,7 +2980,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.60"
+		log = "work event id = spleasure.60"
 	}
 
 	option = {
@@ -3050,7 +3039,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.61"
+		log = "work event id = spleasure.61"
 	}
 
 	option = {
@@ -3075,7 +3064,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.62"
+		log = "work event id = spleasure.62"
 	}
 
 	option = {
@@ -3092,7 +3081,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.63"
+		log = "work event id = spleasure.63"
 	}
 
 	option = {
@@ -3125,7 +3114,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.64"
+		log = "work event id = spleasure.64"
 	}
 
 	option = {
@@ -3158,7 +3147,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.65"
+		log = "work event id = spleasure.65"
 	}
 
 	option = {
@@ -3218,7 +3207,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.66"
+		log = "work event id = spleasure.66"
 	}
 
 	option = {
@@ -3309,7 +3298,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.67"
+		log = "work event id = spleasure.67"
 	}
 
 	option = {
@@ -3407,7 +3396,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.68"
+		log = "work event id = spleasure.68"
 		FROMFROM = {
 			character_event = {
 				id = spleasure.69 days = 10 random = 15
@@ -3424,7 +3413,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.68005"
+		log = "work event id = spleasure.68005"
 		FROM = {
 			character_event = {
 				id = spleasure.69 days = 10 random = 15
@@ -3441,7 +3430,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.69"
+		log = "work event id = spleasure.69"
 	}
 
 	option = {
@@ -3575,7 +3564,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.70"
+		log = "work event id = spleasure.70"
 	}
 
 	option = {
@@ -3921,7 +3910,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.71"
+		log = "work event id = spleasure.71"
 	}
 
 	option = {
@@ -3955,7 +3944,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.72"
+		log = "work event id = spleasure.72"
 	}
 
 	option = {
@@ -3990,7 +3979,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.73"
+		log = "work event id = spleasure.73"
 	}
 
 	option = {
@@ -4163,7 +4152,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.74"
+		log = "work event id = spleasure.74"
 	}
 
 	option = {
@@ -4190,7 +4179,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.75"
+		log = "work event id = spleasure.75"
 	}
 
 	option = {
@@ -4218,7 +4207,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.76"
+		log = "work event id = spleasure.76"
 	}
 
 	option = {
@@ -4391,7 +4380,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.77"
+		log = "work event id = spleasure.77"
 	}
 
 	option = {
@@ -4425,7 +4414,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.78"
+		log = "work event id = spleasure.78"
 	}
 
 	option = {
@@ -4460,7 +4449,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.79"
+		log = "work event id = spleasure.79"
 	}
 
 	option = {
@@ -4640,7 +4629,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.80"
+		log = "work event id = spleasure.80"
 	}
 
 	option = {
@@ -4674,7 +4663,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.81"
+		log = "work event id = spleasure.81"
 	}
 
 	option = {
@@ -4709,7 +4698,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.82"
+		log = "work event id = spleasure.82"
 	}
 
 	option = {
@@ -4882,7 +4871,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.83"
+		log = "work event id = spleasure.83"
 	}
 
 	option = {
@@ -4916,7 +4905,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.84"
+		log = "work event id = spleasure.84"
 	}
 
 	option = {
@@ -4951,7 +4940,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.85"
+		log = "work event id = spleasure.85"
 	}
 
 	option = {
@@ -5015,7 +5004,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.86"
+		log = "work event id = spleasure.86"
 	}
 
 	option = {
@@ -5081,7 +5070,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.87"
+		log = "work event id = spleasure.87"
 	}
 
 	option = {
@@ -5254,7 +5243,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.88"
+		log = "work event id = spleasure.88"
 	}
 
 	option = {
@@ -5288,7 +5277,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.89"
+		log = "work event id = spleasure.89"
 	}
 
 	option = {
@@ -5421,7 +5410,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.90"
+		log = "work event id = spleasure.90"
 	}
 
 	option = {
@@ -5806,7 +5795,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.91"
+		log = "work event id = spleasure.91"
 	}
 
 	option = {
@@ -5890,7 +5879,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.92"
+		log = "work event id = spleasure.92"
 		FROMFROM = {
 			character_event = {
 				id = spleasure.94 days = 1
@@ -5922,7 +5911,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.94"
+		log = "work event id = spleasure.94"
 	}
 
 	option = {
@@ -5930,7 +5919,8 @@ character_event = {
 		set_character_flag = s_changing_looks
 		FROM = {
 			character_event = {
-				id = spleasure.95 days = 1
+				id = spleasure.95
+				days = 1
 			}
 			character_event = {
 				id = spleasure.96
@@ -6181,7 +6171,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.95"
+		log = "work event id = spleasure.95"
 		FROM = {
 			character_event = {
 				id = spleasure.97
@@ -6197,7 +6187,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.96"
+		log = "work event id = spleasure.96"
 		if = {
 			limit = {
 				OR = {
@@ -7094,7 +7084,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.97"
+		log = "work event id = spleasure.97"
 	}
 
 	option = {
@@ -7588,7 +7578,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.98"
+		log = "work event id = spleasure.98"
 	}
 
 	option = {
@@ -7841,7 +7831,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.98001"
+		log = "work event id = spleasure.98001"
 	}
 
 	option = {
@@ -8096,7 +8086,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.98002"
+		log = "work event id = spleasure.98002"
 	}
 
 	option = {
@@ -8351,7 +8341,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.98003"
+		log = "work event id = spleasure.98003"
 	}
 
 	option = {
@@ -8616,7 +8606,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.98004"
+		log = "work event id = spleasure.98004"
 	}
 
 	option = {
@@ -8881,7 +8871,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.98005"
+		log = "work event id = spleasure.98005"
 	}
 
 	option = {
@@ -9161,7 +9151,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.99"
+		log = "work event id = spleasure.99"
 	}
 
 	option = {
@@ -9295,7 +9285,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.99001"
+		log = "work event id = spleasure.99001"
 	}
 
 	option = {
@@ -9429,7 +9419,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.99002"
+		log = "work event id = spleasure.99002"
 	}
 
 	option = {
@@ -9563,7 +9553,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.99003"
+		log = "work event id = spleasure.99003"
 	}
 
 	option = {
@@ -9687,7 +9677,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.99004"
+		log = "work event id = spleasure.99004"
 	}
 
 	option = {
@@ -9811,7 +9801,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.99005"
+		log = "work event id = spleasure.99005"
 	}
 
 	option = {
@@ -10032,7 +10022,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.100"
+		log = "work event id = spleasure.100"
 	}
 
 	option = {
@@ -10336,7 +10326,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.101"
+		log = "work event id = spleasure.101"
 	}
 
 	option = {
@@ -10688,7 +10678,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.102"
+		log = "work event id = spleasure.102"
 	}
 
 	option = {
@@ -11237,7 +11227,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.103"
+		log = "work event id = spleasure.103"
 	}
 
 	option = {
@@ -11792,7 +11782,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.104"
+		log = "work event id = spleasure.104"
 	}
 
 	option = {
@@ -12243,7 +12233,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.105"
+		log = "work event id = spleasure.105"
 	}
 
 	option = {
@@ -12276,7 +12266,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.106"
+		log = "work event id = spleasure.106"
 		random_list = {
 			50 = {
 				FROM = {
@@ -12308,18 +12298,7 @@ character_event = {
 				modifier = {
 					factor = 0
 					FROM = {
-						NOT = {
-							has_character_modifier = magic_power_1
-						}
-						NOT = {
-							has_character_modifier = magic_power_2
-						}
-						NOT = {
-							has_character_modifier = magic_power_3
-						}
-						NOT = {
-							has_character_modifier = magic_power_4
-						}
+						wh_is_mage_trigger = no
 					}
 				}
 				modifier = {
@@ -12449,7 +12428,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.107"
+		log = "work event id = spleasure.107"
 	}
 
 	option = {
@@ -12492,7 +12471,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.10705"
+		log = "work event id = spleasure.10705"
 	}
 
 	option = {
@@ -12526,7 +12505,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.108"
+		log = "work event id = spleasure.108"
 	}
 
 	option = {
@@ -12569,7 +12548,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.10805"
+		log = "work event id = spleasure.10805"
 	}
 
 	option = {
@@ -12603,7 +12582,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.109"
+		log = "work event id = spleasure.109"
 	}
 
 	option = {
@@ -12646,7 +12625,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.10905"
+		log = "work event id = spleasure.10905"
 	}
 
 	option = {
@@ -12779,7 +12758,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.110"
+		log = "work event id = spleasure.110"
 	}
 
 	option = {
@@ -13079,7 +13058,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.111"
+		log = "work event id = spleasure.111"
 	}
 
 	option = {
@@ -13425,7 +13404,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.112"
+		log = "work event id = spleasure.112"
 	}
 
 	option = {
@@ -13970,7 +13949,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.113"
+		log = "work event id = spleasure.113"
 	}
 
 	option = {
@@ -14525,7 +14504,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.114"
+		log = "work event id = spleasure.114"
 	}
 
 	option = {
@@ -14976,7 +14955,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.115"
+		log = "work event id = spleasure.115"
 	}
 
 	option = {
@@ -15009,7 +14988,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.116"
+		log = "work event id = spleasure.116"
 	 	remove_opinion = {
 			who = FROM
 			modifier = opinion_quirking
@@ -15081,7 +15060,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.117"
+		log = "work event id = spleasure.117"
 	}
 
 	option = {
@@ -15125,7 +15104,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.11705"
+		log = "work event id = spleasure.11705"
 	}
 
 	option = {
@@ -15159,7 +15138,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.118"
+		log = "work event id = spleasure.118"
 	}
 
 	option = {
@@ -15203,7 +15182,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.11805"
+		log = "work event id = spleasure.11805"
 	}
 
 	option = {
@@ -15237,7 +15216,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.119"
+		log = "work event id = spleasure.119"
 	}
 
 	option = {
@@ -15281,7 +15260,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.11905"
+		log = "work event id = spleasure.11905"
 	}
 
 	option = {
@@ -15414,7 +15393,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.120"
+		log = "work event id = spleasure.120"
 	}
 
 	option = {
@@ -15714,7 +15693,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.121"
+		log = "work event id = spleasure.121"
 	}
 
 	option = {
@@ -16060,7 +16039,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.122"
+		log = "work event id = spleasure.122"
 	}
 
 	option = {
@@ -16605,7 +16584,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.123"
+		log = "work event id = spleasure.123"
 	}
 
 	option = {
@@ -17160,7 +17139,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.124"
+		log = "work event id = spleasure.124"
 	}
 
 	option = {
@@ -17611,7 +17590,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.125"
+		log = "work event id = spleasure.125"
 	}
 
 	option = {
@@ -17644,7 +17623,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.126"
+		log = "work event id = spleasure.126"
 	 	remove_opinion = {
 			who = FROM
 			modifier = opinion_quirking
@@ -17715,7 +17694,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.127"
+		log = "work event id = spleasure.127"
 	}
 
 	option = {
@@ -17759,7 +17738,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.12705"
+		log = "work event id = spleasure.12705"
 	}
 
 	option = {
@@ -17793,7 +17772,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.128"
+		log = "work event id = spleasure.128"
 	}
 
 	option = {
@@ -17837,7 +17816,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.12805"
+		log = "work event id = spleasure.12805"
 	}
 
 	option = {
@@ -17871,7 +17850,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.129"
+		log = "work event id = spleasure.129"
 	}
 
 	option = {
@@ -17915,7 +17894,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.12905"
+		log = "work event id = spleasure.12905"
 	}
 
 	option = {
@@ -18048,7 +18027,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.130"
+		log = "work event id = spleasure.130"
 	}
 
 	option = {
@@ -18344,7 +18323,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.131"
+		log = "work event id = spleasure.131"
 	}
 
 	option = {
@@ -18694,7 +18673,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.132"
+		log = "work event id = spleasure.132"
 	}
 
 	option = {
@@ -19237,7 +19216,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.133"
+		log = "work event id = spleasure.133"
 	}
 
 	option = {
@@ -19790,7 +19769,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.134"
+		log = "work event id = spleasure.134"
 	}
 
 	option = {
@@ -20287,7 +20266,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.135"
+		log = "work event id = spleasure.135"
 	}
 
 	option = {
@@ -20320,7 +20299,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.136"
+		log = "work event id = spleasure.136"
 	 	remove_opinion = {
 			who = FROM
 			modifier = opinion_quirking
@@ -20406,7 +20385,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.137"
+		log = "work event id = spleasure.137"
 	}
 
 	option = {
@@ -20450,7 +20429,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.13705"
+		log = "work event id = spleasure.13705"
 	}
 
 	option = {
@@ -20484,7 +20463,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.138"
+		log = "work event id = spleasure.138"
 	}
 
 	option = {
@@ -20528,7 +20507,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.13805"
+		log = "work event id = spleasure.13805"
 	}
 
 	option = {
@@ -20562,7 +20541,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.139"
+		log = "work event id = spleasure.139"
 	}
 
 	option = {
@@ -20606,7 +20585,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.13905"
+		log = "work event id = spleasure.13905"
 	}
 
 	option = {
@@ -20739,7 +20718,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.140"
+		log = "work event id = spleasure.140"
 	}
 
 	option = {
@@ -21035,7 +21014,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.141"
+		log = "work event id = spleasure.141"
 	}
 
 	option = {
@@ -21385,7 +21364,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.142"
+		log = "work event id = spleasure.142"
 	}
 
 	option = {
@@ -21916,7 +21895,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.143"
+		log = "work event id = spleasure.143"
 	}
 
 	option = {
@@ -22469,7 +22448,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.144"
+		log = "work event id = spleasure.144"
 	}
 
 	option = {
@@ -22966,7 +22945,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.145"
+		log = "work event id = spleasure.145"
 	}
 
 	option = {
@@ -22999,7 +22978,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.146"
+		log = "work event id = spleasure.146"
 	 	remove_opinion = {
 			who = FROM
 			modifier = opinion_quirking
@@ -23076,7 +23055,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.147"
+		log = "work event id = spleasure.147"
 	}
 
 	option = {
@@ -23120,7 +23099,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.14705"
+		log = "work event id = spleasure.14705"
 	}
 
 	option = {
@@ -23154,7 +23133,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.148"
+		log = "work event id = spleasure.148"
 	}
 
 	option = {
@@ -23198,7 +23177,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.14805"
+		log = "work event id = spleasure.14805"
 	}
 
 	option = {
@@ -23232,7 +23211,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.149"
+		log = "work event id = spleasure.149"
 	}
 
 	option = {
@@ -23276,7 +23255,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.14905"
+		log = "work event id = spleasure.14905"
 	}
 
 	option = {
@@ -23409,7 +23388,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.150"
+		log = "work event id = spleasure.150"
 	}
 
 	option = {
@@ -23705,7 +23684,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.151"
+		log = "work event id = spleasure.151"
 	}
 
 	option = {
@@ -24061,7 +24040,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.152"
+		log = "work event id = spleasure.152"
 	}
 
 	option = {
@@ -24600,7 +24579,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.153"
+		log = "work event id = spleasure.153"
 	}
 
 	option = {
@@ -25157,7 +25136,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.154"
+		log = "work event id = spleasure.154"
 	}
 
 	option = {
@@ -25654,7 +25633,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.155"
+		log = "work event id = spleasure.155"
 	}
 
 	option = {
@@ -25687,7 +25666,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.156"
+		log = "work event id = spleasure.156"
 	 	remove_opinion = {
 			who = FROM
 			modifier = opinion_quirking
@@ -25770,7 +25749,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.157"
+		log = "work event id = spleasure.157"
 	}
 
 	option = {
@@ -25814,7 +25793,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.15705"
+		log = "work event id = spleasure.15705"
 	}
 
 	option = {
@@ -25848,7 +25827,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.158"
+		log = "work event id = spleasure.158"
 	}
 
 	option = {
@@ -25890,7 +25869,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.15805"
+		log = "work event id = spleasure.15805"
 	}
 
 	option = {
@@ -25926,7 +25905,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.159"
+		log = "work event id = spleasure.159"
 	}
 
 	option = {
@@ -25970,7 +25949,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.15905"
+		log = "work event id = spleasure.15905"
 	}
 
 	option = {
@@ -25995,7 +25974,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spleasure.160"
+		log = "work event id = spleasure.160"
 	}
 
 	option = {
@@ -26064,18 +26043,7 @@ character_event = {
 					modifier = {
 						factor = 0
 						FROM = {
-							NOT = {
-								has_character_modifier = magic_power_1
-							}
-							NOT = {
-								has_character_modifier = magic_power_2
-							}
-							NOT = {
-								has_character_modifier = magic_power_3
-							}
-							NOT = {
-								has_character_modifier = magic_power_4
-							}
+							wh_is_mage_trigger = no
 						}
 					}
 					modifier = {
@@ -26147,18 +26115,7 @@ character_event = {
 					modifier = {
 						factor = 0
 						FROM = {
-							NOT = {
-								has_character_modifier = magic_power_1
-							}
-							NOT = {
-								has_character_modifier = magic_power_2
-							}
-							NOT = {
-								has_character_modifier = magic_power_3
-							}
-							NOT = {
-								has_character_modifier = magic_power_4
-							}
+							wh_is_mage_trigger = no
 						}
 					}
 					modifier = {
@@ -26289,18 +26246,7 @@ character_event = {
 					modifier = {
 						factor = 0
 						FROM = {
-							NOT = {
-								has_character_modifier = magic_power_1
-							}
-							NOT = {
-								has_character_modifier = magic_power_2
-							}
-							NOT = {
-								has_character_modifier = magic_power_3
-							}
-							NOT = {
-								has_character_modifier = magic_power_4
-							}
+							wh_is_mage_trigger = no
 						}
 					}
 					modifier = {
@@ -26372,18 +26318,7 @@ character_event = {
 					modifier = {
 						factor = 0
 						FROM = {
-							NOT = {
-								has_character_modifier = magic_power_1
-							}
-							NOT = {
-								has_character_modifier = magic_power_2
-							}
-							NOT = {
-								has_character_modifier = magic_power_3
-							}
-							NOT = {
-								has_character_modifier = magic_power_4
-							}
+							wh_is_mage_trigger = no
 						}
 					}
 					modifier = {
@@ -26514,18 +26449,7 @@ character_event = {
 					modifier = {
 						factor = 0
 						FROM = {
-							NOT = {
-								has_character_modifier = magic_power_1
-							}
-							NOT = {
-								has_character_modifier = magic_power_2
-							}
-							NOT = {
-								has_character_modifier = magic_power_3
-							}
-							NOT = {
-								has_character_modifier = magic_power_4
-							}
+							wh_is_mage_trigger = no
 						}
 					}
 					modifier = {
@@ -26597,18 +26521,7 @@ character_event = {
 					modifier = {
 						factor = 0
 						FROM = {
-							NOT = {
-								has_character_modifier = magic_power_1
-							}
-							NOT = {
-								has_character_modifier = magic_power_2
-							}
-							NOT = {
-								has_character_modifier = magic_power_3
-							}
-							NOT = {
-								has_character_modifier = magic_power_4
-							}
+							wh_is_mage_trigger = no
 						}
 					}
 					modifier = {
@@ -26943,18 +26856,7 @@ character_event = {
 					modifier = {
 						factor = 0
 						FROM = {
-							NOT = {
-								has_character_modifier = magic_power_1
-							}
-							NOT = {
-								has_character_modifier = magic_power_2
-							}
-							NOT = {
-								has_character_modifier = magic_power_3
-							}
-							NOT = {
-								has_character_modifier = magic_power_4
-							}
+							wh_is_mage_trigger = no
 						}
 					}
 					modifier = {
@@ -27026,18 +26928,7 @@ character_event = {
 					modifier = {
 						factor = 0
 						FROM = {
-							NOT = {
-								has_character_modifier = magic_power_1
-							}
-							NOT = {
-								has_character_modifier = magic_power_2
-							}
-							NOT = {
-								has_character_modifier = magic_power_3
-							}
-							NOT = {
-								has_character_modifier = magic_power_4
-							}
+							wh_is_mage_trigger = no
 						}
 					}
 					modifier = {
@@ -27115,7 +27006,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event spleasure.161"
+		log = "work event id = spleasure.161"
 	}
 
 	option = {
@@ -27197,7 +27088,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event spleasure.16105"
+		log = "work event id = spleasure.16105"
 	}
 
 	option = {
@@ -27249,7 +27140,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event spleasure.162"
+		log = "work event id = spleasure.162"
 	}
 
 	option = {
@@ -27291,7 +27182,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event spleasure.16205"
+		log = "work event id = spleasure.16205"
 	}
 
 	option = {
@@ -27311,7 +27202,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event spleasure.163"
+		log = "work event id = spleasure.163"
 	}
 
 	option = {
@@ -27335,7 +27226,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event spleasure.16305"
+		log = "work event id = spleasure.16305"
 	}
 
 	option = {
@@ -27356,7 +27247,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event spleasure.164"
+		log = "work event id = spleasure.164"
 	}
 
 	option = {
@@ -27450,7 +27341,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event spleasure.16405"
+		log = "work event id = spleasure.16405"
 	}
 
 	option = {
@@ -27519,7 +27410,7 @@ character_event = {
 	}
 	is_triggered_only = yes
 	immediate = {
-		log = "work event spleasure.16406"
+		log = "work event id = spleasure.16406"
 	}
 
 	option = {
@@ -27538,7 +27429,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event spleasure.165"
+		log = "work event id = spleasure.165"
 	}
 
 	option = {
@@ -27562,7 +27453,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event spleasure.16505"
+		log = "work event id = spleasure.16505"
 	}
 
 	option = {
@@ -27588,7 +27479,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event spleasure.166"
+		log = "work event id = spleasure.166"
 	}
 
 	option = {
@@ -27682,7 +27573,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event spleasure.16605"
+		log = "work event id = spleasure.16605"
 	}
 
 	option = {
@@ -27751,7 +27642,7 @@ character_event = {
 	}
 	is_triggered_only = yes
 	immediate = {
-		log = "work event spleasure.16606"
+		log = "work event id = spleasure.16606"
 	}
 
 	option = {
@@ -27770,7 +27661,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event spleasure.167"
+		log = "work event id = spleasure.167"
 	}
 
 	option = {
@@ -27794,7 +27685,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event spleasure.16705"
+		log = "work event id = spleasure.16705"
 	}
 
 	option = {
@@ -27828,7 +27719,7 @@ character_event = {
 	}
 	is_triggered_only = yes
 	immediate = {
-		log = "work event spleasure.168"
+		log = "work event id = spleasure.168"
 		add_trait = monstrous
 	}
 }
@@ -27941,7 +27832,7 @@ long_character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event spleasure.169"
+		log = "work event id = spleasure.169"
 	}
 
 	option = {
@@ -28548,7 +28439,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event spleasure.16905"
+		log = "work event id = spleasure.16905"
 	}
 
 	option = {
@@ -28682,7 +28573,7 @@ character_event = {
 	}
 	is_triggered_only = yes
 	immediate = {
-		log = "work event spleasure.16906"
+		log = "work event id = spleasure.16906"
 	}
 
 	option = {
@@ -28716,7 +28607,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event spleasure.16907"
+		log = "work event id = spleasure.16907"
 	}
 
 	option = {
@@ -28757,7 +28648,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event spleasure.16908"
+		log = "work event id = spleasure.16908"
 	}
 
 	option = {
@@ -28783,7 +28674,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event spleasure.170"
+		log = "work event id = spleasure.170"
 	}
 
 	option = {
@@ -28822,7 +28713,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event spleasure.17005"
+		log = "work event id = spleasure.17005"
 	}
 
 	option = {
@@ -28943,7 +28834,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event spleasure.171"
+		log = "work event id = spleasure.171"
 	}
 
 	option = {
@@ -29468,7 +29359,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event spleasure.172"
+		log = "work event id = spleasure.172"
 	}
 
 	option = {
@@ -29544,7 +29435,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event spleasure.17205"
+		log = "work event id = spleasure.17205"
 	}
 
 	option = {
@@ -29578,7 +29469,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event spleasure.17206"
+		log = "work event id = spleasure.17206"
 	}
 
 	option = {
@@ -29613,7 +29504,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event spleasure.173"
+		log = "work event id = spleasure.173"
 	}
 
 	option = {
@@ -29689,7 +29580,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event spleasure.17305"
+		log = "work event id = spleasure.17305"
 	}
 
 	option = {
@@ -29723,7 +29614,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event spleasure.17306"
+		log = "work event id = spleasure.17306"
 	}
 
 	option = {
@@ -30302,7 +30193,7 @@ character_event = {
 		}
 	}
 	immediate = {
-		log = "work event spleasure.175"
+		log = "work event id = spleasure.175"
 		# name = "EVTOPTArape.0007"
 		spouse = {
 			character_event = {
@@ -30318,7 +30209,7 @@ character_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
-		log = "work event spleasure.176"
+		log = "work event id = spleasure.176"
 		FROM = {
 			character_event = {
 				id = wh_concubine.9
@@ -30396,7 +30287,7 @@ character_event = {
 	}
 	is_triggered_only = yes
 	immediate = {
-		log = "work event spleasure.177"
+		log = "work event id = spleasure.177"
 		if = {
 			limit = {
 				graphical_culture = empirerevgfx

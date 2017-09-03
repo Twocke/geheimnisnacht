@@ -1,4 +1,4 @@
-namespace = sdemons
+namespace = wh_chaos_demons
 
 # Possession and Summoning are handled in chaos events, this is flavor for demon characters already on the map
 # demon avoids execution
@@ -9,7 +9,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event wh_chaos_demons.1"
+		log = "work event id = wh_chaos_demons.1"
 		FROMFROM = {
 			prisoner = no
 			banish = yes
@@ -44,7 +44,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event wh_chaos_demons.2"
+		log = "work event id = wh_chaos_demons.2"
 	}
 
 	option = {
@@ -93,7 +93,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event wh_chaos_demons.3"
+		log = "work event id = wh_chaos_demons.3"
 	}
 
 	option = {
@@ -151,7 +151,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event wh_chaos_demons.4"
+		log = "work event id = wh_chaos_demons.4"
 	}
 
 	option = {
@@ -184,7 +184,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event wh_chaos_demons.40001"
+		log = "work event id = wh_chaos_demons.40001"
 	}
 
 	option = {
@@ -222,10 +222,7 @@ character_event = {
 				trait = avatar_kurnous
 				trait = avatar_isha
 				has_artifact = carstein_ring
-				has_character_modifier = magic_power_1
-				has_character_modifier = magic_power_2
-				has_character_modifier = magic_power_3
-				has_character_modifier = magic_power_4
+				wh_is_mage_trigger = yes
 			}
 			any_courtier = {
 				is_demon_trigger = no
@@ -241,10 +238,7 @@ character_event = {
 					trait = avatar_kurnous
 					trait = avatar_isha
 					has_artifact = carstein_ring
-					has_character_modifier = magic_power_1
-					has_character_modifier = magic_power_2
-					has_character_modifier = magic_power_3
-					has_character_modifier = magic_power_4
+					wh_is_mage_trigger = yes
 				}
 			}
 		}
@@ -263,7 +257,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event wh_chaos_demons.5"
+		log = "work event id = wh_chaos_demons.5"
 	}
 
 	option = {
@@ -283,10 +277,7 @@ character_event = {
 					trait = avatar_kurnous
 					trait = avatar_isha
 					has_artifact = carstein_ring
-					has_character_modifier = magic_power_1
-					has_character_modifier = magic_power_2
-					has_character_modifier = magic_power_3
-					has_character_modifier = magic_power_4
+					wh_is_mage_trigger = yes
 				}
 			}
 			random_courtier = {
@@ -305,10 +296,7 @@ character_event = {
 						trait = avatar_kurnous
 						trait = avatar_isha
 						has_artifact = carstein_ring
-						has_character_modifier = magic_power_1
-						has_character_modifier = magic_power_2
-						has_character_modifier = magic_power_3
-						has_character_modifier = magic_power_4
+						wh_is_mage_trigger = yes
 					}
 				}
 				add_rival = PREV
@@ -344,7 +332,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event wh_chaos_demons.50001"
+		log = "work event id = wh_chaos_demons.50001"
 	}
 
 	option = {
@@ -376,10 +364,7 @@ character_event = {
 				trait = avatar_kurnous
 				trait = avatar_isha
 				has_artifact = carstein_ring
-				has_character_modifier = magic_power_1
-				has_character_modifier = magic_power_2
-				has_character_modifier = magic_power_3
-				has_character_modifier = magic_power_4
+				wh_is_mage_trigger = yes
 			}
 		}
 	}
@@ -389,7 +374,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event wh_chaos_demons.6"
+		log = "work event id = wh_chaos_demons.6"
 	}
 
 	option = {
@@ -406,10 +391,7 @@ character_event = {
 					trait = avatar_kurnous
 					trait = avatar_isha
 					has_artifact = carstein_ring
-					has_character_modifier = magic_power_1
-					has_character_modifier = magic_power_2
-					has_character_modifier = magic_power_3
-					has_character_modifier = magic_power_4
+					wh_is_mage_trigger = yes
 				}
 			}
 			character_event = {
@@ -442,7 +424,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event wh_chaos_demons.60001"
+		log = "work event id = wh_chaos_demons.60001"
 	}
 
 	option = {
@@ -492,10 +474,7 @@ character_event = {
 						trait = avatar_kurnous
 						trait = avatar_isha
 						has_artifact = carstein_ring
-						has_character_modifier = magic_power_1
-						has_character_modifier = magic_power_2
-						has_character_modifier = magic_power_3
-						has_character_modifier = magic_power_4
+						wh_is_mage_trigger = yes
 					}
 				}
 				random = {
@@ -553,7 +532,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event wh_chaos_demons.7"
+		log = "work event id = wh_chaos_demons.7"
 	}
 
 	option = {
@@ -572,10 +551,7 @@ character_event = {
 					trait = avatar_kurnous
 					trait = avatar_isha
 					has_artifact = carstein_ring
-					has_character_modifier = magic_power_1
-					has_character_modifier = magic_power_2
-					has_character_modifier = magic_power_3
-					has_character_modifier = magic_power_4
+					wh_is_mage_trigger = yes
 				}
 				is_married = yes
 				has_lover = no
@@ -619,7 +595,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event wh_chaos_demons.70001"
+		log = "work event id = wh_chaos_demons.70001"
 	}
 
 	option = {
@@ -681,7 +657,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event wh_chaos_demons.8"
+		log = "work event id = wh_chaos_demons.8"
 	}
 
 	option = {

@@ -23,7 +23,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event humanflavor.0"
+		log = "work event id = humanflavor.0"
 	}
 
 	option = {
@@ -85,7 +85,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event humanflavor.1"
+		log = "work event id = humanflavor.1"
 	}
 
 	option = {
@@ -151,17 +151,13 @@ character_event = {
 	title = CABAL# Cabal
 	desc = EVTDESCHUMANFLAVOR.3
 	picture = "GFX_evt_shadowy_cabal"
+	only_playable = yes
+	religion_group = old_world_group
 	min_age = 16
 	is_triggered_only = yes
 
-	trigger = {
-		religion_group = old_world_group
-		higher_tier_than = BARON
-		age = 16
-	}
-
 	immediate = {
-		log = "work event humanflavor.3"
+		log = "work event id = humanflavor.3"
 	}
 
 	option = {

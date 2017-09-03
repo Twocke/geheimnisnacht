@@ -8,17 +8,17 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		# absolutely can't reproduce		
+		# absolutely can't reproduce
 		or = {
 			father_even_if_dead = {
-				or = {					
+				or = {
 					# greenskins
 					trait = creature_orc
 					trait = creature_goblin
 					trait = creature_snotling
 					# lizardmens
 					trait = creature_skink
-					# spirits					
+					# spirits
 					trait = creature_forestspirit
 					trait = creature_treekin
 					# undeads
@@ -28,14 +28,14 @@ character_event = {
 				}
 			}
 			mother_even_if_dead = {
-				or = {					
+				or = {
 					# greenskins
 					trait = creature_orc
 					trait = creature_goblin
 					trait = creature_snotling
 					# lizardmens
 					trait = creature_skink
-					# spirits					
+					# spirits
 					trait = creature_forestspirit
 					trait = creature_treekin
 					# undeads
@@ -56,16 +56,10 @@ character_event = {
 				# human
 				and = {
 					father_even_if_dead = {
-						or = {
-							trait = creature_human
-							trait = creature_amazon
-						}
+						is_living_human_trigger = yes
 					}
 					mother_even_if_dead = {
-						or = {
-							trait = creature_human
-							trait = creature_amazon
-						}
+						is_living_human_trigger = yes
 					}
 				}
 				# elf
@@ -124,7 +118,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event wh_inheritance.0"
+		log = "work event id = wh_inheritance.0"
 		if = {
 			limit = {
 				is_invincible_trigger = yes
@@ -152,7 +146,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event wh_inheritance.1"
+		log = "work event id = wh_inheritance.1"
 		set_character_flag = wh_has_event_inheritance.0
 		# log = "wh_inheritance.1 work fine"
 		# intelligence inheritance
@@ -1301,7 +1295,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event wh_inheritance.2"
+		log = "work event id = wh_inheritance.2"
 		remove_trait = creature_human
 		remove_trait = creature_amazon
 		remove_trait = creature_elf

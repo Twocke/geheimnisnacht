@@ -41,7 +41,7 @@ character_event = {
 	hide_window = yes
 
 	immediate = {
-		log = "work event duelaction.0"
+		log = "work event id = duelaction.0"
 		set_variable = {
 			which = "action_nr"
 			value = 0
@@ -209,7 +209,7 @@ character_event = {
 	hide_window = yes
 
 	immediate = {
-		log = "work event duelaction.1"
+		log = "work event id = duelaction.1"
 		# here you should clear all action flags
 		clr_character_flag = duel_action_meele
 		clr_character_flag = duel_action_dodge
@@ -342,7 +342,7 @@ character_event = {
 	# before this event one must execute duelaction.1 to set the list of available actions
 	# next action
 	immediate = {
-		log = "work event duelaction.2"
+		log = "work event id = duelaction.2"
 	}
 
 	option = {
@@ -649,7 +649,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event duelaction.3"
+		log = "work event id = duelaction.3"
 		# HANDLING PRESENT EFFECTS
 		# awarness
 		if = {
@@ -741,7 +741,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event duelaction.4"
+		log = "work event id = duelaction.4"
 		# FIXME
 		# if = {
 			# limit = {
@@ -786,7 +786,6 @@ character_event = {
 							event_target:charB = {
 								or = {
 									religion_group = greenskin_gods_group
-									religion_group = horned_rat_god_group
 									is_demon_trigger = yes
 									is_invincible_trigger = yes
 									has_character_modifier = z_foresight_blessing_battle
@@ -795,6 +794,30 @@ character_event = {
 							}
 							event_target:charA = {
 								religion_group = greenskin_gods_group
+							}
+						}
+					}
+					# rats can take rats
+					modifier = {
+						factor = 0
+						nand = {
+							event_target:charB = {
+								religion_group = horned_rat_god_group
+							}
+							event_target:charA = {
+								religion_group = horned_rat_god_group
+							}
+						}
+					}
+					# non battle duels
+					modifier = {
+						factor = 0
+						or = {
+							event_target:charB = {
+								has_character_flag = duel_non_battle
+							}
+							event_target:charA = {
+								has_character_flag = duel_non_battle
 							}
 						}
 					}
@@ -846,7 +869,6 @@ character_event = {
 							event_target:charA = {
 								or = {
 									religion_group = greenskin_gods_group
-									religion_group = horned_rat_god_group
 									is_demon_trigger = yes
 									is_invincible_trigger = yes
 									has_character_modifier = z_foresight_blessing_battle
@@ -855,6 +877,30 @@ character_event = {
 							}
 							event_target:charB = {
 								religion_group = greenskin_gods_group
+							}
+						}
+					}
+					# rats can take rats
+					modifier = {
+						factor = 0
+						nand = {
+							event_target:charB = {
+								religion_group = horned_rat_god_group
+							}
+							event_target:charA = {
+								religion_group = horned_rat_god_group
+							}
+						}
+					}
+					# non battle duels
+					modifier = {
+						factor = 0
+						or = {
+							event_target:charB = {
+								has_character_flag = duel_non_battle
+							}
+							event_target:charA = {
+								has_character_flag = duel_non_battle
 							}
 						}
 					}
@@ -917,7 +963,7 @@ character_event = {
 	hide_window = yes
 
 	immediate = {
-		log = "work event duelaction.10"
+		log = "work event id = duelaction.10"
 		set_character_flag = duel_action_meele
 		set_variable = {
 			which = "duel_att_mod"
@@ -961,7 +1007,7 @@ character_event = {
 	hide_window = yes
 
 	immediate = {
-		log = "work event duelaction.11"
+		log = "work event id = duelaction.11"
 		set_character_flag = duel_action_dodge
 		set_variable = {
 			which = "duel_att_mod"
@@ -1004,7 +1050,7 @@ character_event = {
 	hide_window = yes
 
 	immediate = {
-		log = "work event duelaction.12"
+		log = "work event id = duelaction.12"
 		set_character_flag = duel_action_block
 		set_variable = {
 			which = "duel_att_mod"
@@ -1031,7 +1077,7 @@ character_event = {
 	hide_window = yes
 
 	immediate = {
-		log = "work event duelaction.13"
+		log = "work event id = duelaction.13"
 		set_character_flag = duel_action_assess
 		set_variable = {
 			which = "duel_att_mod"
@@ -1053,7 +1099,7 @@ character_event = {
 	hide_window = yes
 
 	immediate = {
-		log = "work event duelaction.21"
+		log = "work event id = duelaction.21"
 		set_character_flag = high_magic_duel_healing
 		set_variable = {
 			which = "duel_att_mod"
@@ -1075,7 +1121,7 @@ character_event = {
 	hide_window = yes
 
 	immediate = {
-		log = "work event duelaction.22"
+		log = "work event id = duelaction.22"
 		set_character_flag = high_magic_duel_shielding
 		set_variable = {
 			which = "duel_att_mod"
@@ -1097,7 +1143,7 @@ character_event = {
 	hide_window = yes
 
 	immediate = {
-		log = "work event duelaction.23"
+		log = "work event id = duelaction.23"
 		set_character_flag = high_magic_duel_fire
 		set_variable = {
 			which = "duel_att_mod"
@@ -1119,7 +1165,7 @@ character_event = {
 	hide_window = yes
 
 	immediate = {
-		log = "work event duelaction.24"
+		log = "work event id = duelaction.24"
 		set_character_flag = high_magic_duel_curse
 		set_variable = {
 			which = "duel_att_mod"
@@ -1154,7 +1200,7 @@ character_event = {
 
 	# next round
 	immediate = {
-		log = "work event duelaction.100"
+		log = "work event id = duelaction.100"
 	}
 
 	option = {
@@ -1195,7 +1241,7 @@ character_event = {
 
 	# next round
 	immediate = {
-		log = "work event duelaction.101"
+		log = "work event id = duelaction.101"
 	}
 
 	option = {
@@ -1238,7 +1284,7 @@ character_event = {
 
 	# charA got this event
 	immediate = {
-		log = "work event duelaction.102"
+		log = "work event id = duelaction.102"
 	}
 
 	option = {
@@ -1279,7 +1325,7 @@ character_event = {
 
 	# charA got this event
 	immediate = {
-		log = "work event duelaction.103"
+		log = "work event id = duelaction.103"
 	}
 
 	option = {
@@ -1328,7 +1374,7 @@ character_event = {
 
 	# charB got this event
 	immediate = {
-		log = "work event duelaction.200"
+		log = "work event id = duelaction.200"
 	}
 
 	option = {
@@ -1336,7 +1382,7 @@ character_event = {
 		trigger = {
 			character = event_target:charB
 		}
-		log = "Outcome report was shown to both. 200"
+		#log = "Outcome report was shown to both. 200"
 		if = {
 			limit = {
 				or = {
@@ -1346,30 +1392,40 @@ character_event = {
 				}
 			}
 			antideath_effect = yes
-			# clearing event
-			event_target:charA = {
-				character_event = {
-					id = duelengine.6
-					days = 1
-				}
-			}
-			event_target:charB = {
-				character_event = {
-					id = duelengine.6
-					days = 1
-				}
-			}
 			if = {
 				limit = {
 					has_character_modifier = z_foresight_blessing_battle
 				}
 				remove_character_modifier = z_foresight_blessing_battle
 			}
+			wh_duel_clean_effect = yes
 			break = yes
 		}
-		death = {
-			death_reason = death_duel
-			killer = event_target:charA
+		random_list = {
+			35 = {
+				add_trait = wounded
+				modifier = {
+					factor = 0
+					not = {
+						has_character_flag = duel_non_battle
+					}
+				}
+			}
+			35 = {
+				add_trait = maimed
+				modifier = {
+					factor = 0
+					not = {
+						has_character_flag = duel_non_battle
+					}
+				}
+			}
+			10 = {
+				death = {
+					death_reason = death_duel
+					killer = event_target:charA
+				}
+			}
 		}
 		wh_duel_clean_effect = yes
 	}
@@ -1389,30 +1445,40 @@ character_event = {
 				}
 			}
 			antideath_effect = yes
-			# clearing event
-			event_target:charA = {
-				character_event = {
-					id = duelengine.6
-					days = 1
-				}
-			}
-			event_target:charB = {
-				character_event = {
-					id = duelengine.6
-					days = 1
-				}
-			}
 			if = {
 				limit = {
 					has_character_modifier = z_foresight_blessing_battle
 				}
 				remove_character_modifier = z_foresight_blessing_battle
 			}
+			wh_duel_clean_effect = yes
 			break = yes
 		}
-		death = {
-			death_reason = death_duel
-			killer = event_target:charB
+		random_list = {
+			35 = {
+				add_trait = wounded
+				modifier = {
+					factor = 0
+					not = {
+						has_character_flag = duel_non_battle
+					}
+				}
+			}
+			35 = {
+				add_trait = maimed
+				modifier = {
+					factor = 0
+					not = {
+						has_character_flag = duel_non_battle
+					}
+				}
+			}
+			10 = {
+				death = {
+					death_reason = death_duel
+					killer = event_target:charA
+				}
+			}
 		}
 		wh_duel_clean_effect = yes
 	}
@@ -1428,7 +1494,7 @@ character_event = {
 
 	# charB got this event
 	immediate = {
-		log = "work event duelaction.201"
+		log = "work event id = duelaction.201"
 	}
 
 	option = {
@@ -1495,8 +1561,8 @@ character_event = {
 				}
 			}
 		}
+		# Slayer level progression
 		if = {
-			# Slayer level progression
 			limit = {
 				trait = dwarf_slayer
 				NOT = {
@@ -1507,8 +1573,8 @@ character_event = {
 				id = DR_dwarfs.112
 			}
 		}
-		if = {
 			# if Slayer duel, Slayer flees province
+		if = {
 			limit = {
 				has_character_flag = duel_dwarf_slayer
 			}
@@ -1635,7 +1701,7 @@ character_event = {
 
 	# charB got this event
 	immediate = {
-		log = "work event duelaction.202"
+		log = "work event id = duelaction.202"
 	}
 
 	option = {
@@ -1672,7 +1738,7 @@ character_event = {
 
 	# charB got this event
 	immediate = {
-		log = "work event duelaction.203"
+		log = "work event id = duelaction.203"
 	}
 
 	option = {
@@ -1767,11 +1833,11 @@ character_event = {
 	border = GFX_event_normal_frame_war
 	is_triggered_only = yes
 
-	# charB got this event
 	immediate = {
-		log = "work event duelaction.204"
+		log = "work event id = duelaction.204"
 	}
 
+	# charB got this event
 	option = {
 		name = OK
 		trigger = {
@@ -1807,7 +1873,7 @@ character_event = {
 
 	# charB got this event
 	immediate = {
-		log = "work event duelaction.205"
+		log = "work event id = duelaction.205"
 	}
 
 	option = {

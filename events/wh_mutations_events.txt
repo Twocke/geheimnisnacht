@@ -154,56 +154,14 @@ character_event = {
 					}
 				}
 			}
-			OR = {
-				AND = {
-					NOT = {
-						trait = creature_skink
-					}
-					has_character_modifier = magic_power_1
+			and = {
+				NOT = {
+					trait = creature_skink
 				}
-				AND = {
-					NOT = {
-						trait = creature_skink
-					}
-					has_character_modifier = magic_power_2
+				OR = {
+					wh_has_any_magic_potential_trigger = yes
+					wh_is_mage_trigger = yes
 				}
-				AND = {
-					NOT = {
-						trait = creature_skink
-					}
-					has_character_modifier = magic_power_3
-				}
-				AND = {
-					NOT = {
-						trait = creature_skink
-					}
-					has_character_modifier = magic_power_4
-				}
-				AND = {
-					NOT = {
-						trait = creature_skink
-					}
-					trait = magic_potential_3
-				}
-				AND = {
-					NOT = {
-						trait = creature_skink
-					}
-					trait = magic_potential_4
-				}
-				AND = {
-					NOT = {
-						trait = creature_skink
-					}
-					has_character_flag = magic_potential_flag_3
-				}
-				AND = {
-					NOT = {
-						trait = creature_skink
-					}
-					has_character_flag = magic_potential_flag_4
-				}
-
 			}
 		}
 	}
@@ -292,18 +250,7 @@ character_event = {
 		}
 		modifier = {
 			factor = 0.9
-			NOT = {
-				has_character_modifier = magic_power_1
-			}
-			NOT = {
-				has_character_modifier = magic_power_2
-			}
-			NOT = {
-				has_character_modifier = magic_power_3
-			}
-			NOT = {
-				has_character_modifier = magic_power_4
-			}
+			wh_is_mage_trigger = no
 			NOT = {
 				trait = magic_potential_3
 			}
@@ -412,7 +359,7 @@ character_event = {
 	# trigger a random mutation
 
 	immediate = {
-		log = "work event mutation.1"
+		log = "work event id = mutation.1"
 		# always add modifiers to decide which god would approve more of which mutation
 		# always call for mutation.1001 on any added mutation to determine the new value of the two variables.
 		random_list = {
@@ -551,7 +498,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event mutation.1001"
+		log = "work event id = mutation.1001"
  		random_list = {
 			25 = {
 				modifier = {
@@ -702,7 +649,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event mutation.1002"
+		log = "work event id = mutation.1002"
 	}
 
 	option = {
@@ -724,7 +671,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event mutation.1003"
+		log = "work event id = mutation.1003"
 	}
 
 	option = {
@@ -746,7 +693,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event mutation.1004"
+		log = "work event id = mutation.1004"
 	}
 
 	option = {
@@ -771,7 +718,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event mutation.1005"
+		log = "work event id = mutation.1005"
  		random_list = {
 			30 = {
 				modifier = {
@@ -1048,7 +995,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event mutation.1006"
+		log = "work event id = mutation.1006"
 	}
 
 	option = {
@@ -1065,7 +1012,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event mutation.1007"
+		log = "work event id = mutation.1007"
 	}
 
 	option = {
@@ -1082,7 +1029,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event mutation.1008"
+		log = "work event id = mutation.1008"
 	}
 
 	option = {
@@ -1187,18 +1134,7 @@ character_event = {
 		}
 		religion_group = chaos_gods_group
 		trait = lunatic_3
-		NOT = {
-			has_character_modifier = magic_power_1
-		}
-		NOT = {
-			has_character_modifier = magic_power_2
-		}
-		NOT = {
-			has_character_modifier = magic_power_3
-		}
-		NOT = {
-			has_character_modifier = magic_power_4
-		}
+		wh_is_mage_trigger = no
 		NOT = {
 			trait = mutation_massive
 		} # more likely to devolve into chaos spawn
@@ -1455,7 +1391,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event mutation.1009"
+		log = "work event id = mutation.1009"
 	}
 
 	option = {
@@ -1837,7 +1773,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event mutation.1010"
+		log = "work event id = mutation.1010"
 	}
 
 	option = {
@@ -1875,7 +1811,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event mutation.1011"
+		log = "work event id = mutation.1011"
 	}
 
 	option = {
@@ -1930,7 +1866,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event mutation.1012"
+		log = "work event id = mutation.1012"
 		liege = {
 			ROOT = {
 				opinion = {
@@ -1974,7 +1910,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event mutation.1013"
+		log = "work event id = mutation.1013"
 		liege = {
 			ROOT = {
 				remove_opinion = {
@@ -2064,7 +2000,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event mutation.1014"
+		log = "work event id = mutation.1014"
 		if = {
 			limit = {
 				trait = lunatic_3
@@ -2249,7 +2185,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event mutation.1015"
+		log = "work event id = mutation.1015"
 		liege = {
 			ROOT = {
 				opinion = {
@@ -2294,7 +2230,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event mutation.1016"
+		log = "work event id = mutation.1016"
 		liege = {
 			ROOT = {
 				remove_opinion = {
@@ -2381,7 +2317,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event mutation.1017"
+		log = "work event id = mutation.1017"
 		if = {
 			limit = {
 				trait = mutation_massive
@@ -2583,7 +2519,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event mutation.2"
+		log = "work event id = mutation.2"
 	}
 
 	option = {
@@ -2794,7 +2730,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event mutation.3"
+		log = "work event id = mutation.3"
 	}
 
 	option = {
@@ -3000,7 +2936,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event mutation.4"
+		log = "work event id = mutation.4"
 	}
 
 	option = {
@@ -3206,7 +3142,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event mutation.5"
+		log = "work event id = mutation.5"
 	}
 
 	option = {
@@ -3412,7 +3348,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event mutation.6"
+		log = "work event id = mutation.6"
 	}
 
 	option = {
@@ -3660,7 +3596,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event mutation.7"
+		log = "work event id = mutation.7"
 	}
 
 	option = {
@@ -3876,7 +3812,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event mutation.8"
+		log = "work event id = mutation.8"
 	}
 
 	option = {
@@ -3930,7 +3866,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event mutation.9"
+		log = "work event id = mutation.9"
 	}
 
 	option = {
@@ -4142,7 +4078,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event mutation.10"
+		log = "work event id = mutation.10"
 	}
 
 	option = {
@@ -4351,7 +4287,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event mutation.20005"
+		log = "work event id = mutation.20005"
 	}
 
 	option = {
@@ -4570,7 +4506,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event mutation.20006"
+		log = "work event id = mutation.20006"
 	}
 
 	option = {
@@ -4789,7 +4725,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event mutation.20007"
+		log = "work event id = mutation.20007"
 	}
 
 	option = {
@@ -5008,7 +4944,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event mutation.20008"
+		log = "work event id = mutation.20008"
 	}
 
 	option = {
@@ -5227,7 +5163,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event mutation.20009"
+		log = "work event id = mutation.20009"
 		remove_trait = blinded
 	}
 
@@ -5335,7 +5271,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event mutation.13"
+		log = "work event id = mutation.13"
 	}
 
 	option = {
@@ -5373,7 +5309,7 @@ character_event = {
 	# If not independent, appeal to your liege
 
 	immediate = {
-		log = "work event mutation.14"
+		log = "work event id = mutation.14"
 	}
 
 	option = {
@@ -5426,7 +5362,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event mutation.15"
+		log = "work event id = mutation.15"
 	}
 
 	option = {
@@ -5511,7 +5447,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event mutation.16"
+		log = "work event id = mutation.16"
 	}
 
 	option = {
@@ -5554,7 +5490,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event mutation.17"
+		log = "work event id = mutation.17"
 	}
 
 	option = {

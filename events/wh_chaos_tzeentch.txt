@@ -30,7 +30,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event wh_chaos_tzeentch.0"
+		log = "work event id = wh_chaos_tzeentch.0"
 	}
 
 	option = {
@@ -178,7 +178,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event wh_chaos_tzeentch.1"
+		log = "work event id = wh_chaos_tzeentch.1"
 	}
 
 	option = {
@@ -205,7 +205,7 @@ character_event = {
 	min_age = 16
 	capable_only = yes
 	prisoner = no
-	religion = tzeentch
+	is_triggered_only = yes
 
 	trigger = {
 		piety = 1500
@@ -213,61 +213,24 @@ character_event = {
 			trait = hedge_wizard
 			trait = creature_beastman
 			has_character_flag = refused_dark
-			has_character_modifier = magic_power_1
-			has_character_modifier = magic_power_2
-			has_character_modifier = magic_power_3
-			has_character_modifier = magic_power_4
+			wh_is_mage_trigger = yes
 		}
 		OR = {
 			trait = genius
 			trait = elusive_shadow
 			trait = brilliant
 			trait = bright
-			trait = magic_potential_1
-			trait = magic_potential_2
-			trait = magic_potential_3
-			trait = magic_potential_4
-			has_character_flag = magic_potential_flag_1
-			has_character_flag = magic_potential_flag_2
-			has_character_flag = magic_potential_flag_3
-			has_character_flag = magic_potential_flag_4
+			wh_has_any_magic_potential_trigger = yes
 		}
 	}
 
 	immediate = {
-		log = "work event wh_chaos_tzeentch.2"
+		log = "work event id = wh_chaos_tzeentch.2"
 	}
 
 	option = {
 		name = highelfmagic6A # Yes, I will build a lab and study magic!
-		if = {
-			limit = {
-				has_character_flag = magic_potential_flag_4
-			}
-			add_trait = magic_potential_4
-			clr_character_flag = magic_potential_flag_4
-		}
-		if = {
-			limit = {
-				has_character_flag = magic_potential_flag_3
-			}
-			add_trait = magic_potential_3
-			clr_character_flag = magic_potential_flag_3
-		}
-		if = {
-			limit = {
-				has_character_flag = magic_potential_flag_2
-			}
-			add_trait = magic_potential_2
-			clr_character_flag = magic_potential_flag_2
-		}
-		if = {
-			limit = {
-				has_character_flag = magic_potential_flag_1
-			}
-			add_trait = magic_potential_1
-			clr_character_flag = magic_potential_flag_1
-		}
+		wh_reveal_magic_potential_effect = yes
 		add_trait = lore_tzeentch
 		z_magic_power_sequential_addition = yes
 		top_liege = {
@@ -314,7 +277,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event wh_chaos_tzeentch.3"
+		log = "work event id = wh_chaos_tzeentch.3"
 	}
 
 	option = {
@@ -331,7 +294,7 @@ character_event = {
 	picture = "GFX_evt_tzeentch"
 	ai = no
 	is_triggered_only = yes
-	
+
 	trigger = {
 		not = {
 			has_character_flag = chaosmagic2
@@ -339,7 +302,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event wh_chaos_tzeentch.4"
+		log = "work event id = wh_chaos_tzeentch.4"
 	}
 
 	option = {
@@ -360,7 +323,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event wh_chaos_tzeentch.5"
+		log = "work event id = wh_chaos_tzeentch.5"
 	}
 
 	option = {
@@ -396,7 +359,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event wh_chaos_tzeentch.6"
+		log = "work event id = wh_chaos_tzeentch.6"
 	}
 
 	option = {
@@ -409,8 +372,8 @@ character_event = {
 		}
 		hidden_tooltip = {
 			character_event = {
-				id = mutation.1 
-				days = 8 
+				id = mutation.1
+				days = 8
 				random = 12
 			}
 		}

@@ -18,7 +18,7 @@ character_event = {
 	immediate = {
 		clr_character_flag = wh_has_event_DR_startup.1_trait_not_set
 		set_character_flag = wh_has_event_DR_startup.1
-		log = "work event DR_startup.1"
+		log = "work event id = DR_startup.1"
 		trigger_switch = {
 			on_trigger = society_member_of
 			cult_of_khorne = {
@@ -55,7 +55,6 @@ character_event = {
 				}
 			}
 			add_trait = witch_hunter
-			add_trait = creature_human
 		}
 		if = {
 			limit = {
@@ -74,6 +73,7 @@ character_event = {
 					culture_group = amazon_group
 				}
 				OR = {
+					graphical_culture = amazongfx
 					graphical_culture = westerngfx
 					graphical_culture = easterngfx
 					graphical_culture = muslimgfx
@@ -739,11 +739,15 @@ character_event = {
 					graphical_culture = carsteingfx
 					graphical_culture = carsteineverkidgfx
 				}
-				NOT = {
-					trait = creature_human
-				}
 			}
-			add_trait = creature_human
+			if = {
+				limit = {
+					NOT = {
+						trait = creature_human
+					}
+				}
+				add_trait = creature_human
+			}
 			if = {
 				limit = {
 					NOT = {
@@ -758,11 +762,15 @@ character_event = {
 			# Lahmian vampire
 			limit = {
 				graphical_culture = lahmiangfx
-				NOT = {
-					trait = creature_human
-				}
 			}
-			add_trait = creature_human
+			if = {
+				limit = {
+					NOT = {
+						trait = creature_human
+					}
+				}
+				add_trait = creature_human
+			}
 			if = {
 				limit = {
 					NOT = {
@@ -848,6 +856,7 @@ character_event = {
 		# grant_title = b_glak
 		# }
 		set_character_flag = wh_has_event_DR_startup.1_trait_not_set
+		log = "wh_has_event_DR_startup.1_trait_not_set"
 	}
 }
 
@@ -902,7 +911,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event DR_startup.2"
+		log = "work event id = DR_startup.2"
 		random_list = {
 			10 = {
 				create_random_soldier = {
@@ -1019,7 +1028,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event DR_startup.3"
+		log = "work event id = DR_startup.3"
 		random_list = {
 			10 = {
 				create_random_priest = {
@@ -1135,7 +1144,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event DR_startup.4"
+		log = "work event id = DR_startup.4"
 		if = {
 			limit = {
 				nor = {
@@ -1201,7 +1210,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event DR_startup.5"
+		log = "work event id = DR_startup.5"
 		set_global_flag = races_set
 		set_global_flag = knights_set
 		set_global_flag = children_added
@@ -1215,7 +1224,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event DR_startup.6"
+		log = "work event id = DR_startup.6"
 		create_title = {
 			tier = EMPEROR
 			landless = yes
@@ -1244,7 +1253,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event DR_startup.7"
+		log = "work event id = DR_startup.7"
 		create_title = {
 			tier = DUKE
 			landless = yes
@@ -1270,7 +1279,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event DR_startup.8"
+		log = "work event id = DR_startup.8"
 		if = {
 			limit = {
 				has_game_rule = {
@@ -1320,7 +1329,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event DR_startup.9"
+		log = "work event id = DR_startup.9"
 		any_province = {
 			limit = {
 				region = world_surface_burrows
@@ -1344,7 +1353,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event DR_startup.10"
+		log = "work event id = DR_startup.10"
 		if = {
 			limit = {
 				trait = creature_slann

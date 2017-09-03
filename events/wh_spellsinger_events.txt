@@ -53,7 +53,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event spellsinger.1"
+		log = "work event id = spellsinger.1"
 	}
 
 	option = {
@@ -259,7 +259,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event spellsinger.2"
+		log = "work event id = spellsinger.2"
 	}
 
 	option = {
@@ -282,7 +282,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spellsinger.3"
+		log = "work event id = spellsinger.3"
 	}
 
 	option = {
@@ -465,7 +465,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event spellsinger.4"
+		log = "work event id = spellsinger.4"
 	}
 
 	option = {
@@ -513,7 +513,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spellsinger.7"
+		log = "work event id = spellsinger.7"
 	}
 
 	option = {
@@ -538,7 +538,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event spellsinger.8"
+		log = "work event id = spellsinger.8"
 	}
 
 	option = {
@@ -683,7 +683,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spellsinger.8005"
+		log = "work event id = spellsinger.8005"
 	}
 
 	option = {
@@ -738,7 +738,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spellsinger.16"
+		log = "work event id = spellsinger.16"
 	}
 
 	option = {
@@ -781,7 +781,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event spellsinger.17"
+		log = "work event id = spellsinger.17"
 	}
 
 	option = {
@@ -911,18 +911,7 @@ character_event = {
 			NOT = {
 				has_character_flag = magic_potential_flag_4
 			}
-			NOT = {
-				trait = magic_potential_1
-			}
-			NOT = {
-				trait = magic_potential_2
-			}
-			NOT = {
-				trait = magic_potential_3
-			}
-			NOT = {
-				trait = magic_potential_4
-			}
+			wh_has_any_magic_potential_reveal_trigger = no
 		}
 		modifier = {
 			factor = 1.25
@@ -950,7 +939,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event spellsinger.18"
+		log = "work event id = spellsinger.18"
 		any_friend = {
 			limit = {
 				OR = {
@@ -990,7 +979,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event spellsinger.19"
+		log = "work event id = spellsinger.19"
 	}
 
 	option = {
@@ -1030,26 +1019,7 @@ character_event = {
 			}
 			modifier = {
 				factor = 0.25
-				NOT = {
-					FROM = {
-						trait = magic_potential_1
-					}
-				}
-				NOT = {
-					FROM = {
-						trait = magic_potential_2
-					}
-				}
-				NOT = {
-					FROM = {
-						trait = magic_potential_3
-					}
-				}
-				NOT = {
-					FROM = {
-						trait = magic_potential_4
-					}
-				}
+				wh_has_any_magic_potential_reveal_trigger = no
 			}
 			modifier = {
 				factor = 0.75
@@ -1271,26 +1241,7 @@ character_event = {
 			modifier = {
 				factor = 4
 				trait = just
-				NOT = {
-					FROM = {
-						trait = magic_potential_1
-					}
-				}
-				NOT = {
-					FROM = {
-						trait = magic_potential_2
-					}
-				}
-				NOT = {
-					FROM = {
-						trait = magic_potential_3
-					}
-				}
-				NOT = {
-					FROM = {
-						trait = magic_potential_4
-					}
-				}
+				wh_has_any_magic_potential_reveal_trigger = no
 			}
 		}
 		reverse_opinion = {
@@ -1309,7 +1260,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spellsinger.20"
+		log = "work event id = spellsinger.20"
 	}
 
 	option = {
@@ -1394,7 +1345,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spellsinger.21"
+		log = "work event id = spellsinger.21"
 	}
 
 	option = {
@@ -1482,7 +1433,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spellsinger.22"
+		log = "work event id = spellsinger.22"
 	}
 
 	option = {
@@ -1509,7 +1460,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spellsinger.23"
+		log = "work event id = spellsinger.23"
 	}
 
 	option = {
@@ -1536,7 +1487,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spellsinger.24"
+		log = "work event id = spellsinger.24"
 	}
 
 	option = {
@@ -1575,7 +1526,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event spellsinger.100"
+		log = "work event id = spellsinger.100"
 	}
 
 	option = {
@@ -1633,7 +1584,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spellsinger.101"
+		log = "work event id = spellsinger.101"
 	}
 
 	option = {
@@ -1731,7 +1682,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spellsinger.102"
+		log = "work event id = spellsinger.102"
 	}
 
 	option = {
@@ -1748,7 +1699,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event spellsinger.103"
+		log = "work event id = spellsinger.103"
 	}
 
 	option = {

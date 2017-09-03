@@ -11,7 +11,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event DR_chaosundivided.1"
+		log = "work event id = DR_chaosundivided.1"
 	}
 
 	option = {
@@ -155,7 +155,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event DR_chaosundivided.2"
+		log = "work event id = DR_chaosundivided.2"
 	}
 
 	option = {
@@ -225,7 +225,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event DR_chaosundivided.3"
+		log = "work event id = DR_chaosundivided.3"
 	}
 
 	option = {
@@ -253,29 +253,11 @@ character_event = {
 				10 = {
 					modifier = {
 						factor = 1.5
-						OR = {
-							trait = magic_potential_1
-							trait = magic_potential_2
-							trait = magic_potential_3
-							trait = magic_potential_4
-							has_character_flag = magic_potential_flag_1
-							has_character_flag = magic_potential_flag_2
-							has_character_flag = magic_potential_flag_3
-							has_character_flag = magic_potential_flag_4
-						}
-
+						wh_has_any_magic_potential_trigger = yes
 					}
 					modifier = {
 						factor = 0
-						OR = {
-							trait = hedge_wizard
-							trait = mage_apprentice
-							has_character_modifier = magic_power_1
-							has_character_modifier = magic_power_2
-							has_character_modifier = magic_power_3
-							has_character_modifier = magic_power_4
-						}
-
+						wh_is_mage_or_apprentice_trigger = yes
 					}
 					character_event = {
 						id = wh_chaos.95003
@@ -318,7 +300,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event DR_chaosundivided.4"
+		log = "work event id = DR_chaosundivided.4"
 	}
 
 	option = {
@@ -391,7 +373,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event DR_chaosundivided.5"
+		log = "work event id = DR_chaosundivided.5"
 	}
 
 	option = {
@@ -485,7 +467,7 @@ narrative_event = {
 	}
 
 	immediate = {
-		log = "work event DR_chaosundivided.10"
+		log = "work event id = DR_chaosundivided.10"
 		if = {
 			limit = {
 				NOT = {
@@ -2534,7 +2516,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event 60504"
+		log = "work event id = 60504"
 		any_demesne_title = {
 			limit = {
 				has_title_flag = temporary_landless_title
@@ -2554,7 +2536,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event DR_chaosundivided.11"
+		log = "work event id = DR_chaosundivided.11"
 		create_character = {
 			random_traits = yes
 			dynasty = none
@@ -2709,7 +2691,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event DR_chaosundivided.12"
+		log = "work event id = DR_chaosundivided.12"
 		random_list = {
 			# Zanbaijin
 			25 = {
@@ -3933,7 +3915,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event DR_chaosundivided.13"
+		log = "work event id = DR_chaosundivided.13"
 		population = 120000
 		add_character_modifier = {
 			modifier = invading_population_halt
@@ -3953,7 +3935,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event DR_chaosundivided.14"
+		log = "work event id = DR_chaosundivided.14"
 		if = {
 			limit = {
 				nor = {
@@ -3995,7 +3977,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event DR_chaosundivided.15"
+		log = "work event id = DR_chaosundivided.15"
 		if = {
 			limit = {
 				nor = {
@@ -4040,7 +4022,7 @@ narrative_event = {
 	}
 
 	immediate = {
-		log = "work event DR_chaosundivided.20"
+		log = "work event id = DR_chaosundivided.20"
 		e_host_chaos = {
 			any_vassal = {
 				set_defacto_liege = THIS
@@ -4087,7 +4069,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event DR_chaosundivided.50"
+		log = "work event id = DR_chaosundivided.50"
 	}
 
 	option = {
@@ -4166,7 +4148,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event DR_chaosundivided.51"
+		log = "work event id = DR_chaosundivided.51"
 	}
 
 	option = {
@@ -4181,7 +4163,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event DR_chaosundivided.52"
+		log = "work event id = DR_chaosundivided.52"
 	}
 
 	option = {
@@ -4195,7 +4177,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event DR_chaosundivided.75"
+		log = "work event id = DR_chaosundivided.75"
 		capital_holding = {
 			add_building = no_horde_1
 			add_building = no_horde_2

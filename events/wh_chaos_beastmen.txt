@@ -1,4 +1,4 @@
-namespace = wh_beastmen
+namespace = wh_chaos_beastmen
 
 # Beastmen tribe rises up (temporary rebel title created, with a leader and a war)
 # Triggered from "on_rebel_revolt"
@@ -47,7 +47,7 @@ province_event = {
 	}
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.1"
+		log = "work event id = wh_chaos_beastmen.1"
 		clr_province_flag = beastman_horde_inv
 		create_character = {
 			random_traits = yes
@@ -651,7 +651,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.2"
+		log = "work event id = wh_chaos_beastmen.2"
 		capital_scope = {
 			province_event = {
 				id = wh_chaos_beastmen.3
@@ -669,7 +669,7 @@ province_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.3"
+		log = "work event id = wh_chaos_beastmen.3"
 		create_character = {
 			dynasty = none
 			name = Morghur
@@ -1255,7 +1255,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.4"
+		log = "work event id = wh_chaos_beastmen.4"
 	}
 
 	option = {
@@ -1344,7 +1344,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.6"
+		log = "work event id = wh_chaos_beastmen.6"
 		capital_scope = {
 			set_province_flag = beastman_horde_inv
 			province_event = {
@@ -1382,7 +1382,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.5"
+		log = "work event id = wh_chaos_beastmen.5"
 	}
 
 	option = {
@@ -1469,7 +1469,9 @@ character_event = {
 					}
 				}
 				set_province_flag = flag_province_scourged
-				destroy_random_building = yes
+				any_province_holding = {
+					destroy_random_building = this
+				}
 				holder_scope = {
 					random_courtier = {
 						limit = {
@@ -1591,11 +1593,11 @@ character_event = {
 												killer = ROOT
 											}
 										}
-									} # closingcourtier
-								} # closingcourtier
-							} # closingcourtier
-						} # closingcourtier
-					} # closingcourtier
+									}
+								}
+							}
+						}
+					}
 				}
 			}
 		}
@@ -1610,7 +1612,7 @@ character_event = {
 	only_playable = yes
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.7"
+		log = "work event id = wh_chaos_beastmen.7"
 	}
 
 	option = {
@@ -1633,7 +1635,7 @@ character_event = {
 	only_playable = yes
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.8"
+		log = "work event id = wh_chaos_beastmen.8"
 	}
 
 	option = {
@@ -1654,7 +1656,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.9"
+		log = "work event id = wh_chaos_beastmen.9"
 		location = {
 			ROOT = {
 				spawn_unit = {
@@ -1682,7 +1684,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.10"
+		log = "work event id = wh_chaos_beastmen.10"
 		create_character = {
 			random_traits = yes
 			dynasty = RANDOM
@@ -1694,34 +1696,29 @@ character_event = {
 			create_title = {
 				tier = KING
 				landless = yes
-				#temporary = yes
-				#rebel = yes
 				culture = beastman_main
 				name = "WAR_HERD"
 				holder = THIS
 				nomad = yes
 			}
 			set_government_type = beastman_government
-			root = {
-				any_demesne_title = {
-					limit = {
-						has_title_flag = migrating_away
-					}
-					clr_title_flag = migrating_away
-					grant_title = prevprev
-				}
-			}
 			set_defacto_liege = THIS
-			prestige = 50
-			piety = 10
-			any_vassal = {
-				limit = {
-					has_character_flag = migrating_away_vassal
-				}
-				clr_character_flag = migrating_away_vassal
-				character_event = {
-					id = wh_chaos_beastmen.13
-				}
+			save_event_target_as = wh_new_beastmen_target
+		}
+		any_demesne_title = {
+			limit = {
+				has_title_flag = migrating_away
+			}
+			clr_title_flag = migrating_away
+			grant_title = event_target:wh_new_beastmen_target
+		}
+		any_vassal = {
+			limit = {
+				has_character_flag = migrating_away_vassal
+			}
+			clr_character_flag = migrating_away_vassal
+			character_event = {
+				id = wh_chaos_beastmen.13
 			}
 		}
 	}
@@ -1735,7 +1732,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.13"
+		log = "work event id = wh_chaos_beastmen.13"
 	}
 
 	option = {
@@ -1871,7 +1868,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.14"
+		log = "work event id = wh_chaos_beastmen.14"
 	}
 
 	option = {
@@ -1944,7 +1941,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.15"
+		log = "work event id = wh_chaos_beastmen.15"
 		capital_scope = {
 			ROOT = {
 				spawn_unit = {
@@ -2101,7 +2098,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.16"
+		log = "work event id = wh_chaos_beastmen.16"
 	}
 
 	option = {
@@ -2162,7 +2159,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.17"
+		log = "work event id = wh_chaos_beastmen.17"
 	}
 
 	option = {
@@ -2189,7 +2186,7 @@ character_event = {
 	hide_window = yes
 	only_playable = yes
 	religion_group = chaos_gods_group
-	culture_group = beastman_group	
+	culture_group = beastman_group
 	is_triggered_only = yes
 
 	trigger = {
@@ -2201,7 +2198,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.18"
+		log = "work event id = wh_chaos_beastmen.18"
 		killer = {
 			character_event = {
 				id = wh_chaos_beastmen.19
@@ -2230,7 +2227,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.19"
+		log = "work event id = wh_chaos_beastmen.19"
 	}
 
 	option = {
@@ -2283,9 +2280,7 @@ character_event = {
 							tier = KING
 						}
 					}
-					gain_title = {
-						target = ROOT
-					}
+					gain_title = ROOT
 				}
 			}
 			if = {
@@ -2298,9 +2293,7 @@ character_event = {
 							tier = KING
 						}
 					}
-					gain_title = {
-						target = ROOT
-					}
+					gain_title = ROOT
 				}
 			}
 		} # give main title
@@ -2320,76 +2313,13 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.20"
+		log = "work event id = wh_chaos_beastmen.20"
 	}
 
 	option = {
 		name = EVTOPTAbeastmen20
 	}
 }
-
-# # Horde breaks apart (on death)
-# character_event = {
-
-# id = wh_chaos_beastmen.21
-# hide_window = yes
-
-# is_triggered_only = yes
-# culture_group = beastman_group
-
-# trigger = { higher_tier_than = DUKE
-# trait = creature_beastman
-
-# NOT = { killer = { is_alive = yes } }
-# current_heir = { OR = { NOT = { age = 16 }
-
-# is_female = yes
-# NOT = { trait = creature_beastman }
-
-# NOT = { prestige = 500 } } }
-# }
-
-# immediate = {
-# ROOT = {
-
-# any_vassal = {
-# limit = { liege = { character = PREVPREVPREV }
-
-# higher_tier_than = BARON }
-# set_defacto_liege = THIS
-
-# character_event = { id = wh_chaos_beastmen.22 }
-# }
-
-# random_demesne_province = { # All human-cultured counties go to the next ruler nearby
-# limit = {
-
-# NOT = { culture = beastman_main } }
-# random = { chance = 80
-
-# province_event = { id = wh_chaos_beastmen.57 } }
-# }
-
-# }
-# }
-
-# }
-# # Vassals informed of new independence
-
-# character_event = {
-# id = wh_chaos_beastmen.22
-
-# desc = EVTDESCbeastmen22
-# picture = GFX_evt_beastmen
-
-# border = GFX_event_normal_frame_war
-# is_triggered_only = yes
-
-# option = {
-# name = EVTOPTAbeastmen22
-
-# }
-# }
 
 # Liege challenged
 character_event = {
@@ -2400,7 +2330,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.23"
+		log = "work event id = wh_chaos_beastmen.23"
 		set_character_flag = duel_effect_noescape
 		FROM = {
 			set_character_flag = duel_effect_noescape # prevents from escaping
@@ -2538,7 +2468,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.24"
+		log = "work event id = wh_chaos_beastmen.24"
 	}
 
 	option = {
@@ -2611,7 +2541,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.25"
+		log = "work event id = wh_chaos_beastmen.25"
 	}
 
 	option = {
@@ -2727,7 +2657,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.26"
+		log = "work event id = wh_chaos_beastmen.26"
 	}
 
 	option = {
@@ -2788,7 +2718,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.27"
+		log = "work event id = wh_chaos_beastmen.27"
 	}
 
 	option = {
@@ -2821,7 +2751,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.28"
+		log = "work event id = wh_chaos_beastmen.28"
 	}
 
 	option = {
@@ -2860,7 +2790,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.29"
+		log = "work event id = wh_chaos_beastmen.29"
 	}
 
 	option = {
@@ -2892,7 +2822,7 @@ character_event = {
 	culture_group = beastman_group
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.30"
+		log = "work event id = wh_chaos_beastmen.30"
 		random_list = {
 			30 = {
 				modifier = {
@@ -2927,7 +2857,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.31"
+		log = "work event id = wh_chaos_beastmen.31"
 	}
 
 	option = {
@@ -3065,7 +2995,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.32"
+		log = "work event id = wh_chaos_beastmen.32"
 	}
 
 	option = {
@@ -3134,7 +3064,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.33"
+		log = "work event id = wh_chaos_beastmen.33"
 		capital_scope = {
 			ROOT = {
 				spawn_unit = {
@@ -3296,7 +3226,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.34"
+		log = "work event id = wh_chaos_beastmen.34"
 	}
 
 	option = {
@@ -3357,7 +3287,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.35"
+		log = "work event id = wh_chaos_beastmen.35"
 	}
 
 	option = {
@@ -3513,7 +3443,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.36"
+		log = "work event id = wh_chaos_beastmen.36"
 	}
 
 	option = {
@@ -3675,7 +3605,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.37"
+		log = "work event id = wh_chaos_beastmen.37"
 	}
 
 	option = {
@@ -3698,7 +3628,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.38"
+		log = "work event id = wh_chaos_beastmen.38"
 	}
 
 	option = {
@@ -3721,11 +3651,15 @@ character_event = {
 				20 = {
 					modifier = {
 						factor = 1.5
-						has_province_modifier = beastmen_scourging_3
+						event_target:wh_cleanse_beastman_presence_target = {
+							has_province_modifier = beastmen_scourging_3
+						}
 					}
 					modifier = {
 						factor = 1.75
-						has_province_modifier = beastman_herdstone
+						event_target:wh_cleanse_beastman_presence_target = {
+							has_province_modifier = beastman_herdstone
+						}
 					}
 					character_event = {
 						id = wh_chaos_beastmen.40
@@ -3759,37 +3693,30 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.39"
+		log = "work event id = wh_chaos_beastmen.39"
 	}
 
 	option = {
 		name = EVTOPTAbeastmen39
 		hidden_tooltip = {
-			FROMFROM = {
-				location = {
-					remove_province_modifier = beastmen_scourging_1
-					remove_province_modifier = beastmen_scourging_2
-					remove_province_modifier = beastmen_scourging_3
-					remove_province_modifier = beastman_herdstone
-				}
-				refill_holding_levy = yes
+			event_target:wh_cleanse_beastman_presence_target = {
+				remove_province_modifier = beastmen_scourging_1
+				remove_province_modifier = beastmen_scourging_2
+				remove_province_modifier = beastmen_scourging_3
+				remove_province_modifier = beastman_herdstone
 			}
 			if = {
 				limit = {
 					NOT = {
 						trait = creature_nehekharan
 					}
-					FROMFROM = {
-						location = {
-							culture_group = beastman_group
-						}
+					event_target:wh_cleanse_beastman_presence_target = {
+						culture_group = beastman_group
 					}
 				}
-				FROMFROM = {
-					location = {
-						religion = ROOT
-						culture = ROOT
-					}
+				event_target:wh_cleanse_beastman_presence_target = {
+					religion = ROOT
+					culture = ROOT
 				}
 			}
 		}
@@ -3829,13 +3756,13 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.40"
+		log = "work event id = wh_chaos_beastmen.40"
 	}
 
 	option = {
 		name = EVTOPTAbeastmen40
 		hidden_tooltip = {
-			FROMFROM = {
+			event_target:wh_cleanse_beastman_presence_target = {
 				random = {
 					chance = 20
 					province_event = {
@@ -3871,7 +3798,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.41"
+		log = "work event id = wh_chaos_beastmen.41"
 		random_list = {
 			10 = {
 				modifier = {
@@ -3962,7 +3889,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.42"
+		log = "work event id = wh_chaos_beastmen.42"
 	}
 
 	option = {
@@ -4095,7 +4022,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.43"
+		log = "work event id = wh_chaos_beastmen.43"
 	}
 
 	option = {
@@ -4246,7 +4173,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.47"
+		log = "work event id = wh_chaos_beastmen.47"
 		random = {
 			chance = 20
 			FROM = {
@@ -4256,7 +4183,7 @@ character_event = {
 							is_female = yes
 							is_ruler = no
 							OR = {
-						is_living_human_trigger = yes
+								is_living_human_trigger = yes
 								trait = creature_elf
 								trait = creature_dwarf
 								trait = creature_chaos_dwarf
@@ -4279,7 +4206,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.48"
+		log = "work event id = wh_chaos_beastmen.48"
 	}
 
 	option = {
@@ -4368,7 +4295,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.49"
+		log = "work event id = wh_chaos_beastmen.49"
 		population = 300
 		capital_scope = {
 			ROOT = {
@@ -4426,7 +4353,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.50"
+		log = "work event id = wh_chaos_beastmen.50"
 		population = 300
 		capital_scope = {
 			ROOT = {
@@ -4484,7 +4411,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.51"
+		log = "work event id = wh_chaos_beastmen.51"
 		capital_scope = {
 			ROOT = {
 				spawn_unit = {
@@ -4518,7 +4445,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.52"
+		log = "work event id = wh_chaos_beastmen.52"
 		capital_scope = {
 			province_event = {
 				id = wh_chaos_beastmen.52001
@@ -4538,7 +4465,7 @@ province_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.52001"
+		log = "work event id = wh_chaos_beastmen.52001"
 		clr_province_flag = beastman_horde_inv
 		random_list = {
 			65 = {
@@ -5176,6 +5103,7 @@ character_event = {
 	only_men = yes
 
 	trigger = {
+		trait = creature_beastman
 		NOT = {
 			trait = maimed
 		}
@@ -5183,7 +5111,6 @@ character_event = {
 			trait = horns_average
 			trait = horns_big
 		}
-		trait = creature_beastman
 		is_alive = yes
 	}
 
@@ -5332,7 +5259,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.53"
+		log = "work event id = wh_chaos_beastmen.53"
 	}
 
 	option = {
@@ -5357,6 +5284,7 @@ character_event = {
 character_event = {
 	id = wh_chaos_beastmen.54
  	hide_window = yes
+	is_triggered_only = yes
 	capable_only = yes
 	culture_group = beastman_group
 	only_men = yes
@@ -5374,7 +5302,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.54"
+		log = "work event id = wh_chaos_beastmen.54"
  		random_list = {
  			10 = {
 				add_trait = horns_big
@@ -5523,6 +5451,7 @@ character_event = {
 					nor = {
 						trait = creature_beastman
 						is_liege_or_above = ROOT
+						character = root
 					}
 				}
 			}
@@ -5538,19 +5467,19 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.55"
+		log = "work event id = wh_chaos_beastmen.55"
 		random_realm_province = {
  			random_neighbor_province = {
  				limit = {
 					owner = {
-						NOT = {
+						nor = {
 							trait = creature_beastman
-						}
-						NOT = {
 							is_liege_or_above = ROOT
+							character = root
 						}
 					}
 				}
+				# fix it
  				dejure_liege_title = {
  					owner = {
  						ROOT = {
@@ -5558,7 +5487,6 @@ character_event = {
  								casus_belli = beastman_migration
  								target = PREV
  								thirdparty_title = PREVPREV
-
 							}
 						}
 					}
@@ -5591,22 +5519,6 @@ character_event = {
 			war = yes
 		}
 		modifier = {
-			factor = 1.25
-			independent = no
-			distance = {
-				where = liege
-				value = 25
-			} # faraway vassals shall surely go indipendent
-		}
-		modifier = {
-			factor = 2.5
-			independent = no
-			distance = {
-				where = liege
-				value = 50
-			} # faraway vassals shall surely go indipendent
-		}
-		modifier = {
 			factor = 2
 			trait = craven
 		}
@@ -5622,35 +5534,10 @@ character_event = {
 			factor = 1.75
 			trait = incapable
 		}
-		modifier = {
-			factor = 1.5
-			is_feudal = yes
-		}
-		modifier = {
-			factor = 1.5
-			independent = no
-			liege = {
-				realm_size = 200
-			}
-		}
-		modifier = {
-			factor = 1.75
-			independent = no
-			liege = {
-				realm_size = 300
-			}
-		}
-		modifier = {
-			factor = 2.5
-			independent = no
-			liege = {
-				realm_size = 500
-			}
-		}
 	}
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.56"
+		log = "work event id = wh_chaos_beastmen.56"
 		random_demesne_province = {
 			limit = {
 				NOT = {
@@ -5673,7 +5560,7 @@ province_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.57"
+		log = "work event id = wh_chaos_beastmen.57"
 		create_character = {
 			random_traits = yes
 			dynasty = none
@@ -6274,7 +6161,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.58"
+		log = "work event id = wh_chaos_beastmen.58"
 	}
 
 	option = {
@@ -6296,7 +6183,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.59"
+		log = "work event id = wh_chaos_beastmen.59"
 		random_list = {
 			10 = {
 				character_event = {
@@ -6341,7 +6228,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.60"
+		log = "work event id = wh_chaos_beastmen.60"
 	}
 
 	option = {
@@ -6367,7 +6254,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.60005"
+		log = "work event id = wh_chaos_beastmen.60005"
 	}
 
 	option = {
@@ -6392,7 +6279,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.61"
+		log = "work event id = wh_chaos_beastmen.61"
 	}
 
 	option = {
@@ -6417,7 +6304,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.61005"
+		log = "work event id = wh_chaos_beastmen.61005"
 	}
 
 	option = {
@@ -6443,7 +6330,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.62"
+		log = "work event id = wh_chaos_beastmen.62"
 	}
 
 	option = {
@@ -6469,7 +6356,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.62005"
+		log = "work event id = wh_chaos_beastmen.62005"
 	}
 
 	option = {
@@ -6494,7 +6381,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.63"
+		log = "work event id = wh_chaos_beastmen.63"
 	}
 
 	option = {
@@ -6520,7 +6407,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.63005"
+		log = "work event id = wh_chaos_beastmen.63005"
 	}
 
 	option = {
@@ -6543,7 +6430,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event wh_chaos_beastmen.999"
+		log = "work event id = wh_chaos_beastmen.999"
 		random_demesne_title = {
 			limit = {
 				clan = yes

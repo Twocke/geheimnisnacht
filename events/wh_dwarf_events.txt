@@ -6,12 +6,12 @@ character_event = {
 	title = A_COURTIER_WINS_A_VICTORY
 	desc = EVTDESCDWARF.0 # While on a border patrol, a courtier won a great victory against a hostile force. He tore through a number of enemies, like a true dwarf should!
 	picture = "GFX_evt_dwarf_heroes"
+	only_playable = yes
 	min_age = 16
+	culture_group = dwarf_group
 	is_triggered_only = yes
 
 	trigger = {
-		culture_group = dwarf_group
-		is_ruler = yes
 		any_courtier = {
 			martial = 12
 			trait = brave
@@ -21,7 +21,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event dwarf.0"
+		log = "work event id = dwarf.0"
 	}
 
 	option = {
@@ -64,12 +64,12 @@ character_event = {
 	title = A_COURTIER_DISGRACES_HIMSELF
 	desc = EVTDESCDWARF.1 # While patrolling, this courtier's troops encountered many enemies of our hold. Instead of standing to fight, he fled and left his brothers to die! He brought shame on his family!
 	picture = "GFX_evt_dwarf_heroes"
+	only_playable = yes
 	min_age = 16
+	culture_group = dwarf_group
 	is_triggered_only = yes
 
 	trigger = {
-		is_ruler = yes
-		culture_group = dwarf_group
 		any_courtier = {
 			OR = {
 				trait = craven
@@ -82,7 +82,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event dwarf.1"
+		log = "work event id = dwarf.1"
 	}
 
 	option = {
@@ -157,7 +157,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event dwarf.2"
+		log = "work event id = dwarf.2"
 	}
 
 	option = {
@@ -185,7 +185,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event dwarf.3"
+		log = "work event id = dwarf.3"
 	}
 
 	option = {
@@ -211,7 +211,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event dwarf.4"
+		log = "work event id = dwarf.4"
 	}
 
 	option = {
@@ -235,7 +235,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event dwarf.5"
+		log = "work event id = dwarf.5"
 	}
 
 	option = {
@@ -264,7 +264,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event dwarf.6"
+		log = "work event id = dwarf.6"
 	}
 
 	option = {
@@ -312,7 +312,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event dwarf.7"
+		log = "work event id = dwarf.7"
 	}
 
 	option = {
@@ -334,7 +334,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event dwarf.8"
+		log = "work event id = dwarf.8"
 	}
 
 	option = {
@@ -370,15 +370,15 @@ character_event = {
 	title = TUNNELING
 	desc = EVTDESCDWARF.9 # Suddenly, wild screams echo through the tunnels. A horde of Night Goblins descends upon your crew! What will you do?
 	picture = "GFX_evt_dwarf_heroes"
+	prisoner = no
 	is_triggered_only = yes
 
 	trigger = {
 		trait = searching_underground
-		prisoner = no
 	}
 
 	immediate = {
-		log = "work event dwarf.9"
+		log = "work event id = dwarf.9"
 	}
 
 	option = {
@@ -407,7 +407,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event dwarf.10"
+		log = "work event id = dwarf.10"
 	}
 
 	option = {
@@ -450,7 +450,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event dwarf.11"
+		log = "work event id = dwarf.11"
 	}
 
 	option = {
@@ -488,7 +488,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event dwarf.12"
+		log = "work event id = dwarf.12"
 	}
 
 	option = {
@@ -527,7 +527,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event dwarf.13"
+		log = "work event id = dwarf.13"
 	}
 
 	option = {
@@ -565,7 +565,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event dwarf.14"
+		log = "work event id = dwarf.14"
 	}
 
 	option = {
@@ -622,7 +622,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event dwarf.15"
+		log = "work event id = dwarf.15"
 	}
 
 	option = {
@@ -641,7 +641,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event dwarf.16"
+		log = "work event id = dwarf.16"
 	}
 
 	option = {
@@ -677,7 +677,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event dwarf.17"
+		log = "work event id = dwarf.17"
 	}
 
 	option = {
