@@ -19,7 +19,7 @@ RETTYPE_IMPERIAL_KNIGHTS = {
 			culture = sudenburger
 		}
 		is_patrician = no
-		log = "test [This.GetName]"
+		#log = "test [This.GetName]"
 	}
     modifier = {
         knights_defensive = 0.5
@@ -768,6 +768,7 @@ RETTYPE_CUL_KISLEV7 = {
 	first_amount = 100
 	second_type = 6
 	second_amount = 150
+	special_troops = gunpowder
 
 	potential = {
 	    OR = {

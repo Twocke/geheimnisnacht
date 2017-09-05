@@ -2,12 +2,12 @@ decisions = {
 	patrolyourlands = {
 		only_playable = yes
 		potential = {
+			age = 16
+			religion = grail
 			nor = {
 				trait = on_knight_quest
 				has_character_flag = on_grail_quest
 			}
-			age = 16
-			religion = grail
 			OR = {
 				trait = bretonnian_knight_errant
 				trait = bretonnian_knight
@@ -15,11 +15,9 @@ decisions = {
 			}
 			OR = {
 				ai = no
-				OR = {
-					trait = brave
-					trait = proud
-					trait = ambitious
-				}
+				trait = brave
+				trait = proud
+				trait = ambitious
 			}
 		}
 		allow = {
@@ -40,7 +38,7 @@ decisions = {
 			factor = 1
 			modifier = {
 				factor = 0
-				num_of_children = 0
+				has_children = no
 			}
 			modifier = {
 				factor = 0
@@ -51,15 +49,10 @@ decisions = {
 
 	returntoyourcastle = {
 		potential = {
-			age = 16
-			religion = grail
 			trait = on_knight_quest
-			NOT = {
-				has_character_flag = on_grail_quest
-			}
 		}
 		allow = {
-			ai = no
+			#ai = no
 		}
 		effect = {
 			character_event = {
@@ -70,8 +63,9 @@ decisions = {
 			factor = 1
 			modifier = {
 				factor = 0
-				NOT = {
+				nor = {
 					age = 35
+					has_character_flag = on_grail_quest
 				}
 			}
 		}
@@ -85,32 +79,35 @@ decisions = {
 			trait = bretonnian_knight
 			nor = {
 				trait = grail_knight
-				trait = on_knight_quest
 				has_character_flag = on_grail_quest
 			}
 			OR = {
 				ai = no
-				OR = {
-					primary_title = {
-						higher_real_tier_than = COUNT
-					}
-					trait = brave
-					trait = proud
-					trait = ambitious
-				}
+				higher_real_tier_than = COUNT
+				trait = brave
+				trait = proud
+				trait = ambitious
 			}
 		}
 		allow = {
-			custom_tooltip = {
-				text = IS_NOT_INCAPACITATED
-				is_incapacitated_trigger = no
+			or = {
+				custom_tooltip = {
+					text = IS_NOT_INCAPACITATED
+					is_incapacitated_trigger = no
+				}
+				trait = on_knight_quest
 			}
-			nor = {
+			not = {
 				trait = wounded
-				trait = craven
 			}
 		}
 		effect = {
+			if = {
+				limit = {
+					trait = on_knight_quest
+				}
+				remove_trait = on_knight_quest
+			}
 			character_event = {
 				id = wh_bretonnia.21
 			}
@@ -118,14 +115,33 @@ decisions = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
+				factor = 0.05
+			}
+			modifier = {
+				factor = 0.05
+				has_children = no
+			}
+			modifier = {
 				factor = 0
 				NOT = {
 					martial = 10
 				}
 			}
 			modifier = {
-				factor = 0.5
-				nor = {
+				factor = 2
+				martial = 10
+			}
+			modifier = {
+				factor = 2
+				martial = 15
+			}
+			modifier = {
+				factor = 2
+				martial = 20
+			}
+			modifier = {
+				factor = 2
+				or = {
 					trait = ambitious
 					trait = zealous
 					trait = brave
