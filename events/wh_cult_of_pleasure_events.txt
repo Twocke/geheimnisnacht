@@ -31,28 +31,16 @@ character_event = {
 
 	trigger = {
 		age = 40		# elves
-		NOT = {
-			society_member_of = cult_of_pleasure
-		}
-		NOT = {
-			has_character_flag = spirituallytempted_slaanesh
-		}
-		NOT = {
-			has_character_flag = physicallytempted_slaanesh
-		}
-		NOT = {
-			trait = malekith
-		}
-		NOT = {
-			trait = everqueen
-		}
-		NOT = {
-			has_character_flag = ai_flag_refuse_conversion
-		}
 		trait = creature_elf
-		NOT = {
+		nor = {
 			religion = cult_of_pleasure
 			religion = atharti
+			society_member_of = cult_of_pleasure
+			has_character_flag = spirituallytempted_slaanesh
+			has_character_flag = physicallytempted_slaanesh
+			has_character_flag = ai_flag_refuse_conversion
+			trait = malekith
+			trait = everqueen
 		}
 		OR = {
 			religion = cadai
@@ -200,7 +188,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = spleasure.1"
+		log = "work event id = spleasure.1 for [Root.GetBestName]"
 		random_list = {
 			# Spiritual call
 			20 = {
@@ -383,7 +371,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.2"
+		log = "work event id = spleasure.2 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -434,7 +422,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.3"
+		log = "work event id = spleasure.3 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -487,7 +475,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.4"
+		log = "work event id = spleasure.4 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -509,7 +497,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.5"
+		log = "work event id = spleasure.5 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -537,7 +525,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.6"
+		log = "work event id = spleasure.6 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -565,7 +553,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.7"
+		log = "work event id = spleasure.7 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -593,7 +581,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.8"
+		log = "work event id = spleasure.8 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -660,7 +648,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.9"
+		log = "work event id = spleasure.9 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -708,7 +696,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.10"
+		log = "work event id = spleasure.10 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -735,7 +723,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.11"
+		log = "work event id = spleasure.11 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -762,7 +750,7 @@ long_character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.12"
+		log = "work event id = spleasure.12 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -803,7 +791,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.13"
+		log = "work event id = spleasure.13 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -831,7 +819,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.14"
+		log = "work event id = spleasure.14 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -859,7 +847,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.15"
+		log = "work event id = spleasure.15 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -903,7 +891,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.16"
+		log = "work event id = spleasure.16 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -924,7 +912,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.17"
+		log = "work event id = spleasure.17 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -956,7 +944,7 @@ long_character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.18"
+		log = "work event id = spleasure.18 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1015,7 +1003,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.19"
+		log = "work event id = spleasure.19 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1054,7 +1042,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.20"
+		log = "work event id = spleasure.20 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1074,7 +1062,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.21"
+		log = "work event id = spleasure.21 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1101,7 +1089,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.22"
+		log = "work event id = spleasure.22 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1141,7 +1129,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.23"
+		log = "work event id = spleasure.23 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1169,7 +1157,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.24"
+		log = "work event id = spleasure.24 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1190,7 +1178,7 @@ long_character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.25"
+		log = "work event id = spleasure.25 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1231,7 +1219,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.25005"
+		log = "work event id = spleasure.25005 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1255,7 +1243,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.26"
+		log = "work event id = spleasure.26 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1279,7 +1267,7 @@ long_character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.27"
+		log = "work event id = spleasure.27 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1326,7 +1314,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.28"
+		log = "work event id = spleasure.28 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1354,7 +1342,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.29"
+		log = "work event id = spleasure.29 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1382,7 +1370,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.30"
+		log = "work event id = spleasure.30 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1413,7 +1401,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.31"
+		log = "work event id = spleasure.31 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1475,7 +1463,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.32"
+		log = "work event id = spleasure.32 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1586,7 +1574,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.33"
+		log = "work event id = spleasure.33 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1606,7 +1594,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.34"
+		log = "work event id = spleasure.34 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1637,7 +1625,7 @@ long_character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.35"
+		log = "work event id = spleasure.35 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1669,7 +1657,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.36"
+		log = "work event id = spleasure.36 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1695,7 +1683,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.37"
+		log = "work event id = spleasure.37 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1741,7 +1729,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.38"
+		log = "work event id = spleasure.38 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1798,7 +1786,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.39"
+		log = "work event id = spleasure.39 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1909,7 +1897,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.40"
+		log = "work event id = spleasure.40 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1930,7 +1918,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.41"
+		log = "work event id = spleasure.41 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1961,7 +1949,7 @@ long_character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.42"
+		log = "work event id = spleasure.42 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1993,7 +1981,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.43"
+		log = "work event id = spleasure.43 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2019,7 +2007,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.44"
+		log = "work event id = spleasure.44 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2051,7 +2039,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.45"
+		log = "work event id = spleasure.45 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2142,7 +2130,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.46"
+		log = "work event id = spleasure.46 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2237,7 +2225,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.47"
+		log = "work event id = spleasure.47 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2262,7 +2250,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.48"
+		log = "work event id = spleasure.48 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2292,7 +2280,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.49"
+		log = "work event id = spleasure.49 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2317,7 +2305,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.50"
+		log = "work event id = spleasure.50 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2376,7 +2364,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.51"
+		log = "work event id = spleasure.51 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2474,7 +2462,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.52"
+		log = "work event id = spleasure.52 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2499,7 +2487,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.53"
+		log = "work event id = spleasure.53 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2529,7 +2517,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.54"
+		log = "work event id = spleasure.54 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2554,7 +2542,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.55"
+		log = "work event id = spleasure.55 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2580,7 +2568,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.56"
+		log = "work event id = spleasure.56 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2599,7 +2587,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.57"
+		log = "work event id = spleasure.57 for [Root.GetBestName]"
 		random_list = {
 			# Tongue
 			# Horns
@@ -2689,7 +2677,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.5705"
+		log = "work event id = spleasure.5705 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2804,7 +2792,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.58"
+		log = "work event id = spleasure.58 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2921,7 +2909,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.59"
+		log = "work event id = spleasure.59 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2980,7 +2968,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.60"
+		log = "work event id = spleasure.60 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -3039,7 +3027,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.61"
+		log = "work event id = spleasure.61 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -3064,7 +3052,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.62"
+		log = "work event id = spleasure.62 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -3081,7 +3069,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.63"
+		log = "work event id = spleasure.63 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -3114,7 +3102,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.64"
+		log = "work event id = spleasure.64 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -3147,7 +3135,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.65"
+		log = "work event id = spleasure.65 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -3207,7 +3195,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.66"
+		log = "work event id = spleasure.66 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -3298,7 +3286,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.67"
+		log = "work event id = spleasure.67 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -3396,7 +3384,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.68"
+		log = "work event id = spleasure.68 for [Root.GetBestName]"
 		FROMFROM = {
 			character_event = {
 				id = spleasure.69 days = 10 random = 15
@@ -3413,7 +3401,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.68005"
+		log = "work event id = spleasure.68005 for [Root.GetBestName]"
 		FROM = {
 			character_event = {
 				id = spleasure.69 days = 10 random = 15
@@ -3430,7 +3418,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.69"
+		log = "work event id = spleasure.69 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -3503,8 +3491,9 @@ character_event = {
 		}
 	}
 
+	# Enflame his lust
 	option = {
-		name = EVTOPTDspleasure.69			# Enflame his lust
+		name = EVTOPTDspleasure.69
 		trigger = {
 			OR = {
 				has_character_flag = physicallytempted_slaanesh
@@ -3514,7 +3503,9 @@ character_event = {
 		hidden_tooltip = {
 			FROM = {
 				character_event = {
-					id = spleasure.87 days = 10 random = 15
+					id = spleasure.87 
+					days = 10 
+					random = 15
 				}
 			}
 		}
@@ -3564,7 +3555,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.70"
+		log = "work event id = spleasure.70 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -3578,8 +3569,8 @@ character_event = {
 				character_event = {
 					id = spleasure.71
 				}
-			}	# notify and choose what to do
-
+			}
+	# notify and choose what to do
 		}
 		if = {
 			limit = {
@@ -3658,8 +3649,8 @@ character_event = {
 				character_event = {
 					id = spleasure.72
 				}
-			}	# notify and choose what to do
-
+			}
+	# notify and choose what to do
 		}
 		trigger = {
 			is_female = yes
@@ -3745,8 +3736,8 @@ character_event = {
 				character_event = {
 					id = spleasure.71
 				}
-			}	# notify and choose what to do
-
+			}
+	# notify and choose what to do
 		}
 		if = {
 			limit = {
@@ -3828,8 +3819,8 @@ character_event = {
 				character_event = {
 					id = spleasure.72
 				}
-			}	# notify and choose what to do
-
+			}
+	# notify and choose what to do
 		}
 		if = {
 			limit = {
@@ -3910,7 +3901,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.71"
+		log = "work event id = spleasure.71 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -3944,7 +3935,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.72"
+		log = "work event id = spleasure.72 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -3979,7 +3970,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.73"
+		log = "work event id = spleasure.73 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -4152,7 +4143,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.74"
+		log = "work event id = spleasure.74 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -4179,7 +4170,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.75"
+		log = "work event id = spleasure.75 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -4207,7 +4198,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.76"
+		log = "work event id = spleasure.76 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -4218,8 +4209,8 @@ character_event = {
 				character_event = {
 					id = spleasure.77
 				}
-			}	# notify and choose what to do
-
+			}
+	# notify and choose what to do
 		}
 		if = {
 			limit = {
@@ -4298,8 +4289,8 @@ character_event = {
 				character_event = {
 					id = spleasure.78
 				}
-			}	# notify and choose what to do
-
+			}
+	# notify and choose what to do
 		}
 		if = {
 			limit = {
@@ -4380,7 +4371,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.77"
+		log = "work event id = spleasure.77 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -4414,7 +4405,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.78"
+		log = "work event id = spleasure.78 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -4449,7 +4440,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.79"
+		log = "work event id = spleasure.79 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -4460,8 +4451,8 @@ character_event = {
 				character_event = {
 					id = spleasure.80
 				}
-			}	# notify and choose what to do
-
+			}
+	# notify and choose what to do
 		}
 		if = {
 			limit = {
@@ -4533,8 +4524,8 @@ character_event = {
 				character_event = {
 					id = spleasure.81
 				}
-			}	# notify and choose what to do
-
+			}
+	# notify and choose what to do
 		}
 		if = {
 			limit = {
@@ -4629,7 +4620,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.80"
+		log = "work event id = spleasure.80 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -4663,7 +4654,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.81"
+		log = "work event id = spleasure.81 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -4698,7 +4689,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.82"
+		log = "work event id = spleasure.82 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -4709,8 +4700,8 @@ character_event = {
 				character_event = {
 					id = spleasure.83
 				}
-			}	# notify and choose what to do
-
+			}
+	# notify and choose what to do
 		}
 		if = {
 			limit = {
@@ -4789,8 +4780,8 @@ character_event = {
 				character_event = {
 					id = spleasure.84
 				}
-			}	# notify and choose what to do
-
+			}
+	# notify and choose what to do
 		}
 		if = {
 			limit = {
@@ -4871,7 +4862,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.83"
+		log = "work event id = spleasure.83 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -4905,7 +4896,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.84"
+		log = "work event id = spleasure.84 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -4940,7 +4931,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.85"
+		log = "work event id = spleasure.85 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -4951,8 +4942,8 @@ character_event = {
 				character_event = {
 					id = spleasure.86
 				}
-			}	# notify and choose what to do
-
+			}
+	# notify and choose what to do
 		}
 	}
 
@@ -4963,8 +4954,8 @@ character_event = {
 				character_event = {
 					id = spleasure.83
 				}
-			}	# notify and choose what to do
-
+			}
+	# notify and choose what to do
 		}
 		if = {
 			limit = {
@@ -5004,7 +4995,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.86"
+		log = "work event id = spleasure.86 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -5070,7 +5061,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.87"
+		log = "work event id = spleasure.87 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -5081,8 +5072,8 @@ character_event = {
 				character_event = {
 					id = spleasure.88
 				}
-			}	# notify and choose what to do
-
+			}
+	# notify and choose what to do
 		}
 		if = {
 			limit = {
@@ -5161,8 +5152,8 @@ character_event = {
 				character_event = {
 					id = spleasure.89
 				}
-			}	# notify and choose what to do
-
+			}
+	# notify and choose what to do
 		}
 		if = {
 			limit = {
@@ -5243,7 +5234,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.88"
+		log = "work event id = spleasure.88 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -5277,7 +5268,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.89"
+		log = "work event id = spleasure.89 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -5410,7 +5401,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.90"
+		log = "work event id = spleasure.90 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -5795,7 +5786,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.91"
+		log = "work event id = spleasure.91 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -5879,7 +5870,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.92"
+		log = "work event id = spleasure.92 for [Root.GetBestName]"
 		FROMFROM = {
 			character_event = {
 				id = spleasure.94 days = 1
@@ -5911,7 +5902,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.94"
+		log = "work event id = spleasure.94 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -6171,7 +6162,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.95"
+		log = "work event id = spleasure.95 for [Root.GetBestName]"
 		FROM = {
 			character_event = {
 				id = spleasure.97
@@ -6187,7 +6178,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.96"
+		log = "work event id = spleasure.96 for [Root.GetBestName]"
 		if = {
 			limit = {
 				OR = {
@@ -7084,7 +7075,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.97"
+		log = "work event id = spleasure.97 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7578,7 +7569,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.98"
+		log = "work event id = spleasure.98 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7831,7 +7822,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.98001"
+		log = "work event id = spleasure.98001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8086,7 +8077,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.98002"
+		log = "work event id = spleasure.98002 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8341,7 +8332,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.98003"
+		log = "work event id = spleasure.98003 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8606,7 +8597,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.98004"
+		log = "work event id = spleasure.98004 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8871,7 +8862,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.98005"
+		log = "work event id = spleasure.98005 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -9151,7 +9142,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.99"
+		log = "work event id = spleasure.99 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -9285,7 +9276,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.99001"
+		log = "work event id = spleasure.99001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -9419,7 +9410,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.99002"
+		log = "work event id = spleasure.99002 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -9553,7 +9544,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.99003"
+		log = "work event id = spleasure.99003 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -9677,7 +9668,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.99004"
+		log = "work event id = spleasure.99004 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -9801,7 +9792,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.99005"
+		log = "work event id = spleasure.99005 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -10022,7 +10013,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.100"
+		log = "work event id = spleasure.100 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -10326,7 +10317,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.101"
+		log = "work event id = spleasure.101 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -10678,7 +10669,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.102"
+		log = "work event id = spleasure.102 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -11227,7 +11218,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.103"
+		log = "work event id = spleasure.103 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -11782,7 +11773,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.104"
+		log = "work event id = spleasure.104 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -12233,7 +12224,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.105"
+		log = "work event id = spleasure.105 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -12266,7 +12257,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.106"
+		log = "work event id = spleasure.106 for [Root.GetBestName]"
 		random_list = {
 			50 = {
 				FROM = {
@@ -12428,7 +12419,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.107"
+		log = "work event id = spleasure.107 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -12471,7 +12462,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.10705"
+		log = "work event id = spleasure.10705 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -12505,7 +12496,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.108"
+		log = "work event id = spleasure.108 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -12548,7 +12539,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.10805"
+		log = "work event id = spleasure.10805 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -12582,7 +12573,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.109"
+		log = "work event id = spleasure.109 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -12625,7 +12616,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.10905"
+		log = "work event id = spleasure.10905 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -12758,7 +12749,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.110"
+		log = "work event id = spleasure.110 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -13058,7 +13049,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.111"
+		log = "work event id = spleasure.111 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -13404,7 +13395,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.112"
+		log = "work event id = spleasure.112 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -13949,7 +13940,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.113"
+		log = "work event id = spleasure.113 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -14504,7 +14495,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.114"
+		log = "work event id = spleasure.114 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -14955,7 +14946,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.115"
+		log = "work event id = spleasure.115 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -14988,7 +14979,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.116"
+		log = "work event id = spleasure.116 for [Root.GetBestName]"
 	 	remove_opinion = {
 			who = FROM
 			modifier = opinion_quirking
@@ -15060,7 +15051,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.117"
+		log = "work event id = spleasure.117 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -15104,7 +15095,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.11705"
+		log = "work event id = spleasure.11705 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -15138,7 +15129,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.118"
+		log = "work event id = spleasure.118 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -15182,7 +15173,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.11805"
+		log = "work event id = spleasure.11805 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -15216,7 +15207,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.119"
+		log = "work event id = spleasure.119 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -15260,7 +15251,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.11905"
+		log = "work event id = spleasure.11905 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -15393,7 +15384,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.120"
+		log = "work event id = spleasure.120 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -15693,7 +15684,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.121"
+		log = "work event id = spleasure.121 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -16039,7 +16030,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.122"
+		log = "work event id = spleasure.122 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -16584,7 +16575,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.123"
+		log = "work event id = spleasure.123 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -17139,7 +17130,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.124"
+		log = "work event id = spleasure.124 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -17590,7 +17581,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.125"
+		log = "work event id = spleasure.125 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -17623,7 +17614,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.126"
+		log = "work event id = spleasure.126 for [Root.GetBestName]"
 	 	remove_opinion = {
 			who = FROM
 			modifier = opinion_quirking
@@ -17694,7 +17685,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.127"
+		log = "work event id = spleasure.127 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -17738,7 +17729,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.12705"
+		log = "work event id = spleasure.12705 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -17772,7 +17763,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.128"
+		log = "work event id = spleasure.128 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -17816,7 +17807,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.12805"
+		log = "work event id = spleasure.12805 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -17850,7 +17841,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.129"
+		log = "work event id = spleasure.129 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -17894,7 +17885,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.12905"
+		log = "work event id = spleasure.12905 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -18027,7 +18018,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.130"
+		log = "work event id = spleasure.130 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -18323,7 +18314,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.131"
+		log = "work event id = spleasure.131 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -18673,7 +18664,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.132"
+		log = "work event id = spleasure.132 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -19216,7 +19207,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.133"
+		log = "work event id = spleasure.133 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -19769,7 +19760,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.134"
+		log = "work event id = spleasure.134 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -20266,7 +20257,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.135"
+		log = "work event id = spleasure.135 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -20299,7 +20290,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.136"
+		log = "work event id = spleasure.136 for [Root.GetBestName]"
 	 	remove_opinion = {
 			who = FROM
 			modifier = opinion_quirking
@@ -20385,7 +20376,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.137"
+		log = "work event id = spleasure.137 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -20429,7 +20420,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.13705"
+		log = "work event id = spleasure.13705 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -20463,7 +20454,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.138"
+		log = "work event id = spleasure.138 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -20507,7 +20498,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.13805"
+		log = "work event id = spleasure.13805 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -20541,7 +20532,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.139"
+		log = "work event id = spleasure.139 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -20585,7 +20576,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.13905"
+		log = "work event id = spleasure.13905 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -20718,7 +20709,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.140"
+		log = "work event id = spleasure.140 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -21014,7 +21005,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.141"
+		log = "work event id = spleasure.141 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -21364,7 +21355,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.142"
+		log = "work event id = spleasure.142 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -21895,7 +21886,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.143"
+		log = "work event id = spleasure.143 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -22448,7 +22439,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.144"
+		log = "work event id = spleasure.144 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -22945,7 +22936,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.145"
+		log = "work event id = spleasure.145 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -22978,7 +22969,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.146"
+		log = "work event id = spleasure.146 for [Root.GetBestName]"
 	 	remove_opinion = {
 			who = FROM
 			modifier = opinion_quirking
@@ -23055,7 +23046,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.147"
+		log = "work event id = spleasure.147 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -23099,7 +23090,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.14705"
+		log = "work event id = spleasure.14705 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -23133,7 +23124,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.148"
+		log = "work event id = spleasure.148 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -23177,7 +23168,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.14805"
+		log = "work event id = spleasure.14805 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -23211,7 +23202,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.149"
+		log = "work event id = spleasure.149 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -23255,7 +23246,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.14905"
+		log = "work event id = spleasure.14905 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -23388,7 +23379,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.150"
+		log = "work event id = spleasure.150 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -23684,7 +23675,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.151"
+		log = "work event id = spleasure.151 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -24040,7 +24031,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.152"
+		log = "work event id = spleasure.152 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -24579,7 +24570,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.153"
+		log = "work event id = spleasure.153 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -25136,7 +25127,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.154"
+		log = "work event id = spleasure.154 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -25633,7 +25624,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.155"
+		log = "work event id = spleasure.155 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -25666,7 +25657,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.156"
+		log = "work event id = spleasure.156 for [Root.GetBestName]"
 	 	remove_opinion = {
 			who = FROM
 			modifier = opinion_quirking
@@ -25749,7 +25740,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.157"
+		log = "work event id = spleasure.157 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -25793,7 +25784,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.15705"
+		log = "work event id = spleasure.15705 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -25827,7 +25818,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.158"
+		log = "work event id = spleasure.158 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -25869,7 +25860,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.15805"
+		log = "work event id = spleasure.15805 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -25905,7 +25896,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.159"
+		log = "work event id = spleasure.159 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -25949,7 +25940,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.15905"
+		log = "work event id = spleasure.15905 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -25974,7 +25965,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = spleasure.160"
+		log = "work event id = spleasure.160 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -27006,7 +26997,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = spleasure.161"
+		log = "work event id = spleasure.161 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -27088,7 +27079,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = spleasure.16105"
+		log = "work event id = spleasure.16105 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -27140,7 +27131,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = spleasure.162"
+		log = "work event id = spleasure.162 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -27182,7 +27173,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = spleasure.16205"
+		log = "work event id = spleasure.16205 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -27202,7 +27193,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = spleasure.163"
+		log = "work event id = spleasure.163 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -27226,7 +27217,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = spleasure.16305"
+		log = "work event id = spleasure.16305 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -27247,7 +27238,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = spleasure.164"
+		log = "work event id = spleasure.164 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -27341,7 +27332,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = spleasure.16405"
+		log = "work event id = spleasure.16405 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -27410,7 +27401,7 @@ character_event = {
 	}
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = spleasure.16406"
+		log = "work event id = spleasure.16406 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -27429,7 +27420,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = spleasure.165"
+		log = "work event id = spleasure.165 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -27453,7 +27444,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = spleasure.16505"
+		log = "work event id = spleasure.16505 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -27479,7 +27470,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = spleasure.166"
+		log = "work event id = spleasure.166 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -27573,7 +27564,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = spleasure.16605"
+		log = "work event id = spleasure.16605 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -27642,7 +27633,7 @@ character_event = {
 	}
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = spleasure.16606"
+		log = "work event id = spleasure.16606 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -27661,7 +27652,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = spleasure.167"
+		log = "work event id = spleasure.167 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -27685,7 +27676,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = spleasure.16705"
+		log = "work event id = spleasure.16705 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -27719,7 +27710,7 @@ character_event = {
 	}
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = spleasure.168"
+		log = "work event id = spleasure.168 for [Root.GetBestName]"
 		add_trait = monstrous
 	}
 }
@@ -27832,7 +27823,7 @@ long_character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = spleasure.169"
+		log = "work event id = spleasure.169 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -28439,7 +28430,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = spleasure.16905"
+		log = "work event id = spleasure.16905 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -28573,7 +28564,7 @@ character_event = {
 	}
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = spleasure.16906"
+		log = "work event id = spleasure.16906 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -28607,7 +28598,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = spleasure.16907"
+		log = "work event id = spleasure.16907 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -28648,7 +28639,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = spleasure.16908"
+		log = "work event id = spleasure.16908 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -28674,7 +28665,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = spleasure.170"
+		log = "work event id = spleasure.170 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -28713,7 +28704,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = spleasure.17005"
+		log = "work event id = spleasure.17005 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -28834,7 +28825,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = spleasure.171"
+		log = "work event id = spleasure.171 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -29342,7 +29333,6 @@ character_event = {
 	id = spleasure.172
 	desc = {
 		text = EVTDESCAspleasure172
-
 		trigger = {
 			NOT = {
 				is_female = yes
@@ -29351,21 +29341,23 @@ character_event = {
 	}
 	desc = {
 		text = EVTDESCBspleasure172
-
 		trigger = {
 			is_female = yes
 		}
 	}
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
+	
 	immediate = {
-		log = "work event id = spleasure.172"
+		log = "work event id = spleasure.172 for [Root.GetBestName]"
 	}
 
 	option = {
 		name = EVTOPTAspleasure172
-
 		trigger = {
+			spouse = {
+				wh_this_and_root_can_love_trigger = yes
+			}
 			OR = {
 				trait = homosexual
 				ai = no
@@ -29384,7 +29376,6 @@ character_event = {
 	}
 	option = {
 		name = EVTOPTBspleasure172
-
 		trigger = {
 			NOT = {
 				trait = homosexual
@@ -29403,7 +29394,6 @@ character_event = {
 	}
 	option = {
 		name = EVTOPTCspleasure172
-
 		trigger = {
 			ai = no
 		} # I don't care
@@ -29418,7 +29408,6 @@ character_event = {
 	id = spleasure.17205
 	desc = {
 		text = EVTDESCAspleasure17205
-
 		trigger = {
 			NOT = {
 				is_female = yes
@@ -29427,15 +29416,15 @@ character_event = {
 	}
 	desc = {
 		text = EVTDESCBspleasure17205
-
 		trigger = {
 			is_female = yes
 		}
 	}
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
+
 	immediate = {
-		log = "work event id = spleasure.17205"
+		log = "work event id = spleasure.17205 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -29469,7 +29458,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = spleasure.17206"
+		log = "work event id = spleasure.17206 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -29504,13 +29493,15 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = spleasure.173"
+		log = "work event id = spleasure.173 for [Root.GetBestName]"
 	}
 
 	option = {
 		name = EVTOPTAspleasure173
-
 		trigger = {
+			spouse = {
+				wh_this_and_root_can_love_trigger = yes
+			}
 			OR = {
 				trait = homosexual
 				ai = no
@@ -29529,7 +29520,6 @@ character_event = {
 	}
 	option = {
 		name = EVTOPTBspleasure173
-
 		trigger = {
 			NOT = {
 				trait = homosexual
@@ -29548,7 +29538,6 @@ character_event = {
 	}
 	option = {
 		name = EVTOPTCspleasure173
-
 		trigger = {
 			ai = no
 		} # I don't care
@@ -29563,7 +29552,6 @@ character_event = {
 	id = spleasure.17305
 	desc = {
 		text = EVTDESCAspleasure17305
-
 		trigger = {
 			NOT = {
 				is_female = yes
@@ -29572,7 +29560,6 @@ character_event = {
 	}
 	desc = {
 		text = EVTDESCBspleasure17305
-
 		trigger = {
 			is_female = yes
 		}
@@ -29580,7 +29567,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = spleasure.17305"
+		log = "work event id = spleasure.17305 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -29614,7 +29601,7 @@ character_event = {
 	picture = GFX_evt_mage_lore_slaanesh
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = spleasure.17306"
+		log = "work event id = spleasure.17306 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -30193,7 +30180,7 @@ character_event = {
 		}
 	}
 	immediate = {
-		log = "work event id = spleasure.175"
+		log = "work event id = spleasure.175 for [Root.GetBestName]"
 		# name = "EVTOPTArape.0007"
 		spouse = {
 			character_event = {
@@ -30209,7 +30196,7 @@ character_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = spleasure.176"
+		log = "work event id = spleasure.176 for [Root.GetBestName]"
 		FROM = {
 			character_event = {
 				id = wh_concubine.9
@@ -30287,7 +30274,7 @@ character_event = {
 	}
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = spleasure.177"
+		log = "work event id = spleasure.177 for [Root.GetBestName]"
 		if = {
 			limit = {
 				graphical_culture = empirerevgfx

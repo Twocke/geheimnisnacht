@@ -79,7 +79,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = sorcererapprentice.1"
+		log = "work event id = sorcererapprentice.1 for [Root.GetBestName]"
 		if = {
 			limit = {
 				religion_group = chaos_gods_group
@@ -127,7 +127,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.10001"
+		log = "work event id = sorcererapprentice.10001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -344,7 +344,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.10002"
+		log = "work event id = sorcererapprentice.10002 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -550,7 +550,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.10003"
+		log = "work event id = sorcererapprentice.10003 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -741,7 +741,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.10004"
+		log = "work event id = sorcererapprentice.10004 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1065,7 +1065,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = sorcererapprentice.2"
+		log = "work event id = sorcererapprentice.2 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1088,7 +1088,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.3"
+		log = "work event id = sorcererapprentice.3 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1274,7 +1274,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.5"
+		log = "work event id = sorcererapprentice.5 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1290,7 +1290,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.6"
+		log = "work event id = sorcererapprentice.6 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1315,7 +1315,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.7"
+		log = "work event id = sorcererapprentice.7 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1425,7 +1425,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.70001"
+		log = "work event id = sorcererapprentice.70001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1923,7 +1923,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.70002"
+		log = "work event id = sorcererapprentice.70002 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2424,7 +2424,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.70003"
+		log = "work event id = sorcererapprentice.70003 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2927,7 +2927,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.70004"
+		log = "work event id = sorcererapprentice.70004 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -3127,7 +3127,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.8"
+		log = "work event id = sorcererapprentice.8 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -3145,7 +3145,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.80005"
+		log = "work event id = sorcererapprentice.80005 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -3162,7 +3162,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.80006"
+		log = "work event id = sorcererapprentice.80006 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -3180,7 +3180,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.80007"
+		log = "work event id = sorcererapprentice.80007 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -3197,7 +3197,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.9"
+		log = "work event id = sorcererapprentice.9 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -3338,7 +3338,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.90001"
+		log = "work event id = sorcererapprentice.90001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -3828,7 +3828,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.90002"
+		log = "work event id = sorcererapprentice.90002 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -3862,7 +3862,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.90003"
+		log = "work event id = sorcererapprentice.90003 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -3896,7 +3896,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.90004"
+		log = "work event id = sorcererapprentice.90004 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -4034,7 +4034,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.90005"
+		log = "work event id = sorcererapprentice.90005 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -4515,7 +4515,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.90006"
+		log = "work event id = sorcererapprentice.90006 for [Root.GetBestName]"
 		if = {
 			limit = {
 				religion = tzeentch
@@ -5091,7 +5091,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.90007"
+		log = "work event id = sorcererapprentice.90007 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -5130,7 +5130,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.90008"
+		log = "work event id = sorcererapprentice.90008 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -5169,7 +5169,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.10"
+		log = "work event id = sorcererapprentice.10 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -5231,7 +5231,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.11"
+		log = "work event id = sorcererapprentice.11 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -5252,7 +5252,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.12"
+		log = "work event id = sorcererapprentice.12 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -5405,7 +5405,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.13"
+		log = "work event id = sorcererapprentice.13 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -5503,7 +5503,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.13001"
+		log = "work event id = sorcererapprentice.13001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -5789,7 +5789,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.13002"
+		log = "work event id = sorcererapprentice.13002 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -6063,7 +6063,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.13003"
+		log = "work event id = sorcererapprentice.13003 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -6111,7 +6111,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.13004"
+		log = "work event id = sorcererapprentice.13004 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -6145,7 +6145,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.13005"
+		log = "work event id = sorcererapprentice.13005 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -6174,17 +6174,7 @@ character_event = {
 			NOT = {
 				trait = incapable
 			}
-			OR = {
-				trait = magic_potential_1
-				trait = magic_potential_2
-				trait = magic_potential_3
-				trait = magic_potential_4
-				has_character_flag = magic_potential_flag_1
-				has_character_flag = magic_potential_flag_2
-				has_character_flag = magic_potential_flag_3
-				has_character_flag = magic_potential_flag_4
-			}
-
+			wh_has_any_magic_potential_trigger = yes
 		}
 	}
 	desc = {
@@ -6195,19 +6185,14 @@ character_event = {
 				NOT = {
 					learning = 21
 				}
-				AND = {
-					wh_has_any_magic_potential_trigger = no
-				}
-
+				wh_has_any_magic_potential_trigger = no
 			}
-
 		}
-
 	}
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.14"
+		log = "work event id = sorcererapprentice.14 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -6217,17 +6202,7 @@ character_event = {
 			NOT = {
 				trait = incapable
 			}
-			OR = {
-				trait = magic_potential_1
-				trait = magic_potential_2
-				trait = magic_potential_3
-				trait = magic_potential_4
-				has_character_flag = magic_potential_flag_1
-				has_character_flag = magic_potential_flag_2
-				has_character_flag = magic_potential_flag_3
-				has_character_flag = magic_potential_flag_4
-			}
-
+			wh_has_any_magic_potential_trigger = yes
 		}
 		prestige = 100
 		if = {
@@ -6312,12 +6287,8 @@ character_event = {
 					learning = 21
 				}
 				trait = incapable
-				AND = {
-					wh_has_any_magic_potential_trigger = no
-				}
-
+				wh_has_any_magic_potential_trigger = no
 			}
-
 		}
 		remove_trait = hedge_wizard
 		prestige = -150
@@ -6334,7 +6305,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.15"
+		log = "work event id = sorcererapprentice.15 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -6432,7 +6403,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.15001"
+		log = "work event id = sorcererapprentice.15001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -6851,7 +6822,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.15002"
+		log = "work event id = sorcererapprentice.15002 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7237,7 +7208,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.15003"
+		log = "work event id = sorcererapprentice.15003 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7304,7 +7275,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.15004"
+		log = "work event id = sorcererapprentice.15004 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7387,7 +7358,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.15005"
+		log = "work event id = sorcererapprentice.15005 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7407,7 +7378,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.15006"
+		log = "work event id = sorcererapprentice.15006 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7427,7 +7398,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.15007"
+		log = "work event id = sorcererapprentice.15007 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7456,7 +7427,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.15008"
+		log = "work event id = sorcererapprentice.15008 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7482,7 +7453,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.15009"
+		log = "work event id = sorcererapprentice.15009 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7524,7 +7495,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.15010"
+		log = "work event id = sorcererapprentice.15010 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7546,7 +7517,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.15011"
+		log = "work event id = sorcererapprentice.15011 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7564,7 +7535,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.15012"
+		log = "work event id = sorcererapprentice.15012 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7850,7 +7821,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.15013"
+		log = "work event id = sorcererapprentice.15013 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7958,7 +7929,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.15014"
+		log = "work event id = sorcererapprentice.15014 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7976,7 +7947,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.15015"
+		log = "work event id = sorcererapprentice.15015 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7994,7 +7965,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.15016"
+		log = "work event id = sorcererapprentice.15016 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8012,7 +7983,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.15017"
+		log = "work event id = sorcererapprentice.15017 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8132,7 +8103,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.15018"
+		log = "work event id = sorcererapprentice.15018 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8149,7 +8120,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.15019"
+		log = "work event id = sorcererapprentice.15019 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8166,7 +8137,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.15020"
+		log = "work event id = sorcererapprentice.15020 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8209,14 +8180,7 @@ character_event = {
 				trait = incapable
 			}
 			OR = {
-				trait = magic_potential_1
-				trait = magic_potential_2
-				trait = magic_potential_3
-				trait = magic_potential_4
-				has_character_flag = magic_potential_flag_1
-				has_character_flag = magic_potential_flag_2
-				has_character_flag = magic_potential_flag_3
-				has_character_flag = magic_potential_flag_4
+				wh_has_any_magic_potential_trigger = yes
 				trait = vampire_lahmian_visible
 				trait = vampire_carstein_visible
 				trait = vampire_blood_visible
@@ -8366,7 +8330,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.16"
+		log = "work event id = sorcererapprentice.16 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8399,14 +8363,7 @@ character_event = {
 				trait = incapable
 			}
 			OR = {
-				trait = magic_potential_1
-				trait = magic_potential_2
-				trait = magic_potential_3
-				trait = magic_potential_4
-				has_character_flag = magic_potential_flag_1
-				has_character_flag = magic_potential_flag_2
-				has_character_flag = magic_potential_flag_3
-				has_character_flag = magic_potential_flag_4
+				wh_has_any_magic_potential_trigger = yes
 				trait = vampire_lahmian_visible
 				trait = vampire_carstein_visible
 				trait = vampire_blood_visible
@@ -8601,7 +8558,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = sorcererapprentice.17"
+		log = "work event id = sorcererapprentice.17 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8824,7 +8781,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.18"
+		log = "work event id = sorcererapprentice.18 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8852,7 +8809,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = sorcererapprentice.19"
+		log = "work event id = sorcererapprentice.19 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8968,7 +8925,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = sorcererapprentice.19001"
+		log = "work event id = sorcererapprentice.19001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -9553,7 +9510,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = sorcererapprentice.19002"
+		log = "work event id = sorcererapprentice.19002 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -10141,7 +10098,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = sorcererapprentice.19003"
+		log = "work event id = sorcererapprentice.19003 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -10708,14 +10665,7 @@ character_event = {
 				trait = incapable
 			}
 			OR = {
-				trait = magic_potential_1
-				trait = magic_potential_2
-				trait = magic_potential_3
-				trait = magic_potential_4
-				has_character_flag = magic_potential_flag_1
-				has_character_flag = magic_potential_flag_2
-				has_character_flag = magic_potential_flag_3
-				has_character_flag = magic_potential_flag_4
+				wh_has_any_magic_potential_trigger = yes
 				trait = vampire_lahmian_visible
 				trait = vampire_carstein_visible
 				trait = vampire_blood_visible
@@ -10806,7 +10756,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = sorcererapprentice.19004"
+		log = "work event id = sorcererapprentice.19004 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -10817,14 +10767,7 @@ character_event = {
 				trait = incapable
 			}
 			OR = {
-				trait = magic_potential_1
-				trait = magic_potential_2
-				trait = magic_potential_3
-				trait = magic_potential_4
-				has_character_flag = magic_potential_flag_1
-				has_character_flag = magic_potential_flag_2
-				has_character_flag = magic_potential_flag_3
-				has_character_flag = magic_potential_flag_4
+				wh_has_any_magic_potential_trigger = yes
 				trait = vampire_lahmian_visible
 				trait = vampire_carstein_visible
 				trait = vampire_blood_visible
@@ -10953,7 +10896,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.20"
+		log = "work event id = sorcererapprentice.20 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -10971,7 +10914,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.20005"
+		log = "work event id = sorcererapprentice.20005 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -10988,7 +10931,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.20006"
+		log = "work event id = sorcererapprentice.20006 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -11006,7 +10949,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = sorcererapprentice.20007"
+		log = "work event id = sorcererapprentice.20007 for [Root.GetBestName]"
 	}
 
 	option = {

@@ -28,7 +28,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = 5000"
+		log = "work event id = 5000 for [Root.GetBestName]"
 		set_character_flag = LE_ST
 	}
 
@@ -133,7 +133,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = 5001"
+		log = "work event id = 5001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -163,7 +163,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 5002"
+		log = "work event id = 5002 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -182,7 +182,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 5003"
+		log = "work event id = 5003 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -220,7 +220,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = 5020"
+		log = "work event id = 5020 for [Root.GetBestName]"
 		set_character_flag = LE_ST
 	}
 
@@ -318,7 +318,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = 5021"
+		log = "work event id = 5021 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -402,7 +402,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = 5022"
+		log = "work event id = 5022 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -431,7 +431,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 5023"
+		log = "work event id = 5023 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -485,7 +485,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = 5024"
+		log = "work event id = 5024 for [Root.GetBestName]"
 		clr_character_flag = vlad_impaler
 		clr_character_flag = rose_gardener
 	}
@@ -535,7 +535,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = 5025"
+		log = "work event id = 5025 for [Root.GetBestName]"
 		clr_character_flag = rose_gardener
 		clr_character_flag = vlad_impaler
 	}
@@ -564,7 +564,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 5026"
+		log = "work event id = 5026 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -640,7 +640,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = 5030"
+		log = "work event id = 5030 for [Root.GetBestName]"
 		set_character_flag = LE_ST
 		random_courtier = {
 			limit = {
@@ -784,7 +784,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 5031"
+		log = "work event id = 5031 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -827,7 +827,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 5032"
+		log = "work event id = 5032 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -857,7 +857,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 5033"
+		log = "work event id = 5033 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -922,7 +922,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = 5034"
+		log = "work event id = 5034 for [Root.GetBestName]"
 		clr_character_flag = never_giveup
 		remove_character_modifier = aspiring_duelist
 	}
@@ -980,7 +980,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = 5035"
+		log = "work event id = 5035 for [Root.GetBestName]"
 		clr_character_flag = never_giveup
 		remove_character_modifier = aspiring_poet
 	}
@@ -1003,7 +1003,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 5036"
+		log = "work event id = 5036 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1012,6 +1012,7 @@ character_event = {
 		clr_character_flag = LE_ST
 		random_courtier = {
 			limit = {
+				wh_this_and_root_can_love_trigger = yes
 				OR = {
 					has_character_flag = encourage_courtship
 					has_character_flag = ignore_courtship
@@ -1028,6 +1029,7 @@ character_event = {
 		prestige = 20
 		clr_character_flag = LE_ST
 		random_courtier = {
+			wh_this_and_root_can_love_trigger = yes
 			limit = {
 				OR = {
 					has_character_flag = encourage_courtship
@@ -1049,7 +1051,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 5037"
+		log = "work event id = 5037 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1057,6 +1059,7 @@ character_event = {
 		add_trait = poet
 		clr_character_flag = LE_ST
 		random_courtier = {
+			wh_this_and_root_can_love_trigger = yes
 			limit = {
 				OR = {
 					has_character_flag = encourage_courtship
@@ -1073,6 +1076,7 @@ character_event = {
 		name = "EVTOPTB5037"
 		clr_character_flag = LE_ST
 		random_courtier = {
+			wh_this_and_root_can_love_trigger = yes
 			limit = {
 				OR = {
 					has_character_flag = encourage_courtship
@@ -1114,7 +1118,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = 5040"
+		log = "work event id = 5040 for [Root.GetBestName]"
 		set_character_flag = LE_ST
 	}
 
@@ -1191,7 +1195,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 5041"
+		log = "work event id = 5041 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1229,7 +1233,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 5042"
+		log = "work event id = 5042 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1249,7 +1253,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 5043"
+		log = "work event id = 5043 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1274,7 +1278,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 5044"
+		log = "work event id = 5044 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1326,7 +1330,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = 5045"
+		log = "work event id = 5045 for [Root.GetBestName]"
 		remove_character_modifier = aspiring_hunter
 	}
 
@@ -1383,7 +1387,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = 5046"
+		log = "work event id = 5046 for [Root.GetBestName]"
 		remove_character_modifier = aspiring_falconer
 	}
 
@@ -1428,7 +1432,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = 5050"
+		log = "work event id = 5050 for [Root.GetBestName]"
 		set_character_flag = LE_ST
 	}
 
@@ -1493,7 +1497,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 5051"
+		log = "work event id = 5051 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1545,7 +1549,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 5052"
+		log = "work event id = 5052 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1570,7 +1574,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 5053"
+		log = "work event id = 5053 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1622,7 +1626,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 5054"
+		log = "work event id = 5054 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1649,7 +1653,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 5055"
+		log = "work event id = 5055 for [Root.GetBestName]"
 		remove_character_modifier = aspiring_poet
 	}
 
@@ -1676,7 +1680,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 5056"
+		log = "work event id = 5056 for [Root.GetBestName]"
 		remove_character_modifier = aspiring_falconer
 	}
 
@@ -1714,7 +1718,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = 5060"
+		log = "work event id = 5060 for [Root.GetBestName]"
 		set_character_flag = LE_ST
 	}
 
@@ -1801,7 +1805,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = 5061"
+		log = "work event id = 5061 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1865,7 +1869,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = 5062"
+		log = "work event id = 5062 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1917,7 +1921,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = 5063"
+		log = "work event id = 5063 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1978,7 +1982,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = 5064"
+		log = "work event id = 5064 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2010,7 +2014,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 5065"
+		log = "work event id = 5065 for [Root.GetBestName]"
 		remove_character_modifier = sweet_temptation
 		remove_character_modifier = stay_strong
 	}
@@ -2042,7 +2046,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 5066"
+		log = "work event id = 5066 for [Root.GetBestName]"
 		remove_character_modifier = sweet_temptation
 		remove_character_modifier = stay_strong
 	}
@@ -2090,7 +2094,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = 5070"
+		log = "work event id = 5070 for [Root.GetBestName]"
 		set_character_flag = LE_ST
 	}
 
@@ -2182,7 +2186,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = 5071"
+		log = "work event id = 5071 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2275,7 +2279,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = 5072"
+		log = "work event id = 5072 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2328,7 +2332,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 5073"
+		log = "work event id = 5073 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2354,7 +2358,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 5074"
+		log = "work event id = 5074 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2412,7 +2416,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = 5080"
+		log = "work event id = 5080 for [Root.GetBestName]"
 		set_character_flag = LE_ST
 	}
 
@@ -2552,7 +2556,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = 5081"
+		log = "work event id = 5081 for [Root.GetBestName]"
 		set_character_flag = LE_ST
 	}
 
@@ -2619,7 +2623,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = 5082"
+		log = "work event id = 5082 for [Root.GetBestName]"
 		set_character_flag = LE_ST
 	}
 

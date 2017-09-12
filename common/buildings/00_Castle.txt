@@ -674,9 +674,10 @@ castle = {
 		}
 		potential = {
 			FROM = {
-			    NOR = {
+				NOR = {
 					religion_group = greenskin_gods_group
 					culture_group = lizardman_group
+					culture_group = druchi_group
 					culture_group = sartosan_group
 					culture_group = dwarf_chaos_group
 					culture_group = dwarf_group
@@ -706,9 +707,10 @@ castle = {
 		}
 		potential = {
 			FROM = {
-			    NOR = {
+				NOR = {
 					religion_group = greenskin_gods_group
 					culture_group = lizardman_group
+					culture_group = druchi_group
 					culture_group = sartosan_group
 					culture_group = dwarf_chaos_group
 					culture_group = dwarf_group
@@ -736,9 +738,10 @@ castle = {
 		}
 		potential = {
 			FROM = {
-			    NOR = {
+				NOR = {
 					religion_group = greenskin_gods_group
 					culture_group = lizardman_group
+					culture_group = druchi_group
 					culture_group = sartosan_group
 					culture_group = dwarf_chaos_group
 					culture_group = dwarf_group

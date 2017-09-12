@@ -220,7 +220,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.1"
+		log = "work event id = slizardmen.1 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -318,7 +318,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.2"
+		log = "work event id = slizardmen.2 for [Root.GetBestName]"
 		capital_scope = {
 			province_event = {
 				id = slizardmen.20003 days = 1
@@ -334,7 +334,7 @@ province_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.20003"
+		log = "work event id = slizardmen.20003 for [Root.GetBestName]"
 		holder_scope = {
 			character_event = {
 				id = slizardmen.20002
@@ -350,7 +350,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.20001"
+		log = "work event id = slizardmen.20001 for [Root.GetBestName]"
  		# if the elected party is of a band, destroy the title.
 		any_demesne_title = {
 			limit = {
@@ -392,7 +392,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.20002"
+		log = "work event id = slizardmen.20002 for [Root.GetBestName]"
 		if = {
 			limit = {
 				OR = {
@@ -527,7 +527,7 @@ letter_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.3"
+		log = "work event id = slizardmen.3 for [Root.GetBestName]"
 		FROM = {
 			diplomatic_immunity = yes
 			any_faction_backer = {
@@ -788,7 +788,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.4	"
+		log = "work event id = slizardmen.4	 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -809,7 +809,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.5"
+		log = "work event id = slizardmen.5 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -831,7 +831,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.6			"
+		log = "work event id = slizardmen.6			 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -859,7 +859,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.7			"
+		log = "work event id = slizardmen.7			 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -930,7 +930,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = 122000 "
+		log = "work event id = 122000  for [Root.GetBestName]"
 		hidden_tooltip = {
 			random_list = {
 				75 = {
@@ -979,7 +979,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.9"
+		log = "work event id = slizardmen.9 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -999,7 +999,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.10"
+		log = "work event id = slizardmen.10 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1080,7 +1080,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = 122001 "
+		log = "work event id = 122001  for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1102,7 +1102,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.12"
+		log = "work event id = slizardmen.12 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1189,7 +1189,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.13"
+		log = "work event id = slizardmen.13 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1433,7 +1433,7 @@ character_event = {
 	only_playable = yes
 
 	immediate = {
-		log = "work event id = slizardmen.14"
+		log = "work event id = slizardmen.14 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1456,7 +1456,7 @@ character_event = {
 	only_playable = yes
 
 	immediate = {
-		log = "work event id = slizardmen.15"
+		log = "work event id = slizardmen.15 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1479,7 +1479,7 @@ character_event = {
 	only_playable = yes
 
 	immediate = {
-		log = "work event id = slizardmen.16"
+		log = "work event id = slizardmen.16 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1520,7 +1520,7 @@ character_event = {
 	only_playable = yes
 
 	immediate = {
-		log = "work event id = slizardmen.17"
+		log = "work event id = slizardmen.17 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1844,16 +1844,17 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.18"
+		log = "work event id = slizardmen.18 for [Root.GetBestName]"
 		1 = {
 			change_variable = {
 				which = "doom_counter"
-				value = 2
+				value = 1
 			}
 		}
 		any_playable_ruler = {
 			character_event = {
-				id = slizardmen.20101 days = 1
+				id = slizardmen.20101
+				days = 1
 			}
 		} # check for any living Slann
 		liege = {
@@ -1876,7 +1877,7 @@ character_event = {
 	only_playable = yes
 
 	immediate = {
-		log = "work event id = slizardmen.19"
+		log = "work event id = slizardmen.19 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1911,7 +1912,7 @@ character_event = {
 	only_playable = yes
 
 	immediate = {
-		log = "work event id = slizardmen.20"
+		log = "work event id = slizardmen.20 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1927,6 +1928,7 @@ character_event = {
 	id = slizardmen.20101
 	desc = EVTDESCslizardmen20101
 	picture = GFX_evt_lustria_slann
+	only_playable = yes
 	is_triggered_only = yes
 
 	trigger = {
@@ -1937,10 +1939,9 @@ character_event = {
 			}
 		}
 	}
-	only_playable = yes
 
 	immediate = {
-		log = "work event id = slizardmen.20101"
+		log = "work event id = slizardmen.20101 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2068,7 +2069,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.21"
+		log = "work event id = slizardmen.21 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2102,7 +2103,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.22"
+		log = "work event id = slizardmen.22 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2134,7 +2135,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.22001"
+		log = "work event id = slizardmen.22001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2166,7 +2167,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.22002"
+		log = "work event id = slizardmen.22002 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2198,7 +2199,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.22003"
+		log = "work event id = slizardmen.22003 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2230,7 +2231,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.22004"
+		log = "work event id = slizardmen.22004 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2262,7 +2263,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.22005"
+		log = "work event id = slizardmen.22005 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2294,7 +2295,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.22006"
+		log = "work event id = slizardmen.22006 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2326,7 +2327,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.22007"
+		log = "work event id = slizardmen.22007 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2358,7 +2359,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.22008"
+		log = "work event id = slizardmen.22008 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2390,7 +2391,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.22009"
+		log = "work event id = slizardmen.22009 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2422,7 +2423,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.22010"
+		log = "work event id = slizardmen.22010 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2454,7 +2455,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.22011"
+		log = "work event id = slizardmen.22011 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2486,7 +2487,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.22012"
+		log = "work event id = slizardmen.22012 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2516,7 +2517,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.23"
+		log = "work event id = slizardmen.23 for [Root.GetBestName]"
 		random_list = {
 			40 = {
 				top_liege = {
@@ -2559,7 +2560,7 @@ character_event = {
 	notification = yes
 
 	immediate = {
-		log = "work event id = slizardmen.23001"
+		log = "work event id = slizardmen.23001 for [Root.GetBestName]"
 		decadence = -1
 		if = {
 			limit = {
@@ -2599,7 +2600,7 @@ character_event = {
 	notification = yes
 
 	immediate = {
-		log = "work event id = slizardmen.23002"
+		log = "work event id = slizardmen.23002 for [Root.GetBestName]"
 		decadence = 4
 		if = {
 			limit = {
@@ -2645,7 +2646,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.24"
+		log = "work event id = slizardmen.24 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2781,7 +2782,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.24001"
+		log = "work event id = slizardmen.24001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2922,7 +2923,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.24002"
+		log = "work event id = slizardmen.24002 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -3057,7 +3058,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.24003"
+		log = "work event id = slizardmen.24003 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -3198,7 +3199,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.24004"
+		log = "work event id = slizardmen.24004 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -3345,7 +3346,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.25"
+		log = "work event id = slizardmen.25 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -3481,7 +3482,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.25001"
+		log = "work event id = slizardmen.25001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -3638,7 +3639,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.25002"
+		log = "work event id = slizardmen.25002 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -3797,7 +3798,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.25003"
+		log = "work event id = slizardmen.25003 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -3938,7 +3939,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.25004"
+		log = "work event id = slizardmen.25004 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -4085,7 +4086,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.26"
+		log = "work event id = slizardmen.26 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -4221,7 +4222,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.26001"
+		log = "work event id = slizardmen.26001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -4366,7 +4367,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.26002"
+		log = "work event id = slizardmen.26002 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -4545,7 +4546,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.26003"
+		log = "work event id = slizardmen.26003 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -4694,7 +4695,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.26004"
+		log = "work event id = slizardmen.26004 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -4845,7 +4846,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.27"
+		log = "work event id = slizardmen.27 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -4981,7 +4982,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.27001"
+		log = "work event id = slizardmen.27001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -5154,7 +5155,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.27002"
+		log = "work event id = slizardmen.27002 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -5303,7 +5304,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.27003"
+		log = "work event id = slizardmen.27003 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -5452,7 +5453,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.27004"
+		log = "work event id = slizardmen.27004 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -5620,7 +5621,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.28"
+		log = "work event id = slizardmen.28 for [Root.GetBestName]"
 		add_character_modifier = {
 			name = tablet_cooldown
 			hidden = yes
@@ -5688,7 +5689,7 @@ long_character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.29"
+		log = "work event id = slizardmen.29 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -5771,7 +5772,7 @@ long_character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.29001"
+		log = "work event id = slizardmen.29001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -5813,7 +5814,7 @@ long_character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.29002"
+		log = "work event id = slizardmen.29002 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -5898,7 +5899,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.30"
+		log = "work event id = slizardmen.30 for [Root.GetBestName]"
 		if = {
 			limit = {
 				FROM = {
@@ -6031,7 +6032,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.31"
+		log = "work event id = slizardmen.31 for [Root.GetBestName]"
 		top_liege = {
 			character_event = {
 				id = slizardmen.31005
@@ -6055,7 +6056,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.31005"
+		log = "work event id = slizardmen.31005 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -6095,7 +6096,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.32"
+		log = "work event id = slizardmen.32 for [Root.GetBestName]"
 		top_liege = {
 			character_event = {
 				id = slizardmen.32005
@@ -6119,7 +6120,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.32005"
+		log = "work event id = slizardmen.32005 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -6168,7 +6169,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.33"
+		log = "work event id = slizardmen.33 for [Root.GetBestName]"
 		if = {
 			limit = {
 				ROOT = {
@@ -6204,7 +6205,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.33005"
+		log = "work event id = slizardmen.33005 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -6363,7 +6364,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.34"
+		log = "work event id = slizardmen.34 for [Root.GetBestName]"
 		random_list = {
 			50 = {
 				# Awakes
@@ -6525,7 +6526,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.34001"
+		log = "work event id = slizardmen.34001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -6717,7 +6718,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.35"
+		log = "work event id = slizardmen.35 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -6748,7 +6749,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.35001"
+		log = "work event id = slizardmen.35001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -6946,7 +6947,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.36"
+		log = "work event id = slizardmen.36 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -6977,7 +6978,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.36001"
+		log = "work event id = slizardmen.36001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7175,7 +7176,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.37"
+		log = "work event id = slizardmen.37 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7206,7 +7207,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.37001"
+		log = "work event id = slizardmen.37001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7412,7 +7413,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.38"
+		log = "work event id = slizardmen.38 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7443,7 +7444,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.38001"
+		log = "work event id = slizardmen.38001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7641,7 +7642,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.39"
+		log = "work event id = slizardmen.39 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7672,7 +7673,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.39001"
+		log = "work event id = slizardmen.39001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7874,7 +7875,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.40"
+		log = "work event id = slizardmen.40 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7905,7 +7906,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.40001"
+		log = "work event id = slizardmen.40001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8108,7 +8109,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.41"
+		log = "work event id = slizardmen.41 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8139,7 +8140,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.41001"
+		log = "work event id = slizardmen.41001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8343,7 +8344,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.42"
+		log = "work event id = slizardmen.42 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8374,7 +8375,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.42001"
+		log = "work event id = slizardmen.42001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8406,7 +8407,7 @@ long_character_event = {
 	ai = no
 
 	immediate = {
-		log = "work event id = slizardmen.43"
+		log = "work event id = slizardmen.43 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8446,7 +8447,7 @@ long_character_event = {
 	ai = no
 
 	immediate = {
-		log = "work event id = slizardmen.44"
+		log = "work event id = slizardmen.44 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8504,7 +8505,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.44101"
+		log = "work event id = slizardmen.44101 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8577,7 +8578,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.44001"
+		log = "work event id = slizardmen.44001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8608,7 +8609,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.44002"
+		log = "work event id = slizardmen.44002 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8625,7 +8626,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.44003"
+		log = "work event id = slizardmen.44003 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8656,7 +8657,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.44004"
+		log = "work event id = slizardmen.44004 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8674,7 +8675,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.44005"
+		log = "work event id = slizardmen.44005 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8727,7 +8728,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.44006"
+		log = "work event id = slizardmen.44006 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8745,7 +8746,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.44007"
+		log = "work event id = slizardmen.44007 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8767,7 +8768,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.44008"
+		log = "work event id = slizardmen.44008 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8854,7 +8855,7 @@ letter_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.45"
+		log = "work event id = slizardmen.45 for [Root.GetBestName]"
 		FROM = {
 			diplomatic_immunity = yes
 			any_faction_backer = {
@@ -9111,7 +9112,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.46	"
+		log = "work event id = slizardmen.46	 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -9132,7 +9133,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.47"
+		log = "work event id = slizardmen.47 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -9154,7 +9155,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.48			"
+		log = "work event id = slizardmen.48			 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -9182,7 +9183,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.49			"
+		log = "work event id = slizardmen.49			 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -9387,7 +9388,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.50"
+		log = "work event id = slizardmen.50 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -9423,7 +9424,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.50001"
+		log = "work event id = slizardmen.50001 for [Root.GetBestName]"
 		decadence = 25
 	}
 }
@@ -9436,7 +9437,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.51"
+		log = "work event id = slizardmen.51 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -9470,7 +9471,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.52001"
+		log = "work event id = slizardmen.52001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -9504,7 +9505,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.52002"
+		log = "work event id = slizardmen.52002 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -9541,7 +9542,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.52003"
+		log = "work event id = slizardmen.52003 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -9579,7 +9580,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.52004"
+		log = "work event id = slizardmen.52004 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -9618,7 +9619,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.52005"
+		log = "work event id = slizardmen.52005 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -9652,7 +9653,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.52006"
+		log = "work event id = slizardmen.52006 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -9686,7 +9687,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.52007"
+		log = "work event id = slizardmen.52007 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -9725,7 +9726,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.52008"
+		log = "work event id = slizardmen.52008 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -9763,7 +9764,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.52009"
+		log = "work event id = slizardmen.52009 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -9802,7 +9803,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.52010"
+		log = "work event id = slizardmen.52010 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -9841,7 +9842,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.52011"
+		log = "work event id = slizardmen.52011 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -9875,7 +9876,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.52012"
+		log = "work event id = slizardmen.52012 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -9916,7 +9917,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.52013"
+		log = "work event id = slizardmen.52013 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -9938,7 +9939,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.53"
+		log = "work event id = slizardmen.53 for [Root.GetBestName]"
 		random_list = {
 			15 = {
 				character_event = {
@@ -10060,7 +10061,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.53001"
+		log = "work event id = slizardmen.53001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -10086,7 +10087,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.53002"
+		log = "work event id = slizardmen.53002 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -10112,7 +10113,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.53003"
+		log = "work event id = slizardmen.53003 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -10138,7 +10139,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.53004"
+		log = "work event id = slizardmen.53004 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -10164,7 +10165,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.53005"
+		log = "work event id = slizardmen.53005 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -10187,7 +10188,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.53006"
+		log = "work event id = slizardmen.53006 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -10209,7 +10210,7 @@ long_character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.53007"
+		log = "work event id = slizardmen.53007 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -10231,7 +10232,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.54"
+		log = "work event id = slizardmen.54 for [Root.GetBestName]"
 		save_event_target_as = am_drinking_1
 		if = {
 			limit = {
@@ -10265,7 +10266,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.54001"
+		log = "work event id = slizardmen.54001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -10311,7 +10312,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.54002"
+		log = "work event id = slizardmen.54002 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -10340,7 +10341,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.54003"
+		log = "work event id = slizardmen.54003 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -10583,7 +10584,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.54004"
+		log = "work event id = slizardmen.54004 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -10614,7 +10615,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.54005"
+		log = "work event id = slizardmen.54005 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -10744,7 +10745,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.54006"
+		log = "work event id = slizardmen.54006 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -11038,7 +11039,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.54007"
+		log = "work event id = slizardmen.54007 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -11111,7 +11112,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.55"
+		log = "work event id = slizardmen.55 for [Root.GetBestName]"
 		save_event_target_as = am_eating_1
 		if = {
 			limit = {
@@ -11145,7 +11146,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.55001"
+		log = "work event id = slizardmen.55001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -11192,7 +11193,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.55002"
+		log = "work event id = slizardmen.55002 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -11221,7 +11222,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.55003"
+		log = "work event id = slizardmen.55003 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -11464,7 +11465,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.55004"
+		log = "work event id = slizardmen.55004 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -11495,7 +11496,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.55005"
+		log = "work event id = slizardmen.55005 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -11625,7 +11626,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.55006"
+		log = "work event id = slizardmen.55006 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -11919,7 +11920,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.55007"
+		log = "work event id = slizardmen.55007 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -11992,7 +11993,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.56"
+		log = "work event id = slizardmen.56 for [Root.GetBestName]"
 		save_event_target_as = am_mud_1
 		if = {
 			limit = {
@@ -12026,7 +12027,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.56001"
+		log = "work event id = slizardmen.56001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -12072,7 +12073,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.56002"
+		log = "work event id = slizardmen.56002 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -12100,7 +12101,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.56102"
+		log = "work event id = slizardmen.56102 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -12128,7 +12129,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.56003"
+		log = "work event id = slizardmen.56003 for [Root.GetBestName]"
 		hidden_tooltip = {
 			random_list = {
 				50 = {
@@ -12404,7 +12405,7 @@ long_character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.56004"
+		log = "work event id = slizardmen.56004 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -12465,7 +12466,7 @@ long_character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.56005"
+		log = "work event id = slizardmen.56005 for [Root.GetBestName]"
 		random = {
 			chance = 50
 			add_trait = wounded
@@ -12502,7 +12503,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.57"
+		log = "work event id = slizardmen.57 for [Root.GetBestName]"
 		if = {
 			limit = {
 				any_courtier = {
@@ -12541,7 +12542,7 @@ long_character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.57001"
+		log = "work event id = slizardmen.57001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -12582,7 +12583,7 @@ long_character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.57002"
+		log = "work event id = slizardmen.57002 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -12631,7 +12632,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.57003"
+		log = "work event id = slizardmen.57003 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -12654,7 +12655,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.57004"
+		log = "work event id = slizardmen.57004 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -12723,7 +12724,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.60"
+		log = "work event id = slizardmen.60 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -12829,7 +12830,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.61"
+		log = "work event id = slizardmen.61 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -12853,7 +12854,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.61900"
+		log = "work event id = slizardmen.61900 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -12895,7 +12896,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.61001"
+		log = "work event id = slizardmen.61001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -12981,7 +12982,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.61002"
+		log = "work event id = slizardmen.61002 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -13005,7 +13006,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.61003"
+		log = "work event id = slizardmen.61003 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -13049,7 +13050,7 @@ long_character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.62"
+		log = "work event id = slizardmen.62 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -13137,7 +13138,7 @@ long_character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.62001"
+		log = "work event id = slizardmen.62001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -13161,7 +13162,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.62002"
+		log = "work event id = slizardmen.62002 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -13197,7 +13198,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.62003"
+		log = "work event id = slizardmen.62003 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -13227,7 +13228,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.62004"
+		log = "work event id = slizardmen.62004 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -13257,7 +13258,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.62005"
+		log = "work event id = slizardmen.62005 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -13285,7 +13286,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.63"
+		log = "work event id = slizardmen.63 for [Root.GetBestName]"
 		save_event_target_as = am_brawler_2
 		FROM = {
 			save_event_target_as = am_brawler_1
@@ -14550,7 +14551,7 @@ long_character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.63001"
+		log = "work event id = slizardmen.63001 for [Root.GetBestName]"
 		random = {
 			chance = 5
 			add_trait = wounded
@@ -14692,7 +14693,7 @@ long_character_event = {
 	}
 
 	immediate = {
-		log = "work event id = slizardmen.63002"
+		log = "work event id = slizardmen.63002 for [Root.GetBestName]"
 		random = {
 			chance = 50
 			add_trait = wounded
@@ -14806,7 +14807,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.63003"
+		log = "work event id = slizardmen.63003 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -14862,7 +14863,7 @@ long_character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.64"
+		log = "work event id = slizardmen.64 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -14955,7 +14956,7 @@ long_character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.64001"
+		log = "work event id = slizardmen.64001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -15012,7 +15013,7 @@ long_character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.64002"
+		log = "work event id = slizardmen.64002 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -15035,7 +15036,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.65001"
+		log = "work event id = slizardmen.65001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -15072,7 +15073,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.65002"
+		log = "work event id = slizardmen.65002 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -15158,7 +15159,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.65003"
+		log = "work event id = slizardmen.65003 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -15195,7 +15196,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.65004"
+		log = "work event id = slizardmen.65004 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -15236,7 +15237,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.70"
+		log = "work event id = slizardmen.70 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -15288,7 +15289,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.71"
+		log = "work event id = slizardmen.71 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -15421,7 +15422,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.71001"
+		log = "work event id = slizardmen.71001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -15487,7 +15488,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.71002"
+		log = "work event id = slizardmen.71002 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -15563,7 +15564,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.71003"
+		log = "work event id = slizardmen.71003 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -15592,7 +15593,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.71004"
+		log = "work event id = slizardmen.71004 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -15632,7 +15633,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.71005"
+		log = "work event id = slizardmen.71005 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -15709,7 +15710,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.72"
+		log = "work event id = slizardmen.72 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -15790,7 +15791,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = slizardmen.72001"
+		log = "work event id = slizardmen.72001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -15858,7 +15859,7 @@ character_event = {
 	picture = GFX_evt_lustria_dinosaur
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = slizardmen.72002"
+		log = "work event id = slizardmen.72002 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -15935,7 +15936,7 @@ character_event = {
 	picture = GFX_evt_lustria_dinosaur
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = slizardmen.72003"
+		log = "work event id = slizardmen.72003 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -15983,7 +15984,7 @@ character_event = {
 	picture = GFX_evt_lizardmen_saurus
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = slizardmen.73"
+		log = "work event id = slizardmen.73 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -16118,7 +16119,7 @@ character_event = {
 	picture = GFX_evt_lizardmen_saurus
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = slizardmen.73001"
+		log = "work event id = slizardmen.73001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -16197,7 +16198,7 @@ character_event = {
 	picture = GFX_evt_lizardmen_saurus
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = slizardmen.73002"
+		log = "work event id = slizardmen.73002 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -16286,7 +16287,7 @@ character_event = {
 	picture = GFX_evt_lizardmen_saurus
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = slizardmen.73003"
+		log = "work event id = slizardmen.73003 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -16314,7 +16315,7 @@ character_event = {
 	picture = GFX_evt_lizardmen_saurus
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = slizardmen.73004"
+		log = "work event id = slizardmen.73004 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -16353,7 +16354,7 @@ character_event = {
 	picture = GFX_evt_lizardmen_saurus
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = slizardmen.73005"
+		log = "work event id = slizardmen.73005 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -16412,7 +16413,7 @@ character_event = {
 	picture = GFX_evt_questing_lustria
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = slizardmen.75"
+		log = "work event id = slizardmen.75 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -16468,7 +16469,7 @@ character_event = {
 	picture = GFX_evt_lustria_jungle
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = slizardmen.74"
+		log = "work event id = slizardmen.74 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -16523,7 +16524,7 @@ character_event = {
 	picture = GFX_evt_lustria_jungle
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = slizardmen.74001"
+		log = "work event id = slizardmen.74001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -16546,7 +16547,7 @@ character_event = {
 	picture = GFX_evt_lustria_jungle
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = slizardmen.74002"
+		log = "work event id = slizardmen.74002 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -16570,7 +16571,7 @@ character_event = {
 	picture = GFX_evt_lustria_jungle
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = slizardmen.74003"
+		log = "work event id = slizardmen.74003 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -16598,7 +16599,7 @@ character_event = {
 	picture = GFX_evt_lustria_jungle
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = slizardmen.74004"
+		log = "work event id = slizardmen.74004 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -16643,7 +16644,7 @@ long_character_event = {
 	picture = GFX_evt_lizardmen_coatl
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = slizardmen.76"
+		log = "work event id = slizardmen.76 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -16734,7 +16735,7 @@ long_character_event = {
 	picture = GFX_evt_lizardmen_coatl
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = slizardmen.77"
+		log = "work event id = slizardmen.77 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -16798,7 +16799,7 @@ character_event = {
 	picture = GFX_evt_questing_lustria
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = slizardmen.77001"
+		log = "work event id = slizardmen.77001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -16818,7 +16819,7 @@ long_character_event = {
 	picture = GFX_evt_lizardmen_coatl
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = slizardmen.78"
+		log = "work event id = slizardmen.78 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -16878,7 +16879,7 @@ long_character_event = {
 	picture = GFX_evt_lizardmen_coatl
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = slizardmen.78001"
+		log = "work event id = slizardmen.78001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -16956,7 +16957,7 @@ character_event = {
 	picture = GFX_evt_lizardmen_coatl
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = slizardmen.78002"
+		log = "work event id = slizardmen.78002 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -16984,7 +16985,7 @@ character_event = {
 	picture = GFX_evt_lizardmen_coatl
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = slizardmen.78003"
+		log = "work event id = slizardmen.78003 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -17008,7 +17009,7 @@ long_character_event = {
 	picture = GFX_evt_lizardmen_coatl
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = slizardmen.79"
+		log = "work event id = slizardmen.79 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -17138,6 +17139,10 @@ long_character_event = {
 						has_artifact = abyssal_terror_mount
 					}
 					modifier = {
+						factor = 2
+						has_artifact = war_bear_mount
+					}
+					modifier = {
 						factor = 1.75
 						has_artifact = pegasus_mount
 					}
@@ -17197,7 +17202,7 @@ character_event = {
 	picture = GFX_evt_lizardmen_coatl
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = slizardmen.79001"
+		log = "work event id = slizardmen.79001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -17225,7 +17230,7 @@ character_event = {
 	picture = GFX_evt_lizardmen_coatl
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = slizardmen.79002"
+		log = "work event id = slizardmen.79002 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -17261,7 +17266,7 @@ long_character_event = {
 	picture = GFX_evt_amazon_pool
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = slizardmen.80"
+		log = "work event id = slizardmen.80 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -17295,7 +17300,7 @@ character_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = slizardmen.81"
+		log = "work event id = slizardmen.81 for [Root.GetBestName]"
 		dynasty = father_bastard
 	}
 }
@@ -17342,7 +17347,7 @@ character_event = {
 	}
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = slizardmen.82"
+		log = "work event id = slizardmen.82 for [Root.GetBestName]"
 		random_courtier = {
 			limit = {
 				trait = creature_amazon
@@ -17374,7 +17379,7 @@ character_event = {
 	picture = GFX_evt_amazon_huntress
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = slizardmen.82001"
+		log = "work event id = slizardmen.82001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -17404,7 +17409,7 @@ character_event = {
 	picture = GFX_evt_amazon_huntress
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = slizardmen.82002"
+		log = "work event id = slizardmen.82002 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -17754,7 +17759,7 @@ character_event = {
 	picture = GFX_evt_slaanesh_tempt
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = slizardmen.83"
+		log = "work event id = slizardmen.83 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -17810,7 +17815,7 @@ character_event = {
 	picture = GFX_evt_slaanesh_tempt
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = slizardmen.84"
+		log = "work event id = slizardmen.84 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -17866,7 +17871,7 @@ character_event = {
 	picture = GFX_evt_slaanesh_tempt
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = slizardmen.85"
+		log = "work event id = slizardmen.85 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -17922,7 +17927,7 @@ character_event = {
 	picture = GFX_evt_slaanesh_tempt
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = slizardmen.86"
+		log = "work event id = slizardmen.86 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -17963,7 +17968,7 @@ character_event = {
 	picture = GFX_evt_amazon_huntress
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = slizardmen.87"
+		log = "work event id = slizardmen.87 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -17990,7 +17995,7 @@ character_event = {
 	picture = GFX_evt_amazon_huntress
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = slizardmen.87001"
+		log = "work event id = slizardmen.87001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -18012,7 +18017,7 @@ character_event = {
 	picture = GFX_evt_amazon_huntress
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = slizardmen.89"
+		log = "work event id = slizardmen.89 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -18056,7 +18061,7 @@ character_event = {
 	picture = GFX_evt_amazon_huntress
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = slizardmen.89001"
+		log = "work event id = slizardmen.89001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -18094,7 +18099,7 @@ character_event = {
 	picture = GFX_evt_amazon_huntress
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = slizardmen.88"
+		log = "work event id = slizardmen.88 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -19384,7 +19389,7 @@ long_character_event = {
 	}
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = slizardmen.88001"
+		log = "work event id = slizardmen.88001 for [Root.GetBestName]"
 		random = {
 			chance = 30
 			add_trait = wounded
@@ -19540,7 +19545,7 @@ long_character_event = {
 		trait = creature_amazon
 	}
 	immediate = {
-		log = "work event id = slizardmen.88002"
+		log = "work event id = slizardmen.88002 for [Root.GetBestName]"
 		random = {
 			chance = 50
 			add_trait = wounded
@@ -19618,7 +19623,7 @@ character_event = {
 	picture = GFX_evt_amazon_huntress
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = slizardmen.88003"
+		log = "work event id = slizardmen.88003 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -19634,7 +19639,7 @@ character_event = {
 	picture = GFX_evt_amazon_huntress
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = slizardmen.88004"
+		log = "work event id = slizardmen.88004 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -19646,7 +19651,7 @@ character_event = {
 # 101-200: Events related to Slann being awake or sleeping
 # lizardman.101: Get negative traits for not being contemplating enough, or remove them for being in deep slumber
 character_event = {
-	id = lizardman.101
+	id = slizardmen.101
 	desc = lizardman101desc
 	picture = "GFX_evt_lustria_slann"
 	hide_window = yes
@@ -19659,7 +19664,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = lizardman.101"
+		log = "work event id = slizardmen.101 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -19709,7 +19714,7 @@ character_event = {
 					}
 				}
 				character_event = {
-					id = lizardman.102
+					id = slizardmen.102
 				}
 			}
 			50 = {
@@ -19760,7 +19765,7 @@ character_event = {
 					}
 				}
 				character_event = {
-					id = lizardman.103
+					id = slizardmen.103
 				}
 			}
 		}
@@ -19769,7 +19774,7 @@ character_event = {
 
 # lizardman.102: Bad event happens because of light sleep
 character_event = {
-	id = lizardman.102
+	id = slizardmen.102
 	desc = lizardman102desc
 	picture = "GFX_evt_lustria_slann"
 	is_triggered_only = yes
@@ -19782,7 +19787,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = lizardman.102"
+		log = "work event id = slizardmen.102 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -19911,7 +19916,7 @@ character_event = {
 
 # lizardman.103: Good event happens because of deep sleep
 character_event = {
-	id = lizardman.103
+	id = slizardmen.103
 	desc = lizardman103desc
 	picture = "GFX_evt_lustria_slann"
 	is_triggered_only = yes
@@ -19924,7 +19929,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = lizardman.103"
+		log = "work event id = slizardmen.103 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -20031,7 +20036,7 @@ character_event = {
 
 # 104: Remove recent_sleep_change flag
 character_event = {
-	id = lizardman.104
+	id = slizardmen.104
 	desc = lizardman104desc
 	picture = "GFX_evt_lustria_slann"
 	only_playable = yes
@@ -20045,7 +20050,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = lizardman.104"
+		log = "work event id = slizardmen.104 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -20057,7 +20062,7 @@ character_event = {
 # 201-300: Events dealing with the Lustrian jungle
 # 201: The Lustrian jungle is growing
 province_event = {
-	id = lizardman.201
+	id = slizardmen.201
 	desc = lizardman201desc
 	picture = "GFX_evt_lustria_jungle"
 
@@ -20072,8 +20077,8 @@ province_event = {
 				culture_group = halfling_lustrian
 			}
 		}
+		# Jungle grows slower next to rivers and coast (inland should be wilder and less useful)
 		modifier = {
-			# Jungle grows slower next to rivers and coast (inland should be wilder and less useful)
 			factor = 2
 			OR = {
 				borders_major_river = yes
@@ -20197,6 +20202,7 @@ province_event = {
 
 	trigger = {
 		has_province_modifier = lustria_jungle
+		terrain = jungle
 		OR = {
 			NOT = {
 				has_province_modifier = lustria_oppressive_jungle
@@ -20205,11 +20211,10 @@ province_event = {
 				ai = yes # AI manages its jungle with this event
 			}
 		}
-		terrain = jungle
 	}
 
 	immediate = {
-		log = "work event id = lizardman.201"
+		log = "work event id = slizardmen.201 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -20455,7 +20460,7 @@ province_event = {
 
 # 202: Get sick due to the jungle
 character_event = {
-	id = lizardman.202
+	id = slizardmen.202
 	desc = lizardman202desc
 	picture = "GFX_evt_lustria_jungle"
 	is_triggered_only = yes
@@ -20572,7 +20577,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = lizardman.202"
+		log = "work event id = slizardmen.202 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -20625,7 +20630,7 @@ character_event = {
 							}
 							liege = {
 								character_event = {
-									id = lizardman.203
+									id = slizardmen.203
 								}
 							}
 						}
@@ -20698,7 +20703,7 @@ character_event = {
 						}
 						liege = {
 							character_event = {
-								id = lizardman.204
+								id = slizardmen.204
 							}
 						}
 					}
@@ -20716,7 +20721,7 @@ character_event = {
 
 # 203: liege notified of courtier getting sick due to jungle
 character_event = {
-	id = lizardman.203
+	id = slizardmen.203
 	desc = lizardman203desc
 	picture = "GFX_evt_lustria_jungle"
 	notification = yes
@@ -20727,7 +20732,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = lizardman.203"
+		log = "work event id = slizardmen.203 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -20737,7 +20742,7 @@ character_event = {
 
 # 204: liege notified of courtier dying due to sickness from jungle
 character_event = {
-	id = lizardman.204
+	id = slizardmen.204
 	desc = lizardman204desc
 	picture = "GFX_evt_lustria_jungle"
 	notification = yes
@@ -20748,7 +20753,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = lizardman.204"
+		log = "work event id = slizardmen.204 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -20758,7 +20763,7 @@ character_event = {
 
 # 205: Attacked by jungle beast
 character_event = {
-	id = lizardman.205
+	id = slizardmen.205
 	desc = lizardman205desc
 	picture = "GFX_evt_lustria_dinosaur"
 	is_triggered_only = yes
@@ -20796,7 +20801,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = lizardman.205"
+		log = "work event id = slizardmen.205 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -20848,7 +20853,7 @@ character_event = {
 			}
 			add_trait = brave
 			character_event = {
-				id = lizardman.207 days = 1
+				id = slizardmen.207 days = 1
 			}
 		}
 	}
@@ -20856,7 +20861,7 @@ character_event = {
 
 # 207: Creature challenges us to a duel
 character_event = {
-	id = lizardman.207
+	id = slizardmen.207
 	desc = lizardman207desc
 	picture = "GFX_evt_lustria_dinosaur"
 	is_triggered_only = yes
@@ -20868,7 +20873,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = lizardman.207"
+		log = "work event id = slizardmen.207 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -20883,7 +20888,7 @@ character_event = {
 		}
 		ROOT = {
 			character_event = {
-				id = lizardman.208 days = 30
+				id = slizardmen.208 days = 30
 			} # Kill off the creature to avoid shenanigans.
 		}
 	}
@@ -20891,13 +20896,13 @@ character_event = {
 
 # 208: Kill creature, no matter the outcome of the duel
 character_event = {
-	id = lizardman.208
+	id = slizardmen.208
 	desc = lizardman208desc
 	picture = "GFX_evt_lustria_dinosaur"
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = lizardman.208"
+		log = "work event id = slizardmen.208 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -20920,7 +20925,7 @@ character_event = {
 # 20X: Village disappears in jungle
 # 250: Manually add the modifier on startup because the game is stupid
 province_event = {
-	id = lizardman.250
+	id = slizardmen.250
 	desc = lizardman250desc
 	picture = "GFX_evt_lustria_jungle"
 	hide_window = yes
@@ -20928,55 +20933,28 @@ province_event = {
 
 	trigger = {
 		region = world_new_world_lustria
+		not = {
+			has_province_modifier = lustria_jungle
+		}
 	}
 
 	immediate = {
-		log = "work event id = lizardman.250"
-	}
-
-	option = {
-		name = OK
+		log = "work event id = slizardmen.250 for [Root.GetBestName]"
 		add_province_modifier = {
-			name = lustria_jungle duration = -1
+			name = lustria_jungle
+			duration = -1
 		}
 		if = {
 			limit = {
-				holder_scope = {
-					any_demesne_province = {
-						region = world_new_world_lustria
-						NOT = {
-							has_province_modifier = lustria_jungle
-						}
-					}
+				nor = {
+					has_province_modifier = lustria_light_jungle
+					has_province_modifier = lustria_medium_jungle
+					has_province_modifier = lustria_dense_jungle
+					has_province_modifier = lustria_oppressive_jungle				
 				}
 			}
-			holder_scope = {
-				random_demesne_province = {
-					limit = {
-						region = world_new_world_lustria
-						NOT = {
-							has_province_modifier = lustria_jungle
-						}
-					}
-					province_event = {
-						id = lizardman.250
-					}
-				}
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					OR = {
-						has_province_modifier = lustria_light_jungle
-						has_province_modifier = lustria_medium_jungle
-						has_province_modifier = lustria_dense_jungle
-						has_province_modifier = lustria_oppressive_jungle
-					}
-				}
-			}
+			# Make it so the initial jungle level is random
 			random_list = {
-				# Make it so the initial jungle level is random
 				25 = {
 					modifier = {
 						factor = 3 # Kingdom level tier is more likely to have light jungle
@@ -21046,62 +21024,36 @@ province_event = {
 
 # 251: Trigger 250 for held provinces
 character_event = {
-	id = lizardman.251
-	desc = lizardman251desc
-	picture = "GFX_evt_lustria_jungle"
+	id = slizardmen.251
 	hide_window = yes
-	is_triggered_only = yes
 	only_playable = yes
-
-	trigger = {
-		is_ruler = yes
-	}
+	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = lizardman.251"
-	}
-
-	option = {
-		name = OK
-		ROOT = {
-			random_demesne_province = {
-				limit = {
-					NOT = {
-						has_province_modifier = lustria_jungle
-					}
-				}
-				province_event = {
-					id = lizardman.250
+		log = "work event id = slizardmen.251 for [Root.GetBestName]"
+		any_demesne_province = {
+			limit = {
+				region = world_new_world_lustria
+				NOT = {
+					has_province_modifier = lustria_jungle
 				}
 			}
-		}
+			province_event = {
+				id = slizardmen.250
+			}
+		}		
 	}
 }
 
-# 260: Clear recent cutback flag - OBSOLETE
-# character_event = {
-
-# 	id = lizardman.260
-# 	picture = "GFX_evt_lustria_jungle"
-
-# 	hide_window = yes
-# 	is_triggered_only = yes
-
-# 	option = {
-# 		name = OK
-
-# 	}
-# }
-
 # 261: Choose whom you want to cut back your jungle
 character_event = {
-	id = lizardman.261
+	id = slizardmen.261
 	desc = lizardman261desc
 	picture = "GFX_evt_lustria_jungle"
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = lizardman.261"
+		log = "work event id = slizardmen.261 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -21141,7 +21093,7 @@ character_event = {
 			prestige = -20
 		}
 		character_event = {
-			id = lizardman.267 days = 20 random = 30
+			id = slizardmen.267 days = 20 random = 30
 		} # Result
 	}
 
@@ -21175,7 +21127,7 @@ character_event = {
 		ROOT = {
 			job_treasurer = {
 				letter_event = {
-					id = lizardman.262
+					id = slizardmen.262
 				}
 			}
 		}
@@ -21202,33 +21154,33 @@ character_event = {
 
 # Steward - Charged to cut back the Jungle
 letter_event = {
-	id = lizardman.262
+	id = slizardmen.262
 	desc = lizardman262desc
 	is_triggered_only = yes
 	hide_window = yes
 
 	immediate = {
-		log = "work event id = lizardman.262"
+		log = "work event id = slizardmen.262 for [Root.GetBestName]"
 	}
 
 	option = {
 		name = OK
 		character_event = {
-			id = lizardman.266 days = 20 random = 30
+			id = slizardmen.266 days = 20 random = 30
 		} # Result
 	}
 }
 
 # 266: Event to resolve cutting back for the steward
 character_event = {
-	id = lizardman.266
+	id = slizardmen.266
 	desc = lizardman266desc
 	picture = "GFX_evt_lustria_jungle"
 	is_triggered_only = yes
 	hide_window = yes
 
 	immediate = {
-		log = "work event id = lizardman.266"
+		log = "work event id = slizardmen.266 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -21365,24 +21317,24 @@ character_event = {
 					}
 					FROMFROM = {
 						letter_event = {
-							id = lizardman.268
+							id = slizardmen.268
 						}
 					}
 					ROOT = {
 						character_event = {
-							id = lizardman.270
+							id = slizardmen.270
 						}
 					}
 				}
 				50 = {
 					FROMFROM = {
 						letter_event = {
-							id = lizardman.269
+							id = slizardmen.269
 						}
 					}
 					ROOT = {
 						character_event = {
-							id = lizardman.271
+							id = slizardmen.271
 						}
 					}
 				}
@@ -21553,7 +21505,7 @@ character_event = {
 							}
 							liege = {
 								character_event = {
-									id = lizardman.203
+									id = slizardmen.203
 								}
 							}
 						}
@@ -21566,13 +21518,13 @@ character_event = {
 
 # 267: Event to resolve cutting back for the liege doing it himself
 character_event = {
-	id = lizardman.267
+	id = slizardmen.267
 	desc = lizardman266desc
 	picture = "GFX_evt_lustria_jungle"
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = lizardman.267"
+		log = "work event id = slizardmen.267 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -21715,14 +21667,14 @@ character_event = {
 					}
 					ROOT = {
 						character_event = {
-							id = lizardman.270
+							id = slizardmen.270
 						}
 					}
 				}
 				50 = {
 					ROOT = {
 						character_event = {
-							id = lizardman.271
+							id = slizardmen.271
 						}
 					}
 				}
@@ -21813,7 +21765,7 @@ character_event = {
 						}
 					}
 					character_event = {
-						id = lizardman.273
+						id = slizardmen.273
 					}	# Illness due to cutting back the jungle
 				}
 			}
@@ -21823,12 +21775,12 @@ character_event = {
 
 # 268: Liege is notified of success
 letter_event = {
-	id = lizardman.268
+	id = slizardmen.268
 	desc = lizardman268desc
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = lizardman.268"
+		log = "work event id = slizardmen.268 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -21838,12 +21790,12 @@ letter_event = {
 
 # 269: Liege is notified of failure
 letter_event = {
-	id = lizardman.269
+	id = slizardmen.269
 	desc = lizardman269desc
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = lizardman.269"
+		log = "work event id = slizardmen.269 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -21853,13 +21805,13 @@ letter_event = {
 
 # 270: Character learns of his own success
 character_event = {
-	id = lizardman.270
+	id = slizardmen.270
 	desc = lizardman270desc
 	picture = "GFX_evt_lustria_jungle"
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = lizardman.270"
+		log = "work event id = slizardmen.270 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -21869,13 +21821,13 @@ character_event = {
 
 # 271: Character learns of his own failure
 character_event = {
-	id = lizardman.271
+	id = slizardmen.271
 	desc = lizardman271desc
 	picture = "GFX_evt_lustria_jungle"
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = lizardman.271"
+		log = "work event id = slizardmen.271 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -21886,7 +21838,7 @@ character_event = {
 # 272: Clear recent_cutback flag
 # province_event = {
 
-# 	id = lizardman.272
+# 	id = slizardmen.272
 # 	desc = lizardman271desc
 
 # 	picture = "GFX_evt_lustria_jungle"
@@ -21906,13 +21858,13 @@ character_event = {
 
 # 273: Tell character he has become sick due to cutting back the jungle
 character_event = {
-	id = lizardman.273
+	id = slizardmen.273
 	desc = lizardman273desc
 	picture = "GFX_evt_lustria_jungle"
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = lizardman.273"
+		log = "work event id = slizardmen.273 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -21964,7 +21916,7 @@ character_event = {
 			}
 			liege = {
 				character_event = {
-					id = lizardman.203
+					id = slizardmen.203
 				}
 			}
 		}
@@ -21973,7 +21925,7 @@ character_event = {
 
 # 280: Spoils of the Lustrian jungle (lizardman only)
 character_event = {
-	id = lizardman.280
+	id = slizardmen.280
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -22010,7 +21962,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = lizardman.280"
+		log = "work event id = slizardmen.280 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -22019,19 +21971,19 @@ character_event = {
 			25 = {
 				# Plaques found
 				character_event = {
-					id = lizardman.281
+					id = slizardmen.281
 				}
 			}
 			25 = {
 				# Wild beasts tamed
 				character_event = {
-					id = lizardman.282
+					id = slizardmen.282
 				}
 			}
 			25 = {
 				# Valuable resources found
 				character_event = {
-					id = lizardman.283
+					id = slizardmen.283
 				}
 			}
 		}
@@ -22040,13 +21992,13 @@ character_event = {
 
 # Holy plaques found
 character_event = {
-	id = lizardman.281
+	id = slizardmen.281
 	desc = lizardman281desc
 	picture = "GFX_evt_lustria_jungle"
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = lizardman.281"
+		log = "work event id = slizardmen.281 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -22057,13 +22009,13 @@ character_event = {
 
 # Wild beasts tamed
 character_event = {
-	id = lizardman.282
+	id = slizardmen.282
 	desc = lizardman282desc
 	picture = "GFX_evt_lustria_jungle"
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = lizardman.282"
+		log = "work event id = slizardmen.282 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -22089,13 +22041,13 @@ character_event = {
 
 # Valuable resources found
 character_event = {
-	id = lizardman.283
+	id = slizardmen.283
 	desc = lizardman283desc
 	picture = "GFX_evt_lustria_jungle"
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = lizardman.283"
+		log = "work event id = slizardmen.283 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -22109,7 +22061,7 @@ character_event = {
 
 # Triggered from "on_rebel_revolt"
 province_event = {
-	id = lizardman.300
+	id = slizardmen.300
 	desc = lizardman300desc
 	picture = "GFX_evt_lustria_dinosaur"
 	border = GFX_event_normal_frame_war
@@ -22161,7 +22113,7 @@ province_event = {
 	}
 
 	immediate = {
-		log = "work event id = lizardman.300"
+		log = "work event id = slizardmen.300 for [Root.GetBestName]"
 		create_random_soldier = {
 			random_traits = no
 			dynasty = none
@@ -22596,7 +22548,7 @@ province_event = {
 			any_liege = {
 				# Inform the lieges
 				character_event = {
-					id = lizardman.301
+					id = slizardmen.301
 				}
 			}
 		}
@@ -22624,14 +22576,14 @@ province_event = {
 }
 
 character_event = {
-	id = lizardman.301
+	id = slizardmen.301
 	desc = lizardman301desc
 	picture = "GFX_evt_lustria_dinosaur"
 	border = GFX_event_normal_frame_war
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = lizardman.301"
+		log = "work event id = slizardmen.301 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -22641,7 +22593,7 @@ character_event = {
 
 # Religious Rebels seize a holding. Fired from 'on_siege_over_winner'. Owner of the winning unit is ROOT. The taken Holding title is in FROM.
 character_event = {
-	id = lizardman.302 # TOG.1065
+	id = slizardmen.302 # TOG.1065
 	picture = "GFX_evt_lustria_dinosaur"
 	hide_window = yes
 	is_triggered_only = yes
@@ -22653,7 +22605,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = lizardman.302 "
+		log = "work event id = slizardmen.302  for [Root.GetBestName]"
 	}
 
 	option = {
@@ -22719,7 +22671,7 @@ character_event = {
 				}
 				holder_scope = {
 					character_event = {
-						id = lizardman.303
+						id = slizardmen.303
 					}
 				}
 			}
@@ -22728,14 +22680,14 @@ character_event = {
 }
 
 character_event = {
-	id = lizardman.303# TOG.1071
+	id = slizardmen.303# TOG.1071
 	desc = lizardman303desc
 	picture = "GFX_evt_lustria_dinosaur"
 	border = GFX_event_normal_frame_war
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = lizardman.303"
+		log = "work event id = slizardmen.303 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -22746,7 +22698,7 @@ character_event = {
 # Rebels kill a local character. Fired from 'on_siege_over_loc_chars'.
 # Siege winner unit owner in the 'new_character' scope, lost holding title in FROM, local character in ROOT.
 character_event = {
-	id = lizardman.304 # TOG.1190
+	id = slizardmen.304 # TOG.1190
 	desc = lizardman304desc
 	border = GFX_event_normal_frame_war
 	picture = "GFX_evt_lustria_dinosaur"
@@ -22772,11 +22724,11 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = lizardman.304 "
+		log = "work event id = slizardmen.304  for [Root.GetBestName]"
 		any_liege = {
 			# Inform the victim's lieges
 			character_event = {
-				id = lizardman.305
+				id = slizardmen.305
 			}
 		}
 		new_character = {
@@ -22803,7 +22755,7 @@ character_event = {
 
 # Lieges informed
 character_event = {
-	id = lizardman.305 # TOG.1191
+	id = slizardmen.305 # TOG.1191
 	picture = "GFX_evt_lustria_dinosaur"
 	desc = lizardman305desc
 	border = GFX_event_normal_frame_war
@@ -22812,7 +22764,7 @@ character_event = {
 	ai = no
 
 	immediate = {
-		log = "work event id = lizardman.305 "
+		log = "work event id = slizardmen.305  for [Root.GetBestName]"
 	}
 
 	option = {
@@ -22823,7 +22775,7 @@ character_event = {
 # 400-499: Events dealing with Chameleon Skinks and other holy war stuff
 # 400: Return of the Chameleon Skinks
 narrative_event = {
-	id = lizardman.400
+	id = slizardmen.400
 	title = "lizardman400title"
 	desc = "lizardman400desc"
 	picture = "GFX_evt_crusaders"
@@ -22852,7 +22804,7 @@ narrative_event = {
 	}
 
 	immediate = {
-		log = "work event id = lizardman.400"
+		log = "work event id = slizardmen.400 for [Root.GetBestName]"
 		activate_title = {
 			title = d_chameleon_skinks status = yes
 		}

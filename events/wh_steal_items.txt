@@ -9,7 +9,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = stealing.0"
+		log = "work event id = stealing.0 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -35,7 +35,6 @@ character_event = {
 
 	option = {
 		name = NO
-
 	}
 }
 
@@ -48,244 +47,22 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = stealing.1"
+		log = "work event id = stealing.1 for [Root.GetBestName]"
 	}
 
 	option = {
 		name = "BASTARDS"
-		if = {
+		any_artifact = {
 			limit = {
-				has_artifact = ghal_maraz
+				nor = {
+					has_artifact_flag = mount
+					has_artifact_flag = carstein_ring
+				}
 			}
-			FROM = {
-				add_artifact = ghal_maraz
+			transfer_artifact = {
+				from = root
+				to = from
 			}
-			destroy_artifact = ghal_maraz
-		}
-		if = {
-			limit = {
-				has_artifact = beast_slayer
-			}
-			FROM = {
-				add_artifact = beast_slayer
-			}
-			destroy_artifact = beast_slayer
-		}
-		if = {
-			limit = {
-				has_artifact = grudge_settler
-			}
-			FROM = {
-				add_artifact = grudge_settler
-			}
-			destroy_artifact = grudge_settler
-		}
-		if = {
-			limit = {
-				has_artifact = blood_bringer
-			}
-			FROM = {
-				add_artifact = blood_bringer
-			}
-			destroy_artifact = blood_bringer
-		}
-		if = {
-			limit = {
-				has_artifact = stone_breaker
-			}
-			FROM = {
-				add_artifact = stone_breaker
-			}
-			destroy_artifact = stone_breaker
-		}
-		if = {
-			limit = {
-				has_artifact = orc_hewer
-			}
-			FROM = {
-				add_artifact = orc_hewer
-			}
-			destroy_artifact = orc_hewer
-		}
-		if = {
-			limit = {
-				has_artifact = dragon_tooth
-			}
-			FROM = {
-				add_artifact = dragon_tooth
-			}
-			destroy_artifact = dragon_tooth
-		}
-		if = {
-			limit = {
-				has_artifact = troll_cleaver
-			}
-			FROM = {
-				add_artifact = troll_cleaver
-			}
-			destroy_artifact = troll_cleaver
-		}
-		if = {
-			limit = {
-				has_artifact = brain_wounder
-			}
-			FROM = {
-				add_artifact = brain_wounder
-			}
-			destroy_artifact = brain_wounder
-		}
-		if = {
-			limit = {
-				has_artifact = crow_feeder
-			}
-			FROM = {
-				add_artifact = crow_feeder
-			}
-			destroy_artifact = crow_feeder
-		}
-		if = {
-			limit = {
-				has_artifact = legbiter
-			}
-			FROM = {
-				add_artifact = legbiter
-			}
-			destroy_artifact = legbiter
-		}
-		if = {
-			limit = {
-				has_artifact = goblin_bane
-			}
-			FROM = {
-				add_artifact = goblin_bane
-			}
-			destroy_artifact = goblin_bane
-		}
-		if = {
-			limit = {
-				has_artifact = mothers_ruin
-			}
-			FROM = {
-				add_artifact = mothers_ruin
-			}
-			destroy_artifact = mothers_ruin
-		}
-		if = {
-			limit = {
-				has_artifact = sword_1
-			}
-			FROM = {
-				add_artifact = sword_1
-			}
-			destroy_artifact = sword_1
-		}
-		if = {
-			limit = {
-				has_artifact = sword_2
-			}
-			FROM = {
-				add_artifact = sword_2
-			}
-			destroy_artifact = sword_2
-		}
-		if = {
-			limit = {
-				has_artifact = sword_3
-			}
-			FROM = {
-				add_artifact = sword_3
-			}
-			destroy_artifact = sword_3
-		}
-		if = {
-			limit = {
-				has_artifact = sword_4
-			}
-			FROM = {
-				add_artifact = sword_4
-			}
-			destroy_artifact = sword_4
-		}
-		if = {
-			limit = {
-				has_artifact = sword_5
-			}
-			FROM = {
-				add_artifact = sword_5
-			}
-			destroy_artifact = sword_5
-		}
-		if = {
-			limit = {
-				has_artifact = amulet_of_protection_1
-			}
-			FROM = {
-				add_artifact = amulet_of_protection_1
-			}
-			destroy_artifact = amulet_of_protection_1
-		}
-		if = {
-			limit = {
-				has_artifact = amulet_of_protection_3
-			}
-			FROM = {
-				add_artifact = amulet_of_protection_3
-			}
-			destroy_artifact = amulet_of_protection_3
-		}
-		if = {
-			limit = {
-				has_artifact = amulet_of_protection_5
-			}
-			FROM = {
-				add_artifact = amulet_of_protection_5
-			}
-			destroy_artifact = amulet_of_protection_5
-		}
-		if = {
-			limit = {
-				has_artifact = ring_of_persuasion
-			}
-			FROM = {
-				add_artifact = ring_of_persuasion
-			}
-			destroy_artifact = ring_of_persuasion
-		}
-		if = {
-			limit = {
-				has_artifact = ring_of_invisibility
-			}
-			FROM = {
-				add_artifact = ring_of_invisibility
-			}
-			destroy_artifact = ring_of_invisibility
-		}
-		if = {
-			limit = {
-				has_artifact = ring_of_speed
-			}
-			FROM = {
-				add_artifact = ring_of_speed
-			}
-			destroy_artifact = ring_of_speed
-		}
-		if = {
-			limit = {
-				has_artifact = ring_of_command
-			}
-			FROM = {
-				add_artifact = ring_of_command
-			}
-			destroy_artifact = ring_of_command
-		}
-		if = {
-			limit = {
-				has_artifact = dark_crystal
-			}
-			FROM = {
-				add_artifact = dark_crystal
-			}
-			destroy_artifact = dark_crystal
 		}
 	}
 }

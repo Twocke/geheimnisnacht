@@ -21,7 +21,7 @@ province_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.1"
+		log = "work event id = wh_chaos.1 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -45,7 +45,7 @@ province_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.2"
+		log = "work event id = wh_chaos.2 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -122,7 +122,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.3"
+		log = "work event id = wh_chaos.3 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -168,7 +168,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.4"
+		log = "work event id = wh_chaos.4 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -254,7 +254,7 @@ province_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.5"
+		log = "work event id = wh_chaos.5 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -296,7 +296,7 @@ province_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.6"
+		log = "work event id = wh_chaos.6 for [Root.GetBestName]"
 		owner = {
 			if = {
 				limit = {
@@ -387,7 +387,7 @@ province_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.7"
+		log = "work event id = wh_chaos.7 for [Root.GetBestName]"
 		remove_province_modifier = warphole_epicentre
 	}
 }
@@ -406,7 +406,7 @@ province_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.8"
+		log = "work event id = wh_chaos.8 for [Root.GetBestName]"
 		province_event = {
 			id = wh_chaos.8
 			days = 25
@@ -443,7 +443,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.9"
+		log = "work event id = wh_chaos.9 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -555,7 +555,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.10"
+		log = "work event id = wh_chaos.10 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -649,7 +649,7 @@ province_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.11"
+		log = "work event id = wh_chaos.11 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -747,7 +747,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.12"
+		log = "work event id = wh_chaos.12 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -852,7 +852,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.13"
+		log = "work event id = wh_chaos.13 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -895,7 +895,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.14"
+		log = "work event id = wh_chaos.14 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -937,7 +937,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.15"
+		log = "work event id = wh_chaos.15 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -982,7 +982,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.16"
+		log = "work event id = wh_chaos.16 for [Root.GetBestName]"
 		random = {
 			chance = 50
 			add_trait = blinded
@@ -1012,7 +1012,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.17"
+		log = "work event id = wh_chaos.17 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1679,7 +1679,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.17005"
+		log = "work event id = wh_chaos.17005 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1709,7 +1709,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.17006"
+		log = "work event id = wh_chaos.17006 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1737,7 +1737,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.18"
+		log = "work event id = wh_chaos.18 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1806,7 +1806,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.18005"
+		log = "work event id = wh_chaos.18005 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1834,7 +1834,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.19"
+		log = "work event id = wh_chaos.19 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1904,7 +1904,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.19005"
+		log = "work event id = wh_chaos.19005 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1932,7 +1932,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.20"
+		log = "work event id = wh_chaos.20 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1943,7 +1943,7 @@ character_event = {
  		 	1 = {
 				change_variable = {
 					which = "doom_counter"
-					value = 1
+					value = 0.5
 				}
 			}
 			wh_make_flamer_tzeentch_effect = yes
@@ -2001,7 +2001,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.20005"
+		log = "work event id = wh_chaos.20005 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2048,7 +2048,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.21"
+		log = "work event id = wh_chaos.21 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2118,7 +2118,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.21005"
+		log = "work event id = wh_chaos.21005 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2146,7 +2146,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.22"
+		log = "work event id = wh_chaos.22 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2157,7 +2157,7 @@ character_event = {
  		 	1 = {
 				change_variable = {
 					which = "doom_counter"
-					value = 1
+					value = 0.5
 				}
 			}
 			wh_make_plaguebearer_nurgle_effect = yes
@@ -2215,7 +2215,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.22005"
+		log = "work event id = wh_chaos.22005 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2262,7 +2262,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.23"
+		log = "work event id = wh_chaos.23 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2332,7 +2332,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.23005"
+		log = "work event id = wh_chaos.23005 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2360,7 +2360,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.24"
+		log = "work event id = wh_chaos.24 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2371,7 +2371,7 @@ character_event = {
  		 	1 = {
 				change_variable = {
 					which = "doom_counter"
-					value = 1
+					value = 0.5
 				}
 			}
 			wh_make_daemonette_slaanesh_effect = yes
@@ -2429,7 +2429,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.24005"
+		log = "work event id = wh_chaos.24005 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2476,7 +2476,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.25"
+		log = "work event id = wh_chaos.25 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2546,7 +2546,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.25005"
+		log = "work event id = wh_chaos.25005 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2574,7 +2574,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.26"
+		log = "work event id = wh_chaos.26 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2585,7 +2585,7 @@ character_event = {
  		 	1 = {
 				change_variable = {
 					which = "doom_counter"
-					value = 1
+					value = 0.5
 				}
 			}
 			wh_make_bloodletter_khorne_effect = yes
@@ -2643,7 +2643,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.26005"
+		log = "work event id = wh_chaos.26005 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2690,7 +2690,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.27"
+		log = "work event id = wh_chaos.27 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -3174,7 +3174,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.28"
+		log = "work event id = wh_chaos.28 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -3200,39 +3200,18 @@ character_event = {
 	is_triggered_only = yes
 
  	immediate = {
-		log = "work event id = wh_chaos.29"
+		log = "work event id = wh_chaos.29 for [Root.GetBestName]"
 		1 = {
 			change_variable = {
 				which = "doom_counter"
-				value = 1
+				value = 0.5
 			}
 		}
 	}
 
 	option = {
 		name = EVTOPTAschaos29
-		create_character = {
-			random_traits = yes
-			religion = tzeentch
-			culture = flamer_tzeentch
-			female = no
-			age = 999
-			attributes = {
-				diplomacy = 2
-				martial = 13
-				stewardship = 2
-				intrigue = 30
-				learning = 18
-			}
-			trait = tzeentch_demon
-			trait = tzeentch_flamer
-			trait = ambitious
-			trait = proud
-			trait = greedy
-			health = 25
-			flag = ai_flag_refuse_conversion
-			flag = special_marshal
-		}
+		wh_create_flamer_tzeentch_effect = yes
 		new_character = {
 			add_friend = ROOT
 		}
@@ -3248,86 +3227,19 @@ character_event = {
 	is_triggered_only = yes
 
  	immediate = {
-		log = "work event id = wh_chaos.30"
+		log = "work event id = wh_chaos.30 for [Root.GetBestName]"
 		1 = {
 			change_variable = {
 				which = "doom_counter"
-				value = 1
+				value = 0.5
 			}
 		}
 	}
 
 	option = {
 		name = EVTOPTAschaos30
-		create_character = {
-			random_traits = yes
-			religion = nurgle
-			culture = plaguebearer_nurgle
-			female = no
-			age = 777
-			flag = ai_flag_refuse_conversion
-			flag = special_marshal
-			attributes = {
-				diplomacy = 8
-				martial = 3
-				stewardship = 32
-				intrigue = 10
-				learning = 12
-			}
-		}
+		wh_create_plaguebearer_nurgle_effect = yes
 		new_character = {
-			add_trait = content
-			add_trait = humble
-			add_trait = charitable
-			add_trait = has_nurgles_rot
-			add_trait = leper
-			add_trait = nurgle_demon
-			add_trait = nurgle_plaguebearer
-			add_trait = ill
-			health = 25
-			random_list = {
-				25 = {
-					add_trait = has_tuberculosis
-				}
-				25 = {
-					add_trait = has_typhoid_fever
-				}
-				25 = {
-					add_trait = has_bubonic_plague
-				}
-				25 = {
-					add_trait = has_measles
-				}
-
-			}
-			random_list = {
-				25 = {
-					add_trait = has_small_pox
-				}
-				25 = {
-					add_trait = syphilitic
-				}
-				25 = {
-					add_trait = pneumonic
-				}
-				25 = {
-					add_trait = has_typhus
-				}
-			}
-			random_list = {
-				25 = {
-					add_trait = dysentery
-				}
-				25 = {
-					add_trait = rabies
-				}
-				25 = {
-					add_trait = cancer
-				}
-				25 = {
-					add_trait = scurvy
-				}
-			}
 			add_friend = ROOT
 		}
 		prestige = 500
@@ -3344,61 +3256,19 @@ character_event = {
 		1 = {
 			change_variable = {
 				which = "doom_counter"
-				value = 1
+				value = 0.5
 			}
 		}
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.31"
+		log = "work event id = wh_chaos.31 for [Root.GetBestName]"
 	}
 
 	option = {
 		name = EVTOPTAschaos31
-		create_character = {
-			random_traits = yes
-			religion = slaanesh
-			culture = daemonette_slaanesh
-			female = no
-			age = 666
-			flag = ai_flag_refuse_conversion
-			flag = special_marshal
-			attributes = {
-				diplomacy = 20
-				martial = 18
-				stewardship = 2
-				intrigue = 25
-				learning = 9
-			}
-		}
+		wh_create_daemonette_slaanesh_effect = yes
 		new_character = {
-			add_trait = cruel
-			add_trait = deceitful
-			add_trait = slaanesh_demon
-			add_trait = slaanesh_daemonette
-			health = 25
-			random_list = {
-				34 = {
-					add_trait = lustful
-				}
-				33 = {
-					add_trait = greedy
-				}
-				33 = {
-					add_trait = gluttonous
-				}
-			}
-			random_list = {
-				34 = {
-					add_trait = slothful
-				}
-				33 = {
-					add_trait = proud
-				}
-				33 = {
-					add_trait = lustful
-				}
-			}
 			add_friend = ROOT
 		}
 		prestige = 500
@@ -3413,53 +3283,19 @@ character_event = {
 	is_triggered_only = yes
 
  	immediate = {
-		log = "work event id = wh_chaos.32"
+		log = "work event id = wh_chaos.32 for [Root.GetBestName]"
 		1 = {
 			change_variable = {
 				which = "doom_counter"
-				value = 1
+				value = 0.5
 			}
 		}
 	}
 
 	option = {
 		name = EVTOPTAschaos32
-		create_character = {
-			random_traits = yes
-			religion = khorne
-			culture = bloodletter_khorne
-			female = no
-			age = 888
-			flag = ai_flag_refuse_conversion
-			flag = special_marshal
-			attributes = {
-				diplomacy = 10
-				martial = 28
-				stewardship = 2
-				intrigue = 8
-				learning = 9
-			}
-		}
+		wh_create_bloodletter_khorne_effect = yes
 		new_character = {
-			add_trait = wroth
-			add_trait = honest
-			add_trait = khorne_demon
-			add_trait = khorne_bloodletter
-			health = 25
-			random_list = {
-				25 = {
-					add_trait = ambitious
-				}
-				25 = {
-					add_trait = gregarious
-				}
-				25 = {
-					add_trait = diligent
-				}
-				25 = {
-					add_trait = proud
-				}
-			}
 			add_friend = ROOT
 		}
 		prestige = 500
@@ -3481,12 +3317,7 @@ character_event = {
 			AND = {
 				trait = khorne_demon
 				any_courtier = {
-					OR = {
-						trait = slaanesh_demon
-						trait = nurgle_demon
-						trait = tzeentch_demon
-						trait = hashut_kdaai
-					}
+					is_demon_trigger = yes
 				}
 			}
 			AND = {
@@ -3533,9 +3364,7 @@ character_event = {
 					}
 				}
 			}
-
 		}
-
 	}
 
 	mean_time_to_happen = {
@@ -3543,7 +3372,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.33"
+		log = "work event id = wh_chaos.33 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -3577,17 +3406,17 @@ character_event = {
 	picture = GFX_evt_chaos_hordes
 	min_age = 666
 	religion_group = chaos_gods_group
-	#ai = no
 
+	#ai = no
 	trigger = {
+		not = {
+			has_character_flag = host_demon_commander
+		}
 		any_friend = {
 			any_friend = {
 				is_demon_trigger = yes
 				count = 2
 			}
-		}
-		not = {
-			has_character_flag = host_demon_commander
 		}
 	}
 
@@ -3723,7 +3552,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.34"
+		log = "work event id = wh_chaos.34 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -3750,7 +3579,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.35"
+		log = "work event id = wh_chaos.35 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -3785,7 +3614,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.36"
+		log = "work event id = wh_chaos.36 for [Root.GetBestName]"
 		any_friend = {
 			limit = {
 				has_character_flag = host_demon_commander
@@ -3812,24 +3641,16 @@ character_event = {
 
 	trigger = {
 		any_friend = {
-			OR = {
-				trait = khorne_demon
-				trait = nurgle_demon
-				trait = slaanesh_demon
-				trait = tzeentch_demon
-			}
-			NOR = {
-				trait = prince_khorne
-				trait = prince_nurgle
-				trait = prince_slaanesh
-				trait = prince_tzeentch
+			is_demon_trigger = yes
+			is_demon_prince_trigger = no
+			not = {
 				has_character_flag = host_demon_commander
 			}
 		}
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.37"
+		log = "work event id = wh_chaos.37 for [Root.GetBestName]"
 		if = {
 			limit = {
 				is_ruler = yes
@@ -3839,17 +3660,10 @@ character_event = {
 			}
 			any_friend = {
 				limit = {
-					OR = {
-						trait = khorne_demon
-						trait = nurgle_demon
-						trait = slaanesh_demon
-						trait = tzeentch_demon
-					}
-					NOR = {
-						trait = prince_khorne
-						trait = prince_nurgle
-						trait = prince_slaanesh
-						trait = prince_tzeentch
+					is_demon_trigger = yes
+					is_demon_prince_trigger = no
+					not = {
+						has_character_flag = host_demon_commander
 					}
 				}
 				set_character_flag = inheriting_demon
@@ -3859,7 +3673,8 @@ character_event = {
 						move_character = THIS
 					}
 					character_event = {
-						id = wh_chaos.38 days = 1
+						id = wh_chaos.38 
+						days = 1
 					}
 				}
 			}
@@ -3867,17 +3682,10 @@ character_event = {
 		}
 		any_friend = {
 			limit = {
-				OR = {
-					trait = khorne_demon
-					trait = nurgle_demon
-					trait = slaanesh_demon
-					trait = tzeentch_demon
-				}
-				NOR = {
-					trait = prince_khorne
-					trait = prince_nurgle
-					trait = prince_slaanesh
-					trait = prince_tzeentch
+				is_demon_trigger = yes
+				is_demon_prince_trigger = no
+				nor = {
+					has_character_flag = host_demon_commander
 					has_character_flag = inheriting_demon
 				}
 			}
@@ -3938,7 +3746,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.38"
+		log = "work event id = wh_chaos.38 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -4035,7 +3843,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.39"
+		log = "work event id = wh_chaos.39 for [Root.GetBestName]"
 		host = {
 			character_event = {
 				id = wh_chaos.38
@@ -4076,7 +3884,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.40"
+		log = "work event id = wh_chaos.40 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -4115,7 +3923,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.42"
+		log = "work event id = wh_chaos.42 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -4161,7 +3969,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.43"
+		log = "work event id = wh_chaos.43 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -4194,7 +4002,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.44"
+		log = "work event id = wh_chaos.44 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -4211,7 +4019,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.47"
+		log = "work event id = wh_chaos.47 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -4237,7 +4045,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.48"
+		log = "work event id = wh_chaos.48 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -4334,10 +4142,10 @@ character_event = {
 	desc = EVTDESCschaos49
 	picture = "GFX_evt_demon_fighting"
 	is_triggered_only = yes
-	# If not independent, appeal to your liege
 
+	# If not independent, appeal to your liege
 	immediate = {
-		log = "work event id = wh_chaos.49"
+		log = "work event id = wh_chaos.49 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -4388,7 +4196,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.50"
+		log = "work event id = wh_chaos.50 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -4469,7 +4277,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.51"
+		log = "work event id = wh_chaos.51 for [Root.GetBestName]"
 		random_courtier = {
 			character_event = {
 				id = wh_chaos.51005
@@ -4486,7 +4294,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.51005"
+		log = "work event id = wh_chaos.51005 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -4633,7 +4441,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.52"
+		log = "work event id = wh_chaos.52 for [Root.GetBestName]"
 		random_friend = {
 			limit = {
 				is_living_human_trigger = yes
@@ -4657,7 +4465,7 @@ character_event = {
 	capable_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.53"
+		log = "work event id = wh_chaos.53 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -5018,7 +4826,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.54"
+		log = "work event id = wh_chaos.54 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -5035,7 +4843,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.55"
+		log = "work event id = wh_chaos.55 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -5052,7 +4860,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.56"
+		log = "work event id = wh_chaos.56 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -5069,7 +4877,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.57"
+		log = "work event id = wh_chaos.57 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -5102,7 +4910,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.58"
+		log = "work event id = wh_chaos.58 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -5128,7 +4936,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.59"
+		log = "work event id = wh_chaos.59 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -5160,7 +4968,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.60"
+		log = "work event id = wh_chaos.60 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -5271,7 +5079,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.61"
+		log = "work event id = wh_chaos.61 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -5435,7 +5243,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.62"
+		log = "work event id = wh_chaos.62 for [Root.GetBestName]"
 		if = {
 			limit = {
 				is_undead_trigger = yes
@@ -5740,11 +5548,11 @@ character_event = {
 	}
 
  	immediate = {
-		log = "work event id = wh_chaos.63"
+		log = "work event id = wh_chaos.63 for [Root.GetBestName]"
 		1 = {
 			change_variable = {
 				which = "doom_counter"
-				value = 1
+				value = 0.5
 			}
 		}
 	}
@@ -5804,7 +5612,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.64"
+		log = "work event id = wh_chaos.64 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -5950,7 +5758,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.65"
+		log = "work event id = wh_chaos.65 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -6133,7 +5941,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.66"
+		log = "work event id = wh_chaos.66 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -6293,7 +6101,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.66005"
+		log = "work event id = wh_chaos.66005 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -6316,7 +6124,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.67"
+		log = "work event id = wh_chaos.67 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -6461,7 +6269,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.68"
+		log = "work event id = wh_chaos.68 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -6637,7 +6445,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.69"
+		log = "work event id = wh_chaos.69 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -6780,7 +6588,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.70"
+		log = "work event id = wh_chaos.70 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -6957,7 +6765,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.71"
+		log = "work event id = wh_chaos.71 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7194,7 +7002,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.71005"
+		log = "work event id = wh_chaos.71005 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7234,7 +7042,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.72"
+		log = "work event id = wh_chaos.72 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7393,7 +7201,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.73"
+		log = "work event id = wh_chaos.73 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7537,7 +7345,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.74"
+		log = "work event id = wh_chaos.74 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7680,7 +7488,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.75"
+		log = "work event id = wh_chaos.75 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7826,7 +7634,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.76"
+		log = "work event id = wh_chaos.76 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7984,7 +7792,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.76005"
+		log = "work event id = wh_chaos.76005 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8007,7 +7815,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.77"
+		log = "work event id = wh_chaos.77 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8161,7 +7969,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.77005"
+		log = "work event id = wh_chaos.77005 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8184,7 +7992,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.78"
+		log = "work event id = wh_chaos.78 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8342,7 +8150,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.78005"
+		log = "work event id = wh_chaos.78005 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8361,7 +8169,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.79"
+		log = "work event id = wh_chaos.79 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8395,7 +8203,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.79005"
+		log = "work event id = wh_chaos.79005 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8412,7 +8220,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.80"
+		log = "work event id = wh_chaos.80 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8449,7 +8257,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.80005"
+		log = "work event id = wh_chaos.80005 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8482,7 +8290,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.80006"
+		log = "work event id = wh_chaos.80006 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8499,7 +8307,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.81"
+		log = "work event id = wh_chaos.81 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8534,7 +8342,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.81005"
+		log = "work event id = wh_chaos.81005 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8555,7 +8363,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.82"
+		log = "work event id = wh_chaos.82 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8594,7 +8402,7 @@ long_character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.83"
+		log = "work event id = wh_chaos.83 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8616,7 +8424,7 @@ long_character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.83005"
+		log = "work event id = wh_chaos.83005 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8665,7 +8473,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.84"
+		log = "work event id = wh_chaos.84 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8816,7 +8624,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.85"
+		log = "work event id = wh_chaos.85 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8832,7 +8640,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.86"
+		log = "work event id = wh_chaos.86 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -9459,7 +9267,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.87"
+		log = "work event id = wh_chaos.87 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -9485,7 +9293,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.88"
+		log = "work event id = wh_chaos.88 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -9508,7 +9316,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.89"
+		log = "work event id = wh_chaos.89 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -9531,7 +9339,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.90"
+		log = "work event id = wh_chaos.90 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -9554,7 +9362,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.91"
+		log = "work event id = wh_chaos.91 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -9582,7 +9390,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.92"
+		log = "work event id = wh_chaos.92 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -9655,7 +9463,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.92000"
+		log = "work event id = wh_chaos.92000 for [Root.GetBestName]"
 		random_list = {
 			# Prize of your chosing (army, strength, health)
 			# Khorne sends a demon familiar
@@ -9816,11 +9624,11 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.92001"
+		log = "work event id = wh_chaos.92001 for [Root.GetBestName]"
  		1 = {
 			change_variable = {
 				which = "doom_counter"
-				value = 1
+				value = 0.5
 			}
 		}
 		if = {
@@ -9902,11 +9710,11 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.92002"
+		log = "work event id = wh_chaos.92002 for [Root.GetBestName]"
 		1 = {
 			change_variable = {
 				which = "doom_counter"
-				value = 1
+				value = 0.5
 			}
 		}
 		if = {
@@ -9965,42 +9773,8 @@ character_event = {
 
 	option = {
 		name = EVTOPTAschaos92002
-		create_character = {
-			random_traits = yes
-			religion = khorne
-			culture = bloodletter_khorne
-			female = no
-			age = 888
-			flag = ai_flag_refuse_conversion
-			flag = special_marshal
-			attributes = {
-				diplomacy = 10
-				martial = 18
-				stewardship = 2
-				intrigue = 25
-				learning = 9
-			}
-		}
+		wh_create_bloodletter_khorne_effect = yes
 		new_character = {
-			add_trait = wroth
-			add_trait = honest
-			add_trait = khorne_demon
-			add_trait = khorne_bloodletter
-			health = 25
-			random_list = {
-				25 = {
-					add_trait = ambitious
-				}
-				25 = {
-					add_trait = gregarious
-				}
-				25 = {
-					add_trait = diligent
-				}
-				25 = {
-					add_trait = proud
-				}
-			}
 			add_friend = ROOT
 		}
 		prestige = 500
@@ -10015,7 +9789,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.92003"
+		log = "work event id = wh_chaos.92003 for [Root.GetBestName]"
 		if = {
 			limit = {
 				nor = {
@@ -10086,11 +9860,11 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.92004"
+		log = "work event id = wh_chaos.92004 for [Root.GetBestName]"
 		1 = {
 			change_variable = {
 				which = "doom_counter"
-				value = 2
+				value = 1
 			}
 		}
 		if = {
@@ -10132,7 +9906,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.92005"
+		log = "work event id = wh_chaos.92005 for [Root.GetBestName]"
 		if = {
 			limit = {
 				nor = {
@@ -10203,7 +9977,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.92006"
+		log = "work event id = wh_chaos.92006 for [Root.GetBestName]"
 		if = {
 			limit = {
 				nor = {
@@ -10275,7 +10049,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.92007"
+		log = "work event id = wh_chaos.92007 for [Root.GetBestName]"
 		if = {
 			limit = {
 				nor = {
@@ -10340,7 +10114,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.92008"
+		log = "work event id = wh_chaos.92008 for [Root.GetBestName]"
 		change_variable = {
 			which = "khorne_favor"
 			value = -1
@@ -10361,7 +10135,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.93"
+		log = "work event id = wh_chaos.93 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -10434,7 +10208,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.93000"
+		log = "work event id = wh_chaos.93000 for [Root.GetBestName]"
 		random_list = {
 			# Prize of your chosing (magic, love, presents)
 			# Nurgle sends a demon familiar
@@ -10600,11 +10374,11 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.93001"
+		log = "work event id = wh_chaos.93001 for [Root.GetBestName]"
  		1 = {
 			change_variable = {
 				which = "doom_counter"
-				value = 1
+				value = 0.5
 			}
 		}
 		if = {
@@ -10681,11 +10455,11 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.93002"
+		log = "work event id = wh_chaos.93002 for [Root.GetBestName]"
 		1 = {
 			change_variable = {
 				which = "doom_counter"
-				value = 1
+				value = 0.5
 			}
 		}
 		if = {
@@ -10744,60 +10518,8 @@ character_event = {
 
 	option = {
 		name = EVTOPTAschaos93002
-		create_character = {
-			random_traits = yes
-			religion = nurgle
-			culture = plaguebearer_nurgle
-			female = no
-			age = 777
-			flag = ai_flag_refuse_conversion
-			flag = special_marshal
-			attributes = {
-				diplomacy = 8
-				martial = 3
-				stewardship = 32
-				intrigue = 10
-				learning = 12
-			}
-		}
+		wh_create_plaguebearer_nurgle_effect = yes
 		new_character = {
-			add_trait = content
-			add_trait = humble
-			add_trait = charitable
-			add_trait = has_nurgles_rot
-			add_trait = leper
-			add_trait = nurgle_demon
-			add_trait = nurgle_plaguebearer
-			add_trait = ill
-			health = 25
-			random_list = {
-				25 = {
-					add_trait = has_tuberculosis
-				}
-				25 = {
-					add_trait = has_typhoid_fever
-				}
-				25 = {
-					add_trait = has_bubonic_plague
-				}
-				25 = {
-					add_trait = has_measles
-				}
-			}
-			random_list = {
-				25 = {
-					add_trait = has_small_pox
-				}
-				25 = {
-					add_trait = syphilitic
-				}
-				25 = {
-					add_trait = pneumonic
-				}
-				25 = {
-					add_trait = has_typhus
-				}
-			}
 			add_friend = ROOT
 		}
 		prestige = 500
@@ -10812,7 +10534,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.93003"
+		log = "work event id = wh_chaos.93003 for [Root.GetBestName]"
 		if = {
 			limit = {
 				nor = {
@@ -10883,11 +10605,11 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.93004"
+		log = "work event id = wh_chaos.93004 for [Root.GetBestName]"
 		1 = {
 			change_variable = {
 				which = "doom_counter"
-				value = 2
+				value = 1
 			}
 		}
 		if = {
@@ -10929,7 +10651,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.93005"
+		log = "work event id = wh_chaos.93005 for [Root.GetBestName]"
 		if = {
 			limit = {
 				nor = {
@@ -11000,7 +10722,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.93006"
+		log = "work event id = wh_chaos.93006 for [Root.GetBestName]"
 		if = {
 			limit = {
 				nor = {
@@ -11072,7 +10794,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.93007"
+		log = "work event id = wh_chaos.93007 for [Root.GetBestName]"
 		if = {
 			limit = {
 				nor = {
@@ -11137,7 +10859,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.93008"
+		log = "work event id = wh_chaos.93008 for [Root.GetBestName]"
 		change_variable = {
 			which = "nurgle_favor"
 			value = -1
@@ -11158,7 +10880,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.94"
+		log = "work event id = wh_chaos.94 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -11231,7 +10953,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.94000"
+		log = "work event id = wh_chaos.94000 for [Root.GetBestName]"
 		random_list = {
 			# Prize of your chosing (magic, beauty, healing)
 			# Slaanesh sends a demon familiar
@@ -11393,11 +11115,11 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.94001"
+		log = "work event id = wh_chaos.94001 for [Root.GetBestName]"
  		1 = {
 			change_variable = {
 				which = "doom_counter"
-				value = 1
+				value = 0.5
 			}
 		}
 		if = {
@@ -11462,11 +11184,11 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.94002"
+		log = "work event id = wh_chaos.94002 for [Root.GetBestName]"
 		1 = {
 			change_variable = {
 				which = "doom_counter"
-				value = 1
+				value = 0.5
 			}
 		}
 		if = {
@@ -11526,52 +11248,8 @@ character_event = {
 
 	option = {
 		name = EVTOPTAschaos94002
-		create_character = {
-			random_traits = yes
-			religion = slaanesh
-			culture = daemonette_slaanesh
-			female = no
-			age = 666
-			flag = ai_flag_refuse_conversion
-			flag = special_marshal
-			attributes = {
-				diplomacy = 20
-				martial = 18
-				stewardship = 2
-				intrigue = 25
-				learning = 9
-			}
-		}
+		wh_create_daemonette_slaanesh_effect = yes
 		new_character = {
-			add_trait = cruel
-			add_trait = deceitful
-			add_trait = slaanesh_demon
-			add_trait = slaanesh_daemonette
-			health = 25
-			random_list = {
-				34 = {
-					add_trait = lustful
-				}
-				33 = {
-					add_trait = greedy
-				}
-				33 = {
-					add_trait = gluttonous
-				}
-
-			}
-			random_list = {
-				34 = {
-					add_trait = slothful
-				}
-				33 = {
-					add_trait = proud
-				}
-				33 = {
-					add_trait = lustful
-				}
-
-			}
 			add_friend = ROOT
 		}
 		prestige = 500
@@ -11586,7 +11264,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.94003"
+		log = "work event id = wh_chaos.94003 for [Root.GetBestName]"
 		if = {
 			limit = {
 				nor = {
@@ -11657,11 +11335,11 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.94004"
+		log = "work event id = wh_chaos.94004 for [Root.GetBestName]"
 		1 = {
 			change_variable = {
 				which = "doom_counter"
-				value = 2
+				value = 1
 			}
 		}
 		if = {
@@ -11703,7 +11381,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.94005"
+		log = "work event id = wh_chaos.94005 for [Root.GetBestName]"
 		if = {
 			limit = {
 				nor = {
@@ -11774,7 +11452,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.94006"
+		log = "work event id = wh_chaos.94006 for [Root.GetBestName]"
 		if = {
 			limit = {
 				nor = {
@@ -11847,7 +11525,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.94007"
+		log = "work event id = wh_chaos.94007 for [Root.GetBestName]"
 		if = {
 			limit = {
 				nor = {
@@ -11912,7 +11590,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.94008"
+		log = "work event id = wh_chaos.94008 for [Root.GetBestName]"
 		change_variable = {
 			which = "slaanesh_favor"
 			value = -1
@@ -11933,7 +11611,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.95"
+		log = "work event id = wh_chaos.95 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -12006,7 +11684,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.95000"
+		log = "work event id = wh_chaos.95000 for [Root.GetBestName]"
 		random_list = {
 			# Prize of your chosing (magic, intellect, more power)
 			# Tzeentch sends a demon familiar
@@ -12172,11 +11850,11 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.95001"
+		log = "work event id = wh_chaos.95001 for [Root.GetBestName]"
  		1 = {
 			change_variable = {
 				which = "doom_counter"
-				value = 1
+				value = 0.5
 			}
 		}
 		if = {
@@ -12242,11 +11920,11 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.95002"
+		log = "work event id = wh_chaos.95002 for [Root.GetBestName]"
 		1 = {
 			change_variable = {
 				which = "doom_counter"
-				value = 1
+				value = 0.5
 			}
 		}
 		if = {
@@ -12306,28 +11984,7 @@ character_event = {
 
 	option = {
 		name = EVTOPTAschaos95002
-		create_character = {
-			random_traits = yes
-			religion = tzeentch
-			culture = flamer_tzeentch
-			female = no
-			age = 999
-			attributes = {
-				diplomacy = 2
-				martial = 13
-				stewardship = 2
-				intrigue = 30
-				learning = 18
-			}
-			trait = tzeentch_demon
-			trait = tzeentch_flamer
-			trait = ambitious
-			trait = proud
-			trait = greedy
-			health = 25
-			flag = ai_flag_refuse_conversion
-			flag = special_marshal
-		}
+		wh_create_flamer_tzeentch_effect = yes
 		new_character = {
 			add_friend = ROOT
 		}
@@ -12343,7 +12000,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.95003"
+		log = "work event id = wh_chaos.95003 for [Root.GetBestName]"
 		if = {
 			limit = {
 				nor = {
@@ -12422,11 +12079,11 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.95004"
+		log = "work event id = wh_chaos.95004 for [Root.GetBestName]"
 		1 = {
 			change_variable = {
 				which = "doom_counter"
-				value = 2
+				value = 1
 			}
 		}
 		if = {
@@ -12468,7 +12125,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.95005"
+		log = "work event id = wh_chaos.95005 for [Root.GetBestName]"
 		if = {
 			limit = {
 				nor = {
@@ -12539,7 +12196,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.95006"
+		log = "work event id = wh_chaos.95006 for [Root.GetBestName]"
 		if = {
 			limit = {
 				nor = {
@@ -12612,7 +12269,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.95007"
+		log = "work event id = wh_chaos.95007 for [Root.GetBestName]"
 		if = {
 			limit = {
 				nor = {
@@ -12677,7 +12334,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.95008"
+		log = "work event id = wh_chaos.95008 for [Root.GetBestName]"
 		change_variable = {
 			which = "tzeentch_favor"
 			value = -1
@@ -13043,7 +12700,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.96"
+		log = "work event id = wh_chaos.96 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -13445,7 +13102,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.97"
+		log = "work event id = wh_chaos.97 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -13843,7 +13500,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.98"
+		log = "work event id = wh_chaos.98 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -13852,7 +13509,7 @@ character_event = {
 			1 = {
 				change_variable = {
 					which = "doom_counter"
-					value = 1
+					value = 0.5
 				}
 			}
 		}
@@ -14092,7 +13749,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.99"
+		log = "work event id = wh_chaos.99 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -14238,7 +13895,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.100"
+		log = "work event id = wh_chaos.100 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -14279,7 +13936,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.101"
+		log = "work event id = wh_chaos.101 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -14296,7 +13953,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.102"
+		log = "work event id = wh_chaos.102 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -14349,7 +14006,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.103"
+		log = "work event id = wh_chaos.103 for [Root.GetBestName]"
 		abdicate = yes
 	}
 }
@@ -14364,11 +14021,12 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.104"
+		log = "work event id = wh_chaos.104 for [Root.GetBestName]"
 		disband_event_forces = summoned_daemon_host
 	}
 
 	option = {
+		name = OK
 	}
 }
 
@@ -14380,7 +14038,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_chaos.105"
+		log = "work event id = wh_chaos.105 for [Root.GetBestName]"
 		location = {
 			save_event_target_as = wh_schaos.105_location
 		}
@@ -14494,7 +14152,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_chaos.900"
+		log = "work event id = wh_chaos.900 for [Root.GetBestName]"
 		if = {
 			limit = {
 				wh_is_chaos_chosen_trigger = yes

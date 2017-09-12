@@ -1,9 +1,8 @@
-namespace = doomengine
+namespace = wh_doomengine
 
 # Doom counter events
-# reserved 0-19
 province_event = {
-	id = doomengine.0
+	id = wh_doomengine.0
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -12,67 +11,20 @@ province_event = {
 	}
 
 	immediate = {
-		log = "work event id = doomengine.0"
+		log = "work event id = wh_doomengine.0 for [Root.GetBestName]"
 		# initialisation
 		if = {
 			limit = {
 				NOT = {
 					check_variable = {
 						which = "doom_counter"
-						value = 3
+						value = 0
 					}
 				}
 			}
 			set_variable = {
 				which = "doom_counter"
-				value = 3
-			}
-		}
-		if = {
- 			limit = {
- 				k_avelorn = {
- 					owner = {
- 						trait = everqueen
-					}
-				}
-			}
- 			set_global_flag = vortex_exists
-		}
-		if = {
- 			limit = {
-	 			not = {
-	 				k_avelorn = {
-	 					owner = {
-	 						trait = everqueen
-						}
-					}
-				}
-			}
- 			clr_global_flag = vortex_exists
-		}
-		# changing due to the vortex existence
-		if = {
-			limit = {
-				# FIXME create vortex first
-				has_global_flag = vortex_exists
-				check_variable = {
-					which = "doom_counter"
-					value = 3
-				}
-			}
-			random_list = {
-				60 = {
-					change_variable = {
-						which = "doom_counter"
-						value = -1
-					}
-				}
-				20 = {
-					change_variable = {
-						which = "doom_counter"
-						value = -3
-					}
-				}
+				value = 0
 			}
 		}
 		if = {
@@ -148,14 +100,13 @@ province_event = {
 }
 
 # DOOM COUNTER RAISING EVENTS
-# works
 character_event = {
-	id = doomengine.1
+	id = wh_doomengine.1
 	hide_window = yes
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = doomengine.1"
+		log = "work event id = wh_doomengine.1 for [Root.GetBestName]"
 		1 = {
 			change_variable = {
 				which = "doom_counter"
@@ -165,21 +116,18 @@ character_event = {
 	}
 }
 
-# ENDTIME COUNTER INCREASES
+# ENDTIME COUNTER INCREASES on_decade_pulse
 province_event = {
-	id = doomengine.1005
+	id = wh_doomengine.2
+	is_triggered_only = yes
 	hide_window = yes
 
 	trigger = {
 		province_id = 1 # The Chaos Realms
 	}
 
- 	mean_time_to_happen = {
-		months = 120
-	}
-
 	immediate = {
-		log = "work event id = doomengine.1005"
+		log = "work event id = wh_doomengine.2 for [Root.GetBestName]"
 		random_list = {
 			30 = {
 				change_variable = {
@@ -191,22 +139,18 @@ province_event = {
 				modifier = {
 					factor = 0.75
 					has_global_flag = doom_medium
-
 				}
 				modifier = {
 					factor = 0.5
 					has_global_flag = doom_high
-
 				}
 				modifier = {
 					factor = 0.25
 					has_global_flag = doom_very_high
-
 				}
 				modifier = {
 					factor = 0.25
 					has_global_flag = all_slann_dead
-
 				}
 			}
 		}
@@ -217,22 +161,24 @@ province_event = {
 					value = 50
 				}
 			}
-			narrative_event = {
-				id = doomengine.1006
+			any_playable_ruler = {
+				narrative_event = {
+					id = wh_doomengine.3
+				}
 			}
 		}
 	}
 }
 
 narrative_event = {
-	id = doomengine.1006
+	id = wh_doomengine.3
 	title = EVTTITLE_DOOMENGINE_1006
 	desc = EVTDESC_DOOMENGINE_1006
 	picture = GFX_evt_chaos_hordes
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = doomengine.1006"
+		log = "work event id = wh_doomengine.3 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -250,30 +196,31 @@ narrative_event = {
 		}
 	}
 }
+
+# think about it
 province_event = {
-	id = doomengine.200
+	id = wh_doomengine.4
 	hide_window = yes
 	is_triggered_only = yes
 
 	trigger = {
-		province_id = 1509 # The Chaos Realms
-		1509 = {
+		province_id = 1509 # averlone
+		#1509 = {
 			owner = {
-				culture = avelorni
-				religion = cadai
+				trait = everqueen
 			}
-		}
+		#}
 	}
 
 	immediate = {
-		log = "work event id = doomengine.200"
+		log = "work event id = wh_doomengine.4 for [Root.GetBestName]"
 		1 = {
 			if = {
 				limit = {
 					# FIXME create vortex first
 					check_variable = {
 						which = "doom_counter"
-						value = 3
+						value = 1
 					}
 				}
 				random_list = {
@@ -292,5 +239,112 @@ province_event = {
 				}
 			}
 		}
+	}
+}
+
+# The notifier, in one compact event on_five_year_pulse
+character_event = {
+	id = wh_doomengine.5
+	border = "GFX_event_normal_frame_religion"
+	picture = "GFX_evt_cultist"
+	desc = {
+		trigger = {
+			1 = {
+				check_variable = {
+					which = "doom_counter"
+					value = 0 # The winds of chaos are very weak
+				}
+				NOT = {
+					check_variable = {
+						which = "doom_counter"
+						value = 15
+					}
+				}
+			}
+		}
+		text = VeryWeakDoom
+	}
+	desc = {
+		trigger = {
+			1 = {
+				check_variable = {
+					which = "doom_counter"
+					value = 15 # The winds of chaos are weak
+				}
+				NOT = {
+					check_variable = {
+						which = "doom_counter"
+						value = 30
+					}
+				}
+			}
+		}
+		text = WeakDoom
+	}
+	desc = {
+		trigger = {
+			1 = {
+				check_variable = {
+					which = "doom_counter"
+					value = 30 # The winds of chaos are moderate
+				}
+				NOT = {
+					check_variable = {
+						which = "doom_counter"
+						value = 60
+					}
+				}
+			}
+		}
+		text = ModerateDoom
+	}
+	desc = {
+		trigger = {
+			1 = {
+				check_variable = {
+					which = "doom_counter"
+					value = 60 # The winds of chaos are strong
+				}
+				NOT = {
+					check_variable = {
+						which = "doom_counter"
+						value = 90
+					}
+				}
+			}
+		}
+		text = StrongDoom
+	}
+	desc = {
+		trigger = {
+			1 = {
+				check_variable = {
+					which = "doom_counter"
+					value = 90 # The winds of chaos are very strong
+				}
+			}
+		}
+		text = VeryStrongDoom
+	}
+	ai = no
+	notification = yes
+	is_triggered_only = yes
+
+	trigger = {
+		ai = no
+		1 = {
+			check_variable = {
+				which = "doom_counter"
+				value = 0 # The Doom counter exists
+			}
+		}
+	}
+
+	immediate = {
+		log = "work event id = wh_doomengine.5 for [Root.GetBestName]"
+	}
+
+	option = {
+		name = WeAreDoomed
 	}
 }

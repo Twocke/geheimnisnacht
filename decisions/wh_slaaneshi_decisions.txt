@@ -298,8 +298,8 @@ decisions = {
 
 targetted_decisions = {
 
+	# To cover male rulers wanting to take landed/underage females as consorts
 	make_noble_concubine = {
-		# To cover male rulers wanting to take landed/underage females as consorts
 		ai_target_filter = court
 		only_rulers = yes
 		from_potential = {
@@ -1075,18 +1075,18 @@ targetted_decisions = {
 	pleasure_twist = {
 		# For perverting other characters as a cultist
 		ai_target_filter = realm
-		only_rulers = yes
+		only_playable = yes
 		from_potential = {
-			is_ruler = yes
+			age = 16
 			society_member_of = cult_of_pleasure
 			nor = {
 				has_any_opinion_modifier = opinion_twisting
 				religion = atharti
 				religion = slaanesh
 			}
-			age = 16
 		}
 		potential = {
+			same_realm = from
 			is_within_diplo_range = FROM
 			age = 14
 			nor = {
@@ -1114,7 +1114,9 @@ targetted_decisions = {
 					random = {
 						chance = 5	#Mutation chance
 						character_event = {
-							id = spleasure.57 days = 40 random = 20
+							id = spleasure.57
+							days = 40
+							random = 20
 						}
 					}
 				}
@@ -1354,7 +1356,7 @@ targetted_decisions = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				factor = 0.05 # Less likely to do it
+				factor = 0.01 # Less likely to do it
 			}
 			modifier = {
 				factor = 2
@@ -1462,6 +1464,23 @@ targetted_decisions = {
 						trait = just
 					}
 				}
+			}
+			# we need better targets
+			modifier = {
+				factor = 5
+				tier = EMPEROR
+			}
+			modifier = {
+				factor = 4
+				tier = KING
+			}
+			modifier = {
+				factor = 3
+				tier = DUKE
+			}
+			modifier = {
+				factor = 2
+				tier = COUNT
 			}
 		}
 	}
@@ -1671,14 +1690,12 @@ targetted_decisions = {
 	}
 
 	transgender_marriage = {
+		only_playable = yes
 		filter = court
 		ai_target_filter = court
 		from_potential = {
 			is_married = no
 			trait = transgender
-			primary_title = {
-				higher_tier_than = BARON
-			}
 			OR = {
 				trait = creature_elf
 				trait = creature_chaos_dwarf

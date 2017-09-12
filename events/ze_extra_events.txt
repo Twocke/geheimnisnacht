@@ -43,7 +43,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = ZE.23000"
+		log = "work event id = ZE.23000 for [Root.GetBestName]"
 		liege = {
 			random_vassal = {
 				limit = {
@@ -162,7 +162,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = ZE.23001"
+		log = "work event id = ZE.23001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -187,7 +187,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = ZE.23002"
+		log = "work event id = ZE.23002 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -237,7 +237,7 @@ long_character_event = {
 	}
 
 	immediate = {
-		log = "work event id = ZE.23005"
+		log = "work event id = ZE.23005 for [Root.GetBestName]"
 		random_vassal = {
 			limit = {
 				NOR = {
@@ -302,7 +302,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = ZE.23006"
+		log = "work event id = ZE.23006 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -378,7 +378,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = ZE.23007"
+		log = "work event id = ZE.23007 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -400,7 +400,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = ZE.23008"
+		log = "work event id = ZE.23008 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -437,7 +437,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = ZE.23100"
+		log = "work event id = ZE.23100 for [Root.GetBestName]"
 		primary_title = {
 			band_creator = {
 				character_event = {
@@ -455,7 +455,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = ZE.23101"
+		log = "work event id = ZE.23101 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -512,7 +512,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = ZE.23105"
+		log = "work event id = ZE.23105 for [Root.GetBestName]"
 		primary_title = {
 			band_creator = {
 				character_event = {
@@ -530,7 +530,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = ZE.23106"
+		log = "work event id = ZE.23106 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -612,7 +612,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = ZE.23150"
+		log = "work event id = ZE.23150 for [Root.GetBestName]"
 		primary_title = {
 			band_creator = {
 				save_event_target_as = merc_band_employer
@@ -642,7 +642,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = ZE.23152"
+		log = "work event id = ZE.23152 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -672,7 +672,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = ZE.23154"
+		log = "work event id = ZE.23154 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -703,7 +703,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = ZE.23155"
+		log = "work event id = ZE.23155 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -721,7 +721,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = ZE.23156"
+		log = "work event id = ZE.23156 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -737,7 +737,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = ZE.23157"
+		log = "work event id = ZE.23157 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -775,7 +775,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = ZE.23158"
+		log = "work event id = ZE.23158 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -820,10 +820,10 @@ character_event = {
 			is_inaccessible_trigger = yes
 		}
 	}
-	# Pardon
 
+	# Pardon
 	immediate = {
-		log = "work event id = ZE.22300"
+		log = "work event id = ZE.22300 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -844,8 +844,8 @@ character_event = {
 			text = character_owe_favor
 		}
 	}
-	# Condemn
 
+	# Condemn
 	option = {
 		name = EVTOPTB_ZE_22300
 		prestige = 50
@@ -888,7 +888,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = ZE.22400"
+		log = "work event id = ZE.22400 for [Root.GetBestName]"
 		liege = {
 			any_realm_character = {
 				limit = {
@@ -908,8 +908,8 @@ character_event = {
 			}
 		}
 	}
-	# Accept save of face
 
+	# Accept save of face
 	option = {
 		name = EVTOPTA_ZE_22400
 		ai_chance = {
@@ -927,8 +927,8 @@ character_event = {
 			}
 		}
 	}
-	# Deny
 
+	# Deny
 	option = {
 		name = EVTOPTB_ZE_22400
 		ai_chance = {
@@ -958,10 +958,10 @@ character_event = {
 	desc = EVTDESC_ZE_22410
 	picture = GFX_evt_council_agreement
 	is_triggered_only = yes
-	# Accept save of face
 
+	# Accept save of face
 	immediate = {
-		log = "work event id = ZE.22410"
+		log = "work event id = ZE.22410 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -981,10 +981,10 @@ character_event = {
 	desc = EVTDESC_ZE_22420
 	picture = GFX_evt_leaving_table_angrily
 	is_triggered_only = yes
-	# Decline save of face
 
+	# Decline save of face
 	immediate = {
-		log = "work event id = ZE.22420"
+		log = "work event id = ZE.22420 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1069,7 +1069,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = ZE.22500"
+		log = "work event id = ZE.22500 for [Root.GetBestName]"
 		liege = {
 			any_realm_character = {
 				limit = {
@@ -1118,8 +1118,8 @@ character_event = {
 			}
 		}
 	}
-	# Accept
 
+	# Accept
 	option = {
 		name = EVTOPTA_ZE_22500
 		ai_chance = {
@@ -1141,8 +1141,8 @@ character_event = {
 			}
 		}
 	}
-	# Deny
 
+	# Deny
 	option = {
 		name = EVTOPTB_ZE_22500
 		ai_chance = {
@@ -1170,7 +1170,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = ZE.22510"
+		log = "work event id = ZE.22510 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1192,7 +1192,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = ZE.22520"
+		log = "work event id = ZE.22520 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1321,7 +1321,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = ZE.22600"
+		log = "work event id = ZE.22600 for [Root.GetBestName]"
 		top_liege = {
 			any_realm_province = {
 				any_neighbor_province = {
@@ -1382,8 +1382,8 @@ character_event = {
 			}
 		}
 	}
-	# I should approach the voter
 
+	# I should approach the voter
 	option = {
 		name = EVTOPTA_ZE_22600
 		ai_chance = {
@@ -1399,8 +1399,8 @@ character_event = {
 			}
 		}
 	}
-	# Lets not
 
+	# Lets not
 	option = {
 		name = EVTOPTB_ZE_22600
 		ai_chance = {
@@ -1415,10 +1415,10 @@ letter_event = {
 	id = ZE.22610
 	desc = EVTDESC_ZE_22610
 	is_triggered_only = yes
-	# Agree
 
+	# Agree
 	immediate = {
-		log = "work event id = ZE.22610"
+		log = "work event id = ZE.22610 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1446,8 +1446,8 @@ letter_event = {
 			}
 		}
 	}
-	# Deny
 
+	# Deny
 	option = {
 		name = EVTOPTB_ZE_22610
 		ai_chance = {
@@ -1474,10 +1474,10 @@ letter_event = {
 	id = ZE.22620
 	desc = EVTDESC_ZE_22620
 	is_triggered_only = yes
-	# Fantastic!
 
+	# Fantastic!
 	immediate = {
-		log = "work event id = ZE.22620"
+		log = "work event id = ZE.22620 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1535,10 +1535,10 @@ letter_event = {
 	id = ZE.22630
 	desc = EVTDESC_ZE_22630
 	is_triggered_only = yes
-	# Disappointed!
 
+	# Disappointed!
 	immediate = {
-		log = "work event id = ZE.22630"
+		log = "work event id = ZE.22630 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1557,8 +1557,8 @@ letter_event = {
 			}
 		}
 	}
-	# You dare to deny me help?
 
+	# You dare to deny me help?
 	option = {
 		name = EVTOPTB_ZE_22630
 		tooltip_info = wroth
@@ -1576,8 +1576,8 @@ letter_event = {
 			}
 		}
 	}
-	# Perhaps some money will help?
 
+	# Perhaps some money will help?
 	option = {
 		name = EVTOPTC_ZE_22630
 		ai_chance = {
@@ -1608,10 +1608,10 @@ letter_event = {
 	id = ZE.22640
 	desc = EVTDESC_ZE_22640
 	is_triggered_only = yes
-	# Lovely!
 
+	# Lovely!
 	immediate = {
-		log = "work event id = ZE.22640"
+		log = "work event id = ZE.22640 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1633,7 +1633,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = ZE.22650"
+		log = "work event id = ZE.22650 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1653,7 +1653,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = ZE.22660"
+		log = "work event id = ZE.22660 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1672,10 +1672,10 @@ letter_event = {
 	id = ZE.22670
 	desc = EVTDESC_ZE_22670
 	is_triggered_only = yes
-	# When you put it like that!
 
+	# When you put it like that!
 	immediate = {
-		log = "work event id = ZE.22670"
+		log = "work event id = ZE.22670 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1709,8 +1709,8 @@ letter_event = {
 			}
 		}
 	}
-	# Still no.
 
+	# Still no.
 	option = {
 		name = EVTOPTB_ZE_22670
 		ai_chance = {
@@ -1733,10 +1733,10 @@ letter_event = {
 	id = ZE.22680
 	desc = EVTDESC_ZE_22680
 	is_triggered_only = yes
-	# Fantastic!
 
+	# Fantastic!
 	immediate = {
-		log = "work event id = ZE.22680"
+		log = "work event id = ZE.22680 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1781,10 +1781,10 @@ letter_event = {
 	id = ZE.22690
 	desc = EVTDESC_ZE_22690
 	is_triggered_only = yes
-	# Disappointed!
 
+	# Disappointed!
 	immediate = {
-		log = "work event id = ZE.22690"
+		log = "work event id = ZE.22690 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1864,7 +1864,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = ZE.22700"
+		log = "work event id = ZE.22700 for [Root.GetBestName]"
 		any_friend = {
 			limit = {
 				NOR = {
@@ -1934,7 +1934,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = ZE.22701"
+		log = "work event id = ZE.22701 for [Root.GetBestName]"
 		FROM = {
 			character_event = {
 				id = ZE.22702
@@ -1948,10 +1948,10 @@ character_event = {
 	desc = EVTDESC_ZE_22702
 	picture = GFX_evt_council_agreement
 	is_triggered_only = yes
-	# Give friend land
 
+	# Give friend land
 	immediate = {
-		log = "work event id = ZE.22702"
+		log = "work event id = ZE.22702 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2007,8 +2007,8 @@ character_event = {
 			add_trait = charitable
 		}
 	}
-	# Deny friend land
 
+	# Deny friend land
 	option = {
 		name = EVTOPTB_ZE_22702
 		ai_chance = {
@@ -2104,7 +2104,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = ZE.22800"
+		log = "work event id = ZE.22800 for [Root.GetBestName]"
 		liege = {
 			save_event_target_as = letter_event_portrait
 		}
@@ -2213,8 +2213,8 @@ character_event = {
 			}
 		}
 	}
-	# Offer to train
 
+	# Offer to train
 	option = {
 		name = EVTOPTA_ZE_22800
 		ai_chance = {
@@ -2226,8 +2226,8 @@ character_event = {
 			}
 		}
 	}
-	# Rather not bother with it
 
+	# Rather not bother with it
 	option = {
 		name = EVTOPTB_ZE_22800
 		ai_chance = {
@@ -2246,10 +2246,10 @@ letter_event = {
 	prisoner = no
 	only_playable = yes
 	is_triggered_only = yes
-	# Accept offer
 
+	# Accept offer
 	immediate = {
-		log = "work event id = ZE.22801"
+		log = "work event id = ZE.22801 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2618,8 +2618,8 @@ letter_event = {
 			break = yes
 		}
 	}
-	# An insult!
 
+	# An insult!
 	option = {
 		name = EVTOPTB_ZE_22801
 		ai_chance = {
@@ -2645,7 +2645,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = ZE.22802"
+		log = "work event id = ZE.22802 for [Root.GetBestName]"
 		ROOT = {
 			add_favor = FROM
 		}
@@ -2668,7 +2668,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = ZE.22803"
+		log = "work event id = ZE.22803 for [Root.GetBestName]"
 	}
 
 	option = {

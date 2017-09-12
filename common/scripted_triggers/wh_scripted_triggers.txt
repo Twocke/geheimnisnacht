@@ -91,13 +91,13 @@ wh_magic_physical_healing_trigger = {
 }
 
 wh_num_of_consorts_trigger = {
-    OR = {
-        NOT = {
+	OR = {
+		NOT = {
 			num_of_consorts = 3
 		}
-        AND = {
-          	religion = slaanesh
-           	NOT = {
+		AND = {
+		  	religion = slaanesh
+		   	NOT = {
 				num_of_consorts = 6
 			}
 		}
@@ -111,7 +111,6 @@ wh_is_beautiful_trigger = {
 		trait = fair
 	}
 }
-
 
 wh_has_any_magic_potential_trigger = {
 	or = {
@@ -152,6 +151,15 @@ wh_is_mage_trigger = {
 		has_character_modifier = magic_power_2
 		has_character_modifier = magic_power_3
 		has_character_modifier = magic_power_4
+	}
+}
+
+wh_underempire_or_nehekhara_trigger = {
+	location = {
+		or = {
+			region = world_underempire
+			region = world_nehekhara
+		}
 	}
 }
 
@@ -235,19 +243,6 @@ is_long_lived_character = {
 	}
 }
 
-is_no_females_race = {
-	OR = {
-		trait = creature_skink
-		trait = creature_saurus
-		trait = creature_orc
-		trait = creature_goblin
-		trait = creature_snotling
-		trait = creature_nehekharan
-		trait = creature_slann
-		trait = creature_skaven
-	}
-}
-
 is_mutated_trigger = {
 	OR = {
 		trait = mutation_minor
@@ -275,11 +270,11 @@ is_demon_trigger = {
 		trait = slaanesh_demon
 		trait = nurgle_demon
 		trait = tzeentch_demon
-		trait = khorne_bloodletter
-		trait = nurgle_plaguebearer
-		trait = slaanesh_daemonette
-		trait = tzeentch_flamer
 		trait = hashut_kdaai
+		# trait = khorne_bloodletter
+		# trait = nurgle_plaguebearer
+		# trait = slaanesh_daemonette
+		# trait = tzeentch_flamer
 	}
 }
 
@@ -360,20 +355,75 @@ is_living_human_trigger = {
 	is_vampire_trigger = no
 }
 
-cant_love_trigger = {
-	nor = {
-		is_demon_trigger = yes
-		trait = creature_goblin
-		trait = creature_orc
+is_no_females_race = {
+	OR = {
 		trait = creature_skink
+		trait = creature_saurus
+		trait = creature_orc
+		trait = creature_goblin
+		trait = creature_snotling
+		trait = creature_nehekharan # hmmm
+		trait = creature_slann
 		trait = creature_skaven
-		culture_group = orc_group
-		culture_group = goblin_group
-		culture_group = lizardman_group
+	}
+}
+
+can_love_trigger = {
+	is_demon_trigger = no
+	is_no_females_race = no
+	nor = {
 		trait = pet_consort
 		trait = druchi_witch_elf
 		trait = druchi_assassin
-		trait = skaven_breeder
+	}
+}
+
+wh_this_and_root_can_love_trigger = {
+	#is_valid_romance_target = ROOT
+	can_love_trigger = yes
+	is_marriage_adult = yes
+	root = {
+		can_love_trigger = yes
+		s_marriage_adult = yes
+	}
+	nor = {
+		is_lover = root
+		character = root
+	}
+	or = {
+		and = {
+			is_opposite_sex = root
+			or = {
+				nor = {
+					trait = homosexual
+					root = {
+						trait = homosexual
+					}
+				}
+				and = {
+					trait = transgender
+					root = {
+						trait = homosexual
+					}
+				}
+				and = {
+					trait = homosexual
+					root = {
+						trait = transgender
+					}
+				}
+			}
+		}
+		and = {
+			same_sex = root
+			trait = homosexual
+			or = {
+				root = {
+					trait = homosexual
+				}
+				trait = transgender
+			}
+		}
 	}
 }
 
@@ -387,17 +437,18 @@ is_invincible_trigger = {
 }
 
 is_immortal_trigger = {
-	OR = {
-		has_artifact = elixir_of_eternal_youth
-		trait = immortal
-		trait = creature_orc
-		trait = creature_goblin
-		trait = creature_slann
-		trait = creature_celdragon
-		is_undead_trigger = yes
-		is_demon_trigger = yes
-		is_demon_prince_trigger = yes
-	}
+	immortal = yes
+	# OR = {
+	# 	has_artifact = elixir_of_eternal_youth
+	# 	trait = immortal
+	# 	trait = creature_orc
+	# 	trait = creature_goblin
+	# 	trait = creature_slann
+	# 	trait = creature_celdragon
+	# 	is_undead_trigger = yes
+	# 	is_demon_trigger = yes
+	# 	is_demon_prince_trigger = yes
+	# }
 }
 
 is_incapacitated_trigger = {
@@ -475,29 +526,40 @@ is_incorruptible_trigger = {
 
 cannot_marry_trigger = {
 	OR = {
+		cannot_marry_race_trigger = yes
 		is_theocracy = yes
 		trait = eunuch
 		trait = monk
 		trait = nun
-		trait = horse
 		trait = witch_hunter
 		trait = khemri_liche_priest
 		trait = khemri_soldier
 		trait = druchi_witch_elf
 		trait = druchi_sorceress
+		trait = special_char_red_duke
+		trait = everqueen
+		trait = everqueen_heir
+		trait = pet_consort
+		trait = widowed
+		trait = courting
+		trait = fay_enchantress
+		trait = mage_apprentice
+		trait = transgender
+		trait = disinherited_amazon
+		trait = in_stock
+		trait = clay_sculptor
+		trait = astromancer
+	}
+}
+
+cannot_marry_race_trigger = {
+	or = {
+		# chosen cannot marry good or bad?
+		is_demon_trigger = yes
 		trait = creature_amazon
 		trait = creature_treekin
 		trait = creature_chaosspawn
 		trait = creature_monster
-		trait = vampire_necrarch_visible
-		trait = special_char_red_duke
-		trait = everqueen_heir
-		trait = pet_consort
-		trait = widowed
-		# chosen cannot marry good or bad?
-		is_demon_trigger = yes
-		trait = everqueen
-		trait = fay_enchantress
 		trait = creature_forestspirit
 		trait = creature_slann
 		trait = creature_skink
@@ -506,14 +568,9 @@ cannot_marry_trigger = {
 		trait = creature_goblin
 		trait = creature_snotling
 		trait = creature_celdragon
-		trait = mage_apprentice
-		trait = transgender
-		trait = disinherited_amazon
-		trait = in_stock
-		trait = clay_sculptor
-		trait = astromancer
 		trait = skaven_breeder
-		trait = courting
+		trait = vampire_necrarch_visible
+		trait = horse
 	}
 }
 
@@ -870,11 +927,11 @@ THIS_can_join_PREV_league_trigger = {
 	custom_tooltip = {
 		text = ELECTIVE_LEAGUE_ALLY_ETC
 		OR = {
-			is_allied_with = PREV                # Strong ally
+			is_allied_with = PREV				# Strong ally
 			has_non_aggression_pact_with = PREV  # Potential ally, even if the AI hasn't bothered
-			is_close_relative = PREV             # Potential ally, even if the AI hasn't bothered
-			pays_tribute_to = PREV               # Weak ally
-			is_friend = PREV                     # Weak ally
+			is_close_relative = PREV			 # Potential ally, even if the AI hasn't bothered
+			pays_tribute_to = PREV			   # Weak ally
+			is_friend = PREV					 # Weak ally
 		}
 	}
 
@@ -898,10 +955,10 @@ THIS_can_be_elector_of_PREV_trigger = {
 	custom_tooltip = {
 		text = CAN_BE_ELECTOR
 		# Counts are only electors in duchies. Dukes and kings are always electors.
-	    OR = {
-	        higher_real_tier_than = COUNT
-	        PREV = { tier = DUKE }
-	    }
+		OR = {
+			higher_real_tier_than = COUNT
+			PREV = { tier = DUKE }
+		}
 	}
 }
 
@@ -909,9 +966,9 @@ THIS_and_PREV_same_rank_trigger = {
 	custom_tooltip = {
 		text = SAME_RANK
 		OR = {
-			AND = { tier = COUNT    PREV = { tier = COUNT   } }
-			AND = { tier = DUKE     PREV = { tier = DUKE    } }
-			AND = { tier = KING     PREV = { tier = KING    } }
+			AND = { tier = COUNT	PREV = { tier = COUNT   } }
+			AND = { tier = DUKE	 PREV = { tier = DUKE	} }
+			AND = { tier = KING	 PREV = { tier = KING	} }
 			AND = { tier = EMPEROR  PREV = { tier = EMPEROR } }
 		}
 	}

@@ -70,7 +70,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = 37000"
+		log = "work event id = 37000 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -91,7 +91,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 37001"
+		log = "work event id = 37001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -180,7 +180,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 37002"
+		log = "work event id = 37002 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -245,7 +245,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 37003"
+		log = "work event id = 37003 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -267,7 +267,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 37004"
+		log = "work event id = 37004 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -375,7 +375,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = 37005"
+		log = "work event id = 37005 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -402,7 +402,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = 37006"
+		log = "work event id = 37006 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -461,7 +461,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 37007"
+		log = "work event id = 37007 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -566,7 +566,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = 37010"
+		log = "work event id = 37010 for [Root.GetBestName]"
 		liege = {
 			capital_scope = {
 				random_independent_ruler = {
@@ -605,7 +605,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 37011"
+		log = "work event id = 37011 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -628,7 +628,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 37012"
+		log = "work event id = 37012 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -675,7 +675,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = 37015"
+		log = "work event id = 37015 for [Root.GetBestName]"
 		liege = {
 			capital_scope = {
 				ROOT = {
@@ -1056,7 +1056,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = 37049"
+		log = "work event id = 37049 for [Root.GetBestName]"
 		random_courtier = {
 			limit = {
 				religion_group = old_world_group
@@ -1103,7 +1103,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 37050"
+		log = "work event id = 37050 for [Root.GetBestName]"
 		liege = {
 			character_event = {
 				id = 37051 days = 3
@@ -1120,7 +1120,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 37051"
+		log = "work event id = 37051 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1156,7 +1156,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 37052"
+		log = "work event id = 37052 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1181,7 +1181,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 37053"
+		log = "work event id = 37053 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1248,7 +1248,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = 37054"
+		log = "work event id = 37054 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1269,7 +1269,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 37055"
+		log = "work event id = 37055 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1409,7 +1409,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = 37056"
+		log = "work event id = 37056 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1440,7 +1440,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 37057"
+		log = "work event id = 37057 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1527,7 +1527,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = 37250"
+		log = "work event id = 37250 for [Root.GetBestName]"
 		set_character_flag = spouse_offered_help
 		random_spouse = {
 			limit = {
@@ -1549,7 +1549,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 37251"
+		log = "work event id = 37251 for [Root.GetBestName]"
 		FROM = {
 			character_event = {
 				id = 37252 days = 1
@@ -1565,10 +1565,10 @@ character_event = {
 	picture = GFX_evt_courtiers_talking
 	border = GFX_event_normal_frame_diplomacy
 	is_triggered_only = yes
-	# Yes
 
+	# Yes
 	immediate = {
-		log = "work event id = 37252"
+		log = "work event id = 37252 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1584,8 +1584,8 @@ character_event = {
 			}
 		}
 	}
-	# No
 
+	# No
 	option = {
 		name = EVTOPTB_37252
 		custom_tooltip = {
@@ -1609,7 +1609,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 37254"
+		log = "work event id = 37254 for [Root.GetBestName]"
 		FROM = {
 			character_event = {
 				id = 37253 days = 7
@@ -1624,12 +1624,12 @@ character_event = {
 	picture = GFX_evt_courtiers_talking
 	border = GFX_event_normal_frame_diplomacy
 	is_triggered_only = yes
-	# Bonding over common interests and getting work done
 
 	immediate = {
-		log = "work event id = 37253"
+		log = "work event id = 37253 for [Root.GetBestName]"
 	}
 
+	# Bonding over common interests and getting work done
 	option = {
 		name = EVTOPTA_37253
 		custom_tooltip = {
@@ -1675,12 +1675,15 @@ character_event = {
 			economy_techpoints = 15
 		}
 	}
+	
 	# Let's go to bed
-
 	option = {
 		trigger = {
 			NOT = {
 				is_lover = FROM
+			}
+			from = {
+				wh_this_and_root_can_love_trigger = yes
 			}
 		}
 		name = EVTOPTB_37253

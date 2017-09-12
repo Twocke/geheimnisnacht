@@ -33,7 +33,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = 77800"
+		log = "work event id = 77800 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -102,7 +102,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 77801"
+		log = "work event id = 77801 for [Root.GetBestName]"
 		random_list = {
 			80 = {
 				# Nothing happens
@@ -191,7 +191,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = 77802"
+		log = "work event id = 77802 for [Root.GetBestName]"
 		remove_character_modifier = pet_best_friends
 	}
 
@@ -308,7 +308,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 77803"
+		log = "work event id = 77803 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -350,7 +350,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = 77850"
+		log = "work event id = 77850 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -475,7 +475,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = 77851"
+		log = "work event id = 77851 for [Root.GetBestName]"
 		if = {
 			limit = {
 				any_lover = {
@@ -531,8 +531,8 @@ character_event = {
 			}
 		}
 	}
-	# Get rid of cat
 
+	# Get rid of cat
 	option = {
 		name = EVTOPTA_77851
 		remove_character_modifier = pet_cat
@@ -542,8 +542,8 @@ character_event = {
 			years = 10
 		}
 	}
-	# Give cat to friend
 
+	# Give cat to friend
 	option = {
 		trigger = {
 			any_friend = {
@@ -592,8 +592,8 @@ character_event = {
 			}
 		}
 	}
-	# Give cat away
 
+	# Give cat away
 	option = {
 		trigger = {
 			NOT = {
@@ -662,8 +662,8 @@ character_event = {
 			}
 		}
 	}
-	# Keep cat
 
+	# Keep cat
 	option = {
 		name = EVTOPTC_77851
 		reverse_opinion = {
@@ -685,8 +685,8 @@ character_event = {
 			}
 		}
 	}
-	# Impalement
 
+	# Impalement
 	option = {
 		trigger = {
 			event_target:cat_hater = {
@@ -725,8 +725,8 @@ character_event = {
 			}
 		}
 	}
-	# Tiger
 
+	# Tiger
 	option = {
 		trigger = {
 			event_target:cat_hater = {
@@ -789,7 +789,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 77855"
+		log = "work event id = 77855 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -871,7 +871,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 77852"
+		log = "work event id = 77852 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -956,7 +956,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 77853"
+		log = "work event id = 77853 for [Root.GetBestName]"
 		FROM = {
 			remove_character_modifier = pet_cat
 		}
@@ -1019,13 +1019,13 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = 77854"
+		log = "work event id = 77854 for [Root.GetBestName]"
 		event_target:cat_hater = {
 			save_event_target_as = cat_hater
 		}
 	}
-	# Choose them
 
+	# Choose them
 	option = {
 		name = EVTOPTA_77854
 		custom_tooltip = {
@@ -1036,8 +1036,8 @@ character_event = {
 		}
 		remove_character_modifier = pet_cat
 	}
-	# Choose cat
 
+	# Choose cat
 	option = {
 		name = EVTOPTB_77854
 		custom_tooltip = {
@@ -1080,10 +1080,10 @@ character_event = {
 		picture = GFX_evt_burning_house
 	}
 	is_triggered_only = yes
-	# Let it play
 
+	# Let it play
 	immediate = {
-		log = "work event id = 77856"
+		log = "work event id = 77856 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1198,7 +1198,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = 77857"
+		log = "work event id = 77857 for [Root.GetBestName]"
 		random_courtier = {
 			limit = {
 				any_child = {
@@ -1221,8 +1221,8 @@ character_event = {
 			}
 		}
 	}
-	# Buy a new rabbit
 
+	# Buy a new rabbit
 	option = {
 		name = EVTOPTA_77857
 		custom_tooltip = {
@@ -1237,8 +1237,8 @@ character_event = {
 			years = 5
 		}
 	}
-	# Put down your pet
 
+	# Put down your pet
 	option = {
 		name = EVTOPTB_77857
 		custom_tooltip = {
@@ -1253,8 +1253,8 @@ character_event = {
 			years = 5
 		}
 	}
-	# Tell them to go away
 
+	# Tell them to go away
 	option = {
 		name = EVTOPTC_77857
 		custom_tooltip = {
@@ -1306,10 +1306,10 @@ character_event = {
 			trait = kind
 		}
 	}
-	# Adopt all the cats
 
+	# Adopt all the cats
 	immediate = {
-		log = "work event id = 77858"
+		log = "work event id = 77858 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1336,8 +1336,8 @@ character_event = {
 			}
 		}
 	}
-	# Don't adopt all the cats
 
+	# Don't adopt all the cats
 	option = {
 		name = EVTOPTB_77858
 		custom_tooltip = {
@@ -1374,7 +1374,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = 77860"
+		log = "work event id = 77860 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1415,7 +1415,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = 77861"
+		log = "work event id = 77861 for [Root.GetBestName]"
 		random_friend = {
 			limit = {
 				age = 8
@@ -1458,8 +1458,8 @@ character_event = {
 			}
 		}
 	}
-	# They will figure it out
 
+	# They will figure it out
 	option = {
 		name = EVTOPTA_77861
 		custom_tooltip = {
@@ -1471,8 +1471,8 @@ character_event = {
 			}
 		}
 	}
-	# Get rid of dog
 
+	# Get rid of dog
 	option = {
 		trigger = {
 			event_target:animal_caretaker = {
@@ -1496,8 +1496,8 @@ character_event = {
 			}
 		}
 	}
-	# Get rid of cat
 
+	# Get rid of cat
 	option = {
 		trigger = {
 			event_target:animal_caretaker = {
@@ -1554,7 +1554,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 77862"
+		log = "work event id = 77862 for [Root.GetBestName]"
 		random_list = {
 			25 = {
 				remove_character_modifier = pet_hunting_dog

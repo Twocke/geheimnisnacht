@@ -1,6 +1,7 @@
 namespace = DR_startup
 
-# Misc startup stuff, add trait event
+# Misc startup stuff
+# add race trait event
 character_event = {
 	id = DR_startup.1
 	hide_window = yes
@@ -18,7 +19,7 @@ character_event = {
 	immediate = {
 		clr_character_flag = wh_has_event_DR_startup.1_trait_not_set
 		set_character_flag = wh_has_event_DR_startup.1
-		log = "work event id = DR_startup.1"
+		log = "work event id = DR_startup.1 for [Root.GetBestName]"
 		trigger_switch = {
 			on_trigger = society_member_of
 			cult_of_khorne = {
@@ -75,6 +76,8 @@ character_event = {
 				OR = {
 					graphical_culture = amazongfx
 					graphical_culture = westerngfx
+					graphical_culture = westerlandergfx
+					graphical_culture = sudenburgergfx
 					graphical_culture = easterngfx
 					graphical_culture = muslimgfx
 					graphical_culture = frankishgfx
@@ -576,6 +579,16 @@ character_event = {
 			}
 			break = yes
 		}
+		if = {
+			limit = {
+				graphical_culture = slanngfx
+				not = {
+					trait = creature_slann
+				}
+			}
+			add_trait = creature_slann
+			break = yes
+		}
 		# Skaven
 		if = {
 			limit = {
@@ -856,7 +869,7 @@ character_event = {
 		# grant_title = b_glak
 		# }
 		set_character_flag = wh_has_event_DR_startup.1_trait_not_set
-		log = "wh_has_event_DR_startup.1_trait_not_set"
+		log = "wh_has_event_DR_startup.1_trait_not_set for [Root.GetBestName]"
 	}
 }
 
@@ -911,7 +924,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = DR_startup.2"
+		log = "work event id = DR_startup.2 for [Root.GetBestName]"
 		random_list = {
 			10 = {
 				create_random_soldier = {
@@ -1028,7 +1041,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = DR_startup.3"
+		log = "work event id = DR_startup.3 for [Root.GetBestName]"
 		random_list = {
 			10 = {
 				create_random_priest = {
@@ -1144,7 +1157,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = DR_startup.4"
+		log = "work event id = DR_startup.4 for [Root.GetBestName]"
 		if = {
 			limit = {
 				nor = {
@@ -1210,7 +1223,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = DR_startup.5"
+		log = "work event id = DR_startup.5 for [Root.GetBestName]"
 		set_global_flag = races_set
 		set_global_flag = knights_set
 		set_global_flag = children_added
@@ -1224,7 +1237,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = DR_startup.6"
+		log = "work event id = DR_startup.6 for [Root.GetBestName]"
 		create_title = {
 			tier = EMPEROR
 			landless = yes
@@ -1253,7 +1266,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = DR_startup.7"
+		log = "work event id = DR_startup.7 for [Root.GetBestName]"
 		create_title = {
 			tier = DUKE
 			landless = yes
@@ -1279,7 +1292,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = DR_startup.8"
+		log = "work event id = DR_startup.8 for [Root.GetBestName]"
 		if = {
 			limit = {
 				has_game_rule = {
@@ -1298,7 +1311,7 @@ character_event = {
 					}
 				}
 			}
-			set_global_flag = optionB
+			set_global_flag = optionB # mean we can
 		}
 		set_global_flag = mists_of_albion
 		set_global_flag = everchosen_exists # Kharduun still alive
@@ -1329,7 +1342,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = DR_startup.9"
+		log = "work event id = DR_startup.9 for [Root.GetBestName]"
 		any_province = {
 			limit = {
 				region = world_surface_burrows
@@ -1353,7 +1366,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = DR_startup.10"
+		log = "work event id = DR_startup.10 for [Root.GetBestName]"
 		if = {
 			limit = {
 				trait = creature_slann

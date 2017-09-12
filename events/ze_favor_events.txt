@@ -62,7 +62,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = ZE.8100"
+		log = "work event id = ZE.8100 for [Root.GetBestName]"
 		random_vassal = {
 			limit = {
 				NOR = {
@@ -78,8 +78,8 @@ character_event = {
 			save_event_target_as = target_voter
 		}
 	}
-	# call for help
 
+	# call for help
 	option = {
 		name = EVTOPTA_ZE_8100
 		custom_tooltip = {
@@ -93,8 +93,8 @@ character_event = {
 			}
 		}
 	}
-	# dont embarass yourself
 
+	# dont embarass yourself
 	option = {
 		name = EVTOPTB_ZE_8100
 		random_list = {
@@ -139,10 +139,10 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 	desc = EVTDESC_ZE_8101
 	is_triggered_only = yes
-	# Helps wounded
 
+	# Helps wounded
 	immediate = {
-		log = "work event id = ZE.8101"
+		log = "work event id = ZE.8101 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -161,8 +161,8 @@ character_event = {
 			}
 		}
 	}
-	# Mocks wounded
 
+	# Mocks wounded
 	option = {
 		name = EVTOPTB_ZE_8101
 		FROM = {
@@ -195,7 +195,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = ZE.8102"
+		log = "work event id = ZE.8102 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -213,7 +213,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = ZE.8103"
+		log = "work event id = ZE.8103 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -269,7 +269,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = ZE.8110"
+		log = "work event id = ZE.8110 for [Root.GetBestName]"
 		random_vassal = {
 			limit = {
 				NOR = {
@@ -294,8 +294,8 @@ character_event = {
 			save_event_target_as = target_vassal
 		}
 	}
-	# interrupt their quarrel
 
+	# interrupt their quarrel
 	option = {
 		name = EVTOPTA_ZE_8110
 		hidden_tooltip = {
@@ -306,8 +306,8 @@ character_event = {
 			}
 		}
 	}
-	# dont mess with others affairs
 
+	# dont mess with others affairs
 	option = {
 		name = EVTOPTB_ZE_8110
 	}
@@ -343,7 +343,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = ZE.8112"
+		log = "work event id = ZE.8112 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -404,7 +404,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = ZE.8113"
+		log = "work event id = ZE.8113 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -427,7 +427,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = ZE.8114"
+		log = "work event id = ZE.8114 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -448,7 +448,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = ZE.8120"
+		log = "work event id = ZE.8120 for [Root.GetBestName]"
 		reverse_remove_favor = event_target:pardon_target
 		if = {
 			limit = {

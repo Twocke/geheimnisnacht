@@ -9,7 +9,6 @@ character_event = {
 	only_playable = yes
 	religion = grail
 	min_age = 16
-	only_men = yes
 	is_triggered_only = yes
 
 	trigger = {
@@ -22,7 +21,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_bretonnia.0"
+		log = "work event id = wh_bretonnia.0 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -45,7 +44,6 @@ character_event = {
 	desc = EVTDESCBRETONNIA.1 # You are a skilled warrior, and it is time you took up your duties to the realm and became a Knight-errant of BRETONNIA
 	picture = "GFX_evt_bretonnians"
 	min_age = 16
-	only_men = yes
 	is_triggered_only = yes
 
 	trigger = {
@@ -58,7 +56,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_bretonnia.1"
+		log = "work event id = wh_bretonnia.1 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -79,7 +77,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_bretonnia.2"
+		log = "work event id = wh_bretonnia.2 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -99,7 +97,6 @@ character_event = {
 	only_playable = yes
 	religion = grail
 	min_age = 16
-	only_men = yes
 	is_triggered_only = yes
 
 	trigger = {
@@ -111,7 +108,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_bretonnia.3"
+		log = "work event id = wh_bretonnia.3 for [Root.GetBestName]"
 		character_event = {
 			id = wh_bretonnia.5
 		}
@@ -125,7 +122,6 @@ character_event = {
 	only_playable = yes
 	religion = grail
 	min_age = 35
-	only_men = yes
 	is_triggered_only = yes
 
 	trigger = {
@@ -137,7 +133,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_bretonnia.4"
+		log = "work event id = wh_bretonnia.4 for [Root.GetBestName]"
 		set_character_flag = has_event_wh_bretonnia.4
 		character_event = {
 			id = wh_bretonnia.5
@@ -154,7 +150,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_bretonnia.5"
+		log = "work event id = wh_bretonnia.5 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -182,7 +178,6 @@ character_event = {
 	only_playable = yes
 	religion = grail
 	min_age = 16
-	only_men = yes
 	prisoner = no
 	is_triggered_only = yes
 
@@ -191,7 +186,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_bretonnia.6"
+		log = "work event id = wh_bretonnia.6 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -214,7 +209,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_bretonnia.7"
+		log = "work event id = wh_bretonnia.7 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -266,7 +261,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_bretonnia.8"
+		log = "work event id = wh_bretonnia.8 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -299,7 +294,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_bretonnia.9"
+		log = "work event id = wh_bretonnia.9 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -338,7 +333,6 @@ character_event = {
 	only_playable = yes
 	religion = grail
 	min_age = 16
-	only_men = yes
 	prisoner = no
 	is_triggered_only = yes
 
@@ -347,7 +341,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_bretonnia.10"
+		log = "work event id = wh_bretonnia.10 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -373,7 +367,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_bretonnia.11"
+		log = "work event id = wh_bretonnia.11 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -425,7 +419,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_bretonnia.12"
+		log = "work event id = wh_bretonnia.12 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -458,7 +452,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_bretonnia.13"
+		log = "work event id = wh_bretonnia.13 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -497,7 +491,6 @@ character_event = {
 	only_playable = yes
 	religion = grail
 	min_age = 16
-	only_men = yes
 	prisoner = no
 	is_triggered_only = yes
 
@@ -506,7 +499,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_bretonnia.14"
+		log = "work event id = wh_bretonnia.14 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -550,7 +543,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_bretonnia.15"
+		log = "work event id = wh_bretonnia.15 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -583,7 +576,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_bretonnia.16"
+		log = "work event id = wh_bretonnia.16 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -634,7 +627,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_bretonnia.17"
+		log = "work event id = wh_bretonnia.17 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -663,7 +656,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_bretonnia.18"
+		log = "work event id = wh_bretonnia.18 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -700,7 +693,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_bretonnia.19"
+		log = "work event id = wh_bretonnia.19 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -756,7 +749,6 @@ character_event = {
 	min_age = 16
 	only_playable = yes
 	religion = grail
-	only_men = yes
 	is_triggered_only = yes
 
 	trigger = {
@@ -768,7 +760,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_bretonnia.20"
+		log = "work event id = wh_bretonnia.20 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -787,7 +779,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_bretonnia.21"
+		log = "work event id = wh_bretonnia.21 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -807,10 +799,7 @@ character_event = {
 	title = THE_GRAIL_QUEST
 	desc = EVTDESCBRETONNIA.22 # You come across a remote shrine, dedicated to a sighting of The Lady many years ago. Rich offerings are on hand, and the pilgrims ask you to donate to the shrine to help feed the local village.
 	picture = "GFX_evt_tribal_shrine"
-	only_playable = yes
-	religion = grail
-	min_age = 16
-	only_men = yes
+	has_character_flag = on_grail_quest
 	prisoner = no
 	is_triggered_only = yes
 
@@ -824,7 +813,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_bretonnia.22"
+		log = "work event id = wh_bretonnia.22 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -850,12 +839,8 @@ character_event = {
 	title = THE_GRAIL_QUEST
 	desc = EVTDESCBRETONNIA.23 # You know you are not the bravest of knights, so when you hear word that a norscan berserker has slain twenty men single-handedly and he suddenly appears over the horizon you are cautious about riding him down, but...
 	picture = "GFX_evt_bretonnians"
-	min_age = 16
-	only_playable = yes
-	religion = grail
-	only_men = yes
-	prisoner = no
 	has_character_flag = on_grail_quest
+	prisoner = no
 	is_triggered_only = yes
 
 	trigger = {
@@ -868,7 +853,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_bretonnia.23"
+		log = "work event id = wh_bretonnia.23 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -913,15 +898,11 @@ character_event = {
 	title = THE_GRAIL_QUEST
 	desc = EVTDESCBRETONNIA.24 # You are not the purest or most abstinent of knights, and just as you sit in a tavern considering these flaws of yours, a gorgeous barmaid approaches with a large pitcher of wine and a warm inviting smile...
 	picture = "GFX_evt_feast"
-	only_playable = yes
-	religion = grail
-	min_age = 16
-	only_men = yes
+	has_character_flag = on_grail_quest
 	prisoner = no
 	is_triggered_only = yes
 
 	trigger = {
-		has_character_flag = on_grail_quest
 		trait = on_knight_quest
 		OR = {
 			trait = hedonist
@@ -933,7 +914,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_bretonnia.24"
+		log = "work event id = wh_bretonnia.24 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -958,15 +939,11 @@ character_event = {
 	title = THE_GRAIL_QUEST
 	desc = EVTDESCBRETONNIA.25 # While in a tavern, a peasant suddenly bumps into you and spills cheap wine all over you. He yells at you for being in his way, before realizing you are a knight, and then he slowly backs away with a sneer...
 	picture = "GFX_evt_feast"
-	only_playable = yes
-	religion = grail
-	min_age = 16
-	only_men = yes
+	has_character_flag = on_grail_quest
 	prisoner = no
 	is_triggered_only = yes
 
 	trigger = {
-		has_character_flag = on_grail_quest
 		trait = on_knight_quest
 		OR = {
 			trait = cruel
@@ -978,7 +955,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_bretonnia.25"
+		log = "work event id = wh_bretonnia.25 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1003,15 +980,11 @@ character_event = {
 	title = THE_GRAIL_QUEST
 	desc = EVTDESCBRETONNIA.26 # You can't believe it... one day while riding in the woods, the Green Knight appears. This is the final test! If you prove worthy and defeat him, the Lady of the Lake will appear and allow you to sip from the Holy Grail!
 	picture = "GFX_evt_bretonnians"
-	only_playable = yes
-	religion = grail
-	min_age = 16
-	only_men = yes
+	has_character_flag = on_grail_quest
 	prisoner = no
 	is_triggered_only = yes
 
 	trigger = {
-		has_character_flag = on_grail_quest
 		trait = on_knight_quest
 		nor = {
 			trait = cruel
@@ -1026,7 +999,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_bretonnia.26"
+		log = "work event id = wh_bretonnia.26 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1051,12 +1024,15 @@ character_event = {
 			add_trait = brave
 			save_event_target_as = duelist_b
 			character_event = {
-				id = duelengine.1 days = 1
+				id = duelengine.1
+				days = 1
 			}
 		}
 		# Trigger the event to finish the quest - auto cancelled if character is dead.
 		character_event = {
-			id = wh_bretonnia.27 days = 30 random = 5
+			id = wh_bretonnia.27
+			days = 30
+			random = 5
 		}
 		# THE END
 	}
@@ -1068,15 +1044,11 @@ character_event = {
 	title = THE_LADY_OF_THE_LAKE
 	desc = EVTDESCBRETONNIA.27 # It... it's finally happening! The Lady of the Lake appears before you, her grace and beauty beyond compare. Purified from your trials she allows you to sip from the Grail, and you feel vitality and strength flow into you!
 	picture = "GFX_evt_knight_kneeling"
-	only_playable = yes
-	religion = grail
-	min_age = 16
-	only_men = yes
+	has_character_flag = on_grail_quest
 	prisoner = no
 	is_triggered_only = yes
 
 	trigger = {
-		has_character_flag = on_grail_quest
 		trait = on_knight_quest
 		nor = {
 			trait = cruel
@@ -1091,7 +1063,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_bretonnia.27"
+		log = "work event id = wh_bretonnia.27 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1114,13 +1086,11 @@ character_event = {
 	only_playable = yes
 	religion = grail
 	min_age = 16
-	only_men = yes
 	prisoner = no
 	is_triggered_only = yes
 
 	trigger = {
 		has_landed_title = e_bretonnia
-		religion = grail
 		nor = {
 			trait = grail_knight
 			has_character_flag = bretonnia30
@@ -1129,7 +1099,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_bretonnia.30"
+		log = "work event id = wh_bretonnia.30 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1138,7 +1108,8 @@ character_event = {
 		add_trait = on_knight_quest
 		set_character_flag = on_grail_quest
 		character_event = {
-			id = wh_bretonnia.31 days = 2555
+			id = wh_bretonnia.31
+			days = 2555
 		}
 	}
 
@@ -1164,7 +1135,8 @@ character_event = {
 		}
 		any_playable_ruler = {
 			character_event = {
-				id = wh_bretonnia.33 days = 7
+				id = wh_bretonnia.33
+				days = 7
 			}
 		}
 	}
@@ -1179,12 +1151,11 @@ character_event = {
 	only_playable = yes
 	religion = grail
 	min_age = 16
-	only_men = yes
 	prisoner = no
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_bretonnia.31"
+		log = "work event id = wh_bretonnia.31 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1195,7 +1166,8 @@ character_event = {
 		clr_character_flag = on_grail_quest
 		any_playable_ruler = {
 			character_event = {
-				id = wh_bretonnia.32 days = 7
+				id = wh_bretonnia.32
+				days = 7
 			}
 		}
 	}
@@ -1210,7 +1182,8 @@ character_event = {
 		set_character_flag = false_grail_quest
 		any_playable_ruler = {
 			character_event = {
-				id = wh_bretonnia.34 days = 7
+				id = wh_bretonnia.34
+				days = 7
 			}
 		}
 	}
@@ -1245,7 +1218,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_bretonnia.32"
+		log = "work event id = wh_bretonnia.32 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1263,7 +1236,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_bretonnia.33"
+		log = "work event id = wh_bretonnia.33 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1281,7 +1254,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_bretonnia.34"
+		log = "work event id = wh_bretonnia.34 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1298,7 +1271,6 @@ character_event = {
 	only_playable = yes
 	religion = grail
 	min_age = 16
-	only_men = yes
 	is_triggered_only = yes
 
 	trigger = {
@@ -1308,7 +1280,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_bretonnia.35"
+		log = "work event id = wh_bretonnia.35 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1345,7 +1317,6 @@ character_event = {
 	min_age = 16
 	only_playable = yes
 	religion = grail
-	only_men = yes
 	is_triggered_only = yes
 
 	trigger = {
@@ -1356,7 +1327,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_bretonnia.36"
+		log = "work event id = wh_bretonnia.36 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1381,7 +1352,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_bretonnia.37"
+		log = "work event id = wh_bretonnia.37 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1399,7 +1370,6 @@ character_event = {
 	max_age = 40
 	capable_only = yes
 	prisoner = no
-	only_men = yes
 	culture_group = bretonnian_group
 
 	trigger = {
@@ -1498,7 +1468,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_bretonnia.102"
+		log = "work event id = wh_bretonnia.102 for [Root.GetBestName]"
 		liege = {
 			character_event = {
 				id = wh_bretonnia.103
@@ -1517,7 +1487,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_bretonnia.103"
+		log = "work event id = wh_bretonnia.103 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1574,7 +1544,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_bretonnia.104"
+		log = "work event id = wh_bretonnia.104 for [Root.GetBestName]"
 		liege = {
 			character_event = {
 				id = wh_bretonnia.105
@@ -1593,7 +1563,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_bretonnia.105"
+		log = "work event id = wh_bretonnia.105 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1647,7 +1617,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_bretonnia.106"
+		log = "work event id = wh_bretonnia.106 for [Root.GetBestName]"
 		liege = {
 			character_event = {
 				id = wh_bretonnia.107
@@ -1665,7 +1635,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_bretonnia.107"
+		log = "work event id = wh_bretonnia.107 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1700,7 +1670,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_bretonnia.108"
+		log = "work event id = wh_bretonnia.108 for [Root.GetBestName]"
 		clr_character_flag = serving_knighterrant
 		add_trait = blinded
 		liege = {
@@ -1720,7 +1690,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_bretonnia.109"
+		log = "work event id = wh_bretonnia.109 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1782,7 +1752,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_bretonnia.110"
+		log = "work event id = wh_bretonnia.110 for [Root.GetBestName]"
 		liege = {
 			character_event = {
 				id = wh_bretonnia.111
@@ -1801,7 +1771,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_bretonnia.111"
+		log = "work event id = wh_bretonnia.111 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1871,7 +1841,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_bretonnia.112"
+		log = "work event id = wh_bretonnia.112 for [Root.GetBestName]"
 		liege = {
 			character_event = {
 				id = wh_bretonnia.113
@@ -1890,7 +1860,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_bretonnia.113"
+		log = "work event id = wh_bretonnia.113 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1935,7 +1905,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_bretonnia.114"
+		log = "work event id = wh_bretonnia.114 for [Root.GetBestName]"
 		liege = {
 			character_event = {
 				id = wh_bretonnia.115
@@ -1954,7 +1924,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_bretonnia.115"
+		log = "work event id = wh_bretonnia.115 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2025,7 +1995,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_bretonnia.116"
+		log = "work event id = wh_bretonnia.116 for [Root.GetBestName]"
 		liege = {
 			character_event = {
 				id = wh_bretonnia.117
@@ -2044,7 +2014,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_bretonnia.117"
+		log = "work event id = wh_bretonnia.117 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2134,7 +2104,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_bretonnia.118"
+		log = "work event id = wh_bretonnia.118 for [Root.GetBestName]"
 		father = {
 			character_event = {
 				id = wh_bretonnia.119
@@ -2153,7 +2123,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_bretonnia.119"
+		log = "work event id = wh_bretonnia.119 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2202,7 +2172,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_bretonnia.120"
+		log = "work event id = wh_bretonnia.120 for [Root.GetBestName]"
 		father = {
 			character_event = {
 				id = wh_bretonnia.121
@@ -2221,7 +2191,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_bretonnia.121"
+		log = "work event id = wh_bretonnia.121 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2261,7 +2231,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_bretonnia.122"
+		log = "work event id = wh_bretonnia.122 for [Root.GetBestName]"
 		clr_character_flag = serving_knighterrant
 	}
 
@@ -2294,7 +2264,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_bretonnia.123"
+		log = "work event id = wh_bretonnia.123 for [Root.GetBestName]"
 		clr_character_flag = wants_knighterrant
 		clr_character_flag = serving_knighterrant
 	}
@@ -2316,8 +2286,7 @@ character_event = {
 	id = wh_bretonnia.124
 	desc = "DR_bretonnia_become_knight_battle" # Battlefield Promotion
 	picture = "GFX_battle_promotion"
-	is_triggered_only = yes
-	only_men = yes # Might re-evaluate this on the future
+	is_triggered_only = yes # Might re-evaluate this on the future
 	capable_only = yes
 	culture_group = bretonnian_group
 
@@ -2423,7 +2392,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_bretonnia.124"
+		log = "work event id = wh_bretonnia.124 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2477,7 +2446,6 @@ character_event = {
 	desc = "DR_bretonnia_become_knight_siege" # Battlefield Promotion (siege)
 	picture = "GFX_battle_promotion"
 	is_triggered_only = yes
-	only_men = yes
 	capable_only = yes
 	culture_group = bretonnian_group
 
@@ -2583,7 +2551,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = wh_bretonnia.125"
+		log = "work event id = wh_bretonnia.125 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2641,7 +2609,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = wh_bretonnia.1000"
+		log = "work event id = wh_bretonnia.1000 for [Root.GetBestName]"
 		remove_character_modifier = negative_bretonnian_virtue
 		remove_character_modifier = bretonnian_virtue_1
 		remove_character_modifier = bretonnian_virtue_2

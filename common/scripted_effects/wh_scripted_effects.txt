@@ -928,6 +928,193 @@ wh_make_bloodletter_khorne_effect = {
 	}
 }
 
+# create new character
+wh_create_flamer_tzeentch_effect = {
+	create_character = {
+		random_traits = yes
+		religion = tzeentch
+		culture = flamer_tzeentch
+		female = no
+		age = 999
+		attributes = {
+			diplomacy = 2
+			martial = 13
+			stewardship = 2
+			intrigue = 30
+			learning = 18
+		}
+		trait = tzeentch_demon
+		trait = tzeentch_flamer
+		trait = ambitious
+		trait = proud
+		trait = greedy
+		trait = genius
+		trait = mystic
+		flag = ai_flag_refuse_conversion
+		flag = special_marshal
+	}
+}
+
+wh_create_plaguebearer_nurgle_effect = {
+	create_character = {
+		random_traits = yes
+		religion = nurgle
+		culture = plaguebearer_nurgle
+		female = no
+		age = 777
+		attributes = {
+			diplomacy = 8
+			martial = 3
+			stewardship = 32
+			intrigue = 10
+			learning = 12
+		}
+		trait = content
+		trait = humble
+		trait = charitable
+		trait = has_nurgles_rot
+		trait = leper
+		trait = nurgle_demon
+		trait = nurgle_plaguebearer
+		trait = ill
+		flag = ai_flag_refuse_conversion
+		flag = special_marshal
+	}
+	new_character = {
+		health = 5
+		random_list = {
+			25 = {
+				add_trait = has_tuberculosis
+			}
+			25 = {
+				add_trait = has_typhoid_fever
+			}
+			25 = {
+				add_trait = has_bubonic_plague
+			}
+			25 = {
+				add_trait = has_measles
+			}
+
+		}
+		random_list = {
+			25 = {
+				add_trait = has_small_pox
+			}
+			25 = {
+				add_trait = syphilitic
+			}
+			25 = {
+				add_trait = pneumonic
+			}
+			25 = {
+				add_trait = has_typhus
+			}
+		}
+		random_list = {
+			25 = {
+				add_trait = dysentery
+			}
+			25 = {
+				add_trait = rabies
+			}
+			25 = {
+				add_trait = cancer
+			}
+			25 = {
+				add_trait = scurvy
+			}
+		}
+	}
+}
+
+wh_create_daemonette_slaanesh_effect = {
+	create_character = {
+		random_traits = yes
+		religion = slaanesh
+		culture = daemonette_slaanesh
+		female = no
+		age = 666
+		attributes = {
+			diplomacy = 20
+			martial = 18
+			stewardship = 2
+			intrigue = 25
+			learning = 9
+		}
+		trait = cruel
+		trait = deceitful
+		trait = slaanesh_demon
+		trait = slaanesh_daemonette
+		flag = ai_flag_refuse_conversion
+		flag = special_marshal
+	}
+	new_character = {
+		random_list = {
+			34 = {
+				add_trait = lustful
+			}
+			33 = {
+				add_trait = greedy
+			}
+			33 = {
+				add_trait = gluttonous
+			}
+		}
+		random_list = {
+			34 = {
+				add_trait = slothful
+			}
+			33 = {
+				add_trait = proud
+			}
+			33 = {
+				add_trait = lustful
+			}
+		}
+	}
+
+}
+
+wh_create_bloodletter_khorne_effect = {
+	create_random_soldier = {
+		random_traits = yes
+		religion = khorne
+		culture = bloodletter_khorne
+		female = no
+		age = 888
+		attributes = {
+			diplomacy = 10
+			martial = 28
+			stewardship = 2
+			intrigue = 8
+			learning = 9
+		}
+		trait = wroth
+		trait = honest
+		trait = khorne_demon
+		trait = khorne_bloodletter
+		flag = ai_flag_refuse_conversion
+		flag = special_marshal
+	}
+	new_character = {
+		random_list = {
+			25 = {
+				add_trait = ambitious
+			}
+			25 = {
+				add_trait = gregarious
+			}
+			25 = {
+				add_trait = diligent
+			}
+			25 = {
+				add_trait = proud
+			}
+		}
+	}
+}
+
 wh_improve_strength_effect = {
 	if = {
 		limit = {
@@ -2296,106 +2483,106 @@ create_league_effect = {
 		hidden_tooltip = {
 			# Hide tooltip because it would refer to old primary title
 			# TODO: if already elective, do i need sneakiness for the cooldowns?
-            succession_w_cooldown = feudal_elective
+			succession_w_cooldown = feudal_elective
 		}
 		if = {
 			limit = {
 				has_dlc = "Zeus"
 			}
-	        add_law_w_cooldown = law_voting_power_1
-	        add_law_w_cooldown = war_voting_power_1
-	        add_law_w_cooldown = revoke_title_voting_power_1
-            add_law_w_cooldown = succession_voting_power_1  # Allows feudal elective in Muslim & Indian realms :)
+			add_law_w_cooldown = law_voting_power_1
+			add_law_w_cooldown = war_voting_power_1
+			add_law_w_cooldown = revoke_title_voting_power_1
+			add_law_w_cooldown = succession_voting_power_1  # Allows feudal elective in Muslim & Indian realms :)
 
 		}
 	}
-    any_opinion_modifier_target = {
-        limit = {
-            reverse_has_opinion_modifier = {
-                who = PREV
-                modifier = opinion_cofounder
+	any_opinion_modifier_target = {
+		limit = {
+			reverse_has_opinion_modifier = {
+				who = PREV
+				modifier = opinion_cofounder
 			}
 		}
-        hidden_tooltip = {
-            # Remove the computed opinion modifier
-            reverse_remove_opinion = {
-                who = PREV
-                modifier = opinion_cofounder
+		hidden_tooltip = {
+			# Remove the computed opinion modifier
+			reverse_remove_opinion = {
+				who = PREV
+				modifier = opinion_cofounder
 			}
-	        # Create a NAP
-	        opinion = {
-	            modifier = in_non_aggression_pact
-	            years = 20
-	            who = ROOT
-	            origin_description = VOLUNTARY_LIEGE
+			# Create a NAP
+			opinion = {
+				modifier = in_non_aggression_pact
+				years = 20
+				who = ROOT
+				origin_description = VOLUNTARY_LIEGE
 
 			}
-	        ROOT = {
-	            opinion = {
-	                modifier = in_non_aggression_pact
-	                years = 20
-	                who = PREV
-	                origin_description = VOLUNTARY_VASSAL
+			ROOT = {
+				opinion = {
+					modifier = in_non_aggression_pact
+					years = 20
+					who = PREV
+					origin_description = VOLUNTARY_VASSAL
 
 				}
 
 			}
 
 		}
-        set_defacto_liege = PREV
-        # Todo: notify new vassals in case one of them is a player (or even give them the option of not joining)
+		set_defacto_liege = PREV
+		# Todo: notify new vassals in case one of them is a player (or even give them the option of not joining)
 	}
-    custom_tooltip = {
-    	text = NAPS_WITH_NEW_VASSALS
+	custom_tooltip = {
+		text = NAPS_WITH_NEW_VASSALS
 	}
-    wipe_council_effect = yes
+	wipe_council_effect = yes
 }
 
 add_THIS_to_FROM_existing_league_effect = {
-    set_defacto_liege = FROM
-    opinion = {
-        modifier = in_non_aggression_pact
-        years = 20
-        who = FROM
-        origin_description = VOLUNTARY_LIEGE
+	set_defacto_liege = FROM
+	opinion = {
+		modifier = in_non_aggression_pact
+		years = 20
+		who = FROM
+		origin_description = VOLUNTARY_LIEGE
 	}
-    FROM = {
-        opinion = {
-            modifier = in_non_aggression_pact
-            years = 20
-            who = ROOT
-            origin_description = VOLUNTARY_VASSAL
+	FROM = {
+		opinion = {
+			modifier = in_non_aggression_pact
+			years = 20
+			who = ROOT
+			origin_description = VOLUNTARY_VASSAL
 		}
 	}
 }
 
 wipe_council_effect = {
-    custom_tooltip = {
-        text = BYE_COUNCIL
-        hidden_tooltip = {
-            # Help both the player and AI remember that they need a new council, and allow free 'firing' of old council
-            # (This is important with Conclave "Expects a council position" opinion modifier)
-            job_chancellor = {
+	custom_tooltip = {
+		text = BYE_COUNCIL
+		hidden_tooltip = {
+			# Help both the player and AI remember that they need a new council, and allow free 'firing' of old council
+			# (This is important with Conclave "Expects a council position" opinion modifier)
+			job_chancellor = {
 				remove_title = job_chancellor
 			}
-            job_marshal    = {
+			job_marshal	= {
 				remove_title = job_marshal
 			}
-            job_treasurer  = {
+			job_treasurer  = {
 				remove_title = job_treasurer
 			}
-            job_spymaster  = {
+			job_spymaster  = {
 				remove_title = job_spymaster
 			}
-            job_spiritual  = {
+			job_spiritual  = {
 				remove_title = job_spiritual
 			}
-            # Remove Advisor, too, if any (requires conclave dlc, king rank, empowered council)
-            any_vassal = {
-                limit = {
-                    has_minor_title = title_councilmember_king
+			# Remove Advisor, too, if any (requires conclave dlc, king rank, empowered council)
+			any_vassal = {
+				limit = {
+					has_minor_title = title_councilmember_king
 				}
-                remove_title = title_councilmember_king
+				remove_title = title_councilmember_king
 			}
 		}
 	}
@@ -2457,31 +2644,10 @@ root_makes_from_vampire_effect = {
 				trait = vampire_lahmian_visible
 				trait = vampire_lahmian_hidden
 			}
-			FROM = {
-				age = 16
-			}
 		}
 		FROM = {
 			add_trait = vampire_lahmian_visible
 			set_graphical_culture = lahmian_vampire
-			religion = vampiric
-		}
-	}
-	if = {
-		limit = {
-			OR = {
-				trait = vampire_lahmian_visible
-				trait = vampire_lahmian_hidden
-			}
-			FROM = {
-				NOT = {
-					age = 16
-				}
-			}
-		}
-		FROM = {
-			add_trait = vampire_lahmian_visible
-			set_graphical_culture = kid_vampire_lahmian
 			religion = vampiric
 		}
 	}
@@ -2504,31 +2670,10 @@ root_makes_from_vampire_effect = {
 				trait = vampire_carstein_visible
 				trait = vampire_carstein_hidden
 			}
-			FROM = {
-				age = 16
-			}
 		}
 		FROM = {
 			add_trait = vampire_carstein_visible
 			set_graphical_culture = generic_vampire
-			religion = vampiric
-		}
-	}
-	if = {
-		limit = {
-			OR = {
-				trait = vampire_carstein_visible
-				trait = vampire_carstein_hidden
-			}
-			FROM = {
-				NOT = {
-					age = 16
-				}
-			}
-		}
-		FROM = {
-			add_trait = vampire_carstein_visible
-			set_graphical_culture = kid_vampire
 			religion = vampiric
 		}
 	}
@@ -3077,39 +3222,39 @@ dispel_setup_effect = {
 	if = {
 		limit ={
 			any_character = {
-			    in_command = yes
-			    war_with = root
-			    at_location = event_target:spellloc
-			    or = {
-			     	and = {
-			     		or = {
-			     			wh_is_mage_trigger = yes
-			     			trait = warlock_engineer
+				in_command = yes
+				war_with = root
+				at_location = event_target:spellloc
+				or = {
+				 	and = {
+				 		or = {
+				 			wh_is_mage_trigger = yes
+				 			trait = warlock_engineer
 						}
-			     		not = {
-			     			has_character_modifier = dispel_cooldown
+				 		not = {
+				 			has_character_modifier = dispel_cooldown
 						}
 					}
-			     	has_character_modifier = z_light_magic_wards_of_light
+				 	has_character_modifier = z_light_magic_wards_of_light
 				}
 			}
 		}
 		any_character = {
 			limit = {
-			    in_command = yes
-			    war_with = root
-			    at_location = event_target:spellloc
-			    or = {
-			     	and = {
-			     		or = {
-			     			wh_is_mage_trigger = yes
-			     			trait = warlock_engineer
+				in_command = yes
+				war_with = root
+				at_location = event_target:spellloc
+				or = {
+				 	and = {
+				 		or = {
+				 			wh_is_mage_trigger = yes
+				 			trait = warlock_engineer
 						}
-			     		not = {
-			     			has_character_modifier = dispel_cooldown
+				 		not = {
+				 			has_character_modifier = dispel_cooldown
 						}
 					}
-			     	has_character_modifier = z_light_magic_wards_of_light
+				 	has_character_modifier = z_light_magic_wards_of_light
 				}
 			}
 			save_event_target_as = magic_dispeler
@@ -3126,8 +3271,8 @@ dispel_saving_roll_30 = {
 	random_list = {
 		30 = {
 			modifier = {
-			    factor = 1.1
-			    event_target:magic_dispeler = {
+				factor = 1.1
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 1
@@ -3135,8 +3280,8 @@ dispel_saving_roll_30 = {
 				}
 			}
 			modifier = {
-			    factor = 1.2
-			    event_target:magic_dispeler = {
+				factor = 1.2
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 2
@@ -3144,8 +3289,8 @@ dispel_saving_roll_30 = {
 				}
 			}
 			modifier = {
-			    factor = 1.3
-			    event_target:magic_dispeler = {
+				factor = 1.3
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 3
@@ -3153,8 +3298,8 @@ dispel_saving_roll_30 = {
 				}
 			}
 			modifier = {
-			    factor = 1.4
-			    event_target:magic_dispeler = {
+				factor = 1.4
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 4
@@ -3162,8 +3307,8 @@ dispel_saving_roll_30 = {
 				}
 			}
 			modifier = {
-			    factor = 1.5
-			    event_target:magic_dispeler = {
+				factor = 1.5
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 5
@@ -3171,8 +3316,8 @@ dispel_saving_roll_30 = {
 				}
 			}
 			modifier = {
-			    factor = 1.6
-			    event_target:magic_dispeler = {
+				factor = 1.6
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 6
@@ -3180,8 +3325,8 @@ dispel_saving_roll_30 = {
 				}
 			}
 			modifier = {
-			    factor = 1.7
-			    event_target:magic_dispeler = {
+				factor = 1.7
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 7
@@ -3189,8 +3334,8 @@ dispel_saving_roll_30 = {
 				}
 			}
 			modifier = {
-			    factor = 1.8
-			    event_target:magic_dispeler = {
+				factor = 1.8
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 8
@@ -3198,8 +3343,8 @@ dispel_saving_roll_30 = {
 				}
 			}
 			modifier = {
-			    factor = 1.9
-			    event_target:magic_dispeler = {
+				factor = 1.9
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 9
@@ -3207,8 +3352,8 @@ dispel_saving_roll_30 = {
 				}
 			}
 			modifier = {
-			    factor = 2
-			    event_target:magic_dispeler = {
+				factor = 2
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 10
@@ -3217,7 +3362,7 @@ dispel_saving_roll_30 = {
 			}
 			modifier = {
 				factor = 2.1
-			    event_target:magic_dispeler = {
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 11
@@ -3225,8 +3370,8 @@ dispel_saving_roll_30 = {
 				}
 			}
 			modifier = {
-			    factor = 2.2
-			    event_target:magic_dispeler = {
+				factor = 2.2
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 12
@@ -3234,8 +3379,8 @@ dispel_saving_roll_30 = {
 				}
 			}
 			modifier = {
-			    factor = 2.3
-			    event_target:magic_dispeler = {
+				factor = 2.3
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 13
@@ -3243,8 +3388,8 @@ dispel_saving_roll_30 = {
 				}
 			}
 			modifier = {
-			    factor = 2.4
-			    event_target:magic_dispeler = {
+				factor = 2.4
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 14
@@ -3252,8 +3397,8 @@ dispel_saving_roll_30 = {
 				}
 			}
 			modifier = {
-			    factor = 2.5
-			    event_target:magic_dispeler = {
+				factor = 2.5
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 15
@@ -3261,8 +3406,8 @@ dispel_saving_roll_30 = {
 				}
 			}
 			modifier = {
-			    factor = 2.6
-			    event_target:magic_dispeler = {
+				factor = 2.6
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 16
@@ -3270,8 +3415,8 @@ dispel_saving_roll_30 = {
 				}
 			}
 			modifier = {
-			    factor = 2.7
-			    event_target:magic_dispeler = {
+				factor = 2.7
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 17
@@ -3279,8 +3424,8 @@ dispel_saving_roll_30 = {
 				}
 			}
 			modifier = {
-			    factor = 2.8
-			    event_target:magic_dispeler = {
+				factor = 2.8
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 18
@@ -3288,8 +3433,8 @@ dispel_saving_roll_30 = {
 				}
 			}
 			modifier = {
-			    factor = 2.9
-			    event_target:magic_dispeler = {
+				factor = 2.9
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 19
@@ -3297,8 +3442,8 @@ dispel_saving_roll_30 = {
 				}
 			}
 			modifier = {
-			    factor = 3
-			    event_target:magic_dispeler = {
+				factor = 3
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 20
@@ -3306,8 +3451,8 @@ dispel_saving_roll_30 = {
 				}
 			}
 			modifier = {
-			    factor = 3.1
-			    event_target:magic_dispeler = {
+				factor = 3.1
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 21
@@ -3315,8 +3460,8 @@ dispel_saving_roll_30 = {
 				}
 			}
 			modifier = {
-			    factor = 3.2
-			    event_target:magic_dispeler = {
+				factor = 3.2
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 22
@@ -3324,8 +3469,8 @@ dispel_saving_roll_30 = {
 				}
 			}
 			modifier = {
-			    factor = 3.3
-			    event_target:magic_dispeler = {
+				factor = 3.3
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 23
@@ -3333,8 +3478,8 @@ dispel_saving_roll_30 = {
 				}
 			}
 			modifier = {
-			    factor = 3.4
-			    event_target:magic_dispeler = {
+				factor = 3.4
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 24
@@ -3342,8 +3487,8 @@ dispel_saving_roll_30 = {
 				}
 			}
 			modifier = {
-			    factor = 3.5
-			    event_target:magic_dispeler = {
+				factor = 3.5
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 25
@@ -3351,8 +3496,8 @@ dispel_saving_roll_30 = {
 				}
 			}
 			modifier = {
-			    factor = 3.6
-			    event_target:magic_dispeler = {
+				factor = 3.6
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 26
@@ -3360,8 +3505,8 @@ dispel_saving_roll_30 = {
 				}
 			}
 			modifier = {
-			    factor = 3.7
-			    event_target:magic_dispeler = {
+				factor = 3.7
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 27
@@ -3369,8 +3514,8 @@ dispel_saving_roll_30 = {
 				}
 			}
 			modifier = {
-			    factor = 3.8
-			    event_target:magic_dispeler = {
+				factor = 3.8
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 28
@@ -3378,8 +3523,8 @@ dispel_saving_roll_30 = {
 				}
 			}
 			modifier = {
-			    factor = 3.9
-			    event_target:magic_dispeler = {
+				factor = 3.9
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 29
@@ -3387,8 +3532,8 @@ dispel_saving_roll_30 = {
 				}
 			}
 			modifier = {
-			    factor = 4
-			    event_target:magic_dispeler = {
+				factor = 4
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 30
@@ -3396,25 +3541,25 @@ dispel_saving_roll_30 = {
 				}
 			}
 			ROOT = {
-			    event_target:magic_caster = {
+				event_target:magic_caster = {
 					set_character_flag = dispeled
 				}
 			}
 			event_target:magic_dispeler = {
 
-			    change_variable = {
+				change_variable = {
 					which = "magicxp"
 					value = 1
 				}
-			    character_event = {
+				character_event = {
 					id = magic_system.99998
 				}
 			}
 		}
 		70 = {
 			modifier = {
-		     	factor = 1.1
-		     	event_target:magic_caster = {
+			 	factor = 1.1
+			 	event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 1
@@ -3422,9 +3567,9 @@ dispel_saving_roll_30 = {
 				}
 
 			}
-		    modifier = {
-		     	factor = 1.2
-		     	event_target:magic_caster = {
+			modifier = {
+			 	factor = 1.2
+			 	event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 2
@@ -3432,9 +3577,9 @@ dispel_saving_roll_30 = {
 				}
 
 			}
-		    modifier = {
-		     	factor = 1.3
-		     	event_target:magic_caster = {
+			modifier = {
+			 	factor = 1.3
+			 	event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 3
@@ -3442,9 +3587,9 @@ dispel_saving_roll_30 = {
 				}
 
 			}
-		    modifier = {
-		     	factor = 1.4
-		     	event_target:magic_caster = {
+			modifier = {
+			 	factor = 1.4
+			 	event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 4
@@ -3452,9 +3597,9 @@ dispel_saving_roll_30 = {
 				}
 
 			}
-		    modifier = {
-		     	factor = 1.5
-		     	event_target:magic_caster = {
+			modifier = {
+			 	factor = 1.5
+			 	event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 5
@@ -3462,9 +3607,9 @@ dispel_saving_roll_30 = {
 				}
 
 			}
-		    modifier = {
-		     	factor = 1.6
-		     	event_target:magic_caster = {
+			modifier = {
+			 	factor = 1.6
+			 	event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 6
@@ -3472,9 +3617,9 @@ dispel_saving_roll_30 = {
 				}
 
 			}
-		    modifier = {
-		     	factor = 1.7
-		     	event_target:magic_caster = {
+			modifier = {
+			 	factor = 1.7
+			 	event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 7
@@ -3482,9 +3627,9 @@ dispel_saving_roll_30 = {
 				}
 
 			}
-		    modifier = {
-		     	factor = 1.8
-		     	event_target:magic_caster = {
+			modifier = {
+			 	factor = 1.8
+			 	event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 8
@@ -3492,9 +3637,9 @@ dispel_saving_roll_30 = {
 				}
 
 			}
-		    modifier = {
-		     	factor = 1.9
-		     	event_target:magic_caster = {
+			modifier = {
+			 	factor = 1.9
+			 	event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 9
@@ -3502,9 +3647,9 @@ dispel_saving_roll_30 = {
 				}
 
 			}
-		    modifier = {
-		     	factor = 2
-		     	event_target:magic_caster = {
+			modifier = {
+			 	factor = 2
+			 	event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 10
@@ -3512,9 +3657,9 @@ dispel_saving_roll_30 = {
 				}
 
 			}
-		    modifier = {
-		     	factor = 2.1
-		     	event_target:magic_caster = {
+			modifier = {
+			 	factor = 2.1
+			 	event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 11
@@ -3522,9 +3667,9 @@ dispel_saving_roll_30 = {
 				}
 
 			}
-		    modifier = {
-		     	factor = 2.2
-		     	event_target:magic_caster = {
+			modifier = {
+			 	factor = 2.2
+			 	event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 12
@@ -3532,9 +3677,9 @@ dispel_saving_roll_30 = {
 				}
 
 			}
-		    modifier = {
-		     	factor = 2.3
-		     	event_target:magic_caster = {
+			modifier = {
+			 	factor = 2.3
+			 	event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 13
@@ -3542,9 +3687,9 @@ dispel_saving_roll_30 = {
 				}
 
 			}
-		    modifier = {
-		     	factor = 2.4
-		     	event_target:magic_caster = {
+			modifier = {
+			 	factor = 2.4
+			 	event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 14
@@ -3552,9 +3697,9 @@ dispel_saving_roll_30 = {
 				}
 
 			}
-		    modifier = {
-		     	factor = 2.5
-		     	event_target:magic_caster = {
+			modifier = {
+			 	factor = 2.5
+			 	event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 15
@@ -3562,9 +3707,9 @@ dispel_saving_roll_30 = {
 				}
 
 			}
-		    modifier = {
-		     	factor = 2.6
-		     	event_target:magic_caster = {
+			modifier = {
+			 	factor = 2.6
+			 	event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 16
@@ -3572,9 +3717,9 @@ dispel_saving_roll_30 = {
 				}
 
 			}
-		    modifier = {
-		     	factor = 2.7
-		     	event_target:magic_caster = {
+			modifier = {
+			 	factor = 2.7
+			 	event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 17
@@ -3582,9 +3727,9 @@ dispel_saving_roll_30 = {
 				}
 
 			}
-		    modifier = {
-		     	factor = 2.8
-		     	event_target:magic_caster = {
+			modifier = {
+			 	factor = 2.8
+			 	event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 18
@@ -3592,9 +3737,9 @@ dispel_saving_roll_30 = {
 				}
 
 			}
-		    modifier = {
-		     	factor = 2.9
-		     	event_target:magic_caster = {
+			modifier = {
+			 	factor = 2.9
+			 	event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 19
@@ -3602,9 +3747,9 @@ dispel_saving_roll_30 = {
 				}
 
 			}
-		    modifier = {
-		     	factor = 3
-		     	event_target:magic_caster = {
+			modifier = {
+			 	factor = 3
+			 	event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 20
@@ -3612,9 +3757,9 @@ dispel_saving_roll_30 = {
 				}
 
 			}
-		    modifier = {
-		     	factor = 3.1
-		     	event_target:magic_caster = {
+			modifier = {
+			 	factor = 3.1
+			 	event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 21
@@ -3622,9 +3767,9 @@ dispel_saving_roll_30 = {
 				}
 
 			}
-		    modifier = {
-		     	factor = 3.2
-		     	event_target:magic_caster = {
+			modifier = {
+			 	factor = 3.2
+			 	event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 22
@@ -3632,9 +3777,9 @@ dispel_saving_roll_30 = {
 				}
 
 			}
-		    modifier = {
-		     	factor = 3.3
-		     	event_target:magic_caster = {
+			modifier = {
+			 	factor = 3.3
+			 	event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 23
@@ -3642,9 +3787,9 @@ dispel_saving_roll_30 = {
 				}
 
 			}
-		    modifier = {
-		     	factor = 3.4
-		     	event_target:magic_caster = {
+			modifier = {
+			 	factor = 3.4
+			 	event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 24
@@ -3653,8 +3798,8 @@ dispel_saving_roll_30 = {
 
 			}
 			modifier = {
-			    factor = 3.5
-			    event_target:magic_caster = {
+				factor = 3.5
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 25
@@ -3663,8 +3808,8 @@ dispel_saving_roll_30 = {
 
 			}
 			modifier = {
-			    factor = 3.6
-			    event_target:magic_caster = {
+				factor = 3.6
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 26
@@ -3673,8 +3818,8 @@ dispel_saving_roll_30 = {
 
 			}
 			modifier = {
-			    factor = 3.7
-			    event_target:magic_caster = {
+				factor = 3.7
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 27
@@ -3683,8 +3828,8 @@ dispel_saving_roll_30 = {
 
 			}
 			modifier = {
-			    factor = 3.8
-			    event_target:magic_caster = {
+				factor = 3.8
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 28
@@ -3693,8 +3838,8 @@ dispel_saving_roll_30 = {
 
 			}
 			modifier = {
-			    factor = 3.9
-			    event_target:magic_caster = {
+				factor = 3.9
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 29
@@ -3703,8 +3848,8 @@ dispel_saving_roll_30 = {
 
 			}
 			modifier = {
-			    factor = 4
-			    event_target:magic_caster = {
+				factor = 4
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 30
@@ -3713,7 +3858,7 @@ dispel_saving_roll_30 = {
 
 			}
 			event_target:magic_caster = {
-			    change_variable = {
+				change_variable = {
 					which = "magicxp"
 					value = 1
 				}
@@ -3727,8 +3872,8 @@ dispel_saving_roll_40 = {
 	random_list = {
 		40 = {
 			modifier = {
-			    factor = 1.1
-			    event_target:magic_dispeler = {
+				factor = 1.1
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 1
@@ -3737,8 +3882,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 1.2
-			    event_target:magic_dispeler = {
+				factor = 1.2
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 2
@@ -3747,8 +3892,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 1.3
-			    event_target:magic_dispeler = {
+				factor = 1.3
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 3
@@ -3757,16 +3902,16 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 1.4
-			    event_target:magic_dispeler = {
+				factor = 1.4
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 4
 					}
 				}
-			}			     modifier = {
-			    factor = 1.5
-			    event_target:magic_dispeler = {
+			}				 modifier = {
+				factor = 1.5
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 5
@@ -3775,8 +3920,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 1.6
-			    event_target:magic_dispeler = {
+				factor = 1.6
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 6
@@ -3785,8 +3930,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 1.7
-			    event_target:magic_dispeler = {
+				factor = 1.7
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 7
@@ -3795,8 +3940,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 1.8
-			    event_target:magic_dispeler = {
+				factor = 1.8
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 8
@@ -3805,8 +3950,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 1.9
-			    event_target:magic_dispeler = {
+				factor = 1.9
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 9
@@ -3815,8 +3960,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 2
-			    event_target:magic_dispeler = {
+				factor = 2
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 10
@@ -3825,8 +3970,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 2.1
-			    event_target:magic_dispeler = {
+				factor = 2.1
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 11
@@ -3835,8 +3980,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 2.2
-			    event_target:magic_dispeler = {
+				factor = 2.2
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 12
@@ -3845,8 +3990,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 2.3
-			    event_target:magic_dispeler = {
+				factor = 2.3
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 13
@@ -3855,16 +4000,16 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 2.4
-			    event_target:magic_dispeler = {
+				factor = 2.4
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 14
 					}
 				}
-			}			     modifier = {
-			    factor = 2.5
-			    event_target:magic_dispeler = {
+			}				 modifier = {
+				factor = 2.5
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 15
@@ -3873,8 +4018,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 2.6
-			    event_target:magic_dispeler = {
+				factor = 2.6
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 16
@@ -3883,8 +4028,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 2.7
-			    event_target:magic_dispeler = {
+				factor = 2.7
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 17
@@ -3893,8 +4038,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 2.8
-			    event_target:magic_dispeler = {
+				factor = 2.8
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 18
@@ -3903,8 +4048,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 2.9
-			    event_target:magic_dispeler = {
+				factor = 2.9
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 19
@@ -3913,8 +4058,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 3
-			    event_target:magic_dispeler = {
+				factor = 3
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 20
@@ -3923,8 +4068,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 3.1
-			    event_target:magic_dispeler = {
+				factor = 3.1
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 21
@@ -3933,8 +4078,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 3.2
-			    event_target:magic_dispeler = {
+				factor = 3.2
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 22
@@ -3943,8 +4088,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 3.3
-			    event_target:magic_dispeler = {
+				factor = 3.3
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 23
@@ -3953,16 +4098,16 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 3.4
-			    event_target:magic_dispeler = {
+				factor = 3.4
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 24
 					}
 				}
-			}			     modifier = {
-			    factor = 3.5
-			    event_target:magic_dispeler = {
+			}				 modifier = {
+				factor = 3.5
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 25
@@ -3971,8 +4116,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 3.6
-			    event_target:magic_dispeler = {
+				factor = 3.6
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 26
@@ -3981,8 +4126,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 3.7
-			    event_target:magic_dispeler = {
+				factor = 3.7
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 27
@@ -3991,8 +4136,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 3.8
-			    event_target:magic_dispeler = {
+				factor = 3.8
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 28
@@ -4001,8 +4146,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 3.9
-			    event_target:magic_dispeler = {
+				factor = 3.9
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 29
@@ -4011,8 +4156,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 4
-			    event_target:magic_dispeler = {
+				factor = 4
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 30
@@ -4021,18 +4166,18 @@ dispel_saving_roll_40 = {
 
 			}
 			ROOT = {
-			    event_target:magic_caster = {
+				event_target:magic_caster = {
 					set_character_flag = dispeled
 				}
 
 			}
 			event_target:magic_dispeler = {
 
-			    change_variable = {
+				change_variable = {
 					which = "magicxp"
 					value = 1
 				}
-			    character_event = {
+				character_event = {
 					id = magic_system.99998
 				}
 
@@ -4040,8 +4185,8 @@ dispel_saving_roll_40 = {
 		}
 		60 = {
 			modifier = {
-			    factor = 1.1
-			    event_target:magic_caster = {
+				factor = 1.1
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 1
@@ -4050,8 +4195,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 1.2
-			    event_target:magic_caster = {
+				factor = 1.2
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 2
@@ -4060,8 +4205,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 1.3
-			    event_target:magic_caster = {
+				factor = 1.3
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 3
@@ -4070,8 +4215,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 1.4
-			    event_target:magic_caster = {
+				factor = 1.4
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 4
@@ -4080,8 +4225,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 1.5
-			    event_target:magic_caster = {
+				factor = 1.5
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 5
@@ -4090,8 +4235,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 1.6
-			    event_target:magic_caster = {
+				factor = 1.6
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 6
@@ -4100,8 +4245,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 1.7
-			    event_target:magic_caster = {
+				factor = 1.7
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 7
@@ -4110,8 +4255,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 1.8
-			    event_target:magic_caster = {
+				factor = 1.8
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 8
@@ -4120,8 +4265,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 1.9
-			    event_target:magic_caster = {
+				factor = 1.9
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 9
@@ -4130,8 +4275,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 2
-			    event_target:magic_caster = {
+				factor = 2
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 10
@@ -4140,8 +4285,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 2.1
-			    event_target:magic_caster = {
+				factor = 2.1
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 11
@@ -4150,8 +4295,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 2.2
-			    event_target:magic_caster = {
+				factor = 2.2
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 12
@@ -4160,8 +4305,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 2.3
-			    event_target:magic_caster = {
+				factor = 2.3
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 13
@@ -4170,8 +4315,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 2.4
-			    event_target:magic_caster = {
+				factor = 2.4
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 14
@@ -4180,8 +4325,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 2.5
-			    event_target:magic_caster = {
+				factor = 2.5
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 15
@@ -4190,8 +4335,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 2.6
-			    event_target:magic_caster = {
+				factor = 2.6
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 16
@@ -4200,8 +4345,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 2.7
-			    event_target:magic_caster = {
+				factor = 2.7
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 17
@@ -4210,8 +4355,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 2.8
-			    event_target:magic_caster = {
+				factor = 2.8
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 18
@@ -4220,8 +4365,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 2.9
-			    event_target:magic_caster = {
+				factor = 2.9
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 19
@@ -4230,8 +4375,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 3
-			    event_target:magic_caster = {
+				factor = 3
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 20
@@ -4240,8 +4385,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 3.1
-			    event_target:magic_caster = {
+				factor = 3.1
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 21
@@ -4250,8 +4395,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 3.2
-			    event_target:magic_caster = {
+				factor = 3.2
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 22
@@ -4260,8 +4405,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 3.3
-			    event_target:magic_caster = {
+				factor = 3.3
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 23
@@ -4270,8 +4415,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 3.4
-			    event_target:magic_caster = {
+				factor = 3.4
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 24
@@ -4280,8 +4425,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 3.5
-			    event_target:magic_caster = {
+				factor = 3.5
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 25
@@ -4290,8 +4435,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 3.6
-			    event_target:magic_caster = {
+				factor = 3.6
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 26
@@ -4300,8 +4445,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 3.7
-			    event_target:magic_caster = {
+				factor = 3.7
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 27
@@ -4310,8 +4455,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 3.8
-			    event_target:magic_caster = {
+				factor = 3.8
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 28
@@ -4320,8 +4465,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 3.9
-			    event_target:magic_caster = {
+				factor = 3.9
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 29
@@ -4330,8 +4475,8 @@ dispel_saving_roll_40 = {
 
 			}
 			modifier = {
-			    factor = 4
-			    event_target:magic_caster = {
+				factor = 4
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 30
@@ -4340,7 +4485,7 @@ dispel_saving_roll_40 = {
 
 			}
 			event_target:magic_caster = {
-			    change_variable = {
+				change_variable = {
 					which = "magicxp"
 					value = 1
 				}
@@ -4354,8 +4499,8 @@ dispel_saving_roll_50 = {
 	random_list = {
 		50 = {
 			modifier = {
-			    factor = 1.1
-			    event_target:magic_dispeler = {
+				factor = 1.1
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 1
@@ -4364,8 +4509,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 1.2
-			    event_target:magic_dispeler = {
+				factor = 1.2
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 2
@@ -4374,8 +4519,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 1.3
-			    event_target:magic_dispeler = {
+				factor = 1.3
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 3
@@ -4384,16 +4529,16 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 1.4
-			    event_target:magic_dispeler = {
+				factor = 1.4
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 4
 					}
 				}
-			}			     modifier = {
-			    factor = 1.5
-			    event_target:magic_dispeler = {
+			}				 modifier = {
+				factor = 1.5
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 5
@@ -4402,8 +4547,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 1.6
-			    event_target:magic_dispeler = {
+				factor = 1.6
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 6
@@ -4412,8 +4557,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 1.7
-			    event_target:magic_dispeler = {
+				factor = 1.7
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 7
@@ -4422,8 +4567,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 1.8
-			    event_target:magic_dispeler = {
+				factor = 1.8
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 8
@@ -4432,8 +4577,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 1.9
-			    event_target:magic_dispeler = {
+				factor = 1.9
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 9
@@ -4442,8 +4587,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 2
-			    event_target:magic_dispeler = {
+				factor = 2
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 10
@@ -4452,8 +4597,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 2.1
-			    event_target:magic_dispeler = {
+				factor = 2.1
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 11
@@ -4462,8 +4607,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 2.2
-			    event_target:magic_dispeler = {
+				factor = 2.2
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 12
@@ -4472,8 +4617,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 2.3
-			    event_target:magic_dispeler = {
+				factor = 2.3
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 13
@@ -4482,16 +4627,16 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 2.4
-			    event_target:magic_dispeler = {
+				factor = 2.4
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 14
 					}
 				}
-			}			     modifier = {
-			    factor = 2.5
-			    event_target:magic_dispeler = {
+			}				 modifier = {
+				factor = 2.5
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 15
@@ -4500,8 +4645,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 2.6
-			    event_target:magic_dispeler = {
+				factor = 2.6
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 16
@@ -4510,8 +4655,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 2.7
-			    event_target:magic_dispeler = {
+				factor = 2.7
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 17
@@ -4520,8 +4665,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 2.8
-			    event_target:magic_dispeler = {
+				factor = 2.8
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 18
@@ -4530,8 +4675,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 2.9
-			    event_target:magic_dispeler = {
+				factor = 2.9
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 19
@@ -4540,8 +4685,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 3
-			    event_target:magic_dispeler = {
+				factor = 3
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 20
@@ -4550,8 +4695,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 3.1
-			    event_target:magic_dispeler = {
+				factor = 3.1
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 21
@@ -4560,8 +4705,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 3.2
-			    event_target:magic_dispeler = {
+				factor = 3.2
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 22
@@ -4570,8 +4715,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 3.3
-			    event_target:magic_dispeler = {
+				factor = 3.3
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 23
@@ -4580,16 +4725,16 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 3.4
-			    event_target:magic_dispeler = {
+				factor = 3.4
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 24
 					}
 				}
-			}			     modifier = {
-			    factor = 3.5
-			    event_target:magic_dispeler = {
+			}				 modifier = {
+				factor = 3.5
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 25
@@ -4598,8 +4743,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 3.6
-			    event_target:magic_dispeler = {
+				factor = 3.6
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 26
@@ -4608,8 +4753,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 3.7
-			    event_target:magic_dispeler = {
+				factor = 3.7
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 27
@@ -4618,8 +4763,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 3.8
-			    event_target:magic_dispeler = {
+				factor = 3.8
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 28
@@ -4628,8 +4773,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 3.9
-			    event_target:magic_dispeler = {
+				factor = 3.9
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 29
@@ -4638,8 +4783,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 4
-			    event_target:magic_dispeler = {
+				factor = 4
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 30
@@ -4648,18 +4793,18 @@ dispel_saving_roll_50 = {
 
 			}
 			ROOT = {
-			    event_target:magic_caster = {
+				event_target:magic_caster = {
 					set_character_flag = dispeled
 				}
 
 			}
 			event_target:magic_dispeler = {
 
-			    change_variable = {
+				change_variable = {
 					which = "magicxp"
 					value = 1
 				}
-			    character_event = {
+				character_event = {
 					id = magic_system.99998
 				}
 
@@ -4667,8 +4812,8 @@ dispel_saving_roll_50 = {
 		}
 		50 = {
 			modifier = {
-			    factor = 1.1
-			    event_target:magic_caster = {
+				factor = 1.1
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 1
@@ -4677,8 +4822,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 1.2
-			    event_target:magic_caster = {
+				factor = 1.2
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 2
@@ -4687,8 +4832,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 1.3
-			    event_target:magic_caster = {
+				factor = 1.3
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 3
@@ -4697,8 +4842,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 1.4
-			    event_target:magic_caster = {
+				factor = 1.4
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 4
@@ -4707,8 +4852,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 1.5
-			    event_target:magic_caster = {
+				factor = 1.5
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 5
@@ -4717,8 +4862,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 1.6
-			    event_target:magic_caster = {
+				factor = 1.6
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 6
@@ -4727,8 +4872,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 1.7
-			    event_target:magic_caster = {
+				factor = 1.7
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 7
@@ -4737,8 +4882,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 1.8
-			    event_target:magic_caster = {
+				factor = 1.8
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 8
@@ -4747,8 +4892,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 1.9
-			    event_target:magic_caster = {
+				factor = 1.9
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 9
@@ -4757,8 +4902,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 2
-			    event_target:magic_caster = {
+				factor = 2
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 10
@@ -4767,8 +4912,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 2.1
-			    event_target:magic_caster = {
+				factor = 2.1
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 11
@@ -4777,8 +4922,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 2.2
-			    event_target:magic_caster = {
+				factor = 2.2
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 12
@@ -4787,8 +4932,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 2.3
-			    event_target:magic_caster = {
+				factor = 2.3
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 13
@@ -4797,8 +4942,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 2.4
-			    event_target:magic_caster = {
+				factor = 2.4
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 14
@@ -4807,8 +4952,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 2.5
-			    event_target:magic_caster = {
+				factor = 2.5
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 15
@@ -4817,8 +4962,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 2.6
-			    event_target:magic_caster = {
+				factor = 2.6
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 16
@@ -4827,8 +4972,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 2.7
-			    event_target:magic_caster = {
+				factor = 2.7
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 17
@@ -4837,8 +4982,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 2.8
-			    event_target:magic_caster = {
+				factor = 2.8
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 18
@@ -4847,8 +4992,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 2.9
-			    event_target:magic_caster = {
+				factor = 2.9
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 19
@@ -4857,8 +5002,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 3
-			    event_target:magic_caster = {
+				factor = 3
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 20
@@ -4867,8 +5012,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 3.1
-			    event_target:magic_caster = {
+				factor = 3.1
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 21
@@ -4877,8 +5022,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 3.2
-			    event_target:magic_caster = {
+				factor = 3.2
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 22
@@ -4887,8 +5032,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 3.3
-			    event_target:magic_caster = {
+				factor = 3.3
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 23
@@ -4897,8 +5042,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 3.4
-			    event_target:magic_caster = {
+				factor = 3.4
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 24
@@ -4907,8 +5052,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 3.5
-			    event_target:magic_caster = {
+				factor = 3.5
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 25
@@ -4917,8 +5062,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 3.6
-			    event_target:magic_caster = {
+				factor = 3.6
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 26
@@ -4927,8 +5072,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 3.7
-			    event_target:magic_caster = {
+				factor = 3.7
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 27
@@ -4937,8 +5082,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 3.8
-			    event_target:magic_caster = {
+				factor = 3.8
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 28
@@ -4947,8 +5092,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 3.9
-			    event_target:magic_caster = {
+				factor = 3.9
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 29
@@ -4957,8 +5102,8 @@ dispel_saving_roll_50 = {
 
 			}
 			modifier = {
-			    factor = 4
-			    event_target:magic_caster = {
+				factor = 4
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 30
@@ -4967,7 +5112,7 @@ dispel_saving_roll_50 = {
 
 			}
 			event_target:magic_caster = {
-			    change_variable = {
+				change_variable = {
 					which = "magicxp"
 					value = 1
 				}
@@ -4981,8 +5126,8 @@ dispel_saving_roll_60 = {
 	random_list = {
 		60 = {
 			modifier = {
-			    factor = 1.1
-			    event_target:magic_dispeler = {
+				factor = 1.1
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 1
@@ -4991,8 +5136,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 1.2
-			    event_target:magic_dispeler = {
+				factor = 1.2
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 2
@@ -5001,8 +5146,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 1.3
-			    event_target:magic_dispeler = {
+				factor = 1.3
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 3
@@ -5011,16 +5156,16 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 1.4
-			    event_target:magic_dispeler = {
+				factor = 1.4
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 4
 					}
 				}
-			}			     modifier = {
-			    factor = 1.5
-			    event_target:magic_dispeler = {
+			}				 modifier = {
+				factor = 1.5
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 5
@@ -5029,8 +5174,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 1.6
-			    event_target:magic_dispeler = {
+				factor = 1.6
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 6
@@ -5039,8 +5184,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 1.7
-			    event_target:magic_dispeler = {
+				factor = 1.7
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 7
@@ -5049,8 +5194,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 1.8
-			    event_target:magic_dispeler = {
+				factor = 1.8
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 8
@@ -5059,8 +5204,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 1.9
-			    event_target:magic_dispeler = {
+				factor = 1.9
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 9
@@ -5069,8 +5214,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 2
-			    event_target:magic_dispeler = {
+				factor = 2
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 10
@@ -5079,8 +5224,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 2.1
-			    event_target:magic_dispeler = {
+				factor = 2.1
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 11
@@ -5089,8 +5234,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 2.2
-			    event_target:magic_dispeler = {
+				factor = 2.2
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 12
@@ -5099,8 +5244,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 2.3
-			    event_target:magic_dispeler = {
+				factor = 2.3
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 13
@@ -5109,16 +5254,16 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 2.4
-			    event_target:magic_dispeler = {
+				factor = 2.4
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 14
 					}
 				}
-			}			     modifier = {
-			    factor = 2.5
-			    event_target:magic_dispeler = {
+			}				 modifier = {
+				factor = 2.5
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 15
@@ -5127,8 +5272,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 2.6
-			    event_target:magic_dispeler = {
+				factor = 2.6
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 16
@@ -5137,8 +5282,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 2.7
-			    event_target:magic_dispeler = {
+				factor = 2.7
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 17
@@ -5147,8 +5292,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 2.8
-			    event_target:magic_dispeler = {
+				factor = 2.8
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 18
@@ -5157,8 +5302,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 2.9
-			    event_target:magic_dispeler = {
+				factor = 2.9
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 19
@@ -5167,8 +5312,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 3
-			    event_target:magic_dispeler = {
+				factor = 3
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 20
@@ -5177,8 +5322,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 3.1
-			    event_target:magic_dispeler = {
+				factor = 3.1
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 21
@@ -5187,8 +5332,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 3.2
-			    event_target:magic_dispeler = {
+				factor = 3.2
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 22
@@ -5197,8 +5342,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 3.3
-			    event_target:magic_dispeler = {
+				factor = 3.3
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 23
@@ -5207,16 +5352,16 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 3.4
-			    event_target:magic_dispeler = {
+				factor = 3.4
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 24
 					}
 				}
-			}			     modifier = {
-			    factor = 3.5
-			    event_target:magic_dispeler = {
+			}				 modifier = {
+				factor = 3.5
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 25
@@ -5225,8 +5370,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 3.6
-			    event_target:magic_dispeler = {
+				factor = 3.6
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 26
@@ -5235,8 +5380,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 3.7
-			    event_target:magic_dispeler = {
+				factor = 3.7
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 27
@@ -5245,8 +5390,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 3.8
-			    event_target:magic_dispeler = {
+				factor = 3.8
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 28
@@ -5255,8 +5400,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 3.9
-			    event_target:magic_dispeler = {
+				factor = 3.9
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 29
@@ -5265,8 +5410,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 4
-			    event_target:magic_dispeler = {
+				factor = 4
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 30
@@ -5275,18 +5420,18 @@ dispel_saving_roll_60 = {
 
 			}
 			ROOT = {
-			    event_target:magic_caster = {
+				event_target:magic_caster = {
 					set_character_flag = dispeled
 				}
 
 			}
 			event_target:magic_dispeler = {
 
-			    change_variable = {
+				change_variable = {
 					which = "magicxp"
 					value = 1
 				}
-			    character_event = {
+				character_event = {
 					id = magic_system.99998
 				}
 
@@ -5294,8 +5439,8 @@ dispel_saving_roll_60 = {
 		}
 		40 = {
 			modifier = {
-			    factor = 1.1
-			    event_target:magic_caster = {
+				factor = 1.1
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 1
@@ -5304,8 +5449,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 1.2
-			    event_target:magic_caster = {
+				factor = 1.2
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 2
@@ -5314,8 +5459,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 1.3
-			    event_target:magic_caster = {
+				factor = 1.3
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 3
@@ -5324,8 +5469,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 1.4
-			    event_target:magic_caster = {
+				factor = 1.4
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 4
@@ -5334,8 +5479,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 1.5
-			    event_target:magic_caster = {
+				factor = 1.5
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 5
@@ -5344,8 +5489,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 1.6
-			    event_target:magic_caster = {
+				factor = 1.6
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 6
@@ -5354,8 +5499,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 1.7
-			    event_target:magic_caster = {
+				factor = 1.7
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 7
@@ -5364,8 +5509,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 1.8
-			    event_target:magic_caster = {
+				factor = 1.8
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 8
@@ -5374,8 +5519,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 1.9
-			    event_target:magic_caster = {
+				factor = 1.9
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 9
@@ -5384,8 +5529,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 2
-			    event_target:magic_caster = {
+				factor = 2
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 10
@@ -5394,8 +5539,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 2.1
-			    event_target:magic_caster = {
+				factor = 2.1
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 11
@@ -5404,8 +5549,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 2.2
-			    event_target:magic_caster = {
+				factor = 2.2
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 12
@@ -5414,8 +5559,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 2.3
-			    event_target:magic_caster = {
+				factor = 2.3
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 13
@@ -5424,8 +5569,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 2.4
-			    event_target:magic_caster = {
+				factor = 2.4
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 14
@@ -5434,8 +5579,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 2.5
-			    event_target:magic_caster = {
+				factor = 2.5
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 15
@@ -5444,8 +5589,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 2.6
-			    event_target:magic_caster = {
+				factor = 2.6
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 16
@@ -5454,8 +5599,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 2.7
-			    event_target:magic_caster = {
+				factor = 2.7
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 17
@@ -5464,8 +5609,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 2.8
-			    event_target:magic_caster = {
+				factor = 2.8
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 18
@@ -5474,8 +5619,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 2.9
-			    event_target:magic_caster = {
+				factor = 2.9
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 19
@@ -5484,8 +5629,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 3
-			    event_target:magic_caster = {
+				factor = 3
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 20
@@ -5494,8 +5639,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 3.1
-			    event_target:magic_caster = {
+				factor = 3.1
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 21
@@ -5504,8 +5649,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 3.2
-			    event_target:magic_caster = {
+				factor = 3.2
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 22
@@ -5514,8 +5659,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 3.3
-			    event_target:magic_caster = {
+				factor = 3.3
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 23
@@ -5524,8 +5669,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 3.4
-			    event_target:magic_caster = {
+				factor = 3.4
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 24
@@ -5534,8 +5679,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 3.5
-			    event_target:magic_caster = {
+				factor = 3.5
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 25
@@ -5544,8 +5689,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 3.6
-			    event_target:magic_caster = {
+				factor = 3.6
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 26
@@ -5554,8 +5699,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 3.7
-			    event_target:magic_caster = {
+				factor = 3.7
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 27
@@ -5564,8 +5709,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 3.8
-			    event_target:magic_caster = {
+				factor = 3.8
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 28
@@ -5574,8 +5719,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 3.9
-			    event_target:magic_caster = {
+				factor = 3.9
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 29
@@ -5584,8 +5729,8 @@ dispel_saving_roll_60 = {
 
 			}
 			modifier = {
-			    factor = 4
-			    event_target:magic_caster = {
+				factor = 4
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 30
@@ -5594,7 +5739,7 @@ dispel_saving_roll_60 = {
 
 			}
 			event_target:magic_caster = {
-			    change_variable = {
+				change_variable = {
 					which = "magicxp"
 					value = 1
 				}
@@ -5608,8 +5753,8 @@ dispel_saving_roll_70 = {
 	random_list = {
 		70 = {
 			modifier = {
-			    factor = 1.1
-			    event_target:magic_dispeler = {
+				factor = 1.1
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 1
@@ -5618,8 +5763,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 1.2
-			    event_target:magic_dispeler = {
+				factor = 1.2
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 2
@@ -5628,8 +5773,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 1.3
-			    event_target:magic_dispeler = {
+				factor = 1.3
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 3
@@ -5638,8 +5783,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 1.4
-			    event_target:magic_dispeler = {
+				factor = 1.4
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 4
@@ -5647,8 +5792,8 @@ dispel_saving_roll_70 = {
 				}
 			}
 			modifier = {
-			    factor = 1.5
-			    event_target:magic_dispeler = {
+				factor = 1.5
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 5
@@ -5657,8 +5802,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 1.6
-			    event_target:magic_dispeler = {
+				factor = 1.6
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 6
@@ -5667,8 +5812,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 1.7
-			    event_target:magic_dispeler = {
+				factor = 1.7
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 7
@@ -5677,8 +5822,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 1.8
-			    event_target:magic_dispeler = {
+				factor = 1.8
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 8
@@ -5687,8 +5832,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 1.9
-			    event_target:magic_dispeler = {
+				factor = 1.9
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 9
@@ -5697,8 +5842,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 2
-			    event_target:magic_dispeler = {
+				factor = 2
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 10
@@ -5707,8 +5852,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 2.1
-			    event_target:magic_dispeler = {
+				factor = 2.1
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 11
@@ -5717,8 +5862,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 2.2
-			    event_target:magic_dispeler = {
+				factor = 2.2
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 12
@@ -5727,8 +5872,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 2.3
-			    event_target:magic_dispeler = {
+				factor = 2.3
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 13
@@ -5737,16 +5882,16 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 2.4
-			    event_target:magic_dispeler = {
+				factor = 2.4
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 14
 					}
 				}
-			}			     modifier = {
-			    factor = 2.5
-			    event_target:magic_dispeler = {
+			}				 modifier = {
+				factor = 2.5
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 15
@@ -5755,8 +5900,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 2.6
-			    event_target:magic_dispeler = {
+				factor = 2.6
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 16
@@ -5765,8 +5910,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 2.7
-			    event_target:magic_dispeler = {
+				factor = 2.7
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 17
@@ -5775,8 +5920,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 2.8
-			    event_target:magic_dispeler = {
+				factor = 2.8
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 18
@@ -5785,8 +5930,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 2.9
-			    event_target:magic_dispeler = {
+				factor = 2.9
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 19
@@ -5795,8 +5940,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 3
-			    event_target:magic_dispeler = {
+				factor = 3
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 20
@@ -5805,8 +5950,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 3.1
-			    event_target:magic_dispeler = {
+				factor = 3.1
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 21
@@ -5815,8 +5960,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 3.2
-			    event_target:magic_dispeler = {
+				factor = 3.2
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 22
@@ -5825,8 +5970,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 3.3
-			    event_target:magic_dispeler = {
+				factor = 3.3
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 23
@@ -5835,8 +5980,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 3.4
-			    event_target:magic_dispeler = {
+				factor = 3.4
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 24
@@ -5844,8 +5989,8 @@ dispel_saving_roll_70 = {
 				}
 			}
 			modifier = {
-			    factor = 3.5
-			    event_target:magic_dispeler = {
+				factor = 3.5
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 25
@@ -5854,8 +5999,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 3.6
-			    event_target:magic_dispeler = {
+				factor = 3.6
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 26
@@ -5864,8 +6009,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 3.7
-			    event_target:magic_dispeler = {
+				factor = 3.7
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 27
@@ -5874,8 +6019,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 3.8
-			    event_target:magic_dispeler = {
+				factor = 3.8
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 28
@@ -5884,8 +6029,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 3.9
-			    event_target:magic_dispeler = {
+				factor = 3.9
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 29
@@ -5894,8 +6039,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 4
-			    event_target:magic_dispeler = {
+				factor = 4
+				event_target:magic_dispeler = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 30
@@ -5904,18 +6049,18 @@ dispel_saving_roll_70 = {
 
 			}
 			ROOT = {
-			    event_target:magic_caster = {
+				event_target:magic_caster = {
 					set_character_flag = dispeled
 				}
 
 			}
 			event_target:magic_dispeler = {
 
-			    change_variable = {
+				change_variable = {
 					which = "magicxp"
 					value = 1
 				}
-			    character_event = {
+				character_event = {
 					id = magic_system.99998
 				}
 
@@ -5923,8 +6068,8 @@ dispel_saving_roll_70 = {
 		}
 		30 = {
 			modifier = {
-			    factor = 1.1
-			    event_target:magic_caster = {
+				factor = 1.1
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 1
@@ -5933,8 +6078,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 1.2
-			    event_target:magic_caster = {
+				factor = 1.2
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 2
@@ -5943,8 +6088,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 1.3
-			    event_target:magic_caster = {
+				factor = 1.3
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 3
@@ -5953,8 +6098,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 1.4
-			    event_target:magic_caster = {
+				factor = 1.4
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 4
@@ -5963,8 +6108,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 1.5
-			    event_target:magic_caster = {
+				factor = 1.5
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 5
@@ -5973,8 +6118,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 1.6
-			    event_target:magic_caster = {
+				factor = 1.6
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 6
@@ -5983,8 +6128,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 1.7
-			    event_target:magic_caster = {
+				factor = 1.7
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 7
@@ -5993,8 +6138,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 1.8
-			    event_target:magic_caster = {
+				factor = 1.8
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 8
@@ -6003,8 +6148,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 1.9
-			    event_target:magic_caster = {
+				factor = 1.9
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 9
@@ -6013,8 +6158,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 2
-			    event_target:magic_caster = {
+				factor = 2
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 10
@@ -6023,8 +6168,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 2.1
-			    event_target:magic_caster = {
+				factor = 2.1
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 11
@@ -6033,8 +6178,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 2.2
-			    event_target:magic_caster = {
+				factor = 2.2
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 12
@@ -6043,8 +6188,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 2.3
-			    event_target:magic_caster = {
+				factor = 2.3
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 13
@@ -6053,8 +6198,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 2.4
-			    event_target:magic_caster = {
+				factor = 2.4
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 14
@@ -6063,8 +6208,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 2.5
-			    event_target:magic_caster = {
+				factor = 2.5
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 15
@@ -6073,8 +6218,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 2.6
-			    event_target:magic_caster = {
+				factor = 2.6
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 16
@@ -6083,8 +6228,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 2.7
-			    event_target:magic_caster = {
+				factor = 2.7
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 17
@@ -6093,8 +6238,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 2.8
-			    event_target:magic_caster = {
+				factor = 2.8
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 18
@@ -6103,8 +6248,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 2.9
-			    event_target:magic_caster = {
+				factor = 2.9
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 19
@@ -6113,8 +6258,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 3
-			    event_target:magic_caster = {
+				factor = 3
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 20
@@ -6123,8 +6268,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 3.1
-			    event_target:magic_caster = {
+				factor = 3.1
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 21
@@ -6133,8 +6278,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 3.2
-			    event_target:magic_caster = {
+				factor = 3.2
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 22
@@ -6143,8 +6288,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 3.3
-			    event_target:magic_caster = {
+				factor = 3.3
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 23
@@ -6153,8 +6298,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 3.4
-			    event_target:magic_caster = {
+				factor = 3.4
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 24
@@ -6163,8 +6308,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 3.5
-			    event_target:magic_caster = {
+				factor = 3.5
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 25
@@ -6173,8 +6318,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 3.6
-			    event_target:magic_caster = {
+				factor = 3.6
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 26
@@ -6183,8 +6328,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 3.7
-			    event_target:magic_caster = {
+				factor = 3.7
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 27
@@ -6193,8 +6338,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 3.8
-			    event_target:magic_caster = {
+				factor = 3.8
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 28
@@ -6203,8 +6348,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 3.9
-			    event_target:magic_caster = {
+				factor = 3.9
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 29
@@ -6213,8 +6358,8 @@ dispel_saving_roll_70 = {
 
 			}
 			modifier = {
-			    factor = 4
-			    event_target:magic_caster = {
+				factor = 4
+				event_target:magic_caster = {
 					check_variable = {
 						which = "caster_level_dispel"
 						value = 30
@@ -6223,7 +6368,7 @@ dispel_saving_roll_70 = {
 
 			}
 			event_target:magic_caster = {
-			    change_variable = {
+				change_variable = {
 					which = "magicxp"
 					value = 1
 				}
@@ -6235,57 +6380,57 @@ dispel_saving_roll_70 = {
 
 z_duel_menu_clr = {
 	clr_character_flag = duel_action_meele
-    clr_character_flag = duel_action_dodge
-    clr_character_flag = duel_action_block
-    clr_character_flag = duel_action_assess
-    clr_character_flag = magic_channel
-    clr_character_flag = high_magic_duel_healing
-    clr_character_flag = high_magic_duel_shielding
-    clr_character_flag = high_magic_duel_fire
-    clr_character_flag = high_magic_duel_curse
-    set_variable = {
+	clr_character_flag = duel_action_dodge
+	clr_character_flag = duel_action_block
+	clr_character_flag = duel_action_assess
+	clr_character_flag = magic_channel
+	clr_character_flag = high_magic_duel_healing
+	clr_character_flag = high_magic_duel_shielding
+	clr_character_flag = high_magic_duel_fire
+	clr_character_flag = high_magic_duel_curse
+	set_variable = {
 		which = "action_nr"
 		value = 0
 	}
-    set_variable = {
+	set_variable = {
 		which = "action_picked"
 		value = 0
 	}
-    # BASIC ACTIONS
-    set_variable = {
+	# BASIC ACTIONS
+	set_variable = {
 		which = "d_action_meele_strike"
 		value = 0
 	}
-    set_variable = {
+	set_variable = {
 		which = "d_action_dodge"
 		value = 0
 	}
-    set_variable = {
+	set_variable = {
 		which = "d_action_parry"
 		value = 0
 	}
-    set_variable = {
+	set_variable = {
 		which = "d_action_assess"
 		value = 0
 	}
-    set_variable = {
+	set_variable = {
 		which = "d_action_channel"
 		value = 0
 	}
-    #Magic Actions, High Magic
-    set_variable = {
+	#Magic Actions, High Magic
+	set_variable = {
 		which = "d_action_high_magic_healing"
 		value = 0
 	}
-    set_variable = {
+	set_variable = {
 		which = "d_action_high_magic_shielding"
 		value = 0
 	}
-    set_variable = {
+	set_variable = {
 		which = "d_action_high_magic_mage_fire"
 		value = 0
 	}
-    set_variable = {
+	set_variable = {
 		which = "d_action_high_magic_curse"
 		value = 0
 	}
@@ -6339,7 +6484,7 @@ magic_dmg_effect = {
 		if = {
 			limit = {
 				event_target:magic_caster = {
-                    in_siege = yes
+					in_siege = yes
 				}
 			}
 			random_list = {
@@ -6515,7 +6660,7 @@ magic_dmg_effect_metal = {
 		if = {
 			limit = {
 				event_target:magic_caster = {
-                    in_siege = yes
+					in_siege = yes
 				}
 			}
 			random_list = {
@@ -6657,7 +6802,7 @@ magic_dmg_effect_lightning = {
 		if = {
 			limit = {
 				event_target:magic_caster = {
-                    in_siege = yes
+					in_siege = yes
 				}
 			}
 			random_list = {
@@ -6721,7 +6866,7 @@ morale_dmg_effect = {
 		if = {
 			limit = {
 				event_target:magic_caster = {
-                    in_siege = yes
+					in_siege = yes
 				}
 			}
 			random_list = {
@@ -6765,19 +6910,19 @@ heal_effect = {
 		}
 		random_list = {
 			4 = {
-                troops = 0.005
+				troops = 0.005
 			}
 			2 = {
-                troops = 0.010
+				troops = 0.010
 			}
 			1 = {
-                troops = 0.015
+				troops = 0.015
 			}
 			1 = {
-                troops = 0.020
+				troops = 0.020
 			}
 			1 = {
-                troops = 0.025
+				troops = 0.025
 
 			}
 		}

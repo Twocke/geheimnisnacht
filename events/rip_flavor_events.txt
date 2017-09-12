@@ -114,7 +114,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.4010"
+		log = "work event id = RIP.4010 for [Root.GetBestName]"
 		random_courtier_or_vassal = {
 			limit = {
 				liege = {
@@ -281,7 +281,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.4011"
+		log = "work event id = RIP.4011 for [Root.GetBestName]"
 		random_courtier_or_vassal = {
 			limit = {
 				liege = {
@@ -364,7 +364,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.4012"
+		log = "work event id = RIP.4012 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -468,7 +468,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.4013"
+		log = "work event id = RIP.4013 for [Root.GetBestName]"
 		random_courtier_or_vassal = {
 			limit = {
 				ai = yes
@@ -518,7 +518,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.4014"
+		log = "work event id = RIP.4014 for [Root.GetBestName]"
 		random_list = {
 			10 = {
 				# Physician seduces and impregnates your spouse
@@ -687,7 +687,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.4015"
+		log = "work event id = RIP.4015 for [Root.GetBestName]"
 		event_target:spouse_target = {
 			add_lover = event_target:physician_target
 			impregnate_cuckoo = event_target:physician_target
@@ -732,7 +732,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.4016"
+		log = "work event id = RIP.4016 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -799,7 +799,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.4017"
+		log = "work event id = RIP.4017 for [Root.GetBestName]"
 		random_realm_character = {
 			limit = {
 				prisoner = no
@@ -991,9 +991,7 @@ character_event = {
 			}
 			if = {
 				limit = {
-					NOT = {
-						is_lover = ROOT
-					}
+					wh_this_and_root_can_love_trigger = yes
 				}
 				add_lover = ROOT
 			}
@@ -1019,9 +1017,7 @@ character_event = {
 			}
 			if = {
 				limit = {
-					NOT = {
-						is_lover = ROOT
-					}
+					wh_this_and_root_can_love_trigger = yes
 				}
 				add_lover = ROOT
 			}
@@ -1059,7 +1055,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.4018"
+		log = "work event id = RIP.4018 for [Root.GetBestName]"
 		event_target:spouse_target = {
 			impregnate = ROOT
 		}
@@ -1109,7 +1105,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.4019"
+		log = "work event id = RIP.4019 for [Root.GetBestName]"
 		event_target:spouse_target = {
 			impregnate = ROOT
 		}
@@ -1243,7 +1239,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.4020"
+		log = "work event id = RIP.4020 for [Root.GetBestName]"
 		random_courtier_or_vassal = {
 			limit = {
 				liege = {
@@ -1389,7 +1385,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.4021"
+		log = "work event id = RIP.4021 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1547,7 +1543,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.4022"
+		log = "work event id = RIP.4022 for [Root.GetBestName]"
 		random_courtier_or_vassal = {
 			limit = {
 				liege = {
@@ -1635,7 +1631,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.4030"
+		log = "work event id = RIP.4030 for [Root.GetBestName]"
 		random_courtier_or_vassal = {
 			limit = {
 				liege = {
@@ -1650,8 +1646,8 @@ character_event = {
 			set_character_flag = physician_wants_to_research
 		}
 	}
-	# Sure
 
+	# Sure
 	option = {
 		name = EVTOPTA_RIP_4030
 		custom_tooltip = {
@@ -1673,8 +1669,8 @@ character_event = {
 			}
 		}
 	}
-	# Nope
 
+	# Nope
 	option = {
 		name = EVTOPTB_RIP_4030
 		custom_tooltip = {
@@ -1697,7 +1693,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.4031"
+		log = "work event id = RIP.4031 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1934,10 +1930,10 @@ character_event = {
 		}
 	}
 	is_triggered_only = yes
-	# Good book outcome
 
+	# Good book outcome
 	immediate = {
-		log = "work event id = RIP.4032"
+		log = "work event id = RIP.4032 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -1953,8 +1949,8 @@ character_event = {
 			}
 		}
 	}
-	# Meh book outcome
 
+	# Meh book outcome
 	option = {
 		trigger = {
 			FROM = {
@@ -1963,8 +1959,8 @@ character_event = {
 		}
 		name = EVTOPTC_RIP_4032
 	}
-	# Bad outcome
 
+	# Bad outcome
 	option = {
 		trigger = {
 			FROM = {
@@ -1992,8 +1988,8 @@ character_event = {
 			years = 5
 		}
 	}
-	# Great book outcome
 
+	# Great book outcome
 	option = {
 		trigger = {
 			OR = {
@@ -2089,13 +2085,13 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.4033"
+		log = "work event id = RIP.4033 for [Root.GetBestName]"
 		character_event = {
 			id = RIP.4034 days = 10
 		}
 	}
-	# Great book outcome
 
+	# Great book outcome
 	option = {
 		trigger = {
 			OR = {
@@ -2133,8 +2129,8 @@ character_event = {
 			}
 		}
 	}
-	# Good book outcome
 
+	# Good book outcome
 	option = {
 		trigger = {
 			has_character_flag = physician_good_book
@@ -2142,16 +2138,16 @@ character_event = {
 		name = EVTOPTB_RIP_4033
 		change_learning = 1
 	}
-	# Meh book outcome
 
+	# Meh book outcome
 	option = {
 		trigger = {
 			has_character_flag = physician_meh_book
 		}
 		name = EVTOPTC_RIP_4033
 	}
-	# Bad book outcome outcome
 
+	# Bad book outcome outcome
 	option = {
 		trigger = {
 			has_character_flag = physician_bad_book
@@ -2185,7 +2181,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.4034"
+		log = "work event id = RIP.4034 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2214,7 +2210,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.4040"
+		log = "work event id = RIP.4040 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2318,7 +2314,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.4041"
+		log = "work event id = RIP.4041 for [Root.GetBestName]"
 		random_courtier_or_vassal = {
 			limit = {
 				liege = {
@@ -2343,8 +2339,8 @@ character_event = {
 			}
 		}
 	}
-	# Yes
 
+	# Yes
 	option = {
 		name = EVTOPTA_RIP_4041
 		custom_tooltip = {
@@ -2466,8 +2462,8 @@ character_event = {
 			}
 		}
 	}
-	# No
 
+	# No
 	option = {
 		name = EVTOPTB_RIP_4041
 		custom_tooltip = {
@@ -2535,7 +2531,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.4042"
+		log = "work event id = RIP.4042 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2626,7 +2622,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.4043"
+		log = "work event id = RIP.4043 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2687,7 +2683,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.4044"
+		log = "work event id = RIP.4044 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2778,7 +2774,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.4045"
+		log = "work event id = RIP.4045 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2839,7 +2835,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.4046"
+		log = "work event id = RIP.4046 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2893,7 +2889,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.4047"
+		log = "work event id = RIP.4047 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2923,7 +2919,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.4060"
+		log = "work event id = RIP.4060 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -2948,7 +2944,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.4061"
+		log = "work event id = RIP.4061 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -3113,7 +3109,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.4100"
+		log = "work event id = RIP.4100 for [Root.GetBestName]"
 		set_character_flag = tribal_physician
 		random_independent_ruler = {
 			limit = {
@@ -3303,7 +3299,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.4101"
+		log = "work event id = RIP.4101 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -3496,7 +3492,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.4300"
+		log = "work event id = RIP.4300 for [Root.GetBestName]"
 		job_treasurer = {
 			save_event_target_as = councillor_target
 		}
@@ -3647,7 +3643,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.4301"
+		log = "work event id = RIP.4301 for [Root.GetBestName]"
 		job_spiritual = {
 			save_event_target_as = councillor_target
 		}
@@ -3798,7 +3794,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.4302"
+		log = "work event id = RIP.4302 for [Root.GetBestName]"
 		job_marshal = {
 			save_event_target_as = councillor_target
 		}
@@ -3949,7 +3945,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.4303"
+		log = "work event id = RIP.4303 for [Root.GetBestName]"
 		job_spymaster = {
 			save_event_target_as = councillor_target
 		}
@@ -4100,7 +4096,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.4304"
+		log = "work event id = RIP.4304 for [Root.GetBestName]"
 		job_chancellor = {
 			save_event_target_as = councillor_target
 		}
@@ -4240,7 +4236,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.4305"
+		log = "work event id = RIP.4305 for [Root.GetBestName]"
 		random_demesne_province = {
 			limit = {
 				NOT = {
@@ -4328,7 +4324,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.4400"
+		log = "work event id = RIP.4400 for [Root.GetBestName]"
 		killer = {
 			if = {
 				limit = {
@@ -4532,7 +4528,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.29000"
+		log = "work event id = RIP.29000 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -4685,15 +4681,15 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.29001"
+		log = "work event id = RIP.29001 for [Root.GetBestName]"
 		add_character_modifier = {
 			modifier = grief_timer
 			years = 10
 			hidden = yes
 		}
 	}
-	# Visit their tomb
 
+	# Visit their tomb
 	option = {
 		name = EVTOPTA_RIP_29001
 		custom_tooltip = {
@@ -4728,8 +4724,8 @@ character_event = {
 			factor = 10
 		}
 	}
-	# Stay in room and cry
 
+	# Stay in room and cry
 	option = {
 		trigger = {
 			NOR = {
@@ -4813,8 +4809,8 @@ character_event = {
 			factor = 1
 		}
 	}
-	# Face the world. You're a badass!
 
+	# Face the world. You're a badass!
 	option = {
 		trigger = {
 			NOR = {
@@ -4868,10 +4864,10 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 	picture = GFX_evt_death
 	is_triggered_only = yes
-	# Let it mourn
 
+	# Let it mourn
 	immediate = {
-		log = "work event id = RIP.29002"
+		log = "work event id = RIP.29002 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -4899,8 +4895,8 @@ character_event = {
 			}
 		}
 	}
-	# Lash out
 
+	# Lash out
 	option = {
 		trigger = {
 			NOT = {
@@ -4946,7 +4942,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.29003"
+		log = "work event id = RIP.29003 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -4965,7 +4961,7 @@ character_event = {
 	hide_from = yes
 
 	immediate = {
-		log = "work event id = RIP.29004"
+		log = "work event id = RIP.29004 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -4986,15 +4982,15 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.29005"
+		log = "work event id = RIP.29005 for [Root.GetBestName]"
 		add_character_modifier = {
 			modifier = grief_timer
 			years = 10
 			hidden = yes
 		}
 	}
-	# Go out drinking
 
+	# Go out drinking
 	option = {
 		name = EVTOPTA_RIP_29005
 		custom_tooltip = {
@@ -5033,8 +5029,8 @@ character_event = {
 			factor = 20
 		}
 	}
-	# Be alone
 
+	# Be alone
 	option = {
 		trigger = {
 			NOR = {
@@ -5102,8 +5098,8 @@ character_event = {
 			factor = 10
 		}
 	}
-	# Suicide
 
+	# Suicide
 	option = {
 		trigger = {
 			trait = depressed
@@ -5119,8 +5115,8 @@ character_event = {
 			factor = 1
 		}
 	}
-	# Get rid of all of your friends
 
+	# Get rid of all of your friends
 	option = {
 		name = EVTOPTD_RIP_29005
 		custom_tooltip = {
@@ -5147,10 +5143,10 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 	picture = GFX_evt_brothel
 	is_triggered_only = yes
-	# Approach
 
+	# Approach
 	immediate = {
-		log = "work event id = RIP.29006"
+		log = "work event id = RIP.29006 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -5169,8 +5165,8 @@ character_event = {
 			factor = 3
 		}
 	}
-	# Leave alone
 
+	# Leave alone
 	option = {
 		name = EVTOPTB_RIP_29006
 		hidden_tooltip = {
@@ -5213,10 +5209,10 @@ character_event = {
 		}
 		text = EVTDSC_RIP_29007_B
 	}
-	# Let's be friends
 
+	# Let's be friends
 	immediate = {
-		log = "work event id = RIP.29007"
+		log = "work event id = RIP.29007 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -5250,8 +5246,8 @@ character_event = {
 			factor = 3
 		}
 	}
-	# I don't want your company!
 
+	# I don't want your company!
 	option = {
 		name = EVTOPTB_RIP_29007
 		custom_tooltip = {
@@ -5290,7 +5286,7 @@ character_event = {
 	hide_from = yes
 
 	immediate = {
-		log = "work event id = RIP.29008"
+		log = "work event id = RIP.29008 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -5330,7 +5326,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.29009"
+		log = "work event id = RIP.29009 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -5360,15 +5356,15 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.29010"
+		log = "work event id = RIP.29010 for [Root.GetBestName]"
 		add_character_modifier = {
 			modifier = grief_timer
 			years = 10
 			hidden = yes
 		}
 	}
-	# Steal skull
 
+	# Steal skull
 	option = {
 		name = EVTOPTA_RIP_29010
 		custom_tooltip = {
@@ -5473,8 +5469,8 @@ character_event = {
 			factor = 2
 		}
 	}
-	# Enemy of my enemy
 
+	# Enemy of my enemy
 	option = {
 		trigger = {
 			event_target:rip_enemy_2 = {
@@ -5490,8 +5486,8 @@ character_event = {
 			factor = 10
 		}
 	}
-	# Get a new enemy
 
+	# Get a new enemy
 	option = {
 		trigger = {
 			event_target:rip_new_enemy = {
@@ -5507,8 +5503,8 @@ character_event = {
 			factor = 5
 		}
 	}
-	# Repent
 
+	# Repent
 	option = {
 		trigger = {
 			OR = {
@@ -5558,8 +5554,8 @@ character_event = {
 			factor = 5
 		}
 	}
-	# No time
 
+	# No time
 	option = {
 		name = EVTOPTE_RIP_29010
 		custom_tooltip = {
@@ -5590,10 +5586,10 @@ character_event = {
 	border = GFX_event_normal_frame_intrigue
 	picture = GFX_evt_bloody_tools
 	is_triggered_only = yes
-	# Imprison
 
+	# Imprison
 	immediate = {
-		log = "work event id = RIP.29011"
+		log = "work event id = RIP.29011 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -5653,8 +5649,8 @@ character_event = {
 			}
 		}
 	}
-	# Get out
 
+	# Get out
 	option = {
 		name = EVTOPTB_RIP_29011
 		if = {
@@ -5718,7 +5714,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.29012"
+		log = "work event id = RIP.29012 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -5772,7 +5768,7 @@ character_event = {
 	hide_from = yes
 
 	immediate = {
-		log = "work event id = RIP.29013"
+		log = "work event id = RIP.29013 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -5819,7 +5815,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.29014"
+		log = "work event id = RIP.29014 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -5870,7 +5866,7 @@ character_event = {
 	hide_from = yes
 
 	immediate = {
-		log = "work event id = RIP.29015"
+		log = "work event id = RIP.29015 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -5925,7 +5921,7 @@ character_event = {
 	hide_from = yes
 
 	immediate = {
-		log = "work event id = RIP.29016"
+		log = "work event id = RIP.29016 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -5956,7 +5952,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.29017"
+		log = "work event id = RIP.29017 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -5979,7 +5975,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.29018"
+		log = "work event id = RIP.29018 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -5999,7 +5995,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.29019"
+		log = "work event id = RIP.29019 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -6032,7 +6028,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.29020"
+		log = "work event id = RIP.29020 for [Root.GetBestName]"
 		add_character_modifier = {
 			modifier = grief_timer
 			years = 10
@@ -6081,8 +6077,8 @@ character_event = {
 			}
 		}
 	}
-	# Approach
 
+	# Approach
 	option = {
 		name = EVTOPTA_RIP_29020
 		custom_tooltip = {
@@ -6111,8 +6107,8 @@ character_event = {
 			}
 		}
 	}
-	# Or become lovers...?
 
+	# Or become lovers...?
 	option = {
 		trigger = {
 			# Must be appropriate love target
@@ -6178,8 +6174,8 @@ character_event = {
 			factor = 15
 		}
 	}
-	# Don't approach
 
+	# Don't approach
 	option = {
 		name = EVTOPTB_RIP_29020
 		custom_tooltip = {
@@ -6236,10 +6232,10 @@ character_event = {
 	desc = EVTDSC_RIP_29021
 	picture = GFX_evt_death
 	is_triggered_only = yes
-	# Let's be friends
 
+	# Let's be friends
 	immediate = {
-		log = "work event id = RIP.29021"
+		log = "work event id = RIP.29021 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -6264,8 +6260,8 @@ character_event = {
 			}
 		}
 	}
-	# I am fine on my own
 
+	# I am fine on my own
 	option = {
 		name = EVTOPTB_RIP_29021
 		reverse_opinion = {
@@ -6303,7 +6299,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.29022"
+		log = "work event id = RIP.29022 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -6323,7 +6319,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.29023"
+		log = "work event id = RIP.29023 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -6345,14 +6341,19 @@ character_event = {
 	desc = EVTDSC_RIP_29024
 	picture = GFX_evt_death
 	is_triggered_only = yes
-	# Let's be lovers
 
 	immediate = {
-		log = "work event id = RIP.29024"
+		log = "work event id = RIP.29024 for [Root.GetBestName]"
 	}
 
+	# Let's be lovers
 	option = {
 		name = EVTOPTA_RIP_29024
+		trigger = {
+			from = {
+				wh_this_and_root_can_love_trigger = yes
+			}
+		}
 		add_lover = FROM
 		hidden_tooltip = {
 			FROM = {
@@ -6382,8 +6383,8 @@ character_event = {
 			}
 		}
 	}
-	# No!
 
+	# No!
 	option = {
 		name = EVTOPTB_RIP_29024
 		reverse_opinion = {
@@ -6426,7 +6427,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.29025"
+		log = "work event id = RIP.29025 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -6446,7 +6447,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.29026"
+		log = "work event id = RIP.29026 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -6478,7 +6479,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.29100"
+		log = "work event id = RIP.29100 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -6602,7 +6603,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.29101"
+		log = "work event id = RIP.29101 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -6649,7 +6650,7 @@ character_event = {
 	hide_window = yes
 
 	immediate = {
-		log = "work event id = RIP.29102"
+		log = "work event id = RIP.29102 for [Root.GetBestName]"
 		random_child = {
 			limit = {
 				age = 2
@@ -6687,7 +6688,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.29103"
+		log = "work event id = RIP.29103 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -6756,7 +6757,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.29104"
+		log = "work event id = RIP.29104 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -6840,10 +6841,10 @@ character_event = {
 		text = EVTDSC_RIP_29112
 	}
 	is_triggered_only = yes
-	# Attend
 
+	# Attend
 	immediate = {
-		log = "work event id = RIP.29112"
+		log = "work event id = RIP.29112 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -6870,8 +6871,8 @@ character_event = {
 			}
 		}
 	}
-	# Decline
 
+	# Decline
 	option = {
 		name = EVTOPTB_RIP_29112
 		reverse_opinion = {
@@ -6917,10 +6918,10 @@ character_event = {
 		text = EVTDSC_RIP_29105
 	}
 	is_triggered_only = yes
-	# YES (lunatic)
 
+	# YES (lunatic)
 	immediate = {
-		log = "work event id = RIP.29105"
+		log = "work event id = RIP.29105 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -6955,8 +6956,8 @@ character_event = {
 			}
 		}
 	}
-	# YES (envious)
 
+	# YES (envious)
 	option = {
 		trigger = {
 			trait = envious
@@ -6996,8 +6997,8 @@ character_event = {
 			}
 		}
 	}
-	# Nah
 
+	# Nah
 	option = {
 		name = EVTOPTB_RIP_29105
 		custom_tooltip = {
@@ -7031,7 +7032,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.29106"
+		log = "work event id = RIP.29106 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7064,7 +7065,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.29107"
+		log = "work event id = RIP.29107 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7098,7 +7099,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.29108"
+		log = "work event id = RIP.29108 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7151,7 +7152,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.29109"
+		log = "work event id = RIP.29109 for [Root.GetBestName]"
 		remove_character_modifier = forced_mask
 	}
 
@@ -7190,7 +7191,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.29110"
+		log = "work event id = RIP.29110 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7247,7 +7248,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.29113"
+		log = "work event id = RIP.29113 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7270,7 +7271,7 @@ character_event = {
 	hide_window = yes
 
 	immediate = {
-		log = "work event id = RIP.29114"
+		log = "work event id = RIP.29114 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7300,7 +7301,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.29200"
+		log = "work event id = RIP.29200 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7366,7 +7367,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.29201"
+		log = "work event id = RIP.29201 for [Root.GetBestName]"
 		random_child = {
 			limit = {
 				age = 4 NOT = {
@@ -7393,8 +7394,8 @@ character_event = {
 			}
 		}
 	}
-	# Catch
 
+	# Catch
 	option = {
 		name = EVTOPTA_RIP_29201
 		random_list = {
@@ -7422,8 +7423,8 @@ character_event = {
 			}
 		}
 	}
-	# Throw yourself at ground
 
+	# Throw yourself at ground
 	option = {
 		name = EVTOPTB_RIP_29201
 		custom_tooltip = {
@@ -7458,7 +7459,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.29202"
+		log = "work event id = RIP.29202 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7482,7 +7483,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.29203"
+		log = "work event id = RIP.29203 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7517,7 +7518,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.29204"
+		log = "work event id = RIP.29204 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7557,10 +7558,10 @@ character_event = {
 		text = EVTDSC_RIP_29205_B
 	}
 	is_triggered_only = yes
-	# Get eye made
 
+	# Get eye made
 	immediate = {
-		log = "work event id = RIP.29205"
+		log = "work event id = RIP.29205 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7580,8 +7581,8 @@ character_event = {
 			add_trait = one_eyed
 		}
 	}
-	# Don't get eye made
 
+	# Don't get eye made
 	option = {
 		name = EVTOPTB_RIP_29101
 		custom_tooltip = {
@@ -7606,7 +7607,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.29300"
+		log = "work event id = RIP.29300 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7668,7 +7669,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.29301"
+		log = "work event id = RIP.29301 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7750,7 +7751,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.29302"
+		log = "work event id = RIP.29302 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7771,7 +7772,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.29303"
+		log = "work event id = RIP.29303 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7788,7 +7789,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.29304"
+		log = "work event id = RIP.29304 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7889,10 +7890,10 @@ character_event = {
 	border = GFX_event_normal_frame_religion
 	picture = GFX_evt_court_physician
 	is_triggered_only = yes
-	# Golden hand
 
+	# Golden hand
 	immediate = {
-		log = "work event id = RIP.29305"
+		log = "work event id = RIP.29305 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -7908,8 +7909,8 @@ character_event = {
 			duration = -1
 		}
 	}
-	# Iron hand
 
+	# Iron hand
 	option = {
 		name = EVTOPTB_RIP_29305
 		custom_tooltip = {
@@ -7929,8 +7930,8 @@ character_event = {
 			}
 		}
 	}
-	# No prosthetic hand
 
+	# No prosthetic hand
 	option = {
 		name = EVTOPTC_RIP_29305
 		custom_tooltip = {
@@ -7955,7 +7956,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.29400"
+		log = "work event id = RIP.29400 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8055,7 +8056,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.29401"
+		log = "work event id = RIP.29401 for [Root.GetBestName]"
 		if = {
 			limit = {
 				prefers_men_trigger = yes
@@ -8077,9 +8078,10 @@ character_event = {
 			}
 			random_courtier = {
 				limit = {
-					is_female = yes block_general_event_trigger = no NOT = {
-						is_lover = ROOT
-					} NOT = {
+					wh_this_and_root_can_love_trigger = yes
+					is_female = yes 
+					block_general_event_trigger = no
+					NOT = {
 						is_close_relative = ROOT
 					}
 				}
@@ -8088,8 +8090,8 @@ character_event = {
 		}
 	}
 	is_triggered_only = yes
-	# Try to dance
 
+	# Try to dance
 	option = {
 		name = EVTOPTA_RIP_29401
 		random_list = {
@@ -8105,8 +8107,8 @@ character_event = {
 			}
 		}
 	}
-	# Avoid
 
+	# Avoid
 	option = {
 		name = EVTOPTB_RIP_29401
 		custom_tooltip = {
@@ -8149,7 +8151,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.29402"
+		log = "work event id = RIP.29402 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8167,7 +8169,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.29403"
+		log = "work event id = RIP.29403 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8205,7 +8207,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.29404"
+		log = "work event id = RIP.29404 for [Root.GetBestName]"
 		random_courtier = {
 			limit = {
 				has_minor_title = title_court_jester
@@ -8219,8 +8221,8 @@ character_event = {
 			save_event_target_as = jester
 		}
 	}
-	# Fake leg
 
+	# Fake leg
 	option = {
 		name = EVTOPTA_RIP_29404
 		custom_tooltip = {
@@ -8234,8 +8236,8 @@ character_event = {
 			duration = -1
 		}
 	}
-	# Peg leg
 
+	# Peg leg
 	option = {
 		name = EVTOPTB_RIP_29404
 		custom_tooltip = {
@@ -8255,8 +8257,8 @@ character_event = {
 			}
 		}
 	}
-	# No prosthetic leg
 
+	# No prosthetic leg
 	option = {
 		name = EVTOPTC_RIP_29404
 		custom_tooltip = {
@@ -8298,7 +8300,7 @@ character_event = {
 	hide_from = yes
 
 	immediate = {
-		log = "work event id = RIP.29500"
+		log = "work event id = RIP.29500 for [Root.GetBestName]"
 		any_courtier_or_vassal = {
 			limit = {
 				has_minor_title = title_court_physician
@@ -8334,7 +8336,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.29501"
+		log = "work event id = RIP.29501 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8390,7 +8392,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.29502"
+		log = "work event id = RIP.29502 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8408,7 +8410,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.29503"
+		log = "work event id = RIP.29503 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8442,7 +8444,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.29504"
+		log = "work event id = RIP.29504 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8495,7 +8497,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.29511"
+		log = "work event id = RIP.29511 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8582,10 +8584,10 @@ character_event = {
 		text = EVTDSC_RIP_29505_B
 	}
 	is_triggered_only = yes
-	# Yes
 
+	# Yes
 	immediate = {
-		log = "work event id = RIP.29505"
+		log = "work event id = RIP.29505 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8614,8 +8616,8 @@ character_event = {
 			}
 		}
 	}
-	# Yes, but badly...
 
+	# Yes, but badly...
 	option = {
 		trigger = {
 			NOT = {
@@ -8664,8 +8666,8 @@ character_event = {
 			}
 		}
 	}
-	# No
 
+	# No
 	option = {
 		name = EVTOPTC_RIP_29505
 		ai_chance = {
@@ -8696,10 +8698,10 @@ character_event = {
 			}
 		}
 	}
-	# Yes
 
+	# Yes
 	immediate = {
-		log = "work event id = RIP.29506"
+		log = "work event id = RIP.29506 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8754,8 +8756,8 @@ character_event = {
 			}
 		}
 	}
-	# No
 
+	# No
 	option = {
 		name = EVTOPTB_RIP_29506
 		prestige = 20
@@ -8776,7 +8778,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.29507"
+		log = "work event id = RIP.29507 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8792,16 +8794,10 @@ character_event = {
 		}
 		if = {
 			limit = {
-				NOT = {
-					event_target:caretaker = {
+				event_target:caretaker = {
+					wh_this_and_root_can_love_trigger = yes
+					nor = {
 						is_child_of = ROOT
-					}
-				}
-				NOT = {
-					is_lover = event_target:caretaker
-				}
-				NOT = {
-					event_target:caretaker = {
 						has_character_flag = bad_caretaker
 					}
 				}
@@ -8853,7 +8849,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.29508"
+		log = "work event id = RIP.29508 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8885,8 +8881,8 @@ character_event = {
 			limit = {
 				has_character_flag = make_friend
 			}
-			add_lover = FROM
-			clr_character_flag = make_lover
+			add_friend = FROM
+			clr_character_flag = make_friend
 		}
 		reverse_opinion = {
 			who = FROM
@@ -8905,7 +8901,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.29509"
+		log = "work event id = RIP.29509 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8938,7 +8934,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.29510"
+		log = "work event id = RIP.29510 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -8973,7 +8969,7 @@ character_event = {
 	only_playable = yes
 
 	immediate = {
-		log = "work event id = RIP.29600"
+		log = "work event id = RIP.29600 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -9124,7 +9120,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.29601"
+		log = "work event id = RIP.29601 for [Root.GetBestName]"
 		# Child is ugly
 		if = {
 			limit = {
@@ -9356,7 +9352,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.29602"
+		log = "work event id = RIP.29602 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -9398,7 +9394,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.29700"
+		log = "work event id = RIP.29700 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -9447,7 +9443,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.29800"
+		log = "work event id = RIP.29800 for [Root.GetBestName]"
 		random_list = {
 			50 = {
 				modifier = {
@@ -9509,7 +9505,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.29801"
+		log = "work event id = RIP.29801 for [Root.GetBestName]"
 		event_target:reincarnation_target = {
 			ROOT = {
 				set_reincarnation = PREV
@@ -9553,7 +9549,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.29802"
+		log = "work event id = RIP.29802 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -9606,7 +9602,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.29803"
+		log = "work event id = RIP.29803 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -9635,7 +9631,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.29804"
+		log = "work event id = RIP.29804 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -9706,7 +9702,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.29805"
+		log = "work event id = RIP.29805 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -9819,7 +9815,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.29806"
+		log = "work event id = RIP.29806 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -9855,7 +9851,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30000"
+		log = "work event id = RIP.30000 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -10084,7 +10080,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30001"
+		log = "work event id = RIP.30001 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -10123,7 +10119,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30002"
+		log = "work event id = RIP.30002 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -10144,7 +10140,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30003"
+		log = "work event id = RIP.30003 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -10209,7 +10205,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30004"
+		log = "work event id = RIP.30004 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -10232,7 +10228,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30005"
+		log = "work event id = RIP.30005 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -10248,7 +10244,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30006"
+		log = "work event id = RIP.30006 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -10290,7 +10286,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30007"
+		log = "work event id = RIP.30007 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -10348,7 +10344,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30008"
+		log = "work event id = RIP.30008 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -10372,7 +10368,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30009"
+		log = "work event id = RIP.30009 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -10388,7 +10384,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30010"
+		log = "work event id = RIP.30010 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -10428,7 +10424,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30011"
+		log = "work event id = RIP.30011 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -10455,7 +10451,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30020"
+		log = "work event id = RIP.30020 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -10685,7 +10681,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30021"
+		log = "work event id = RIP.30021 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -10721,7 +10717,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30022"
+		log = "work event id = RIP.30022 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -10743,7 +10739,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30023"
+		log = "work event id = RIP.30023 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -10805,7 +10801,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30024"
+		log = "work event id = RIP.30024 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -10829,7 +10825,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30025"
+		log = "work event id = RIP.30025 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -10845,7 +10841,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30026"
+		log = "work event id = RIP.30026 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -10887,7 +10883,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30027"
+		log = "work event id = RIP.30027 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -10942,7 +10938,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30028"
+		log = "work event id = RIP.30028 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -10967,7 +10963,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30029"
+		log = "work event id = RIP.30029 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -10983,7 +10979,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30030"
+		log = "work event id = RIP.30030 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -11020,7 +11016,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30031"
+		log = "work event id = RIP.30031 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -11049,7 +11045,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30040"
+		log = "work event id = RIP.30040 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -11280,7 +11276,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30041"
+		log = "work event id = RIP.30041 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -11307,7 +11303,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30043"
+		log = "work event id = RIP.30043 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -11360,7 +11356,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30044"
+		log = "work event id = RIP.30044 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -11384,7 +11380,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30045"
+		log = "work event id = RIP.30045 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -11400,7 +11396,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30046"
+		log = "work event id = RIP.30046 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -11443,7 +11439,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30047"
+		log = "work event id = RIP.30047 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -11489,7 +11485,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30048"
+		log = "work event id = RIP.30048 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -11514,7 +11510,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30049"
+		log = "work event id = RIP.30049 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -11530,7 +11526,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30050"
+		log = "work event id = RIP.30050 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -11563,7 +11559,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30051"
+		log = "work event id = RIP.30051 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -11584,7 +11580,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30100"
+		log = "work event id = RIP.30100 for [Root.GetBestName]"
 		if = {
 			limit = {
 				NOT = {
@@ -11658,7 +11654,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30200"
+		log = "work event id = RIP.30200 for [Root.GetBestName]"
 		character_event = {
 			id = RIP.30201 days = 365
 		} # Cleanup
@@ -11669,8 +11665,8 @@ character_event = {
 			save_event_target_as = suicide_duel_target
 		}
 	}
-	# Challenge rival to duel
 
+	# Challenge rival to duel
 	option = {
 		trigger = {
 			event_target:suicide_duel_target = {
@@ -11689,8 +11685,8 @@ character_event = {
 			}
 		}
 	}
-	# Drink poison
 
+	# Drink poison
 	option = {
 		name = EVTOPTB_RIP_30200
 		hidden_tooltip = {
@@ -11737,8 +11733,8 @@ character_event = {
 			}
 		}
 	}
-	# Hang yourself
 
+	# Hang yourself
 	option = {
  		name = EVTOPTC_RIP_30200
  		hidden_tooltip = {
@@ -11768,8 +11764,8 @@ character_event = {
 			}
 		}
 	}
-	# Throw yourself off a cliff
 
+	# Throw yourself off a cliff
 	option = {
 		name = EVTOPTD_RIP_30200
 		hidden_tooltip = {
@@ -11823,7 +11819,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30201"
+		log = "work event id = RIP.30201 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -11842,10 +11838,10 @@ letter_event = {
 	desc = EVTDESC_RIP_30202
 	border = GFX_event_letter_frame_war
 	is_triggered_only = yes
-	# Yes
 
+	# Yes
 	immediate = {
-		log = "work event id = RIP.30202"
+		log = "work event id = RIP.30202 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -11863,8 +11859,8 @@ letter_event = {
 			}
 		}
 	}
-	# No
 
+	# No
 	option = {
 		name = EVTOPTB_RIP_30202
 		FROM = {
@@ -11890,7 +11886,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30203"
+		log = "work event id = RIP.30203 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -11994,7 +11990,7 @@ letter_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30204"
+		log = "work event id = RIP.30204 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -12029,10 +12025,10 @@ character_event = {
 		text = EVTDESC_RIP_30205_INCAPABLE
 	}
 	is_triggered_only = yes
-	# You died in the duel
 
+	# You died in the duel
 	immediate = {
-		log = "work event id = RIP.30205"
+		log = "work event id = RIP.30205 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -12056,8 +12052,8 @@ character_event = {
 			}
 		}
 	}
-	# Rival didn't kill you
 
+	# Rival didn't kill you
 	option = {
 		trigger = {
 			has_character_flag = won_suicide_duel
@@ -12075,8 +12071,8 @@ character_event = {
 			}
 		}
 	}
-	# Rival didn't kill you but you kill them
 
+	# Rival didn't kill you but you kill them
 	option = {
 		trigger = {
 			has_character_flag = won_suicide_duel
@@ -12102,8 +12098,8 @@ character_event = {
 			}
 		}
 	}
-	# You become incapable in the duel
 
+	# You become incapable in the duel
 	option = {
 		trigger = {
 			has_character_flag = incapable_suicide_duel
@@ -12156,7 +12152,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30206"
+		log = "work event id = RIP.30206 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -12227,7 +12223,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30207"
+		log = "work event id = RIP.30207 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -12278,7 +12274,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30208"
+		log = "work event id = RIP.30208 for [Root.GetBestName]"
 		random_courtier = {
 			limit = {
 				block_general_event_trigger = no
@@ -12346,7 +12342,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30209"
+		log = "work event id = RIP.30209 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -12403,7 +12399,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30210"
+		log = "work event id = RIP.30210 for [Root.GetBestName]"
 		random_friend = {
 			limit = {
 				block_general_event_trigger = no
@@ -12512,10 +12508,10 @@ character_event = {
 	desc = EVTDESC_RIP_30211
 	border = GFX_event_normal_frame_religion
 	is_triggered_only = yes
-	# Yes
 
+	# Yes
 	immediate = {
-		log = "work event id = RIP.30211"
+		log = "work event id = RIP.30211 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -12555,8 +12551,8 @@ character_event = {
 			}
 		}
 	}
-	# No
 
+	# No
 	option = {
 		name = EVTOPTB_RIP_30211
 		opinion = {
@@ -12626,7 +12622,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30212"
+		log = "work event id = RIP.30212 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -12724,7 +12720,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.30220"
+		log = "work event id = RIP.30220 for [Root.GetBestName]"
 		set_character_flag = chess_with_death
 		if = {
 			limit = {
@@ -12855,7 +12851,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30221"
+		log = "work event id = RIP.30221 for [Root.GetBestName]"
 		FROM = {
 			trigger_switch = {
 				on_trigger = has_character_flag
@@ -12939,10 +12935,10 @@ character_event = {
 	hide_from = yes
 	hide_new = yes
 	is_triggered_only = yes
-	# Have a chat
 
+	# Have a chat
 	immediate = {
-		log = "work event id = RIP.30222"
+		log = "work event id = RIP.30222 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -12965,8 +12961,8 @@ character_event = {
 			}
 		}
 	}
-	# Want to be alone
 
+	# Want to be alone
 	option = {
 		name = EVTOPTB_RIP_30222
 		random = {
@@ -13038,10 +13034,10 @@ character_event = {
 		picture = GFX_evt_monk
 	}
 	is_triggered_only = yes
-	# Come stay with me
 
+	# Come stay with me
 	immediate = {
-		log = "work event id = RIP.30223"
+		log = "work event id = RIP.30223 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -13068,8 +13064,8 @@ character_event = {
 			}
 		}
 	}
-	# Have some money, sleep at the inn
 
+	# Have some money, sleep at the inn
 	option = {
 		name = EVTOPTB_RIP_30223
 		custom_tooltip = {
@@ -13088,8 +13084,8 @@ character_event = {
 			}
 		}
 	}
-	# Go away!
 
+	# Go away!
 	option = {
 		name = {
 			trigger = {
@@ -13177,7 +13173,7 @@ narrative_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30224"
+		log = "work event id = RIP.30224 for [Root.GetBestName]"
 		FROM = {
 			remove_trait = fatigue
 			remove_trait = on_pilgrimage
@@ -13197,8 +13193,8 @@ narrative_event = {
 			} # To "enable" seduction
 		}
 	}
-	# Play chess with me!
 
+	# Play chess with me!
 	option = {
 		name = EVTOPTA_RIP_30224
 		custom_tooltip = {
@@ -13213,8 +13209,8 @@ narrative_event = {
 			}
 		}
 	}
-	# Do your worst!
 
+	# Do your worst!
 	option = {
 		name = EVTOPTB_RIP_30224
 		custom_tooltip = {
@@ -13228,7 +13224,7 @@ narrative_event = {
 				}
 				hidden_tooltip = {
 					FROM = {
-						leave_court_effect = yes
+						#leave_court_effect = yes
 		 				death = {
 							death_reason = death_missing
 						}
@@ -13272,7 +13268,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30225"
+		log = "work event id = RIP.30225 for [Root.GetBestName]"
 		random_list = {
 			25 = {
 				modifier = {
@@ -13343,7 +13339,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30226"
+		log = "work event id = RIP.30226 for [Root.GetBestName]"
 		set_variable = {
 			which = chess_score value = 0
 		}
@@ -13362,8 +13358,8 @@ character_event = {
 		}
 		clr_character_flag = walked_with_death
 	}
-	# White
 
+	# White
 	option = {
 		name = EVTOPTA_RIP_30226
 		custom_tooltip = {
@@ -13379,8 +13375,8 @@ character_event = {
 			}
 		}
 	}
-	# Black
 
+	# Black
 	option = {
 		name = EVTOPTB_RIP_30226
 		custom_tooltip = {
@@ -13421,10 +13417,10 @@ character_event = {
 		text = EVTDESC_RIP_30226_WHITE
 	}
 	is_triggered_only = yes
-	# Play it safe
 
+	# Play it safe
 	immediate = {
-		log = "work event id = RIP.30227"
+		log = "work event id = RIP.30227 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -13468,8 +13464,8 @@ character_event = {
 			}
 		}
 	}
-	# Play it risky
 
+	# Play it risky
 	option = {
 		name = EVTOPTB_RIP_30227
 		random_list = {
@@ -13516,8 +13512,8 @@ character_event = {
 			}
 		}
 	}
-	# Deceitful
 
+	# Deceitful
 	option = {
 		trigger = {
 			trait = deceitful
@@ -13555,8 +13551,8 @@ character_event = {
 			}
 		}
 	}
-	# Master schemer
 
+	# Master schemer
 	option = {
 		trigger = {
 			trait = schemer
@@ -13585,8 +13581,8 @@ character_event = {
 			}
 		}
 	}
-	# Gamer option
 
+	# Gamer option
 	option = {
 		trigger = {
 			trait = gamer
@@ -13615,8 +13611,8 @@ character_event = {
 			}
 		}
 	}
-	# Strategist option
 
+	# Strategist option
 	option = {
 		trigger = {
 			trait = strategist
@@ -13645,8 +13641,8 @@ character_event = {
 			}
 		}
 	}
-	# Genius option
 
+	# Genius option
 	option = {
 		trigger = {
 			trait = genius
@@ -13678,8 +13674,8 @@ character_event = {
 			}
 		}
 	}
-	# Quick
 
+	# Quick
 	option = {
 		trigger = {
 			trait = quick
@@ -13711,8 +13707,8 @@ character_event = {
 			}
 		}
 	}
-	# Shrewd
 
+	# Shrewd
 	option = {
 		trigger = {
 			trait = shrewd
@@ -13778,7 +13774,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30228"
+		log = "work event id = RIP.30228 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -13855,10 +13851,10 @@ character_event = {
 		text = EVTDESC_RIP_30229_BAD
 	}
 	is_triggered_only = yes
-	# Drinking competition 1
 
+	# Drinking competition 1
 	immediate = {
-		log = "work event id = RIP.30229"
+		log = "work event id = RIP.30229 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -13885,8 +13881,8 @@ character_event = {
 			}
 		}
 	}
-	# Drinking competition 2
 
+	# Drinking competition 2
 	option = {
 		trigger = {
 			trait = hedonist
@@ -13911,8 +13907,8 @@ character_event = {
 			}
 		}
 	}
-	# Seduce (as man)
 
+	# Seduce (as man)
 	option = {
 		trigger = {
 			trait = seducer
@@ -13937,8 +13933,8 @@ character_event = {
 			}
 		}
 	}
-	# Seduce (as woman)
 
+	# Seduce (as woman)
 	option = {
 		trigger = {
 			trait = seductress
@@ -13963,8 +13959,8 @@ character_event = {
 			}
 		}
 	}
-	# Intimidate
 
+	# Intimidate
 	option = {
 		trigger = {
 			trait = impaler
@@ -13989,8 +13985,8 @@ character_event = {
 			}
 		}
 	}
-	# Brag about past victories
 
+	# Brag about past victories
 	option = {
 		trigger = {
 			trait = gamer
@@ -14015,8 +14011,8 @@ character_event = {
 			}
 		}
 	}
-	# Knock wine
 
+	# Knock wine
 	option = {
 		name = EVTOPTD_RIP_30229
 		custom_tooltip = {
@@ -14050,8 +14046,8 @@ character_event = {
 			}
 		}
 	}
-	# Focus on the game, skips next event
 
+	# Focus on the game, skips next event
 	option = {
 		name = EVTOPTE_RIP_30229
 		random_list = {
@@ -14132,7 +14128,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30230"
+		log = "work event id = RIP.30230 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -14186,7 +14182,7 @@ character_event = {
 		}
 		hidden_tooltip = {
 			FROM = {
-				leave_court_effect = yes
+				#leave_court_effect = yes
 				death = {
 					death_reason = death_missing
 				}
@@ -14234,7 +14230,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30231"
+		log = "work event id = RIP.30231 for [Root.GetBestName]"
 		hidden_tooltip = {
 			random_spouse = {
 				limit = {
@@ -14278,8 +14274,8 @@ character_event = {
 			}
 		}
 	}
-	# Trust my skill
 
+	# Trust my skill
 	option = {
 		name = EVTOPTA_RIP_30231
 		random_list = {
@@ -14360,8 +14356,8 @@ character_event = {
 			}
 		}
 	}
-	# Offer lover/friend
 
+	# Offer lover/friend
 	option = {
 		trigger = {
 			event_target:chess_sacrifice = {
@@ -14481,7 +14477,7 @@ narrative_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.30232"
+		log = "work event id = RIP.30232 for [Root.GetBestName]"
 	}
 	is_triggered_only = yes
 
@@ -14509,7 +14505,7 @@ narrative_event = {
 		remove_disease_trait_effect = yes
 		hidden_tooltip = {
 			FROM = {
-				leave_court_effect = yes
+				#leave_court_effect = yes
 				death = {
 					death_reason = death_missing
 				}
@@ -14546,7 +14542,7 @@ narrative_event = {
 		}
 		hidden_tooltip = {
 			FROM = {
-				leave_court_effect = yes
+				#leave_court_effect = yes
 				if = {
 					limit = {
 						is_invincible_trigger = yes
@@ -14575,7 +14571,7 @@ character_event = {
 	}
 
 	immediate = {
-		log = "work event id = RIP.30233"
+		log = "work event id = RIP.30233 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -14599,7 +14595,7 @@ narrative_event = {
 	title = RIP.30300.title
 
 	immediate = {
-		log = "work event id = RIP.30300"
+		log = "work event id = RIP.30300 for [Root.GetBestName]"
 		set_character_flag = immortal_rival_appeared
 		if = {
 			limit = {
@@ -14759,10 +14755,10 @@ character_event = {
 	picture = GFX_evt_end_of_days
 	border = GFX_event_normal_frame_war
 	# desc = RIP.30301.d
-	# title = RIP.30301.title
 
+	# title = RIP.30301.title
 	immediate = {
-		log = "work event id = RIP.30301"
+		log = "work event id = RIP.30301 for [Root.GetBestName]"
 		if = {
 			limit = {
 				has_character_flag = immortal_rival_highlander
@@ -16132,7 +16128,7 @@ long_character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30302"
+		log = "work event id = RIP.30302 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -16215,7 +16211,7 @@ long_character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30303"
+		log = "work event id = RIP.30303 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -16301,7 +16297,7 @@ long_character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30304"
+		log = "work event id = RIP.30304 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -16403,7 +16399,7 @@ long_character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30305"
+		log = "work event id = RIP.30305 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -16422,7 +16418,7 @@ long_character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30306"
+		log = "work event id = RIP.30306 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -16466,7 +16462,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30308"
+		log = "work event id = RIP.30308 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -16487,7 +16483,7 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = RIP.30309"
+		log = "work event id = RIP.30309 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -16528,7 +16524,7 @@ character_event = {
 	picture = GFX_evt_suspicious_noble # TODO better pic
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = RIP.30310"
+		log = "work event id = RIP.30310 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -16571,7 +16567,7 @@ character_event = {
 	picture = GFX_evt_suspicious_noble # TODO better pic
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = RIP.30311"
+		log = "work event id = RIP.30311 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -16665,7 +16661,7 @@ character_event = {
 	picture = GFX_evt_suspicious_noble # TODO better pic
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = RIP.30312"
+		log = "work event id = RIP.30312 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -16691,7 +16687,7 @@ character_event = {
 	picture = GFX_evt_suspicious_noble # TODO better pic
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = RIP.30313"
+		log = "work event id = RIP.30313 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -16726,7 +16722,7 @@ character_event = {
 	picture = GFX_evt_suspicious_noble # TODO better pic
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = RIP.30314"
+		log = "work event id = RIP.30314 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -16754,7 +16750,7 @@ character_event = {
 	border = GFX_event_normal_frame_intrigue
 	picture = GFX_evt_suspicious_noble
 	immediate = {
-		log = "work event id = RIP.30315"
+		log = "work event id = RIP.30315 for [Root.GetBestName]"
 		most_popular_vassal = {
 			limit = {
 				ai = yes
@@ -16857,7 +16853,7 @@ character_event = {
 		}
 	}
 	immediate = {
-		log = "work event id = RIP.30316"
+		log = "work event id = RIP.30316 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -16875,7 +16871,7 @@ character_event = {
 	only_playable = yes
 	only_capable = yes
 	immediate = {
-		log = "work event id = RIP.30317"
+		log = "work event id = RIP.30317 for [Root.GetBestName]"
 		random_vassal = {
 			limit = {
 				ai = yes
@@ -16986,7 +16982,7 @@ character_event = {
 		}
 	}
 	immediate = {
-		log = "work event id = RIP.30318"
+		log = "work event id = RIP.30318 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -17020,7 +17016,7 @@ character_event = {
 	picture = GFX_evt_suspicious_noble # TODO better pic
 	is_triggered_only = yes
 	immediate = {
-		log = "work event id = RIP.30400"
+		log = "work event id = RIP.30400 for [Root.GetBestName]"
 	}
 
 	option = {
