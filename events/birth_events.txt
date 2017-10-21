@@ -52,7 +52,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 120
+		years = 10
 		modifier = {
 			factor = 0.5
 			has_focus = focus_seduction
@@ -695,7 +695,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 4000
+		years = 333
 		modifier = {
 			factor = 0.5
 			spouse = {
@@ -4130,10 +4130,7 @@ character_event = {
 	id = 314
 	hide_window = yes
 	is_triggered_only = yes
-
-	trigger = {
-		age = 1
-	}
+	min_age = 1
 
 	immediate = {
 		log = "work event id = 314 for [Root.GetBestName]"

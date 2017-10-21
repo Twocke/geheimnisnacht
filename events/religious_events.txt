@@ -1896,7 +1896,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 60
+		years = 5
 		modifier = {
 			factor = 0.5
 			wealth = 1000
@@ -2002,7 +2002,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 24
+		years = 2
 	}
 
 	immediate = {
@@ -2128,6 +2128,7 @@ character_event = {
 # CATHOLIC CHAIN
 character_event = {
 	id = 39220
+	prisoner = yes
 	desc = "EVTDESC39220"	# Bishops in prison whine to pope..
 	picture = GFX_evt_into_the_dungeon
 	border = "GFX_event_normal_frame_religion"
@@ -2142,7 +2143,6 @@ character_event = {
 			religion = ulrican
 			religion = taalite
 		}
-		prisoner = yes
 		is_theocracy = yes
 		imprisoned_days = 14
 		host = {
@@ -2162,7 +2162,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 180
+		months = 6
 		modifier = {
 			factor = 0.90
 			trait = ambitious
@@ -2612,7 +2612,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 50
+		years = 4
 		modifier = {
 			factor = 0.25
 			trait = zealous
@@ -2848,7 +2848,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 50
+		years = 4
 		modifier = {
 			factor = 0.25
 			trait = zealous
@@ -3585,6 +3585,7 @@ character_event = {
 # You have a bishop as your vassal, and the the vassal likes you more than the pope.
 character_event = {
 	id = 39270
+	religion = sigmarite
 	desc = "EVTDESC39270"
 	picture = GFX_evt_bishop
 	border = GFX_event_normal_frame_religion
@@ -3598,7 +3599,6 @@ character_event = {
 
 	trigger = {
 		controls_religion = yes
-		religion = sigmarite
 		religion_authority = 0.30
 		prestige = 20
 		any_playable_ruler = {
@@ -3626,7 +3626,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 150
+		years = 12
 		modifier = {
 			factor = 0.33
 			trait = zealous
@@ -3842,7 +3842,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 64
+		years = 5
 	}
 
 	immediate = {
@@ -3947,7 +3947,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 600
+		years = 50
 		modifier = {
 			factor = 0.8
 			trait = zealous
@@ -4008,7 +4008,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 600
+		years = 50
 		modifier = {
 			factor = 0.8
 			trait = zealous
@@ -4069,7 +4069,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 600
+		years = 50
 		modifier = {
 			factor = 0.8
 			trait = zealous
@@ -4130,7 +4130,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 600
+		years = 50
 		modifier = {
 			factor = 0.8
 			trait = zealous
@@ -4191,7 +4191,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 600
+		years = 50
 		modifier = {
 			factor = 0.8
 			trait = zealous
@@ -4277,7 +4277,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 36
+		years = 3
 		modifier = {
 			factor = 0.75
 			trait = zealous
@@ -4369,7 +4369,7 @@ province_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 3600
+		years = 300
 		modifier = {
 			factor = 0.5
 			owner = {

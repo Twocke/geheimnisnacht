@@ -4,17 +4,17 @@ namespace = sorcererapprentice
 character_event = {
 	id = sorcererapprentice.1
 	hide_window = yes
+	prisoner = no
 	only_playable = yes
 	capable_only = yes
 	min_age = 12
 	max_age = 90
 
 	mean_time_to_happen = {
-		months = 600
+		years = 50
 	}
 
 	trigger = {
-		prisoner = no
 		higher_tier_than = COUNT
 		trait = creature_human
 		NOT = {
@@ -1027,7 +1027,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 24
+		years = 2
 		modifier = {
 			factor = 0.25
 			trait = genius

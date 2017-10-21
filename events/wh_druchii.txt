@@ -920,7 +920,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 60
+		years = 5
 		modifier = {
 			factor = 3
 			trait = magic_potential_1
@@ -3112,12 +3112,12 @@ character_event = {
 	capable_only = yes
 	culture_group = druchi_group
 	is_triggered_only = yes
+	min_age = 16
 
 	trigger = {
 		top_liege = {
 			trait = malekith
 		}
-		age = 16
 		wh_has_any_magic_potential_reveal_trigger = yes
 		NOT = {
 			trait = druchi_sorceress
@@ -3253,7 +3253,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 480
+		years = 40
 		modifier = {
 			factor = 0.45
 			has_character_flag = magic_potential_flag_4

@@ -5,9 +5,9 @@ province_event = {
 	id = ulthuan.0
 	hide_window = yes
 	is_triggered_only = yes
+	culture_group = asur_group
 
 	trigger = {
-		culture_group = asur_group
 		region = world_ulthuan
 		nor = {
 			has_game_rule = {
@@ -55,7 +55,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 2400 # 200 years
+		years = 200# 200 years
 		modifier = {
 			factor = 0.33
 			liege = {
@@ -118,7 +118,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 2400 # 200 years
+		years = 200# 200 years
 		modifier = {
 			factor = 0.5
 			liege = {
@@ -177,7 +177,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 2400 # 200 years
+		years = 200# 200 years
 		modifier = {
 			factor = 3
 			has_game_rule = {
@@ -236,7 +236,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 2400 # 200 years
+		years = 200# 200 years
 		modifier = {
 			factor = 3
 			has_game_rule = {
@@ -302,7 +302,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 60 # 5 years
+		years = 5# 5 years
 		modifier = {
 			factor = 5
 			has_game_rule = {

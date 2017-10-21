@@ -69,7 +69,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 50
+		years = 4
 		modifier = {
 			factor = 0.75
 			trait = khorne_demon
@@ -245,7 +245,7 @@ character_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 50
+		years = 4
 		modifier = {
 			factor = 0.85
 			trait = khorne_demon
@@ -622,6 +622,7 @@ character_event = {
 # Demon adds province modifier wherever he is
 character_event = {
 	id = wh_chaos_demons.8
+	only_rulers = yes
 	desc = EVTDESCsdemons8
 	picture = GFX_evt_tzeentch
 	capable_only = yes
@@ -629,7 +630,6 @@ character_event = {
 
 	trigger = {
 		is_demon_trigger = yes
-		is_ruler = yes
 	}
 
 	mean_time_to_happen = {
