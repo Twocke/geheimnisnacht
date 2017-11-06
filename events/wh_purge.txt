@@ -53,7 +53,7 @@ character_event = {
 	}
 }
 narrative_event = {
-	id = 164900
+	id = z_lizardman.100
 	title = z_lizardman.100
 	desc = z_lizardman.100_desc
 	picture = GFX_evt_battle
@@ -179,7 +179,7 @@ narrative_event = {
 	}
 
 	immediate = {
-		log = "work event id = 164900 for [Root.GetBestName]"
+		log = "work event id = z_lizardman.100 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -191,7 +191,7 @@ narrative_event = {
 		hidden_tooltip = {
 			liege = {
 				character_event = {
-					id = 164901
+					id = z_lizardman.101
 				}
 			}
 		}
@@ -200,14 +200,14 @@ narrative_event = {
 
 # 20219: The liege is informed
 narrative_event = {
-	id = 164901
+	id = z_lizardman.101
 	desc = z_lizardman.101_desc
 	picture = GFX_evt_battle
 	border = GFX_event_normal_frame_war
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 164901 for [Root.GetBestName]"
+		log = "work event id = z_lizardman.101 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -273,8 +273,9 @@ narrative_event = {
 		decadence = -5
 	}
 }
+
 narrative_event = {
-	id = 164902
+	id = z_lizardman.102
 	title = z_lizardman.100
 	desc = z_lizardman.100_desc
 	picture = GFX_evt_battle
@@ -400,7 +401,7 @@ narrative_event = {
 	}
 
 	immediate = {
-		log = "work event id = 164902 for [Root.GetBestName]"
+		log = "work event id = z_lizardman.102 for [Root.GetBestName]"
 	}
 
 	option = {
@@ -412,7 +413,7 @@ narrative_event = {
 		hidden_tooltip = {
 			liege = {
 				character_event = {
-					id = 164902
+					id = z_lizardman.103
 				}
 			}
 		}
@@ -421,14 +422,14 @@ narrative_event = {
 
 # 20219: The liege is informed
 narrative_event = {
-	id = 164903
+	id = z_lizardman.103
 	desc = z_lizardman.101_desc
 	picture = GFX_evt_battle
 	border = GFX_event_normal_frame_war
 	is_triggered_only = yes
 
 	immediate = {
-		log = "work event id = 164903 for [Root.GetBestName]"
+		log = "work event id = z_lizardman.103 for [Root.GetBestName]"
 	}
 
 	option = {

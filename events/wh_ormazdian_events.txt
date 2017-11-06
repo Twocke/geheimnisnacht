@@ -179,6 +179,7 @@ narrative_event = {
 	major = yes
 	only_independent = yes
 	only_playable = yes
+	is_triggered_only = yes
 
 	trigger = {
 		is_landed = yes
@@ -186,10 +187,8 @@ narrative_event = {
 		k_caliph_al_umma = {
 			has_holder = no
 		}
-		NOT = {
+		nor = {
 			religion_authority = 0.8
-		}
-		NOT = {
 			has_global_flag = shia_caliphate_revolt_ongoing
 		}
 		any_realm_province = {
@@ -208,10 +207,10 @@ narrative_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 233
+	weight_multiplier = {
+		factor = 0.04292
 		modifier = {
-			factor = 0.75
+			factor = 1.33
 			OR = {
 				b_al_haikk = {
 					holder_scope = {
@@ -231,35 +230,35 @@ narrative_event = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			NOT = {
 				religion_authority = 0.5
 			}
 		}
 		modifier = {
-			factor = 4.0
+			factor = 0.25
 			NOT = {
 				religion_authority = 0.2
 			}
 		}
 		modifier = {
-			factor = 2.0
+			factor = 0.50
 			year = 2100
 		}
 		modifier = {
-			factor = 2.0
+			factor = 0.50
 			year = 2200
 		}
 		modifier = {
-			factor = 2.0
+			factor = 0.50
 			year = 2300
 		}
 		modifier = {
-			factor = 4.0
+			factor = 0.25
 			year = 2400
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			ai = yes
 		}
 	}
@@ -443,10 +442,8 @@ narrative_event = {
 		name = "ormazdian3optb"
 		trigger = {
 			religion_group = ormazd_gods_group
-			NOT = {
+			nor = {
 				religion = ormazd
-			}
-			NOT = {
 				has_character_flag = shia_caliphate_revolt
 			}
 		}
@@ -455,10 +452,8 @@ narrative_event = {
 	option = {
 		name = "ormazdian3optc"
 		trigger = {
-			NOT = {
+			nor = {
 				religion_group = ormazd_gods_group
-			}
-			NOT = {
 				has_character_flag = shia_caliphate_revolt
 			}
 		}
@@ -598,10 +593,8 @@ long_character_event = {
 		}
 		any_courtier = {
 			limit = {
-				NOT = {
+				nor = {
 					character = ROOT
-				}
-				NOT = {
 					character = FROM
 				}
 				is_ruler = no
@@ -780,10 +773,8 @@ character_event = {
 		any_courtier = {
 			limit = {
 				is_ruler = no
-				NOT = {
+				nor = {
 					character = ROOT
-				}
-				NOT = {
 					character = FROM
 				}
 				religion = ormazd
@@ -823,10 +814,8 @@ character_event = {
 		}
 		any_courtier = {
 			limit = {
-				NOT = {
+				nor = {
 					character = ROOT
-				}
-				NOT = {
 					character = FROM
 				}
 				is_landed = no
@@ -869,10 +858,8 @@ character_event = {
 		}
 		any_courtier = {
 			limit = {
-				NOT = {
+				nor = {
 					character = ROOT
-				}
-				NOT = {
 					character = FROM
 				}
 				is_landed = no
@@ -1005,10 +992,8 @@ character_event = {
 		}
 		any_courtier = {
 			limit = {
-				NOT = {
+				nor = {
 					character = ROOT
-				}
-				NOT = {
 					character = FROM
 				}
 				is_landed = no

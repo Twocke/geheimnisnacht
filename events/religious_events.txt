@@ -1835,6 +1835,7 @@ character_event = {
 	only_playable = yes
 	religion_group = old_world_group
 	war = no
+	is_triggered_only = yes
 
 	trigger = {
 		controls_religion = yes
@@ -1895,14 +1896,14 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 5
+	weight_multiplier = {
+		factor = 1
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			wealth = 1000
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			wealth = 2000
 		}
 	}
@@ -1984,6 +1985,7 @@ character_event = {
 	only_playable = yes
 	religion_group = old_world_group
 	war = no
+	is_triggered_only = yes
 
 	trigger = {
 		controls_religion = yes
@@ -1999,10 +2001,6 @@ character_event = {
 				has_character_flag = kinslaying_offered
 			}
 		}
-	}
-
-	mean_time_to_happen = {
-		years = 2
 	}
 
 	immediate = {
@@ -2308,13 +2306,9 @@ character_event = {
 	option = {
 		name = "EVTOPTB39222" # this is bad news
 		trigger = {
-			NOT = {
+			nor = {
 				trait = cruel
-			}
-			NOT = {
 				trait = impaler
-			}
-			NOT = {
 				trait = wroth
 			}
 		}
@@ -2337,16 +2331,10 @@ character_event = {
 	option = {
 		name = "EVTOPTA39223" # kind and release him
 		trigger = {
-			NOT = {
+			nor = {
 				trait = cruel
-			}
-			NOT = {
 				trait = impaler
-			}
-			NOT = {
 				trait = wroth
-			}
-			NOT = {
 				trait = cynical
 			}
 		}
@@ -2578,6 +2566,7 @@ character_event = {
 	only_playable = yes
 	religion_group = old_world_group
 	war = no
+	is_triggered_only = yes
 
 	trigger = {
 		controls_religion = yes
@@ -2611,10 +2600,10 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 4
+	weight_multiplier = {
+		factor = 2
 		modifier = {
-			factor = 0.25
+			factor = 4.00
 			trait = zealous
 		}
 	}
@@ -2819,6 +2808,7 @@ character_event = {
 	only_men = yes
 	religion = myrmidian
 	war = no
+	is_triggered_only = yes
 
 	trigger = {
 		controls_religion = yes
@@ -2847,10 +2837,10 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 4
+	weight_multiplier = {
+		factor = 2
 		modifier = {
-			factor = 0.25
+			factor = 4.00
 			trait = zealous
 		}
 	}
@@ -3596,6 +3586,7 @@ character_event = {
 	only_playable = yes
 	religion_group = old_world_group
 	war = no
+	is_triggered_only = yes
 
 	trigger = {
 		controls_religion = yes
@@ -3625,10 +3616,10 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 12
+	weight_multiplier = {
+		factor = 0.83333
 		modifier = {
-			factor = 0.33
+			factor = 3.03
 			trait = zealous
 		}
 	}
@@ -3822,6 +3813,7 @@ character_event = {
 	only_playable = yes
 	war = no
 	religion_group = old_world_group
+	is_triggered_only = yes
 
 	trigger = {
 		controls_religion = yes
@@ -3839,10 +3831,6 @@ character_event = {
 				de_jure_liege = ROOT
 			}
 		}
-	}
-
-	mean_time_to_happen = {
-		years = 5
 	}
 
 	immediate = {
@@ -3935,29 +3923,28 @@ character_event = {
 	prisoner = no
 	only_capable = yes
 	religion = myrmidian
+	is_triggered_only = yes
 
 	trigger = {
 		is_heretic = no
-		NOT = {
+		nor = {
 			has_character_flag = commisioned_icon
-		}
-		NOT = {
 			trait = cynical
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 50
+	weight_multiplier = {
+		factor = 0.20000
 		modifier = {
-			factor = 0.8
+			factor = 1.25
 			trait = zealous
 		}
 		modifier = {
-			factor = 0.8
+			factor = 1.25
 			piety = 100
 		}
 		modifier = {
-			factor = 0.8
+			factor = 1.25
 			trait = kind
 		}
 	}
@@ -3996,29 +3983,28 @@ character_event = {
 	prisoner = no
 	only_capable = yes
 	religion = myrmidian
+	is_triggered_only = yes
 
 	trigger = {
 		is_heretic = no
-		NOT = {
+		nor = {
 			has_character_flag = commisioned_icon
-		}
-		NOT = {
 			trait = cynical
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 50
+	weight_multiplier = {
+		factor = 0.20000
 		modifier = {
-			factor = 0.8
+			factor = 1.25
 			trait = zealous
 		}
 		modifier = {
-			factor = 0.8
+			factor = 1.25
 			piety = 100
 		}
 		modifier = {
-			factor = 0.8
+			factor = 1.25
 			trait = gregarious
 		}
 	}
@@ -4057,29 +4043,28 @@ character_event = {
 	prisoner = no
 	only_capable = yes
 	religion = myrmidian
+	is_triggered_only = yes
 
 	trigger = {
 		is_heretic = no
-		NOT = {
+		nor = {
 			has_character_flag = commisioned_icon
-		}
-		NOT = {
 			trait = cynical
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 50
+	weight_multiplier = {
+		factor = 0.20000
 		modifier = {
-			factor = 0.8
+			factor = 1.25
 			trait = zealous
 		}
 		modifier = {
-			factor = 0.8
+			factor = 1.25
 			piety = 100
 		}
 		modifier = {
-			factor = 0.8
+			factor = 1.25
 			trait = just
 		}
 	}
@@ -4118,29 +4103,28 @@ character_event = {
 	prisoner = no
 	only_capable = yes
 	religion = myrmidian
+	is_triggered_only = yes
 
 	trigger = {
 		is_heretic = no
-		NOT = {
+		nor = {
 			has_character_flag = commisioned_icon
-		}
-		NOT = {
 			trait = cynical
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 50
+	weight_multiplier = {
+		factor = 0.20000
 		modifier = {
-			factor = 0.8
+			factor = 1.25
 			trait = zealous
 		}
 		modifier = {
-			factor = 0.8
+			factor = 1.25
 			piety = 100
 		}
 		modifier = {
-			factor = 0.8
+			factor = 1.25
 			trait = patient
 		}
 	}
@@ -4179,25 +4163,24 @@ character_event = {
 	prisoner = no
 	only_capable = yes
 	religion = myrmidian
+	is_triggered_only = yes
 
 	trigger = {
 		is_heretic = no
-		NOT = {
+		nor = {
 			has_character_flag = commisioned_icon
-		}
-		NOT = {
 			trait = cynical
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 50
+	weight_multiplier = {
+		factor = 0.20000
 		modifier = {
-			factor = 0.8
+			factor = 1.25
 			trait = zealous
 		}
 		modifier = {
-			factor = 0.8
+			factor = 1.25
 			piety = 100
 		}
 	}
@@ -4236,37 +4219,20 @@ character_event = {
 	only_capable = yes
 	only_men = yes
 	religion = grail
+	is_triggered_only = yes
 
 	trigger = {
 		is_heretic = no
-		NOT = {
+		nor = {
 			has_character_modifier = true_christian_knight
-		}
-		NOT = {
 			trait = cynical
-		}
-		NOT = {
 			trait = lustful
-		}
-		NOT = {
 			trait = gluttonous
-		}
-		NOT = {
 			trait = greedy
-		}
-		NOT = {
 			trait = slothful
-		}
-		NOT = {
 			trait = envious
-		}
-		NOT = {
 			trait = wroth
-		}
-		NOT = {
 			trait = proud
-		}
-		NOT = {
 			trait = cruel
 		}
 		martial = 8
@@ -4276,18 +4242,18 @@ character_event = {
 		piety = 25
 	}
 
-	mean_time_to_happen = {
-		years = 3
+	weight_multiplier = {
+		factor = 0.5
 		modifier = {
-			factor = 0.75
+			factor = 1.33
 			trait = zealous
 		}
 		modifier = {
-			factor = 0.75
+			factor = 1.33
 			trait = crusader
 		}
 		modifier = {
-			factor = 0.75
+			factor = 1.33
 			piety = 100
 		}
 	}
@@ -4355,6 +4321,7 @@ province_event = {
 	desc = "EVTDESC39500"
 	picture = "GFX_evt_bishop"
 	border = "GFX_event_normal_frame_religion"
+	is_triggered_only = yes
 
 	trigger = {
 		NOT = {
@@ -4368,62 +4335,62 @@ province_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 300
+	weight_multiplier = {
+		factor = 0.03333
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			owner = {
 				trait = zealous
 			}
 		}
 		modifier = {
-			factor = 0.8
+			factor = 1.25
 			religion_authority = 0.6
 		}
 		modifier = {
-			factor = 0.8
+			factor = 1.25
 			religion_authority = 0.7
 		}
 		modifier = {
-			factor = 0.8
+			factor = 1.25
 			religion_authority = 0.8
 		}
 		modifier = {
-			factor = 0.8
+			factor = 1.25
 			religion_authority = 0.9
 		}
 		modifier = {
-			factor = 1.25
+			factor = 0.80
 			NOT = {
 				religion_authority = 0.5
 			}
 		}
 		modifier = {
-			factor = 1.25
+			factor = 0.80
 			NOT = {
 				religion_authority = 0.4
 			}
 		}
 		modifier = {
-			factor = 1.25
+			factor = 0.80
 			NOT = {
 				religion_authority = 0.3
 			}
 		}
 		modifier = {
-			factor = 1.25
+			factor = 0.80
 			NOT = {
 				religion_authority = 0.2
 			}
 		}
 		modifier = {
-			factor = 2.0
+			factor = 0.50
 			owner = {
 				trait = cynical
 			}
 		}
 		modifier = {
-			factor = 2.0
+			factor = 0.50
 			NOT = {
 				any_neighbor_province = {
 					has_owner = yes
@@ -4432,7 +4399,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 3
+			factor = 0.33
 			has_game_rule = {
 				name = religious_conversion
 				value = slower
@@ -4938,10 +4905,8 @@ character_event = {
 			# Historical
 			modifier = {
 				factor = 2
-				NOT = {
+				nor = {
 					government = nomadic_government
-				} # We're already adopting civilized ways...
-				NOT = {
 					government = tribal_government
 				}
 			}

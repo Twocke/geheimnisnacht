@@ -829,13 +829,9 @@ character_event = {
 
 	trigger = {
 		trait = in_hiding
-		NOT = {
+		nor = {
 			religion = buddhist
-		}
-		NOT = {
 			trait = zealous
-		}
-		NOT = {
 			trait = brave
 		}
 		OR = {
@@ -891,10 +887,8 @@ character_event = {
 
 	trigger = {
 		trait = in_hiding
-		NOT = {
+		nor = {
 			trait = pneumonic
-		}
-		NOR = {
 			has_character_flag = disease_not_serious
 			has_character_flag = developing_disease
 		}
@@ -1029,10 +1023,8 @@ character_event = {
 
 	trigger = {
 		trait = in_hiding
-		NOT = {
+		nor = {
 			trait = craven
-		}
-		NOT = {
 			trait = berserker
 		}
 	}
@@ -1303,6 +1295,7 @@ character_event = {
 	min_age = 16
 	capable_only = yes
 	prisoner = no
+	is_triggered_only = yes
 
 	trigger = {
 		NOT = {
@@ -1320,11 +1313,11 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 2
+	weight_multiplier = {
+		factor = 1
 		modifier = {
 			# If no real plot is afoot, the paranoia doesn't set in too often
-			factor = 10
+			factor = 0.10
 			trait = paranoid
 			NOT = {
 				any_unknown_plotter = {
@@ -1336,7 +1329,7 @@ character_event = {
 			}
 		}
 		modifier = {
-			factor = 0.8
+			factor = 1.25
 			any_plotter = {
 				target = ROOT
 				OR = {
@@ -1352,7 +1345,7 @@ character_event = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			any_plotter = {
 				target = ROOT
 				OR = {
@@ -1364,7 +1357,7 @@ character_event = {
 			}
 		}
 		modifier = {
-			factor = 0.8
+			factor = 1.25
 			any_plotter = {
 				target = ROOT
 				OR = {
@@ -1382,7 +1375,7 @@ character_event = {
 			}
 		}
 		modifier = {
-			factor = 0.8
+			factor = 1.25
 			any_plotter = {
 				target = ROOT
 				OR = {
@@ -1394,28 +1387,28 @@ character_event = {
 			}
 		}
 		modifier = {
-			factor = 0.95
+			factor = 1.05
 			any_plotter = {
 				target = ROOT
 				num_of_plot_backers = 2
 			}
 		}
 		modifier = {
-			factor = 0.95
+			factor = 1.05
 			any_plotter = {
 				target = ROOT
 				num_of_plot_backers = 4
 			}
 		}
 		modifier = {
-			factor = 0.85
+			factor = 1.18
 			any_plotter = {
 				target = ROOT
 				num_of_plot_backers = 6
 			}
 		}
 		modifier = {
-			factor = 0.85
+			factor = 1.18
 			any_plotter = {
 				target = ROOT
 				num_of_plot_backers = 8
@@ -1445,6 +1438,7 @@ character_event = {
 	min_age = 16
 	capable_only = yes
 	prisoner = no
+	is_triggered_only = yes
 
 	trigger = {
 		any_child = {
@@ -1466,11 +1460,11 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 2
+	weight_multiplier = {
+		factor = 1
 		modifier = {
 			# If no real plot is afoot, the paranoia doesn't set in too often
-			factor = 10
+			factor = 0.10
 			trait = paranoid
 			NOT = {
 				any_child = {
@@ -1484,7 +1478,7 @@ character_event = {
 			}
 		}
 		modifier = {
-			factor = 0.8
+			factor = 1.25
 			any_child = {
 				any_plotter = {
 					OR = {
@@ -1501,7 +1495,7 @@ character_event = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			any_child = {
 				any_plotter = {
 					OR = {
@@ -1514,7 +1508,7 @@ character_event = {
 			}
 		}
 		modifier = {
-			factor = 0.8
+			factor = 1.25
 			any_child = {
 				any_plotter = {
 					OR = {
@@ -1533,7 +1527,7 @@ character_event = {
 			}
 		}
 		modifier = {
-			factor = 0.8
+			factor = 1.25
 			any_child = {
 				any_plotter = {
 					OR = {
@@ -1546,7 +1540,7 @@ character_event = {
 			}
 		}
 		modifier = {
-			factor = 0.95
+			factor = 1.05
 			any_child = {
 				any_plotter = {
 					num_of_plot_backers = 2
@@ -1554,7 +1548,7 @@ character_event = {
 			}
 		}
 		modifier = {
-			factor = 0.95
+			factor = 1.05
 			any_child = {
 				any_plotter = {
 					num_of_plot_backers = 4
@@ -1562,7 +1556,7 @@ character_event = {
 			}
 		}
 		modifier = {
-			factor = 0.85
+			factor = 1.18
 			any_child = {
 				any_plotter = {
 					num_of_plot_backers = 6
@@ -1570,7 +1564,7 @@ character_event = {
 			}
 		}
 		modifier = {
-			factor = 0.85
+			factor = 1.18
 			any_child = {
 				any_plotter = {
 					num_of_plot_backers = 8
@@ -1615,6 +1609,7 @@ character_event = {
 	min_age = 16
 	capable_only = yes
 	prisoner = no
+	is_triggered_only = yes
 
 	trigger = {
 		trait = paranoid
@@ -1637,11 +1632,11 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 2
+	weight_multiplier = {
+		factor = 1
 		modifier = {
 			# If no real plot is afoot, the paranoia doesn't set in too often
-			factor = 10
+			factor = 0.10
 			trait = paranoid
 			NOT = {
 				any_spouse = {
@@ -1655,7 +1650,7 @@ character_event = {
 			}
 		}
 		modifier = {
-			factor = 0.8
+			factor = 1.25
 			any_spouse = {
 				any_plotter = {
 					OR = {
@@ -1672,7 +1667,7 @@ character_event = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			any_spouse = {
 				any_plotter = {
 					OR = {
@@ -1685,7 +1680,7 @@ character_event = {
 			}
 		}
 		modifier = {
-			factor = 0.8
+			factor = 1.25
 			any_spouse = {
 				any_plotter = {
 					OR = {
@@ -1704,7 +1699,7 @@ character_event = {
 			}
 		}
 		modifier = {
-			factor = 0.8
+			factor = 1.25
 			any_spouse = {
 				any_plotter = {
 					OR = {
@@ -1717,7 +1712,7 @@ character_event = {
 			}
 		}
 		modifier = {
-			factor = 0.95
+			factor = 1.05
 			any_spouse = {
 				any_plotter = {
 					num_of_plot_backers = 2
@@ -1725,7 +1720,7 @@ character_event = {
 			}
 		}
 		modifier = {
-			factor = 0.95
+			factor = 1.05
 			any_spouse = {
 				any_plotter = {
 					num_of_plot_backers = 4
@@ -1733,7 +1728,7 @@ character_event = {
 			}
 		}
 		modifier = {
-			factor = 0.85
+			factor = 1.18
 			any_spouse = {
 				any_plotter = {
 					num_of_plot_backers = 6
@@ -1741,7 +1736,7 @@ character_event = {
 			}
 		}
 		modifier = {
-			factor = 0.85
+			factor = 1.18
 			any_spouse = {
 				any_plotter = {
 					num_of_plot_backers = 8
@@ -1856,6 +1851,7 @@ character_event = {
 	prisoner = no
 	min_age = 16
 	is_part_of_plot = yes
+	is_triggered_only = yes
 
 	trigger = {
 		OR = {
@@ -1876,22 +1872,22 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 83
+	weight_multiplier = {
+		factor = 0.12048
 		modifier = {
-			factor = 0.7
+			factor = 1.43
 			plot_power = 1.5
 		}
 		modifier = {
-			factor = 0.7
+			factor = 1.43
 			plot_power = 2.0
 		}
 		modifier = {
-			factor = 0.7
+			factor = 1.43
 			plot_power = 3.0
 		}
 		modifier = {
-			factor = 0.7
+			factor = 1.43
 			plot_power = 4.0
 		}
 	}
@@ -2360,6 +2356,7 @@ character_event = {
 	only_capable = yes
 	min_age = 16
 	is_part_of_plot = yes
+	is_triggered_only = yes
 
 	trigger = {
 		OR = {
@@ -2380,22 +2377,22 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 83
+	weight_multiplier = {
+		factor = 0.12048
 		modifier = {
-			factor = 0.7
+			factor = 1.43
 			plot_power = 1.5
 		}
 		modifier = {
-			factor = 0.7
+			factor = 1.43
 			plot_power = 2.0
 		}
 		modifier = {
-			factor = 0.7
+			factor = 1.43
 			plot_power = 3.0
 		}
 		modifier = {
-			factor = 0.7
+			factor = 1.43
 			plot_power = 4.0
 		}
 	}
@@ -2837,6 +2834,7 @@ character_event = {
 	prisoner = no
 	min_age = 16
 	is_part_of_plot = yes
+	is_triggered_only = yes
 
 	trigger = {
 		OR = {
@@ -2857,22 +2855,22 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 83
+	weight_multiplier = {
+		factor = 0.12048
 		modifier = {
-			factor = 0.7
+			factor = 1.43
 			plot_power = 1.5
 		}
 		modifier = {
-			factor = 0.7
+			factor = 1.43
 			plot_power = 2.0
 		}
 		modifier = {
-			factor = 0.7
+			factor = 1.43
 			plot_power = 3.0
 		}
 		modifier = {
-			factor = 0.7
+			factor = 1.43
 			plot_power = 4.0
 		}
 	}
@@ -3307,6 +3305,7 @@ character_event = {
 	prisoner = no
 	min_age = 16
 	is_part_of_plot = yes
+	is_triggered_only = yes
 
 	trigger = {
 		OR = {
@@ -3327,22 +3326,22 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 83
+	weight_multiplier = {
+		factor = 0.12048
 		modifier = {
-			factor = 0.7
+			factor = 1.43
 			plot_power = 1.5
 		}
 		modifier = {
-			factor = 0.7
+			factor = 1.43
 			plot_power = 2.0
 		}
 		modifier = {
-			factor = 0.7
+			factor = 1.43
 			plot_power = 3.0
 		}
 		modifier = {
-			factor = 0.7
+			factor = 1.43
 			plot_power = 4.0
 		}
 	}
@@ -3784,6 +3783,7 @@ character_event = {
 	prisoner = no
 	min_age = 16
 	is_part_of_plot = yes
+	is_triggered_only = yes
 
 	trigger = {
 		OR = {
@@ -3801,22 +3801,22 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 20
+	weight_multiplier = {
+		factor = 0.50000
 		modifier = {
-			factor = 0.7
+			factor = 1.43
 			plot_power = 1.5
 		}
 		modifier = {
-			factor = 0.7
+			factor = 1.43
 			plot_power = 2.0
 		}
 		modifier = {
-			factor = 0.7
+			factor = 1.43
 			plot_power = 3.0
 		}
 		modifier = {
-			factor = 0.7
+			factor = 1.43
 			plot_power = 4.0
 		}
 	}
@@ -4258,6 +4258,7 @@ character_event = {
 	prisoner = no
 	min_age = 16
 	is_part_of_plot = yes
+	is_triggered_only = yes
 
 	trigger = {
 		OR = {
@@ -4278,22 +4279,22 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 20
+	weight_multiplier = {
+		factor = 0.50000
 		modifier = {
-			factor = 0.7
+			factor = 1.43
 			plot_power = 1.5
 		}
 		modifier = {
-			factor = 0.7
+			factor = 1.43
 			plot_power = 2.0
 		}
 		modifier = {
-			factor = 0.7
+			factor = 1.43
 			plot_power = 3.0
 		}
 		modifier = {
-			factor = 0.7
+			factor = 1.43
 			plot_power = 4.0
 		}
 	}

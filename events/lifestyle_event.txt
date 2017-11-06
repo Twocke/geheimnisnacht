@@ -13,16 +13,15 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	lacks_dlc = "Way of Life"
+	is_triggered_only = yes
 
 	trigger = {
 		NOT = {
 			trait = blinded
 		}
 		in_command = no
-		NOT = {
+		nor = {
 			lifestyle_traits = 1
-		}
-		NOT = {
 			has_character_flag = LE_ST
 		}
 	}
@@ -32,46 +31,46 @@ character_event = {
 		set_character_flag = LE_ST
 	}
 
-	mean_time_to_happen = {
-		years = 21
+	weight_multiplier = {
+		factor = 0.47619
 		modifier = {
-			factor = 1.2
+			factor = 0.83
 			trait = content
 		}
 		modifier = {
-			factor = 0.75
+			factor = 1.33
 			learning = 10
 		}
 		modifier = {
-			factor = 0.75
+			factor = 1.33
 			learning = 9
 		}
 		modifier = {
-			factor = 0.75
+			factor = 1.33
 			learning = 8
 		}
 		modifier = {
-			factor = 1.4
+			factor = 0.71
 			trait = cynical
 		}
 		modifier = {
-			factor = 0.2
+			factor = 5.00
 			trait = ambitious
 		}
 		modifier = {
-			factor = 0.4
+			factor = 2.50
 			trait = zealous
 		}
 		modifier = {
-			factor = 1.1
+			factor = 0.91
 			trait = detached_priest
 		}
 		modifier = {
-			factor = 0.75
+			factor = 1.33
 			trait = scholarly_theologian
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = mastermind_theologian
 		}
 	}
@@ -104,6 +103,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	lacks_dlc = "Way of Life"
+	is_triggered_only = yes
 
 	trigger = {
 		has_character_modifier = illumination
@@ -112,22 +112,22 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 3
+	weight_multiplier = {
+		factor = 0.5
 		modifier = {
-			factor = 1.2
+			factor = 0.83
 			trait = content
 		}
 		modifier = {
-			factor = 1.4
+			factor = 0.71
 			trait = cynical
 		}
 		modifier = {
-			factor = 0.2
+			factor = 5.00
 			trait = ambitious
 		}
 		modifier = {
-			factor = 0.4
+			factor = 2.50
 			trait = zealous
 		}
 	}
@@ -202,19 +202,14 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	lacks_dlc = "Way of Life"
+	is_triggered_only = yes
 
 	trigger = {
 		in_command = no
-		NOT = {
+		nor = {
 			lifestyle_traits = 1
-		}
-		NOT = {
 			has_character_flag = LE_ST
-		}
-		NOT = {
 			has_character_modifier = the_impaler
-		}
-		NOT = {
 			has_character_modifier = the_gardener
 		}
 	}
@@ -224,26 +219,26 @@ character_event = {
 		set_character_flag = LE_ST
 	}
 
-	mean_time_to_happen = {
-		years = 21
+	weight_multiplier = {
+		factor = 0.47619
 		modifier = {
-			factor = 0.8
+			factor = 1.25
 			martial = 10
 		}
 		modifier = {
-			factor = 0.8
+			factor = 1.25
 			martial = 9
 		}
 		modifier = {
-			factor = 0.8
+			factor = 1.25
 			trait = indulgent_wastrel
 		}
 		modifier = {
-			factor = 0.8
+			factor = 1.25
 			trait = misguided_warrior
 		}
 		modifier = {
-			factor = 0.8
+			factor = 1.25
 			trait = tough_soldier
 		}
 	}
@@ -280,39 +275,36 @@ character_event = {
 	prisoner = no
 	has_character_flag = LE_ST
 	lacks_dlc = "Way of Life"
+	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		nor = {
 			lifestyle_traits = 1
-		}
-		NOT = {
 			has_character_flag = red_rose
 		}
 		has_character_flag = stake_pole
-		NOT = {
+		nor = {
 			has_character_modifier = the_impaler
-		}
-		NOT = {
 			has_character_modifier = the_gardener
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 3
+	weight_multiplier = {
+		factor = 0.5
 		modifier = {
-			factor = 1.2
+			factor = 0.83
 			trait = shy
 		}
 		modifier = {
-			factor = 1.4
+			factor = 0.71
 			trait = craven
 		}
 		modifier = {
-			factor = 0.2
+			factor = 5.00
 			trait = gregarious
 		}
 		modifier = {
-			factor = 0.4
+			factor = 2.50
 			trait = brave
 		}
 	}
@@ -364,39 +356,36 @@ character_event = {
 	prisoner = no
 	has_character_flag = LE_ST
 	lacks_dlc = "Way of Life"
+	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		nor = {
 			lifestyle_traits = 1
-		}
-		NOT = {
 			has_character_flag = stake_pole
 		}
 		has_character_flag = red_rose
-		NOT = {
+		nor = {
 			has_character_modifier = the_impaler
-		}
-		NOT = {
 			has_character_modifier = the_gardener
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 3
+	weight_multiplier = {
+		factor = 0.5
 		modifier = {
-			factor = 0.2
+			factor = 5.00
 			trait = shy
 		}
 		modifier = {
-			factor = 0.4
+			factor = 2.50
 			trait = craven
 		}
 		modifier = {
-			factor = 1.2
+			factor = 0.83
 			trait = gregarious
 		}
 		modifier = {
-			factor = 1.4
+			factor = 0.71
 			trait = brave
 		}
 	}
@@ -466,22 +455,17 @@ character_event = {
 	prisoner = no
 	has_character_flag = LE_ST
 	lacks_dlc = "Way of Life"
+	is_triggered_only = yes
 
 	trigger = {
 		NOT = {
 			lifestyle_traits = 1
 		}
 		has_character_flag = vlad_impaler
-		NOT = {
+		nor = {
 			has_character_modifier = the_impaler
-		}
-		NOT = {
 			has_character_modifier = the_gardener
 		}
-	}
-
-	mean_time_to_happen = {
-		years = 3
 	}
 
 	immediate = {
@@ -516,22 +500,17 @@ character_event = {
 	prisoner = no
 	has_character_flag = LE_ST
 	lacks_dlc = "Way of Life"
+	is_triggered_only = yes
 
 	trigger = {
 		NOT = {
 			lifestyle_traits = 1
 		}
 		has_character_flag = rose_gardener
-		NOT = {
+		nor = {
 			has_character_modifier = the_gardener
-		}
-		NOT = {
 			has_character_modifier = the_impaler
 		}
-	}
-
-	mean_time_to_happen = {
-		years = 3
 	}
 
 	immediate = {
@@ -595,17 +574,14 @@ character_event = {
 	prisoner = no
 	lacks_dlc = "Way of Life"
 	is_married = no
+	is_triggered_only = yes
 
 	trigger = {
 		in_command = no
 		has_lover = no
-		NOT = {
+		nor = {
 			trait = homosexual
-		}
-		NOT = {
 			lifestyle_traits = 1
-		}
-		NOT = {
 			religion_group = ormazd_gods_group
 		}
 		any_courtier = {
@@ -616,13 +592,9 @@ character_event = {
 				age = 35
 			}
 			is_female = yes
-			NOT = {
+			nor = {
 				trait = celibate
-			}
-			NOT = {
 				trait = homosexual
-			}
-			NOT = {
 				opinion = {
 					who = ROOT value = 20
 				}
@@ -631,10 +603,8 @@ character_event = {
 				who = ROOT value = 20
 			}
 		}
-		NOT = {
+		nor = {
 			has_character_flag = LE_ST
-		}
-		NOT = {
 			is_inaccessible_trigger = yes
 		}
 	}
@@ -651,13 +621,9 @@ character_event = {
 				is_female = yes
 				is_married = no
 				has_lover = no
-				NOT = {
+				nor = {
 					trait = celibate
-				}
-				NOT = {
 					trait = homosexual
-				}
-				NOT = {
 					opinion = {
 						who = ROOT value = 20
 					}
@@ -670,22 +636,22 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 21
+	weight_multiplier = {
+		factor = 0.47619
 		modifier = {
-			factor = 0.2
+			factor = 5.00
 			trait = charismatic_negotiator
 		}
 		modifier = {
-			factor = 0.4
+			factor = 2.50
 			trait = skilled_tactician
 		}
 		modifier = {
-			factor = 1.2
+			factor = 0.83
 			trait = misguided_warrior
 		}
 		modifier = {
-			factor = 1.3
+			factor = 0.77
 			trait = naive_appeaser
 		}
 	}
@@ -889,6 +855,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	lacks_dlc = "Way of Life"
+	is_triggered_only = yes
 
 	trigger = {
 		in_command = no
@@ -901,22 +868,22 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 3
+	weight_multiplier = {
+		factor = 0.5
 		modifier = {
-			factor = 1.5
+			factor = 0.67
 			trait = misguided_warrior
 		}
 		modifier = {
-			factor = 1.25
+			factor = 0.80
 			trait = tough_soldier
 		}
 		modifier = {
-			factor = 0.25
+			factor = 4.00
 			trait = skilled_tactician
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = brilliant_strategist
 		}
 	}
@@ -947,6 +914,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	lacks_dlc = "Way of Life"
+	is_triggered_only = yes
 
 	trigger = {
 		in_command = no
@@ -959,22 +927,22 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 21
+	weight_multiplier = {
+		factor = 0.47619
 		modifier = {
-			factor = 1.3
+			factor = 0.77
 			trait = naive_appeaser
 		}
 		modifier = {
-			factor = 1.2
+			factor = 0.83
 			trait = underhanded_rogue
 		}
 		modifier = {
-			factor = 0.2
+			factor = 5.00
 			trait = grey_eminence
 		}
 		modifier = {
-			factor = 0.4
+			factor = 2.50
 			trait = charismatic_negotiator
 		}
 	}
@@ -1100,19 +1068,14 @@ character_event = {
 	only_men = yes
 	capable_only = yes
 	lacks_dlc = "Way of Life"
+	is_triggered_only = yes
 
 	trigger = {
 		in_command = no
-		NOT = {
+		nor = {
 			religion = shallyan
-		}
-		NOT = {
 			lifestyle_traits = 1
-		}
-		NOT = {
 			has_character_flag = LE_ST
-		}
-		NOT = {
 			is_inaccessible_trigger = yes
 		}
 	}
@@ -1122,26 +1085,26 @@ character_event = {
 		set_character_flag = LE_ST
 	}
 
-	mean_time_to_happen = {
-		years = 30
+	weight_multiplier = {
+		factor = 0.33333
 		modifier = {
-			factor = 0.75
+			factor = 1.33
 			martial = 8
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			has_nickname = nick_the_fowler
 		}
 		modifier = {
-			factor = 0.25
+			factor = 4.00
 			has_nickname = nick_the_hunter
 		}
 		modifier = {
-			factor = 4.0
+			factor = 0.25
 			trait = slothful
 		}
 		modifier = {
-			factor = 2.0
+			factor = 0.50
 			trait = wroth
 		}
 	}
@@ -1300,6 +1263,7 @@ character_event = {
 	only_men = yes
 	capable_only = yes
 	lacks_dlc = "Way of Life"
+	is_triggered_only = yes
 
 	trigger = {
 		has_character_modifier = aspiring_hunter
@@ -1309,22 +1273,22 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 3
+	weight_multiplier = {
+		factor = 0.5
 		modifier = {
-			factor = 0.2
+			factor = 5.00
 			trait = diligent
 		}
 		modifier = {
-			factor = 0.4
+			factor = 2.50
 			trait = patient
 		}
 		modifier = {
-			factor = 1.2
+			factor = 0.83
 			trait = slothful
 		}
 		modifier = {
-			factor = 1.3
+			factor = 0.77
 			trait = wroth
 		}
 	}
@@ -1357,6 +1321,7 @@ character_event = {
 	only_men = yes
 	capable_only = yes
 	lacks_dlc = "Way of Life"
+	is_triggered_only = yes
 
 	trigger = {
 		has_character_modifier = aspiring_falconer
@@ -1366,22 +1331,22 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 3
+	weight_multiplier = {
+		factor = 0.5
 		modifier = {
-			factor = 0.2
+			factor = 5.00
 			trait = diligent
 		}
 		modifier = {
-			factor = 0.4
+			factor = 2.50
 			trait = patient
 		}
 		modifier = {
-			factor = 1.2
+			factor = 0.83
 			trait = slothful
 		}
 		modifier = {
-			factor = 1.3
+			factor = 0.77
 			trait = wroth
 		}
 	}
@@ -1413,19 +1378,16 @@ character_event = {
 	min_age = 25
 	capable_only = yes
 	prisoner = no
+	is_triggered_only = yes
 
 	trigger = {
 		NOT = {
 			religion = shallyan
 		}
 		in_command = no
-		NOT = {
+		nor = {
 			has_character_flag = LE_ST
-		}
-		NOT = {
 			is_inaccessible_trigger = yes
-		}
-		NOR = {
 			trait = falconer
 			trait = poet
 		}
@@ -1436,14 +1398,14 @@ character_event = {
 		set_character_flag = LE_ST
 	}
 
-	mean_time_to_happen = {
-		years = 21
+	weight_multiplier = {
+		factor = 0.47619
 		modifier = {
-			factor = 4.0
+			factor = 0.25
 			trait = slothful
 		}
 		modifier = {
-			factor = 2.0
+			factor = 0.50
 			trait = wroth
 		}
 	}
@@ -1707,12 +1669,11 @@ character_event = {
 	prisoner = no
 	religion_group = old_world_group
 	lacks_dlc = "Way of Life"
+	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		nor = {
 			lifestyle_traits = 1
-		}
-		NOT = {
 			has_character_flag = LE_ST
 		}
 	}
@@ -1722,26 +1683,26 @@ character_event = {
 		set_character_flag = LE_ST
 	}
 
-	mean_time_to_happen = {
-		years = 21
+	weight_multiplier = {
+		factor = 0.47619
 		modifier = {
-			factor = 1.2
+			factor = 0.83
 			trait = detached_priest
 		}
 		modifier = {
-			factor = 0.3
+			factor = 3.33
 			trait = martial_cleric
 		}
 		modifier = {
-			factor = 1.4
+			factor = 0.71
 			trait = scholarly_theologian
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = mastermind_theologian
 		}
 		modifier = {
-			factor = 0.25
+			factor = 4.00
 			trait = gregarious
 		}
 	}
@@ -1772,6 +1733,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	lacks_dlc = "Way of Life"
+	is_triggered_only = yes
 
 	trigger = {
 		has_character_modifier = one_hedonist
@@ -1784,22 +1746,22 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 3
+	weight_multiplier = {
+		factor = 0.5
 		modifier = {
-			factor = 1.2
+			factor = 0.83
 			trait = detached_priest
 		}
 		modifier = {
-			factor = 1.3
+			factor = 0.77
 			trait = martial_cleric
 		}
 		modifier = {
-			factor = 1.4
+			factor = 0.71
 			trait = scholarly_theologian
 		}
 		modifier = {
-			factor = 1.5
+			factor = 0.67
 			trait = mastermind_theologian
 		}
 	}
@@ -1836,6 +1798,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	lacks_dlc = "Way of Life"
+	is_triggered_only = yes
 
 	trigger = {
 		has_character_modifier = one_celibate
@@ -1848,22 +1811,22 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 3
+	weight_multiplier = {
+		factor = 0.5
 		modifier = {
-			factor = 0.2
+			factor = 5.00
 			trait = detached_priest
 		}
 		modifier = {
-			factor = 0.3
+			factor = 3.33
 			trait = martial_cleric
 		}
 		modifier = {
-			factor = 0.4
+			factor = 2.50
 			trait = scholarly_theologian
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = mastermind_theologian
 		}
 	}
@@ -1900,6 +1863,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	lacks_dlc = "Way of Life"
+	is_triggered_only = yes
 
 	trigger = {
 		has_character_modifier = sweet_temptation
@@ -1908,14 +1872,14 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 3
+	weight_multiplier = {
+		factor = 0.5
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = lustful
 		}
 		modifier = {
-			factor = 1.5
+			factor = 0.67
 			trait = chaste
 		}
 	}
@@ -1952,6 +1916,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	lacks_dlc = "Way of Life"
+	is_triggered_only = yes
 
 	trigger = {
 		OR = {
@@ -1965,18 +1930,18 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 3
+	weight_multiplier = {
+		factor = 0.5
 		modifier = {
-			factor = 1.5
+			factor = 0.67
 			trait = lustful
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = chaste
 		}
 		modifier = {
-			factor = 5
+			factor = 0.20
 			has_ambition = obj_buddhist_abstain_sexual_excess
 		}
 	}
@@ -2080,15 +2045,12 @@ character_event = {
 	prisoner = no
 	religion_group = ormazd_gods_group
 	lacks_dlc = "Way of Life"
+	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		nor = {
 			lifestyle_traits = 1
-		}
-		NOT = {
 			has_character_flag = LE_ST
-		}
-		NOT = {
 			is_inaccessible_trigger = yes
 		}
 	}
@@ -2098,26 +2060,26 @@ character_event = {
 		set_character_flag = LE_ST
 	}
 
-	mean_time_to_happen = {
-		years = 21
+	weight_multiplier = {
+		factor = 0.47619
 		modifier = {
-			factor = 1.2
+			factor = 0.83
 			trait = detached_priest
 		}
 		modifier = {
-			factor = 0.3
+			factor = 3.33
 			trait = martial_cleric
 		}
 		modifier = {
-			factor = 1.4
+			factor = 0.71
 			trait = scholarly_theologian
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = mastermind_theologian
 		}
 		modifier = {
-			factor = 0.25
+			factor = 4.00
 			trait = gregarious
 		}
 	}
@@ -2150,12 +2112,11 @@ character_event = {
 	religion_group = ormazd_gods_group
 	has_character_flag = LE_ST
 	lacks_dlc = "Way of Life"
+	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		nor = {
 			lifestyle_traits = 1
-		}
-		NOT = {
 			has_character_modifier = muslim_poet
 		}
 		OR = {
@@ -2173,14 +2134,14 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 2
+	weight_multiplier = {
+		factor = 1
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = gluttonous
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = temperate
 		}
 	}
@@ -2243,12 +2204,11 @@ character_event = {
 	religion_group = ormazd_gods_group
 	has_character_flag = LE_ST
 	lacks_dlc = "Way of Life"
+	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		nor = {
 			lifestyle_traits = 1
-		}
-		NOT = {
 			has_character_modifier = muslim_hedonist
 		}
 		OR = {
@@ -2266,14 +2226,14 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 2
+	weight_multiplier = {
+		factor = 1
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = zealous
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = slothful
 		}
 	}
@@ -2385,32 +2345,21 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	religion_group = ormazd_gods_group
+	is_triggered_only = yes
 
 	trigger = {
 		in_command = no
-		NOT = {
+		nor = {
 			has_character_modifier = aspiring_faqih
-		}
-		NOT = {
 			has_character_flag = LE_ST
-		}
-		NOT = {
 			has_character_flag = aspiring_faqih_flag
-		}
-		NOT = {
 			trait = scholar
-		}
-		NOT = {
 			trait = hafiz
-		}
-		NOT = {
 			trait = inbred
 		}
 		is_dumb_trigger = no
-		NOT = {
+		nor = {
 			trait = infirm
-		}
-		NOT = {
 			trait = faqih
 		}
 	}
@@ -2420,34 +2369,34 @@ character_event = {
 		set_character_flag = LE_ST
 	}
 
-	mean_time_to_happen = {
-		years = 21
+	weight_multiplier = {
+		factor = 0.47619
 		modifier = {
-			factor = 0.7
+			factor = 1.43
 			trait = just
 		}
 		modifier = {
-			factor = 0.7
+			factor = 1.43
 			trait = scholar
 		}
 		modifier = {
-			factor = 0.7
+			factor = 1.43
 			trait = zealous
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = cynical
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = slothful
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = content
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = arbitrary
 		}
 	}
@@ -2542,6 +2491,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	religion_group = ormazd_gods_group
+	is_triggered_only = yes
 
 	trigger = {
 		has_character_modifier = aspiring_faqih
@@ -2560,30 +2510,30 @@ character_event = {
 		set_character_flag = LE_ST
 	}
 
-	mean_time_to_happen = {
-		years = 21
+	weight_multiplier = {
+		factor = 0.47619
 		modifier = {
-			factor = 0.7
+			factor = 1.43
 			trait = scholar
 		}
 		modifier = {
-			factor = 0.7
+			factor = 1.43
 			trait = just
 		}
 		modifier = {
-			factor = 0.7
+			factor = 1.43
 			trait = zealous
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = cynical
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = slothful
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = content
 		}
 	}
@@ -2609,6 +2559,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	religion_group = ormazd_gods_group
+	is_triggered_only = yes
 
 	trigger = {
 		has_character_modifier = aspiring_faqih
@@ -2627,30 +2578,30 @@ character_event = {
 		set_character_flag = LE_ST
 	}
 
-	mean_time_to_happen = {
-		years = 21
+	weight_multiplier = {
+		factor = 0.47619
 		modifier = {
-			factor = 0.7
+			factor = 1.43
 			trait = scholar
 		}
 		modifier = {
-			factor = 0.7
+			factor = 1.43
 			trait = just
 		}
 		modifier = {
-			factor = 0.7
+			factor = 1.43
 			trait = zealous
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = cynical
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = slothful
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = content
 		}
 	}

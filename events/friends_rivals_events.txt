@@ -16,73 +16,54 @@ character_event = {
 	only_capable = yes
 	prisoner = no
 	lacks_dlc = "Conclave"
+	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		nor = {
 			culture_group = daemonic_group
-		}
-		NOT = {
 			trait = s_target_trait
-		}
-		NOT = {
 			num_of_friends = 2
-		}
-		NOT = {
 			num_of_rivals = 2
 		}
 		is_inaccessible_trigger = no
 		host = {
 			any_courtier = {
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				is_abroad = no
 				prisoner = no
 				at_location = ROOT
-				NOT = {
+				nor = {
 					trait = craven
-				}
-				NOT = {
 					trait = honest
-				}
-				NOT = {
 					sibling = ROOT
 				}
 				age = 4
-				NOT = {
+				nor = {
 					age = 14
-				}
-				NOT = {
 					num_of_friends = 2
-				}
-				NOT = {
 					num_of_rivals = 2
-				}
-				NOT = {
 					is_friend = ROOT
-				}
-				NOT = {
 					is_rival = ROOT
 				}
 			}
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 6
+	weight_multiplier = {
+		factor = 0.8
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			is_primary_heir = yes
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = gregarious
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = shy
 		}
 	}
@@ -92,38 +73,24 @@ character_event = {
 		host = {
 			random_courtier = {
 				limit = {
-					NOT = {
+					nor = {
 						culture_group = daemonic_group
-					}
-					NOT = {
 						trait = s_target_trait
 					}
 					is_abroad = no
 					prisoner = no
 					at_location = ROOT
-					NOT = {
+					nor = {
 						trait = craven
-					}
-					NOT = {
 						trait = honest
-					}
-					NOT = {
 						sibling = ROOT
 					}
 					age = 4
-					NOT = {
+					nor = {
 						age = 14
-					}
-					NOT = {
 						num_of_friends = 2
-					}
-					NOT = {
 						num_of_rivals = 2
-					}
-					NOT = {
 						is_friend = ROOT
-					}
-					NOT = {
 						is_rival = ROOT
 					}
 				}
@@ -144,16 +111,10 @@ character_event = {
 			}
 			if = {
 				limit = {
-					NOT = {
+					nor = {
 						culture_group = daemonic_group
-					}
-					NOT = {
 						trait = s_target_trait
-					}
-					NOT = {
 						num_of_traits = 5
-					}
-					NOT = {
 						trait = wroth
 					}
 					trait = greedy
@@ -162,10 +123,8 @@ character_event = {
 			}
 			if = {
 				limit = {
-					NOT = {
+					nor = {
 						num_of_traits = 5
-					}
-					NOT = {
 						trait = greedy
 					}
 					trait = wroth
@@ -232,16 +191,10 @@ character_event = {
 	prisoner = no
 
 	trigger = {
-		NOT = {
+		nor = {
 			culture_group = daemonic_group
-		}
-		NOT = {
 			trait = s_target_trait
-		}
-		NOT = {
 			num_of_friends = 2
-		}
-		NOT = {
 			num_of_rivals = 2
 		}
 		OR = {
@@ -251,34 +204,20 @@ character_event = {
 		}
 		host = {
 			any_courtier = {
-				NOT = {
+				nor = {
 					character = ROOT
-				}
-				NOT = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				at_location = ROOT
 				prisoner = no
 				age = 6
-				NOT = {
+				nor = {
 					age = 15
-				}
-				NOT = {
 					is_friend = ROOT
-				}
-				NOT = {
 					is_rival = ROOT
-				}
-				NOT = {
 					num_of_friends = 2
-				}
-				NOT = {
 					num_of_rivals = 2
-				}
-				NOT = {
 					sibling = ROOT
 				}
 				trait = shy
@@ -312,34 +251,20 @@ character_event = {
 		host = {
 			random_courtier = {
 				limit = {
-					NOT = {
+					nor = {
 						culture_group = daemonic_group
-					}
-					NOT = {
 						trait = s_target_trait
-					}
-					NOT = {
 						character = ROOT
 					}
 					at_location = ROOT
 					prisoner = no
 					age = 6
-					NOT = {
+					nor = {
 						age = 15
-					}
-					NOT = {
 						is_friend = ROOT
-					}
-					NOT = {
 						is_rival = ROOT
-					}
-					NOT = {
 						num_of_friends = 2
-					}
-					NOT = {
 						num_of_rivals = 2
-					}
-					NOT = {
 						sibling = ROOT
 					}
 					trait = shy
@@ -479,10 +404,8 @@ character_event = {
 		name = EVTOPTB100007
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = craven
 				}
 			}
@@ -593,29 +516,21 @@ character_event = {
 
 	trigger = {
 		has_guardian = yes
-		NOT = {
+		nor = {
 			culture_group = daemonic_group
-		}
-		NOT = {
 			trait = s_target_trait
 		}
 		trait = slothful
-		NOT = {
+		nor = {
 			num_of_friends = 2
-		}
-		NOT = {
 			num_of_rivals = 2
 		}
 		is_inaccessible_trigger = no
 		host = {
 			any_courtier = {
-				NOT = {
+				nor = {
 					character = ROOT
-				}
-				NOT = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				is_female = no
@@ -628,19 +543,11 @@ character_event = {
 					trait = kind
 					trait = ambitious
 				}
-				NOT = {
+				nor = {
 					is_inaccessible_trigger = yes
-				}
-				NOT = {
 					num_of_friends = 3
-				}
-				NOT = {
 					num_of_rivals = 3
-				}
-				NOT = {
 					is_friend = ROOT
-				}
-				NOT = {
 					is_rival = ROOT
 				}
 			}
@@ -663,13 +570,9 @@ character_event = {
 		host = {
 			random_courtier = {
 				limit = {
-					NOT = {
+					nor = {
 						character = ROOT
-					}
-					NOT = {
 						culture_group = daemonic_group
-					}
-					NOT = {
 						trait = s_target_trait
 					}
 					is_female = no
@@ -682,19 +585,11 @@ character_event = {
 						trait = kind
 						trait = ambitious
 					}
-					NOT = {
+					nor = {
 						is_inaccessible_trigger = yes
-					}
-					NOT = {
 						num_of_friends = 3
-					}
-					NOT = {
 						num_of_rivals = 3
-					}
-					NOT = {
 						is_friend = ROOT
-					}
-					NOT = {
 						is_rival = ROOT
 					}
 				}
@@ -742,10 +637,8 @@ character_event = {
 		name = EVTOPTC100015
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = honest
 				}
 			}
@@ -800,10 +693,8 @@ character_event = {
 		clr_character_flag = wrongly_interfered
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = content
 				}
 			}
@@ -819,10 +710,8 @@ character_event = {
 		clr_character_flag = wrongly_interfered
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = cynical
 				}
 			}
@@ -859,10 +748,8 @@ character_event = {
 
 	trigger = {
 		is_inaccessible_trigger = no
-		NOT = {
+		nor = {
 			culture_group = daemonic_group
-		}
-		NOT = {
 			trait = s_target_trait
 		}
 		OR = {
@@ -873,13 +760,9 @@ character_event = {
 				trait = lustful
 				prisoner = no
 				age = 16
-				NOT = {
+				nor = {
 					age = 25
-				}
-				NOT = {
 					num_of_friends = 5
-				}
-				NOT = {
 					num_of_rivals = 5
 				}
 				OR = {
@@ -897,22 +780,12 @@ character_event = {
 					prisoner = no
 					is_married = no
 					age = 16
-					NOT = {
+					nor = {
 						age = 25
-					}
-					NOT = {
 						num_of_friends = 5
-					}
-					NOT = {
 						num_of_rivals = 5
-					}
-					NOT = {
 						sibling = ROOT
-					}
-					NOT = {
 						is_friend = ROOT
-					}
-					NOT = {
 						is_rival = ROOT
 					}
 					OR = {
@@ -930,19 +803,11 @@ character_event = {
 				trait = lustful
 				prisoner = no
 				age = 16
-				NOT = {
+				nor = {
 					age = 25
-				}
-				NOT = {
 					num_of_friends = 5
-				}
-				NOT = {
 					num_of_rivals = 5
-				}
-				NOT = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				OR = {
@@ -962,22 +827,12 @@ character_event = {
 							prisoner = no
 							is_married = no
 							age = 16
-							NOT = {
+							nor = {
 								age = 25
-							}
-							NOT = {
 								num_of_friends = 5
-							}
-							NOT = {
 								num_of_rivals = 5
-							}
-							NOT = {
 								sibling = PREV
-							}
-							NOT = {
 								is_friend = PREV
-							}
-							NOT = {
 								is_rival = PREV
 							}
 							OR = {
@@ -996,22 +851,12 @@ character_event = {
 							prisoner = no
 							is_married = no
 							age = 16
-							NOT = {
+							nor = {
 								age = 25
-							}
-							NOT = {
 								num_of_friends = 5
-							}
-							NOT = {
 								num_of_rivals = 5
-							}
-							NOT = {
 								sibling = PREVPREV
-							}
-							NOT = {
 								is_friend = PREVPREV
-							}
-							NOT = {
 								is_rival = PREVPREV
 							}
 							OR = {
@@ -1033,10 +878,8 @@ character_event = {
 		log = "work event id = 100019 for [Root.GetBestName]"
 		random_courtier = {
 			limit = {
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				is_female = no
@@ -1045,13 +888,9 @@ character_event = {
 				trait = lustful
 				prisoner = no
 				age = 16
-				NOT = {
+				nor = {
 					age = 25
-				}
-				NOT = {
 					num_of_friends = 5
-				}
-				NOT = {
 					num_of_rivals = 5
 				}
 				OR = {
@@ -1083,22 +922,12 @@ character_event = {
 				prisoner = no
 				is_married = no
 				age = 16
-				NOT = {
+				nor = {
 					age = 25
-				}
-				NOT = {
 					num_of_friends = 5
-				}
-				NOT = {
 					num_of_rivals = 5
-				}
-				NOT = {
 					sibling = event_target:lustful_courtier
-				}
-				NOT = {
 					is_friend = event_target:lustful_courtier
-				}
-				NOT = {
 					is_rival = event_target:lustful_courtier
 				}
 				OR = {
@@ -1241,10 +1070,8 @@ character_event = {
 		name = EVTOPTC100021
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = proud
 				}
 			}
@@ -1340,10 +1167,8 @@ character_event = {
 
 	trigger = {
 		is_inaccessible_trigger = no
-		NOT = {
+		nor = {
 			culture_group = daemonic_group
-		}
-		NOT = {
 			trait = s_target_trait
 		}
 		OR = {
@@ -1357,10 +1182,8 @@ character_event = {
 				}
 				in_command = no
 				is_married = no
-				NOT = {
+				nor = {
 					num_of_friends = 5
-				}
-				NOT = {
 					num_of_rivals = 5
 				}
 				OR = {
@@ -1381,16 +1204,10 @@ character_event = {
 					prisoner = no
 					is_married = no
 					age = 16
-					NOT = {
+					nor = {
 						age = 25
-					}
-					NOT = {
 						sibling = ROOT
-					}
-					NOT = {
 						num_of_friends = 5
-					}
-					NOT = {
 						num_of_rivals = 5
 					}
 					trait = lustful
@@ -1399,20 +1216,16 @@ character_event = {
 						trait = kind
 						trait = gregarious
 					}
-					NOT = {
+					nor = {
 						is_friend = ROOT
-					}
-					NOT = {
 						is_rival = ROOT
 					}
 					war = no
 				}
 			}
 			any_courtier = {
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				is_female = no
@@ -1424,10 +1237,8 @@ character_event = {
 				}
 				in_command = no
 				is_married = no
-				NOT = {
+				nor = {
 					num_of_friends = 5
-				}
-				NOT = {
 					num_of_rivals = 5
 				}
 				OR = {
@@ -1450,16 +1261,10 @@ character_event = {
 							prisoner = no
 							is_married = no
 							age = 16
-							NOT = {
+							nor = {
 								age = 25
-							}
-							NOT = {
 								sibling = PREV
-							}
-							NOT = {
 								num_of_friends = 5
-							}
-							NOT = {
 								num_of_rivals = 5
 							}
 							trait = lustful
@@ -1468,10 +1273,8 @@ character_event = {
 								trait = kind
 								trait = gregarious
 							}
-							NOT = {
+							nor = {
 								is_friend = PREV
-							}
-							NOT = {
 								is_rival = PREV
 							}
 							war = no
@@ -1484,16 +1287,10 @@ character_event = {
 							prisoner = no
 							is_married = no
 							age = 16
-							NOT = {
+							nor = {
 								age = 25
-							}
-							NOT = {
 								sibling = PREVPREV
-							}
-							NOT = {
 								num_of_friends = 5
-							}
-							NOT = {
 								num_of_rivals = 5
 							}
 							trait = lustful
@@ -1502,10 +1299,8 @@ character_event = {
 								trait = kind
 								trait = gregarious
 							}
-							NOT = {
+							nor = {
 								is_friend = PREVPREV
-							}
-							NOT = {
 								is_rival = PREVPREV
 							}
 							war = no
@@ -1523,10 +1318,8 @@ character_event = {
 		log = "work event id = 100024 for [Root.GetBestName]"
 		random_courtier = {
 			limit = {
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				is_female = no
@@ -1538,10 +1331,8 @@ character_event = {
 				}
 				in_command = no
 				is_married = no
-				NOT = {
+				nor = {
 					num_of_friends = 5
-				}
-				NOT = {
 					num_of_rivals = 5
 				}
 				OR = {
@@ -1576,16 +1367,10 @@ character_event = {
 				prisoner = no
 				is_married = no
 				age = 16
-				NOT = {
+				nor = {
 					age = 25
-				}
-				NOT = {
 					sibling = event_target:shy_courtier
-				}
-				NOT = {
 					num_of_friends = 5
-				}
-				NOT = {
 					num_of_rivals = 5
 				}
 				trait = lustful
@@ -1594,10 +1379,8 @@ character_event = {
 					trait = kind
 					trait = gregarious
 				}
-				NOT = {
+				nor = {
 					is_friend = event_target:shy_courtier
-				}
-				NOT = {
 					is_rival = event_target:shy_courtier
 				}
 				war = no
@@ -1938,6 +1721,7 @@ character_event = {
 	prisoner = no
 	min_age = 4
 	max_age = 14
+	is_triggered_only = yes
 
 	trigger = {
 		is_inaccessible_trigger = no
@@ -1946,13 +1730,9 @@ character_event = {
 			is_inaccessible_trigger = no
 			prisoner = no
 			age = 4
-			NOT = {
+			nor = {
 				age = 14
-			}
-			NOT = {
 				num_of_friends = 2
-			}
-			NOT = {
 				num_of_rivals = 2
 			}
 			OR = {
@@ -1970,22 +1750,12 @@ character_event = {
 					is_inaccessible_trigger = no
 					prisoner = no
 					age = 4
-					NOT = {
+					nor = {
 						age = 14
-					}
-					NOT = {
 						sibling = PREVPREV
-					}
-					NOT = {
 						num_of_friends = 2
-					}
-					NOT = {
 						num_of_rivals = 2
-					}
-					NOT = {
 						is_friend = PREVPREV
-					}
-					NOT = {
 						is_rival = PREVPREV
 					}
 					OR = {
@@ -1998,31 +1768,21 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 6
-	}
-
 	immediate = {
 		log = "work event id = 100034 for [Root.GetBestName]"
 		random_courtier = {
 			limit = {
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				is_female = yes
 				is_inaccessible_trigger = no
 				prisoner = no
 				age = 4
-				NOT = {
+				nor = {
 					age = 14
-				}
-				NOT = {
 					num_of_friends = 2
-				}
-				NOT = {
 					num_of_rivals = 2
 				}
 				OR = {
@@ -2040,22 +1800,12 @@ character_event = {
 						is_inaccessible_trigger = no
 						prisoner = no
 						age = 4
-						NOT = {
+						nor = {
 							age = 14
-						}
-						NOT = {
 							sibling = PREVPREV
-						}
-						NOT = {
 							num_of_friends = 2
-						}
-						NOT = {
 							num_of_rivals = 2
-						}
-						NOT = {
 							is_friend = PREVPREV
-						}
-						NOT = {
 							is_rival = PREVPREV
 						}
 						OR = {
@@ -2078,22 +1828,12 @@ character_event = {
 						is_inaccessible_trigger = no
 						prisoner = no
 						age = 4
-						NOT = {
+						nor = {
 							age = 14
-						}
-						NOT = {
 							sibling = PREVPREV
-						}
-						NOT = {
 							num_of_friends = 2
-						}
-						NOT = {
 							num_of_rivals = 2
-						}
-						NOT = {
 							is_friend = PREVPREV
-						}
-						NOT = {
 							is_rival = PREVPREV
 						}
 						OR = {
@@ -2151,10 +1891,8 @@ character_event = {
 		name = EVTOPTC100035
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = greedy
 				}
 			}
@@ -2262,18 +2000,13 @@ character_event = {
 	only_capable = yes
 	min_age = 11
 	max_age = 16
+	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		nor = {
 			culture_group = daemonic_group
-		}
-		NOT = {
 			trait = s_target_trait
-		}
-		NOT = {
 			num_of_friends = 2
-		}
-		NOT = {
 			num_of_rivals = 2
 		}
 		OR = {
@@ -2284,10 +2017,8 @@ character_event = {
 		is_inaccessible_trigger = no
 		host = {
 			any_courtier = {
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				at_location = ROOT
@@ -2297,23 +2028,17 @@ character_event = {
 				}
 				is_female = yes
 				prisoner = no
-				NOT = {
+				nor = {
 					sibling = ROOT
-				}
-				NOT = {
 					num_of_friends = 2
-				}
-				NOT = {
 					num_of_rivals = 2
 				}
 				OR = {
 					trait = lustful
 					trait = gregarious
 				}
-				NOT = {
+				nor = {
 					is_friend = ROOT
-				}
-				NOT = {
 					is_rival = ROOT
 				}
 			}
@@ -2326,10 +2051,8 @@ character_event = {
 			random_courtier = {
 				limit = {
 					is_inaccessible_trigger = no
-					NOT = {
+					nor = {
 						culture_group = daemonic_group
-					}
-					NOT = {
 						trait = s_target_trait
 					}
 					at_location = ROOT
@@ -2339,23 +2062,17 @@ character_event = {
 					}
 					is_female = yes
 					prisoner = no
-					NOT = {
+					nor = {
 						sibling = ROOT
-					}
-					NOT = {
 						num_of_friends = 2
-					}
-					NOT = {
 						num_of_rivals = 2
 					}
 					OR = {
 						trait = lustful
 						trait = gregarious
 					}
-					NOT = {
+					nor = {
 						is_friend = ROOT
-					}
-					NOT = {
 						is_rival = ROOT
 					}
 				}
@@ -2364,14 +2081,14 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 6
+	weight_multiplier = {
+		factor = 0.8
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = ambitious
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = cruel
 		}
 	}
@@ -2405,10 +2122,8 @@ character_event = {
 		name = EVTOPTC100040
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = envious
 				}
 			}
@@ -2543,19 +2258,14 @@ character_event = {
 	only_capable = yes
 	min_age = 16
 	max_age = 25
+	is_triggered_only = yes
 
 	trigger = {
 		is_inaccessible_trigger = no
-		NOT = {
+		nor = {
 			culture_group = daemonic_group
-		}
-		NOT = {
 			trait = s_target_trait
-		}
-		NOT = {
 			num_of_friends = 2
-		}
-		NOT = {
 			num_of_rivals = 2
 		}
 		OR = {
@@ -2565,10 +2275,8 @@ character_event = {
 		}
 		any_courtier = {
 			is_inaccessible_trigger = no
-			NOT = {
+			nor = {
 				culture_group = daemonic_group
-			}
-			NOT = {
 				trait = s_target_trait
 			}
 			prisoner = no
@@ -2585,19 +2293,11 @@ character_event = {
 				trait = kind
 				trait = gregarious
 			}
-			NOT = {
+			nor = {
 				sibling = ROOT
-			}
-			NOT = {
 				num_of_friends = 2
-			}
-			NOT = {
 				num_of_rivals = 2
-			}
-			NOT = {
 				is_friend = ROOT
-			}
-			NOT = {
 				is_rival = ROOT
 			}
 		}
@@ -2608,10 +2308,8 @@ character_event = {
 		random_courtier = {
 			limit = {
 				is_inaccessible_trigger = no
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				prisoner = no
@@ -2628,19 +2326,11 @@ character_event = {
 					trait = kind
 					trait = gregarious
 				}
-				NOT = {
+				nor = {
 					sibling = ROOT
-				}
-				NOT = {
 					num_of_friends = 2
-				}
-				NOT = {
 					num_of_rivals = 2
-				}
-				NOT = {
 					is_friend = ROOT
-				}
-				NOT = {
 					is_rival = ROOT
 				}
 			}
@@ -2648,22 +2338,22 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 6
+	weight_multiplier = {
+		factor = 0.8
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = gregarious
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = trusting
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = wroth
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = envious
 		}
 	}
@@ -2693,14 +2383,10 @@ character_event = {
 		}
 		if = {
 			limit = {
-				NOR = {
+				nor = {
 					religion = ormazd
 					religion = kitabid
-				}
-				NOT = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = chaste
 				}
 			}
@@ -2712,10 +2398,8 @@ character_event = {
 		name = EVTOTPC100050
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = content
 				}
 			}
@@ -2803,13 +2487,9 @@ character_event = {
 	option = {
 		name = EVTOPTA100052
 		trigger = {
-			NOT = {
+			nor = {
 				culture_group = daemonic_group
-			}
-			NOT = {
 				trait = s_target_trait
-			}
-			NOT = {
 				has_character_flag = good_relation
 			}
 		}
@@ -2864,10 +2544,8 @@ character_event = {
 		add_rival = FROM
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = envious
 				}
 			}
@@ -2903,31 +2581,22 @@ character_event = {
 	max_age = 16
 	prisoner = no
 	only_capable = yes
+	is_triggered_only = yes
 
 	trigger = {
 		is_inaccessible_trigger = no
-		NOT = {
+		nor = {
 			culture_group = daemonic_group
-		}
-		NOT = {
 			trait = s_target_trait
-		}
-		NOT = {
 			num_of_friends = 2
-		}
-		NOT = {
 			num_of_rivals = 2
-		}
-		NOT = {
 			martial = 5
 		}
 		host = {
 			any_courtier = {
 				is_inaccessible_trigger = no
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				martial = 5
@@ -2937,19 +2606,11 @@ character_event = {
 					age = 16
 				}
 				at_location = ROOT
-				NOT = {
+				nor = {
 					sibling = ROOT
-				}
-				NOT = {
 					num_of_friends = 2
-				}
-				NOT = {
 					num_of_rivals = 2
-				}
-				NOT = {
 					is_friend = ROOT
-				}
-				NOT = {
 					is_rival = ROOT
 				}
 			}
@@ -2962,10 +2623,8 @@ character_event = {
 			random_courtier = {
 				limit = {
 					is_inaccessible_trigger = no
-					NOT = {
+					nor = {
 						culture_group = daemonic_group
-					}
-					NOT = {
 						trait = s_target_trait
 					}
 					martial = 5
@@ -2975,19 +2634,11 @@ character_event = {
 						age = 16
 					}
 					at_location = ROOT
-					NOT = {
+					nor = {
 						sibling = ROOT
-					}
-					NOT = {
 						num_of_friends = 2
-					}
-					NOT = {
 						num_of_rivals = 2
-					}
-					NOT = {
 						is_friend = ROOT
-					}
-					NOT = {
 						is_rival = ROOT
 					}
 				}
@@ -2996,22 +2647,22 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 6
+	weight_multiplier = {
+		factor = 0.8
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = brave
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = craven
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = ambitious
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = content
 		}
 	}
@@ -3021,10 +2672,8 @@ character_event = {
 		prestige = -2
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = charitable
 				}
 			}
@@ -3049,10 +2698,8 @@ character_event = {
 		name = EVTOPTC100060
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = ambitious
 				}
 			}
@@ -3088,33 +2735,22 @@ character_event = {
 	prisoner = no
 	min_age = 4
 	max_age = 14
+	is_triggered_only = yes
 
 	trigger = {
 		is_inaccessible_trigger = no
-		NOT = {
+		nor = {
 			culture_group = daemonic_group
-		}
-		NOT = {
 			trait = s_target_trait
-		}
-		NOT = {
 			has_character_flag = childhood_was_bullied
-		}
-		NOT = {
 			num_of_friends = 2
-		}
-		NOT = {
 			num_of_rivals = 2
-		}
-		NOT = {
 			has_character_modifier = in_seclusion
 		}
 		any_host_courtier = {
 			is_inaccessible_trigger = no
-			NOT = {
+			nor = {
 				culture_group = daemonic_group
-			}
-			NOT = {
 				trait = s_target_trait
 			}
 			is_female = no
@@ -3136,22 +2772,22 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 6
+	weight_multiplier = {
+		factor = 0.8
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = brave
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = rowdy
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = craven
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = timid
 		}
 	}
@@ -3163,10 +2799,8 @@ character_event = {
 			random_host_courtier = {
 				limit = {
 					is_inaccessible_trigger = no
-					NOT = {
+					nor = {
 						culture_group = daemonic_group
-					}
-					NOT = {
 						trait = s_target_trait
 					}
 					is_female = no
@@ -3195,13 +2829,9 @@ character_event = {
 		name = EVTOPTA100065
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					has_dlc = "Conclave"
-				}
-				NOT = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = brave
 				}
 			}
@@ -3240,13 +2870,9 @@ character_event = {
 		name = EVTOPTC100065
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					has_dlc = "Conclave"
-				}
-				NOT = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = patient
 				}
 			}
@@ -3307,13 +2933,9 @@ character_event = {
 		name = EVTOPTB100067
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					has_dlc = "Conclave"
-				}
-				NOT = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = gregarious
 				}
 			}
@@ -3351,13 +2973,9 @@ character_event = {
 		name = EVTOPTA100068
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					has_dlc = "Conclave"
-				}
-				NOT = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = kind
 				}
 			}
@@ -3405,13 +3023,9 @@ character_event = {
 		name = EVTOPTB100069
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					has_dlc = "Conclave"
-				}
-				NOT = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = kind
 				}
 			}
@@ -3435,19 +3049,14 @@ character_event = {
 	only_capable = yes
 	min_age = 11
 	max_age = 16
+	is_triggered_only = yes
 
 	trigger = {
 		is_inaccessible_trigger = no
-		NOT = {
+		nor = {
 			culture_group = daemonic_group
-		}
-		NOT = {
 			trait = s_target_trait
-		}
-		NOT = {
 			num_of_friends = 2
-		}
-		NOT = {
 			num_of_rivals = 2
 		}
 		OR = {
@@ -3458,10 +3067,8 @@ character_event = {
 		host = {
 			any_courtier = {
 				is_inaccessible_trigger = no
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				prisoner = no
@@ -3471,41 +3078,33 @@ character_event = {
 					age = 16
 				}
 				at_location = ROOT
-				NOT = {
+				nor = {
 					sibling = ROOT
-				}
-				NOT = {
 					num_of_friends = 2
-				}
-				NOT = {
 					num_of_rivals = 2
-				}
-				NOT = {
 					is_friend = ROOT
-				}
-				NOT = {
 					is_rival = ROOT
 				}
 			}
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 6
+	weight_multiplier = {
+		factor = 0.8
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = honest
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = deceitful
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			intrigue = 5
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			NOT = {
 				intrigue = 5
 			}
@@ -3518,10 +3117,8 @@ character_event = {
 			random_courtier = {
 				limit = {
 					is_inaccessible_trigger = no
-					NOT = {
+					nor = {
 						culture_group = daemonic_group
-					}
-					NOT = {
 						trait = s_target_trait
 					}
 					prisoner = no
@@ -3531,19 +3128,11 @@ character_event = {
 						age = 16
 					}
 					at_location = ROOT
-					NOT = {
+					nor = {
 						sibling = ROOT
-					}
-					NOT = {
 						num_of_friends = 2
-					}
-					NOT = {
 						num_of_rivals = 2
-					}
-					NOT = {
 						is_friend = ROOT
-					}
-					NOT = {
 						is_rival = ROOT
 					}
 				}
@@ -3569,10 +3158,8 @@ character_event = {
 		name = EVTOPTB100070
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = zealous
 				}
 			}
@@ -3677,13 +3264,9 @@ character_event = {
 		name = EVTOPTC100072
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					has_dlc = "Conclave"
-				}
-				NOT = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = content
 				}
 			}
@@ -3803,29 +3386,24 @@ character_event = {
 	only_capable = yes
 	only_playable = yes
 	religion_group = old_world_group
+	is_triggered_only = yes
 
 	trigger = {
 		is_inaccessible_trigger = no
-		NOT = {
+		nor = {
 			culture_group = daemonic_group
-		}
-		NOT = {
 			trait = s_target_trait
 		}
 		trait = zealous
-		NOT = {
+		nor = {
 			num_of_friends = 2
-		}
-		NOT = {
 			num_of_rivals = 2
 		}
 		host = {
 			any_courtier = {
 				is_inaccessible_trigger = no
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				prisoner = no
@@ -3836,51 +3414,43 @@ character_event = {
 				}
 				at_location = ROOT
 				trait = cynical
-				NOT = {
+				nor = {
 					sibling = ROOT
-				}
-				NOT = {
 					num_of_friends = 2
-				}
-				NOT = {
 					num_of_rivals = 2
-				}
-				NOT = {
 					is_friend = ROOT
-				}
-				NOT = {
 					is_rival = ROOT
 				}
 			}
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 6
+	weight_multiplier = {
+		factor = 0.8
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			piety = 50
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			NOT = {
 				piety = 50
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = diligent
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = slothful
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = ambitious
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = content
 		}
 	}
@@ -3900,10 +3470,8 @@ character_event = {
 			random_courtier = {
 				limit = {
 					is_inaccessible_trigger = no
-					NOT = {
+					nor = {
 						culture_group = daemonic_group
-					}
-					NOT = {
 						trait = s_target_trait
 					}
 					prisoner = no
@@ -3919,19 +3487,11 @@ character_event = {
 							trait = zealous
 						}
 					}
-					NOT = {
+					nor = {
 						sibling = ROOT
-					}
-					NOT = {
 						num_of_friends = 2
-					}
-					NOT = {
 						num_of_rivals = 2
-					}
-					NOT = {
 						is_friend = ROOT
-					}
-					NOT = {
 						is_rival = ROOT
 					}
 				}
@@ -3974,10 +3534,8 @@ character_event = {
 		name = EVTOPTB100081
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = deceitful
 				}
 			}
@@ -3997,10 +3555,8 @@ character_event = {
 		name = EVTOPTC100081
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = zealous
 				}
 			}
@@ -4092,33 +3648,28 @@ character_event = {
 	max_age = 16
 	prisoner = no
 	only_capable = yes
+	is_triggered_only = yes
 
 	trigger = {
 		is_inaccessible_trigger = no
-		NOT = {
+		nor = {
 			culture_group = daemonic_group
-		}
-		NOT = {
 			trait = s_target_trait
 		}
 		OR = {
 			trait = ambitious
 			trait = diligent
 		}
-		NOT = {
+		nor = {
 			num_of_friends = 2
-		}
-		NOT = {
 			num_of_rivals = 2
 		}
 		host = {
 			any_courtier = {
 				is_inaccessible_trigger = no
 				is_female = yes
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				age = 4
@@ -4130,33 +3681,25 @@ character_event = {
 					trait = ambitious
 					trait = diligent
 				}
-				NOT = {
+				nor = {
 					sibling = ROOT
-				}
-				NOT = {
 					num_of_friends = 2
-				}
-				NOT = {
 					num_of_rivals = 2
-				}
-				NOT = {
 					is_friend = ROOT
-				}
-				NOT = {
 					is_rival = ROOT
 				}
 			}
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 6
+	weight_multiplier = {
+		factor = 0.8
 		modifier = {
-			factor = 3
+			factor = 0.33
 			trait = envious
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = kind
 		}
 	}
@@ -4167,10 +3710,8 @@ character_event = {
 			random_courtier = {
 				limit = {
 					is_inaccessible_trigger = no
-					NOT = {
+					nor = {
 						culture_group = daemonic_group
-					}
-					NOT = {
 						trait = s_target_trait
 					}
 					is_female = yes
@@ -4183,19 +3724,11 @@ character_event = {
 						trait = ambitious
 						trait = diligent
 					}
-					NOT = {
+					nor = {
 						sibling = ROOT
-					}
-					NOT = {
 						num_of_friends = 2
-					}
-					NOT = {
 						num_of_rivals = 2
-					}
-					NOT = {
 						is_friend = ROOT
-					}
-					NOT = {
 						is_rival = ROOT
 					}
 				}
@@ -4208,10 +3741,8 @@ character_event = {
 		name = EVTOPTA100090
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = humble
 				}
 			}
@@ -4307,10 +3838,8 @@ character_event = {
 		name = EVTOPTB100092
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = humble
 				}
 			}
@@ -4418,29 +3947,22 @@ character_event = {
 	min_age = 4
 	max_age = 14
 	prisoner = no
+	is_triggered_only = yes
 
 	trigger = {
 		is_inaccessible_trigger = no
-		NOT = {
+		nor = {
 			culture_group = daemonic_group
-		}
-		NOT = {
 			trait = s_target_trait
-		}
-		NOT = {
 			num_of_friends = 2
-		}
-		NOT = {
 			num_of_rivals = 2
 		}
 		any_host_courtier = {
 			is_inaccessible_trigger = no
 			is_female = yes
 			prisoner = no
-			NOT = {
+			nor = {
 				culture_group = daemonic_group
-			}
-			NOT = {
 				trait = s_target_trait
 			}
 			age = 4
@@ -4460,38 +3982,38 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 6
+	weight_multiplier = {
+		factor = 0.8
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = kind
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = humble
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = timid
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = affectionate
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = wroth
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = envious
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = rowdy
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = brooding
 		}
 	}
@@ -4500,10 +4022,8 @@ character_event = {
 		log = "work event id = 100100 for [Root.GetBestName]"
 		random_host_courtier = {
 			limit = {
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				is_inaccessible_trigger = no
@@ -4532,10 +4052,8 @@ character_event = {
 		name = EVTOPTA100100
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = ambitious
 				}
 			}
@@ -4714,29 +4232,24 @@ character_event = {
 	only_capable = yes
 	religion_group = old_world_group
 	war = yes
+	is_triggered_only = yes
 
 	trigger = {
 		is_inaccessible_trigger = no
-		NOT = {
+		nor = {
 			culture_group = daemonic_group
-		}
-		NOT = {
 			trait = s_target_trait
 		}
 		in_command = yes
 		trait = crusader
-		NOT = {
+		nor = {
 			num_of_friends = 5
-		}
-		NOT = {
 			num_of_rivals = 5
 		}
 		host = {
 			any_courtier = {
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				is_female = no
@@ -4750,46 +4263,40 @@ character_event = {
 					sibling = ROOT
 				}
 				age = 16
-				NOT = {
+				nor = {
 					num_of_friends = 5
-				}
-				NOT = {
 					num_of_rivals = 5
-				}
-				NOT = {
 					is_friend = ROOT
-				}
-				NOT = {
 					is_rival = ROOT
 				}
 			}
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 6
+	weight_multiplier = {
+		factor = 0.8
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = deceitful
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = paranoid
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = cynical
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = gregarious
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = brave
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = honest
 		}
 	}
@@ -4800,10 +4307,8 @@ character_event = {
 			random_courtier = {
 				limit = {
 					is_inaccessible_trigger = no
-					NOT = {
+					nor = {
 						culture_group = daemonic_group
-					}
-					NOT = {
 						trait = s_target_trait
 					}
 					is_female = no
@@ -4817,16 +4322,10 @@ character_event = {
 						sibling = ROOT
 					}
 					age = 16
-					NOT = {
+					nor = {
 						num_of_friends = 5
-					}
-					NOT = {
 						num_of_rivals = 5
-					}
-					NOT = {
 						is_friend = ROOT
-					}
-					NOT = {
 						is_rival = ROOT
 					}
 				}
@@ -4867,10 +4366,8 @@ character_event = {
 		name = EVTOPTC100105
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = greedy
 				}
 			}
@@ -4886,10 +4383,8 @@ character_event = {
 		}
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = cynical
 				}
 			}
@@ -5104,13 +4599,12 @@ character_event = {
 	prisoner = no
 	capable_only = yes
 	only_rulers = yes
+	is_triggered_only = yes
 
 	trigger = {
 		is_inaccessible_trigger = no
-		NOT = {
+		nor = {
 			culture_group = daemonic_group
-		}
-		NOT = {
 			trait = s_target_trait
 		}
 		is_councillor = no
@@ -5122,20 +4616,16 @@ character_event = {
 			has_ambition = obj_become_spymaster
 			has_ambition = obj_become_spiritual
 		}
-		NOT = {
+		nor = {
 			num_of_friends = 5
-		}
-		NOT = {
 			num_of_rivals = 5
 		}
 		liege = {
 			any_courtier = {
 				is_inaccessible_trigger = no
 				# is_female = no
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				is_abroad = no
@@ -5147,10 +4637,8 @@ character_event = {
 					sibling = ROOT
 				}
 				age = 16
-				NOT = {
+				nor = {
 					num_of_friends = 5
-				}
-				NOT = {
 					num_of_rivals = 5
 				}
 				OR = {
@@ -5185,62 +4673,60 @@ character_event = {
 						}
 					}
 				}
-				NOT = {
+				nor = {
 					is_friend = ROOT
-				}
-				NOT = {
 					is_rival = ROOT
 				}
 			}
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 6
+	weight_multiplier = {
+		factor = 0.8
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = ambitious
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = trusting
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			OR = {
 				trait = quick
 				trait = shrewd
 			}
 		}
 		modifier = {
-			factor = 0.3
+			factor = 3.33
 			trait = genius
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = diligent
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = slothful
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = paranoid
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			OR = {
 				trait = slow
 				trait = dull
 			}
 		}
 		modifier = {
-			factor = 5
+			factor = 0.20
 			trait = imbecile
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = content
 		}
 	}
@@ -5256,10 +4742,8 @@ character_event = {
 				limit = {
 					is_inaccessible_trigger = no
 					# is_female = no
-					NOT = {
+					nor = {
 						culture_group = daemonic_group
-					}
-					NOT = {
 						trait = s_target_trait
 					}
 					is_abroad = no
@@ -5271,10 +4755,8 @@ character_event = {
 						sibling = ROOT
 					}
 					age = 16
-					NOT = {
+					nor = {
 						num_of_friends = 5
-					}
-					NOT = {
 						num_of_rivals = 5
 					}
 					OR = {
@@ -5309,10 +4791,8 @@ character_event = {
 							}
 						}
 					}
-					NOT = {
+					nor = {
 						is_friend = ROOT
-					}
-					NOT = {
 						is_rival = ROOT
 					}
 				}
@@ -5331,10 +4811,8 @@ character_event = {
 		trigger = {
 			has_ambition = obj_become_chancellor
 			any_courtier = {
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				has_job_title = job_chancellor
@@ -5345,10 +4823,8 @@ character_event = {
 		}
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = honest
 				}
 			}
@@ -5364,10 +4840,8 @@ character_event = {
 		}
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = diligent
 				}
 			}
@@ -5386,10 +4860,8 @@ character_event = {
 	option = {
 		name = EVTOPTC100110
 		trigger = {
-			NOT = {
+			nor = {
 				culture_group = daemonic_group
-			}
-			NOT = {
 				trait = s_target_trait
 			}
 			has_ambition = obj_become_marshal
@@ -5402,10 +4874,8 @@ character_event = {
 		}
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = honest
 				}
 			}
@@ -5421,10 +4891,8 @@ character_event = {
 		}
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = diligent
 				}
 			}
@@ -5453,10 +4921,8 @@ character_event = {
 		}
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = honest
 				}
 			}
@@ -5472,10 +4938,8 @@ character_event = {
 		}
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = diligent
 				}
 			}
@@ -5504,10 +4968,8 @@ character_event = {
 		}
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = honest
 				}
 			}
@@ -5523,10 +4985,8 @@ character_event = {
 		}
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = diligent
 				}
 			}
@@ -5555,10 +5015,8 @@ character_event = {
 		}
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = honest
 				}
 			}
@@ -5574,10 +5032,8 @@ character_event = {
 		}
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = diligent
 				}
 			}
@@ -5760,14 +5216,13 @@ character_event = {
 	prisoner = no
 	only_capable = yes
 	is_married = yes
+	is_triggered_only = yes
 
 	trigger = {
 		is_inaccessible_trigger = no
 		is_pregnant = yes
-		NOT = {
+		nor = {
 			num_of_friends = 5
-		}
-		NOT = {
 			num_of_rivals = 5
 		}
 		spouse = {
@@ -5775,10 +5230,8 @@ character_event = {
 		}
 		host = {
 			any_courtier = {
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				is_female = yes
@@ -5790,10 +5243,8 @@ character_event = {
 					sibling = ROOT
 				}
 				age = 16
-				NOT = {
+				nor = {
 					num_of_friends = 5
-				}
-				NOT = {
 					num_of_rivals = 5
 				}
 				opinion = {
@@ -5804,48 +5255,46 @@ character_event = {
 						who = ROOT value = 40
 					}
 				}
-				NOT = {
+				nor = {
 					is_friend = ROOT
-				}
-				NOT = {
 					is_rival = ROOT
 				}
 			}
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 6
+	weight_multiplier = {
+		factor = 0.8
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = gregarious
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = honest
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = trusting
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = kind
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = shy
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = deceitful
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = paranoid
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = cruel
 		}
 	}
@@ -5859,10 +5308,8 @@ character_event = {
 		host = {
 			random_courtier = {
 				limit = {
-					NOT = {
+					nor = {
 						culture_group = daemonic_group
-					}
-					NOT = {
 						trait = s_target_trait
 					}
 					is_female = yes
@@ -5874,10 +5321,8 @@ character_event = {
 						sibling = ROOT
 					}
 					age = 16
-					NOT = {
+					nor = {
 						num_of_friends = 5
-					}
-					NOT = {
 						num_of_rivals = 5
 					}
 					opinion = {
@@ -5888,10 +5333,8 @@ character_event = {
 							who = ROOT value = 40
 						}
 					}
-					NOT = {
+					nor = {
 						is_friend = ROOT
-					}
-					NOT = {
 						is_rival = ROOT
 					}
 				}
@@ -5974,12 +5417,11 @@ character_event = {
 	capable_only = yes
 	war = no
 	friends = yes
+	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		nor = {
 			culture_group = daemonic_group
-		}
-		NOT = {
 			trait = s_target_trait
 		}
 		in_command = no
@@ -6000,14 +5442,14 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 10
+	weight_multiplier = {
+		factor = 1
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = charitable
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = greedy
 		}
 	}
@@ -6231,12 +5673,11 @@ character_event = {
 	min_age = 16
 	capable_only = yes
 	war = yes
+	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		nor = {
 			trait = s_target_trait
-		}
-		NOT = {
 			culture_group = daemonic_group
 		}
 		OR = {
@@ -6246,10 +5687,8 @@ character_event = {
 		num_of_friends = 1
 		is_inaccessible_trigger = no
 		any_friend = {
-			NOT = {
+			nor = {
 				culture_group = daemonic_group
-			}
-			NOT = {
 				trait = s_target_trait
 			}
 			war = no
@@ -6271,14 +5710,14 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 6
+	weight_multiplier = {
+		factor = 0.8
 		modifier = {
-			factor = 5
+			factor = 0.20
 			trait = proud
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = trusting
 		}
 	}
@@ -6334,10 +5773,8 @@ character_event = {
 		name = EVTOPTC100160
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = proud
 				}
 			}
@@ -6593,12 +6030,11 @@ character_event = {
 	only_capable = yes
 	war = no
 	friends = yes
+	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		nor = {
 			culture_group = daemonic_group
-		}
-		NOT = {
 			trait = s_target_trait
 		}
 		in_command = no
@@ -6608,10 +6044,8 @@ character_event = {
 		is_inaccessible_trigger = no
 		any_friend = {
 			is_inaccessible_trigger = no
-			NOT = {
+			nor = {
 				culture_group = daemonic_group
-			}
-			NOT = {
 				trait = s_target_trait
 			}
 			prisoner = no
@@ -6619,63 +6053,51 @@ character_event = {
 				prisoner = no
 				war = no
 				in_command = no
-				NOT = {
+				nor = {
 					num_of_friends = 5
-				}
-				NOT = {
 					character = ROOT
-				}
-				NOT = {
 					is_close_relative = ROOT
-				}
-				NOT = {
 					is_friend = ROOT
-				}
-				NOT = {
 					is_rival = ROOT
-				}
-				NOT = {
 					is_lover = ROOT
-				}
-				NOT = {
 					is_consort = ROOT
 				}
 			}
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 20
+	weight_multiplier = {
+		factor = 0.50000
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = honest
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = gregarious
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = kind
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = trusting
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = deceitful
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = shy
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = cruel
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = paranoid
 		}
 	}
@@ -6685,10 +6107,8 @@ character_event = {
 		random_friend = {
 			limit = {
 				is_inaccessible_trigger = no
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				prisoner = no
@@ -6696,25 +6116,13 @@ character_event = {
 					prisoner = no
 					war = no
 					in_command = no
-					NOT = {
+					nor = {
 						num_of_friends = 5
-					}
-					NOT = {
 						character = ROOT
-					}
-					NOT = {
 						is_close_relative = ROOT
-					}
-					NOT = {
 						is_friend = ROOT
-					}
-					NOT = {
 						is_rival = ROOT
-					}
-					NOT = {
 						is_lover = ROOT
-					}
-					NOT = {
 						is_consort = ROOT
 					}
 				}
@@ -6724,34 +6132,20 @@ character_event = {
 				random_friend = {
 					limit = {
 						is_inaccessible_trigger = no
-						NOT = {
+						nor = {
 							culture_group = daemonic_group
-						}
-						NOT = {
 							trait = s_target_trait
 						}
 						prisoner = no
 						war = no
 						in_command = no
-						NOT = {
+						nor = {
 							num_of_friends = 5
-						}
-						NOT = {
 							character = ROOT
-						}
-						NOT = {
 							is_close_relative = ROOT
-						}
-						NOT = {
 							is_friend = ROOT
-						}
-						NOT = {
 							is_rival = ROOT
-						}
-						NOT = {
 							is_lover = ROOT
-						}
-						NOT = {
 							is_consort = ROOT
 						}
 					}
@@ -6810,10 +6204,8 @@ character_event = {
 		}
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = content
 				}
 			}
@@ -7091,13 +6483,9 @@ character_event = {
 	option = {
 		name = EVTOPTA100174
 		trigger = {
-			NOT = {
+			nor = {
 				culture_group = daemonic_group
-			}
-			NOT = {
 				trait = s_target_trait
-			}
-			NOT = {
 				has_character_flag = rejected_friend
 			}
 		}
@@ -7107,10 +6495,8 @@ character_event = {
 	option = {
 		name = EVTOPTB100174
 		trigger = {
-			NOT = {
+			nor = {
 				culture_group = daemonic_group
-			}
-			NOT = {
 				trait = s_target_trait
 			}
 			has_character_flag = rejected_friend
@@ -7151,13 +6537,12 @@ character_event = {
 	capable_only = yes
 	war = no
 	friends = yes
+	is_triggered_only = yes
 
 	trigger = {
 		is_inaccessible_trigger = no
-		NOT = {
+		nor = {
 			culture_group = daemonic_group
-		}
-		NOT = {
 			trait = s_target_trait
 		}
 		is_heretic = no
@@ -7172,10 +6557,8 @@ character_event = {
 		}
 		any_friend = {
 			is_inaccessible_trigger = no
-			NOT = {
+			nor = {
 				culture_group = daemonic_group
-			}
-			NOT = {
 				trait = s_target_trait
 			}
 			war = no
@@ -7194,38 +6577,38 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 6
+	weight_multiplier = {
+		factor = 0.8
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = zealous
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = gregarious
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = kind
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = trusting
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = cynical
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = shy
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = cruel
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = paranoid
 		}
 	}
@@ -7244,10 +6627,8 @@ character_event = {
 		random_friend = {
 			limit = {
 				is_inaccessible_trigger = no
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				war = no
@@ -7275,10 +6656,8 @@ character_event = {
 		random_friend = {
 			limit = {
 				is_inaccessible_trigger = no
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				war = no
@@ -7304,10 +6683,8 @@ character_event = {
 		random_friend = {
 			limit = {
 				is_inaccessible_trigger = no
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				war = no
@@ -7342,10 +6719,8 @@ character_event = {
 		random_friend = {
 			limit = {
 				is_inaccessible_trigger = no
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				war = no
@@ -7376,10 +6751,8 @@ character_event = {
 		random_friend = {
 			limit = {
 				is_inaccessible_trigger = no
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				war = no
@@ -7495,13 +6868,9 @@ character_event = {
 	option = {
 		name = EVTOPTA100183
 		trigger = {
-			NOT = {
+			nor = {
 				culture_group = daemonic_group
-			}
-			NOT = {
 				trait = s_target_trait
-			}
-			NOT = {
 				FROM = {
 					religion = ROOT
 				}
@@ -7577,13 +6946,9 @@ character_event = {
 	option = {
 		name = EVTOPTA100186
 		trigger = {
-			NOT = {
+			nor = {
 				culture_group = daemonic_group
-			}
-			NOT = {
 				trait = s_target_trait
-			}
-			NOT = {
 				has_character_flag = friend_religion
 			}
 		}
@@ -7620,12 +6985,11 @@ character_event = {
 	capable_only = yes
 	war = no
 	friends = yes
+	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		nor = {
 			culture_group = daemonic_group
-		}
-		NOT = {
 			trait = s_target_trait
 		}
 		in_command = no
@@ -7642,10 +7006,8 @@ character_event = {
 		}
 		any_friend = {
 			is_adult = yes
-			NOT = {
+			nor = {
 				culture_group = daemonic_group
-			}
-			NOT = {
 				trait = s_target_trait
 			}
 			war = no
@@ -7659,38 +7021,38 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 6
+	weight_multiplier = {
+		factor = 0.8
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = honest
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = gregarious
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = kind
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = trusting
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = deceitful
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = shy
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = cruel
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = paranoid
 		}
 	}
@@ -7711,10 +7073,8 @@ character_event = {
 		random_friend = {
 			limit = {
 				is_adult = yes
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				war = no
@@ -7739,10 +7099,8 @@ character_event = {
 		name = EVTOPTB100190
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = ambitious
 				}
 			}
@@ -7968,13 +7326,9 @@ character_event = {
 	option = {
 		name = EVTOPTA100195
 		trigger = {
-			NOT = {
+			nor = {
 				culture_group = daemonic_group
-			}
-			NOT = {
 				trait = s_target_trait
-			}
-			NOT = {
 				has_character_flag = paid_diplomacy
 			}
 		}
@@ -7990,10 +7344,8 @@ character_event = {
 	option = {
 		name = EVTOPTB100195
 		trigger = {
-			NOT = {
+			nor = {
 				culture_group = daemonic_group
-			}
-			NOT = {
 				trait = s_target_trait
 			}
 			has_character_flag = paid_diplomacy
@@ -8019,36 +7371,25 @@ character_event = {
 	capable_only = yes
 	war = no
 	friends = yes
+	is_triggered_only = yes
 
 	trigger = {
 		is_inaccessible_trigger = no
 		in_command = no
 		martial = 5
-		NOT = {
+		nor = {
 			culture_group = daemonic_group
-		}
-		NOT = {
 			trait = s_target_trait
-		}
-		NOT = {
 			martial = 10
-		}
-		NOT = {
 			has_job_title = job_marshal
-		}
-		NOT = {
 			has_character_modifier = friend_martial_timer
-		}
-		NOT = {
 			trait = brilliant_strategist
 		}
 		any_friend = {
 			is_adult = yes
 			is_inaccessible_trigger = no
-			NOT = {
+			nor = {
 				culture_group = daemonic_group
-			}
-			NOT = {
 				trait = s_target_trait
 			}
 			war = no
@@ -8060,35 +7401,33 @@ character_event = {
 				trait = duelist
 				martial = 11
 			}
-			NOT = {
+			nor = {
 				has_job_title = job_marshal
-			}
-			NOT = {
 				trait = misguided_warrior
 			}
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 6
+	weight_multiplier = {
+		factor = 0.8
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = paranoid
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = trusting
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = misguided_warrior
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = tough_soldier
 		}
 		modifier = {
-			factor = 100
+			factor = 0.01
 			trait = skilled_tactician
 		}
 	}
@@ -8109,10 +7448,8 @@ character_event = {
 		random_friend = {
 			limit = {
 				is_adult = yes
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				war = no
@@ -8124,10 +7461,8 @@ character_event = {
 					trait = duelist
 					martial = 11
 				}
-				NOT = {
+				nor = {
 					trait = misguided_warrior
-				}
-				NOT = {
 					has_job_title = job_marshal
 				}
 				is_inaccessible_trigger = no
@@ -8415,13 +7750,12 @@ character_event = {
 	capable_only = yes
 	friends = yes
 	war = no
+	is_triggered_only = yes
 
 	trigger = {
 		is_inaccessible_trigger = no
-		NOT = {
+		nor = {
 			culture_group = daemonic_group
-		}
-		NOT = {
 			trait = s_target_trait
 		}
 		in_command = no
@@ -8443,10 +7777,8 @@ character_event = {
 			}
 		}
 		any_friend = {
-			NOT = {
+			nor = {
 				culture_group = daemonic_group
-			}
-			NOT = {
 				trait = s_target_trait
 			}
 			war = no
@@ -8461,38 +7793,38 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 6
+	weight_multiplier = {
+		factor = 0.8
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = honest
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = gregarious
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = kind
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = trusting
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = deceitful
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = shy
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = cruel
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = paranoid
 		}
 	}
@@ -8512,10 +7844,8 @@ character_event = {
 		name = EVTOPTA100210
 		random_friend = {
 			limit = {
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				war = no
@@ -8541,10 +7871,8 @@ character_event = {
 		name = EVTOPTB100210
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = ambitious
 				}
 			}
@@ -8552,10 +7880,8 @@ character_event = {
 		}
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = diligent
 				}
 			}
@@ -8782,13 +8108,9 @@ character_event = {
 	option = {
 		name = EVTOPTA100215
 		trigger = {
-			NOT = {
+			nor = {
 				trait = s_target_trait
-			}
-			NOT = {
 				culture_group = daemonic_group
-			}
-			NOT = {
 				has_character_flag = paid_stewardship
 			}
 		}
@@ -8804,10 +8126,8 @@ character_event = {
 	option = {
 		name = EVTOPTB100215
 		trigger = {
-			NOT = {
+			nor = {
 				culture_group = daemonic_group
-			}
-			NOT = {
 				trait = s_target_trait
 			}
 			has_character_flag = paid_stewardship
@@ -8832,28 +8152,23 @@ character_event = {
 	capable_only = yes
 	war = no
 	friends = yes
+	is_triggered_only = yes
 
 	trigger = {
 		is_inaccessible_trigger = no
-		NOT = {
+		nor = {
 			culture_group = daemonic_group
-		}
-		NOT = {
 			trait = s_target_trait
 		}
 		in_command = no
 		intrigue = 5
-		NOT = {
+		nor = {
 			intrigue = 10
-		}
-		NOT = {
 			has_character_modifier = friend_intrigue_timer
 		}
 		any_friend = {
-			NOT = {
+			nor = {
 				culture_group = daemonic_group
-			}
-			NOT = {
 				trait = s_target_trait
 			}
 			war = no
@@ -8867,38 +8182,38 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 6
+	weight_multiplier = {
+		factor = 0.8
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = honest
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = gregarious
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = kind
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = trusting
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = deceitful
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = shy
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = cruel
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = paranoid
 		}
 	}
@@ -8952,10 +8267,8 @@ character_event = {
 		}
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					trait = temperate
-				}
-				NOT = {
 					trait = paranoid
 				}
 			}
@@ -9294,35 +8607,26 @@ character_event = {
 	capable_only = yes
 	war = no
 	friends = yes
+	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		nor = {
 			culture_group = daemonic_group
-		}
-		NOT = {
 			trait = s_target_trait
 		}
 		in_command = no
 		learning = 5
-		NOR = {
+		nor = {
 			religion = ormazd
 			religion = kitabid
-		}
-		NOT = {
 			learning = 10
-		}
-		NOT = {
 			has_character_modifier = friend_learning_timer
-		}
-		NOT = {
 			has_character_modifier = pious_priests
 		}
 		is_inaccessible_trigger = no
 		any_friend = {
-			NOT = {
+			nor = {
 				culture_group = daemonic_group
-			}
-			NOT = {
 				trait = s_target_trait
 			}
 			war = no
@@ -9343,38 +8647,38 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 6
+	weight_multiplier = {
+		factor = 0.8
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = honest
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = gregarious
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = kind
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = trusting
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = deceitful
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = shy
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = cruel
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = paranoid
 		}
 	}
@@ -9704,31 +9008,24 @@ character_event = {
 	prisoner = no
 	war = no
 	friends = yes
+	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		nor = {
 			culture_group = daemonic_group
-		}
-		NOT = {
 			trait = s_target_trait
 		}
 		in_command = no
-		NOT = {
+		nor = {
 			uses_decadence = yes
-		}
-		NOT = {
 			lifestyle_traits = 1
-		}
-		NOT = {
 			has_character_flag = LE_ST
 		}
 		num_of_children = 2
 		is_inaccessible_trigger = no
 		any_friend = {
-			NOT = {
+			nor = {
 				culture_group = daemonic_group
-			}
-			NOT = {
 				trait = s_target_trait
 			}
 			war = no
@@ -9740,22 +9037,22 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 16
+	weight_multiplier = {
+		factor = 0.62500
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = ambitious
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = chaste
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = slothful
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = lustful
 		}
 	}
@@ -9944,31 +9241,24 @@ character_event = {
 	prisoner = no
 	war = no
 	friends = yes
+	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		nor = {
 			culture_group = daemonic_group
-		}
-		NOT = {
 			trait = s_target_trait
 		}
 		in_command = no
-		NOT = {
+		nor = {
 			uses_decadence = yes
-		}
-		NOT = {
 			lifestyle_traits = 1
-		}
-		NOT = {
 			has_character_flag = LE_ST
 		}
 		num_of_children = 2
 		is_inaccessible_trigger = no
 		any_friend = {
-			NOT = {
+			nor = {
 				culture_group = daemonic_group
-			}
-			NOT = {
 				trait = s_target_trait
 			}
 			war = no
@@ -9979,22 +9269,22 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 16
+	weight_multiplier = {
+		factor = 0.62500
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = ambitious
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = chaste
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = slothful
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = lustful
 		}
 	}
@@ -10200,28 +9490,23 @@ character_event = {
 	lacks_dlc = "Way of Life"
 	war = no
 	friends = yes
+	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		nor = {
 			culture_group = daemonic_group
-		}
-		NOT = {
 			trait = s_target_trait
 		}
 		in_command = no
-		NOT = {
+		nor = {
 			lifestyle_traits = 1
-		}
-		NOT = {
 			has_character_flag = LE_ST
 		}
 		# num_of_children = 1
 		is_inaccessible_trigger = no
 		any_friend = {
-			NOT = {
+			nor = {
 				culture_group = daemonic_group
-			}
-			NOT = {
 				trait = s_target_trait
 			}
 			war = no
@@ -10232,22 +9517,22 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 16
+	weight_multiplier = {
+		factor = 0.62500
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = ambitious
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			learning = 15
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = slothful
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = content
 		}
 	}
@@ -10256,10 +9541,8 @@ character_event = {
 		log = "work event id = 100260 for [Root.GetBestName]"
 		random_friend = {
 			limit = {
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				war = no
@@ -10444,12 +9727,11 @@ character_event = {
 	capable_only = yes
 	war = no
 	friends = yes
+	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		nor = {
 			culture_group = daemonic_group
-		}
-		NOT = {
 			trait = s_target_trait
 		}
 		in_command = no
@@ -10498,22 +9780,22 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 83
+	weight_multiplier = {
+		factor = 0.12048
 		modifier = {
-			factor = 4
+			factor = 0.25
 			trait = gregarious
 		}
 		modifier = {
-			factor = 4
+			factor = 0.25
 			trait = trusting
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = paranoid
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = shy
 		}
 	}
@@ -10522,10 +9804,8 @@ character_event = {
 		log = "work event id = 100350 for [Root.GetBestName]"
 		random_friend = {
 			limit = {
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				war = no
@@ -10693,13 +9973,9 @@ character_event = {
 	option = {
 		name = EVTOPTA100353
 		trigger = {
-			NOT = {
+			nor = {
 				culture_group = daemonic_group
-			}
-			NOT = {
 				trait = s_target_trait
-			}
-			NOT = {
 				has_character_flag = friends_nomore
 			}
 		}
@@ -10709,10 +9985,8 @@ character_event = {
 	option = {
 		name = EVTOPTB100353
 		trigger = {
-			NOT = {
+			nor = {
 				culture_group = daemonic_group
-			}
-			NOT = {
 				trait = s_target_trait
 			}
 			has_character_flag = friends_nomore
@@ -10762,22 +10036,19 @@ character_event = {
 	capable_only = yes
 	war = no
 	friends = yes
+	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		nor = {
 			culture_group = daemonic_group
-		}
-		NOT = {
 			trait = s_target_trait
 		}
 		in_command = no
 		martial = 10
 		is_inaccessible_trigger = no
 		any_friend = {
-			NOT = {
+			nor = {
 				culture_group = daemonic_group
-			}
-			NOT = {
 				trait = s_target_trait
 			}
 			war = no
@@ -10794,10 +10065,8 @@ character_event = {
 			}
 			is_inaccessible_trigger = no
 			any_rival = {
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				war = no
@@ -10818,14 +10087,14 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 16
+	weight_multiplier = {
+		factor = 0.62500
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = brave
 		}
 		modifier = {
-			factor = 3
+			factor = 0.33
 			trait = craven
 		}
 	}
@@ -10834,10 +10103,8 @@ character_event = {
 		log = "work event id = 100400 for [Root.GetBestName]"
 		random_friend = {
 			limit = {
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				war = no
@@ -10854,10 +10121,8 @@ character_event = {
 				}
 				is_inaccessible_trigger = no
 				any_rival = {
-					NOT = {
+					nor = {
 						culture_group = daemonic_group
-					}
-					NOT = {
 						trait = s_target_trait
 					}
 					war = no
@@ -10879,10 +10144,8 @@ character_event = {
 			save_event_target_as = friend_in_danger
 			random_rival = {
 				limit = {
-					NOT = {
+					nor = {
 						culture_group = daemonic_group
-					}
-					NOT = {
 						trait = s_target_trait
 					}
 					war = no
@@ -11044,12 +10307,11 @@ character_event = {
 	prisoner = no
 	war = no
 	rivals = yes
+	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		nor = {
 			culture_group = daemonic_group
-		}
-		NOT = {
 			trait = s_target_trait
 		}
 		liege = {
@@ -11075,10 +10337,8 @@ character_event = {
 			trait = pneumonic
 		}
 		any_rival = {
-			NOT = {
+			nor = {
 				culture_group = daemonic_group
-			}
-			NOT = {
 				trait = s_target_trait
 			}
 			is_female = no
@@ -11134,32 +10394,32 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 125
+	weight_multiplier = {
+		factor = 0.08000
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = just
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = cruel
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = arbitrary
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = kind
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			liege = {
 				realm_size = 100
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			liege = {
 				realm_size = 150
 			}
@@ -11170,10 +10430,8 @@ character_event = {
 		log = "work event id = 100410 for [Root.GetBestName]"
 		random_rival = {
 			limit = {
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				is_female = no
@@ -11455,10 +10713,8 @@ character_event = {
 		}
 		random_rival = {
 			limit = {
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				has_character_flag = duel_rival
@@ -11715,10 +10971,8 @@ character_event = {
 	option = {
 		name = EVTOPTB100415
 		trigger = {
-			NOT = {
+			nor = {
 				trait = wounded
-			}
-			NOT = {
 				FROM = {
 					trait = wounded
 				}
@@ -11759,21 +11013,18 @@ character_event = {
 	has_character_flag = attending_tournament
 	war = no
 	rivals = yes
+	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		nor = {
 			culture_group = daemonic_group
-		}
-		NOT = {
 			trait = s_target_trait
 		}
 		in_command = no
 		is_inaccessible_trigger = no
 		any_rival = {
-			NOT = {
+			nor = {
 				culture_group = daemonic_group
-			}
-			NOT = {
 				trait = s_target_trait
 			}
 			war = no
@@ -11791,38 +11042,38 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 16
+	weight_multiplier = {
+		factor = 0.62500
 		modifier = {
-			factor = 3
+			factor = 0.33
 			trait = honest
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = gregarious
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = kind
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = trusting
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = deceitful
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = shy
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = cruel
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = paranoid
 		}
 	}
@@ -11831,10 +11082,8 @@ character_event = {
 		log = "work event id = 100420 for [Root.GetBestName]"
 		random_rival = {
 			limit = {
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				war = no
@@ -11943,10 +11192,8 @@ character_event = {
 		name = EVTOPTA100421
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = just
 				}
 			}
@@ -11963,10 +11210,8 @@ character_event = {
 		FROM = {
 			random_rival = {
 				limit = {
-					NOT = {
+					nor = {
 						culture_group = daemonic_group
-					}
-					NOT = {
 						trait = s_target_trait
 					}
 					has_character_flag = tournament_cheater
@@ -11995,10 +11240,8 @@ character_event = {
 		FROM = {
 			random_rival = {
 				limit = {
-					NOT = {
+					nor = {
 						culture_group = daemonic_group
-					}
-					NOT = {
 						trait = s_target_trait
 					}
 					has_character_flag = tournament_cheater
@@ -12026,10 +11269,8 @@ character_event = {
 		name = EVTOPTC100421
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = arbitrary
 				}
 			}
@@ -12197,10 +11438,8 @@ character_event = {
 	option = {
 		name = EVTOPTA100426
 		trigger = {
-			NOT = {
+			nor = {
 				has_character_flag = rival_banished
-			}
-			NOT = {
 				has_character_flag = rival_imprisoned
 			}
 		}
@@ -12424,10 +11663,8 @@ character_event = {
 		}
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = craven
 				}
 			}
@@ -12470,10 +11707,8 @@ character_event = {
 	option = {
 		name = EVTOPTB100428
 		trigger = {
-			NOT = {
+			nor = {
 				trait = wounded
-			}
-			NOT = {
 				FROM = {
 					trait = wounded
 				}
@@ -12536,21 +11771,18 @@ character_event = {
 	religion_group = old_world_group
 	war = no
 	rivals = yes
+	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		nor = {
 			culture_group = daemonic_group
-		}
-		NOT = {
 			trait = s_target_trait
 		}
 		in_command = no
 		is_heretic = no
 		any_rival = {
-			NOT = {
+			nor = {
 				culture_group = daemonic_group
-			}
-			NOT = {
 				trait = s_target_trait
 			}
 			war = no
@@ -12565,14 +11797,14 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 25
+	weight_multiplier = {
+		factor = 0.40000
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = zealous
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = cynical
 		}
 	}
@@ -12585,10 +11817,8 @@ character_event = {
 		name = EVTOPTA100440
 		random_rival = {
 			limit = {
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				war = no
@@ -12622,10 +11852,8 @@ character_event = {
 		name = EVTOPTC100440
 		random_rival = {
 			limit = {
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				war = no
@@ -12669,10 +11897,8 @@ character_event = {
 		FROM = {
 			random_rival = {
 				limit = {
-					NOT = {
+					nor = {
 						culture_group = daemonic_group
-					}
-					NOT = {
 						trait = s_target_trait
 					}
 					war = no
@@ -12734,10 +11960,8 @@ character_event = {
 		name = EVTOPTA100442
 		random_rival = {
 			limit = {
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				war = no
@@ -12830,21 +12054,18 @@ character_event = {
 	prisoner = no
 	war = no
 	rivals = yes
+	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		nor = {
 			culture_group = daemonic_group
-		}
-		NOT = {
 			trait = s_target_trait
 		}
 		in_command = no
 		independent = no
 		any_rival = {
-			NOT = {
+			nor = {
 				culture_group = daemonic_group
-			}
-			NOT = {
 				trait = s_target_trait
 			}
 			war = no
@@ -12880,14 +12101,14 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 25
+	weight_multiplier = {
+		factor = 0.40000
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = wroth
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = honest
 		}
 	}
@@ -12900,10 +12121,8 @@ character_event = {
 		name = EVTOTPA100450
 		random_rival = {
 			limit = {
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				war = no
@@ -12940,10 +12159,8 @@ character_event = {
 		name = EVTOTPB100450
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = honest
 				}
 			}
@@ -13165,20 +12382,17 @@ character_event = {
 	prisoner = no
 	war = no
 	rivals = yes
+	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		nor = {
 			culture_group = daemonic_group
-		}
-		NOT = {
 			trait = s_target_trait
 		}
 		in_command = no
 		any_rival = {
-			NOT = {
+			nor = {
 				culture_group = daemonic_group
-			}
-			NOT = {
 				trait = s_target_trait
 			}
 			war = no
@@ -13205,22 +12419,22 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 25
+	weight_multiplier = {
+		factor = 0.40000
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = cruel
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = wroth
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = kind
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = charitable
 		}
 	}
@@ -13233,10 +12447,8 @@ character_event = {
 		name = EVTOTPA100460
 		random_rival = {
 			limit = {
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				war = no
@@ -13284,10 +12496,8 @@ character_event = {
 		name = EVTOTPB100460
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					num_of_traits = 5
-				}
-				NOT = {
 					trait = kind
 				}
 			}
@@ -13335,10 +12545,8 @@ character_event = {
 		}
 		random_rival = {
 			limit = {
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				war = no
@@ -13428,12 +12636,11 @@ character_event = {
 	prisoner = no
 	war = no
 	rivals = yes
+	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		nor = {
 			culture_group = daemonic_group
-		}
-		NOT = {
 			trait = s_target_trait
 		}
 		in_command = no
@@ -13441,10 +12648,8 @@ character_event = {
 			has_character_modifier = recalculate_rivalry_modifier
 		}
 		any_rival = {
-			NOT = {
+			nor = {
 				culture_group = daemonic_group
-			}
-			NOT = {
 				trait = s_target_trait
 			}
 			war = no
@@ -13457,14 +12662,14 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 25
+	weight_multiplier = {
+		factor = 0.40000
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = proud
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = wroth
 		}
 	}
@@ -13484,10 +12689,8 @@ character_event = {
 		name = EVTOPTA100470
 		random_rival = {
 			limit = {
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				war = no
@@ -13582,21 +12785,18 @@ character_event = {
 	prisoner = no
 	war = no
 	rivals = yes
+	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		nor = {
 			culture_group = daemonic_group
-		}
-		NOT = {
 			trait = s_target_trait
 		}
 		in_command = no
 		independent = no
 		liege = {
-			NOT = {
+			nor = {
 				culture_group = daemonic_group
-			}
-			NOT = {
 				trait = s_target_trait
 			}
 			war = no
@@ -13610,14 +12810,14 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 25
+	weight_multiplier = {
+		factor = 0.40000
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = diligent
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = envious
 		}
 	}
@@ -13630,10 +12830,8 @@ character_event = {
 		name = EVTOPTA100480
 		any_liege = {
 			limit = {
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				war = no
@@ -13657,10 +12855,8 @@ character_event = {
 		name = EVTOPTB100480
 		any_liege = {
 			limit = {
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				war = no
@@ -13684,10 +12880,8 @@ character_event = {
 		name = EVTOPTC100480
 		any_liege = {
 			limit = {
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				war = no
@@ -14035,10 +13229,8 @@ character_event = {
 	rivals = yes
 	is_triggered_only = yes
 	trigger = {
-		NOT = {
+		nor = {
 			culture_group = daemonic_group
-		}
-		NOT = {
 			trait = s_target_trait
 		}
 		in_command = no
@@ -14046,10 +13238,8 @@ character_event = {
 			has_character_modifier = religious_rival_timer
 		}
 		FROM = {
-			NOT = {
+			nor = {
 				culture_group = daemonic_group
-			}
-			NOT = {
 				trait = s_target_trait
 			}
 			war = no
@@ -14128,10 +13318,8 @@ character_event = {
 		name = EVTOPTB100500
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					trait = zealous
-				}
-				NOT = {
 					trait = cynical
 				}
 			}
@@ -14281,27 +13469,22 @@ character_event = {
 	only_rulers = yes
 	prisoner = no
 	war = no
+	is_triggered_only = yes
 	rivals = yes
 	trigger = {
-		NOT = {
+		nor = {
 			culture_group = daemonic_group
-		}
-		NOT = {
 			trait = s_target_trait
 		}
 		in_command = no
 		independent = no
-		NOT = {
+		nor = {
 			has_character_flag = holding_grand_hunt
-		}
-		NOT = {
 			has_character_modifier = hunting_rival_timer
 		}
 		liege = {
-			NOT = {
+			nor = {
 				culture_group = daemonic_group
-			}
-			NOT = {
 				trait = s_target_trait
 			}
 			war = no
@@ -14310,10 +13493,8 @@ character_event = {
 			has_character_flag = holding_grand_hunt
 		}
 		any_rival = {
-			NOT = {
+			nor = {
 				culture_group = daemonic_group
-			}
-			NOT = {
 				trait = s_target_trait
 			}
 			war = no
@@ -14330,8 +13511,8 @@ character_event = {
 			}
 		}
 	}
-	mean_time_to_happen = {
-		years = 25
+	weight_multiplier = {
+		factor = 0.40000
 		modifier = {
 			factor = 0.5
 			trait = brave
@@ -14363,10 +13544,8 @@ character_event = {
 		name = EVTOPTA100510
 		random_rival = {
 			limit = {
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				war = no
@@ -14439,10 +13618,8 @@ character_event = {
 				martial = 10
 			}
 			any_courtier = {
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				war = no
@@ -14454,10 +13631,8 @@ character_event = {
 		}
 		random_courtier = {
 			limit = {
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				war = no
@@ -14481,10 +13656,8 @@ character_event = {
 		}
 		random_rival = {
 			limit = {
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				war = no
@@ -14675,13 +13848,9 @@ character_event = {
 		name = EVTOPTD100511
 
 		trigger = {
-			NOT = {
+			nor = {
 				trait = wounded
-			}
-			NOT = {
 				is_maimed_trigger = yes
-			}
-			NOT = {
 				has_character_flag = rival_killed_me
 			}
 		}
@@ -14752,10 +13921,8 @@ character_event = {
 
 		trigger = {
 			FROM = {
-				NOT = {
+				nor = {
 					is_maimed_trigger = yes
-				}
-				NOT = {
 					trait = wounded
 				}
 			}
@@ -14854,26 +14021,21 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	has_character_flag = guest_feast_started
+	is_triggered_only = yes
 	war = no
 	trigger = {
-		NOT = {
+		nor = {
 			culture_group = daemonic_group
-		}
-		NOT = {
 			trait = s_target_trait
 		}
 		in_command = no
-		NOT = {
+		nor = {
 			has_character_modifier = master_poisoner
-		}
-		NOT = {
 			has_character_modifier = the_content
 		}
 		any_rival = {
-			NOT = {
+			nor = {
 				culture_group = daemonic_group
-			}
-			NOT = {
 				trait = s_target_trait
 			}
 			war = no
@@ -14886,8 +14048,8 @@ character_event = {
 			has_character_flag = host_feast_started
 		}
 	}
-	mean_time_to_happen = {
-		years = 8
+	weight_multiplier = {
+		factor = 0.6
 		modifier = {
 			factor = 0.5
 			trait = deceitful
@@ -14913,10 +14075,8 @@ character_event = {
 		name = EVTOPTA100520
 		random_rival = {
 			limit = {
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				war = no
@@ -15279,10 +14439,8 @@ character_event = {
 			}
 			random_vassal = {
 				limit = {
-					NOT = {
+					nor = {
 						culture_group = daemonic_group
-					}
-					NOT = {
 						trait = s_target_trait
 					}
 					age = 16
@@ -15313,10 +14471,8 @@ character_event = {
 		if = {
 			limit = {
 				OR = {
-					NOT = {
+					nor = {
 						intrigue = 15
-					}
-					NOT = {
 						any_courtier = {
 							has_job_title = job_spymaster
 							intrigue = 15
@@ -15477,10 +14633,8 @@ character_event = {
 		FROM = {
 			any_vassal = {
 				limit = {
-					NOT = {
+					nor = {
 						culture_group = daemonic_group
-					}
-					NOT = {
 						trait = s_target_trait
 					}
 					OR = {
@@ -15523,10 +14677,8 @@ character_event = {
 		FROM = {
 			any_vassal = {
 				limit = {
-					NOT = {
+					nor = {
 						culture_group = daemonic_group
-					}
-					NOT = {
 						trait = s_target_trait
 					}
 					OR = {
@@ -15673,20 +14825,17 @@ character_event = {
 	min_age = 16
 	capable_only = yes
 	prisoner = no
+	is_triggered_only = yes
 	rivals = yes
 	trigger = {
-		NOT = {
+		nor = {
 			culture_group = daemonic_group
-		}
-		NOT = {
 			trait = s_target_trait
 		}
 		in_command = no
 		any_rival = {
-			NOT = {
+			nor = {
 				culture_group = daemonic_group
-			}
-			NOT = {
 				trait = s_target_trait
 			}
 			war = no
@@ -15701,8 +14850,8 @@ character_event = {
 			has_character_modifier = revenge_seeker_timer
 		}
 	}
-	mean_time_to_happen = {
-		years = 41
+	weight_multiplier = {
+		factor = 0.24390
 		modifier = {
 			factor = 0.5
 			trait = impaler
@@ -15736,10 +14885,8 @@ character_event = {
 		trigger = {
 			is_ruler = yes
 			any_rival = {
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				war = no
@@ -15754,10 +14901,8 @@ character_event = {
 		}
 		random_rival = {
 			limit = {
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				war = no
@@ -15813,10 +14958,8 @@ character_event = {
 		}
 		random_rival = {
 			limit = {
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				war = no
@@ -15849,10 +14992,8 @@ character_event = {
 		}
 		random_rival = {
 			limit = {
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				war = no
@@ -15875,10 +15016,8 @@ character_event = {
 		name = EVTOPTD100530 # Ignore
 		random_rival = {
 			limit = {
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				war = no
@@ -16076,10 +15215,8 @@ character_event = {
 				can_be_maimed_trigger = yes
 				FROM = {
 					OR = {
-						NOT = {
+						nor = {
 							intrigue = 15
-						}
-						NOT = {
 							job_spymaster = {
 								intrigue = 15
 							}
@@ -16230,10 +15367,8 @@ character_event = {
 				is_maimed_trigger = yes
 				FROM = {
 					OR = {
-						NOT = {
+						nor = {
 							intrigue = 15
-						}
-						NOT = {
 							job_spymaster = {
 								intrigue = 15
 							}
@@ -16411,10 +15546,8 @@ character_event = {
 				can_be_maimed_trigger = yes
 				FROM = {
 					OR = {
-						NOT = {
+						nor = {
 							intrigue = 15
-						}
-						NOT = {
 							job_spymaster = {
 								intrigue = 15
 							}
@@ -16565,10 +15698,8 @@ character_event = {
 				is_maimed_trigger = yes
 				FROM = {
 					OR = {
-						NOT = {
+						nor = {
 							intrigue = 15
-						}
-						NOT = {
 							job_spymaster = {
 								intrigue = 15
 							}
@@ -16652,10 +15783,8 @@ character_event = {
 
 		trigger = {
 			has_character_flag = revenge_killer
-			NOT = {
+			nor = {
 				has_character_flag = revenge_maim
-			}
-			NOT = {
 				has_character_flag = revenge_wound
 			}
 		}
@@ -16672,13 +15801,9 @@ character_event = {
 		name = EVTOPTB100535
 
 		trigger = {
-			NOT = {
+			nor = {
 				has_character_flag = revenge_killer
-			}
-			NOT = {
 				has_character_flag = revenge_maim
-			}
-			NOT = {
 				has_character_flag = revenge_wound
 			}
 		}
@@ -16692,10 +15817,8 @@ character_event = {
 
 		trigger = {
 			has_character_flag = revenge_wound
-			NOT = {
+			nor = {
 				has_character_flag = revenge_killer
-			}
-			NOT = {
 				has_character_flag = revenge_maim
 			}
 		}
@@ -16713,10 +15836,8 @@ character_event = {
 
 		trigger = {
 			has_character_flag = revenge_maim
-			NOT = {
+			nor = {
 				has_character_flag = revenge_killer
-			}
-			NOT = {
 				has_character_flag = revenge_wound
 			}
 		}
@@ -16745,17 +15866,13 @@ character_event = {
 		name = EVTOPTA100536
 
 		trigger = {
-			NOT = {
+			nor = {
 				culture_group = daemonic_group
-			}
-			NOT = {
 				trait = s_target_trait
 			}
 			has_character_flag = revenge_killer
-			NOT = {
+			nor = {
 				has_character_flag = revenge_maim
-			}
-			NOT = {
 				has_character_flag = revenge_wound
 			}
 		}
@@ -16772,13 +15889,9 @@ character_event = {
 		name = EVTOPTB100536
 
 		trigger = {
-			NOT = {
+			nor = {
 				has_character_flag = revenge_killer
-			}
-			NOT = {
 				has_character_flag = revenge_maim
-			}
-			NOT = {
 				has_character_flag = revenge_wound
 			}
 		}
@@ -16792,10 +15905,8 @@ character_event = {
 
 		trigger = {
 			has_character_flag = revenge_wound
-			NOT = {
+			nor = {
 				has_character_flag = revenge_killer
-			}
-			NOT = {
 				has_character_flag = revenge_maim
 			}
 		}
@@ -16813,10 +15924,8 @@ character_event = {
 
 		trigger = {
 			has_character_flag = revenge_maim
-			NOT = {
+			nor = {
 				has_character_flag = revenge_killer
-			}
-			NOT = {
 				has_character_flag = revenge_wound
 			}
 		}
@@ -16917,26 +16026,21 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	war = no
+	is_triggered_only = yes
 	rivals = yes
 	trigger = {
-		NOT = {
+		nor = {
 			culture_group = daemonic_group
-		}
-		NOT = {
 			trait = s_target_trait
 		}
 		in_command = no
-		NOT = {
+		nor = {
 			has_character_modifier = killed_father_timer
-		}
-		NOT = {
 			has_character_flag = avenged_father
 		}
 		any_rival = {
-			NOT = {
+			nor = {
 				culture_group = daemonic_group
-			}
-			NOT = {
 				trait = s_target_trait
 			}
 			war = no
@@ -16947,8 +16051,8 @@ character_event = {
 			}
 		}
 	}
-	mean_time_to_happen = {
-		years = 41
+	weight_multiplier = {
+		factor = 0.24390
 		modifier = {
 			factor = 0.5
 			trait = impaler
@@ -16982,10 +16086,8 @@ character_event = {
 		trigger = {
 			is_ruler = yes
 			any_rival = {
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				war = no
@@ -16999,10 +16101,8 @@ character_event = {
 		}
 		random_rival = {
 			limit = {
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				war = no
@@ -17057,10 +16157,8 @@ character_event = {
 		}
 		random_rival = {
 			limit = {
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				war = no
@@ -17093,10 +16191,8 @@ character_event = {
 		}
 		random_rival = {
 			limit = {
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				war = no
@@ -17118,10 +16214,8 @@ character_event = {
 		name = EVTOPTD100540 # Ignore
 		random_rival = {
 			limit = {
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				war = no
@@ -17311,10 +16405,8 @@ character_event = {
 				can_be_maimed_trigger = yes
 				FROM = {
 					OR = {
-						NOT = {
+						nor = {
 							intrigue = 15
-						}
-						NOT = {
 							job_spymaster = {
 								intrigue = 15
 							}
@@ -17465,10 +16557,8 @@ character_event = {
 				is_maimed_trigger = yes
 				FROM = {
 					OR = {
-						NOT = {
+						nor = {
 							intrigue = 15
-						}
-						NOT = {
 							job_spymaster = {
 								intrigue = 15
 							}
@@ -17646,10 +16736,8 @@ character_event = {
 				can_be_maimed_trigger = yes
 				FROM = {
 					OR = {
-						NOT = {
+						nor = {
 							intrigue = 15
-						}
-						NOT = {
 							job_spymaster = {
 								intrigue = 15
 							}
@@ -17800,10 +16888,8 @@ character_event = {
 				is_maimed_trigger = yes
 				FROM = {
 					OR = {
-						NOT = {
+						nor = {
 							intrigue = 15
-						}
-						NOT = {
 							job_spymaster = {
 								intrigue = 15
 							}
@@ -17886,17 +16972,13 @@ character_event = {
 		name = EVTOPTA100545
 
 		trigger = {
-			NOT = {
+			nor = {
 				culture_group = daemonic_group
-			}
-			NOT = {
 				trait = s_target_trait
 			}
 			has_character_flag = revenge_killer
-			NOT = {
+			nor = {
 				has_character_flag = revenge_maim
-			}
-			NOT = {
 				has_character_flag = revenge_wound
 			}
 		}
@@ -17914,19 +16996,11 @@ character_event = {
 		name = EVTOPTB100545
 
 		trigger = {
-			NOT = {
+			nor = {
 				culture_group = daemonic_group
-			}
-			NOT = {
 				trait = s_target_trait
-			}
-			NOT = {
 				has_character_flag = revenge_killer
-			}
-			NOT = {
 				has_character_flag = revenge_maim
-			}
-			NOT = {
 				has_character_flag = revenge_wound
 			}
 		}
@@ -17940,10 +17014,8 @@ character_event = {
 
 		trigger = {
 			has_character_flag = revenge_wound
-			NOT = {
+			nor = {
 				has_character_flag = revenge_killer
-			}
-			NOT = {
 				has_character_flag = revenge_maim
 			}
 		}
@@ -17959,10 +17031,8 @@ character_event = {
 
 		trigger = {
 			has_character_flag = revenge_maim
-			NOT = {
+			nor = {
 				has_character_flag = revenge_killer
-			}
-			NOT = {
 				has_character_flag = revenge_wound
 			}
 		}
@@ -17990,10 +17060,8 @@ character_event = {
 
 		trigger = {
 			has_character_flag = revenge_killer
-			NOT = {
+			nor = {
 				has_character_flag = revenge_maim
-			}
-			NOT = {
 				has_character_flag = revenge_wound
 			}
 		}
@@ -18008,13 +17076,9 @@ character_event = {
 		name = EVTOPTB100546
 
 		trigger = {
-			NOT = {
+			nor = {
 				has_character_flag = revenge_killer
-			}
-			NOT = {
 				has_character_flag = revenge_maim
-			}
-			NOT = {
 				has_character_flag = revenge_wound
 			}
 		}
@@ -18028,10 +17092,8 @@ character_event = {
 
 		trigger = {
 			has_character_flag = revenge_wound
-			NOT = {
+			nor = {
 				has_character_flag = revenge_killer
-			}
-			NOT = {
 				has_character_flag = revenge_maim
 			}
 		}
@@ -18052,10 +17114,8 @@ character_event = {
 
 		trigger = {
 			has_character_flag = revenge_maim
-			NOT = {
+			nor = {
 				has_character_flag = revenge_killer
-			}
-			NOT = {
 				has_character_flag = revenge_wound
 			}
 		}
@@ -18122,12 +17182,11 @@ character_event = {
 	capable_only = yes
 	religion_group = ormazd_gods_group
 	war = no
+	is_triggered_only = yes
 	friends = yes
 	trigger = {
-		NOT = {
+		nor = {
 			culture_group = daemonic_group
-		}
-		NOT = {
 			trait = s_target_trait
 		}
 		OR = {
@@ -18136,20 +17195,14 @@ character_event = {
 		}
 		in_command = no
 		learning = 5
-		NOT = {
+		nor = {
 			learning = 10
-		}
-		NOT = {
 			has_character_modifier = friend_learning_timer
-		}
-		NOT = {
 			has_character_modifier = pious_imams
 		}
 		any_friend = {
-			NOT = {
+			nor = {
 				culture_group = daemonic_group
-			}
-			NOT = {
 				trait = s_target_trait
 			}
 			war = no
@@ -18168,8 +17221,8 @@ character_event = {
 			is_heretic = no
 		}
 	}
-	mean_time_to_happen = {
-		years = 6
+	weight_multiplier = {
+		factor = 0.8
 		modifier = {
 			factor = 2
 			trait = zealous
@@ -18193,10 +17246,8 @@ character_event = {
 		name = EVTOPTA100230
 		random_friend = {
 			limit = {
-				NOT = {
+				nor = {
 					culture_group = daemonic_group
-				}
-				NOT = {
 					trait = s_target_trait
 				}
 				war = no

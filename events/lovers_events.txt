@@ -649,22 +649,12 @@ character_event = {
 				is_married = no
 				has_epidemic = no
 				is_ill = no
-				NOT = {
+				nor = {
 					trait = homosexual
-				}
-				NOT = {
 					trait = celibate
-				}
-				NOT = {
 					trait = incapable
-				}
-				NOT = {
 					trait = eunuch
-				}
-				NOT = {
 					family = ROOT
-				}
-				NOT = {
 					age = 18
 				}
 			}
@@ -701,23 +691,15 @@ character_event = {
 				is_female = no
 				is_married = no
 				has_epidemic = no
-				NOT = {
+				nor = {
 					trait = homosexual
-				}
-				NOT = {
 					trait = celibate
-				}
-				NOT = {
 					trait = incapable
-				}
-				NOT = {
 					trait = eunuch
 				}
 				is_ill = no
-				NOT = {
+				nor = {
 					family = ROOT
-				}
-				NOT = {
 					age = 18
 				}
 			}
@@ -959,23 +941,17 @@ character_event = {
 		has_epidemic = no
 		is_ill = no
 		has_lover = no
-		NOT = {
+		nor = {
 			trait = homosexual
-		}
-		NOT = {
 			has_character_flag = never_lover
 		}
 		any_courtier = {
 			is_female = yes
 			prisoner = no
-			NOT = {
+			nor = {
 				is_close_relative = ROOT
-			}
-			NOT = {
 				trait = homosexual
 				trait = incapable
-			}
-			NOT = {
 				trait = celibate
 			}
 			age = 16
@@ -1010,14 +986,10 @@ character_event = {
 			limit = {
 				is_female = yes
 				prisoner = no
-				NOT = {
+				nor = {
 					is_close_relative = ROOT
-				}
-				NOT = {
 					trait = homosexual
 					trait = incapable
-				}
-				NOT = {
 					trait = celibate
 				}
 				age = 16
@@ -1290,10 +1262,8 @@ character_event = {
 		OR = {
 			AND = {
 				is_married = yes
-				NOT = {
+				nor = {
 					trait = homosexual
-				}
-				NOT = {
 					trait = celibate
 				}
 				has_lover = no
@@ -1543,10 +1513,8 @@ character_event = {
 
 	trigger = {
 		can_love_trigger = yes
-		NOT = {
+		nor = {
 			trait = homosexual
-		}
-		NOT = {
 			spouse = {
 				is_lover = ROOT
 			}
@@ -1691,10 +1659,8 @@ character_event = {
 			any_lover = {
 				is_abroad = no
 				prisoner = no
-				NOT = {
+				nor = {
 					trait = incapable
-				}
-				NOT = {
 					character = ROOT
 				}
 			}
@@ -1751,10 +1717,8 @@ character_event = {
 			limit = {
 				is_abroad = no
 				prisoner = no
-				NOT = {
+				nor = {
 					trait = incapable
-				}
-				NOT = {
 					character = FROM
 				}
 			}
@@ -1782,6 +1746,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	lacks_dlc = "Way of Life"
+	is_triggered_only = yes
 
 	trigger = {
 		can_love_trigger = yes
@@ -1803,22 +1768,22 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 10
+	weight_multiplier = {
+		factor = 1
 		modifier = {
-			factor = 0.8
+			factor = 1.25
 			trait = wroth
 		}
 		modifier = {
-			factor = 0.8
+			factor = 1.25
 			trait = envious
 		}
 		modifier = {
-			factor = 0.8
+			factor = 1.25
 			trait = cruel
 		}
 		modifier = {
-			factor = 0.8
+			factor = 1.25
 			trait = drunkard
 		}
 	}
@@ -1882,6 +1847,7 @@ character_event = {
 	prisoner = no
 	has_character_flag = teenage_infatuation
 	lacks_dlc = "Way of Life"
+	is_triggered_only = yes
 
 	trigger = {
 		has_lover = no
@@ -1905,10 +1871,6 @@ character_event = {
 				who = ROOT value = 25
 			}
 		}
-	}
-
-	mean_time_to_happen = {
-		years = 10
 	}
 
 	immediate = {
@@ -2035,6 +1997,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	lacks_dlc = "Way of Life"
+	is_triggered_only = yes
 
 	trigger = {
 		can_love_trigger = yes
@@ -2063,10 +2026,6 @@ character_event = {
 				}
 			}
 		}
-	}
-
-	mean_time_to_happen = {
-		years = 10
 	}
 
 	immediate = {
@@ -2182,6 +2141,7 @@ character_event = {
 	lacks_dlc = "Way of Life"
 	war = no
 	is_married = no
+	is_triggered_only = yes
 
 	trigger = {
 		can_love_trigger = yes
@@ -2205,10 +2165,6 @@ character_event = {
 				trait = incapable
 			}
 		}
-	}
-
-	mean_time_to_happen = {
-		years = 10
 	}
 
 	immediate = {
@@ -2306,6 +2262,7 @@ character_event = {
 	prisoner = no
 	lacks_dlc = "Way of Life"
 	war = no
+	is_triggered_only = yes
 
 	trigger = {
 		can_love_trigger = yes
@@ -2328,22 +2285,22 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 10
+	weight_multiplier = {
+		factor = 1
 		modifier = {
-			factor = 0.8
+			factor = 1.25
 			trait = stressed
 		}
 		modifier = {
-			factor = 0.8
+			factor = 1.25
 			trait = drunkard
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = chaste
 		}
 		modifier = {
-			factor = 1.5
+			factor = 0.67
 			trait = lustful
 		}
 	}
@@ -2441,6 +2398,7 @@ character_event = {
 	min_age = 16
 	lacks_dlc = "Way of Life"
 	is_married = yes
+	is_triggered_only = yes
 
 	trigger = {
 		can_love_trigger = yes
@@ -2468,22 +2426,22 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 10
+	weight_multiplier = {
+		factor = 1
 		modifier = {
-			factor = 0.8
+			factor = 1.25
 			trait = stressed
 		}
 		modifier = {
-			factor = 0.8
+			factor = 1.25
 			trait = drunkard
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = chaste
 		}
 		modifier = {
-			factor = 1.5
+			factor = 0.67
 			trait = lustful
 		}
 	}
@@ -2608,6 +2566,7 @@ character_event = {
 	lacks_dlc = "Way of Life"
 	war = no
 	is_married = yes
+	is_triggered_only = yes
 
 	trigger = {
 		can_love_trigger = yes
@@ -2631,10 +2590,8 @@ character_event = {
 			}
 			is_pregnant = no
 			prisoner = no
-			NOT = {
+			nor = {
 				trait = incapable
-			}
-			NOT = {
 				is_inaccessible_trigger = yes
 			}
 		}
@@ -2643,22 +2600,22 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 10
+	weight_multiplier = {
+		factor = 1
 		modifier = {
-			factor = 0.8
+			factor = 1.25
 			trait = stressed
 		}
 		modifier = {
-			factor = 0.8
+			factor = 1.25
 			trait = drunkard
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = chaste
 		}
 		modifier = {
-			factor = 1.5
+			factor = 0.67
 			trait = lustful
 		}
 	}
@@ -2675,10 +2632,8 @@ character_event = {
 				}
 				is_pregnant = no
 				prisoner = no
-				NOT = {
+				nor = {
 					trait = incapable
-				}
-				NOT = {
 					is_inaccessible_trigger = yes
 				}
 			}
@@ -2817,6 +2772,7 @@ character_event = {
 	religion_group = old_world_groun
 	lacks_dlc = "Way of Life"
 	is_married = yes
+	is_triggered_only = yes
 
 	trigger = {
 		can_love_trigger = yes
@@ -2849,10 +2805,6 @@ character_event = {
 				age = 40
 			}
 		}
-	}
-
-	mean_time_to_happen = {
-		years = 10
 	}
 
 	immediate = {
@@ -3004,6 +2956,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	lacks_dlc = "Way of Life"
+	is_triggered_only = yes
 
 	trigger = {
 		can_love_trigger = yes
@@ -3035,10 +2988,6 @@ character_event = {
 				num_of_lovers = 2
 			}
 		}
-	}
-
-	mean_time_to_happen = {
-		years = 10
 	}
 
 	immediate = {
@@ -3184,6 +3133,7 @@ character_event = {
 	lacks_dlc = "Way of Life"
 	war = no
 	is_married = yes
+	is_triggered_only = yes
 
 	trigger = {
 		in_command = no
@@ -3203,10 +3153,10 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 10
+	weight_multiplier = {
+		factor = 1
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			NOT = {
 				fertility = 0.4
 			}
@@ -3297,6 +3247,7 @@ character_event = {
 	lacks_dlc = "Way of Life"
 	war = no
 	is_married = yes
+	is_triggered_only = yes
 
 	trigger = {
 		is_inaccessible_trigger = no
@@ -3314,10 +3265,8 @@ character_event = {
 			is_pregnant = no
 			is_female = yes
 			fertility = 0.5
-			NOT = {
+			nor = {
 				age = 40
-			}
-			NOT = {
 				spouse = {
 					character = ROOT
 				}
@@ -3329,10 +3278,6 @@ character_event = {
 			}
 			is_ruler = no
 		}
-	}
-
-	mean_time_to_happen = {
-		years = 10
 	}
 
 	immediate = {
@@ -3347,10 +3292,8 @@ character_event = {
 				is_pregnant = no
 				is_female = yes
 				fertility = 0.5
-				NOT = {
+				nor = {
 					age = 40
-				}
-				NOT = {
 					spouse = {
 						character = ROOT
 					}
@@ -3520,6 +3463,7 @@ character_event = {
 	lacks_dlc = "Way of Life"
 	war = no
 	is_married = yes
+	is_triggered_only = yes
 
 	trigger = {
 		can_love_trigger = yes
@@ -3551,8 +3495,8 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 30
+	weight_multiplier = {
+		factor = 0.33333
 	}
 
 	immediate = {
@@ -3712,6 +3656,7 @@ character_event = {
 	lacks_dlc = "Way of Life"
 	war = no
 	is_married = yes
+	is_triggered_only = yes
 
 	trigger = {
 		can_love_trigger = yes
@@ -3735,10 +3680,8 @@ character_event = {
 			can_love_trigger = yes
 			prisoner = no
 			is_abroad = no
-			NOT = {
+			nor = {
 				trait = incapable
-			}
-			NOT = {
 				spouse = {
 					character = ROOT
 				}
@@ -3753,8 +3696,8 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 30
+	weight_multiplier = {
+		factor = 0.33333
 	}
 
 	immediate = {
@@ -3763,10 +3706,8 @@ character_event = {
 			limit = {
 				prisoner = no
 				is_abroad = no
-				NOT = {
+				nor = {
 					trait = incapable
-				}
-				NOT = {
 					spouse = {
 						character = ROOT
 					}
@@ -3923,6 +3864,7 @@ character_event = {
 	lacks_dlc = "Way of Life"
 	war = no
 	is_married = yes
+	is_triggered_only = yes
 
 	trigger = {
 		can_love_trigger = yes
@@ -3940,10 +3882,8 @@ character_event = {
 			is_alive = yes
 			is_abroad = no
 			prisoner = no
-			NOT = {
+			nor = {
 				has_character_flag = adulterous_affair_public
-			}
-			NOT = {
 				opinion = {
 					who = ROOT value = -20
 				}
@@ -3951,8 +3891,8 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 30
+	weight_multiplier = {
+		factor = 0.33333
 	}
 
 	immediate = {
@@ -4042,6 +3982,7 @@ character_event = {
 	lacks_dlc = "Way of Life"
 	war = no
 	is_married = yes
+	is_triggered_only = yes
 
 	trigger = {
 		can_love_trigger = yes
@@ -4062,8 +4003,8 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 30
+	weight_multiplier = {
+		factor = 0.33333
 	}
 
 	immediate = {
@@ -4258,6 +4199,7 @@ character_event = {
 	prisoner = no
 	min_age = 16
 	is_married = yes
+	is_triggered_only = yes
 
 	trigger = {
 		can_love_trigger = yes
@@ -4280,14 +4222,14 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 20
+	weight_multiplier = {
+		factor = 0.50000
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = kind
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			OR = {
 				has_focus = focus_family
 				any_spouse = {
@@ -4297,23 +4239,23 @@ character_event = {
 			}
 		}
 		modifier = {
-			factor = 0.75
+			factor = 1.33
 			trait = charitable
 		}
 		modifier = {
-			factor = 1.25
+			factor = 0.80
 			trait = wroth
 		}
 		modifier = {
-			factor = 1.5
+			factor = 0.67
 			trait = envious
 		}
 		modifier = {
-			factor = 1.5
+			factor = 0.67
 			trait = arbitrary
 		}
 		modifier = {
-			factor = 5.0
+			factor = 0.20
 			trait = cruel
 		}
 	}
@@ -4365,6 +4307,7 @@ character_event = {
 	only_rulers = yes
 	lacks_dlc = "Way of Life"
 	war = no
+	is_triggered_only = yes
 
 	trigger = {
 		can_love_trigger = yes
@@ -4381,26 +4324,26 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 50
+	weight_multiplier = {
+		factor = 0.20000
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = kind
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = charitable
 		}
 		modifier = {
-			factor = 1.5
+			factor = 0.67
 			trait = wroth
 		}
 		modifier = {
-			factor = 1.5
+			factor = 0.67
 			trait = cruel
 		}
 		modifier = {
-			factor = 2.5
+			factor = 0.40
 			trait = depressed
 		}
 	}
@@ -4470,36 +4413,29 @@ character_event = {
 	min_age = 16
 	lacks_dlc = "Way of Life"
 	war = yes
+	is_triggered_only = yes
 
 	trigger = {
 		can_love_trigger = yes
 		in_command = yes
 		has_lover = yes
-		NOT = {
+		nor = {
 			num_of_lovers = 2
-		}
-		NOT = {
 			trait = honest
-		}
-		NOT = {
 			trait = chaste
-		}
-		NOT = {
 			trait = deceitful
-		}
-		NOT = {
 			num_of_traits = 7
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 100
+	weight_multiplier = {
+		factor = 0.10000
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = stressed
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = depressed
 		}
 	}

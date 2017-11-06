@@ -1432,36 +1432,6 @@ character_event = {
 			}
 		}
 		hidden_tooltip = {
-			if = {
-				limit = {
-					FROM = {
-						OR = {
-							any_neighbor_province = {
-								OR = {
-									is_nomadic = yes
-									is_tribal = yes
-								}
-							}
-							has_province_flag = flag_province_scourged
-							NOT = {
-								num_of_settlements = 2
-							}
-						}
-					}
-				}
-				random = {
-					chance = 1
-					FROM = {
-						convert_to = TRIBAL
-						random_province_holding = {
-							limit = {
-								is_capital = no
-							}
-							destroy_settlement = THIS
-						}
-					}
-				}
-			}
 			FROM = {
 				owner = {
 					character_event = {
@@ -1515,10 +1485,8 @@ character_event = {
 							random_courtier = {
 								limit = {
 									is_abroad = no
-									NOT = {
+									nor = {
 										character = PREVPREV
-									}
-									NOT = {
 										character = PREV
 									}
 								}
@@ -1539,13 +1507,9 @@ character_event = {
 								random_courtier = {
 									limit = {
 										is_abroad = no
-										NOT = {
+										nor = {
 											character = PREVPREVPREV
-										}
-										NOT = {
 											character = PREVPREV
-										}
-										NOT = {
 											character = PREV
 										}
 									}
@@ -1566,16 +1530,10 @@ character_event = {
 									random_courtier = {
 										limit = {
 											is_abroad = no
-											NOT = {
+											nor = {
 												character = PREVPREVPREVPREV
-											}
-											NOT = {
 												character = PREVPREVPREV
-											}
-											NOT = {
 												character = PREVPREV
-											}
-											NOT = {
 												character = PREV
 											}
 										}
@@ -1907,13 +1865,9 @@ character_event = {
 				}
 				if = {
 					limit = {
-						NOT = {
+						nor = {
 							has_province_modifier = beastmen_scourging_2
-						}
-						NOT = {
 							has_province_modifier = beastmen_scourging_1
-						}
-						NOT = {
 							has_province_modifier = beastmen_scourging_3
 						}
 					}
@@ -2507,13 +2461,9 @@ character_event = {
 				}
 				if = {
 					limit = {
-						NOT = {
+						nor = {
 							has_province_modifier = beastmen_scourging_2
-						}
-						NOT = {
 							has_province_modifier = beastmen_scourging_1
-						}
-						NOT = {
 							has_province_modifier = beastmen_scourging_3
 						}
 					}
@@ -3129,6 +3079,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	culture_group = beastman_group
+	is_triggered_only = yes
 
 	trigger = {
 		liege = {
@@ -3151,10 +3102,10 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 21
+	weight_multiplier = {
+		factor = 0.47619
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			location = {
 				capital_holding = {
 					is_tribal = yes
@@ -3162,63 +3113,63 @@ character_event = {
 			}
 		}
 		modifier = {
-			factor = 1.25
+			factor = 0.80
 			trait = content
 		}
 		modifier = {
-			factor = 1.25
+			factor = 0.80
 			trait = kind
 		}
 		modifier = {
-			factor = 1.25
+			factor = 0.80
 			trait = charitable
 		}
 		modifier = {
-			factor = 1.25
+			factor = 0.80
 			trait = shy
 		}
 		modifier = {
-			factor = 0.75
+			factor = 1.33
 			trait = wroth
 		}
 		modifier = {
-			factor = 0.75
+			factor = 1.33
 			trait = greedy
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = lunatic_3
 		}
 		modifier = {
-			factor = 0.75
+			factor = 1.33
 			trait = lunatic_2
 		}
 		modifier = {
-			factor = 0.95
+			factor = 1.05
 			trait = lunatic_1
 		}
 		modifier = {
-			factor = 0.75
+			factor = 1.33
 			trait = possessed
 		}
 		modifier = {
-			factor = 0.75
+			factor = 1.33
 			trait = cruel
 		}
 		modifier = {
-			factor = 0.75
+			factor = 1.33
 			location = {
 				has_province_modifier = beastmen_scourging_1
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			location = {
 				has_province_modifier = beastmen_scourging_2
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 4.00
 			location = {
 				has_province_modifier = beastmen_scourging_3
 			}
@@ -3327,6 +3278,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	culture_group = beastman_group
+	is_triggered_only = yes
 
 	trigger = {
 		liege = {
@@ -3352,10 +3304,10 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 5
+	weight_multiplier = {
+		factor = 1
 		modifier = {
-			factor = 2.5
+			factor = 0.40
 			location = {
 				capital_holding = {
 					is_tribal = yes
@@ -3363,81 +3315,81 @@ character_event = {
 			}
 		}
 		modifier = {
-			factor = 3.0
+			factor = 0.33
 			liege = {
 				tier = count
 			}
 		}
 		modifier = {
-			factor = 1.25
+			factor = 0.80
 			NOT = {
 				martial = 2
 			}
 		}
 		modifier = {
-			factor = 1.25
+			factor = 0.80
 			NOT = {
 				martial = 3
 			}
 		}
 		modifier = {
-			factor = 1.25
+			factor = 0.80
 			NOT = {
 				martial = 4
 			}
 		}
 		modifier = {
-			factor = 1.25
+			factor = 0.80
 			NOT = {
 				martial = 5
 			}
 		}
 		modifier = {
-			factor = 0.75
+			factor = 1.33
 			martial = 9
 		}
 		modifier = {
-			factor = 0.75
+			factor = 1.33
 			martial = 10
 		}
 		modifier = {
-			factor = 0.75
+			factor = 1.33
 			martial = 11
 		}
 		modifier = {
-			factor = 0.75
+			factor = 1.33
 			martial = 12
 		}
 		modifier = {
-			factor = 0.75
+			factor = 1.33
 			martial = 13
 		}
 		modifier = {
-			factor = 0.75
+			factor = 1.33
 			trait = wroth
 		}
 		modifier = {
-			factor = 0.75
+			factor = 1.33
 			trait = greedy
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = lunatic_3
 		}
 		modifier = {
-			factor = 0.75
+			factor = 1.33
 			trait = lunatic_2
 		}
 		modifier = {
-			factor = 0.95
+			factor = 1.05
 			trait = lunatic_1
 		}
 		modifier = {
-			factor = 0.75
+			factor = 1.33
 			trait = possessed
 		}
 		modifier = {
-			factor = 0.75
+			factor = 1.33
 			trait = cruel
 		}
 	}
@@ -3512,6 +3464,7 @@ character_event = {
 	border = GFX_event_normal_frame_war
 	capable_only = yes
 	prisoner = no
+	is_triggered_only = yes
 
 	trigger = {
 		liege = {
@@ -3534,10 +3487,10 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 2
+	weight_multiplier = {
+		factor = 1
 		modifier = {
-			factor = 2.5
+			factor = 0.40
 			location = {
 				capital_holding = {
 					is_tribal = yes
@@ -3545,61 +3498,61 @@ character_event = {
 			}
 		}
 		modifier = {
-			factor = 2.5
+			factor = 0.40
 			location = {
 				has_province_modifier = beastman_herdstone
 			}
 		}
 		modifier = {
-			factor = 1.25
+			factor = 0.80
 			NOT = {
 				martial = 2
 			}
 		}
 		modifier = {
-			factor = 1.25
+			factor = 0.80
 			NOT = {
 				martial = 3
 			}
 		}
 		modifier = {
-			factor = 1.25
+			factor = 0.80
 			NOT = {
 				martial = 4
 			}
 		}
 		modifier = {
-			factor = 1.25
+			factor = 0.80
 			NOT = {
 				martial = 5
 			}
 		}
 		modifier = {
-			factor = 0.75
+			factor = 1.33
 			martial = 9
 		}
 		modifier = {
-			factor = 0.75
+			factor = 1.33
 			martial = 10
 		}
 		modifier = {
-			factor = 0.75
+			factor = 1.33
 			martial = 11
 		}
 		modifier = {
-			factor = 0.75
+			factor = 1.33
 			martial = 12
 		}
 		modifier = {
-			factor = 0.75
+			factor = 1.33
 			martial = 13
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = zealous
 		}
 		modifier = {
-			factor = 2.5
+			factor = 0.40
 			trait = craven
 		}
 	}

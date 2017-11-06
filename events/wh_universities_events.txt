@@ -12,6 +12,7 @@ character_event = {
 	max_age = 35
 	capable_only = yes
 	prisoner = no
+	is_triggered_only = yes
 
 	trigger = {
 		is_landed = no
@@ -66,14 +67,10 @@ character_event = {
 					religion_group = ormazd_gods_group
 					religion = northern_gods
 				}
-				NOR = {
+				nor = {
 					religion = grail
 					religion = false_grail
-				}
-				NOT = {
 					government = nomadic_government
-				}
-				NOT = {
 					government = tribal_government
 				}
 				is_alive = yes
@@ -96,14 +93,10 @@ character_event = {
 					religion_group = ormazd_gods_group
 					religion = northern_gods
 				}
-				NOR = {
+				nor = {
 					religion = grail
 					religion = false_grail
-				}
-				NOT = {
 					government = nomadic_government
-				}
-				NOT = {
 					government = tribal_government
 				}
 				is_alive = yes
@@ -122,78 +115,99 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 20
+	weight_multiplier = {
+		factor = 0.50000
 		modifier = {
-			factor = 0.5 trait = ambitious
+			factor = 2.00
+			trait = ambitious
 		}
 		modifier = {
-			factor = 2 trait = content
+			factor = 0.50
+			trait = content
 		}
 		modifier = {
-			factor = 0.75 trait = quick
+			factor = 1.33
+			trait = quick
 		}
 		modifier = {
-			factor = 1.5 trait = slow
+			factor = 0.67
+			trait = slow
 		}
 		modifier = {
-			factor = 0.5 trait = genius
+			factor = 2.00
+			trait = genius
 		}
 		modifier = {
-			factor = 2 trait = imbecile
+			factor = 0.50
+			trait = imbecile
 		}
 		modifier = {
-			factor = 0.75 trait = gregarious
+			factor = 1.33
+			trait = gregarious
 		}
 		modifier = {
-			factor = 1.5 trait = shy
+			factor = 0.67
+			trait = shy
 		}
 		modifier = {
-			factor = 0.75 trait = diligent
+			factor = 1.33
+			trait = diligent
 		}
 		modifier = {
-			factor = 1.5 trait = slothful
+			factor = 0.67
+			trait = slothful
 		}
 		modifier = {
-			factor = 0.75 trait = scholar
+			factor = 1.33
+			trait = scholar
 		}
 		modifier = {
-			factor = 1.5 is_primary_heir = yes
+			factor = 0.67
+			is_primary_heir = yes
 		}
 		modifier = {
-			factor = 1.5 is_female = yes
+			factor = 0.67
+			is_female = yes
 		}
 		modifier = {
-			factor = 1.8 NOT = {
+			factor = 0.56
+			NOT = {
 				learning = 2
 			}
 		}
 		modifier = {
-			factor = 1.6 NOT = {
+			factor = 0.62
+			NOT = {
 				learning = 4
 			}
 		}
 		modifier = {
-			factor = 1.4 NOT = {
+			factor = 0.71
+			NOT = {
 				learning = 6
 			}
 		}
 		modifier = {
-			factor = 1.2 NOT = {
+			factor = 0.83
+			NOT = {
 				learning = 8
 			}
 		}
 		modifier = {
-			factor = 0.8 learning = 12
+			factor = 1.25
+			learning = 12
 		}
 		modifier = {
-			factor = 0.8 learning = 14
+			factor = 1.25
+			learning = 14
 		}
 		modifier = {
-			factor = 0.8 learning = 16
+			factor = 1.25
+			learning = 16
 		}
 		modifier = {
-			factor = 0.8 learning = 18
+			factor = 1.25
+			learning = 18
 		}
 	}
 
@@ -805,6 +819,7 @@ character_event = {
 	id = DR_universities.10
 	hide_window = yes
 	has_character_flag = studying_educ_university
+	is_triggered_only = yes
 
 	trigger = {
 		has_character_flag = studying_educ_university
@@ -813,13 +828,15 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 13
+	weight_multiplier = {
+		factor = 0.76923
 		modifier = {
-			factor = 0.75 trait = gluttonous
+			factor = 1.33
+			trait = gluttonous
 		}
 		modifier = {
-			factor = 1.25 trait = temperate
+			factor = 0.80
+			trait = temperate
 		}
 	}
 
@@ -882,19 +899,14 @@ character_event = {
 	id = DR_universities.12
 	hide_window = yes
 	has_character_flag = studying_educ_university
+	is_triggered_only = yes
 
 	trigger = {
 		has_character_flag = studying_educ_university
-		NOT = {
+		nor = {
 			trait = elusive_shadow
-		}
-		NOT = {
 			trait = grey_eminence
-		}
-		NOT = {
 			trait = midas_touched
-		}
-		NOT = {
 			trait = mastermind_theologian
 		}
 		OR = {
@@ -913,13 +925,15 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 13
+	weight_multiplier = {
+		factor = 0.76923
 		modifier = {
-			factor = 0.75 trait = diligent
+			factor = 1.33
+			trait = diligent
 		}
 		modifier = {
-			factor = 1.25 trait = slothful
+			factor = 0.80
+			trait = slothful
 		}
 	}
 
@@ -1065,6 +1079,7 @@ character_event = {
 	id = DR_universities.14
 	hide_window = yes
 	has_character_flag = studying_educ_university
+	is_triggered_only = yes
 
 	trigger = {
 		has_character_flag = studying_educ_university
@@ -1073,13 +1088,15 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 13
+	weight_multiplier = {
+		factor = 0.76923
 		modifier = {
-			factor = 0.75 trait = kind
+			factor = 1.33
+			trait = kind
 		}
 		modifier = {
-			factor = 1.25 trait = envious
+			factor = 0.80
+			trait = envious
 		}
 	}
 
@@ -1143,18 +1160,21 @@ character_event = {
 	hide_window = yes
 	is_married = no
 	has_character_flag = studying_educ_university
+	is_triggered_only = yes
 
 	trigger = {
 		has_character_flag = studying_educ_university
 	}
 
-	mean_time_to_happen = {
-		years = 13
+	weight_multiplier = {
+		factor = 0.76923
 		modifier = {
-			factor = 0.75 trait = lustful
+			factor = 1.33
+			trait = lustful
 		}
 		modifier = {
-			factor = 1.25 trait = chaste
+			factor = 0.80
+			trait = chaste
 		}
 	}
 
@@ -1652,6 +1672,7 @@ character_event = {
 	id = DR_universities.18
 	hide_window = yes
 	has_character_flag = studying_educ_university
+	is_triggered_only = yes
 
 	trigger = {
 		has_character_flag = studying_educ_university
@@ -1660,13 +1681,15 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 13
+	weight_multiplier = {
+		factor = 0.76923
 		modifier = {
-			factor = 0.75 trait = weak
+			factor = 1.33
+			trait = weak
 		}
 		modifier = {
-			factor = 1.25 is_strong_trigger = yes
+			factor = 0.80
+			is_strong_trigger = yes
 		}
 	}
 
@@ -1741,6 +1764,7 @@ character_event = {
 	id = DR_universities.20
 	hide_window = yes
 	has_character_flag = studying_educ_university
+	is_triggered_only = yes
 
 	trigger = {
 		has_character_flag = studying_educ_university
@@ -1749,13 +1773,15 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 13
+	weight_multiplier = {
+		factor = 0.76923
 		modifier = {
-			factor = 0.75 trait = shy
+			factor = 1.33
+			trait = shy
 		}
 		modifier = {
-			factor = 1.25 trait = gregarious
+			factor = 0.80
+			trait = gregarious
 		}
 	}
 
@@ -1817,6 +1843,7 @@ character_event = {
 	id = DR_universities.22
 	hide_window = yes
 	has_character_flag = studying_educ_university
+	is_triggered_only = yes
 
 	trigger = {
 		has_character_flag = studying_educ_university
@@ -1825,13 +1852,15 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 13
+	weight_multiplier = {
+		factor = 0.76923
 		modifier = {
-			factor = 0.75 trait = lustful
+			factor = 1.33
+			trait = lustful
 		}
 		modifier = {
-			factor = 1.25 trait = chaste
+			factor = 0.80
+			trait = chaste
 		}
 	}
 
@@ -1918,6 +1947,7 @@ character_event = {
 	min_age = 15
 	capable_only = yes
 	prisoner = no
+	is_triggered_only = yes
 
 	# ai = no
 	trigger = {
@@ -2291,6 +2321,7 @@ character_event = {
 	id = DR_universities.33
 	hide_window = yes
 	has_character_flag = studying_educ_university
+	is_triggered_only = yes
 
 	trigger = {
 		has_character_flag = studying_educ_university
@@ -2309,25 +2340,31 @@ character_event = {
 		wh_is_mage_trigger = no
 	}
 
-	mean_time_to_happen = {
-		years = 11
+	weight_multiplier = {
+		factor = 0.90909
 		modifier = {
-			factor = 0.75 trait = diligent
+			factor = 1.33
+			trait = diligent
 		}
 		modifier = {
-			factor = 0.75 trait = magic_potential_3
+			factor = 1.33
+			trait = magic_potential_3
 		}
 		modifier = {
-			factor = 0.75 trait = magic_potential_4
+			factor = 1.33
+			trait = magic_potential_4
 		}
 		modifier = {
-			factor = 0.8 has_character_flag = magic_potential_flag_3
+			factor = 1.25
+			has_character_flag = magic_potential_flag_3
 		}
 		modifier = {
-			factor = 0.8 has_character_flag = magic_potential_flag_4
+			factor = 1.25
+			has_character_flag = magic_potential_flag_4
 		}
 		modifier = {
-			factor = 1.25 trait = slothful
+			factor = 0.80
+			trait = slothful
 		}
 	}
 
@@ -2476,10 +2513,7 @@ character_event = {
 			trait = engineer
 		}
 	}
-	# mean_time_to_happen = {
-	# months = 1
-
-	# }
+	
 	immediate = {
 		log = "work event id = DR_universities.131 for [Root.GetBestName]"
 	}
@@ -2633,6 +2667,7 @@ character_event = {
 	desc = EVTDESCDR_universities.134
 	picture = GFX_evt_great_cannon
 	only_playable = yes
+	is_triggered_only = yes
 
 	trigger = {
 		capital_scope = {
@@ -2641,10 +2676,6 @@ character_event = {
 			}
 			has_province_modifier = engineer_working_artillery
 		}
-	}
-
-	mean_time_to_happen = {
-		years = 1
 	}
 
 	immediate = {
@@ -2678,6 +2709,7 @@ character_event = {
 	desc = EVTDESCDR_universities.135
 	picture = GFX_evt_steam_tank
 	only_playable = yes
+	is_triggered_only = yes
 
 	trigger = {
 		capital_scope = {
@@ -2686,10 +2718,6 @@ character_event = {
 			}
 			has_province_modifier = engineer_working_steam_tank
 		}
-	}
-
-	mean_time_to_happen = {
-		years = 2
 	}
 
 	immediate = {

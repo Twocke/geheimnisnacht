@@ -16,6 +16,7 @@ character_event = {
 	is_patrician = yes
 	capable_only = yes
 	prisoner = no
+	is_triggered_only = yes
 
 	trigger = {
 		liege = {
@@ -29,21 +30,15 @@ character_event = {
 				age = 16
 				in_command = no
 				prisoner = no
-				NOT = {
+				nor = {
 					trait = incapable
-				}
-				NOT = {
 					reverse_opinion = {
 						who = ROOT value = 0
 					}
 				}
-				NOT = {
+				nor = {
 					has_dynasty_flag = the_victims
-				}
-				NOT = {
 					has_character_flag = the_grand_ball
-				}
-				NOT = {
 					is_inaccessible_trigger = yes
 				}
 			}
@@ -59,16 +54,10 @@ character_event = {
 							who = ROOT value = 0
 						}
 					}
-					NOT = {
+					nor = {
 						trait = incapable
-					}
-					NOT = {
 						has_dynasty_flag = the_victims
-					}
-					NOT = {
 						has_character_flag = the_grand_ball
-					}
-					NOT = {
 						is_inaccessible_trigger = yes
 					}
 				}
@@ -79,8 +68,8 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 26
+	weight_multiplier = {
+		factor = 0.38462
 	}
 
 	immediate = {
@@ -136,10 +125,8 @@ character_event = {
 								who = ROOT value = 0
 							}
 						}
-						NOT = {
+						nor = {
 							has_dynasty_flag = the_victims
-						}
-						NOT = {
 							is_inaccessible_trigger = yes
 						}
 					}
@@ -223,6 +210,7 @@ character_event = {
 	ai = yes
 	is_patrician = yes
 	has_character_flag = shamed_player_at_ball
+	is_triggered_only = yes
 
 	trigger = {
 		liege = {
@@ -254,10 +242,6 @@ character_event = {
 				}
 			}
 		}
-	}
-
-	mean_time_to_happen = {
-		years = 6
 	}
 
 	immediate = {
@@ -500,6 +484,7 @@ character_event = {
 	has_dlc = "The Republic"
 	ai = yes
 	is_patrician = yes
+	is_triggered_only = yes
 
 	trigger = {
 		has_dynasty_flag = the_feuders
@@ -522,11 +507,9 @@ character_event = {
 						character = ROOT
 					}
 				}
-				NOT = {
+				nor = {
 					trait = incapable
 					trait = infirm
-				}
-				NOT = {
 					is_inaccessible_trigger = yes
 				}
 			}
@@ -541,11 +524,9 @@ character_event = {
 					age = 16
 					in_command = no
 					prisoner = no
-					NOT = {
+					nor = {
 						trait = incapable
 						trait = infirm
-					}
-					NOT = {
 						is_inaccessible_trigger = yes
 					}
 				}
@@ -553,8 +534,8 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 43
+	weight_multiplier = {
+		factor = 0.23256
 	}
 
 	immediate = {
@@ -564,10 +545,8 @@ character_event = {
 				liege = {
 					ai = no
 					has_dynasty_flag = the_victims
-					NOT = {
+					nor = {
 						has_dynasty_flag = flagship_feud
-					}
-					NOT = {
 						is_inaccessible_trigger = yes
 					}
 				}
@@ -585,10 +564,8 @@ character_event = {
 						is_patrician = yes
 						ai = no
 						has_dynasty_flag = the_victims
-						NOT = {
+						nor = {
 							has_dynasty_flag = flagship_feud
-						}
-						NOT = {
 							is_inaccessible_trigger = yes
 						}
 					}
@@ -771,6 +748,7 @@ character_event = {
 	prisoner = no
 	has_dlc = "The Republic"
 	is_married = no
+	is_triggered_only = yes
 
 	trigger = {
 		has_dynasty_flag = the_feuders
@@ -783,21 +761,17 @@ character_event = {
 			is_patrician = yes
 			prisoner = no
 			in_command = no
-			NOT = {
+			nor = {
 				trait = incapable
-			}
-			NOT = {
 				is_inaccessible_trigger = yes
 			}
 		}
-		NOT = {
+		nor = {
 			age = 30
 			trait = homosexual
 			trait = infirm
 			trait = incapable
 			trait = eunuch
-		}
-		NOT = {
 			is_inaccessible_trigger = yes
 		}
 		father = {
@@ -812,10 +786,8 @@ character_event = {
 					is_patrician = yes
 					in_command = no
 					prisoner = no
-					NOT = {
+					nor = {
 						trait = incapable
-					}
-					NOT = {
 						is_inaccessible_trigger = yes
 					}
 					any_child = {
@@ -826,12 +798,10 @@ character_event = {
 							age = 30
 						}
 						prisoner = no
-						NOT = {
+						nor = {
 							trait = incapable
 							trait = infirm
 							trait = homosexual
-						}
-						NOT = {
 							is_inaccessible_trigger = yes
 						}
 					}
@@ -847,10 +817,8 @@ character_event = {
 						}
 						prisoner = no
 						in_command = no
-						NOT = {
+						nor = {
 							trait = incapable
-						}
-						NOT = {
 							is_inaccessible_trigger = yes
 						}
 						any_child = {
@@ -861,12 +829,10 @@ character_event = {
 								age = 30
 							}
 							prisoner = no
-							NOT = {
+							nor = {
 								trait = incapable
 								trait = infirm
 								trait = homosexual
-							}
-							NOT = {
 								is_inaccessible_trigger = yes
 							}
 						}
@@ -919,10 +885,8 @@ character_event = {
 							has_dynasty_flag = feud_phase_two
 							prisoner = no
 							in_command = no
-							NOT = {
+							nor = {
 								trait = incapable
-							}
-							NOT = {
 								is_inaccessible_trigger = yes
 							}
 						}
@@ -934,10 +898,6 @@ character_event = {
 			}
 		}
 		set_character_flag = romeo
-	}
-
-	mean_time_to_happen = {
-		years = 8
 	}
 }
 
@@ -1039,6 +999,7 @@ character_event = {
 	prisoner = no
 	has_dlc = "The Republic"
 	is_married = no
+	is_triggered_only = yes
 
 	trigger = {
 		has_dynasty_flag = the_feuders
@@ -1050,19 +1011,15 @@ character_event = {
 			is_patrician = yes
 			prisoner = no
 			in_command = no
-			NOT = {
+			nor = {
 				trait = incapable
-			}
-			NOT = {
 				is_inaccessible_trigger = yes
 			}
 		}
-		NOT = {
+		nor = {
 			age = 30
 			trait = homosexual
 			trait = incapable
-		}
-		NOT = {
 			is_inaccessible_trigger = yes
 		}
 		father = {
@@ -1076,23 +1033,19 @@ character_event = {
 					}
 					prisoner = no
 					in_command = no
-					NOT = {
+					nor = {
 						trait = incapable
-					}
-					NOT = {
 						is_inaccessible_trigger = yes
 					}
 					any_child = {
 						age = 15
 						is_female = no
-						NOT = {
+						nor = {
 							age = 30
 							trait = homosexual
 							trait = infirm
 							trait = incapable
 							trait = eunuch
-						}
-						NOT = {
 							is_inaccessible_trigger = yes
 						}
 						prisoner = no
@@ -1111,23 +1064,19 @@ character_event = {
 						}
 						prisoner = no
 						in_command = no
-						NOT = {
+						nor = {
 							trait = incapable
-						}
-						NOT = {
 							is_inaccessible_trigger = yes
 						}
 						any_child = {
 							age = 15
 							is_female = no
-							NOT = {
+							nor = {
 								age = 30
 								trait = homosexual
 								trait = infirm
 								trait = incapable
 								trait = eunuch
-							}
-							NOT = {
 								is_inaccessible_trigger = yes
 							}
 							prisoner = no
@@ -1184,10 +1133,6 @@ character_event = {
 			}
 		}
 		set_character_flag = julia
-	}
-
-	mean_time_to_happen = {
-		years = 8
 	}
 }
 
@@ -1625,6 +1570,7 @@ character_event = {
 	is_patrician = yes
 	capable_only = yes
 	prisoner = no
+	is_triggered_only = yes
 
 	trigger = {
 		has_dynasty_flag = the_feuders
@@ -1654,13 +1600,11 @@ character_event = {
 					}
 					in_command = no
 					prisoner = no
-					NOT = {
+					nor = {
 						trait = incapable
 						trait = infirm
 						trait = blinded
 						trait = craven
-					}
-					NOT = {
 						is_inaccessible_trigger = yes
 					}
 				}
@@ -1682,13 +1626,11 @@ character_event = {
 						}
 						in_command = no
 						prisoner = no
-						NOT = {
+						nor = {
 							trait = incapable
 							trait = infirm
 							trait = blinded
 							trait = craven
-						}
-						NOT = {
 							is_inaccessible_trigger = yes
 						}
 					}
@@ -1697,8 +1639,8 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 35
+	weight_multiplier = {
+		factor = 0.28571
 	}
 
 	immediate = {
@@ -1721,12 +1663,10 @@ character_event = {
 						}
 						in_command = no
 						prisoner = no
-						NOT = {
+						nor = {
 							trait = incapable
 							trait = infirm
 							trait = blinded
-						}
-						NOT = {
 							is_inaccessible_trigger = yes
 						}
 					}
@@ -1763,12 +1703,10 @@ character_event = {
 							}
 							in_command = no
 							prisoner = no
-							NOT = {
+							nor = {
 								trait = incapable
 								trait = infirm
 								trait = blinded
-							}
-							NOT = {
 								is_inaccessible_trigger = yes
 							}
 						}
@@ -1971,14 +1909,13 @@ character_event = {
 	is_patrician = yes
 	capable_only = yes
 	prisoner = no
+	is_triggered_only = yes
 
 	trigger = {
 		in_command = no
-		NOT = {
+		nor = {
 			trait = infirm
 			trait = blinded
-		}
-		NOT = {
 			is_inaccessible_trigger = yes
 		}
 		has_dynasty_flag = the_feuders
@@ -1992,12 +1929,10 @@ character_event = {
 				in_command = no
 				prisoner = no
 				is_patrician = yes
-				NOT = {
+				nor = {
 					trait = incapable
 					trait = infirm
 					trait = blinded
-				}
-				NOT = {
 					is_inaccessible_trigger = yes
 				}
 				has_dynasty_flag = the_victims
@@ -2013,12 +1948,10 @@ character_event = {
 					age = 16
 					in_command = no
 					prisoner = no
-					NOT = {
+					nor = {
 						trait = incapable
 						trait = infirm
 						trait = blinded
-					}
-					NOT = {
 						is_inaccessible_trigger = yes
 					}
 					has_dynasty_flag = the_victims
@@ -2031,8 +1964,8 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 60
+	weight_multiplier = {
+		factor = 0.16667
 	}
 
 	immediate = {
@@ -2043,10 +1976,8 @@ character_event = {
 					ai = no
 					has_dynasty_flag = the_victims
 					has_dynasty_flag = feud_phase_two
-					NOT = {
+					nor = {
 						has_dynasty_flag = pirate_feud
-					}
-					NOT = {
 						is_inaccessible_trigger = yes
 					}
 				}
@@ -2065,10 +1996,8 @@ character_event = {
 						ai = no
 						has_dynasty_flag = the_victims
 						has_dynasty_flag = feud_phase_two
-						NOT = {
+						nor = {
 							has_dynasty_flag = pirate_feud
-						}
-						NOT = {
 							is_inaccessible_trigger = yes
 						}
 					}
@@ -2081,10 +2010,8 @@ character_event = {
 						ai = no
 						has_dynasty_flag = the_victims
 						has_dynasty_flag = feud_phase_two
-						NOT = {
+						nor = {
 							has_dynasty_flag = pirate_feud
-						}
-						NOT = {
 							is_inaccessible_trigger = yes
 						}
 					}
@@ -2272,6 +2199,7 @@ character_event = {
 	is_patrician = yes
 	prisoner = no
 	capable_only = yes
+	is_triggered_only = yes
 
 	trigger = {
 		has_dynasty_flag = the_feuders
@@ -2286,8 +2214,8 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 26
+	weight_multiplier = {
+		factor = 0.38462
 	}
 
 	immediate = {
@@ -2338,6 +2266,7 @@ character_event = {
 	has_dlc = "The Republic"
 	ai = yes
 	is_patrician = yes
+	is_triggered_only = yes
 
 	trigger = {
 		has_dynasty_flag = the_feuders
@@ -2359,8 +2288,8 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 26
+	weight_multiplier = {
+		factor = 0.38462
 	}
 
 	immediate = {
@@ -2403,6 +2332,7 @@ character_event = {
 	has_dlc = "The Republic"
 	ai = yes
 	is_patrician = yes
+	is_triggered_only = yes
 
 	trigger = {
 		has_dynasty_flag = the_feuders
@@ -2425,8 +2355,8 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 35
+	weight_multiplier = {
+		factor = 0.28571
 	}
 
 	immediate = {

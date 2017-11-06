@@ -48,10 +48,8 @@ character_event = {
 				trait = poet
 				trait = gardener
 			}
-			NOT = {
+			nor = {
 				num_of_children = 1
-			}
-			NOT = {
 				trait = homosexual
 			}
 		}
@@ -95,13 +93,9 @@ character_event = {
 					trait = poet
 					trait = gardener
 				}
-				NOT = {
+				nor = {
 					num_of_children = 1
-				}
-				NOT = {
 					trait = homosexual
-				}
-				NOT = {
 					reverse_opinion = {
 						who = ROOT value = 50
 					}
@@ -133,13 +127,9 @@ character_event = {
 					trait = poet
 					trait = gardener
 				}
-				NOT = {
+				nor = {
 					num_of_children = 1
-				}
-				NOT = {
 					trait = homosexual
-				}
-				NOT = {
 					reverse_opinion = {
 						who = ROOT value = 50
 					}
@@ -172,13 +162,9 @@ character_event = {
 					trait = poet
 					trait = gardener
 				}
-				NOT = {
+				nor = {
 					num_of_children = 1
-				}
-				NOT = {
 					trait = homosexual
-				}
-				NOT = {
 					reverse_opinion = {
 						who = ROOT value = 50
 					}
@@ -272,10 +258,8 @@ character_event = {
 		any_courtier = {
 			limit = {
 				prisoner = no
-				NOT = {
+				nor = {
 					trait = homosexual
-				}
-				NOT = {
 					character = ROOT
 				}
 			}
@@ -308,10 +292,8 @@ character_event = {
 			prisoner = no
 			is_female = no
 			age = 16
-			NOT = {
+			nor = {
 				has_character_flag = impotent_man
-			}
-			NOT = {
 				reverse_opinion = {
 					who = ROOT value = 50
 				}
@@ -324,10 +306,8 @@ character_event = {
 				trait = poet
 				trait = gardener
 			}
-			NOT = {
+			nor = {
 				num_of_children = 1
-			}
-			NOT = {
 				trait = homosexual
 			}
 		}
@@ -372,13 +352,9 @@ character_event = {
 					trait = poet
 					trait = gardener
 				}
-				NOT = {
+				nor = {
 					num_of_children = 1
-				}
-				NOT = {
 					trait = homosexual
-				}
-				NOT = {
 					reverse_opinion = {
 						who = ROOT value = 50
 					}
@@ -410,13 +386,9 @@ character_event = {
 					trait = poet
 					trait = gardener
 				}
-				NOT = {
+				nor = {
 					num_of_children = 1
-				}
-				NOT = {
 					trait = homosexual
-				}
-				NOT = {
 					reverse_opinion = {
 						who = ROOT value = 50
 					}
@@ -472,6 +444,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	has_character_flag = suspected_sodomite
+	is_triggered_only = yes
 
 	trigger = {
 		OR = {
@@ -482,22 +455,12 @@ character_event = {
 			trait = poet
 			trait = gardener
 		}
-		NOT = {
+		nor = {
 			num_of_children = 1
-		}
-		NOT = {
 			trait = homosexual
-		}
-		NOT = {
 			has_character_modifier = whoremaster
-		}
-		NOT = {
 			is_inaccessible_trigger = yes
 		}
-	}
-
-	mean_time_to_happen = {
-		years = 5
 	}
 
 	immediate = {
@@ -531,6 +494,7 @@ character_event = {
 	prisoner = no
 	has_character_flag = suspected_sodomite
 	religion_group = old_world_group
+	is_triggered_only = yes
 
 	trigger = {
 		OR = {
@@ -541,19 +505,11 @@ character_event = {
 			trait = poet
 			trait = gardener
 		}
-		NOT = {
+		nor = {
 			num_of_children = 1
-		}
-		NOT = {
 			trait = homosexual
-		}
-		NOT = {
 			is_inaccessible_trigger = yes
 		}
-	}
-
-	mean_time_to_happen = {
-		years = 5
 	}
 
 	immediate = {
@@ -582,6 +538,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	has_character_flag = suspected_sodomite
+	is_triggered_only = yes
 
 	trigger = {
 		OR = {
@@ -592,16 +549,10 @@ character_event = {
 			trait = poet
 			trait = gardener
 		}
-		NOT = {
+		nor = {
 			num_of_children = 1
-		}
-		NOT = {
 			trait = homosexual
 		}
-	}
-
-	mean_time_to_happen = {
-		years = 5
 	}
 
 	immediate = {
@@ -626,6 +577,7 @@ character_event = {
 	prisoner = no
 	religion_group = ormazd_gods_group
 	has_character_flag = suspected_sodomite
+	is_triggered_only = yes
 
 	trigger = {
 		OR = {
@@ -636,16 +588,10 @@ character_event = {
 			trait = poet
 			trait = gardener
 		}
-		NOT = {
+		nor = {
 			num_of_children = 1
-		}
-		NOT = {
 			trait = homosexual
 		}
-	}
-
-	mean_time_to_happen = {
-		years = 5
 	}
 
 	immediate = {
@@ -677,11 +623,9 @@ character_event = {
 	trigger = {
 		intrigue = 10
 		is_ruler = no
-		NOT = {
+		nor = {
 			religion_group = ormazd_gods_group
 			religion_group = zoroastrian_group
-		}
-		NOT = {
 			has_character_flag = rumour_spreader
 		}
 		any_courtier = {
@@ -694,23 +638,17 @@ character_event = {
 					who = ROOT value = 50
 				}
 			}
-			NOT = {
+			nor = {
 				has_character_flag = suspected_of_incest
-			}
-			NOT = {
 				trait = chaste
-			}
-			NOT = {
 				age = 40
 			}
 			any_sibling = {
 				is_female = yes
 				at_location = ROOT
 				age = 16
-				NOT = {
+				nor = {
 					age = 40
-				}
-				NOT = {
 					trait = chaste
 				}
 				reverse_opinion = {
@@ -739,13 +677,9 @@ character_event = {
 				is_female = no
 				age = 16
 				at_location = ROOT
-				NOT = {
+				nor = {
 					trait = chaste
-				}
-				NOT = {
 					age = 40
-				}
-				NOT = {
 					reverse_opinion = {
 						who = ROOT value = 50
 					}
@@ -754,10 +688,8 @@ character_event = {
 					is_female = yes
 					at_location = ROOT
 					age = 16
-					NOT = {
+					nor = {
 						age = 40
-					}
-					NOT = {
 						trait = chaste
 					}
 					reverse_opinion = {
@@ -784,13 +716,9 @@ character_event = {
 				is_female = no
 				age = 16
 				at_location = ROOT
-				NOT = {
+				nor = {
 					trait = chaste
-				}
-				NOT = {
 					age = 40
-				}
-				NOT = {
 					reverse_opinion = {
 						who = ROOT value = 50
 					}
@@ -799,10 +727,8 @@ character_event = {
 					is_female = yes
 					at_location = ROOT
 					age = 16
-					NOT = {
+					nor = {
 						age = 40
-					}
-					NOT = {
 						trait = chaste
 					}
 					reverse_opinion = {
@@ -830,13 +756,9 @@ character_event = {
 				is_female = no
 				age = 16
 				at_location = ROOT
-				NOT = {
+				nor = {
 					trait = chaste
-				}
-				NOT = {
 					age = 40
-				}
-				NOT = {
 					reverse_opinion = {
 						who = ROOT value = 50
 					}
@@ -845,10 +767,8 @@ character_event = {
 					is_female = yes
 					at_location = ROOT
 					age = 16
-					NOT = {
+					nor = {
 						age = 40
-					}
-					NOT = {
 						trait = chaste
 					}
 					reverse_opinion = {
@@ -898,13 +818,9 @@ character_event = {
 				prisoner = no
 				is_female = yes
 				age = 16
-				NOT = {
+				nor = {
 					age = 50
-				}
-				NOT = {
 					trait = chaste
-				}
-				NOT = {
 					trait = celibate
 				}
 			}
@@ -1065,13 +981,9 @@ character_event = {
 					who = ROOT value = 50
 				}
 			}
-			NOT = {
+			nor = {
 				has_character_flag = suspected_of_incest
-			}
-			NOT = {
 				trait = chaste
-			}
-			NOT = {
 				age = 40
 			}
 			any_sibling = {
@@ -1079,10 +991,8 @@ character_event = {
 				is_female = yes
 				at_location = ROOT
 				age = 16
-				NOT = {
+				nor = {
 					age = 40
-				}
-				NOT = {
 					trait = chaste
 				}
 				reverse_opinion = {
@@ -1114,13 +1024,9 @@ character_event = {
 				is_female = no
 				age = 16
 				at_location = ROOT
-				NOT = {
+				nor = {
 					trait = chaste
-				}
-				NOT = {
 					age = 40
-				}
-				NOT = {
 					reverse_opinion = {
 						who = ROOT value = 50
 					}
@@ -1129,10 +1035,8 @@ character_event = {
 					is_female = yes
 					at_location = ROOT
 					age = 16
-					NOT = {
+					nor = {
 						age = 40
-					}
-					NOT = {
 						trait = chaste
 					}
 					reverse_opinion = {
@@ -1154,10 +1058,8 @@ character_event = {
 					is_female = yes
 					at_location = ROOT
 					age = 16
-					NOT = {
+					nor = {
 						age = 40
-					}
-					NOT = {
 						trait = chaste
 					}
 					reverse_opinion = {
@@ -1183,13 +1085,9 @@ character_event = {
 				is_female = no
 				age = 16
 				at_location = ROOT
-				NOT = {
+				nor = {
 					trait = chaste
-				}
-				NOT = {
 					age = 40
-				}
-				NOT = {
 					reverse_opinion = {
 						who = ROOT value = 50
 					}
@@ -1198,10 +1096,8 @@ character_event = {
 					is_female = yes
 					at_location = ROOT
 					age = 16
-					NOT = {
+					nor = {
 						age = 40
-					}
-					NOT = {
 						trait = chaste
 					}
 					reverse_opinion = {
@@ -1218,10 +1114,8 @@ character_event = {
 					is_female = yes
 					at_location = ROOT
 					age = 16
-					NOT = {
+					nor = {
 						age = 40
-					}
-					NOT = {
 						trait = chaste
 					}
 					reverse_opinion = {
@@ -1255,15 +1149,12 @@ character_event = {
 	prisoner = no
 	religion_group = old_world_group
 	has_character_flag = suspected_of_incest
+	is_triggered_only = yes
 
 	trigger = {
 		NOT = {
 			has_character_modifier = suspected_of_incest_timer
 		}
-	}
-
-	mean_time_to_happen = {
-		years = 5
 	}
 
 	immediate = {
@@ -1314,6 +1205,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	has_character_flag = suspected_of_incest
+	is_triggered_only = yes
 
 	trigger = {
 		any_sibling = {
@@ -1336,17 +1228,11 @@ character_event = {
 				age = 15
 			}
 			can_be_maimed_trigger = yes
-			NOT = {
+			nor = {
 				trait = incapable
-			}
-			NOT = {
 				trait = blinded
 			}
 		}
-	}
-
-	mean_time_to_happen = {
-		years = 5
 	}
 
 	immediate = {
@@ -1478,10 +1364,8 @@ character_event = {
 					who = ROOT value = 50
 				}
 			}
-			NOT = {
+			nor = {
 				num_of_children = 1
-			}
-			NOT = {
 				has_character_flag = impotent_man
 			}
 		}
@@ -1754,10 +1638,8 @@ character_event = {
 					who = ROOT value = 50
 				}
 			}
-			NOT = {
+			nor = {
 				num_of_children = 1
-			}
-			NOT = {
 				has_character_flag = impotent_man
 			}
 		}
@@ -1861,15 +1743,12 @@ character_event = {
 	prisoner = no
 	only_men = yes
 	has_character_flag = impotent_man
+	is_triggered_only = yes
 
 	trigger = {
 		NOT = {
 			num_of_children = 1
 		}
-	}
-
-	mean_time_to_happen = {
-		years = 5
 	}
 
 	immediate = {
@@ -1921,13 +1800,9 @@ character_event = {
 				prisoner = no
 				is_female = yes
 				age = 16
-				NOT = {
+				nor = {
 					age = 40
-				}
-				NOT = {
 					trait = celibate
-				}
-				NOT = {
 					family = PREV
 				}
 				opinion = {
@@ -1989,13 +1864,9 @@ character_event = {
 					prisoner = no
 					is_female = yes
 					age = 16
-					NOT = {
+					nor = {
 						age = 40
-					}
-					NOT = {
 						trait = celibate
-					}
-					NOT = {
 						family = PREV
 					}
 					opinion = {
@@ -2040,13 +1911,9 @@ character_event = {
 					prisoner = no
 					is_female = yes
 					age = 16
-					NOT = {
+					nor = {
 						age = 40
-					}
-					NOT = {
 						trait = celibate
-					}
-					NOT = {
 						family = PREV
 					}
 					opinion = {
@@ -2092,10 +1959,8 @@ character_event = {
 					prisoner = no
 					is_female = yes
 					age = 16
-					NOT = {
+					nor = {
 						age = 40
-					}
-					NOT = {
 						family = PREV
 					}
 					opinion = {
@@ -2139,13 +2004,9 @@ character_event = {
 				prisoner = no
 				is_female = yes
 				age = 16
-				NOT = {
+				nor = {
 					age = 40
-				}
-				NOT = {
 					trait = celibate
-				}
-				NOT = {
 					family = ROOT
 				}
 				opinion = {
@@ -2529,6 +2390,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	has_character_flag = committed_adultery
+	is_triggered_only = yes
 
 	trigger = {
 		num_of_children = 2
@@ -2543,10 +2405,6 @@ character_event = {
 				who = ROOT modifier = opinion_mad_as_hell
 			}
 		}
-	}
-
-	mean_time_to_happen = {
-		years = 5
 	}
 
 	immediate = {
@@ -2576,6 +2434,7 @@ character_event = {
 	min_age = 16
 	capable_only = yes
 	prisoner = no
+	is_triggered_only = yes
 
 	trigger = {
 		any_lover = {
@@ -2590,10 +2449,6 @@ character_event = {
 				who = ROOT modifier = opinion_mad_as_hell
 			}
 		}
-	}
-
-	mean_time_to_happen = {
-		years = 5
 	}
 
 	immediate = {
@@ -2668,13 +2523,9 @@ character_event = {
 			}
 			religion_group = old_world_group
 			learning = 10
-			NOT = {
+			nor = {
 				piety = 50
-			}
-			NOT = {
 				trait = zealous
-			}
-			NOT = {
 				has_character_flag = suspected_occultist
 			}
 		}
@@ -2721,13 +2572,9 @@ character_event = {
 						who = ROOT value = 50
 					}
 				}
-				NOT = {
+				nor = {
 					piety = 50
-				}
-				NOT = {
 					trait = zealous
-				}
-				NOT = {
 					has_character_flag = suspected_occultist
 				}
 			}
@@ -2756,13 +2603,9 @@ character_event = {
 						who = ROOT value = 50
 					}
 				}
-				NOT = {
+				nor = {
 					piety = 50
-				}
-				NOT = {
 					trait = zealous
-				}
-				NOT = {
 					has_character_flag = suspected_occultist
 				}
 			}
@@ -2792,13 +2635,9 @@ character_event = {
 						who = ROOT value = 50
 					}
 				}
-				NOT = {
+				nor = {
 					piety = 50
-				}
-				NOT = {
 					trait = zealous
-				}
-				NOT = {
 					has_character_flag = suspected_occultist
 				}
 			}
@@ -2931,13 +2770,9 @@ character_event = {
 					who = ROOT value = 50
 				}
 			}
-			NOT = {
+			nor = {
 				piety = 50
-			}
-			NOT = {
 				trait = zealous
-			}
-			NOT = {
 				has_character_flag = suspected_occultist
 			}
 		}
@@ -2980,13 +2815,9 @@ character_event = {
 						who = ROOT value = 50
 					}
 				}
-				NOT = {
+				nor = {
 					piety = 50
-				}
-				NOT = {
 					trait = zealous
-				}
-				NOT = {
 					has_character_flag = suspected_occultist
 				}
 			}
@@ -3015,13 +2846,9 @@ character_event = {
 						who = ROOT value = 50
 					}
 				}
-				NOT = {
+				nor = {
 					piety = 50
-				}
-				NOT = {
 					trait = zealous
-				}
-				NOT = {
 					has_character_flag = suspected_occultist
 				}
 			}
@@ -3044,6 +2871,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	has_character_flag = suspected_occultist
+	is_triggered_only = yes
 
 	trigger = {
 		any_courtier = {
@@ -3056,10 +2884,6 @@ character_event = {
 		NOT = {
 			has_character_modifier = missing_child_timer
 		}
-	}
-
-	mean_time_to_happen = {
-		years = 5
 	}
 
 	immediate = {
@@ -3103,15 +2927,12 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	has_character_flag = suspected_occultist
+	is_triggered_only = yes
 
 	trigger = {
 		NOT = {
 			has_character_modifier = voice_in_darkness_timer
 		}
-	}
-
-	mean_time_to_happen = {
-		years = 5
 	}
 
 	immediate = {
@@ -3147,15 +2968,12 @@ character_event = {
 	prisoner = no
 	religion_group = old_world_group
 	has_character_flag = suspected_occultist
+	is_triggered_only = yes
 
 	trigger = {
 		NOT = {
 			has_character_modifier = confessor_and_occultist_timer
 		}
-	}
-
-	mean_time_to_happen = {
-		years = 5
 	}
 
 	immediate = {
@@ -3193,22 +3011,15 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	has_character_flag = suspected_occultist
+	is_triggered_only = yes
 
 	trigger = {
 		has_character_flag = occultist_flagged
-		NOT = {
+		nor = {
 			has_character_modifier = dabble_dark_arts_timer
-		}
-		NOT = {
 			trait = possessed
-		}
-		NOT = {
 			trait = stressed
 		}
-	}
-
-	mean_time_to_happen = {
-		years = 5
 	}
 
 	immediate = {
@@ -3924,21 +3735,15 @@ character_event = {
 			prisoner = no
 			age = 16
 			religion_group = old_world_group
-			NOT = {
+			nor = {
 				has_character_flag = flag_unchristian
-			}
-			NOT = {
 				reverse_opinion = {
 					who = ROOT value = 50
 				}
 			}
-			NOT = {
+			nor = {
 				piety = 50
-			}
-			NOT = {
 				learning = 8
-			}
-			NOT = {
 				trait = zealous
 			}
 		}
@@ -3957,16 +3762,10 @@ character_event = {
 						who = ROOT value = 50
 					}
 				}
-				NOT = {
+				nor = {
 					has_character_flag = flag_unchristian
-				}
-				NOT = {
 					piety = 50
-				}
-				NOT = {
 					learning = 8
-				}
-				NOT = {
 					trait = zealous
 				}
 			}
@@ -4151,13 +3950,9 @@ character_event = {
 					who = ROOT value = 50
 				}
 			}
-			NOT = {
+			nor = {
 				piety = 50
-			}
-			NOT = {
 				learning = 8
-			}
-			NOT = {
 				trait = zealous
 			}
 		}
@@ -4201,13 +3996,9 @@ character_event = {
 						who = ROOT value = 50
 					}
 				}
-				NOT = {
+				nor = {
 					piety = 50
-				}
-				NOT = {
 					learning = 8
-				}
-				NOT = {
 					trait = zealous
 				}
 			}
@@ -4236,13 +4027,9 @@ character_event = {
 						who = ROOT value = 50
 					}
 				}
-				NOT = {
+				nor = {
 					piety = 50
-				}
-				NOT = {
 					learning = 8
-				}
-				NOT = {
 					trait = zealous
 				}
 			}
@@ -4264,6 +4051,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	has_character_flag = flag_unchristian
+	is_triggered_only = yes
 
 	trigger = {
 		NOT = {
@@ -4276,10 +4064,6 @@ character_event = {
 				age = 15
 			}
 		}
-	}
-
-	mean_time_to_happen = {
-		years = 5
 	}
 
 	immediate = {
@@ -4347,15 +4131,12 @@ character_event = {
 	prisoner = no
 	has_character_flag = flag_unchristian
 	religion = sigmarite
+	is_triggered_only = yes
 
 	trigger = {
 		NOT = {
 			piety = 100
 		}
-	}
-
-	mean_time_to_happen = {
-		years = 5
 	}
 
 	immediate = {
@@ -4391,15 +4172,12 @@ character_event = {
 	prisoner = no
 	religion_group = ormazd_gods_group
 	has_character_flag = flag_nomuslim
+	is_triggered_only = yes
 
 	trigger = {
 		NOT = {
 			piety = 100
 		}
-	}
-
-	mean_time_to_happen = {
-		years = 5
 	}
 
 	immediate = {
@@ -4465,13 +4243,9 @@ character_event = {
 					who = ROOT value = 50
 				}
 			}
-			NOT = {
+			nor = {
 				has_character_flag = flag_suspected_coward
-			}
-			NOT = {
 				has_character_modifier = proving_bravery
-			}
-			NOT = {
 				has_character_modifier = suspected_coward
 			}
 			OR = {
@@ -4480,10 +4254,8 @@ character_event = {
 					martial = 8
 				}
 			}
-			NOT = {
+			nor = {
 				trait = brave
-			}
-			NOT = {
 				is_inaccessible_trigger = yes
 			}
 		}
@@ -4522,13 +4294,9 @@ character_event = {
 						who = ROOT value = 50
 					}
 				}
-				NOT = {
+				nor = {
 					has_character_flag = flag_suspected_coward
-				}
-				NOT = {
 					has_character_modifier = proving_bravery
-				}
-				NOT = {
 					has_character_modifier = suspected_coward
 				}
 				is_female = no
@@ -4539,10 +4307,8 @@ character_event = {
 						martial = 8
 					}
 				}
-				NOT = {
+				nor = {
 					trait = brave
-				}
-				NOT = {
 					is_inaccessible_trigger = yes
 				}
 			}
@@ -4567,13 +4333,9 @@ character_event = {
 						who = ROOT value = 50
 					}
 				}
-				NOT = {
+				nor = {
 					has_character_flag = flag_suspected_coward
-				}
-				NOT = {
 					has_character_modifier = proving_bravery
-				}
-				NOT = {
 					has_character_modifier = suspected_coward
 				}
 				is_female = no
@@ -4584,10 +4346,8 @@ character_event = {
 						martial = 8
 					}
 				}
-				NOT = {
+				nor = {
 					trait = brave
-				}
-				NOT = {
 					is_inaccessible_trigger = yes
 				}
 			}
@@ -4613,13 +4373,9 @@ character_event = {
 						who = ROOT value = 50
 					}
 				}
-				NOT = {
+				nor = {
 					has_character_flag = flag_suspected_coward
-				}
-				NOT = {
 					has_character_modifier = proving_bravery
-				}
-				NOT = {
 					has_character_modifier = suspected_coward
 				}
 				is_female = no
@@ -4630,10 +4386,8 @@ character_event = {
 						martial = 8
 					}
 				}
-				NOT = {
+				nor = {
 					trait = brave
-				}
-				NOT = {
 					is_inaccessible_trigger = yes
 				}
 			}
@@ -4766,13 +4520,9 @@ character_event = {
 					who = ROOT value = 50
 				}
 			}
-			NOT = {
+			nor = {
 				has_character_flag = flag_suspected_coward
-			}
-			NOT = {
 				has_character_modifier = proving_bravery
-			}
-			NOT = {
 				has_character_modifier = suspected_coward
 			}
 			OR = {
@@ -4781,10 +4531,8 @@ character_event = {
 					martial = 8
 				}
 			}
-			NOT = {
+			nor = {
 				trait = brave
-			}
-			NOT = {
 				is_inaccessible_trigger = yes
 			}
 		}
@@ -4823,13 +4571,9 @@ character_event = {
 						who = ROOT value = 50
 					}
 				}
-				NOT = {
+				nor = {
 					has_character_flag = flag_suspected_coward
-				}
-				NOT = {
 					has_character_modifier = proving_bravery
-				}
-				NOT = {
 					has_character_modifier = suspected_coward
 				}
 				is_female = no
@@ -4840,10 +4584,8 @@ character_event = {
 						martial = 8
 					}
 				}
-				NOT = {
+				nor = {
 					trait = brave
-				}
-				NOT = {
 					is_inaccessible_trigger = yes
 				}
 			}
@@ -4868,13 +4610,9 @@ character_event = {
 						who = ROOT value = 50
 					}
 				}
-				NOT = {
+				nor = {
 					has_character_flag = flag_suspected_coward
-				}
-				NOT = {
 					has_character_modifier = proving_bravery
-				}
-				NOT = {
 					has_character_modifier = suspected_coward
 				}
 				is_female = no
@@ -4885,10 +4623,8 @@ character_event = {
 						martial = 8
 					}
 				}
-				NOT = {
+				nor = {
 					trait = brave
-				}
-				NOT = {
 					is_inaccessible_trigger = yes
 				}
 			}
@@ -4909,14 +4645,11 @@ character_event = {
 	picture = GFX_evt_melee
 	capable_only = yes
 	prisoner = no
+	is_triggered_only = yes
 
 	trigger = {
 		has_character_modifier = proving_bravery
 		trait = craven
-	}
-
-	mean_time_to_happen = {
-		years = 5
 	}
 
 	immediate = {
@@ -4952,16 +4685,13 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	has_character_flag = flag_suspected_coward
+	is_triggered_only = yes
 
 	trigger = {
 		has_character_modifier = suspected_coward
 		NOT = {
 			trait = craven
 		}
-	}
-
-	mean_time_to_happen = {
-		years = 5
 	}
 
 	immediate = {
@@ -5000,6 +4730,7 @@ character_event = {
 	picture = GFX_evt_melee
 	capable_only = yes
 	prisoner = no
+	is_triggered_only = yes
 
 	trigger = {
 		OR = {
@@ -5007,10 +4738,6 @@ character_event = {
 			has_character_modifier = proving_bravery
 		}
 		trait = brave
-	}
-
-	mean_time_to_happen = {
-		years = 5
 	}
 
 	immediate = {
@@ -5481,21 +5208,15 @@ character_event = {
 				religion = ormazd
 				religion = kitabid
 			}
-			NOT = {
+			nor = {
 				has_character_flag = flag_nomuslim
-			}
-			NOT = {
 				reverse_opinion = {
 					who = ROOT value = 50
 				}
 			}
-			NOT = {
+			nor = {
 				piety = 50
-			}
-			NOT = {
 				learning = 8
-			}
-			NOT = {
 				trait = zealous
 			}
 		}
@@ -5539,16 +5260,10 @@ character_event = {
 						who = ROOT value = 50
 					}
 				}
-				NOT = {
+				nor = {
 					has_character_flag = flag_nomuslim
-				}
-				NOT = {
 					piety = 50
-				}
-				NOT = {
 					learning = 8
-				}
-				NOT = {
 					trait = zealous
 				}
 			}
@@ -5579,16 +5294,10 @@ character_event = {
 						who = ROOT value = 50
 					}
 				}
-				NOT = {
+				nor = {
 					has_character_flag = flag_nomuslim
-				}
-				NOT = {
 					piety = 50
-				}
-				NOT = {
 					learning = 8
-				}
-				NOT = {
 					trait = zealous
 				}
 			}
@@ -5619,16 +5328,10 @@ character_event = {
 						who = ROOT value = 50
 					}
 				}
-				NOT = {
+				nor = {
 					has_character_flag = flag_nomuslim
-				}
-				NOT = {
 					piety = 50
-				}
-				NOT = {
 					learning = 8
-				}
-				NOT = {
 					trait = zealous
 				}
 			}

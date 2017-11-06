@@ -16,6 +16,7 @@ character_event = {
 	prisoner = no
 	min_age = 16
 	max_age = 65
+	is_triggered_only = yes
 
 	trigger = {
 		is_landed = yes
@@ -51,41 +52,41 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 10
+	weight_multiplier = {
+		factor = 1
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			has_focus = focus_seduction
 		}
 		modifier = {
-			factor = 1.5
+			factor = 0.67
 			num_of_lovers = 1
 		}
 		modifier = {
-			factor = 2.0
+			factor = 0.50
 			num_of_lovers = 2
 		}
 		modifier = {
-			factor = 4.0
+			factor = 0.25
 			num_of_lovers = 3
 		}
 		modifier = {
-			factor = 5.0
+			factor = 0.20
 			num_of_lovers = 4
 		}
 		modifier = {
-			factor = 4.0
+			factor = 0.25
 			OR = {
 				religion = ormazd
 				religion = kitabid
 			}
 		}
 		modifier = {
-			factor = 0.33
+			factor = 3.03
 			trait = homosexual # To balance for fewer potential lovers
 		}
 		modifier = {
-			factor = 2.0
+			factor = 0.50
 			spouse = {
 				NOT = {
 					age = 30
@@ -93,33 +94,33 @@ character_event = {
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			spouse = {
 				age = 45
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = hedonist
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = lustful
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = fair
 		}
 		modifier = {
-			factor = 2.0
+			factor = 0.50
 			trait = shy
 		}
 		modifier = {
-			factor = 2.0
+			factor = 0.50
 			trait = ugly
 		}
 		modifier = {
-			factor = 10.0
+			factor = 0.10
 			trait = chaste
 		}
 	}
@@ -176,10 +177,8 @@ character_event = {
 					trait = deceitful
 					trait = hedonist
 					spouse = {
-						NOT = {
+						nor = {
 							is_lover = PREV
-						}
-						NOT = {
 							reverse_opinion = {
 								who = PREV value = 50
 							}
@@ -270,10 +269,8 @@ character_event = {
 	option = {
 		name = EVTOPTB451 # Not appropriate
 		trigger = {
-			NOT = {
+			nor = {
 				trait = lustful
-			}
-			NOT = {
 				trait = hedonist
 			}
 		}
@@ -452,10 +449,8 @@ character_event = {
 	option = {
 		name = EVTOPTB452 # Dissuade
 		trigger = {
-			NOT = {
+			nor = {
 				trait = lustful
-			}
-			NOT = {
 				trait = hedonist
 			}
 		}
@@ -505,10 +500,8 @@ character_event = {
 				is_female = no
 			}
 			is_female = yes
-			NOT = {
+			nor = {
 				trait = lustful
-			}
-			NOT = {
 				trait = hedonist
 			}
 		}
@@ -616,6 +609,7 @@ character_event = {
 	prisoner = no
 	min_age = 16
 	max_age = 65
+	is_triggered_only = yes
 
 	trigger = {
 		is_ruler = no
@@ -635,34 +629,16 @@ character_event = {
 				higher_tier_than = DUKE
 			}
 		}
-		NOT = {
+		nor = {
 			trait = pet_consort
-		}
-		NOT = {
 			trait = chaste
-		}
-		NOT = {
 			trait = infirm
-		}
-		NOT = {
 			trait = celibate
-		}
-		NOT = {
 			trait = eunuch
-		}
-		NOT = {
 			is_inaccessible_trigger = yes
-		}
-		NOT = {
 			trait = creature_orc
-		}
-		NOT = {
 			trait = creature_goblin
-		}
-		NOT = {
 			trait = creature_snotling
-		}
-		NOT = {
 			trait = creature_nehekharan
 		}
 		# Faithful spouses don't cheat
@@ -694,22 +670,22 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 333
+	weight_multiplier = {
+		factor = 0.03003
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			spouse = {
 				is_ruler = yes
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			spouse = {
 				has_lover = yes
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			NOT = {
 				age = 30
 			}
@@ -718,38 +694,38 @@ character_event = {
 			}
 		}
 		modifier = {
-			factor = 0.33
+			factor = 3.03
 			trait = homosexual # to balance for fewer potential lovers
 		}
 		modifier = {
-			factor = 0.33
+			factor = 3.03
 			trait = lustful
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = hedonist
 		}
 		modifier = {
-			factor = 0.75
+			factor = 1.33
 			NOT = {
 				age = 20
 			}
 		}
 		modifier = {
-			factor = 2.0
+			factor = 0.50
 			is_female = yes
 			age = 30
 		}
 		# Harems are well guarded...
 		modifier = {
-			factor = 3.0
+			factor = 0.33
 			is_female = yes
 			is_married = yes
 			has_polygamy = yes
 		}
 		# Wives and Concubines of rulers have a harder time initiating this (unless it's their Focus)
 		modifier = {
-			factor = 3.0
+			factor = 0.33
 			is_female = yes
 			NOT = {
 				has_focus = focus_seduction
@@ -786,34 +762,16 @@ character_event = {
 							age = 40
 						}
 					}
-					NOT = {
+					nor = {
 						has_character_modifier = lustful_affair_timer
-					}
-					NOT = {
 						trait = pet_consort
-					}
-					NOT = {
 						trait = infirm
-					}
-					NOT = {
 						trait = incapable
-					}
-					NOT = {
 						trait = celibate
-					}
-					NOT = {
 						trait = eunuch
-					}
-					NOT = {
 						trait = chaste
-					}
-					NOT = {
 						trait = creature_goblin
-					}
-					NOT = {
 						trait = creature_snotling
-					}
-					NOT = {
 						trait = creature_nehekharan
 					}
 					OR = {
@@ -826,13 +784,9 @@ character_event = {
 							}
 						}
 						AND = {
-							NOT = {
+							nor = {
 								trait = inbred
-							}
-							NOT = {
 								trait = imbecile
-							}
-							NOT = {
 								trait = dwarf
 							}
 						}
@@ -1038,10 +992,8 @@ character_event = {
 				}
 				FROM = {
 					trait = ugly
-					NOT = {
+					nor = {
 						trait = seducer
-					}
-					NOT = {
 						trait = seductress
 					}
 				}
@@ -1058,10 +1010,8 @@ character_event = {
 				}
 				FROM = {
 					trait = dwarf
-					NOT = {
+					nor = {
 						trait = seducer
-					}
-					NOT = {
 						trait = seductress
 					}
 				}
@@ -1078,10 +1028,8 @@ character_event = {
 				}
 				FROM = {
 					trait = imbecile
-					NOT = {
+					nor = {
 						trait = seducer
-					}
-					NOT = {
 						trait = seductress
 					}
 				}
@@ -1098,10 +1046,8 @@ character_event = {
 				}
 				FROM = {
 					trait = inbred
-					NOT = {
+					nor = {
 						trait = seducer
-					}
-					NOT = {
 						trait = seductress
 					}
 				}
@@ -1315,10 +1261,8 @@ character_event = {
 				if = {
 					limit = {
 						father_of_unborn = {
-							NOT = {
+							nor = {
 								trait = paranoid
-							}
-							NOT = {
 								trait = trusting
 							}
 						}
@@ -1354,10 +1298,8 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		nor = {
 			trait = pregnant
-		}
-		NOT = {
 			AND = {
 				is_ruler = yes
 				OR = {
@@ -2168,21 +2110,15 @@ character_event = {
 		name = EVTOPTD21010 # Lay a trap
 		trigger = {
 			FROM = {
-				NOT = {
+				nor = {
 					intrigue = 9
-				}
-				NOT = {
 					trait = schemer
-				}
-				NOT = {
 					has_character_modifier = wol_court_vixen
 				}
 				father_of_unborn = {
 					is_alive = yes
-					NOT = {
+					nor = {
 						character = ROOT
-					}
-					NOT = {
 						has_character_modifier = wol_court_tomcat
 					}
 				}
@@ -2312,10 +2248,8 @@ character_event = {
 				trait = seductress
 			}
 			FROM = {
-				NOT = {
+				nor = {
 					has_focus = focus_intrigue
-				}
-				NOT = {
 					intrigue = 9
 				}
 			}
@@ -2458,10 +2392,8 @@ character_event = {
 			}
 			if = {
 				limit = {
-					NOT = {
+					nor = {
 						trait = paranoid
-					}
-					NOT = {
 						trait = trusting
 					}
 				}
@@ -2560,10 +2492,8 @@ character_event = {
 		name = {
 			text = EVTOPTB21003 # Unholy!
 			trigger = {
-				NOT = {
+				nor = {
 					religion = ormazd
-				}
-				NOT = {
 					religion = kitabid
 				}
 				FROM = {
@@ -2666,10 +2596,8 @@ character_event = {
 		}
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					trait = paranoid
-				}
-				NOT = {
 					trait = trusting
 				}
 			}
@@ -2830,10 +2758,8 @@ character_event = {
 				if = {
 					limit = {
 						father_of_unborn = {
-							NOT = {
+							nor = {
 								trait = paranoid
-							}
-							NOT = {
 								trait = trusting
 							}
 						}
@@ -2999,10 +2925,8 @@ character_event = {
 		name = EVTOPTA301 # Legitimize the child
 		trigger = {
 			has_polygamy = no
-			NOT = {
+			nor = {
 				culture_group = kurgan_group
-			}
-			NOT = {
 				culture_group = hung_group
 			}
 		}
@@ -3081,10 +3005,8 @@ character_event = {
 	option = {
 		name = EVTOPTB301 # Acknowledge the child
 		trigger = {
-			NOT = {
+			nor = {
 				culture_group = kurgan_group
-			}
-			NOT = {
 				culture_group = hung_group
 			}
 		}
@@ -3141,10 +3063,8 @@ character_event = {
 	option = {
 		name = EVTOPTC301 # Denounce the child
 		trigger = {
-			NOT = {
+			nor = {
 				culture_group = kurgan_group
-			}
-			NOT = {
 				culture_group = hung_group
 			}
 		}
@@ -3261,10 +3181,8 @@ character_event = {
 
 	option = {
 		trigger = {
-			NOT = {
+			nor = {
 				culture_group = kurgan_group
-			}
-			NOT = {
 				culture_group = hung_group
 			}
 		}

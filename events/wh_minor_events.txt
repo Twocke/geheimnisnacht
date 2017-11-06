@@ -629,6 +629,7 @@ character_event = {
 	prisoner = no
 	only_playable = yes
 	religion = great_maw
+	is_triggered_only = yes
 
 	trigger = {
 		NOT = {
@@ -637,8 +638,8 @@ character_event = {
 		trait = creature_ogre
 	}
 
-	mean_time_to_happen = {
-		years = 54
+	weight_multiplier = {
+		factor = 0.18519
 	}
 
 	immediate = {
@@ -735,19 +736,11 @@ character_event = {
 			}
 			any_vassal = {
 				limit = {
-					NOT = {
+					nor = {
 						trait = brave
-					}
-					NOT = {
 						trait = quick
-					}
-					NOT = {
 						trait = bright
-					}
-					NOT = {
 						trait = brilliant
-					}
-					NOT = {
 						trait = genius
 					}
 				}
@@ -758,19 +751,11 @@ character_event = {
 			}
 			any_courtier = {
 				limit = {
-					NOT = {
+					nor = {
 						trait = brave
-					}
-					NOT = {
 						trait = quick
-					}
-					NOT = {
 						trait = bright
-					}
-					NOT = {
 						trait = brilliant
-					}
-					NOT = {
 						trait = genius
 					}
 				}
@@ -783,22 +768,12 @@ character_event = {
 		}
 		any_vassal = {
 			limit = {
-				NOT = {
+				nor = {
 					trait = brave
-				}
-				NOT = {
 					trait = quick
-				}
-				NOT = {
 					trait = bright
-				}
-				NOT = {
 					trait = brilliant
-				}
-				NOT = {
 					trait = genius
-				}
-				NOT = {
 					trait = creature_ogre
 				}
 			}
@@ -809,22 +784,12 @@ character_event = {
 		}
 		any_courtier = {
 			limit = {
-				NOT = {
+				nor = {
 					trait = brave
-				}
-				NOT = {
 					trait = quick
-				}
-				NOT = {
 					trait = bright
-				}
-				NOT = {
 					trait = brilliant
-				}
-				NOT = {
 					trait = genius
-				}
-				NOT = {
 					trait = creature_ogre
 				}
 			}

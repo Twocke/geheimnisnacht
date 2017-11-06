@@ -275,10 +275,8 @@ character_event = {
 				days = 5
 			}
 		}
-		NOT = {
+		nor = {
 			trait = gluttonous
-		}
-		NOT = {
 			has_character_flag = harem_indulging
 		}
 	}
@@ -930,10 +928,8 @@ character_event = {
 				days = 5
 			}
 		}
-		NOT = {
+		nor = {
 			trait = paranoid
-		}
-		NOT = {
 			trait = gregarious
 		}
 	}
@@ -1005,6 +1001,7 @@ character_event = {
 		log = "work event id = haremsins.014 for [Root.GetBestName]"
 		set_character_flag = harem_event_happened
 	}
+	is_triggered_only = yes
 
 	trigger = {
 		trait = retired_with_harem
@@ -1024,69 +1021,61 @@ character_event = {
 		trait = gluttonous
 		trait = lustful
 		trait = gregarious
-		NOT = {
+		nor = {
 			trait = paranoid
-		}
-		NOT = {
 			trait = addict
-		}
-		NOT = {
 			trait = shy
-		}
-		NOT = {
 			trait = depressed
-		}
-		NOT = {
 			trait = stressed
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 6
+	weight_multiplier = {
+		factor = 0.8
 		modifier = {
-			factor = 0.75
+			factor = 1.33
 			NOT = {
 				has_character_flag = harem_event_happened
 			}
 		}
 		modifier = {
-			factor = 1.5
+			factor = 0.67
 			has_character_flag = harem_event_happened
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = temperate
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = diligent
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = paranoid
 		}
 		modifier = {
-			factor = 0.75
+			factor = 1.33
 			trait = drunkard
 		}
 		modifier = {
-			factor = 0.75
+			factor = 1.33
 			trait = lustful
 		}
 		modifier = {
-			factor = 0.75
+			factor = 1.33
 			trait = gluttonous
 		}
 		modifier = {
-			factor = 0.75
+			factor = 1.33
 			trait = gregarious
 		}
 		modifier = {
-			factor = 1.25
+			factor = 0.80
 			trait = shy
 		}
 		modifier = {
-			factor = 1.5
+			factor = 0.67
 			trait = genius
 		}
 	}
@@ -1364,6 +1353,7 @@ character_event = {
 		log = "work event id = haremsins.018 for [Root.GetBestName]"
 		set_character_flag = harem_event_happened
 	}
+	is_triggered_only = yes
 
 	trigger = {
 		trait = retired_with_harem
@@ -1373,40 +1363,40 @@ character_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 1
+	weight_multiplier = {
+		factor = 1
 		modifier = {
-			factor = 0.75
+			factor = 1.33
 			NOT = {
 				has_character_flag = harem_event_happened
 			}
 		}
 		modifier = {
-			factor = 1.5
+			factor = 0.67
 			has_character_flag = harem_event_happened
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2.00
 			trait = weak
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			is_strong_trigger = yes
 		}
 		modifier = {
-			factor = 0.75
+			factor = 1.33
 			trait = fat
 		}
 		modifier = {
-			factor = 2
+			factor = 0.50
 			trait = tall
 		}
 		modifier = {
-			factor = 0.85
+			factor = 1.18
 			trait = dwarf
 		}
 		modifier = {
-			factor = 0.75
+			factor = 1.33
 			trait = hunchback
 		}
 	}
@@ -1474,10 +1464,8 @@ character_event = {
 			}
 		}
 		trait = lustful
-		NOT = {
+		nor = {
 			age = 40
-		}
-		NOT = {
 			has_character_modifier = horny_harem_mod
 		}
 	}
@@ -2087,10 +2075,8 @@ character_event = {
 			}
 		}
 		trait = lustful
-		NOT = {
+		nor = {
 			age = 40
-		}
-		NOT = {
 			is_pregnant = yes
 		}
 	}
