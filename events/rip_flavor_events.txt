@@ -813,12 +813,10 @@ character_event = {
 					trait = incapable
 				}
 				has_lover = no
-				NOT = {
+				nor = {
 					spouse = {
 						character = ROOT
 					}
-				}
-				NOT = {
 					consort = {
 						character = ROOT
 					}
@@ -843,12 +841,10 @@ character_event = {
 					trait = incapable
 				}
 				has_lover = no
-				NOT = {
+				nor = {
 					spouse = {
 						character = ROOT
 					}
-				}
-				NOT = {
 					consort = {
 						character = ROOT
 					}
@@ -874,12 +870,10 @@ character_event = {
 					trait = incapable
 				}
 				has_lover = no
-				NOT = {
+				nor = {
 					spouse = {
 						character = ROOT
 					}
-				}
-				NOT = {
 					consort = {
 						character = ROOT
 					}
@@ -4157,9 +4151,7 @@ character_event = {
 	trigger = {
 		is_tribal = no
 		is_nomadic = no
-		NOT = {
-			is_inaccessible_trigger = yes
-		}
+		is_inaccessible_trigger = no
 		higher_tier_than = COUNT
 		stewardship = 6
 		any_demesne_province = {
@@ -5358,12 +5350,10 @@ character_event = {
 					modifier = {
 						factor = 0
 						OR = {
-							NOT = {
+							nor = {
 								event_target:rip_widow = {
 									always = yes
 								}
-							}
-							NOT = {
 								event_target:rip_child = {
 									always = yes
 								}
@@ -5982,8 +5972,8 @@ character_event = {
 			text = EVTOPTB_RIP_29019_TOOLTIP
 		}
 		reverse_opinion = {
-		 	who = FROM
-		 	modifier = opinion_neglectful_parent
+			who = FROM
+			modifier = opinion_neglectful_parent
 		}
 	}
 }
@@ -8040,12 +8030,12 @@ character_event = {
 	option = {
 		name = EVTOPTA_RIP_29401
 		random_list = {
-		 	60 = {
+			60 = {
 				character_event = {
 					id = RIP.29402 tooltip = EVTOPTA_RIP_29401_SUCCESS
 				}
 			}
-		 	40 = {
+			40 = {
 				character_event = {
 					id = RIP.29403 tooltip = EVTOPTA_RIP_29401_FAILURE
 				}
@@ -8287,12 +8277,12 @@ character_event = {
 	option = {
 		name = EVTOPTA_RIP_29501
 		random_list = {
-		 	50 = {
+			50 = {
 				character_event = {
 					id = RIP.29502 tooltip = EVTOPTA_RIP_29501_SUCCESS days = 30
 				}
 			}
-		 	50 = {
+			50 = {
 				character_event = {
 					id = RIP.29503 tooltip = EVTOPTA_RIP_29501_FAILURE days = 15
 				}
@@ -8303,12 +8293,12 @@ character_event = {
 	option = {
 		name = EVTOPTB_RIP_29501
 		random_list = {
-		 	80 = {
+			80 = {
 				character_event = {
 					id = RIP.29502 tooltip = EVTOPTA_RIP_29501_SUCCESS days = 30
 				}
 			}
-		 	20 = {
+			20 = {
 				character_event = {
 					id = RIP.29504 tooltip = EVTOPTB_RIP_29501_FAILURE days = 15
 				}
@@ -13164,7 +13154,7 @@ narrative_event = {
 				hidden_tooltip = {
 					FROM = {
 						#leave_court_effect = yes
-		 				death = {
+						death = {
 							death_reason = death_missing
 						}
 					}

@@ -35,9 +35,9 @@ decisions = {
 		allow = {
 		}
 		effect = {
-			log = "work decision ai_race_trait_check [This.GetBestName]"
+			log = "work decision ai_race_trait_check for [Root.GetBestName]"
 			character_event = {
-				id = DR_startup.1
+				id = wh_maintenance.51
 			}
 		}
 		ai_will_do = {
@@ -46,29 +46,29 @@ decisions = {
 	}
 	# Lizardmen
 	# ai_dynasty_lizardman = {
-		# potential = {
-			# ai = yes
-			# OR = {
-				# trait = creature_amazon
-				# graphical_culture = lizardmangfx
-			# }
-			# dynasty = 0
-		# }
-		# allow = {
-			# always = no
-		# }
-		# effect = {
-			# log = "work decision ai_dynasty_lizardman [This.GetBestName]"
-			# any_spouse = {
-				# remove_spouse = ROOT
-			# }
-			# character_event = {
-				# id = slizardmen.81
-			# }
-		# }
-		# ai_will_do = {
-			# factor = 1
-		# }
+	# potential = {
+	# ai = yes
+	# OR = {
+	# trait = creature_amazon
+	# graphical_culture = lizardmangfx
+	# }
+	# dynasty = 0
+	# }
+	# allow = {
+	# always = no
+	# }
+	# effect = {
+	# log = "work decision ai_dynasty_lizardman [This.GetBestName]"
+	# any_spouse = {
+	# remove_spouse = ROOT
+	# }
+	# character_event = {
+	# id = slizardmen.81
+	# }
+	# }
+	# ai_will_do = {
+	# factor = 1
+	# }
 	# }
 	ai_intermarriage_fix = {
 		potential = {
@@ -137,6 +137,7 @@ decisions = {
 		allow = {
 		}
 		effect = {
+			log = "work decision ai_intermarriage_fix for [Root.GetBestName]"
 			any_spouse = {
 				remove_spouse = ROOT
 			}
@@ -163,6 +164,7 @@ decisions = {
 		allow = {
 		}
 		effect = {
+			log = "work decision ai_intermarriage_fix_elf for [Root.GetBestName]"
 			if = {
 				limit = {
 					is_female = yes

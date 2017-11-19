@@ -64,257 +64,257 @@ letter_event = {
 
 # MISSIONS
 # Mission tombola
-character_event = {
-	id = DR_societies.1000
-	hide_window = yes
-	is_triggered_only = yes
-	prisoner = no
-	is_in_society = yes
+# character_event = {
+# 	id = DR_societies.1000
+# 	hide_window = yes
+# 	is_triggered_only = yes
+# 	prisoner = no
+# 	is_in_society = yes
 
-	trigger = {
-		society_member_of = cult_of_verena
-		has_any_quest = no
-		nor = {
-			has_character_modifier = quest_cooldown_timer
-			is_inaccessible_trigger = yes
-		}
-		society = {
-			any_society_member = {
-				NOT = {
-					character = ROOT
-				}
-				prisoner = no
-				is_within_diplo_range = ROOT
-				opinion = {
-					who = ROOT
-					value = 0
-				}
-			}
-		}
-	}
+# 	trigger = {
+# 		society_member_of = cult_of_verena
+# 		has_any_quest = no
+# 		nor = {
+# 			has_character_modifier = quest_cooldown_timer
+# 			is_inaccessible_trigger = yes
+# 		}
+# 		society = {
+# 			any_society_member = {
+# 				NOT = {
+# 					character = ROOT
+# 				}
+# 				prisoner = no
+# 				is_within_diplo_range = ROOT
+# 				opinion = {
+# 					who = ROOT
+# 					value = 0
+# 				}
+# 			}
+# 		}
+# 	}
 
-	immediate = {
-		log = "work event id = DR_societies.1000 for [Root.GetBestName]"
-		# Picks out mission giver
-		random_list = {
-			20 = {
-				# International society member
-				society = {
-					random_society_member = {
-						limit = {
-							NOT = {
-								character = ROOT
-							}
-							prisoner = no
-							is_within_diplo_range = ROOT
-							opinion = {
-								who = ROOT
-								value = 0
-							}
-						}
-						save_event_target_as = hermetic_collaborator
-					}
-				}
-			}
-			40 = {
-				# Realm society member
-				trigger = {
-					society = {
-						any_society_member = {
-							NOT = {
-								character = ROOT
-							}
-							prisoner = no
-							is_within_diplo_range = ROOT
-							opinion = {
-								who = ROOT
-								value = 0
-							}
-							same_realm = ROOT
-						}
-					}
-				}
-				society = {
-					random_society_member = {
-						limit = {
-							NOT = {
-								character = ROOT
-							}
-							prisoner = no
-							is_within_diplo_range = ROOT
-							opinion = {
-								who = ROOT
-								value = 0
-							}
-							same_realm = ROOT
-						}
-						save_event_target_as = hermetic_collaborator
-					}
-				}
-			}
-			40 = {
-				# Apprentice
-				trigger = {
-					any_courtier_or_vassal = {
-						has_minor_title = title_hermetics_apprentice prisoner = no
-					}
-					society_member_of = cult_of_verena
-				}
-				random_courtier_or_vassal = {
-					limit = {
-						has_minor_title = title_hermetics_apprentice
-					}
-					save_event_target_as = hermetic_collaborator
-				}
-			}
-		}
-		# Randomizes mission
-		random_list = {
-			20 = {
-				# Find an apprentice
-				trigger = {
-					NOT = {
-						any_courtier_or_vassal = {
-							has_minor_title = title_hermetics_apprentice
-						}
-					}
-					ai = no
-				}
-				event_target:hermetic_collaborator = {
-					character_event = {
-						id = DR_societies.1404 days = 7 random = 7
-					}
-				}
-			}
-			20 = {
-				# Build a laboratory
-				trigger = {
-					nor = {
-						has_character_flag = building_laboratory
-						has_character_flag = built_laboratory
-					}
-					OR = {
-						ai = no
-						society_rank == 4
-					}
-					is_landed = yes
-				}
-				event_target:hermetic_collaborator = {
-					character_event = {
-						id = DR_societies.1120 days = 7 random = 7
-					}
-				}
-			}
-			15 = {
-				# Find a rare scroll/book/tablet
-				trigger = {
-					is_landed = yes
-				}
-				event_target:hermetic_collaborator = {
-					character_event = {
-						id = DR_societies.1417 days = 7 random = 7
-					}
-				}
-			}
-			# 20 = { # Acquire/gather ingredients
-			# trigger = {
-			# is_landed = yes
-			# NOT = {
-			# any_artifact = {
-			# has_artifact_flag = ingredient
-			# }
-			# }
-			# event_target:hermetic_collaborator = { ai = yes }
-			# }
-			# event_target:hermetic_collaborator = { character_event = { id = DR_societies.1801 days = 7 random = 7 } }
-			# }
-			10 = {
-				# Infiltrate lab
-				trigger = {
-					society = {
-						any_society_member = {
-							is_within_diplo_range = ROOT
-							NOR = {
-								character = ROOT
-								character = event_target:hermetic_collaborator
-								reverse_opinion = {
-									who = event_target:hermetic_collaborator
-									value = 20
-								}
-								reverse_opinion = {
-									who = ROOT
-									value = 20
-								}
-								has_character_flag = infiltration_rival
-								has_character_flag = infiltration_mutual_dislike
-								has_character_flag = infiltration_rich
-							}
-						}
-					}
-				}
-				event_target:hermetic_collaborator = {
-					character_event = {
-						id = DR_societies.1430 days = 7 random = 7
-					}
-				}
-			}
-			10 = {
-				# Observe stars
-				event_target:hermetic_collaborator = {
-					character_event = {
-						id = DR_societies.1828 days = 7 random = 7
-					}
-				}
-			}
-			105 = {
-				# AI bypasses missions at times
-				modifier = {
-					factor = 0
-					ai = no
-				}
-				random_list = {
-					70 = {
-						modifier = {
-							factor = 0.9
-							society_influence >= 30
-						}
-						modifier = {
-							factor = 0.9
-							society_influence >= 40
-						}
-						modifier = {
-							factor = 0.8
-							society_influence >= 50
-						}
-						modifier = {
-							factor = 0.7
-							society_influence >= 70
-						}
-						modifier = {
-							factor = 0.6
-							society_influence >= 80
-						}
-						modifier = {
-							factor = 0.5
-							society_influence >= 90
-						}
-						add_mission_succeed_influence_effect = yes
-					}
-					30 = {
-						add_mission_fail_influence_effect = yes
-					}
-				}
-			}
-			175 = {
-				modifier = {
-					factor = 0
-					ai = no
-				}
-				# Do nothing for AI
-			}
-		}
-	}
-}
+# 	immediate = {
+# 		log = "work event id = DR_societies.1000 for [Root.GetBestName]"
+# 		# Picks out mission giver
+# 		random_list = {
+# 			20 = {
+# 				# International society member
+# 				society = {
+# 					random_society_member = {
+# 						limit = {
+# 							NOT = {
+# 								character = ROOT
+# 							}
+# 							prisoner = no
+# 							is_within_diplo_range = ROOT
+# 							opinion = {
+# 								who = ROOT
+# 								value = 0
+# 							}
+# 						}
+# 						save_event_target_as = hermetic_collaborator
+# 					}
+# 				}
+# 			}
+# 			40 = {
+# 				# Realm society member
+# 				trigger = {
+# 					society = {
+# 						any_society_member = {
+# 							NOT = {
+# 								character = ROOT
+# 							}
+# 							prisoner = no
+# 							is_within_diplo_range = ROOT
+# 							opinion = {
+# 								who = ROOT
+# 								value = 0
+# 							}
+# 							same_realm = ROOT
+# 						}
+# 					}
+# 				}
+# 				society = {
+# 					random_society_member = {
+# 						limit = {
+# 							NOT = {
+# 								character = ROOT
+# 							}
+# 							prisoner = no
+# 							is_within_diplo_range = ROOT
+# 							opinion = {
+# 								who = ROOT
+# 								value = 0
+# 							}
+# 							same_realm = ROOT
+# 						}
+# 						save_event_target_as = hermetic_collaborator
+# 					}
+# 				}
+# 			}
+# 			40 = {
+# 				# Apprentice
+# 				trigger = {
+# 					any_courtier_or_vassal = {
+# 						has_minor_title = title_hermetics_apprentice prisoner = no
+# 					}
+# 					society_member_of = cult_of_verena
+# 				}
+# 				random_courtier_or_vassal = {
+# 					limit = {
+# 						has_minor_title = title_hermetics_apprentice
+# 					}
+# 					save_event_target_as = hermetic_collaborator
+# 				}
+# 			}
+# 		}
+# 		# Randomizes mission
+# 		random_list = {
+# 			20 = {
+# 				# Find an apprentice
+# 				trigger = {
+# 					NOT = {
+# 						any_courtier_or_vassal = {
+# 							has_minor_title = title_hermetics_apprentice
+# 						}
+# 					}
+# 					ai = no
+# 				}
+# 				event_target:hermetic_collaborator = {
+# 					character_event = {
+# 						id = DR_societies.1404 days = 7 random = 7
+# 					}
+# 				}
+# 			}
+# 			20 = {
+# 				# Build a laboratory
+# 				trigger = {
+# 					nor = {
+# 						has_character_flag = building_laboratory
+# 						has_character_flag = built_laboratory
+# 					}
+# 					OR = {
+# 						ai = no
+# 						society_rank == 4
+# 					}
+# 					is_landed = yes
+# 				}
+# 				event_target:hermetic_collaborator = {
+# 					character_event = {
+# 						id = DR_societies.1120 days = 7 random = 7
+# 					}
+# 				}
+# 			}
+# 			15 = {
+# 				# Find a rare scroll/book/tablet
+# 				trigger = {
+# 					is_landed = yes
+# 				}
+# 				event_target:hermetic_collaborator = {
+# 					character_event = {
+# 						id = DR_societies.1417 days = 7 random = 7
+# 					}
+# 				}
+# 			}
+# 			# 20 = { # Acquire/gather ingredients
+# 			# trigger = {
+# 			# is_landed = yes
+# 			# NOT = {
+# 			# any_artifact = {
+# 			# has_artifact_flag = ingredient
+# 			# }
+# 			# }
+# 			# event_target:hermetic_collaborator = { ai = yes }
+# 			# }
+# 			# event_target:hermetic_collaborator = { character_event = { id = DR_societies.1801 days = 7 random = 7 } }
+# 			# }
+# 			10 = {
+# 				# Infiltrate lab
+# 				trigger = {
+# 					society = {
+# 						any_society_member = {
+# 							is_within_diplo_range = ROOT
+# 							NOR = {
+# 								character = ROOT
+# 								character = event_target:hermetic_collaborator
+# 								reverse_opinion = {
+# 									who = event_target:hermetic_collaborator
+# 									value = 20
+# 								}
+# 								reverse_opinion = {
+# 									who = ROOT
+# 									value = 20
+# 								}
+# 								has_character_flag = infiltration_rival
+# 								has_character_flag = infiltration_mutual_dislike
+# 								has_character_flag = infiltration_rich
+# 							}
+# 						}
+# 					}
+# 				}
+# 				event_target:hermetic_collaborator = {
+# 					character_event = {
+# 						id = DR_societies.1430 days = 7 random = 7
+# 					}
+# 				}
+# 			}
+# 			10 = {
+# 				# Observe stars
+# 				event_target:hermetic_collaborator = {
+# 					character_event = {
+# 						id = DR_societies.1828 days = 7 random = 7
+# 					}
+# 				}
+# 			}
+# 			105 = {
+# 				# AI bypasses missions at times
+# 				modifier = {
+# 					factor = 0
+# 					ai = no
+# 				}
+# 				random_list = {
+# 					70 = {
+# 						modifier = {
+# 							factor = 0.9
+# 							society_influence >= 30
+# 						}
+# 						modifier = {
+# 							factor = 0.9
+# 							society_influence >= 40
+# 						}
+# 						modifier = {
+# 							factor = 0.8
+# 							society_influence >= 50
+# 						}
+# 						modifier = {
+# 							factor = 0.7
+# 							society_influence >= 70
+# 						}
+# 						modifier = {
+# 							factor = 0.6
+# 							society_influence >= 80
+# 						}
+# 						modifier = {
+# 							factor = 0.5
+# 							society_influence >= 90
+# 						}
+# 						add_mission_succeed_influence_effect = yes
+# 					}
+# 					30 = {
+# 						add_mission_fail_influence_effect = yes
+# 					}
+# 				}
+# 			}
+# 			175 = {
+# 				modifier = {
+# 					factor = 0
+# 					ai = no
+# 				}
+# 				# Do nothing for AI
+# 			}
+# 		}
+# 	}
+# }
 
 # Mission: Building a Laboratory
 # Flags:
@@ -2939,38 +2939,38 @@ character_event = {
 }
 
 # Emerald tablet in library of Alexandria
-narrative_event = {
-	id = DR_societies.1422
-	title = EVTTITLE_MNM_1422
-	desc = EVTDESC_MNM_1422
-	picture = GFX_evt_religious_exultation
-	border = GFX_event_narrative_frame_religion
-	is_triggered_only = yes
+# narrative_event = {
+# 	id = DR_societies.1422
+# 	title = EVTTITLE_MNM_1422
+# 	desc = EVTDESC_MNM_1422
+# 	picture = GFX_evt_religious_exultation
+# 	border = GFX_event_narrative_frame_religion
+# 	is_triggered_only = yes
 
-	immediate = {
-		log = "work event id = DR_societies.1422 for [Root.GetBestName]"
-	}
+# 	immediate = {
+# 		log = "work event id = DR_societies.1422 for [Root.GetBestName]"
+# 	}
 
-	option = {
-		name = EVTOPTA_MNM_1422
-		add_artifact = emerald_tablet
-		clr_quest = quest_hermetics_find_text
-		sound_effect = hermetic_society_recover_scroll
-		add_society_currency_massive_effect = yes
-		hidden_effect = {
-			opinion = {
-				who = FROM
-				modifier = epic_adventure
-				years = 30
-			}
-		}
-		reverse_opinion = {
-			who = FROM
-			modifier = epic_adventure
-			years = 30
-		}
-	}
-}
+# 	option = {
+# 		name = EVTOPTA_MNM_1422
+# 		add_artifact = emerald_tablet
+# 		clr_quest = quest_hermetics_find_text
+# 		sound_effect = hermetic_society_recover_scroll
+# 		add_society_currency_massive_effect = yes
+# 		hidden_effect = {
+# 			opinion = {
+# 				who = FROM
+# 				modifier = epic_adventure
+# 				years = 30
+# 			}
+# 		}
+# 		reverse_opinion = {
+# 			who = FROM
+# 			modifier = epic_adventure
+# 			years = 30
+# 		}
+# 	}
+# }
 
 # You found tablet in old ruin
 character_event = {
@@ -3239,8 +3239,6 @@ society_quest_event = {
 									who = ROOT
 									value = 0
 								}
-							}
-							NOT = {
 								reverse_opinion = {
 									who = FROM
 									value = 0
@@ -3261,8 +3259,6 @@ society_quest_event = {
 									who = ROOT
 									value = 0
 								}
-							}
-							NOT = {
 								reverse_opinion = {
 									who = FROM
 									value = 0
@@ -3288,8 +3284,6 @@ society_quest_event = {
 									who = ROOT
 									value = 20
 								}
-							}
-							NOT = {
 								reverse_opinion = {
 									who = FROM
 									value = 20
@@ -3325,8 +3319,6 @@ society_quest_event = {
 									who = ROOT
 									value = 20
 								}
-							}
-							NOT = {
 								reverse_opinion = {
 									who = FROM
 									value = 20
@@ -5239,68 +5231,68 @@ character_event = {
 	}
 }
 
-# Companion steal attempt good/ok outcome
-character_event = {
-	id = DR_societies.1446
-	picture = GFX_evt_library
-	border = GFX_event_normal_frame_intrigue
-	desc = {
-		trigger = {
-			FROM = {
-				has_character_flag = good_theft
-			}
-		}
-		text = EVTDESC_MNM_1446_A
-	}
-	desc = {
-		trigger = {
-			FROM = {
-				has_character_flag = ok_theft
-			}
-		}
-		text = EVTDESC_MNM_1446_B
-	}
-	is_triggered_only = yes
+# # Companion steal attempt good/ok outcome
+# character_event = {
+# 	id = DR_societies.1446
+# 	picture = GFX_evt_library
+# 	border = GFX_event_normal_frame_intrigue
+# 	desc = {
+# 		trigger = {
+# 			FROM = {
+# 				has_character_flag = good_theft
+# 			}
+# 		}
+# 		text = EVTDESC_MNM_1446_A
+# 	}
+# 	desc = {
+# 		trigger = {
+# 			FROM = {
+# 				has_character_flag = ok_theft
+# 			}
+# 		}
+# 		text = EVTDESC_MNM_1446_B
+# 	}
+# 	is_triggered_only = yes
 
-	trigger = {
-		has_quest = quest_hermetics_infiltrate_laboratory
-	}
+# 	trigger = {
+# 		has_quest = quest_hermetics_infiltrate_laboratory
+# 	}
 
-	immediate = {
-		log = "work event id = DR_societies.1446 for [Root.GetBestName]"
-	}
+# 	immediate = {
+# 		log = "work event id = DR_societies.1446 for [Root.GetBestName]"
+# 	}
 
-	option = {
-		trigger = {
-			FROM = {
-				has_character_flag = good_theft
-			}
-		}
-		name = EVTOPTA_MNM_1446
-		add_artifact = ingredient_metal_exotic5
-		add_society_currency_minor_effect = yes
-		hidden_effect = {
-			FROM = {
-				clr_character_flag = good_theft
-			}
-		}
-	}
+# 	option = {
+# 		trigger = {
+# 			FROM = {
+# 				has_character_flag = good_theft
+# 			}
+# 		}
+# 		name = EVTOPTA_MNM_1446
+# 		add_artifact = ingredient_metal_exotic5
+# 		add_society_currency_minor_effect = yes
+# 		hidden_effect = {
+# 			FROM = {
+# 				clr_character_flag = good_theft
+# 			}
+# 		}
+# 	}
 
-	option = {
-		trigger = {
-			FROM = {
-				has_character_flag = ok_theft
-			}
-		}
-		name = EVTOPTA_MNM_1446
-		add_society_currency_minor_effect = yes
-		hidden_effect = {
-			FROM = {
-				clr_character_flag = ok_theft
-			}
-		}
-	}
-}
+# 	option = {
+# 		trigger = {
+# 			FROM = {
+# 				has_character_flag = ok_theft
+# 			}
+# 		}
+# 		name = EVTOPTA_MNM_1446
+# 		add_society_currency_minor_effect = yes
+# 		hidden_effect = {
+# 			FROM = {
+# 				clr_character_flag = ok_theft
+# 			}
+# 		}
+# 	}
+# }
 
 # Companion attempts to destroy
 character_event = {
@@ -12212,218 +12204,218 @@ character_event = {
 	}
 }
 
-# Good outcome
-character_event = {
-	id = DR_societies.1478
-	picture = GFX_evt_gathering_of_minds
-	border = GFX_event_normal_frame_religion
-	desc = {
-		trigger = {
-			has_character_flag = best_outcome
-			has_character_flag = war_invention
-		}
-		text = EVTDESC_MNM_1478_A # Hand gun
-		picture = GFX_evt_gathering_of_minds
-	}
-	desc = {
-		trigger = {
-			has_character_flag = best_outcome
-			has_character_flag = prosperity_invention
-		}
-		text = EVTDESC_MNM_1478_B # Compass
-		picture = GFX_evt_gathering_of_minds
-	}
-	desc = {
-		trigger = {
-			has_character_flag = best_outcome
-			has_character_flag = knowledge_invention
-		}
-		text = EVTDESC_MNM_1478_C # Radius astronomicus
-		picture = GFX_evt_gathering_of_minds
-	}
-	desc = {
-		trigger = {
-			has_character_flag = good_outcome
-			has_character_flag = war_invention
-		}
-		text = EVTDESC_MNM_1478_D # Giant crossbow
-		picture = GFX_evt_gathering_of_minds
-	}
-	desc = {
-		trigger = {
-			has_character_flag = good_outcome
-			has_character_flag = prosperity_invention
-		}
-		text = EVTDESC_MNM_1478_E # Blast furnace
-		picture = GFX_evt_weaponsmith
-	}
-	desc = {
-		trigger = {
-			has_character_flag = good_outcome
-			has_character_flag = knowledge_invention
-		}
-		text = EVTDESC_MNM_1478_F # Crypt and cypher machine
-		picture = GFX_evt_ritual_scroll
-	}
-	desc = {
-		trigger = {
-			has_character_flag = ok_outcome
-			has_character_flag = war_invention
-		}
-		text = EVTDESC_MNM_1478_G # Plate armor
-		picture = GFX_evt_weaponsmith
-	}
-	desc = {
-		trigger = {
-			has_character_flag = ok_outcome
-			has_character_flag = prosperity_invention
-		}
-		text = EVTDESC_MNM_1478_H # A new mill
-		picture = GFX_evt_gathering_of_minds
-	}
-	desc = {
-		trigger = {
-			has_character_flag = ok_outcome
-			has_character_flag = knowledge_invention
-		}
-		text = EVTDESC_MNM_1478_I # Glasses
-		picture = GFX_evt_gathering_of_minds
-	}
-	is_triggered_only = yes
-	hide_from = yes
-	trigger = {
-		has_character_flag = gathering_of_the_minds
-	}
+# # Good outcome
+# character_event = {
+# 	id = DR_societies.1478
+# 	picture = GFX_evt_gathering_of_minds
+# 	border = GFX_event_normal_frame_religion
+# 	desc = {
+# 		trigger = {
+# 			has_character_flag = best_outcome
+# 			has_character_flag = war_invention
+# 		}
+# 		text = EVTDESC_MNM_1478_A # Hand gun
+# 		picture = GFX_evt_gathering_of_minds
+# 	}
+# 	desc = {
+# 		trigger = {
+# 			has_character_flag = best_outcome
+# 			has_character_flag = prosperity_invention
+# 		}
+# 		text = EVTDESC_MNM_1478_B # Compass
+# 		picture = GFX_evt_gathering_of_minds
+# 	}
+# 	desc = {
+# 		trigger = {
+# 			has_character_flag = best_outcome
+# 			has_character_flag = knowledge_invention
+# 		}
+# 		text = EVTDESC_MNM_1478_C # Radius astronomicus
+# 		picture = GFX_evt_gathering_of_minds
+# 	}
+# 	desc = {
+# 		trigger = {
+# 			has_character_flag = good_outcome
+# 			has_character_flag = war_invention
+# 		}
+# 		text = EVTDESC_MNM_1478_D # Giant crossbow
+# 		picture = GFX_evt_gathering_of_minds
+# 	}
+# 	desc = {
+# 		trigger = {
+# 			has_character_flag = good_outcome
+# 			has_character_flag = prosperity_invention
+# 		}
+# 		text = EVTDESC_MNM_1478_E # Blast furnace
+# 		picture = GFX_evt_weaponsmith
+# 	}
+# 	desc = {
+# 		trigger = {
+# 			has_character_flag = good_outcome
+# 			has_character_flag = knowledge_invention
+# 		}
+# 		text = EVTDESC_MNM_1478_F # Crypt and cypher machine
+# 		picture = GFX_evt_ritual_scroll
+# 	}
+# 	desc = {
+# 		trigger = {
+# 			has_character_flag = ok_outcome
+# 			has_character_flag = war_invention
+# 		}
+# 		text = EVTDESC_MNM_1478_G # Plate armor
+# 		picture = GFX_evt_weaponsmith
+# 	}
+# 	desc = {
+# 		trigger = {
+# 			has_character_flag = ok_outcome
+# 			has_character_flag = prosperity_invention
+# 		}
+# 		text = EVTDESC_MNM_1478_H # A new mill
+# 		picture = GFX_evt_gathering_of_minds
+# 	}
+# 	desc = {
+# 		trigger = {
+# 			has_character_flag = ok_outcome
+# 			has_character_flag = knowledge_invention
+# 		}
+# 		text = EVTDESC_MNM_1478_I # Glasses
+# 		picture = GFX_evt_gathering_of_minds
+# 	}
+# 	is_triggered_only = yes
+# 	hide_from = yes
+# 	trigger = {
+# 		has_character_flag = gathering_of_the_minds
+# 	}
 
-	immediate = {
-		log = "work event id = DR_societies.1478 for [Root.GetBestName]"
-	}
+# 	immediate = {
+# 		log = "work event id = DR_societies.1478 for [Root.GetBestName]"
+# 	}
 
-	option = {
-		trigger = {
-			has_character_flag = best_outcome
-			has_character_flag = war_invention
-		}
-		name = EVTOPTA_MNM_1478
-		add_artifact = hermetic_handgun
-		military_techpoints = 100
-		add_society_currency_major_effect = yes
-	}
+# 	option = {
+# 		trigger = {
+# 			has_character_flag = best_outcome
+# 			has_character_flag = war_invention
+# 		}
+# 		name = EVTOPTA_MNM_1478
+# 		add_artifact = hermetic_handgun
+# 		military_techpoints = 100
+# 		add_society_currency_major_effect = yes
+# 	}
 
-	option = {
-		trigger = {
-			has_character_flag = best_outcome
-			has_character_flag = prosperity_invention
-		}
-		name = EVTOPTB_MNM_1478
-		add_artifact = hermetic_compass
-		economy_techpoints = 100
-		add_society_currency_major_effect = yes
-	}
+# 	option = {
+# 		trigger = {
+# 			has_character_flag = best_outcome
+# 			has_character_flag = prosperity_invention
+# 		}
+# 		name = EVTOPTB_MNM_1478
+# 		add_artifact = hermetic_compass
+# 		economy_techpoints = 100
+# 		add_society_currency_major_effect = yes
+# 	}
 
-	option = {
-		trigger = {
-			has_character_flag = best_outcome
-			has_character_flag = knowledge_invention
-		}
-		name = EVTOPTC_MNM_1478
-		add_artifact = radius_astronomicus
-		culture_techpoints = 100
-		add_society_currency_major_effect = yes
-	}
+# 	option = {
+# 		trigger = {
+# 			has_character_flag = best_outcome
+# 			has_character_flag = knowledge_invention
+# 		}
+# 		name = EVTOPTC_MNM_1478
+# 		add_artifact = radius_astronomicus
+# 		culture_techpoints = 100
+# 		add_society_currency_major_effect = yes
+# 	}
 
-	option = {
-		trigger = {
-			has_character_flag = good_outcome
-			has_character_flag = war_invention
-		}
-		name = EVTOPTD_MNM_1478
-		capital_scope = {
-			add_province_modifier = {
-				name = giant_crossbow
-				years = 100
-			}
-		}
-		military_techpoints = 50
-		add_society_currency_medium_effect = yes
-	}
+# 	option = {
+# 		trigger = {
+# 			has_character_flag = good_outcome
+# 			has_character_flag = war_invention
+# 		}
+# 		name = EVTOPTD_MNM_1478
+# 		capital_scope = {
+# 			add_province_modifier = {
+# 				name = giant_crossbow
+# 				years = 100
+# 			}
+# 		}
+# 		military_techpoints = 50
+# 		add_society_currency_medium_effect = yes
+# 	}
 
-	option = {
-		trigger = {
-			has_character_flag = good_outcome
-			has_character_flag = prosperity_invention
-		}
-		name = EVTOPTE_MNM_1478
-		capital_scope = {
-			add_province_modifier = {
-				name = blast_furnace
-				years = 100
-			}
-		}
-		economy_techpoints = 50
-		add_society_currency_medium_effect = yes
-	}
+# 	option = {
+# 		trigger = {
+# 			has_character_flag = good_outcome
+# 			has_character_flag = prosperity_invention
+# 		}
+# 		name = EVTOPTE_MNM_1478
+# 		capital_scope = {
+# 			add_province_modifier = {
+# 				name = blast_furnace
+# 				years = 100
+# 			}
+# 		}
+# 		economy_techpoints = 50
+# 		add_society_currency_medium_effect = yes
+# 	}
 
-	option = {
-		trigger = {
-			has_character_flag = good_outcome
-			has_character_flag = knowledge_invention
-		}
-		name = EVTOPTF_MNM_1478
-		add_artifact = hermetic_cypher_machine
-		culture_techpoints = 50
-		add_society_currency_medium_effect = yes
-	}
+# 	option = {
+# 		trigger = {
+# 			has_character_flag = good_outcome
+# 			has_character_flag = knowledge_invention
+# 		}
+# 		name = EVTOPTF_MNM_1478
+# 		add_artifact = hermetic_cypher_machine
+# 		culture_techpoints = 50
+# 		add_society_currency_medium_effect = yes
+# 	}
 
-	option = {
-		trigger = {
-			has_character_flag = ok_outcome
-			has_character_flag = war_invention
-		}
-		name = EVTOPTG_MNM_1478
-		add_artifact = hermetic_plate_armor
-		military_techpoints = 25
-		add_society_currency_minor_effect = yes
-	}
+# 	option = {
+# 		trigger = {
+# 			has_character_flag = ok_outcome
+# 			has_character_flag = war_invention
+# 		}
+# 		name = EVTOPTG_MNM_1478
+# 		add_artifact = hermetic_plate_armor
+# 		military_techpoints = 25
+# 		add_society_currency_minor_effect = yes
+# 	}
 
-	option = {
-		trigger = {
-			has_character_flag = ok_outcome
-			has_character_flag = prosperity_invention
-		}
-		name = EVTOPTH_MNM_1478
-		capital_scope = {
-			add_province_modifier = {
-				name = great_mill
-				years = 100
-			}
-		}
-		economy_techpoints = 25
-		add_society_currency_minor_effect = yes
-	}
+# 	option = {
+# 		trigger = {
+# 			has_character_flag = ok_outcome
+# 			has_character_flag = prosperity_invention
+# 		}
+# 		name = EVTOPTH_MNM_1478
+# 		capital_scope = {
+# 			add_province_modifier = {
+# 				name = great_mill
+# 				years = 100
+# 			}
+# 		}
+# 		economy_techpoints = 25
+# 		add_society_currency_minor_effect = yes
+# 	}
 
-	option = {
-		trigger = {
-			has_character_flag = ok_outcome
-			has_character_flag = knowledge_invention
-		}
-		name = EVTOPTI_MNM_1478
-		add_artifact = hermetic_glasses
-		culture_techpoints = 25
-		add_society_currency_minor_effect = yes
-	}
-	after = {
-		hidden_effect = {
-			clr_character_flag = gathering_of_the_minds
-			clr_character_flag = war_invention
-			clr_character_flag = prosperity_invention
-			clr_character_flag = knowledge_invention
-			clr_character_flag = great_outcome
-			clr_character_flag = good_outcome
-			clr_character_flag = ok_outcome
-		}
-	}
-}
+# 	option = {
+# 		trigger = {
+# 			has_character_flag = ok_outcome
+# 			has_character_flag = knowledge_invention
+# 		}
+# 		name = EVTOPTI_MNM_1478
+# 		add_artifact = hermetic_glasses
+# 		culture_techpoints = 25
+# 		add_society_currency_minor_effect = yes
+# 	}
+# 	after = {
+# 		hidden_effect = {
+# 			clr_character_flag = gathering_of_the_minds
+# 			clr_character_flag = war_invention
+# 			clr_character_flag = prosperity_invention
+# 			clr_character_flag = knowledge_invention
+# 			clr_character_flag = great_outcome
+# 			clr_character_flag = good_outcome
+# 			clr_character_flag = ok_outcome
+# 		}
+# 	}
+# }
 
 # Failure
 character_event = {
@@ -12750,9 +12742,7 @@ character_event = {
 	trigger = {
 		always = no
 		society_member_of = cult_of_verena
-		NOT = {
-			is_inaccessible_trigger = yes
-		}
+		is_inaccessible_trigger = no
 	}
 
 	weight_multiplier = {
@@ -14563,9 +14553,7 @@ character_event = {
 						character = ROOT
 					}
 					is_within_diplo_range = ROOT
-					NOT = {
-						is_inaccessible_trigger = yes
-					}
+					is_inaccessible_trigger = no
 				}
 				save_event_target_as = peer1
 				set_character_flag = peer_review_temp
@@ -16692,12 +16680,10 @@ character_event = {
 	desc = {
 		trigger = {
 			OR = {
-				NOT = {
+				nor = {
 					opinion = {
 						value = 0 who = FROM
 					}
-				}
-				NOT = {
 					FROM = {
 						learning = 12
 					}
@@ -18652,643 +18638,643 @@ character_event = {
 
 # Magus Power: Write a Magnum Opus
 # Write a Magnum Opus - Start Writing
-character_event = {
-	id = DR_societies.1610
-	desc = EVTDESC_MNM_1610
-	picture = GFX_evt_scientist
-	border = GFX_event_normal_frame_religion
-	is_triggered_only = yes
-	immediate = {
-		log = "work event id = DR_societies.1610 for [Root.GetBestName]"
-	}
+# character_event = {
+# 	id = DR_societies.1610
+# 	desc = EVTDESC_MNM_1610
+# 	picture = GFX_evt_scientist
+# 	border = GFX_event_normal_frame_religion
+# 	is_triggered_only = yes
+# 	immediate = {
+# 		log = "work event id = DR_societies.1610 for [Root.GetBestName]"
+# 	}
 
-	option = {
-		# It will be glorious!
-		name = EVTOPTA_MNM_1610
-		add_character_modifier = {
-			modifier = writing_magnum_opus
-			years = 2
-		}
-		hidden_effect = {
-			character_event = {
-				id = DR_societies.1600 days = 90 random = 60
-			}
-		}
-	}
-}
+# 	option = {
+# 		# It will be glorious!
+# 		name = EVTOPTA_MNM_1610
+# 		add_character_modifier = {
+# 			modifier = writing_magnum_opus
+# 			years = 2
+# 		}
+# 		hidden_effect = {
+# 			character_event = {
+# 				id = DR_societies.1600 days = 90 random = 60
+# 			}
+# 		}
+# 	}
+# }
 
-# Write a Magnum Opus - Pick Pillar
-character_event = {
-	id = DR_societies.1600
-	desc = EVTDESC_MNM_1600
-	picture = GFX_evt_scientist
-	border = GFX_event_normal_frame_religion
-	is_triggered_only = yes
-	trigger = {
-		society_member_of = cult_of_verena
-	}
-	immediate = {
-		log = "work event id = DR_societies.1600 for [Root.GetBestName]"
-	}
+# # Write a Magnum Opus - Pick Pillar
+# character_event = {
+# 	id = DR_societies.1600
+# 	desc = EVTDESC_MNM_1600
+# 	picture = GFX_evt_scientist
+# 	border = GFX_event_normal_frame_religion
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		society_member_of = cult_of_verena
+# 	}
+# 	immediate = {
+# 		log = "work event id = DR_societies.1600 for [Root.GetBestName]"
+# 	}
 
-	option = {
-		# write book on Theurgy
-		name = EVTOPTA_MNM_1600
-		trigger = {
-			NOT = {
-				AND = {
-					OR = {
-						has_artifact = magnum_opus_theurgy_ritual_1
-						has_artifact = magnum_opus_theurgy_ritual_2
-						has_artifact = magnum_opus_theurgy_ritual_3
-						has_artifact = magnum_opus_theurgy_ritual_4
-					}
-					OR = {
-						has_artifact = magnum_opus_theurgy_contemplation_1
-						has_artifact = magnum_opus_theurgy_contemplation_2
-						has_artifact = magnum_opus_theurgy_contemplation_3
-						has_artifact = magnum_opus_theurgy_contemplation_4
-					}
-				}
-			}
-		}
-		custom_tooltip = {
-			text = EVTOPTA_MNM_1600_TT
-		}
-		hidden_effect = {
-			character_event = {
-				id = DR_societies.1601 days = 90 random = 60
-			}
-		}
-	}
-	option = {
-		# write book on Astrology
-		name = EVTOPTB_MNM_1600
-		trigger = {
-			NOT = {
-				AND = {
-					OR = {
-						has_artifact = magnum_opus_astrology_stars_1
-						has_artifact = magnum_opus_astrology_stars_2
-						has_artifact = magnum_opus_astrology_stars_3
-						has_artifact = magnum_opus_astrology_stars_4
-					}
-					OR = {
-						has_artifact = magnum_opus_astrology_planets_1
-						has_artifact = magnum_opus_astrology_planets_2
-						has_artifact = magnum_opus_astrology_planets_3
-						has_artifact = magnum_opus_astrology_planets_4
-					}
-				}
-			}
-		}
-		custom_tooltip = {
-			text = EVTOPTB_MNM_1600_TT
-		}
-		hidden_effect = {
-			character_event = {
-				id = DR_societies.1602 days = 90 random = 60
-			}
-		}
-	}
-	option = {
-		# write book on Alchemy
-		name = EVTOPTC_MNM_1600
-		trigger = {
-			NOT = {
-				AND = {
-					OR = {
-						has_artifact = magnum_opus_alchemy_panacea_1
-						has_artifact = magnum_opus_alchemy_panacea_2
-						has_artifact = magnum_opus_alchemy_panacea_3
-						has_artifact = magnum_opus_alchemy_panacea_4
-					}
-					OR = {
-						has_artifact = magnum_opus_alchemy_transmutation_1
-						has_artifact = magnum_opus_alchemy_transmutation_2
-						has_artifact = magnum_opus_alchemy_transmutation_3
-						has_artifact = magnum_opus_alchemy_transmutation_4
-					}
-				}
-			}
-		}
-		custom_tooltip = {
-			text = EVTOPTC_MNM_1600_TT
-		}
-		hidden_effect = {
-			character_event = {
-				id = DR_societies.1603 days = 90 random = 60
-			}
-		}
-	}
-}
+# 	option = {
+# 		# write book on Theurgy
+# 		name = EVTOPTA_MNM_1600
+# 		trigger = {
+# 			NOT = {
+# 				AND = {
+# 					OR = {
+# 						has_artifact = magnum_opus_theurgy_ritual_1
+# 						has_artifact = magnum_opus_theurgy_ritual_2
+# 						has_artifact = magnum_opus_theurgy_ritual_3
+# 						has_artifact = magnum_opus_theurgy_ritual_4
+# 					}
+# 					OR = {
+# 						has_artifact = magnum_opus_theurgy_contemplation_1
+# 						has_artifact = magnum_opus_theurgy_contemplation_2
+# 						has_artifact = magnum_opus_theurgy_contemplation_3
+# 						has_artifact = magnum_opus_theurgy_contemplation_4
+# 					}
+# 				}
+# 			}
+# 		}
+# 		custom_tooltip = {
+# 			text = EVTOPTA_MNM_1600_TT
+# 		}
+# 		hidden_effect = {
+# 			character_event = {
+# 				id = DR_societies.1601 days = 90 random = 60
+# 			}
+# 		}
+# 	}
+# 	option = {
+# 		# write book on Astrology
+# 		name = EVTOPTB_MNM_1600
+# 		trigger = {
+# 			NOT = {
+# 				AND = {
+# 					OR = {
+# 						has_artifact = magnum_opus_astrology_stars_1
+# 						has_artifact = magnum_opus_astrology_stars_2
+# 						has_artifact = magnum_opus_astrology_stars_3
+# 						has_artifact = magnum_opus_astrology_stars_4
+# 					}
+# 					OR = {
+# 						has_artifact = magnum_opus_astrology_planets_1
+# 						has_artifact = magnum_opus_astrology_planets_2
+# 						has_artifact = magnum_opus_astrology_planets_3
+# 						has_artifact = magnum_opus_astrology_planets_4
+# 					}
+# 				}
+# 			}
+# 		}
+# 		custom_tooltip = {
+# 			text = EVTOPTB_MNM_1600_TT
+# 		}
+# 		hidden_effect = {
+# 			character_event = {
+# 				id = DR_societies.1602 days = 90 random = 60
+# 			}
+# 		}
+# 	}
+# 	option = {
+# 		# write book on Alchemy
+# 		name = EVTOPTC_MNM_1600
+# 		trigger = {
+# 			NOT = {
+# 				AND = {
+# 					OR = {
+# 						has_artifact = magnum_opus_alchemy_panacea_1
+# 						has_artifact = magnum_opus_alchemy_panacea_2
+# 						has_artifact = magnum_opus_alchemy_panacea_3
+# 						has_artifact = magnum_opus_alchemy_panacea_4
+# 					}
+# 					OR = {
+# 						has_artifact = magnum_opus_alchemy_transmutation_1
+# 						has_artifact = magnum_opus_alchemy_transmutation_2
+# 						has_artifact = magnum_opus_alchemy_transmutation_3
+# 						has_artifact = magnum_opus_alchemy_transmutation_4
+# 					}
+# 				}
+# 			}
+# 		}
+# 		custom_tooltip = {
+# 			text = EVTOPTC_MNM_1600_TT
+# 		}
+# 		hidden_effect = {
+# 			character_event = {
+# 				id = DR_societies.1603 days = 90 random = 60
+# 			}
+# 		}
+# 	}
+# }
 
-# Write a Magnum Opus - Pick type of Theurgy
-character_event = {
-	id = DR_societies.1601
-	desc = EVTDESC_MNM_1601
-	picture = GFX_evt_secluded_in_prayer
-	border = GFX_event_normal_frame_religion
-	is_triggered_only = yes
-	trigger = {
-		society_member_of = cult_of_verena
-	}
-	immediate = {
-		log = "work event id = DR_societies.1601 for [Root.GetBestName]"
-	}
+# # Write a Magnum Opus - Pick type of Theurgy
+# character_event = {
+# 	id = DR_societies.1601
+# 	desc = EVTDESC_MNM_1601
+# 	picture = GFX_evt_secluded_in_prayer
+# 	border = GFX_event_normal_frame_religion
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		society_member_of = cult_of_verena
+# 	}
+# 	immediate = {
+# 		log = "work event id = DR_societies.1601 for [Root.GetBestName]"
+# 	}
 
-	option = {
-		# Focus on Rituals/Invocation
-		name = EVTOPTA_MNM_1601
+# 	option = {
+# 		# Focus on Rituals/Invocation
+# 		name = EVTOPTA_MNM_1601
 
-		trigger = {
-			NOT = {
-				OR = {
-					has_artifact = magnum_opus_theurgy_ritual_1
-					has_artifact = magnum_opus_theurgy_ritual_2
-					has_artifact = magnum_opus_theurgy_ritual_3
-					has_artifact = magnum_opus_theurgy_ritual_4
-				}
-			}
-		}
-		custom_tooltip = {
-			text = EVTOPTA_MNM_1601_TT
-		}
-		hidden_effect = {
-			character_event = {
-				id = DR_societies.1604 days = 90 random = 60
-			}
-		}
-	}
-	option = {
-		# Focus on Contemplation
-		name = EVTOPTB_MNM_1601
-		trigger = {
-			NOT = {
-				OR = {
-					has_artifact = magnum_opus_theurgy_contemplation_1
-					has_artifact = magnum_opus_theurgy_contemplation_2
-					has_artifact = magnum_opus_theurgy_contemplation_3
-					has_artifact = magnum_opus_theurgy_contemplation_4
-				}
-			}
-		}
-		custom_tooltip = {
-			text = EVTOPTB_MNM_1601_TT
-		}
-		hidden_effect = {
-			character_event = {
-				id = DR_societies.1605 days = 90 random = 60
-			}
-		}
-	}
-}
+# 		trigger = {
+# 			NOT = {
+# 				OR = {
+# 					has_artifact = magnum_opus_theurgy_ritual_1
+# 					has_artifact = magnum_opus_theurgy_ritual_2
+# 					has_artifact = magnum_opus_theurgy_ritual_3
+# 					has_artifact = magnum_opus_theurgy_ritual_4
+# 				}
+# 			}
+# 		}
+# 		custom_tooltip = {
+# 			text = EVTOPTA_MNM_1601_TT
+# 		}
+# 		hidden_effect = {
+# 			character_event = {
+# 				id = DR_societies.1604 days = 90 random = 60
+# 			}
+# 		}
+# 	}
+# 	option = {
+# 		# Focus on Contemplation
+# 		name = EVTOPTB_MNM_1601
+# 		trigger = {
+# 			NOT = {
+# 				OR = {
+# 					has_artifact = magnum_opus_theurgy_contemplation_1
+# 					has_artifact = magnum_opus_theurgy_contemplation_2
+# 					has_artifact = magnum_opus_theurgy_contemplation_3
+# 					has_artifact = magnum_opus_theurgy_contemplation_4
+# 				}
+# 			}
+# 		}
+# 		custom_tooltip = {
+# 			text = EVTOPTB_MNM_1601_TT
+# 		}
+# 		hidden_effect = {
+# 			character_event = {
+# 				id = DR_societies.1605 days = 90 random = 60
+# 			}
+# 		}
+# 	}
+# }
 
-# Write a Magnum Opus - Pick type of Astrology
-character_event = {
-	id = DR_societies.1602
-	desc = EVTDESC_MNM_1602
-	picture = GFX_evt_comet
-	border = GFX_event_normal_frame_religion
-	is_triggered_only = yes
-	trigger = {
-		society_member_of = cult_of_verena
-	}
-	immediate = {
-		log = "work event id = DR_societies.1602 for [Root.GetBestName]"
-	}
+# # Write a Magnum Opus - Pick type of Astrology
+# character_event = {
+# 	id = DR_societies.1602
+# 	desc = EVTDESC_MNM_1602
+# 	picture = GFX_evt_comet
+# 	border = GFX_event_normal_frame_religion
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		society_member_of = cult_of_verena
+# 	}
+# 	immediate = {
+# 		log = "work event id = DR_societies.1602 for [Root.GetBestName]"
+# 	}
 
-	option = {
-		# Focus on Stars
-		name = EVTOPTA_MNM_1602
+# 	option = {
+# 		# Focus on Stars
+# 		name = EVTOPTA_MNM_1602
 
-		trigger = {
-			NOT = {
-				OR = {
-					has_artifact = magnum_opus_astrology_stars_1
-					has_artifact = magnum_opus_astrology_stars_2
-					has_artifact = magnum_opus_astrology_stars_3
-					has_artifact = magnum_opus_astrology_stars_4
-				}
-			}
-		}
-		custom_tooltip = {
-			text = EVTOPTA_MNM_1602_TT
-		}
-		hidden_effect = {
-			character_event = {
-				id = DR_societies.1606 days = 90 random = 60
-			}
-		}
-	}
-	option = {
-		# Focus on Planets
-		name = EVTOPTB_MNM_1602
-		trigger = {
-			NOT = {
-				OR = {
-					has_artifact = magnum_opus_astrology_planets_1
-					has_artifact = magnum_opus_astrology_planets_2
-					has_artifact = magnum_opus_astrology_planets_3
-					has_artifact = magnum_opus_astrology_planets_4
-				}
-			}
-		}
-		custom_tooltip = {
-			text = EVTOPTB_MNM_1602_TT
-		}
-		hidden_effect = {
-			character_event = {
-				id = DR_societies.1607 days = 90 random = 60
-			}
-		}
-	}
-}
+# 		trigger = {
+# 			NOT = {
+# 				OR = {
+# 					has_artifact = magnum_opus_astrology_stars_1
+# 					has_artifact = magnum_opus_astrology_stars_2
+# 					has_artifact = magnum_opus_astrology_stars_3
+# 					has_artifact = magnum_opus_astrology_stars_4
+# 				}
+# 			}
+# 		}
+# 		custom_tooltip = {
+# 			text = EVTOPTA_MNM_1602_TT
+# 		}
+# 		hidden_effect = {
+# 			character_event = {
+# 				id = DR_societies.1606 days = 90 random = 60
+# 			}
+# 		}
+# 	}
+# 	option = {
+# 		# Focus on Planets
+# 		name = EVTOPTB_MNM_1602
+# 		trigger = {
+# 			NOT = {
+# 				OR = {
+# 					has_artifact = magnum_opus_astrology_planets_1
+# 					has_artifact = magnum_opus_astrology_planets_2
+# 					has_artifact = magnum_opus_astrology_planets_3
+# 					has_artifact = magnum_opus_astrology_planets_4
+# 				}
+# 			}
+# 		}
+# 		custom_tooltip = {
+# 			text = EVTOPTB_MNM_1602_TT
+# 		}
+# 		hidden_effect = {
+# 			character_event = {
+# 				id = DR_societies.1607 days = 90 random = 60
+# 			}
+# 		}
+# 	}
+# }
 
-# Write a Magnum Opus - Pick type of Alchemy
-character_event = {
-	id = DR_societies.1603
-	desc = EVTDESC_MNM_1603
-	picture = GFX_evt_experiment
-	border = GFX_event_normal_frame_religion
-	is_triggered_only = yes
-	trigger = {
-		society_member_of = cult_of_verena
-	}
-	immediate = {
-		log = "work event id = DR_societies.1603 for [Root.GetBestName]"
-	}
+# # Write a Magnum Opus - Pick type of Alchemy
+# character_event = {
+# 	id = DR_societies.1603
+# 	desc = EVTDESC_MNM_1603
+# 	picture = GFX_evt_experiment
+# 	border = GFX_event_normal_frame_religion
+# 	is_triggered_only = yes
+# 	trigger = {
+# 		society_member_of = cult_of_verena
+# 	}
+# 	immediate = {
+# 		log = "work event id = DR_societies.1603 for [Root.GetBestName]"
+# 	}
 
-	option = {
-		# Focus on Universal Panacea
-		name = EVTOPTA_MNM_1603
+# 	option = {
+# 		# Focus on Universal Panacea
+# 		name = EVTOPTA_MNM_1603
 
-		trigger = {
-			NOT = {
-				OR = {
-					has_artifact = magnum_opus_alchemy_panacea_1
-					has_artifact = magnum_opus_alchemy_panacea_2
-					has_artifact = magnum_opus_alchemy_panacea_3
-					has_artifact = magnum_opus_alchemy_panacea_4
-				}
-			}
-		}
-		custom_tooltip = {
-			text = EVTOPTA_MNM_1603_TT
-		}
-		hidden_effect = {
-			character_event = {
-				id = DR_societies.1608 days = 90 random = 60
-			}
-		}
-	}
-	option = {
-		# Focus on Transmutation
-		name = EVTOPTB_MNM_1603
-		trigger = {
-			NOT = {
-				OR = {
-					has_artifact = magnum_opus_alchemy_transmutation_1
-					has_artifact = magnum_opus_alchemy_transmutation_2
-					has_artifact = magnum_opus_alchemy_transmutation_3
-					has_artifact = magnum_opus_alchemy_transmutation_4
-				}
-			}
-		}
-		custom_tooltip = {
-			text = EVTOPTB_MNM_1603_TT
-		}
-		hidden_effect = {
-			character_event = {
-				id = DR_societies.1609 days = 90 random = 60
-			}
-		}
-	}
-}
+# 		trigger = {
+# 			NOT = {
+# 				OR = {
+# 					has_artifact = magnum_opus_alchemy_panacea_1
+# 					has_artifact = magnum_opus_alchemy_panacea_2
+# 					has_artifact = magnum_opus_alchemy_panacea_3
+# 					has_artifact = magnum_opus_alchemy_panacea_4
+# 				}
+# 			}
+# 		}
+# 		custom_tooltip = {
+# 			text = EVTOPTA_MNM_1603_TT
+# 		}
+# 		hidden_effect = {
+# 			character_event = {
+# 				id = DR_societies.1608 days = 90 random = 60
+# 			}
+# 		}
+# 	}
+# 	option = {
+# 		# Focus on Transmutation
+# 		name = EVTOPTB_MNM_1603
+# 		trigger = {
+# 			NOT = {
+# 				OR = {
+# 					has_artifact = magnum_opus_alchemy_transmutation_1
+# 					has_artifact = magnum_opus_alchemy_transmutation_2
+# 					has_artifact = magnum_opus_alchemy_transmutation_3
+# 					has_artifact = magnum_opus_alchemy_transmutation_4
+# 				}
+# 			}
+# 		}
+# 		custom_tooltip = {
+# 			text = EVTOPTB_MNM_1603_TT
+# 		}
+# 		hidden_effect = {
+# 			character_event = {
+# 				id = DR_societies.1609 days = 90 random = 60
+# 			}
+# 		}
+# 	}
+# }
 
-# Write a Magnum Opus - Finish book on Ritualistic/Invocative Theurgy
-character_event = {
-	id = DR_societies.1604
-	desc = EVTDESC_MNM_1604
-	picture = GFX_evt_secluded_in_prayer
-	border = GFX_event_normal_frame_religion
-	is_triggered_only = yes
-	immediate = {
-		log = "work event id = DR_societies.1604 for [Root.GetBestName]"
-	}
+# # Write a Magnum Opus - Finish book on Ritualistic/Invocative Theurgy
+# character_event = {
+# 	id = DR_societies.1604
+# 	desc = EVTDESC_MNM_1604
+# 	picture = GFX_evt_secluded_in_prayer
+# 	border = GFX_event_normal_frame_religion
+# 	is_triggered_only = yes
+# 	immediate = {
+# 		log = "work event id = DR_societies.1604 for [Root.GetBestName]"
+# 	}
 
-	option = {
-		# Awesome!
-		name = EVTOPTA_MNM_1604
-		if = {
-			limit = {
-				NOT = {
-					learning = 12
-				}
-			}
-			prestige = 50
-			add_artifact = magnum_opus_theurgy_ritual_1
-		}
-		if = {
-			limit = {
-				learning = 12
-				NOT = {
-					learning = 18
-				}
-			}
-			prestige = 100
-			add_artifact = magnum_opus_theurgy_ritual_2
-		}
-		if = {
-			limit = {
-				learning = 18
-				NOT = {
-					learning = 25
-				}
-			}
-			prestige = 150
-			add_artifact = magnum_opus_theurgy_ritual_3
-		}
-		if = {
-			limit = {
-				learning = 25
-			}
-			prestige = 200
-			add_artifact = magnum_opus_theurgy_ritual_4
-		}
-		remove_character_modifier = writing_magnum_opus
-	}
-}
+# 	option = {
+# 		# Awesome!
+# 		name = EVTOPTA_MNM_1604
+# 		if = {
+# 			limit = {
+# 				NOT = {
+# 					learning = 12
+# 				}
+# 			}
+# 			prestige = 50
+# 			add_artifact = magnum_opus_theurgy_ritual_1
+# 		}
+# 		if = {
+# 			limit = {
+# 				learning = 12
+# 				NOT = {
+# 					learning = 18
+# 				}
+# 			}
+# 			prestige = 100
+# 			add_artifact = magnum_opus_theurgy_ritual_2
+# 		}
+# 		if = {
+# 			limit = {
+# 				learning = 18
+# 				NOT = {
+# 					learning = 25
+# 				}
+# 			}
+# 			prestige = 150
+# 			add_artifact = magnum_opus_theurgy_ritual_3
+# 		}
+# 		if = {
+# 			limit = {
+# 				learning = 25
+# 			}
+# 			prestige = 200
+# 			add_artifact = magnum_opus_theurgy_ritual_4
+# 		}
+# 		remove_character_modifier = writing_magnum_opus
+# 	}
+# }
 
-# Write a Magnum Opus - Finish book on Contemplative Theurgy
-character_event = {
-	id = DR_societies.1605
-	desc = EVTDESC_MNM_1605
-	picture = GFX_evt_secluded_in_prayer
-	border = GFX_event_normal_frame_religion
-	is_triggered_only = yes
-	immediate = {
-		log = "work event id = DR_societies.1605 for [Root.GetBestName]"
-	}
+# # Write a Magnum Opus - Finish book on Contemplative Theurgy
+# character_event = {
+# 	id = DR_societies.1605
+# 	desc = EVTDESC_MNM_1605
+# 	picture = GFX_evt_secluded_in_prayer
+# 	border = GFX_event_normal_frame_religion
+# 	is_triggered_only = yes
+# 	immediate = {
+# 		log = "work event id = DR_societies.1605 for [Root.GetBestName]"
+# 	}
 
-	option = {
-		# Awesome!
-		name = EVTOPTA_MNM_1605
-		if = {
-			limit = {
-				NOT = {
-					learning = 12
-				}
-			}
-			prestige = 50
-			add_artifact = magnum_opus_theurgy_contemplation_1
-		}
-		if = {
-			limit = {
-				learning = 12
-				NOT = {
-					learning = 18
-				}
-			}
-			prestige = 100
-			add_artifact = magnum_opus_theurgy_contemplation_2
-		}
-		if = {
-			limit = {
-				learning = 18
-				NOT = {
-					learning = 25
-				}
-			}
-			prestige = 150
-			add_artifact = magnum_opus_theurgy_contemplation_3
-		}
-		if = {
-			limit = {
-				learning = 25
-			}
-			prestige = 200
-			add_artifact = magnum_opus_theurgy_contemplation_4
-		}
-		remove_character_modifier = writing_magnum_opus
-	}
-}
+# 	option = {
+# 		# Awesome!
+# 		name = EVTOPTA_MNM_1605
+# 		if = {
+# 			limit = {
+# 				NOT = {
+# 					learning = 12
+# 				}
+# 			}
+# 			prestige = 50
+# 			add_artifact = magnum_opus_theurgy_contemplation_1
+# 		}
+# 		if = {
+# 			limit = {
+# 				learning = 12
+# 				NOT = {
+# 					learning = 18
+# 				}
+# 			}
+# 			prestige = 100
+# 			add_artifact = magnum_opus_theurgy_contemplation_2
+# 		}
+# 		if = {
+# 			limit = {
+# 				learning = 18
+# 				NOT = {
+# 					learning = 25
+# 				}
+# 			}
+# 			prestige = 150
+# 			add_artifact = magnum_opus_theurgy_contemplation_3
+# 		}
+# 		if = {
+# 			limit = {
+# 				learning = 25
+# 			}
+# 			prestige = 200
+# 			add_artifact = magnum_opus_theurgy_contemplation_4
+# 		}
+# 		remove_character_modifier = writing_magnum_opus
+# 	}
+# }
 
-# Write a Magnum Opus - Finish book on Astrology with focus on Stars
-character_event = {
-	id = DR_societies.1606
-	desc = EVTDESC_MNM_1606
-	picture = GFX_evt_comet
-	border = GFX_event_normal_frame_religion
-	is_triggered_only = yes
-	immediate = {
-		log = "work event id = DR_societies.1606 for [Root.GetBestName]"
-	}
+# # Write a Magnum Opus - Finish book on Astrology with focus on Stars
+# character_event = {
+# 	id = DR_societies.1606
+# 	desc = EVTDESC_MNM_1606
+# 	picture = GFX_evt_comet
+# 	border = GFX_event_normal_frame_religion
+# 	is_triggered_only = yes
+# 	immediate = {
+# 		log = "work event id = DR_societies.1606 for [Root.GetBestName]"
+# 	}
 
-	option = {
-		# Awesome!
-		name = EVTOPTA_MNM_1606
-		if = {
-			limit = {
-				NOT = {
-					learning = 12
-				}
-			}
-			prestige = 50
-			add_artifact = magnum_opus_astrology_stars_1
-		}
-		if = {
-			limit = {
-				learning = 12
-				NOT = {
-					learning = 18
-				}
-			}
-			prestige = 100
-			add_artifact = magnum_opus_astrology_stars_2
-		}
-		if = {
-			limit = {
-				learning = 118
-				NOT = {
-					learning = 25
-				}
-			}
-			prestige = 150
-			add_artifact = magnum_opus_astrology_stars_3
-		}
-		if = {
-			limit = {
-				learning = 25
-			}
-			prestige = 200
-			add_artifact = magnum_opus_astrology_stars_4
-		}
-		remove_character_modifier = writing_magnum_opus
-	}
-}
+# 	option = {
+# 		# Awesome!
+# 		name = EVTOPTA_MNM_1606
+# 		if = {
+# 			limit = {
+# 				NOT = {
+# 					learning = 12
+# 				}
+# 			}
+# 			prestige = 50
+# 			add_artifact = magnum_opus_astrology_stars_1
+# 		}
+# 		if = {
+# 			limit = {
+# 				learning = 12
+# 				NOT = {
+# 					learning = 18
+# 				}
+# 			}
+# 			prestige = 100
+# 			add_artifact = magnum_opus_astrology_stars_2
+# 		}
+# 		if = {
+# 			limit = {
+# 				learning = 118
+# 				NOT = {
+# 					learning = 25
+# 				}
+# 			}
+# 			prestige = 150
+# 			add_artifact = magnum_opus_astrology_stars_3
+# 		}
+# 		if = {
+# 			limit = {
+# 				learning = 25
+# 			}
+# 			prestige = 200
+# 			add_artifact = magnum_opus_astrology_stars_4
+# 		}
+# 		remove_character_modifier = writing_magnum_opus
+# 	}
+# }
 
-# Write a Magnum Opus - Finish book on Astrology with focus on Planets
-character_event = {
-	id = DR_societies.1607
-	desc = EVTDESC_MNM_1607
-	picture = GFX_evt_comet
-	border = GFX_event_normal_frame_religion
-	is_triggered_only = yes
-	immediate = {
-		log = "work event id = DR_societies.1607 for [Root.GetBestName]"
-	}
+# # Write a Magnum Opus - Finish book on Astrology with focus on Planets
+# character_event = {
+# 	id = DR_societies.1607
+# 	desc = EVTDESC_MNM_1607
+# 	picture = GFX_evt_comet
+# 	border = GFX_event_normal_frame_religion
+# 	is_triggered_only = yes
+# 	immediate = {
+# 		log = "work event id = DR_societies.1607 for [Root.GetBestName]"
+# 	}
 
-	option = {
-		# Awesome!
-		name = EVTOPTA_MNM_1607
-		if = {
-			limit = {
-				NOT = {
-					learning = 12
-				}
-			}
-			prestige = 50
-			add_artifact = magnum_opus_astrology_planets_1
-		}
-		if = {
-			limit = {
-				learning = 12
-				NOT = {
-					learning = 18
-				}
-			}
-			prestige = 100
-			add_artifact = magnum_opus_astrology_planets_2
-		}
-		if = {
-			limit = {
-				learning = 18
-				NOT = {
-					learning = 25
-				}
-			}
-			prestige = 150
-			add_artifact = magnum_opus_astrology_planets_3
-		}
-		if = {
-			limit = {
-				learning = 25
-			}
-			prestige = 200
-			add_artifact = magnum_opus_astrology_planets_4
-		}
-		remove_character_modifier = writing_magnum_opus
-	}
-}
+# 	option = {
+# 		# Awesome!
+# 		name = EVTOPTA_MNM_1607
+# 		if = {
+# 			limit = {
+# 				NOT = {
+# 					learning = 12
+# 				}
+# 			}
+# 			prestige = 50
+# 			add_artifact = magnum_opus_astrology_planets_1
+# 		}
+# 		if = {
+# 			limit = {
+# 				learning = 12
+# 				NOT = {
+# 					learning = 18
+# 				}
+# 			}
+# 			prestige = 100
+# 			add_artifact = magnum_opus_astrology_planets_2
+# 		}
+# 		if = {
+# 			limit = {
+# 				learning = 18
+# 				NOT = {
+# 					learning = 25
+# 				}
+# 			}
+# 			prestige = 150
+# 			add_artifact = magnum_opus_astrology_planets_3
+# 		}
+# 		if = {
+# 			limit = {
+# 				learning = 25
+# 			}
+# 			prestige = 200
+# 			add_artifact = magnum_opus_astrology_planets_4
+# 		}
+# 		remove_character_modifier = writing_magnum_opus
+# 	}
+# }
 
-# Write a Magnum Opus - Finish book on Alchemy with focus on Universal Panacea
-character_event = {
-	id = DR_societies.1608
-	desc = EVTDESC_MNM_1608
-	picture = GFX_evt_experiment
-	border = GFX_event_normal_frame_religion
-	is_triggered_only = yes
-	immediate = {
-		log = "work event id = DR_societies.1608 for [Root.GetBestName]"
-	}
+# # Write a Magnum Opus - Finish book on Alchemy with focus on Universal Panacea
+# character_event = {
+# 	id = DR_societies.1608
+# 	desc = EVTDESC_MNM_1608
+# 	picture = GFX_evt_experiment
+# 	border = GFX_event_normal_frame_religion
+# 	is_triggered_only = yes
+# 	immediate = {
+# 		log = "work event id = DR_societies.1608 for [Root.GetBestName]"
+# 	}
 
-	option = {
-		# Awesome!
-		name = EVTOPTA_MNM_1608
-		if = {
-			limit = {
-				NOT = {
-					learning = 12
-				}
-			}
-			prestige = 50
-			add_artifact = magnum_opus_alchemy_panacea_1
-		}
-		if = {
-			limit = {
-				learning = 12
-				NOT = {
-					learning = 18
-				}
-			}
-			prestige = 100
-			add_artifact = magnum_opus_alchemy_panacea_2
-		}
-		if = {
-			limit = {
-				learning = 18
-				NOT = {
-					learning = 25
-				}
-			}
-			prestige = 150
-			add_artifact = magnum_opus_alchemy_panacea_3
-		}
-		if = {
-			limit = {
-				learning = 25
-			}
-			prestige = 200
-			add_artifact = magnum_opus_alchemy_panacea_4
-		}
-		remove_character_modifier = writing_magnum_opus
-	}
-}
+# 	option = {
+# 		# Awesome!
+# 		name = EVTOPTA_MNM_1608
+# 		if = {
+# 			limit = {
+# 				NOT = {
+# 					learning = 12
+# 				}
+# 			}
+# 			prestige = 50
+# 			add_artifact = magnum_opus_alchemy_panacea_1
+# 		}
+# 		if = {
+# 			limit = {
+# 				learning = 12
+# 				NOT = {
+# 					learning = 18
+# 				}
+# 			}
+# 			prestige = 100
+# 			add_artifact = magnum_opus_alchemy_panacea_2
+# 		}
+# 		if = {
+# 			limit = {
+# 				learning = 18
+# 				NOT = {
+# 					learning = 25
+# 				}
+# 			}
+# 			prestige = 150
+# 			add_artifact = magnum_opus_alchemy_panacea_3
+# 		}
+# 		if = {
+# 			limit = {
+# 				learning = 25
+# 			}
+# 			prestige = 200
+# 			add_artifact = magnum_opus_alchemy_panacea_4
+# 		}
+# 		remove_character_modifier = writing_magnum_opus
+# 	}
+# }
 
-# Write a Magnum Opus - Finish book on Alchemy with focus on Transmutation
-character_event = {
-	id = DR_societies.1609
-	desc = EVTDESC_MNM_1609
-	picture = GFX_evt_experiment
-	border = GFX_event_normal_frame_religion
-	is_triggered_only = yes
-	immediate = {
-		log = "work event id = DR_societies.1609 for [Root.GetBestName]"
-	}
+# # Write a Magnum Opus - Finish book on Alchemy with focus on Transmutation
+# character_event = {
+# 	id = DR_societies.1609
+# 	desc = EVTDESC_MNM_1609
+# 	picture = GFX_evt_experiment
+# 	border = GFX_event_normal_frame_religion
+# 	is_triggered_only = yes
+# 	immediate = {
+# 		log = "work event id = DR_societies.1609 for [Root.GetBestName]"
+# 	}
 
-	option = {
-		# Awesome!
-		name = EVTOPTA_MNM_1609
-		if = {
-			limit = {
-				NOT = {
-					learning = 12
-				}
-			}
-			prestige = 50
-			add_artifact = magnum_opus_alchemy_transmutation_1
-		}
-		if = {
-			limit = {
-				learning = 12
-				NOT = {
-					learning = 18
-				}
-			}
-			prestige = 100
-			add_artifact = magnum_opus_alchemy_transmutation_2
-		}
-		if = {
-			limit = {
-				learning = 18
-				NOT = {
-					learning = 25
-				}
-			}
-			prestige = 150
-			add_artifact = magnum_opus_alchemy_transmutation_3
-		}
-		if = {
-			limit = {
-				learning = 25
-			}
-			prestige = 200
-			add_artifact = magnum_opus_alchemy_transmutation_4
-		}
-		remove_character_modifier = writing_magnum_opus
-	}
-}
+# 	option = {
+# 		# Awesome!
+# 		name = EVTOPTA_MNM_1609
+# 		if = {
+# 			limit = {
+# 				NOT = {
+# 					learning = 12
+# 				}
+# 			}
+# 			prestige = 50
+# 			add_artifact = magnum_opus_alchemy_transmutation_1
+# 		}
+# 		if = {
+# 			limit = {
+# 				learning = 12
+# 				NOT = {
+# 					learning = 18
+# 				}
+# 			}
+# 			prestige = 100
+# 			add_artifact = magnum_opus_alchemy_transmutation_2
+# 		}
+# 		if = {
+# 			limit = {
+# 				learning = 18
+# 				NOT = {
+# 					learning = 25
+# 				}
+# 			}
+# 			prestige = 150
+# 			add_artifact = magnum_opus_alchemy_transmutation_3
+# 		}
+# 		if = {
+# 			limit = {
+# 				learning = 25
+# 			}
+# 			prestige = 200
+# 			add_artifact = magnum_opus_alchemy_transmutation_4
+# 		}
+# 		remove_character_modifier = writing_magnum_opus
+# 	}
+# }
 
 # Quest: Observe stars/planets
 character_event = {

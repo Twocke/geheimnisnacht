@@ -401,13 +401,11 @@ character_event = {
 						OR = {
 							wh_is_mage_trigger = yes
 							ROOT = {
-								NOT = {
+								nor = {
 									any_courtier = {
 										trait = creature_skink
 										wh_is_mage_trigger = yes
 									}
-								}
-								NOT = {
 									any_vassal = {
 										trait = creature_skink
 										wh_is_mage_trigger = yes
@@ -421,13 +419,11 @@ character_event = {
 						OR = {
 							wh_is_mage_trigger = yes
 							ROOT = {
-								NOT = {
+								nor = {
 									any_courtier = {
 										trait = creature_skink
 										wh_is_mage_trigger = yes
 									}
-								}
-								NOT = {
 									any_vassal = {
 										trait = creature_skink
 										wh_is_mage_trigger = yes
@@ -6269,14 +6265,12 @@ character_event = {
 			}
 			if = {
 				limit = {
-					NOT = {
+					nor = {
 						s_target_trait = {
 							any_friend = {
 								character = ROOT
 							}
 						}
-					}
-					NOT = {
 						any_courtier = {
 							trait = creature_skink
 						}
@@ -9884,12 +9878,12 @@ character_event = {
 character_event = {
 	id = slizardmen.53
 	hide_window = yes
+	is_triggered_only = yes
 
 	trigger = {
 		trait = creature_amazon
 		has_character_flag = holding_amazon_ritual
 	}
-	is_triggered_only = yes
 
 	immediate = {
 		log = "work event id = slizardmen.53 for [Root.GetBestName]"
@@ -9979,13 +9973,11 @@ character_event = {
 			5 = {
 				modifier = {
 					factor = 0
-					NOT = {
+					nor = {
 						check_variable = {
 							which = "drinking_count"
 							value = 1
 						}
-					}
-					NOT = {
 						check_variable = {
 							which = "eating_count"
 							value = 1
@@ -9996,7 +9988,6 @@ character_event = {
 					id = slizardmen.53007
 				}
 			} # Passing the Snake
-
 		}
 	}
 }
@@ -10006,12 +9997,12 @@ character_event = {
 	id = slizardmen.53001
 	desc = EVTDESCslizardmen53001
 	picture = GFX_evt_amazon_feast
+	is_triggered_only = yes
 
 	trigger = {
 		trait = creature_amazon
 		has_character_flag = holding_amazon_ritual
 	}
-	is_triggered_only = yes
 
 	immediate = {
 		log = "work event id = slizardmen.53001 for [Root.GetBestName]"
@@ -10032,12 +10023,12 @@ character_event = {
 	id = slizardmen.53002
 	desc = EVTDESCslizardmen53002
 	picture = GFX_evt_amazon_feast
+	is_triggered_only = yes
 
 	trigger = {
 		trait = creature_amazon
 		has_character_flag = holding_amazon_ritual
 	}
-	is_triggered_only = yes
 
 	immediate = {
 		log = "work event id = slizardmen.53002 for [Root.GetBestName]"
@@ -10058,12 +10049,12 @@ character_event = {
 	id = slizardmen.53003
 	desc = EVTDESCslizardmen53003
 	picture = GFX_evt_amazon_feast
+	is_triggered_only = yes
 
 	trigger = {
 		trait = creature_amazon
 		has_character_flag = holding_amazon_ritual
 	}
-	is_triggered_only = yes
 
 	immediate = {
 		log = "work event id = slizardmen.53003 for [Root.GetBestName]"
@@ -10084,12 +10075,12 @@ character_event = {
 	id = slizardmen.53004
 	desc = EVTDESCslizardmen53004
 	picture = GFX_evt_amazon_feast
+	is_triggered_only = yes
 
 	trigger = {
 		trait = creature_amazon
 		has_character_flag = holding_amazon_ritual
 	}
-	is_triggered_only = yes
 
 	immediate = {
 		log = "work event id = slizardmen.53004 for [Root.GetBestName]"
@@ -10110,12 +10101,12 @@ character_event = {
 	id = slizardmen.53005
 	desc = EVTDESCslizardmen53005
 	picture = GFX_evt_amazon_feast
+	is_triggered_only = yes
 
 	trigger = {
 		trait = creature_amazon
 		has_character_flag = holding_amazon_ritual
 	}
-	is_triggered_only = yes
 
 	immediate = {
 		log = "work event id = slizardmen.53005 for [Root.GetBestName]"
@@ -10133,12 +10124,12 @@ character_event = {
 	id = slizardmen.53006
 	desc = EVTDESCslizardmen53006
 	picture = GFX_evt_amazon_feast
+	is_triggered_only = yes
 
 	trigger = {
 		trait = creature_amazon
 		has_character_flag = holding_amazon_ritual
 	}
-	is_triggered_only = yes
 
 	immediate = {
 		log = "work event id = slizardmen.53006 for [Root.GetBestName]"
@@ -10155,12 +10146,12 @@ long_character_event = {
 	id = slizardmen.53007
 	desc = EVTDESCslizardmen53007
 	picture = GFX_evt_amazon_snake
+	is_triggered_only = yes
 
 	trigger = {
 		trait = creature_amazon
 		has_character_flag = holding_amazon_ritual
 	}
-	is_triggered_only = yes
 
 	immediate = {
 		log = "work event id = slizardmen.53007 for [Root.GetBestName]"
@@ -10177,12 +10168,12 @@ long_character_event = {
 character_event = {
 	id = slizardmen.54
 	hide_window = yes
+	is_triggered_only = yes
 
 	trigger = {
 		trait = creature_amazon
 		has_character_flag = holding_amazon_ritual
 	}
-	is_triggered_only = yes
 
 	immediate = {
 		log = "work event id = slizardmen.54 for [Root.GetBestName]"
@@ -10211,12 +10202,12 @@ character_event = {
 	id = slizardmen.54001
 	desc = EVTDESCslizardmen54001
 	picture = GFX_evt_amazon_feast
+	is_triggered_only = yes
 
 	trigger = {
 		trait = creature_amazon
 		has_character_flag = holding_amazon_ritual
 	}
-	is_triggered_only = yes
 
 	immediate = {
 		log = "work event id = slizardmen.54001 for [Root.GetBestName]"
@@ -10258,14 +10249,11 @@ character_event = {
 	id = slizardmen.54002
 	desc = EVTDESCslizardmen54002
 	picture = GFX_evt_amazon_feast
+	is_triggered_only = yes
 
 	trigger = {
 		trait = creature_amazon
-	}
-	is_triggered_only = yes
-
-	immediate = {
-		log = "work event id = slizardmen.54002 for [Root.GetBestName]"
+		has_character_flag = holding_amazon_ritual
 	}
 
 	option = {
@@ -10286,12 +10274,12 @@ character_event = {
 	id = slizardmen.54003
 	desc = EVTDESCslizardmen54003
 	picture = GFX_evt_amazon_feast
+	is_triggered_only = yes
 
 	trigger = {
 		trait = creature_amazon
 		has_character_flag = holding_amazon_ritual
 	}
-	is_triggered_only = yes
 
 	immediate = {
 		log = "work event id = slizardmen.54003 for [Root.GetBestName]"
@@ -10306,77 +10294,62 @@ character_event = {
 					modifier = {
 						factor = 0.65
 						trait = fragile
-
 					}
 					modifier = {
 						factor = 0.75
 						trait = weak
-
 					}
 					modifier = {
 						factor = 0.85
 						trait = soft
-
 					}
 					modifier = {
 						factor = 1.5
 						trait = hardy
-
 					}
 					modifier = {
 						factor = 1.65
 						trait = tough
-
 					}
 					modifier = {
 						factor = 1.85
 						trait = strong
-
 					}
 					modifier = {
 						factor = 0.75
 						trait = temperate
-
 					}
 					modifier = {
 						factor = 1.15
 						trait = diligent
-
 					}
 					modifier = {
 						factor = 1.5
 						trait = drunkard
-
 					}
 					modifier = {
 						factor = 1.25
 						trait = addict
-
 					}
 					modifier = {
 						factor = 1.15
 						trait = gluttonous
-
 					}
 					modifier = {
 						factor = 1.5
 						trait = fat
-
 					}
 					modifier = {
 						factor = 0.75
 						trait = undernourished
-
 					}
 					modifier = {
 						factor = 1.5
 						trait = ambitious
-
 					}
 					modifier = {
 						factor = 0.85
 						trait = content
-
 					}
 					modifier = {
 						factor = 0.85
@@ -10530,11 +10503,11 @@ character_event = {
 	id = slizardmen.54004
 	desc = EVTDESCslizardmen54004
 	picture = GFX_evt_amazon_feast
+	is_triggered_only = yes
 
 	trigger = {
 		trait = creature_amazon
 	}
-	is_triggered_only = yes
 
 	immediate = {
 		log = "work event id = slizardmen.54004 for [Root.GetBestName]"
@@ -10561,11 +10534,11 @@ character_event = {
 	id = slizardmen.54005
 	desc = EVTDESCslizardmen54005
 	picture = GFX_evt_amazon_feast
+	is_triggered_only = yes
 
 	trigger = {
 		trait = creature_amazon
 	}
-	is_triggered_only = yes
 
 	immediate = {
 		log = "work event id = slizardmen.54005 for [Root.GetBestName]"
@@ -10690,12 +10663,12 @@ character_event = {
 		}
 	}
 	picture = GFX_evt_amazon_feast
+	is_triggered_only = yes
 
 	trigger = {
 		trait = creature_amazon
 		has_character_flag = holding_amazon_ritual
 	}
-	is_triggered_only = yes
 
 	immediate = {
 		log = "work event id = slizardmen.54006 for [Root.GetBestName]"
@@ -10710,77 +10683,62 @@ character_event = {
 					modifier = {
 						factor = 0.65
 						trait = fragile
-
 					}
 					modifier = {
 						factor = 0.75
 						trait = weak
-
 					}
 					modifier = {
 						factor = 0.85
 						trait = soft
-
 					}
 					modifier = {
 						factor = 1.5
 						trait = hardy
-
 					}
 					modifier = {
 						factor = 1.65
 						trait = tough
-
 					}
 					modifier = {
 						factor = 1.85
 						trait = strong
-
 					}
 					modifier = {
 						factor = 0.75
 						trait = temperate
-
 					}
 					modifier = {
 						factor = 1.15
 						trait = diligent
-
 					}
 					modifier = {
 						factor = 1.5
 						trait = drunkard
-
 					}
 					modifier = {
 						factor = 1.25
 						trait = addict
-
 					}
 					modifier = {
 						factor = 1.15
 						trait = gluttonous
-
 					}
 					modifier = {
 						factor = 1.5
 						trait = fat
-
 					}
 					modifier = {
 						factor = 0.75
 						trait = undernourished
-
 					}
 					modifier = {
 						factor = 1.5
 						trait = ambitious
-
 					}
 					modifier = {
 						factor = 0.85
 						trait = content
-
 					}
 					modifier = {
 						factor = 0.85
@@ -11187,77 +11145,62 @@ character_event = {
 					modifier = {
 						factor = 0.65
 						trait = fragile
-
 					}
 					modifier = {
 						factor = 0.75
 						trait = weak
-
 					}
 					modifier = {
 						factor = 0.85
 						trait = soft
-
 					}
 					modifier = {
 						factor = 1.5
 						trait = hardy
-
 					}
 					modifier = {
 						factor = 1.65
 						trait = tough
-
 					}
 					modifier = {
 						factor = 1.85
 						trait = strong
-
 					}
 					modifier = {
 						factor = 0.75
 						trait = temperate
-
 					}
 					modifier = {
 						factor = 1.15
 						trait = diligent
-
 					}
 					modifier = {
 						factor = 1.15
 						trait = drunkard
-
 					}
 					modifier = {
 						factor = 1.25
 						trait = addict
-
 					}
 					modifier = {
 						factor = 1.5
 						trait = gluttonous
-
 					}
 					modifier = {
 						factor = 0.75
 						trait = fat
-
 					}
 					modifier = {
 						factor = 1.75
 						trait = undernourished
-
 					}
 					modifier = {
 						factor = 1.5
 						trait = ambitious
-
 					}
 					modifier = {
 						factor = 0.85
 						trait = content
-
 					}
 					modifier = {
 						factor = 0.85
@@ -11591,77 +11534,62 @@ character_event = {
 					modifier = {
 						factor = 0.65
 						trait = fragile
-
 					}
 					modifier = {
 						factor = 0.75
 						trait = weak
-
 					}
 					modifier = {
 						factor = 0.85
 						trait = soft
-
 					}
 					modifier = {
 						factor = 1.5
 						trait = hardy
-
 					}
 					modifier = {
 						factor = 1.65
 						trait = tough
-
 					}
 					modifier = {
 						factor = 1.85
 						trait = strong
-
 					}
 					modifier = {
 						factor = 0.75
 						trait = temperate
-
 					}
 					modifier = {
 						factor = 1.15
 						trait = diligent
-
 					}
 					modifier = {
 						factor = 1.15
 						trait = drunkard
-
 					}
 					modifier = {
 						factor = 1.25
 						trait = addict
-
 					}
 					modifier = {
 						factor = 1.5
 						trait = gluttonous
-
 					}
 					modifier = {
 						factor = 0.75
 						trait = fat
-
 					}
 					modifier = {
 						factor = 1.75
 						trait = undernourished
-
 					}
 					modifier = {
 						factor = 1.5
 						trait = ambitious
-
 					}
 					modifier = {
 						factor = 0.85
 						trait = content
-
 					}
 					modifier = {
 						factor = 0.85
@@ -12631,17 +12559,13 @@ character_event = {
 	# only_playable = yes
 
 	trigger = {
-		NOT = {
+		nor = {
 			location = {
 				has_province_modifier = province_slave_raid
 			}
-		}
-		NOT = {
 			location = {
 				has_province_modifier = province_scourged
 			}
-		}
-		NOT = {
 			location = {
 				has_province_modifier = province_slave_raid_chaos_dwarf
 			}
@@ -12995,7 +12919,7 @@ long_character_event = {
 		} # Make sure there's a bare minimum of challengers to start
 
 	}
-	picture = GFX_evt_amazon_fight
+	picture = GFX_evt_amazon_brawling
 
 	trigger = {
 		trait = creature_amazon
@@ -13083,7 +13007,7 @@ long_character_event = {
 long_character_event = {
 	id = slizardmen.62001
 	desc = EVTDESCslizardmen62001
-	picture = GFX_evt_amazon_fight
+	picture = GFX_evt_amazon_brawling
 
 	trigger = {
 		trait = creature_amazon
@@ -13107,7 +13031,7 @@ long_character_event = {
 character_event = {
 	id = slizardmen.62002
 	desc = EVTDESCslizardmen62002
-	picture = GFX_evt_amazon_fight
+	picture = GFX_evt_amazon_brawling
 
 	trigger = {
 		trait = creature_amazon
@@ -13143,7 +13067,7 @@ character_event = {
 character_event = {
 	id = slizardmen.62003
 	desc = EVTDESCslizardmen62003
-	picture = GFX_evt_amazon_fight
+	picture = GFX_evt_amazon_brawling
 
 	trigger = {
 		trait = creature_amazon
@@ -13173,7 +13097,7 @@ character_event = {
 character_event = {
 	id = slizardmen.62004
 	desc = EVTDESCslizardmen62004
-	picture = GFX_evt_amazon_fight
+	picture = GFX_evt_amazon_brawling
 
 	trigger = {
 		trait = creature_amazon
@@ -13203,7 +13127,7 @@ character_event = {
 character_event = {
 	id = slizardmen.62005
 	desc = EVTDESCslizardmen62005
-	picture = GFX_evt_amazon_fight
+	picture = GFX_evt_amazon_brawling
 
 	trigger = {
 		trait = creature_amazon
@@ -14497,7 +14421,7 @@ long_character_event = {
 		} # Opponent is FROMFROM
 
 	}
-	picture = GFX_evt_amazon_fight
+	picture = GFX_evt_amazon_brawling
 
 	trigger = {
 		trait = creature_amazon
@@ -14639,7 +14563,7 @@ long_character_event = {
 			}
 		}
 	}
-	picture = GFX_evt_amazon_fight
+	picture = GFX_evt_amazon_brawling
 
 	trigger = {
 		trait = creature_amazon
@@ -14750,7 +14674,7 @@ long_character_event = {
 character_event = {
 	id = slizardmen.63003
 	desc = EVTDESCslizardmen63003
-	picture = GFX_evt_amazon_fight
+	picture = GFX_evt_amazon_brawling
 
 	trigger = {
 		trait = creature_amazon
@@ -14804,7 +14728,7 @@ long_character_event = {
 		} # Winner is the Queen
 
 	}
-	picture = GFX_evt_amazon_fight
+	picture = GFX_evt_amazon_brawling
 
 	trigger = {
 		trait = creature_amazon
@@ -14895,7 +14819,7 @@ long_character_event = {
 long_character_event = {
 	id = slizardmen.64001
 	desc = EVTDESCAslizardmen64001
-	picture = GFX_evt_amazon_fight
+	picture = GFX_evt_amazon_brawling
 
 	trigger = {
 		trait = creature_amazon
@@ -14952,7 +14876,7 @@ long_character_event = {
 		} # Winner is the Queen
 
 	}
-	picture = GFX_evt_amazon_fight
+	picture = GFX_evt_amazon_brawling
 
 	trigger = {
 		trait = creature_amazon
@@ -14975,7 +14899,7 @@ long_character_event = {
 character_event = {
 	id = slizardmen.65001
 	desc = EVTDESCAslizardmen65001
-	picture = GFX_evt_amazon_fight
+	picture = GFX_evt_amazon_brawling
 
 	trigger = {
 		trait = creature_amazon
@@ -15012,7 +14936,7 @@ character_event = {
 character_event = {
 	id = slizardmen.65002
 	desc = EVTDESCAslizardmen65002
-	picture = GFX_evt_amazon_fight
+	picture = GFX_evt_amazon_brawling
 
 	trigger = {
 		trait = creature_amazon
@@ -15088,7 +15012,7 @@ character_event = {
 character_event = {
 	id = slizardmen.65003
 	desc = EVTDESCAslizardmen65003
-	picture = GFX_evt_amazon_fight
+	picture = GFX_evt_amazon_brawling
 
 	trigger = {
 		trait = creature_amazon
@@ -15125,7 +15049,7 @@ character_event = {
 character_event = {
 	id = slizardmen.65004
 	desc = EVTDESCAslizardmen65004
-	picture = GFX_evt_amazon_fight
+	picture = GFX_evt_amazon_brawling
 
 	trigger = {
 		trait = creature_amazon
@@ -20022,8 +19946,10 @@ province_event = {
 		modifier = {
 			factor = 1.5
 			any_neighbor_province = {
-				is_tribal = no
-				is_nomadic = no
+				any_province_holding = {
+					is_tribal = no
+					is_nomadic = no
+				}
 			}
 		}
 		modifier = {
@@ -20052,12 +19978,16 @@ province_event = {
 		}
 		modifier = {
 			factor = 2
-			is_tribal = no
-			is_nomadic = no
+			any_province_holding = {
+				is_tribal = no
+				is_nomadic = no
+			}
 		}
 		modifier = {
 			factor = 0.5
-			is_nomadic = yes
+			any_province_holding = {
+				is_nomadic = yes
+			}
 		}
 		modifier = {
 			factor = 1.15
@@ -20110,17 +20040,11 @@ province_event = {
 		modifier = {
 			# Jungle grows faster if more controlled
 			factor = 0.9
-			holder_scope = {
-				ai = no
-			}
 			has_province_modifier = lustria_light_jungle
 		}
 		modifier = {
 			# Jungle grows a little slower once it's dense
 			factor = 1.5
-			holder_scope = {
-				ai = no
-			}
 			has_province_modifier = lustria_dense_jungle
 		}
 	}
@@ -20288,6 +20212,8 @@ province_event = {
 					factor = 1.5
 					any_neighbor_province = {
 						is_tribal = no
+					}
+					owner = {
 						is_nomadic = no
 					}
 				}
@@ -20875,7 +20801,7 @@ province_event = {
 					has_province_modifier = lustria_light_jungle
 					has_province_modifier = lustria_medium_jungle
 					has_province_modifier = lustria_dense_jungle
-					has_province_modifier = lustria_oppressive_jungle				
+					has_province_modifier = lustria_oppressive_jungle
 				}
 			}
 			# Make it so the initial jungle level is random
@@ -20944,38 +20870,6 @@ province_event = {
 				}
 			}
 		}
-	}
-}
-
-# 251: Trigger 250 for held provinces
-character_event = {
-	id = slizardmen.251
-	hide_window = yes
-	only_playable = yes
-	is_triggered_only = yes
-	
-	trigger = {
-		any_demesne_province = {
-			region = world_new_world_lustria
-			NOT = {
-				has_province_modifier = lustria_jungle
-			}
-		}
-	}
-
-	immediate = {
-		log = "work event id = slizardmen.251 for [Root.GetBestName]"
-		any_demesne_province = {
-			limit = {
-				region = world_new_world_lustria
-				NOT = {
-					has_province_modifier = lustria_jungle
-				}
-			}
-			province_event = {
-				id = slizardmen.250
-			}
-		}		
 	}
 }
 
@@ -21938,22 +21832,23 @@ character_event = {
 
 	option = {
 		name = GodsBePraised
-		location = {
-			ROOT = {
-				spawn_unit = {
-					owner = ROOT
-					province = PREV
-					home = ROOT
-					troops = {
-						light_cavalry = {
-							150 150
-						}
-					}
-					attrition = 1.0
-					maintenance_multiplier = 0.075
-				}
-			}
-		}
+		# error in log
+		# location = {
+		# 	root = {
+		# 		spawn_unit = {
+		# 			owner = ROOT
+		# 			province = prev
+		# 			home = prev
+		# 			troops = {
+		# 				light_cavalry = {
+		# 					150 150
+		# 				}
+		# 			}
+		# 			attrition = 1.0
+		# 			maintenance_multiplier = 0.075
+		# 		}
+		# 	}
+		# }
 	}
 }
 

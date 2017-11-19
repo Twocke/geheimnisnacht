@@ -993,13 +993,11 @@ character_event = {
 			character = liege
 			prisoner = no
 			trait = berserker
-			NOT = {
+			nor = {
 				trait = incapable
 				opinion = {
 					who = ROOT value = 10
 				}
-			}
-			NOT = {
 				is_inaccessible_trigger = yes
 			}
 		}
@@ -1010,10 +1008,6 @@ character_event = {
 		is_pretender = no
 	}
 
-	mean_time_to_happen = {
-		years = 173
-	}
-
 	immediate = {
 		log = "work event id = TOG.3009 for [Root.GetBestName]"
 		liege = {
@@ -1021,10 +1015,6 @@ character_event = {
 				id = TOG.3006
 			}
 		}
-	}
-
-	option = {
-		name = OK
 	}
 }
 

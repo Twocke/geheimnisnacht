@@ -1041,10 +1041,10 @@ character_event = {
 				factor = 1.5
 				has_pious_trait_trigger = yes
 			}
-			modifier = {
-				factor = 1.5
-				has_crusade_trait_trigger = yes
-			}
+			# modifier = {
+				# factor = 1.5
+				# has_crusade_trait_trigger = yes
+			# }
 		}
 	}
 }
@@ -4575,19 +4575,6 @@ character_event = {
 		hidden_effect = {
 			random_list = {
 				50 = {
-					modifier = {
-						factor = 2
-						event_target:corrupt_priest_target = {
-							OR = {
-								trait = bad_priest_christian
-								trait = bad_priest_muslim
-								trait = bad_priest_norse
-								trait = bad_priest_tengri
-								trait = bad_priest_zoroastrian
-								trait = bad_priest_aztec
-							}
-						}
-					}
 					hidden_effect = {
 						event_target:corrupt_priest_target = {
 							character_event = {
@@ -4660,19 +4647,6 @@ character_event = {
 		hidden_effect = {
 			random_list = {
 				90 = {
-					modifier = {
-						factor = 2
-						event_target:corrupt_priest_target = {
-							OR = {
-								trait = bad_priest_christian
-								trait = bad_priest_muslim
-								trait = bad_priest_norse
-								trait = bad_priest_tengri
-								trait = bad_priest_zoroastrian
-								trait = bad_priest_aztec
-							}
-						}
-					}
 					hidden_effect = {
 						event_target:corrupt_priest_target = {
 							character_event = {
@@ -4709,19 +4683,6 @@ character_event = {
 		hidden_effect = {
 			random_list = {
 				90 = {
-					modifier = {
-						factor = 2
-						event_target:corrupt_priest_target = {
-							OR = {
-								trait = bad_priest_christian
-								trait = bad_priest_muslim
-								trait = bad_priest_norse
-								trait = bad_priest_tengri
-								trait = bad_priest_zoroastrian
-								trait = bad_priest_aztec
-							}
-						}
-					}
 					hidden_effect = {
 						event_target:corrupt_priest_target = {
 							character_event = {
@@ -5298,19 +5259,6 @@ character_event = {
 		hidden_effect = {
 			random_list = {
 				50 = {
-					modifier = {
-						factor = 2
-						event_target:corrupt_priest_target = {
-							OR = {
-								trait = bad_priest_christian
-								trait = bad_priest_muslim
-								trait = bad_priest_norse
-								trait = bad_priest_tengri
-								trait = bad_priest_zoroastrian
-								trait = bad_priest_aztec
-							}
-						}
-					}
 					hidden_effect = {
 						event_target:corrupt_priest_target = {
 							character_event = {
@@ -5383,19 +5331,6 @@ character_event = {
 		hidden_effect = {
 			random_list = {
 				90 = {
-					modifier = {
-						factor = 2
-						event_target:corrupt_priest_target = {
-							OR = {
-								trait = bad_priest_christian
-								trait = bad_priest_muslim
-								trait = bad_priest_norse
-								trait = bad_priest_tengri
-								trait = bad_priest_zoroastrian
-								trait = bad_priest_aztec
-							}
-						}
-					}
 					hidden_effect = {
 						event_target:corrupt_priest_target = {
 							character_event = {
@@ -5432,19 +5367,6 @@ character_event = {
 		hidden_effect = {
 			random_list = {
 				90 = {
-					modifier = {
-						factor = 2
-						event_target:corrupt_priest_target = {
-							OR = {
-								trait = bad_priest_christian
-								trait = bad_priest_muslim
-								trait = bad_priest_norse
-								trait = bad_priest_tengri
-								trait = bad_priest_zoroastrian
-								trait = bad_priest_aztec
-							}
-						}
-					}
 					hidden_effect = {
 						event_target:corrupt_priest_target = {
 							character_event = {
@@ -9125,7 +9047,7 @@ character_event = {
 				}
 				modifier = {
 					factor = 0
-					is_society_member = cult_of_undivided
+					society_member_of = cult_of_undivided
 					NOT = {
 						any_realm_province = {
 							any_province_holding = {
@@ -9343,12 +9265,10 @@ society_quest_event = {
 			}
 			random_realm_province = {
 				limit = {
-					NOT = {
+					nor = {
 						holder_scope = {
 							character = ROOT
 						}
-					}
-					NOT = {
 						has_province_modifier = beastmen_unrest
 					}
 				}
@@ -9356,12 +9276,10 @@ society_quest_event = {
 			}
 			random_neighbor_province = {
 				limit = {
-					NOT = {
+					nor = {
 						holder_scope = {
 							character = ROOT
 						}
-					}
-					NOT = {
 						has_province_modifier = beastmen_unrest
 					}
 				}
@@ -9370,12 +9288,10 @@ society_quest_event = {
 			top_liege = {
 				random_realm_province = {
 					limit = {
-						NOT = {
+						nor = {
 							holder_scope = {
 								character = ROOT
 							}
-						}
-						NOT = {
 							has_province_modifier = beastmen_unrest
 						}
 					}
@@ -9386,12 +9302,10 @@ society_quest_event = {
 				random_realm_province = {
 					random_neighbor_province = {
 						limit = {
-							NOT = {
+							nor = {
 								holder_scope = {
 									character = ROOT
 								}
-							}
-							NOT = {
 								has_province_modifier = beastmen_unrest
 							}
 						}
@@ -9414,12 +9328,10 @@ society_quest_event = {
 			}
 			random_realm_province = {
 				limit = {
-					NOT = {
+					nor = {
 						holder_scope = {
 							character = ROOT
 						}
-					}
-					NOT = {
 						has_province_modifier = nurgle_province_disease
 					}
 				}
@@ -9427,12 +9339,10 @@ society_quest_event = {
 			}
 			random_neighbor_province = {
 				limit = {
-					NOT = {
+					nor = {
 						holder_scope = {
 							character = ROOT
 						}
-					}
-					NOT = {
 						has_province_modifier = nurgle_province_disease
 					}
 				}
@@ -9441,12 +9351,10 @@ society_quest_event = {
 			top_liege = {
 				random_realm_province = {
 					limit = {
-						NOT = {
+						nor = {
 							holder_scope = {
 								character = ROOT
 							}
-						}
-						NOT = {
 							has_province_modifier = nurgle_province_disease
 						}
 					}
@@ -9457,12 +9365,10 @@ society_quest_event = {
 				random_realm_province = {
 					random_neighbor_province = {
 						limit = {
-							NOT = {
+							nor = {
 								holder_scope = {
 									character = ROOT
 								}
-							}
-							NOT = {
 								has_province_modifier = nurgle_province_disease
 							}
 						}
@@ -9485,12 +9391,10 @@ society_quest_event = {
 			}
 			random_realm_province = {
 				limit = {
-					NOT = {
+					nor = {
 						holder_scope = {
 							character = ROOT
 						}
-					}
-					NOT = {
 						has_province_modifier = warpdust_traces
 					}
 				}
@@ -9498,12 +9402,10 @@ society_quest_event = {
 			}
 			random_neighbor_province = {
 				limit = {
-					NOT = {
+					nor = {
 						holder_scope = {
 							character = ROOT
 						}
-					}
-					NOT = {
 						has_province_modifier = warpdust_traces
 					}
 				}
@@ -9512,12 +9414,10 @@ society_quest_event = {
 			top_liege = {
 				random_realm_province = {
 					limit = {
-						NOT = {
+						nor = {
 							holder_scope = {
 								character = ROOT
 							}
-						}
-						NOT = {
 							has_province_modifier = warpdust_traces
 						}
 					}
@@ -9528,12 +9428,10 @@ society_quest_event = {
 				random_realm_province = {
 					random_neighbor_province = {
 						limit = {
-							NOT = {
+							nor = {
 								holder_scope = {
 									character = ROOT
 								}
-							}
-							NOT = {
 								has_province_modifier = warpdust_traces
 							}
 						}
@@ -9556,12 +9454,10 @@ society_quest_event = {
 			}
 			random_realm_province = {
 				limit = {
-					NOT = {
+					nor = {
 						holder_scope = {
 							character = ROOT
 						}
-					}
-					NOT = {
 						has_province_modifier = slaanesh_hedonism
 					}
 				}
@@ -9569,12 +9465,10 @@ society_quest_event = {
 			}
 			random_neighbor_province = {
 				limit = {
-					NOT = {
+					nor = {
 						holder_scope = {
 							character = ROOT
 						}
-					}
-					NOT = {
 						has_province_modifier = slaanesh_hedonism
 					}
 				}
@@ -9583,12 +9477,10 @@ society_quest_event = {
 			top_liege = {
 				random_realm_province = {
 					limit = {
-						NOT = {
+						nor = {
 							holder_scope = {
 								character = ROOT
 							}
-						}
-						NOT = {
 							has_province_modifier = slaanesh_hedonism
 						}
 					}
@@ -9599,12 +9491,10 @@ society_quest_event = {
 				random_realm_province = {
 					random_neighbor_province = {
 						limit = {
-							NOT = {
+							nor = {
 								holder_scope = {
 									character = ROOT
 								}
-							}
-							NOT = {
 								has_province_modifier = slaanesh_hedonism
 							}
 						}
@@ -10829,8 +10719,8 @@ character_event = {
 		name = EVTOPTAschaos17
 		trigger = {
 			OR = {
-				is_society_member = cult_of_tzeentch
-				is_society_member = cult_of_undivided
+				society_member_of = cult_of_tzeentch
+				society_member_of = cult_of_undivided
 				trait = lore_tzeentch
 				trait = lore_shadows
 				trait = lore_dark_magic
@@ -11007,8 +10897,8 @@ character_event = {
 		name = EVTOPTBschaos17
 		trigger = {
 			OR = {
-				is_society_member = cult_of_nurgle
-				is_society_member = cult_of_undivided
+				society_member_of = cult_of_nurgle
+				society_member_of = cult_of_undivided
 				trait = lore_nurgle
 				trait = chaos_dwarf_sorcerer
 				trait = lore_dark_magic
@@ -11184,8 +11074,8 @@ character_event = {
 		name = EVTOPTCschaos17
 		trigger = {
 			OR = {
-				is_society_member = cult_of_slaanesh
-				is_society_member = cult_of_undivided
+				society_member_of = cult_of_slaanesh
+				society_member_of = cult_of_undivided
 				trait = lore_slaanesh
 				trait = lore_shadows
 				trait = lore_tzeentch
@@ -11362,8 +11252,8 @@ character_event = {
 		name = EVTOPTDschaos17
 		trigger = {
 			OR = {
-				is_society_member = cult_of_khorne
-				is_society_member = cult_of_undivided
+				society_member_of = cult_of_khorne
+				society_member_of = cult_of_undivided
 				trait = lore_dark_magic
 				trait = lore_tzeentch
 				trait = lore_slaanesh
@@ -12526,9 +12416,7 @@ character_event = {
 			society_member_of = cult_of_slaanesh
 			society_member_of = cult_of_undivided
 		}
-		NOT = {
-			is_inaccessible_trigger = yes
-		}
+		is_inaccessible_trigger = no
 		is_ill = no
 	}
 
@@ -12589,9 +12477,7 @@ character_event = {
 					ai = yes
 					is_incapable = no
 					prisoner = no
-					NOT = {
-						is_inaccessible_trigger = yes
-					}
+					is_inaccessible_trigger = no
 					is_ill = no
 					NOT = {
 						character = ROOT
@@ -12612,9 +12498,7 @@ character_event = {
 					ai = yes
 					is_incapable = no
 					prisoner = no
-					NOT = {
-						is_inaccessible_trigger = yes
-					}
+					is_inaccessible_trigger = no
 					is_ill = no
 					NOT = {
 						character = ROOT
@@ -12633,9 +12517,7 @@ character_event = {
 					ai = yes
 					is_incapable = no
 					prisoner = no
-					NOT = {
-						is_inaccessible_trigger = yes
-					}
+					is_inaccessible_trigger = no
 					is_ill = no
 					NOT = {
 						character = ROOT
@@ -13800,9 +13682,7 @@ character_event = {
 	trigger = {
 		always = no
 		is_devil_worshiper_trigger = yes
-		NOT = {
-			is_inaccessible_trigger = yes
-		}
+		is_inaccessible_trigger = no
 		is_ill = no
 	}
 
@@ -13866,9 +13746,7 @@ character_event = {
 					ai = yes
 					is_incapable = no
 					prisoner = no
-					NOT = {
-						is_inaccessible_trigger = yes
-					}
+					is_inaccessible_trigger = no
 					is_ill = no
 					NOT = {
 						character = ROOT
@@ -13889,9 +13767,7 @@ character_event = {
 					ai = yes
 					is_incapable = no
 					prisoner = no
-					NOT = {
-						is_inaccessible_trigger = yes
-					}
+					is_inaccessible_trigger = no
 					is_ill = no
 					NOT = {
 						character = ROOT
@@ -13910,9 +13786,7 @@ character_event = {
 					ai = yes
 					is_incapable = no
 					prisoner = no
-					NOT = {
-						is_inaccessible_trigger = yes
-					}
+					is_inaccessible_trigger = no
 					is_ill = no
 					NOT = {
 						character = ROOT
@@ -14883,9 +14757,7 @@ character_event = {
 			society_member_of = cult_of_undivided
 			society_member_of = cult_of_tzeentch
 		}
-		NOT = {
-			is_inaccessible_trigger = yes
-		}
+		is_inaccessible_trigger = no
 		is_ill = no
 		in_command = no
 	}
@@ -14920,9 +14792,7 @@ character_event = {
 					ai = yes
 					is_incapable = no
 					prisoner = no
-					NOT = {
-						is_inaccessible_trigger = yes
-					}
+					is_inaccessible_trigger = no
 					is_ill = no
 					NOT = {
 						character = ROOT
@@ -14947,9 +14817,7 @@ character_event = {
 					ai = yes
 					is_incapable = no
 					prisoner = no
-					NOT = {
-						is_inaccessible_trigger = yes
-					}
+					is_inaccessible_trigger = no
 					is_ill = no
 					NOT = {
 						character = ROOT
@@ -14972,9 +14840,7 @@ character_event = {
 					ai = yes
 					is_incapable = no
 					prisoner = no
-					NOT = {
-						is_inaccessible_trigger = yes
-					}
+					is_inaccessible_trigger = no
 					is_ill = no
 					NOT = {
 						character = ROOT
@@ -16924,19 +16790,15 @@ character_event = {
 			}
 			if = {
 				limit = {
-					NOT = {
+					nor = {
 						check_variable = {
 							which = "nurgle_favor"
 							value = 1
 						}
-					}
-					NOT = {
 						check_variable = {
 							which = "khorne_favor"
 							value = 1
 						}
-					}
-					NOT = {
 						check_variable = {
 							which = "tzeentch_favor"
 							value = 1
@@ -17316,19 +17178,15 @@ character_event = {
 			}
 			if = {
 				limit = {
-					NOT = {
+					nor = {
 						check_variable = {
 							which = "nurgle_favor"
 							value = 1
 						}
-					}
-					NOT = {
 						check_variable = {
 							which = "slaanesh_favor"
 							value = 1
 						}
-					}
-					NOT = {
 						check_variable = {
 							which = "tzeentch_favor"
 							value = 1
@@ -17708,19 +17566,15 @@ character_event = {
 			}
 			if = {
 				limit = {
-					NOT = {
+					nor = {
 						check_variable = {
 							which = "khorne_favor"
 							value = 1
 						}
-					}
-					NOT = {
 						check_variable = {
 							which = "slaanesh_favor"
 							value = 1
 						}
-					}
-					NOT = {
 						check_variable = {
 							which = "tzeentch_favor"
 							value = 1
@@ -18099,19 +17953,15 @@ character_event = {
 			}
 			if = {
 				limit = {
-					NOT = {
+					nor = {
 						check_variable = {
 							which = "nurgle_favor"
 							value = 1
 						}
-					}
-					NOT = {
 						check_variable = {
 							which = "khorne_favor"
 							value = 1
 						}
-					}
-					NOT = {
 						check_variable = {
 							which = "slaanesh_favor"
 							value = 1

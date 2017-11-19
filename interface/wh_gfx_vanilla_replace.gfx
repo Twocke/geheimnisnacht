@@ -1,8 +1,8 @@
-# Fearfrost trait picture
+
 spriteTypes = {
 	spriteType = {
-		name = "GFX_trait_fearfrost"
-		texturefile = "gfx/traits/fearfrost.dds"
+		name = "GFX_trait_fair"
+		texturefile = "gfx/traits/fair_2.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"

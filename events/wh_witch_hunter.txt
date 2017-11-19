@@ -893,15 +893,15 @@ character_event = {
 		add_trait = staked
 		if = {
 			limit = {
-				OR = ´{
+				OR = {
 					society_member_of = cult_of_khorne
 					society_member_of = cult_of_nurgle
 					society_member_of = cult_of_slaanesh
 					society_member_of = cult_of_tzeentch
 					society_member_of = cult_of_undivided
 				}
-					  set_discovered_society = yes
 			}
+			set_discovered_society = yes
 		}
 		death = {
 			death_reason = death_execution_burning
@@ -914,7 +914,7 @@ character_event = {
 	id = witchhunter.15
 	title = WITCH_HUNT # Witch Hunt
 	desc = EVTDESC_WITCHHUNTER_15 # "Your liege sides with the Witch Hunter. Guards seize you, and drag you to the dungeons. At least your liege was merciful, and did not condemn you to death by fire."
-	picture = "GFX_evt_dungeon"
+	picture = "GFX_evt_into_the_dungeon"
 	is_triggered_only = yes
 
 	immediate = {
@@ -931,7 +931,7 @@ character_event = {
 	id = witchhunter.16
 	title = WITCH_HUNT # Witch Hunt
 	desc = EVTDESC_WITCHHUNTER_16 # "Your liege intervenes, and the Witch Hunter - grudgingly - backs off. You will not suffer death by fire."
-	picture = "GFX_evt_dungeon"
+	picture = "GFX_evt_into_the_dungeon"
 	is_triggered_only = yes
 
 	immediate = {
@@ -1659,15 +1659,15 @@ character_event = {
 		add_trait = staked
 		if = {
 			limit = {
-				OR = ´{
+				OR = {
 					society_member_of = cult_of_khorne
 					society_member_of = cult_of_nurgle
 					society_member_of = cult_of_slaanesh
 					society_member_of = cult_of_tzeentch
 					society_member_of = cult_of_undivided
 				}
-					  set_discovered_society = yes
 			}
+			set_discovered_society = yes
 		}
 		death = {
 			death_reason = death_execution_burning
@@ -1680,7 +1680,7 @@ character_event = {
 	id = witchhunter.26
 	title = WITCH_HUNT # Witch Hunt
 	desc = EVTDESC_WITCHHUNTER_26 # "Your liege sides with the Witch Hunter. Guards seize you, and drag you to the dungeons. At least your liege was merciful, and did not condemn you to death by fire."
-	picture = "GFX_evt_dungeon"
+	picture = "GFX_evt_into_the_dungeon"
 	is_triggered_only = yes
 
 	immediate = {
@@ -2096,38 +2096,29 @@ character_event = {
 	}
 }
 
-# Pick up event - if there are no witch hunters in the realm, the top liege spawns several himself
+# Pick up event - if there are no witch hunters in the realm, the top liege spawns several himself on_yearly_pulse
 character_event = {
 	id = witchhunter.34
-	min_age = 1
-	religion_group = old_world_group
 	title = WITCH_HUNTERS # Witch Hunters
 	desc = EVTDESC_WITCHHUNTER_35 # "Witch Hunters are a necessary evil - though their methods can be cruel, they are the first line of defense against the spread of Chaos. Since there are no witch hunters in your realm, do you want to invite some?"
 	picture = "GFX_evt_witch_hunters"
+	is_triggered_only = yes
 	only_playable = yes
 	religion_group = old_world_group
 
 	trigger = {
 		higher_tier_than = COUNT
-		top_liege = {
-			NOT = {
+		nor = {
+			top_liege = {
 				has_character_modifier = expelled_k_witch_hunters_order
 			}
-		}
-		NOT = {
 			any_realm_character = {
 				trait = witch_hunter
 			}
-		}
-		NOT = {
 			has_character_flag = witchhunter34
 		}
 		is_nomadic = no
 		is_tribal = no
-	}
-
-	mean_time_to_happen = {
-		months = 1
 	}
 
 	immediate = {

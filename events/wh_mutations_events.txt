@@ -35,18 +35,14 @@ character_event = {
 
 	# things which exclude mutation
 	trigger = {
-		NOT = {
+		nor = {
 			has_game_rule = {
 				name = warhammer_mutations
 				value = off
 			}
-		}
-		NOT = {
 			location = {
 				region = world_ulthuan
 			}
-		}
-		nor = {
 			trait = everqueen
 			trait = avatar_kurnous
 			trait = avatar_isha
@@ -998,54 +994,31 @@ character_event = {
 			location = {
 				region = world_ulthuan
 			}
-		}
-		nor = {
 			trait = creature_forestspirit
 			trait = creature_treekin
-			trait = creature_nehekharan
-			trait = vampire_lahmian_visible
-			trait = vampire_carstein_visible
-			trait = vampire_blood_visible
-			trait = vampire_strigoi_visible
-			trait = vampire_necrarch_visible
-			trait = vampire_jade_visible
-			trait = vampire_mahtmasi_visible
-			trait = vampire_lahmian_hidden
-			trait = vampire_carstein_hidden
-			trait = vampire_blood_hidden
-			trait = vampire_strigoi_hidden
-			trait = vampire_necrarch_hidden
-			trait = vampire_jade_hidden
-			trait = vampire_mahtmasi_hidden
 			trait = possessed
 			check_variable = {
 				which = "khorne_favor"
 				value = 5
 			}
-		}
-		NOT = {
 			check_variable = {
 				which = "nurgle_favor"
 				value = 5
 			}
-		}
-		NOT = {
 			check_variable = {
 				which = "slaanesh_favor"
 				value = 5
 			}
-		}
-		NOT = {
 			check_variable = {
 				which = "tzeentch_favor"
 				value = 5
 			}
+			# more likely to devolve into chaos spawn
+			trait = mutation_massive
 		}
 		trait = lunatic_3
 		wh_is_mage_trigger = no
-		NOT = {
-			trait = mutation_massive
-		} # more likely to devolve into chaos spawn
+		is_undead_trigger = no
 	}
 
 	mean_time_to_happen = {
@@ -1080,11 +1053,8 @@ character_event = {
 		# Trait dependent modifiers
 		modifier = {
 			factor = 10
-			trait = creature_dwarf
-		}
-		modifier = {
-			factor = 10
 			OR = {
+				trait = creature_dwarf
 				trait = creature_orc
 				trait = creature_snotling
 				trait = creature_goblin
@@ -1103,13 +1073,8 @@ character_event = {
 			trait = creature_halfling
 		}
 		modifier = {
-<<<<<<< HEAD
-			factor = 0.20
-			nor = {
-=======
 			factor = 5
-			NOT = {
->>>>>>> parent of 54d696f... move events to on actions
+			nor = {
 				trait = mutation_minor
 				trait = mutation_major
 			}
@@ -1351,39 +1316,18 @@ character_event = {
 			trait = creature_chaosspawn
 			trait = creature_forestspirit
 			trait = creature_treekin
-			trait = creature_nehekharan
-			trait = vampire_lahmian_visible
-			trait = vampire_carstein_visible
-			trait = vampire_blood_visible
-			trait = vampire_strigoi_visible
-			trait = vampire_necrarch_visible
-			trait = vampire_jade_visible
-			trait = vampire_mahtmasi_visible
-			trait = vampire_lahmian_hidden
-			trait = vampire_carstein_hidden
-			trait = vampire_blood_hidden
-			trait = vampire_strigoi_hidden
-			trait = vampire_necrarch_hidden
-			trait = vampire_jade_hidden
-			trait = vampire_mahtmasi_hidden
 			check_variable = {
 				which = "khorne_favor"
 				value = 40
 			}
-		}
-		NOT = {
 			check_variable = {
 				which = "nurgle_favor"
 				value = 40
 			}
-		}
-		NOT = {
 			check_variable = {
 				which = "slaanesh_favor"
 				value = 40
 			}
-		}
-		NOT = {
 			check_variable = {
 				which = "tzeentch_favor"
 				value = 40
@@ -1391,6 +1335,7 @@ character_event = {
 		}
 		trait = mutation_massive
 		trait = lunatic_3
+		is_undead_trigger = no
 	}
 
 	mean_time_to_happen = {
@@ -1969,13 +1914,11 @@ character_event = {
 					which = "lunatic_counter"
 					value = 10
 				}
-				NOT = {
+				nor = {
 					check_variable = {
 						which = "lunatic_counter"
 						value = 20
 					}
-				}
-				NOT = {
 					trait = lunatic_2
 				}
 			}
@@ -1992,13 +1935,11 @@ character_event = {
 					which = "lunatic_counter"
 					value = 5
 				}
-				NOT = {
+				nor = {
 					check_variable = {
 						which = "lunatic_counter"
 						value = 10
 					}
-				}
-				NOT = {
 					trait = lunatic_1
 				}
 			}
@@ -2268,13 +2209,11 @@ character_event = {
 					which = "mutation_counter"
 					value = 10
 				}
-				NOT = {
+				nor = {
 					check_variable = {
 						which = "mutation_counter"
 						value = 20
 					}
-				}
-				NOT = {
 					trait = mutation_major
 				}
 			}
@@ -2289,13 +2228,11 @@ character_event = {
 					which = "mutation_counter"
 					value = 5
 				}
-				NOT = {
+				nor = {
 					check_variable = {
 						which = "mutation_counter"
 						value = 10
 					}
-				}
-				NOT = {
 					trait = mutation_minor
 				}
 			}

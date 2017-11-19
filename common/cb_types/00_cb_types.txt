@@ -19,7 +19,6 @@ claim = {
 	hostile_against_others = yes
 	can_ask_to_join_war = no
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	press_claim = yes
 	infamy_modifier = 0.85
 	can_use_gui = {
@@ -129,10 +128,7 @@ claim = {
 				conquest_culture = ROOT
 			}
 		}
-		any_attacker = {
-			limit = {
-				character = ROOT
-			}
+		root = {
 			participation_scaled_prestige = 100
 		}
 		any_attacker = {
@@ -258,7 +254,6 @@ other_claim = {
 	can_ask_to_join_war = no
 	press_claim = yes
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	infamy_modifier = 0.5
 	can_use = {
 		ROOT = {
@@ -284,7 +279,6 @@ other_claim = {
 			}
 		}
 		OR = {
-
 			ROOT = {
 				is_female = no
 			}
@@ -351,10 +345,7 @@ other_claim = {
 				}
 			}
 		}
-		any_attacker = {
-			limit = {
-				character = ROOT
-			}
+		ROOT = {
 			participation_scaled_prestige = 100
 		}
 		any_attacker = {
@@ -611,7 +602,6 @@ claim_on_liege = {
 	#	attacker_can_call_allies = no
 	major_revolt = yes
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	infamy_modifier = 0.85
 	can_use_title = {
 		wh_cb_albion_check_trigger = yes
@@ -957,7 +947,6 @@ claim_on_liege_plot = {
 	attacker_can_call_allies = no
 	can_ask_to_join_war = no
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	infamy_modifier = 0.85
 	can_use_title = {
 		wh_cb_albion_check_trigger = yes
@@ -1210,7 +1199,6 @@ claim_on_vassal_plot = {
 	attacker_can_call_allies = no
 	can_attack_vassals = yes
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	infamy_modifier = 0.85
 	can_use_title = {
 		wh_cb_albion_check_trigger = yes
@@ -1349,7 +1337,6 @@ other_claim_on_liege = {
 	#	attacker_can_call_allies = no
 	major_revolt = yes
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	infamy_modifier = 0.5
 	can_use_title = {
 		wh_cb_albion_check_trigger = yes
@@ -1792,7 +1779,6 @@ claim_all = {
 	can_ask_to_join_war = no
 	is_claim_all = yes
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	can_use = {
 		ROOT = {
 			wh_cb_this_or_from_is_necrarch_trigger = no
@@ -1896,10 +1882,7 @@ claim_all = {
 				}
 			}
 		}
-		any_attacker = {
-			limit = {
-				character = ROOT
-			}
+		root = {
 			participation_scaled_prestige = 100
 		}
 		any_attacker = {
@@ -2709,7 +2692,6 @@ invasion = {
 	hostile_against_others = yes
 	can_ask_to_join_war = no
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	can_use = {
 		ROOT = {
 			wh_cb_this_or_from_is_necrarch_trigger = no
@@ -2905,7 +2887,6 @@ tribal_invasion = {
 	can_ask_to_join_war = yes
 	check_de_jure_tier = KING # this scans all de jure kingdoms for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	can_use_gui = {
 		ROOT = {
 			wh_cb_this_or_from_is_necrarch_trigger = no
@@ -3206,7 +3187,6 @@ religious = {
 	is_holy_war = yes
 	check_de_jure_tier = DUKE # this scans all dejure duchies for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	can_use_gui = {
 		ROOT = {
 			piety = 75
@@ -3444,7 +3424,7 @@ religious = {
 						which = "doom_counter"
 						value = 0.5
 					}
-				}				
+				}
 			}
 		}
 		FROM = {
@@ -3542,7 +3522,7 @@ religious = {
 						which = "doom_counter"
 						value = -1
 					}
-				}				
+				}
 			}
 			if = {
 				limit = {
@@ -3558,7 +3538,7 @@ religious = {
 						which = "doom_counter"
 						value = 0.5
 					}
-				}				
+				}
 			}
 		}
 	}
@@ -3630,7 +3610,6 @@ excommunicated_ruler = {
 	is_permanent = yes
 	can_ask_to_join_war = no
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	can_use = {
 		FROM = {
 			excommunicated_for = ROOT
@@ -3918,10 +3897,7 @@ bid_for_independence = {
 				}
 			}
 		}
-		any_attacker = {
-			limit = {
-				character = ROOT
-			}
+		root = {
 			participation_scaled_prestige = 100
 		}
 		any_attacker = {
@@ -4010,10 +3986,7 @@ bid_for_independence = {
 		ROOT = {
 			prestige = -50
 		}
-		any_attacker = {
-			limit = {
-				character = ROOT
-			}
+		root = {
 			participation_scaled_prestige = -50
 		}
 		any_attacker = {
@@ -5316,7 +5289,6 @@ coastal_republic = {
 	can_ask_to_join_war = no
 	allow_distant = yes # AI parameter
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	can_use = {
 		ROOT = {
 			wh_cb_this_or_from_is_necrarch_trigger = no
@@ -5415,10 +5387,7 @@ coastal_republic = {
 				}
 			}
 		}
-		any_attacker = {
-			limit = {
-				character = ROOT
-			}
+		root = {
 			participation_scaled_prestige = 100
 		}
 		any_attacker = {
@@ -5503,7 +5472,6 @@ coastal_county_republic = {
 	can_ask_to_join_war = no
 	allow_distant = yes # AI parameter
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	can_use = {
 		ROOT = {
 			wh_cb_this_or_from_is_necrarch_trigger = no
@@ -5637,10 +5605,7 @@ coastal_county_republic = {
 				}
 			}
 		}
-		any_attacker = {
-			limit = {
-				character = ROOT
-			}
+		root = {
 			participation_scaled_prestige = 100
 		}
 		any_attacker = {
@@ -6123,7 +6088,6 @@ muslim_invasion = {
 	can_ask_to_join_war = yes
 	check_de_jure_tier = KING # this scans all de jure kingdoms for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	can_use_gui = {
 		ROOT = {
 			piety = 1000
@@ -6607,10 +6571,7 @@ cb_faction_independence = {
 				disband_event_forces = faction_revolters
 			}
 		}
-		any_attacker = {
-			limit = {
-				character = ROOT
-			}
+		root = {
 			participation_scaled_prestige = -50
 		}
 		any_attacker = {
@@ -6715,7 +6676,6 @@ embargo_cb = {
 	is_permanent = yes
 	can_ask_to_join_war = no
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	can_use = {
 		ROOT = {
 			wh_cb_this_or_from_is_necrarch_trigger = no
@@ -6931,7 +6891,6 @@ seize_trade_post = {
 	ticking_war_score_multiplier = 5.0
 	allow_distant = yes
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	can_use = {
 		ROOT = {
 			wh_cb_this_or_from_is_necrarch_trigger = no
@@ -7124,7 +7083,6 @@ viking_invasion = {
 	check_de_jure_tier = KING # this scans all de jure kingdoms for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
 	apply_short_occ_mod = no # Do not apply the 'recently_conquered' modifier to Holdings
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	can_use = {
 		ROOT = {
 			wh_cb_this_or_from_is_necrarch_trigger = no
@@ -7354,7 +7312,6 @@ pagan_subjugation = {
 	is_permanent = yes
 	can_ask_to_join_war = yes
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	can_use = {
 		ROOT = {
 			wh_cb_this_or_from_is_necrarch_trigger = no
@@ -7446,10 +7403,7 @@ pagan_subjugation = {
 		ROOT = {
 			piety = 100
 		}
-		any_attacker = {
-			limit = {
-				character = ROOT
-			}
+		root = {
 			participation_scaled_prestige = 100
 		}
 		any_attacker = {
@@ -8171,7 +8125,6 @@ caliphal_subjugation = {
 	can_ask_to_join_war = yes
 	check_de_jure_tier = KING # this scans all de jure kingdoms for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	can_use_gui = {
 		ROOT = {
 			piety = 200
@@ -8239,10 +8192,7 @@ caliphal_subjugation = {
 			prestige = 100
 			decadence = -5
 		}
-		any_attacker = {
-			limit = {
-				character = ROOT
-			}
+		root = {
 			participation_scaled_prestige = 100
 		}
 		any_attacker = {
@@ -8357,7 +8307,6 @@ muslim_county_conquest = {
 	press_claim = yes
 	can_ask_to_join_war = no
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	can_use_gui = {
 		ROOT = {
 			piety = 50
@@ -8468,10 +8417,7 @@ muslim_county_conquest = {
 				}
 			}
 		}
-		any_attacker = {
-			limit = {
-				character = ROOT
-			}
+		root = {
 			participation_scaled_prestige = 100
 		}
 		any_attacker = {
@@ -8565,7 +8511,6 @@ pagan_county_conquest = {
 	can_ask_to_join_war = no
 	allow_distant = yes
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	can_use = {
 		ROOT = {
 			wh_cb_this_or_from_is_necrarch_trigger = no
@@ -8841,7 +8786,6 @@ dejure_county_claim = {
 	press_claim = yes
 	can_ask_to_join_war = no
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	infamy_modifier = 0.5
 	can_use_title = {
 		wh_cb_albion_check_trigger = yes
@@ -8932,10 +8876,7 @@ dejure_county_claim = {
 				}
 			}
 		}
-		any_attacker = {
-			limit = {
-				character = ROOT
-			}
+		root = {
 			participation_scaled_prestige = 100
 		}
 		any_attacker = {
@@ -9045,7 +8986,6 @@ dejure_barony_claim = {
 	check_de_jure_tier = COUNT
 	can_ask_to_join_war = no
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	infamy_modifier = 0.5
 	can_use = {
 		ROOT = {
@@ -9226,7 +9166,6 @@ other_dejure_county_claim = {
 	press_claim = yes
 	can_ask_to_join_war = no
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	infamy_modifier = 0.3
 	can_use = {
 		ROOT = {
@@ -9286,10 +9225,7 @@ other_dejure_county_claim = {
 				who = PREV
 			}
 		}
-		any_attacker = {
-			limit = {
-				character = ROOT
-			}
+		root = {
 			participation_scaled_prestige = 100
 		}
 		any_attacker = {
@@ -9641,7 +9577,6 @@ cb_decadence_usurption = {
 	truce_days = 3650
 	is_permanent = yes
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	can_use = {
 		ROOT = {
 			OR = {
@@ -9761,7 +9696,6 @@ rivalry_cb = {
 	is_permanent = yes
 	can_ask_to_join_war = no
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	can_use = {
 		ROOT = {
 			is_rival = FROM
@@ -9915,7 +9849,6 @@ tributary_cb = {
 	display_on_map = no
 	coalition_threat = no
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	can_use = {
 		has_dlc = "Horse Lords"
 		ROOT = {
@@ -10907,7 +10840,6 @@ nomad_dispute = {
 	can_ask_to_join_war = no
 	allow_distant = yes
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	can_use = {
 		has_dlc = "Horse Lords"
 		ROOT = {
@@ -11167,7 +11099,6 @@ nomad_subjugation = {
 	is_permanent = yes
 	can_ask_to_join_war = yes
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	can_use_gui = {
 		#higher_tier_than between ROOT and FROM would be better but its tooltip doesn't say anything about comparing character tiers
 		OR = {
@@ -11252,10 +11183,7 @@ nomad_subjugation = {
 		ROOT = {
 			piety = 100
 		}
-		any_attacker = {
-			limit = {
-				character = ROOT
-			}
+		root = {
 			participation_scaled_prestige = 100
 		}
 		any_attacker = {
@@ -11448,7 +11376,6 @@ nomad_invasion = {
 	can_ask_to_join_war = yes
 	check_de_jure_tier = KING # this scans all de jure kingdoms for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	can_use_gui = {
 		ROOT = {
 			OR = {
@@ -11689,7 +11616,6 @@ nomad_expansion = {
 	is_holy_war = yes
 	check_de_jure_tier = DUKE # this scans all de jure duchies for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	can_use_gui = {
 		ROOT = {
 			prestige = 300
@@ -12131,7 +12057,6 @@ nomad_humiliate_cb = {
 	display_on_map = no
 	coalition_threat = no
 	allowed_to_target_tributaries = no
-	allowed_to_target_suzerains = no
 	can_use = {
 		has_dlc = "Horse Lords"
 		ROOT = {
@@ -12621,5 +12546,4 @@ powerful_vassal_takeover_war = {
 	defender_ai_defeat_worth = {
 		factor = 100
 	}
-
 }

@@ -23,6 +23,7 @@ decisions = {
 			}
 		}
 		effect = {
+			log = "work decision employ_soldier for [Root.GetBestName]"
 			wealth = -10
 			if = {
 				limit = {
@@ -56,7 +57,7 @@ decisions = {
 				new_character = {
 					hidden_tooltip = {
 						character_event = {
-							id = DR_startup.1
+							id = wh_maintenance.51
 						}
 						if = {
 							limit = {
@@ -163,6 +164,7 @@ decisions = {
 			}
 		}
 		effect = {
+			log = "work decision employ_priest for [Root.GetBestName]"
 			piety = -5
 			if = {
 				limit = {
@@ -225,7 +227,7 @@ decisions = {
 						culture = strigany
 					}
 					character_event = {
-						id = DR_startup.1
+						id = wh_maintenance.51
 					}
 				}
 			}
@@ -260,6 +262,7 @@ decisions = {
 			}
 		}
 		effect = {
+			log = "work decision employ_steward for [Root.GetBestName]"
 			scaled_wealth = -0.2
 			if = {
 				limit = {
@@ -297,7 +300,7 @@ decisions = {
 						culture = strigany
 					}
 					character_event = {
-						id = DR_startup.1
+						id = wh_maintenance.51
 					}					
 				}
 			}
@@ -345,6 +348,7 @@ decisions = {
 			}
 		}
 		effect = {
+			log = "work decision present_debutante for [Root.GetBestName]"
 			scaled_wealth = -0.2
 			create_character = {
 				random_traits = yes
@@ -369,7 +373,7 @@ decisions = {
 						culture = strigany
 					}					
 					character_event = {
-						id = DR_startup.1
+						id = wh_maintenance.51
 					}
 				}
 			}

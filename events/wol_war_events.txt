@@ -112,15 +112,6 @@ character_event = {
 		}
 		if = {
 			limit = {
-				religion = jain
-			}
-			piety = -20
-			custom_tooltip = {
-				text = jain_ahimsa_tooltip
-			}
-		}
-		if = {
-			limit = {
 				FROMFROM = {
 					has_opinion_modifier = {
 						who = ROOT modifier = grievously_offended
@@ -688,12 +679,10 @@ long_character_event = {
 	desc = {
 		text = EVTDESCD_WOL_11006 # Winning over challenger
 		trigger = {
-			NOT = {
+			nor = {
 				event_target:challenger = {
 					character = ROOT
 				}
-			}
-			NOT = {
 				has_character_flag = duel_maim
 			}
 		}
@@ -1107,12 +1096,10 @@ long_character_event = {
 		}
 		if = {
 			limit = {
-				NOT = {
+				nor = {
 					FROM = {
 						has_character_flag = duel_maim
 					}
-				}
-				NOT = {
 					is_maimed_trigger = yes
 				}
 			}
@@ -2499,12 +2486,10 @@ character_event = {
 		if = {
 			limit = {
 				OR = {
-					NOT = {
+					nor = {
 						event_target:attacker = {
 							always = yes
 						}
-					}
-					NOT = {
 						event_target:defender = {
 							always = yes
 						}

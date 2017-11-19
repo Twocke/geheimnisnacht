@@ -599,15 +599,6 @@ character_event = {
 
 	option = {
 		name = "EVTOPTC30006" # Poison courtier
-		if = {
-			limit = {
-				religion = jain
-			}
-			piety = -20
-			custom_tooltip = {
-				text = jain_ahimsa_tooltip
-			}
-		}
 		random_list = {
 			50 = {
 				random_courtier = {
@@ -759,15 +750,6 @@ character_event = {
 
 	option = {
 		name = "EVTOPTC30006" # Poison courtier
-		if = {
-			limit = {
-				religion = jain
-			}
-			piety = -20
-			custom_tooltip = {
-				text = jain_ahimsa_tooltip
-			}
-		}
 		random_list = {
 			50 = {
 				event_target:target_courtier = {
@@ -2054,9 +2036,7 @@ character_event = {
 			trait = envious
 			trait = arbitrary
 		}
-		NOT = {
-			is_inaccessible_trigger = yes
-		}
+		is_inaccessible_trigger = no
 	}
 
 	immediate = {
@@ -2491,12 +2471,10 @@ character_event = {
 			is_alive = yes
 			is_abroad = no
 			at_location = ROOT
-			NOT = {
+			nor = {
 				opinion = {
 					who = ROOT value = 50
 				}
-			}
-			NOT = {
 				trait = craven
 			}
 		}
@@ -4457,15 +4435,6 @@ character_event = {
 
 	option = {
 		name = "EVTOPTB30080" # Execute courtier
-		if = {
-			limit = {
-				religion = jain
-			}
-			piety = -20
-			custom_tooltip = {
-				text = jain_ahimsa_tooltip
-			}
-		}
 		event_target:sire_bastard = {
 			death = {
 				death_reason = death_execution_hanging
@@ -4627,9 +4596,7 @@ character_event = {
 				age = 30
 			}
 			is_smart_trigger = no
-			NOT = {
-				is_inaccessible_trigger = yes
-			}
+			is_inaccessible_trigger = no
 		}
 		nor = {
 			has_character_modifier = for_the_sake_of_love

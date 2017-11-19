@@ -1583,17 +1583,17 @@ character_event = {
 					add_trait = shrewd
 				}
 			}
-			hidden_tooltip = {
-				if = {
-					limit = {
-						religion_group = indian_group
-					}
-					add_trait = kshatriya
-					character_event = {
-						id = RoI.30121
-					}
-				}
-			}
+			# hidden_tooltip = {
+			# 	if = {
+			# 		limit = {
+			# 			religion_group = indian_group
+			# 		}
+			# 		add_trait = kshatriya
+			# 		character_event = {
+			# 			id = RoI.30121
+			# 		}
+			# 	}
+			# }
 			save_event_target_as = found_commander
 		}
 	}
@@ -2451,8 +2451,6 @@ character_event = {
 					has_opinion_modifier = {
 						who = liege modifier = opinion_coerced_into_leaving_faction
 					}
-				}
-				NOT = {
 					has_character_flag = faction_member
 				}
 				age = 16
@@ -2523,8 +2521,6 @@ character_event = {
 						has_opinion_modifier = {
 							who = liege modifier = opinion_coerced_into_leaving_faction
 						}
-					}
-					NOT = {
 						has_character_flag = faction_member
 					}
 					age = 16
@@ -2741,8 +2737,6 @@ character_event = {
 							modifier = opinion_accused_apostate
 							who = PREV
 						}
-					}
-					NOT = {
 						higher_tier_than = BARON
 					}
 					age = 16
@@ -2937,8 +2931,6 @@ character_event = {
 							modifier = opinion_accused_apostate
 							who = event_target:my_liege
 						}
-					}
-					NOT = {
 						higher_tier_than = BARON
 					}
 					age = 16
@@ -3660,17 +3652,7 @@ character_event = {
 					limit = {
 						religion = ROOT
 						controls_religion = no
-						OR = {
-							religion_group = old_world_group
-							religion = fraticelli
-							religion = orthodox
-							religion = miaphysite
-							religion = monophysite
-							religion = monothelite
-							religion = paulician
-							religion = nestorian
-							religion = yazidi
-						}
+						religion_group = old_world_group
 					}
 					add_trait = excommunicated
 				}

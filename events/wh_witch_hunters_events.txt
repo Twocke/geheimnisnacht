@@ -1167,8 +1167,6 @@ character_event = {
 			any_liege = {
 				has_character_modifier = expelled_k_witch_hunters_order
 			}
-		}
-		nor = {
 			is_pregnant = yes
 			any_spouse = {
 				is_pregnant = yes
@@ -2201,8 +2199,8 @@ province_event = {
 	option = {
 		name = EVTOPTA_SOA_1024
 		build_holding = {
-		 	type = castle
-		 	holder = FROMFROM
+			type = castle
+			holder = FROMFROM
 		}
 	}
 }
@@ -2640,8 +2638,8 @@ letter_event = {
 		name = EVTOPTAswhunters23
 		FROM = {
 			build_holding = {
-		 		type = castle
-		 		holder = FROMFROMFROM
+				type = castle
+				holder = FROMFROMFROM
 			}
 		}
 		FROMFROMFROM = {
@@ -4023,15 +4021,15 @@ character_event = {
 				}
 				if = {
 					limit = {
-						OR = ´{
+						OR = {
 							society_member_of = cult_of_khorne
 							society_member_of = cult_of_nurgle
 							society_member_of = cult_of_slaanesh
 							society_member_of = cult_of_tzeentch
 							society_member_of = cult_of_undivided
 						}
-							  set_discovered_society = yes
 					}
+					set_discovered_society = yes
 				}
 				liege = {
 					opinion = {

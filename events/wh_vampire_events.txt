@@ -3955,11 +3955,11 @@ character_event = {
 
 	immediate = {
 		log = "work event id = svampires.16 for [Root.GetBestName]"
+		set_character_flag = started_duke
 	}
 
 	option = {
 		name = EVTOPTAsvampires16
-		set_character_flag = started_duke
 		k_aquitaine = {
 			e_bretonnia = {
 				holder_scope = {
@@ -4002,7 +4002,6 @@ character_event = {
 
 	option = {
 		name = EVTOPTBsvampires16
-		set_character_flag = started_duke
 		location = {
 			ROOT = {
 				spawn_unit = {
@@ -4445,7 +4444,7 @@ province_event = {
 		name = EVTOPTAsvampires21
 		build_holding = {
 			type = castle
-		 	holder = FROMFROM
+			holder = FROMFROM
 		}
 	}
 }
@@ -6875,7 +6874,7 @@ character_event = {
 			capital_scope = {
 				build_holding = {
 					type = tribal
-		 			holder = ROOT
+					holder = ROOT
 				}
 			}
 		}
@@ -7139,17 +7138,13 @@ character_event = {
 	only_playable = yes
 	
 	trigger = {
-		NOT = {
+		nor = {
 			location = {
 				has_province_modifier = province_slave_raid
 			}
-		}
-		NOT = {
 			location = {
 				has_province_modifier = province_scourged
 			}
-		}
-		NOT = {
 			location = {
 				has_province_modifier = province_slave_raid_chaos_dwarf
 			}

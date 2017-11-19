@@ -651,115 +651,6 @@ character_event = {
 	}
 }
 
-# # Made obsolete after a vanilla patch
-# # Set all Asur on start to proper government
-# # character_event = {
-# # 	id = aicleanup.017
-# # 	hide_window = yes
-# # 	is_triggered_only = yes
-# # 	trigger = {	is_ruler = yes
-# # 			is_feudal = yes
-# # 			trait = creature_elf
-# # 			culture_group = asur_group
-# # 			NOT = {government = highborn_government
-# }
-# # 	}
-# # 	immediate = {
-# set_government_type = highborn_government
-# # 				any_demesne_title = {refill_holding_levy = yes
-# }
-# # 				liege = {any_demesne_title = {
-# refill_holding_levy = yes
-# }
-# }
-# # 				top_liege = {any_demesne_title = {
-# refill_holding_levy = yes
-# }
-# }
-# # 			}
-# }
-# # Set all Asrai on start to proper government
-# # character_event = {
-# # 	id = aicleanup.018
-# # 	hide_window = yes
-# # 	is_triggered_only = yes
-# # 	trigger = {	is_ruler = yes
-# # 			religion = asrai_cadai
-# # 			OR = {trait = creature_elf
-# # 				trait = creature_treekin
-# # 				trait = creature_forestspirit}
-# # 				capital_scope = {empire = {
-# title = e_athel_loren
-# }
-# }
-# # 				NOT = {government = eternal_court_government
-# }
-# # 	}
-# # 	immediate = {
-# set_government_type = eternal_court_government
-# # 				any_demesne_title = {refill_holding_levy = yes
-# }
-# # 				liege = {any_demesne_title = {
-# refill_holding_levy = yes
-# }
-# }
-# # 				top_liege = {any_demesne_title = {
-# refill_holding_levy = yes
-# }
-# }
-# # 		}
-# }
-# # Set all Beastmen on start to proper government
-# # character_event = {
-# # 	id = aicleanup.019
-# # 	hide_window = yes
-# # 	is_triggered_only = yes
-# # 	trigger = {	is_ruler = yes
-# # 			trait = creature_beastman
-# # 				NOT = {government = beastman_government
-# }
-# # 				OR = {ai = yes
-# # 					has_dlc = "Horse Lords"}
-# # 	}
-# # 	immediate = {
-# set_government_type = beastman_government
-# # 				any_demesne_title = {refill_holding_levy = yes
-# }
-# # 				liege = {any_demesne_title = {
-# refill_holding_levy = yes
-# }
-# }
-# # 				top_liege = {any_demesne_title = {
-# refill_holding_levy = yes
-# }
-# }
-# # 		}
-# }
-# # Set all Greenskins on start to proper government
-# # character_event = {
-# # 	id = aicleanup.020
-# # 	hide_window = yes
-# # 	is_triggered_only = yes
-# # 	trigger = {	is_ruler = yes
-# # 				OR = {trait = creature_orc
-# # 					trait = creature_goblin}
-# # 				NOT = {government = greenskin_government
-# }
-# # 	}
-# # 	immediate = {
-# set_government_type = greenskin_government
-# # 				any_demesne_title = {refill_holding_levy = yes
-# }
-# # 				liege = {any_demesne_title = {
-# refill_holding_levy = yes
-# }
-# }
-# # 				top_liege = {any_demesne_title = {
-# refill_holding_levy = yes
-# }
-# }
-# # 		}
-# }
 # Set all Druchii on start to proper government and give Malekith the widowed trait when not used by a Player
 character_event = {
 	id = aicleanup.021
@@ -768,8 +659,8 @@ character_event = {
 	only_rulers = yes
 
 	trigger = {
-		is_feudal = yes
 		trait = malekith
+		is_feudal = yes
 	}
 
 	immediate = {
@@ -815,116 +706,6 @@ character_event = {
 	}
 }
 
-# # character_event = {
-# # 	id = aicleanup.022
-# # 	hide_window = yes
-# # 	is_triggered_only = yes
-# # 	trigger = {	is_ruler = yes
-# # 			is_tribal = no
-# # 			is_theocracy = no
-# # 			trait = creature_elf
-# # 			culture_group = druchi_group
-# # 				NOT = {trait = malekith
-# }
-# # 				NOT = {government = druchii_government
-# }
-# # 	}
-# # 	immediate = {
-# set_government_type = druchii_government
-# # 				any_demesne_title = {refill_holding_levy = yes
-# }
-# # 				liege = {any_demesne_title = {
-# refill_holding_levy = yes
-# }
-# }
-# # 				top_liege = {any_demesne_title = {
-# refill_holding_levy = yes
-# }
-# }
-# # 		}
-# }
-# Give the proper age traits to dwarves
-character_event = {
-	id = aicleanup.023
-	hide_window = yes
-	only_men = yes
-	religion_group = dwarf_gods_group
-	is_triggered_only = yes
-
-	trigger = {
-		trait = creature_dwarf
-		NOT = {
-			trait = dwarf_slayer
-		}
-	}
-
-	immediate = {
-		log = "work event id = aicleanup.023 for [Root.GetBestName]"
-		if = {
-			limit = {
-				NOT = {
-					age = 75
-				}
-			}
-			add_trait = beardling
-		}
-		if = {
-			limit = {
-				age = 75
-				martial = 20
-				nor = {
-					trait = quarreller
-					trait = hammerer
-					trait = dwarf_warrior
-					trait = thunderer
-				}
-			}
-			add_trait = thunderer
-			remove_trait = beardling
-		}
-		if = {
-			limit = {
-				age = 75
-				diplomacy = 15
-				nor = {
-					trait = quarreller
-					trait = hammerer
-					trait = dwarf_warrior
-					trait = thunderer
-				}
-			}
-			add_trait = quarreller
-			remove_trait = beardling
-		}
-		if = {
-			limit = {
-				age = 75
-				nor = {
-					martial = 20
-					diplomacy = 15
-					trait = quarreller
-					trait = hammerer
-					trait = dwarf_warrior
-					trait = thunderer
-				}
-			}
-			add_trait = dwarf_warrior
-			remove_trait = beardling
-		}
-		if = {
-			limit = {
-				age = 250
-				nor = {
-					trait = longbeard
-					trait = ironbreaker
-				}
-			}
-			add_trait = longbeard
-			remove_trait = beardling
-		}
-	}
-}
-
 # Red Dukedoms breaks on the character's death
 character_event = {
 	id = aicleanup.024
@@ -949,18 +730,14 @@ character_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	only_men = yes
-	only_men = yes
 	religion = amazon
-
+	
 	trigger = {
 		liege = {
 			trait = creature_amazon
 		}
 		mother = {
-			OR = {
-				trait = creature_human
-				trait = creature_amazon
-			}
+			trait = creature_amazon
 		}
 	}
 
@@ -976,7 +753,6 @@ character_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	only_women = yes
-	only_men = yes
 	religion = amazon
 
 	trigger = {
@@ -984,23 +760,17 @@ character_event = {
 			trait = creature_amazon
 		}
 		mother = {
-			OR = {
-				trait = creature_human
-				trait = creature_amazon
-			}
+			trait = creature_amazon
 		}
 		father = {
-			OR = {
-				trait = creature_human
-				trait = creature_amazon
-			}
+			trait = creature_human
 		}
 	}
 
 	immediate = {
 		log = "work event id = aicleanup.026 for [Root.GetBestName]"
-		remove_trait = creature_human
-		add_trait = creature_amazon
+		#remove_trait = creature_human
+		#add_trait = creature_amazon
 		remove_trait = bastard
 		remove_trait = legit_bastard
 		mother = {

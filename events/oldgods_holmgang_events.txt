@@ -20,7 +20,7 @@ character_event = {
 	religion = norscan_gods
 
 	trigger = {
-		NOT = {
+		nor = {
 			has_character_flag = holmgang_target
 			has_character_flag = holmgang_challenger
 			trait = incapable
@@ -45,15 +45,11 @@ character_event = {
 				opinion = {
 					who = ROOT value = -40
 				}
-			}
-			NOT = {
 				has_character_flag = holmgang_target
 				has_character_flag = holmgang_challenger
 			}
 			religion = norscan_gods
-			NOT = {
-				is_inaccessible_trigger = yes
-			}
+			is_inaccessible_trigger = no
 		}
 	}
 
@@ -177,20 +173,14 @@ character_event = {
 					liege = {
 						character = ROOT
 					}
-				}
-				NOT = {
 					opinion = {
 						who = ROOT value = -40
 					}
-				}
-				NOT = {
 					has_character_flag = holmgang_target
 					has_character_flag = holmgang_challenger
 				}
 				religion = norscan_gods
-				NOT = {
-					is_inaccessible_trigger = yes
-				}
+				is_inaccessible_trigger = no
 			}
 		}
 	}
@@ -272,20 +262,14 @@ character_event = {
 						liege = {
 							character = ROOT
 						}
-					}
-					NOT = {
 						opinion = {
 							who = ROOT value = -40
 						}
-					}
-					NOT = {
 						has_character_flag = holmgang_target
 						has_character_flag = holmgang_challenger
 					}
 					religion = norscan_gods
-					NOT = {
-						is_inaccessible_trigger = yes
-					}
+					is_inaccessible_trigger = no
 				}
 				set_character_flag = holmgang_challenger
 				set_character_flag = do_not_disturb
@@ -346,15 +330,11 @@ character_event = {
 				opinion = {
 					who = ROOT value = -40
 				}
-			}
-			NOT = {
 				has_character_flag = holmgang_target
 				has_character_flag = holmgang_challenger
 			}
 			religion = norscan_gods
-			NOT = {
-				is_inaccessible_trigger = yes
-			}
+			is_inaccessible_trigger = no
 		}
 	}
 
@@ -434,15 +414,11 @@ character_event = {
 					opinion = {
 						who = ROOT value = -40
 					}
-				}
-				NOT = {
 					has_character_flag = holmgang_target
 					has_character_flag = holmgang_challenger
 				}
 				religion = norscan_gods
-				NOT = {
-					is_inaccessible_trigger = yes
-				}
+				is_inaccessible_trigger = no
 			}
 			set_character_flag = holmgang_challenger
 			set_character_flag = do_not_disturb

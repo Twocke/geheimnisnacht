@@ -55,13 +55,11 @@ character_event = {
 				}
 			}
 		}
-		NOT = {
+		nor = {
 			# Somewhat clunky way of checking that the character does not stand to inherit any titles
 			any_heir_title = {
 				always = yes
 			}
-		}
-		NOT = {
 			# Handled by event TOG.1200
 			any_claim = {
 				has_holder = yes
@@ -254,7 +252,7 @@ character_event = {
 						}
 						# Create a fleet, just to be sure
 						spawn_fleet = {
-							province = closest 
+							province = closest
 							owner = ROOT
 							disband_on_peace = yes
 							troops = {
@@ -2126,6 +2124,9 @@ character_event = {
 		is_nomadic = yes
 		NOT = {
 			trait = incapable
+		}
+		location = {
+			always = yes
 		}
 	}
 
